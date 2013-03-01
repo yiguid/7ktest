@@ -23,8 +23,8 @@ class User extends CI_Controller {
 	{
 		parent::__construct();
 
-		$data['title'] = "首页";  
-		$data['headline'] = "用户信息";  
+		$data['title'] = "棣栭〉";  
+		$data['headline'] = "鐢ㄦ埛淇℃伅";  
 		$this->load->model('user_mdl');
 	} 
 	

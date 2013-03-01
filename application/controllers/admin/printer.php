@@ -23,8 +23,8 @@ class Printer extends CI_Controller {
 	{
 		parent::__construct();
 
-		$data['title'] = "��ҳ";  
-		$data['headline'] = "��ӡ����Ϣ";  
+		$data['title'] = "首页";  
+		$data['headline'] = "打印店信息";  
 		$this->load->model('printer_mdl');
 	} 
 	

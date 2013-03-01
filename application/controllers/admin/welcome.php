@@ -22,17 +22,17 @@ class Welcome extends CI_Controller {
 	{
 		parent::__construct();
 
-		$this->data['page_title'] = 'Ê×Ò³';
+		$this->data['page_title'] = 'é¦–é¡µ';
 		$this->data['user'] = $this->session->userdata('username');
 
-		//ÑéÖ¤ÓÃ»§µÇÂ¼¡¢Ò³ÃæÈ¨ÏŞ
+		//éªŒè¯ç”¨æˆ·ç™»å½•ã€é¡µé¢æƒé™
 		if(!$this->auth->logged_in())
 		{
 			redirect('login','refresh');
 		}
 		//if(!$this->auth->is_permit($this->session->userdata('username'),'data'))
 		//{
-		//	show_error('½ûÖ¹·ÃÎÊ:²»¾ßÓĞ¸ÃÈ¨ÏŞ');
+		//	show_error('ç¦æ­¢è®¿é—®:ä¸å…·æœ‰è¯¥æƒé™');
 		//	redirect('admin','refresh');
 		//}
 	}
