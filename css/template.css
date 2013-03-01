@@ -1,0 +1,389 @@
+/*全局设置*/
+
+html {
+  height: 100%;
+  margin-bottom: 1px;
+}
+
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	line-height: 1.3em;
+	margin: 0px 0px 0px 0px;
+	font-size: 12px;
+	color: #333;
+}
+
+#container{
+	height:500px;
+	background:#ffff99;
+}
+
+#printer_container{
+	height:500px;
+	background:#ccffff;
+}
+
+#login_main{
+	background:#ffff99;
+}
+
+#login_left{
+	float:left;
+	width:500px;
+	padding:100px;
+}
+
+#login_right{
+	float:left;
+	padding:100px;
+}
+
+#page_bg {
+	padding: 10px 0;
+	margin-bottom: 1px;
+	background: #0C3A6D;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	background: #f7f7f7 url(../images/blue/mw_shadow_l.png) 0 0 repeat-y;
+}
+
+body.width_medium #wrapper {
+	width: 950px;
+}
+
+body.width_small #wrapper {
+	width: 773px;
+}
+
+body.width_fmax #wrapper {
+	min-width: 750px;
+	max-width: 1050px;
+}
+
+#notice
+{
+	width:98%;
+    height: 400px;
+    border-width: 0px;
+}
+/*table.nopad {
+	width:100%;
+	border-collapse: collapse;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 15px;
+}*/
+
+#wrapper_r {
+	background: url(../images/blue/mw_shadow_r.png) 100% 0 repeat-y;
+}
+
+.clr {
+	clear: both;
+}
+
+/*header设置*/
+
+#header {
+	background: #000000;
+	color:white;
+	line-height:30px;
+	height:30px;
+}
+
+#menu{
+	width:980px;
+	height:30px;
+}
+
+#menu_logo{
+	float:left;
+	width:100px;
+}
+
+#menu_list{
+	float:left;
+	width:800px;
+}
+
+
+#header_l {
+	position: relative;
+	background: url(../images/blue/mw_header_t_l.png) 0 0 no-repeat;
+}
+
+#header_r {
+	height: 90px;
+	padding-left: 370px;
+	padding-right: 30px;
+	padding-top: 25px;
+	overflow: hidden;
+	text-align: left;
+	background: url(../images/blue/mw_header_t_r.png) 100% 0 no-repeat;
+}
+
+#logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	float: left;
+	width: 280px;
+	height: 88px;
+	background: url(../images/logo.gif) 0 0 no-repeat;
+	margin-left: 50px;
+	margin-top: 35px;
+}
+
+#title {
+	/*position:absolute;
+	left:0;
+	top:0;
+	float:left;
+	width:400px;
+	height:100px;*/
+	margin-left: 0px;
+	margin-top: 35px;
+	font-size:25px;
+	color:#135cae;
+	font-weight:bold;
+}
+
+/*footer设置*/
+
+#footer {
+	height:100px;
+	background: #000000;
+	color: #ffffff;
+}
+
+#footer_content{
+	width:980px;
+}
+
+#footer_list{
+	float:left;
+	width:150px;
+	background: #000000;
+	color: #ffffff;
+}
+
+#footer_logo{
+	float:left;
+	width:380px;
+}
+
+#footer_list li{
+	text-align:left;
+}
+
+#fl_title{
+	font-size:16px;
+	font-weight:bold;
+}
+
+#footer_l {
+	background: url(../images/blue/mw_footer_b_l.png) 0 0 no-repeat;
+}
+
+#footer_r {
+	padding-top: 10px;
+	height: 47px;
+	overflow: hidden;
+	background: url(../images/blue/mw_footer_b_r.png) 100% 0 no-repeat;
+}
+
+#footer_r div {
+	text-align: center;
+	font-size: .90em;
+	color: #aaa;
+}
+
+#footer_r a:link, #footer_r a:visited  {
+	color: #999;
+}
+
+#footerspacer {
+	height: 10px;
+}
+
+span.description {
+	display:block;
+	padding-left: 30px;
+}
+
+#syndicate{
+	float:left;
+	padding-left: 25px;
+}
+
+#power_by{
+	float:right;
+	padding-right: 25px;
+}
+
+/*状态栏设置*/
+
+.info {
+	float:right;
+	margin-right:20px;
+	text-align:right;
+	margin-top: -20px;
+}
+
+/*空白区域设置*/
+
+
+
+/*基本元素设置*/
+
+#applytable th {
+	text-align:right;
+	width:150px;
+	padding-right:50px;
+}
+
+#searchtable .search{
+	text-align:right;
+	padding-right:50px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	padding: 0;
+	margin-left: 30px;
+	margin-bottom: 15px;
+}
+
+#list_header {
+	background-color:#135cae;
+	color:white;
+	text-align:center;
+	font-size:15px;
+}
+
+#record {
+	text-align:center;
+}
+
+em
+{
+	color: red;
+	font-style: normal;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	font-weight: normal;
+	color: #135cae;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: normal;
+	color: #0b3768;
+}
+
+input.button { cursor: pointer; }
+
+p { margin-top: 0; margin-bottom: 5px; }
+
+img { border: 0 none; }
+
+h1 {
+	padding: 0;
+	font-family:Helvetica ,Arial,sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	vertical-align: bottom;
+	color: #666;
+	text-align: left;
+	width: 100%;
+}
+
+h2 {
+	padding: 0;
+	font-family: Arial, Helvetica,sans-serif;
+	font-size: 1.4em;
+	font-weight: normal;
+	vertical-align: bottom;
+	color: #333;
+	text-align: left;
+	width: 100%;
+}
+
+h3 {
+	margin-top: 25px;
+	margin: 0;
+    font-weight: bold;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 1.5em;
+    padding-left: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #135cae;
+}
+
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+a.readon {
+	margin-top: 10px;
+	display: block;
+	float: left;
+	background: url(../images/mw_readon.png) top right no-repeat;
+	padding-right: 20px;
+	line-height: 14px;
+	height: 16px;
+}
+
+#profile{
+	width:990px;
+}
+#printer_list{
+	width:200px;
+	height:498px;
+	float:left;
+	border:1px solid #000000;
+}
+
+.profile_title{
+	text-align:left;
+	line-height:20px;
+	font-size:20px;
+	font-weight:bold;
+	vertical-align: middle;
+}
+
+.setting_details{
+	text-align:left;
+}
+
+#file_manage{
+	width:730px;
+	height:250px;
+	float:left;
+	border:1px solid #000000;
+}
+
+#file_setting{
+	float:left;
+}
+#managebox{
+	width:730px;
+	height:498px;
+	float:left;
+	border:1px solid #000000;
+}
+
+#print_setting{
+	width:730px;
+	height:248px;
+	float:left;
+	border:1px solid #000000;
+}
