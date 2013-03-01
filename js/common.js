@@ -1,13 +1,8 @@
-//提交表单时提醒检查审核信息
-/*function submit_waring()
- {
- alert("fcuk");
- //var result = confirm("请确认审核信息,提交");
- //if(result == true)
- //	return true;
- //else
- return false;
- }*/
+
+
+function addDocuments(){
+	alert("i am here!");
+}
 
 //核查校内居住职工库
 function check_addresstype(url, addresstype) {

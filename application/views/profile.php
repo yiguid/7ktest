@@ -21,7 +21,7 @@ $this->load->view('header');
 			</div>
 			<div id="file_setting">
 				<img height="20" width="20" align="absmiddle" src="<?php echo base_url();?>images/add_doc.gif"></img>
-				<a href="">添加文档</a>
+				<a href="javascript:addDocuments()">添加文档</a>
 			</div>
 			<div>
 				<table style="width:700px;">
@@ -38,7 +38,13 @@ $this->load->view('header');
 					</tr>
 					<tr>
 						<td>1</td>
-						<td><input type="file" id="file" name="import" value="浏览"/></td>
+						<td>
+							<?php if(isset($error)) echo $error;?>
+							<?php echo form_open_multipart('upload/do_upload');?>
+								<input type="file" name="userfile" size="20" />
+								<input type="submit" value="上传" />
+							</form>
+						</td>
 						<td>100k</td>
 						<td><select id="papersize">
 							<option>A4</option>
@@ -55,6 +61,11 @@ $this->load->view('header');
 							<option>精装</option>
 							</select></td>
 						<td>50元</td>
+					</tr>
+					<tr>
+						<td>
+							<?php if(isset($upload_data)) echo $upload_data['file_name'];?>
+						</td>
 					</tr>
 				</table>
 			</div>
