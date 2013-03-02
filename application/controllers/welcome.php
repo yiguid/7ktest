@@ -21,6 +21,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->data['printerlist'] = $this->printer_mdl->get_printer(); 
+		$this->session->set_userdata('upload_docs','');
 		$this->load->view('profile',$this->data);
 	}
 }

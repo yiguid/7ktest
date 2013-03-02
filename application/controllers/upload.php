@@ -39,7 +39,11 @@ class Upload extends CI_Controller {
   } 
   else
   {
+    $upload_docs = $this->session->userdata('upload_docs');
    $this->data['upload_data'] = $this->upload->data();
+   $upload_docs .= $this->data['upload_data']['file_name']."##";
+   $this->session->set_userdata('upload_docs',$upload_docs);
+   $this->data['upload_docs'] = $upload_docs;
    $this->load->view('profile', $this->data);
   }
  } 

@@ -24,11 +24,11 @@ $this->load->view('header');
 				<a href="javascript:addDocuments()">添加文档</a>
 			</div>
 			<div>
+				<?php if(isset($error)) echo $error;?>
+				<?php echo form_open_multipart('upload/do_upload');?>
 				<table style="width:700px;">
 					<tr>
-						<td>序号</td>
 						<td>文档名</td>
-						<td>大小</td>
 						<td>纸张</td>
 						<td>单/双面</td>
 						<td>页码</td>
@@ -37,15 +37,9 @@ $this->load->view('header');
 						<td>金额</td>
 					</tr>
 					<tr>
-						<td>1</td>
 						<td>
-							<?php if(isset($error)) echo $error;?>
-							<?php echo form_open_multipart('upload/do_upload');?>
-								<input type="file" name="userfile" size="20" />
-								<input type="submit" value="上传" />
-							</form>
+							<input type="file" name="userfile" size="20" />
 						</td>
-						<td>100k</td>
 						<td><select id="papersize">
 							<option>A4</option>
 							<option>B5</option>
@@ -60,14 +54,14 @@ $this->load->view('header');
 							<option>普通</option>
 							<option>精装</option>
 							</select></td>
-						<td>50元</td>
-					</tr>
-					<tr>
-						<td>
-							<?php if(isset($upload_data)) echo $upload_data['file_name'];?>
-						</td>
+						<td>50元<input type="submit" value="上传" /></td>
 					</tr>
 				</table>
+				</form>
+				<div>
+					刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['file_name'];?>
+					已经上传的文件：<?php if(isset($upload_docs)) echo $upload_docs;?>
+				</div>
 			</div>
 		</div>
 		<div id="print_setting">
