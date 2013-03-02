@@ -4,6 +4,24 @@ function addDocuments(){
 	alert("i am here!");
 }
 
+function getRadioValue(radioName){
+	var obj;
+	obj = document.getElementsByName(radioName);
+	if(obj!=null){
+		var i;
+		for(i=0;i<obj.length;i++){
+			if(obj[i].checked){
+				return obj[i].value;
+			}
+		}
+	}
+}
+
+function setPrinterId(){
+	//alert(getRadioValue('printer_address'));
+	document.getElementById('printerid').value = getRadioValue('printer_address');
+}
+
 //核查校内居住职工库
 function check_addresstype(url, addresstype) {
 	var pid = document.getElementById('idpid').value;

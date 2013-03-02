@@ -13,11 +13,11 @@ $this->load->view('header');
 			<table>
 				<tr>
 					<td>用户名：</td>
-					<td><input type="text" name="username" id="username"></input></td>
+					<td><input type="text" name="username" id="username"><?php echo form_error('username')?></input></td>
 				</tr>
 				<tr>
 					<td>密码：</td>
-					<td><input type="password" name="password" id="password"></input></td>
+					<td><input type="password" name="password" id="password"><?php echo form_error('password')?></input></td>
 				</tr>
 				<tr>
 					<td><input type="submit" name="submit" value="提交"/></td>

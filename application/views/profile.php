@@ -10,7 +10,7 @@ $this->load->view('header');
 			</div>
 			<?php foreach($printerlist as $printer):?>  
   
-			<li><?php echo $printer->id ." | ".$printer->name ." | ".$printer->location;?></li>  
+			<li><input type="radio" name="printer_address" value=<?php echo $printer->id;?> onclick="javascript:setPrinterId()"/><?php echo $printer->id ." | ".$printer->name ." | ".$printer->location;?></li>  
   
 			<?php endforeach;?>  
 		</div>
@@ -54,7 +54,7 @@ $this->load->view('header');
 							<option>普通</option>
 							<option>精装</option>
 							</select></td>
-						<td>50元<input type="submit" value="上传" /></td>
+						<td><input type="text" maxlength="7" size="4" id="cost" name="cost"/><input type="submit" value="上传" /></td>
 					</tr>
 				</table>
 				</form>
@@ -70,33 +70,36 @@ $this->load->view('header');
 				取印设置与订单确认
 			</div>
 			<div class="setting_details">
+			<?php echo form_open('printtask/submit') ?>
+				<input type="hidden" name="printerid" id="printerid" value="1">
 				<div>
-					<input type="radio" name="sendMethod" value="self" checked="checked"/>自行取印（免费）
+					<input type="radio" name="method" value="self" checked="checked"/>自行取印（免费）
 				</div>
 				<div>
-					<input type="radio" name="sendMethod" value="campus"/>校园送印
+					<input type="radio" name="method" value="campus"/>校园送印
 				</div>
 				<div>
-					<input type="radio" name="sendMethod" value="express"/>快递送印
+					<input type="radio" name="method" value="express"/>快递送印
 				</div>
 				<div>
-					接收地址<input type="text" name="address"/>
+					接收地址:<input type="text" name="address"/>
 				</div>
 				<div>
-					接收电话<input type="text" name="mobile"/>
+					接收电话:<input type="text" name="mobile"/>
 				</div>
 				<div>
-					送印时间<input type="text" name="delivertime"/>
+					送印时间:<input type="text" name="delivertime"/>
 				</div>
 				<div>
-					印单备注<input type="text" name="remark"/>
+					印单备注:<input type="text" name="remark"/>
 				</div>
 				<div>
-					需要发票<input type="text" name="receipt"/>
+					需要发票:<input type="text" name="receipt"/>
 				</div>
 				<div>
-					费用总计:<span>100元</span><input type="button" value="确认印单" name="submitbtn"/>
+					费用总计:<span><input type="text" maxlength="7" size="4" id="cost" name="cost"/></span><input type="submit" value="确认印单" name="submitbtn"/>
 				</div>
+			</form>
 			</div>
 		</div>
 	</div>

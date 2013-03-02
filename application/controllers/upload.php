@@ -28,7 +28,7 @@ class Upload extends CI_Controller {
  {
   $this->data['printerlist'] = $this->printer_mdl->get_printer(); 
   $config['upload_path'] = './uploads';
-  $config['allowed_types'] = 'gif|jpg|png';
+  $config['allowed_types'] = 'gif|jpg|png|doc|docx|ppt|pptx|zip|rar';
   $config['max_size'] = '10000';
   
   $this->load->library('upload', $config);
@@ -52,15 +52,34 @@ class Upload extends CI_Controller {
    $insert_id = $this->document_mdl->add_document($new_doc);
    //文件打印设置信息插入数据库
    //创建一个打印任务printtask
-   $task = array(
+   $task_id = $this->session->userdata('printtaskid');
+   if($task_id == 0){
+    $task = array(
       'userid' => $this->session->userdata('id'),
       'status' => '打印创建'
     );
-   $task_id = $this->printtask_mdl->add_printtask($task);
+    $task_id = $this->printtask_mdl->add_printtask($task);
+    $this->session->set_userdata('printtaskid',$task_id);
+   }
    //保存设置
+
+   if($this->input->post('papersize') == 0)
+      $papersize = 'A4';
+    else
+      $papersize = 'B5';
+    if($this->input->post('zhuangding') == 0)
+      $zhuangding = '普通';
+    else
+      $zhuangding = '精装';
    $doc_setting = array(
       'printtaskid' => $task_id,
-      'documentid' => $insert_id
+      'documentid' => $insert_id,
+      'papersize' => $papersize,
+      'isdoubleside' => $this->input->post('isdoubleside'),
+      'range' => $this->input->post('range'),
+      'fenshu' => $this->input->post('fenshu'),
+      'zhuangding' => $zhuangding,
+      'cost' => $this->input->post('cost')
     );
    $this->printtask_mdl->add_printtasksetting($doc_setting);
 

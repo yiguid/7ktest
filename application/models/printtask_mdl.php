@@ -14,6 +14,13 @@ class Printtask_mdl extends CI_Model {
 		$this->db->insert('printtask',$data);
 		return ($this->db->affected_rows() > 0) ? mysql_insert_id() : 0;
 	}
+	//提交打印任务
+	public function submit_printtask($id, $data)
+	{
+		$this->db->where('id',$id);
+		$this->db->update('printtask',$data);
+		return ($this->db->affected_rows() > 0) ? mysql_insert_id() : 0;
+	}
 
 	//添加打印任务单个文件设置
 	public function add_printtasksetting($data)
