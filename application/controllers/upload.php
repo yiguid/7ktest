@@ -9,6 +9,8 @@ class Upload extends CI_Controller {
   $this->data['page_title'] = '首页';
     $this->data['user'] = $this->session->userdata('nickname');
     $this->load->model('printer_mdl');
+    $this->load->model('document_mdl');
+    $this->load->model('printtask_mdl');
     
     if(!$this->auth->logged_in())
     {
@@ -39,11 +41,36 @@ class Upload extends CI_Controller {
   } 
   else
   {
+    //上传文件
+    $this->data['upload_data'] = $this->upload->data();
+     //文件信息插入数据库
+   $new_doc = array(
+      'name' => $this->data['upload_data']['file_name'],
+      'url' => "localhost/uploads/".$this->data['upload_data']['file_name'],
+      'uploaduserid' => $this->session->userdata('id')
+    );
+   $insert_id = $this->document_mdl->add_document($new_doc);
+   //文件打印设置信息插入数据库
+   //创建一个打印任务printtask
+   $task = array(
+      'userid' => $this->session->userdata('id'),
+      'status' => '打印创建'
+    );
+   $task_id = $this->printtask_mdl->add_printtask($task);
+   //保存设置
+   $doc_setting = array(
+      'printtaskid' => $task_id,
+      'documentid' => $insert_id
+    );
+   $this->printtask_mdl->add_printtasksetting($doc_setting);
+
+    //保存历史记录
     $upload_docs = $this->session->userdata('upload_docs');
-   $this->data['upload_data'] = $this->upload->data();
-   $upload_docs .= $this->data['upload_data']['file_name']."##";
+   
+   $upload_docs .= $insert_id."|".$this->data['upload_data']['file_name']."##";
    $this->session->set_userdata('upload_docs',$upload_docs);
    $this->data['upload_docs'] = $upload_docs;
+  
    $this->load->view('profile', $this->data);
   }
  } 

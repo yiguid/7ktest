@@ -99,6 +99,7 @@ class User_mdl extends CI_Model {
 		$this->db->join('printer','printer.id=printtask.printerid');
 		$this->db->join('printtasksetting','printtask.id=printtasksetting.printtaskid');
 		$this->db->where('printtask.userid',$userid);
+		$this->db->group_by('printtask.id');
 		$query = $this->db->get();
 		return $query->result();
 	}
