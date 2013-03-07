@@ -46,7 +46,7 @@ class Upload extends CI_Controller {
      //文件信息插入数据库
    $new_doc = array(
       'name' => $this->data['upload_data']['file_name'],
-      'url' => "localhost/uploads/".$this->data['upload_data']['file_name'],
+      'url' => $this->data['upload_data']['file_name'],
       'uploaduserid' => $this->session->userdata('id')
     );
    $insert_id = $this->document_mdl->add_document($new_doc);

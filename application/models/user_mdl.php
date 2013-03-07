@@ -103,6 +103,15 @@ class User_mdl extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+
+	public function get_user_documenthistory($userid)
+	{
+		$this->db->select('*');
+		$this->db->from('document');
+		$this->db->where('uploaduserid',$userid);
+		$query = $this->db->get();
+		return $query->result();
+	}
 	
 	public function get_user_printtask($userid, $id)
 	{
