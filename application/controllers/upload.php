@@ -28,7 +28,7 @@ class Upload extends CI_Controller {
  {
   $this->data['printerlist'] = $this->printer_mdl->get_printer(); 
   $config['upload_path'] = './uploads';
-  $config['allowed_types'] = 'gif|jpg|png|doc|docx|ppt|pptx|zip|rar';
+  $config['allowed_types'] = 'pdf|gif|jpg|png|doc|docx|ppt|pptx|zip|rar';
   $config['max_size'] = '10000';
   
   $this->load->library('upload', $config);
@@ -63,19 +63,23 @@ class Upload extends CI_Controller {
    }
    //保存设置
 
-   if($this->input->post('papersize') == 0)
+   if($this->input->post('papersize') == '0')
       $papersize = 'A4';
     else
       $papersize = 'B5';
-    if($this->input->post('zhuangding') == 0)
+    if($this->input->post('zhuangding') == '0')
       $zhuangding = '普通';
     else
       $zhuangding = '精装';
+  if ($this->input->post('isdoubleside') == '0')
+    $doubleside = false;
+    else
+      $doubleside = true;
    $doc_setting = array(
       'printtaskid' => $task_id,
       'documentid' => $insert_id,
       'papersize' => $papersize,
-      'isdoubleside' => $this->input->post('isdoubleside'),
+      'isdoubleside' => $doubleside,
       'range' => $this->input->post('range'),
       'fenshu' => $this->input->post('fenshu'),
       'zhuangding' => $zhuangding,

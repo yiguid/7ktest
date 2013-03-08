@@ -1,4 +1,18 @@
 
+function deliver(url, printtaskid){
+	alert("deliver!");
+}
+
+function printDocument(url, printtaskid){
+	$.post(url + "ajax/printajax/printDocument", {
+		printtaskid : printtaskid
+	}, function(data) {
+		if (data == "1"){
+			alert("打印完成！");
+			location.reload();
+		}
+	});
+}
 
 function addDocuments(){
 	alert("i am here!");

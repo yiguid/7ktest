@@ -40,17 +40,17 @@ $this->load->view('header');
 						<td>
 							<input type="file" name="userfile" size="20" />
 						</td>
-						<td><select id="papersize">
+						<td><select name="papersize" id="papersize">
 							<option>A4</option>
 							<option>B5</option>
 							</select></td>
-						<td><select id="isdoubleside">
+						<td><select name="isdoubleside" id="isdoubleside">
 							<option>单面</option>
 							<option>双面</option>
 							</select></td>
 						<td><input type="text" maxlength="7" size="4" id="range" name="range"/></td>
 						<td><input type="text" maxlength="3" size="2" id="fenshu" name="fenshu"/></td>
-						<td><select id="zhuangding">
+						<td><select name="zhuangding" id="zhuangding">
 							<option>普通</option>
 							<option>精装</option>
 							</select></td>
