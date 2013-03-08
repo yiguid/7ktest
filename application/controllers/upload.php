@@ -62,27 +62,18 @@ class Upload extends CI_Controller {
     $this->session->set_userdata('printtaskid',$task_id);
    }
    //保存设置
-
-   if($this->input->post('papersize') == '0')
-      $papersize = 'A4';
+  if ($this->input->post('isdoubleside') == '单面')
+    $doubleside = 0;
     else
-      $papersize = 'B5';
-    if($this->input->post('zhuangding') == '0')
-      $zhuangding = '普通';
-    else
-      $zhuangding = '精装';
-  if ($this->input->post('isdoubleside') == '0')
-    $doubleside = false;
-    else
-      $doubleside = true;
+      $doubleside = 1;
    $doc_setting = array(
       'printtaskid' => $task_id,
       'documentid' => $insert_id,
-      'papersize' => $papersize,
+      'papersize' => $this->input->post('papersize'),
       'isdoubleside' => $doubleside,
       'range' => $this->input->post('range'),
       'fenshu' => $this->input->post('fenshu'),
-      'zhuangding' => $zhuangding,
+      'zhuangding' => $this->input->post('zhuangding'),
       'cost' => $this->input->post('cost')
     );
    $this->printtask_mdl->add_printtasksetting($doc_setting);
