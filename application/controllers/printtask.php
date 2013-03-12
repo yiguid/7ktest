@@ -32,10 +32,11 @@ class Printtask extends CI_Controller {
     		'printerid' => $this->input->post('printerid'),
     		'status' => '打印中',
     		'method' => $this->input->post('method'),
+    		'createtime' => date("Y-m-d H:i:s"),
     		'cost' => $this->input->post('cost'),
     		'address' => $this->input->post('address'),
     		'mobile' => $this->input->post('mobile'),
-    		'delivertime' => $this->input->post('delivertime'),
+    		'delivertime' => date("Y-m-d H:i:s", strtotime($this->input->post('delivertime'))),
     		'remark' => $this->input->post('remark'),
     		'receipt' => $this->input->post('receipt')
     	);

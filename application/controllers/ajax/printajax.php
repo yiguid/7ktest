@@ -12,7 +12,7 @@ class Printajax extends CI_Controller {
 	public function printDocument()
 	{
 		extract($_REQUEST);	
-		$arr = array('status' => '打印完成');
+		$arr = array('status' => '打印完成', 'finishtime' => date("Y-m-d H:i:s"));
 		echo $this->printtask_mdl->update_printtask($printtaskid, $arr);
 	}
 

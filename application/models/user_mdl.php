@@ -127,7 +127,7 @@ class User_mdl extends CI_Model {
 	
 	public function get_user_printtask_documents($userid, $id)
 	{
-		$this->db->select('*');
+		$this->db->select('*, printtasksetting.cost as cost');
 		$this->db->from('printtasksetting');
 		$this->db->join('printtask','printtask.id=printtasksetting.printtaskid');
 		$this->db->join('document','document.id=printtasksetting.documentid');
