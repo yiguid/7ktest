@@ -7,6 +7,23 @@ $this->load->view('header');
 	<div id="login_main">
 		<div id="login_left">
 			<h1>Welcome to 7KMall!</h1>
+			<h2>User Login!</h2>
+			<div id="myCarousel" class="carousel slide">
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			  </ol>
+			  <!-- Carousel items -->
+			  <div class="carousel-inner">
+			    <div class="active item"><img src="<?php echo base_url();?>images/bootstrap-mdo-sfmoma-01.jpeg"/></div>
+			    <div class="item"><img src="<?php echo base_url();?>images/bootstrap-mdo-sfmoma-02.jpeg"/></div>
+			    <div class="item"><img src="<?php echo base_url();?>images/bootstrap-mdo-sfmoma-03.jpeg"/></div>
+			  </div>
+			  <!-- Carousel nav -->
+			  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
 		</div>
 		<div id="login_right">
 		<form action="login" method="post">

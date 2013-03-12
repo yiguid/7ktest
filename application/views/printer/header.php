@@ -8,8 +8,7 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/pagination.css" type="text/css" />
 <script src="<?php echo base_url();?>js/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url();?>js/common.js" type="text/javascript"></script>
-<script src="<?php echo base_url();?>js/jquery.pagination.js" type="text/javascript"></script>
-<script src="<?php echo base_url();?>js/jquery.blockUI.js" type="text/javascript"></script>
+<script src="<?php echo base_url();?>js/bootstrap/bootstrap.js"></script>
 <!--[if lte IE 6]>
 <link href="css/ieonly.css" rel="stylesheet" type="text/css" />
 <![endif]-->
