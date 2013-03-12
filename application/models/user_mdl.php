@@ -27,7 +27,8 @@ class User_mdl extends CI_Model {
 				'id' => $result->id,
 				'username' => $result->username,
 				'nickname' => $result->nickname,
-				'level' => $result->level
+				'level' => $result->level,
+				'user_type' => 'user'
 				);
 			 $this->session->set_userdata($session_data);
 		}

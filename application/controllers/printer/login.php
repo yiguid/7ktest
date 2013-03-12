@@ -15,7 +15,7 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
-		if($this->auth->logged_in())
+		if($this->auth->printer_logged_in())
 		{
 			redirect('printer/manage','refresh');
 		}else{			

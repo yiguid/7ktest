@@ -9,7 +9,7 @@ class Manage extends CI_Controller {
 		$this->data['page_title'] = '打印店中心';
 		$this->data['user'] = $this->session->userdata('nickname');
 		
-		if(!$this->auth->logged_in())
+		if(!$this->auth->printer_logged_in())
 		{
 			redirect('printer/login','refresh');
 		}

@@ -16,7 +16,18 @@ class Auth
     // 判断用户是否已经登录 
 	public function logged_in()
 	{
-		return (bool)$this->ci->session->userdata('username');
+		if($this->ci->session->userdata('user_type') == 'user')
+			return (bool)$this->ci->session->userdata('username');
+		else
+			return FALSE;
+	}
+
+	public function printer_logged_in()
+	{
+		if($this->ci->session->userdata('user_type') == 'printer')
+			return TRUE;
+		else
+			return FALSE;
 	}
 
 	//登录
@@ -26,8 +37,8 @@ class Auth
 		{
 			return TRUE;
 		}
-		var_dump($this->ci->user_mdl->login($username,$password));
-		exit();
+		//var_dump($this->ci->user_mdl->login($username,$password));
+		//exit();
 		return FALSE;
 	}
 	
@@ -38,8 +49,8 @@ class Auth
 		{
 			return TRUE;
 		}
-		var_dump($this->ci->printer_mdl->login($username,$password));
-		exit();
+		//var_dump($this->ci->printer_mdl->login($username,$password));
+		//exit();
 		return FALSE;
 	}
 	

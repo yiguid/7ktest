@@ -11,7 +11,7 @@ class Printtask extends CI_Controller {
 		
 		$this->load->model('printer_mdl');
 		
-		if(!$this->auth->logged_in())
+		if(!$this->auth->printer_logged_in())
 		{
 			redirect('printer/login','refresh');
 		}
