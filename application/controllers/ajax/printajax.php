@@ -6,6 +6,7 @@ class Printajax extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('printtask_mdl');
+		$this->load->model('method_mdl');
 	}
 
 	public function printDocument()
@@ -22,12 +23,21 @@ class Printajax extends CI_Controller {
 		if($papersize == 'A4')
 			$price = 0.5;
 		else $price = 0.4;
-		$price *= $fenshu;
-		if($zhuangding == '普通')
-			$price += 2;
+		$pageNum = $this->method_mdl->countPageNum($this->input->post('range'));
+		if($pageNum != -1){
+			$price *= $pageNum;
+			$price *= $fenshu;
+			if($zhuangding != '普通')
+				$price += 2;
+		}
 		else
-			$price += 5;
+			$price = "页码有误";
 		echo $price;
+	}
+
+	public function setPrinterId(){
+		extract($_REQUEST);
+		$this->session->set_userdata('printer_id',$printerid);
 	}
 	
 }

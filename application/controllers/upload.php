@@ -78,12 +78,20 @@ class Upload extends CI_Controller {
     );
    $this->printtask_mdl->add_printtasksetting($doc_setting);
 
+   $doc_data = array(
+      'id' => $insert_id,
+      'qty' => $this->input->post('fenshu'),
+      'price' => $this->input->post('cost') / $this->input->post('fenshu'),
+      'name' => $this->data['upload_data']['file_name'],
+      'options' => array('papersize' => $this->input->post('papersize'),'isdoubleside' => $doubleside,'zhuangding' => $this->input->post('zhuangding'))
+    );
+   $this->cart->insert($doc_data);
     //保存历史记录
-    $upload_docs = $this->session->userdata('upload_docs');
+    //$upload_docs = $this->session->userdata('upload_docs');
    
-   $upload_docs .= $insert_id."|".$this->data['upload_data']['file_name']."##";
-   $this->session->set_userdata('upload_docs',$upload_docs);
-   $this->data['upload_docs'] = $upload_docs;
+   //$upload_docs .= $insert_id."|".$this->data['upload_data']['file_name']."##";
+   //$this->session->set_userdata('upload_docs',$upload_docs);
+   //$this->data['upload_docs'] = $upload_docs;
   
    $this->load->view('profile', $this->data);
   }

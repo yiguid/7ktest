@@ -40,6 +40,7 @@ class Printtask extends CI_Controller {
     		'receipt' => $this->input->post('receipt')
     	);
    		$this->printtask_mdl->submit_printtask($id, $task);
+   		$this->cart->destroy();
    		$this->load->view('submitsucceed');
 	}
 

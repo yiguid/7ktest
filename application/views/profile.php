@@ -10,7 +10,11 @@ $this->load->view('header');
 			</div>
 			<?php foreach($printerlist as $printer):?>  
   
-			<li><input type="radio" name="printer_address" value=<?php echo $printer->id;?> onclick="javascript:setPrinterId()"/><?php echo $printer->id ." | ".$printer->name ." | ".$printer->location;?></li>  
+			<li><input type="radio" name="printer_address" value=<?php echo $printer->id;?> 
+				<?php if($this->session->userdata('printer_id') == $printer->id)
+					echo 'checked';
+				?> 
+				onclick="javascript:setPrinterId('<?php echo base_url();?>')"/><?php echo $printer->id ." | ".$printer->name ." | ".$printer->location;?></li>  
   
 			<?php endforeach;?>  
 		</div>
@@ -54,13 +58,18 @@ $this->load->view('header');
 							<option>普通</option>
 							<option>精装</option>
 							</select></td>
-						<td><input type="text" maxlength="7" size="4" readonly onfocus="compute_money('<?php echo base_url();?>')" id="cost" name="cost"/><input type="submit" onmouseover= "compute_money('<?php echo base_url();?>')" value="上传" /></td>
+						<td><input type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>')" onfocus="compute_money('<?php echo base_url();?>')" id="cost" name="cost"/><input type="submit" onmouseover= "compute_money('<?php echo base_url();?>')" value="上传" /></td>
 					</tr>
 				</table>
 				</form>
 				<div>
 					刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['file_name'];?>
-					已经上传的文件：<?php if(isset($upload_docs)) echo $upload_docs;?>
+					已经上传的文件：
+					<?php 
+						foreach ($this->cart->contents() as $items){
+							echo $items['name'];
+						}
+					?>
 				</div>
 			</div>
 		</div>
@@ -97,7 +106,7 @@ $this->load->view('header');
 					需要发票:<input type="text" name="receipt"/>
 				</div>
 				<div>
-					费用总计:<span><input type="text" maxlength="7" size="4" id="cost" name="cost"/></span><input type="submit" value="确认印单" name="submitbtn"/>
+					费用总计:<span><input type="text" maxlength="7" size="4" id="cost" name="cost" value="<?php echo $this->cart->total();?>" readonly/></span><input type="submit" value="确认印单" name="submitbtn"/>
 				</div>
 			</form>
 			</div>

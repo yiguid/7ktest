@@ -49,8 +49,15 @@ function getRadioValue(radioName){
 	}
 }
 
-function setPrinterId(){
+function setPrinterId(url){
 	//alert(getRadioValue('printer_address'));
+	var printerid = getRadioValue('printer_address');
+	$.post(url + "ajax/printajax/setPrinterId", {
+		printerid : printerid
+	}, function(data) {
+		if (data == "1"){
+		}
+	});
 	document.getElementById('printerid').value = getRadioValue('printer_address');
 }
 

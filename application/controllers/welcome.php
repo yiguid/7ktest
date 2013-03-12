@@ -25,6 +25,7 @@ class Welcome extends CI_Controller {
 		//清空session
 		$this->session->set_userdata('upload_docs','');
 		$this->session->set_userdata('printtaskid','0');
+		$this->cart->destroy();
 		$this->load->view('profile',$this->data);
 	}
 }
