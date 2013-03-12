@@ -63,13 +63,15 @@ $this->load->view('header');
 				</table>
 				</form>
 				<div>
-					刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['file_name'];?>
-					已经上传的文件：
+					<div style="text-align:left; width:700px;">刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['file_name'];?></div>
+					<div style="text-align:left; width:700px;">
+					已经上传的文件：<br>
 					<?php 
 						foreach ($this->cart->contents() as $items){
-							echo $items['name'];
+							echo $items['name']."<br>";
 						}
 					?>
+					</div>
 				</div>
 			</div>
 		</div>
