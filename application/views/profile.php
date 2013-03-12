@@ -54,7 +54,7 @@ $this->load->view('header');
 							<option>普通</option>
 							<option>精装</option>
 							</select></td>
-						<td><input type="text" maxlength="7" size="4" id="cost" name="cost"/><input type="submit" value="上传" /></td>
+						<td><input type="text" maxlength="7" size="4" readonly onfocus="compute_money('<?php echo base_url();?>')" id="cost" name="cost"/><input type="submit" onmouseover= "compute_money('<?php echo base_url();?>')" value="上传" /></td>
 					</tr>
 				</table>
 				</form>

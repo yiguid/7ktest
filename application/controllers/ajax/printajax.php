@@ -14,6 +14,21 @@ class Printajax extends CI_Controller {
 		$arr = array('status' => '打印完成');
 		echo $this->printtask_mdl->update_printtask($printtaskid, $arr);
 	}
+
+	public function compute_money()
+	{
+		extract($_REQUEST);	
+		$price = 0;
+		if($papersize == 'A4')
+			$price = 0.5;
+		else $price = 0.4;
+		$price *= $fenshu;
+		if($zhuangding == '普通')
+			$price += 2;
+		else
+			$price += 5;
+		echo $price;
+	}
 	
 }
 ?>
