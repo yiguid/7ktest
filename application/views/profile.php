@@ -66,7 +66,7 @@ $this->load->view('header');
 				</table>
 				</form>
 				<div>
-					<div style="text-align:left; width:700px;">待上传的文件：<input class="w300" type="text" id="uploadfilename"/></div>
+					<div style="text-align:left; width:700px;">待上传的文件：<input class="w300" type="text" readonly id="uploadfilename"/></div>
 					<div style="text-align:left; width:700px;">刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['file_name'];?></div>
 					<div style="text-align:left; width:700px;">
 					已经上传的文件：<br>
@@ -88,28 +88,28 @@ $this->load->view('header');
 			<?php echo form_open('printtask/submit') ?>
 				<input type="hidden" name="printerid" id="printerid" value="1">
 				<div>
-					<input type="radio" name="method" value="self" checked="checked"/>自行取印（免费）
+					<input class="margin30" type="radio" name="method" value="self" checked="checked"/>自行取印（免费）
 				</div>
 				<div>
-					<input type="radio" name="method" value="campus"/>校园送印
+					<input class="margin30" type="radio" name="method" value="campus"/>校园送印
 				</div>
 				<div>
-					<input type="radio" name="method" value="express"/>快递送印
+					<input class="margin30" type="radio" name="method" value="express"/>快递送印
 				</div>
-				<div>
-					接收地址:<input type="text" name="address"/>
-					接收电话:<input type="text" name="mobile"/>
+				<div class="span9">
+					<div class="span1">接收地址:</div><div class="span7"><input class="span7" type="text" name="address"/></div>
 				</div>
-				<div>
-					送印时间:<input type="text" name="delivertime"/>
+				<div class="span9">
+					<div class="span1">接收电话:</div><div class="span3"><input class="span3" type="text" name="mobile"/></div>
+					<div class="span1">送印时间:</div><div class="span3"><input class="span3" type="text" name="delivertime"/></div>
 				</div>
-				<div>
-					印单备注:<input type="text" name="remark"/>
-					需要发票:<input type="text" name="receipt"/>
+				<div class="span9">
+					<div class="span1">印单备注:</div><div class="span3"><input class="span3" type="text" name="remark"/></div>
+					<div class="span1">需要发票:</div><div class="span3"><input class="span3" type="text" name="receipt"/></div>
 				</div>
-				<div>
-					费用总计:<span><input type="text" maxlength="7" size="4" id="cost" name="cost" value="<?php echo $this->cart->total();?>" readonly/></span>
-					<span><input class="btn btn-large btn-primary offset2" type="submit" value="确认印单" name="submitbtn"/></span>
+				<div class="span9">
+					<div class="span1">费用总计:</div><span class="span3"><input type="text" maxlength="7" size="4" id="cost" name="cost" value="<?php echo $this->cart->total();?>" readonly/></span>
+					<span><input class="btn btn-primary offset1" type="submit" value="确认印单" name="submitbtn"/></span>
 				</div>
 			</form>
 			</div>

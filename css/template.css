@@ -17,7 +17,9 @@ body {
 	height:500px;
 	background:#ffff99;
 }
-
+.margin30{
+	margin-left:30px;
+}
 .w40{
 	width:40px;
 }
