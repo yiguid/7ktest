@@ -18,6 +18,21 @@ body {
 	background:#ffff99;
 }
 
+.w40{
+	width:40px;
+}
+
+.w60{
+	width:60px;
+}
+
+.w100{
+	width:100px;
+}
+.w300{
+	width:300px;
+}
+
 #printer_container{
 	height:500px;
 	background:#ccffff;

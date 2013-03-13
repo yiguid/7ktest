@@ -2,7 +2,6 @@
 $this->load->view('header');
 $this->load->view('menu');
 ?>
-<link href="<?php echo base_url();?>css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
 
 		<div id="managebox">
 			历史印单

@@ -5,7 +5,6 @@ if (! defined ( 'BASEPATH' ))
 $this->load->view ( 'printer/header' );
 $this->load->view ( 'printer/menu' );
 ?>
-<link href="<?php echo base_url();?>css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
 <div id="managebox">
 	历史印单
 	<table style="width: 700px;" class="table table-hover">

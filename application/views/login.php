@@ -2,7 +2,6 @@
 
 $this->load->view('header');
 ?>
-<link href="<?php echo base_url();?>css/bootstrap/bootstrap.css" rel="stylesheet" media="screen">
 <div id="container">
 	<div id="login_main">
 		<div id="login_left">

@@ -6,6 +6,7 @@
 <title><?php echo $page_title;?>-7KMall</title>
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/template.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/pagination.css" type="text/css" />
+<link href="<?php echo base_url();?>css/bootstrap/bootstrap.css" rel="stylesheet" media="screen">
 <script src="<?php echo base_url();?>js/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url();?>js/common.js" type="text/javascript"></script>
 <script src="<?php echo base_url();?>js/bootstrap/bootstrap.js"></script>

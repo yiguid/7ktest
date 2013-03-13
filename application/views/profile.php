@@ -30,7 +30,7 @@ $this->load->view('header');
 			<div>
 				<?php if(isset($error)) echo $error;?>
 				<?php echo form_open_multipart('upload/do_upload');?>
-				<table style="width:700px;">
+				<table class="table" style="width:700px;">
 					<tr>
 						<td>文档名</td>
 						<td>纸张</td>
@@ -39,30 +39,34 @@ $this->load->view('header');
 						<td>份数</td>
 						<td>装订</td>
 						<td>金额</td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>
-							<input type="file" name="userfile" size="20" />
+							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('uploadfilename').value=this.value"/>
+							<input class="btn btn-info" type="button" onclick=userfile.click() value="点击上传文件"/>
 						</td>
-						<td><select name="papersize" id="papersize">
+						<td><select class="w60" name="papersize" id="papersize">
 							<option>A4</option>
 							<option>B5</option>
 							</select></td>
-						<td><select name="isdoubleside" id="isdoubleside">
+						<td><select class="w60" name="isdoubleside" id="isdoubleside">
 							<option>单面</option>
 							<option>双面</option>
 							</select></td>
-						<td><input type="text" maxlength="7" size="4" id="range" name="range"/></td>
-						<td><input type="text" maxlength="3" size="2" id="fenshu" name="fenshu"/></td>
-						<td><select name="zhuangding" id="zhuangding">
+						<td><input class="w60" type="text" maxlength="7" size="4" id="range" name="range"/></td>
+						<td><input class="w60" type="text" maxlength="3" size="2" id="fenshu" name="fenshu"/></td>
+						<td><select class="w60" name="zhuangding" id="zhuangding">
 							<option>普通</option>
 							<option>精装</option>
 							</select></td>
-						<td><input type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>')" onfocus="compute_money('<?php echo base_url();?>')" id="cost" name="cost"/><input type="submit" onmouseover= "compute_money('<?php echo base_url();?>')" value="上传" /></td>
+						<td><input class="w40" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>')" onfocus="compute_money('<?php echo base_url();?>')" id="cost" name="cost"/></td>
+						<td><input class="btn btn-info" type="submit" onmouseover= "compute_money('<?php echo base_url();?>')" value="上传" /></td>
 					</tr>
 				</table>
 				</form>
 				<div>
+					<div style="text-align:left; width:700px;">待上传的文件：<input class="w300" type="text" id="uploadfilename"/></div>
 					<div style="text-align:left; width:700px;">刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['file_name'];?></div>
 					<div style="text-align:left; width:700px;">
 					已经上传的文件：<br>
@@ -94,8 +98,6 @@ $this->load->view('header');
 				</div>
 				<div>
 					接收地址:<input type="text" name="address"/>
-				</div>
-				<div>
 					接收电话:<input type="text" name="mobile"/>
 				</div>
 				<div>
@@ -103,12 +105,11 @@ $this->load->view('header');
 				</div>
 				<div>
 					印单备注:<input type="text" name="remark"/>
-				</div>
-				<div>
 					需要发票:<input type="text" name="receipt"/>
 				</div>
 				<div>
-					费用总计:<span><input type="text" maxlength="7" size="4" id="cost" name="cost" value="<?php echo $this->cart->total();?>" readonly/></span><input type="submit" value="确认印单" name="submitbtn"/>
+					费用总计:<span><input type="text" maxlength="7" size="4" id="cost" name="cost" value="<?php echo $this->cart->total();?>" readonly/></span>
+					<span><input class="btn btn-large btn-primary offset2" type="submit" value="确认印单" name="submitbtn"/></span>
 				</div>
 			</form>
 			</div>
