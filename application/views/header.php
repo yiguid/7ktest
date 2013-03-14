@@ -38,9 +38,10 @@
 				echo "&nbsp;&nbsp;";
 				echo anchor('login','登录'); 
 			}
-			
+			echo "&nbsp;&nbsp;";
+			echo anchor('feedback','反馈留言');
 			?>
-			&nbsp;&nbsp;反馈留言
+			
 		</span>
 	</div>
 </div>

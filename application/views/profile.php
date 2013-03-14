@@ -50,13 +50,13 @@ $this->load->view('header');
 							<option>A4</option>
 							<option>B5</option>
 							</select></td>
-						<td><select class="w60" name="isdoubleside" id="isdoubleside">
+						<td><select class="w70" name="isdoubleside" id="isdoubleside">
 							<option>单面</option>
 							<option>双面</option>
 							</select></td>
 						<td><input class="w60" type="text" maxlength="7" size="4" id="range" name="range"/></td>
 						<td><input class="w60" type="text" maxlength="3" size="2" id="fenshu" name="fenshu"/></td>
-						<td><select class="w60" name="zhuangding" id="zhuangding">
+						<td><select class="w70" name="zhuangding" id="zhuangding">
 							<option>普通</option>
 							<option>精装</option>
 							</select></td>
@@ -69,10 +69,10 @@ $this->load->view('header');
 					<div style="text-align:left; width:700px;">待上传的文件：<input class="w300" type="text" readonly id="uploadfilename"/></div>
 					<div style="text-align:left; width:700px;">刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['file_name'];?></div>
 					<div style="text-align:left; width:700px;">
-					已经上传的文件：<br>
+					已经上传的文件：
 					<?php 
 						foreach ($this->cart->contents() as $items){
-							echo $items['name']."<br>";
+							echo $items['name']." | ";
 						}
 					?>
 					</div>
