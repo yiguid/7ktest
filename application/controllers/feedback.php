@@ -17,11 +17,22 @@ class Feedback extends CI_Controller {
 	public function index()
 	{
 		//清空session
-		$this->session->set_userdata('upload_docs','');
+		$this->data['curPage']=1;
+ 		$this->data['maxPage']=20;
+ 		$this->session->set_userdata('upload_docs','');
 		$this->session->set_userdata('printtaskid','0');
 		$this->cart->destroy();
 		$this->load->view('feedback',$this->data);
 	}
+	public function page($curPage,$maxPage)
+ 	{
+		$this->data['curPage']=$curPage;
+ 		$this->data['maxPage']=$maxPage;
+ 		$this->session->set_userdata('upload_docs','');
+		$this->session->set_userdata('printtaskid','0');
+		$this->cart->destroy();
+		$this->load->view('feedback',$this->data);
+ 	}
 }
 
 /* End of file welcome.php */
