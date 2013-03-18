@@ -1,3 +1,59 @@
+function getRadioValue(radioName){
+	var obj;
+	obj = document.getElementsByName(radioName);
+	if(obj!=null){
+		var i;
+		for(i=0;i<obj.length;i++){
+			if(obj[i].checked){
+				return obj[i].value;
+			}
+		}
+	}
+}
+
+function submit_printtask(){
+	document.getElementById('printerid').value = getRadioValue('printer_address');
+	var printerid = document.getElementById('printerid').value;
+	var mobile = document.getElementById('mobile').value;
+	var delivertime = document.getElementById('delivertime').value;
+	var address = document.getElementById('address').value;
+	var method = getRadioValue('method');
+	var total_cost = document.getElementById('total_cost').value;
+	if(printerid == "-1" || printerid == "undefined")
+		alert("请先选择打印店。");
+	else if(mobile == "")
+		alert("请输入手机号。");
+	else if(delivertime == "")
+		alert("请输入送印时间。");
+	else if(method != "self" && address == "")
+		alert("请输入送印地址。");
+	else if(total_cost == 0)
+		alert("你忘记上传文件啦！");
+	else
+		alert("ok");
+	return false;
+}
+
+function submit_upload(){
+	var cost = document.getElementById('cost').value;
+	var file = document.getElementById('uploadfilename').value;
+	var fs = document.getElementById('fenshu').value;
+	
+	if(isNaN(cost) || isNaN(fs)){
+		alert('页码设置有误，请重新输入！');
+		return false;
+	}
+	else if(fs == ""){
+		alert('份数设置有误，请重新输入！');
+		return false;
+	}
+	else if(file == ""){
+		alert('你忘记上传文件啦！');
+		return false;
+	}
+	else
+		document.getElementById('upload_form').submit();
+}
 
 // 动态获取应交费用
 function compute_money(url) {
@@ -34,19 +90,6 @@ function printDocument(url, printtaskid){
 
 function addDocuments(){
 	alert("i am here!");
-}
-
-function getRadioValue(radioName){
-	var obj;
-	obj = document.getElementsByName(radioName);
-	if(obj!=null){
-		var i;
-		for(i=0;i<obj.length;i++){
-			if(obj[i].checked){
-				return obj[i].value;
-			}
-		}
-	}
 }
 
 function setPrinterId(url){

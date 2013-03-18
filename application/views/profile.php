@@ -29,7 +29,7 @@ $this->load->view('header');
 			</div>
 			<div>
 				<?php if(isset($error)) echo $error;?>
-				<?php echo form_open_multipart('upload/do_upload');?>
+				<?php echo form_open_multipart('upload/do_upload',array('id' => 'upload_form'));?>
 				<table class="table" style="width:700px;">
 					<tr>
 						<td>文档名</td>
@@ -61,7 +61,7 @@ $this->load->view('header');
 							<option>精装</option>
 							</select></td>
 						<td><input class="w40" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>')" onfocus="compute_money('<?php echo base_url();?>')" id="cost" name="cost"/></td>
-						<td><input class="btn btn-info" type="submit" onmouseover= "compute_money('<?php echo base_url();?>')" value="上传" /></td>
+						<td><input class="btn btn-info" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>')" value="上传" /></td>
 					</tr>
 				</table>
 				</form>
@@ -85,8 +85,8 @@ $this->load->view('header');
 				取印设置与订单确认
 			</div>
 			<div class="setting_details">
-			<?php echo form_open('printtask/submit') ?>
-				<input type="hidden" name="printerid" id="printerid" value="1">
+			<?php echo form_open('printtask/submit',array('id' => 'printtask_form')) ?>
+				<input type="hidden" name="printerid" id="printerid" value="-1">
 				<div>
 					<input class="margin30" type="radio" name="method" value="self" checked="checked"/>自行取印（免费）
 				</div>
@@ -97,19 +97,19 @@ $this->load->view('header');
 					<input class="margin30" type="radio" name="method" value="express"/>快递送印
 				</div>
 				<div class="span9">
-					<div class="span1">接收地址:</div><div class="span7"><input class="span7" type="text" name="address"/></div>
+					<div class="span1">接收地址:</div><div class="span7"><input class="span7" type="text" id="address" name="address"/></div>
 				</div>
 				<div class="span9">
-					<div class="span1">接收电话:</div><div class="span3"><input class="span3" type="text" name="mobile"/></div>
-					<div class="span1">送印时间:</div><div class="span3"><input class="span3" type="text" name="delivertime"/></div>
+					<div class="span1">接收电话:</div><div class="span3"><input class="span3" type="text" id="mobile" name="mobile"/></div>
+					<div class="span1">送印时间:</div><div class="span3"><input class="span3" type="text" id="delivertime" name="delivertime"/></div>
 				</div>
 				<div class="span9">
 					<div class="span1">印单备注:</div><div class="span3"><input class="span3" type="text" name="remark"/></div>
 					<div class="span1">需要发票:</div><div class="span3"><input class="span3" type="text" name="receipt"/></div>
 				</div>
 				<div class="span9">
-					<div class="span1">费用总计:</div><span class="span3"><input type="text" maxlength="7" size="4" id="cost" name="cost" value="<?php echo $this->cart->total();?>" readonly/></span>
-					<span><input class="btn btn-primary offset1" type="submit" value="确认印单" name="submitbtn"/></span>
+					<div class="span1">费用总计:</div><span class="span3"><input type="text" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/></span>
+					<span><input class="btn btn-primary offset1" type="button" onclick="submit_printtask()" value="确认印单" name="submitbtn"/></span>
 				</div>
 			</form>
 			</div>
