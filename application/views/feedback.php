@@ -1,10 +1,11 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-$this->load->view('header');
+
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+	$this->load->view('header');
 ?>
 <div id="container">
 	123
-</div>
+
 <div id="pageList">
 <?php
 $this->load->helper('url');
@@ -14,24 +15,25 @@ $this->load->helper('url');
  $endPage = min($curPage + 3,$maxPage);
  if($curPage > 1)
  {
- 	echo anchor("messageBoard/page/1/$maxPage", '<<');
- 	echo anchor("messageBoard/page/$prevPage/$maxPage", '<');
+ 	echo anchor("feedback/page/1/$maxPage", '<<');
+ 	echo anchor("feedback/page/$prevPage/$maxPage", '<');
  }
  for($i = $startPage;$i<$curPage;$i++)
  {
- 	echo anchor("messageBoard/page/$i/$maxPage", "$i");
+ 	echo anchor("feedback/page/$i/$maxPage", "$i");
  }
  echo "$curPage";
  for($i = $curPage +1;$i<=$endPage;$i++)
  {
- 	echo anchor("messageBoard/page/$i/$maxPage", "$i");
+ 	echo anchor("feedback/page/$i/$maxPage", "$i");
  }
  
  if($curPage < $maxPage)
  {
- 	echo anchor("messageBoard/page/$nextPage/$maxPage", '>');
- 	echo anchor("messageBoard/page/$maxPage/$maxPage", '>>');
+ 	echo anchor("feedback/page/$nextPage/$maxPage", '>');
+ 	echo anchor("feedback/page/$maxPage/$maxPage", '>>');
  }
 ?>
+</div>
 </div>
 <?php $this->load->view('footer'); ?>
