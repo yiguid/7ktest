@@ -51,12 +51,12 @@ body {
 #login_left{
 	float:left;
 	width:500px;
-	padding-left:100px;
+	padding:30px 0 0 0;
 }
 
 #login_right{
 	float:left;
-	padding:100px;
+	padding:100px 0 0 50px;
 }
 
 #page_bg {
@@ -275,8 +275,6 @@ table {
 	width: 100%;
 	border-collapse: collapse;
 	padding: 0;
-	margin-left: 30px;
-	margin-bottom: 15px;
 }
 
 #list_header {

@@ -75,6 +75,10 @@ class User_mdl extends CI_Model {
 		}
 	}
 
+	public function regist($data){
+		return $this->add_user($data);
+	}
+
 	//添加用户
 	public function add_user($data)
 	{
