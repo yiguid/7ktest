@@ -44,6 +44,41 @@ body {
 	background:#ccffff;
 }
 
+#feedback_container{
+	padding-top:30px;
+	background:#ccff99;
+}
+
+.feedback_view{
+	width: 800px;
+	background: white;
+}
+
+.feedback_message{
+	margin:20px 200px 20px 20px;
+	border: 1px solid #cccccc;
+	background: #ccffcc;
+	text-align: left;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.feedback_reply{
+	margin:20px 20px 20px 200px;
+	border: 1px solid #cccccc;
+	background: #ccfffe;
+	text-align: right;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#msgcontent{
+	width: 800px;
+	height: 100px;
+}
+
 #login_main{
 	background:#ffff99;
 }
