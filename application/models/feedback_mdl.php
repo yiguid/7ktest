@@ -49,9 +49,29 @@ class Feedback_mdl extends CI_Model {
 		$this->db->from('message');
 		$this->db->join('user','message.uid = user.id');
 		$this->db->limit($line,$start);
-		$this->db->order_by("date","desc","time","desc");
+		$this->db->order_by("message.id",'desc');
 		$query = $this->db->get();
 		return $query->result();
+	}
+	public function get_msg_by_id($msgid)
+	{
+		$this->db->select('message.id as id, type ,content, date, time, nickname');
+		$this->db->from('message');
+		$this->db->join('user','message.uid = user.id');
+		$this->db->where('message.id',$msgid);
+		$query = $this->db->get();
+		if($query->num_rows() == 1)
+		{
+			foreach($query->result() as $row)
+			{
+				return $row;
+			} 
+		}
+		else
+		{
+			return false;
+		}
+		
 	}
 	public function get_msg_total()
 	{

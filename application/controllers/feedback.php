@@ -12,6 +12,9 @@ class Feedback extends CI_Controller {
 		$this->load->model('user_mdl');
 		$this->load->model('printer_mdl');
 		$this->load->model('feedback_mdl');
+		$this->load->library('form_validation');
+		$this->session->set_userdata('upload_docs','');
+		$this->session->set_userdata('printtaskid','0');
 	}
 	
 	public function index()
@@ -29,15 +32,14 @@ class Feedback extends CI_Controller {
  		$pageBase = $this->config->item('pageBase');
  		$start = ($curPage -1) * $pageBase;
 		$this->data['msglist']= $this->feedback_mdl->get_msg($pageBase,$start);
- 		$this->session->set_userdata('upload_docs','');
-		$this->session->set_userdata('printtaskid','0');
 		$this->load->view('feedback',$this->data);
  	}
  	public function create()
  	{
- 		$this->load->library('form_validation');
-
-		//$rules['msgcontent'] = "required";
+		if(!$this->auth->logged_in())
+		{
+			redirect('login','refresh');
+		}
 		$this->form_validation->set_rules('msgcontent', '留言', 'required');
  		if ($this->form_validation->run() == FALSE)
 		{
@@ -53,19 +55,56 @@ class Feedback extends CI_Controller {
 			$uid = $this->session->userdata('id');
 			if($this->feedback_mdl->add_msg($type,$content,$date,$time,$uid))
 			{
-				redirect('feedback','index');
+				redirect(base_url().'feedback','index');
 			}
 			else
 			{
 				$this->data['error']="留言失败";
+				$this->load->view('error_view',$this->data);
 			}
 
 		}
  	}
- 	public function reply($id)
+ 	public function reply($msgid)
  	{
- 		
+ 		if(!$this->auth->logged_in())
+		{
+			redirect('login','refresh');
+		}
+ 		$this->data['msg']     = $this->feedback_mdl->get_msg_by_id($msgid);
+ 		$this->data['rpylist'] = $this->feedback_mdl->get_msg_all_rpy($msgid);
+ 		$this->load->view('reply_view',$this->data);
  	}
+ 	public function doReply($msgid)
+ 	{
+ 		if(!$this->auth->logged_in())
+		{
+			redirect('login','refresh');
+		}
+ 		$this->form_validation->set_rules('msgcontent', '留言', 'required');
+ 		if ($this->form_validation->run() == FALSE)
+ 		{
+ 			redirect(base_url()."feedback/reply/$msgid");
+ 		}
+ 		else
+ 		{
+ 			$content = $this->input->post('msgcontent');
+			$date = date("Y-m-d");
+			$time = date("H:i:s");
+			$uid = $this->session->userdata('id');
+			$floor = count($this->feedback_mdl->get_msg_all_rpy($msgid)) + 1;
+ 			if($this->feedback_mdl->add_rpy($content,$date,$time,$msgid,$floor,$uid))
+ 			{
+ 				redirect(base_url()."feedback/reply/$msgid");
+ 			}
+ 			else
+ 			{
+ 				$this->data['error']="回复失败";
+				$this->load->view('error_view',$this->data);
+ 			}
+ 		}
+ 	}
+
 }
 
 /* End of file welcome.php */

@@ -1,5 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	$this->load->view('header');
+	$this->load->helper('url');
 ?>
 <div id="container">
 
@@ -7,23 +8,29 @@
 	<div class="view">
 	<?php
 		$this->load->model('feedback_mdl');
+		$typearr=array('催单','网站错误','功能建议','投诉');
 		foreach($msglist as $row)
 		{
 
 			echo "<div>";
 			echo $row->content;
+			echo '<br/>';
+			echo $typearr[$row->type - 1];
 			echo $row->date;
 			echo $row->time;
 			echo $row->nickname;
+			if(isset($user)){
+				echo anchor("feedback/reply/$row->id", "回复");
+			}
 			echo "</div>";
 			$rpylist = $this->feedback_mdl->get_msg_all_rpy($row->id);
 			foreach($rpylist as $rpy)
 			{
 				echo "<div>";
-				echo $row->content;
-				echo $row->date;
-				echo $row->time;
-				echo $row->nickname;
+				echo $rpy->content;
+				echo $rpy->date;
+				echo $rpy->time;
+				echo $rpy->nickname;
 				echo "</div>";
 			}
 		}
@@ -33,8 +40,7 @@
 	<div class="pagination" id="pagelist">
 	<ul>
 	<?php
-	 $path = 'feedback/display';
-	 $this->load->helper('url');
+	 $path = base_url().'feedback/display';
 	 $prevPage = max(1,$curPage-1);
 	 $nextPage = min($curPage+1,$maxPage);
 	 $startPage = max(1,$curPage - 3);
@@ -74,9 +80,9 @@
 	?>
 	</ul>
 	</div>
-	
+	<?php if(isset($user)){	?>
 	<div class="create">
-		<form class="form-horizontal" action="feedback/create" method="post">
+		<form class="form-horizontal" action="<?php echo base_url();?>feedback/create" method="post">
 		 <div class="control-group">
 		    <span class="help-inline">* 留言类型：</span>
 		    <label class="radio inline">
@@ -104,5 +110,10 @@
 		     </p>
 		</form>
 	</div>
+	<?php }else{?>
+	<div>
+		 若您要留言？请您先<?php echo anchor(base_url().'login','登录');?>
+	</div>
+	<?php }?>
 </div>
 <?php $this->load->view('footer'); ?>

@@ -3,7 +3,7 @@
 ?>
 <div id="container">
 <div class="leave">
-<form class="form-horizontal" action="create" method="post">
+<form class="form-horizontal" action="<?php echo base_url();?>feedback/create" method="post">
  <div class="control-group">
     <span class="help-inline">* 留言类型：</span>
     <label class="radio inline">
