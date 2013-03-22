@@ -1,7 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-	$this->load->view('header');
+	if(!$this->auth->printer_logged_in())
+	{
+		$this->load->view('header');
+	}
+	else
+	{
+		$this->load->view('printer/header');
+	}
 ?>
-<div id="container">
+<div>
 <div class="leave">
 <form class="form-horizontal" action="<?php echo base_url();?>feedback/create" method="post">
  <div class="control-group">

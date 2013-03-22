@@ -6,9 +6,16 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-$this->load->view('header');
+	if(!$this->auth->printer_logged_in())
+	{
+		$this->load->view('header');
+	}
+	else
+	{
+		$this->load->view('printer/header');
+	}
 ?>
-<div id='container'>
+<div>
 <?php echo $error;?>
 </div>
 <?php $this->load->view('footer'); ?>

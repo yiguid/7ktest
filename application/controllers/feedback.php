@@ -38,7 +38,14 @@ class Feedback extends CI_Controller {
  	{
 		if(!$this->auth->logged_in())
 		{
-			redirect('login','refresh');
+			if(!$this->auth->printer_logged_in())
+			{
+				redirect('login','refresh');
+			}
+			else
+			{
+				redirect(base_url().'feedback');
+			}
 		}
 		$this->form_validation->set_rules('msgcontent', '留言', 'required');
  		if ($this->form_validation->run() == FALSE)
@@ -67,9 +74,16 @@ class Feedback extends CI_Controller {
  	}
  	public function reply($msgid)
  	{
- 		if(!$this->auth->logged_in())
+		if(!$this->auth->logged_in())
 		{
-			redirect('login','refresh');
+			if(!$this->auth->printer_logged_in())
+			{
+				redirect('login','refresh');
+			}
+			else
+			{
+				redirect(base_url().'feedback');
+			}
 		}
  		$this->data['msg']     = $this->feedback_mdl->get_msg_by_id($msgid);
  		$this->data['rpylist'] = $this->feedback_mdl->get_msg_all_rpy($msgid);
@@ -77,9 +91,16 @@ class Feedback extends CI_Controller {
  	}
  	public function doReply($msgid)
  	{
- 		if(!$this->auth->logged_in())
+		if(!$this->auth->logged_in())
 		{
-			redirect('login','refresh');
+			if(!$this->auth->printer_logged_in())
+			{
+				redirect('login','refresh');
+			}
+			else
+			{
+				redirect(base_url().'feedback');
+			}
 		}
  		$this->form_validation->set_rules('msgcontent', '留言', 'required');
  		if ($this->form_validation->run() == FALSE)

@@ -1,7 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-	$this->load->view('header');
+	if($this->auth->printer_logged_in())
+	{
+		$this->load->view('printer/header');
+	}
+	else
+	{
+		$this->load->view('header');
+	}
 ?>
-<div id="container">
+<div>
 <?php
 		echo "<div>";
 		echo $msg->content;

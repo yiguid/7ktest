@@ -1,8 +1,16 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-	$this->load->view('header');
+	
+	if(!$this->auth->printer_logged_in())
+	{
+		$this->load->view('header');
+	}
+	else
+	{
+		$this->load->view('printer/header');
+	}
 	$this->load->helper('url');
 ?>
-<div id="container">
+<div>
 
 
 	<div class="view">
@@ -19,7 +27,7 @@
 			echo $row->date;
 			echo $row->time;
 			echo $row->nickname;
-			if(isset($user)){
+			if($this->auth->logged_in()){
 				echo anchor("feedback/reply/$row->id", "回复");
 			}
 			echo "</div>";
@@ -80,7 +88,7 @@
 	?>
 	</ul>
 	</div>
-	<?php if(isset($user)){	?>
+	<?php if($this->auth->logged_in()){	?>
 	<div class="create">
 		<form class="form-horizontal" action="<?php echo base_url();?>feedback/create" method="post">
 		 <div class="control-group">
@@ -110,7 +118,8 @@
 		     </p>
 		</form>
 	</div>
-	<?php }else{?>
+	
+	<?php }elseif(!$this->auth->printer_logged_in()){?>
 	<div>
 		 若您要留言？请您先<?php echo anchor(base_url().'login','登录');?>
 	</div>
