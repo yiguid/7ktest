@@ -10,10 +10,10 @@ $this->load->view('menu');
 				</tr>
 				<?php foreach($documenthistorylist as $doc):?>  
 					<tr>
-					<?php echo "<td>".$doc->id ."</td><td>".$doc->name ."</td><td>".$doc->keyword."</td><td>".$doc->type."</td><td>".$doc->size."</td><td>".$doc->uploadtime."</td><td><a href=\"uploads/".$doc->url."\" >另存为</a></td>";?>
+					<?php echo "<td>".$doc->id ."</td><td>".substr($doc->name, 0,30)."</td><td>".$doc->keyword."</td><td>".$doc->type."</td><td>".$doc->size."</td><td>".$doc->uploadtime."</td><td><a href=\"uploads/".$doc->url."\" >另存为</a></td>";?>
 					</tr>  
   
-					<?php endforeach;?>  
+					<?php endforeach;?>
 			</table>
 		</div>
 	</div>
