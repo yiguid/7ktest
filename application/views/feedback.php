@@ -18,24 +18,23 @@
 			$typearr=array('催单','网站错误','功能建议','投诉');
 			foreach($msglist as $row)
 			{
-
-				echo "<div class='feedback_message'>";
-				echo "[".$typearr[$row->type - 1]."]";
-				echo $row->content;
+				echo "<div class='btn-info feedback_message'>";
+				echo "<b>[".$typearr[$row->type - 1]."]</b>"."&nbsp;";
+				echo "<i class='icon-comment icon-white'></i>".$row->content;
 				echo '<br/>';
-				echo $row->nickname."&nbsp;&nbsp;&nbsp;";
+				echo "<i class='icon-user'></i>".$row->nickname."&nbsp;&nbsp;";
 				echo $row->date." ";
 				echo $row->time." ";
 				if($this->auth->logged_in()){
-					echo anchor("feedback/reply/$row->id", "[回复]");
+					echo anchor("feedback/reply/$row->id", "[<i class='icon-retweet icon-white'></i>回复]");
 				}
 				echo "</div>";
 				$rpylist = $this->feedback_mdl->get_msg_all_rpy($row->id);
 				foreach($rpylist as $rpy)
 				{
-					echo "<div class='feedback_reply'>";
-					echo $rpy->content."<br/>";
-					echo $rpy->nickname."&nbsp;&nbsp;&nbsp;";
+					echo "<div class='btn-warning feedback_reply'>";
+					echo "<i class='icon-comment icon-white'></i>".$rpy->content."<br/>";
+					echo "<i class='icon-user'></i>".$rpy->nickname."&nbsp;&nbsp;&nbsp;";
 					echo $rpy->date." ";
 					echo $rpy->time;	
 					echo "</div>";
@@ -44,7 +43,7 @@
 		?>
 		</div>
 		
-		<div class="pagination" id="pagelist">
+		<div class="pagination btn" id="pagelist">
 			<ul>
 			<?php
 			 $path = base_url().'feedback/display';
@@ -110,6 +109,7 @@
 			    </label>
 			</div>
 			<div>
+				 <?php if(isset($create_error)) echo "<lable>".$create_error."</lable>";?>
 			     <textarea name="msgcontent" id="msgcontent"></textarea>
 			</div>
 			<div style="padding:10px;">

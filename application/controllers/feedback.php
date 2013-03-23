@@ -50,7 +50,8 @@ class Feedback extends CI_Controller {
 		$this->form_validation->set_rules('msgcontent', '留言', 'required');
  		if ($this->form_validation->run() == FALSE)
 		{
-			$this->load->view('createmsg_view',$this->data);
+			$this->data['create_error'] = "内容不能为空";
+			$this->index();
 		}
 		else
 		{

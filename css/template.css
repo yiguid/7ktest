@@ -50,12 +50,13 @@ body {
 }
 
 .feedback_view{
-	width: 800px;
-	background: white;
+	width: 900px;
+	background: #ffeeff;
 }
 
 .feedback_message{
-	margin:20px 200px 20px 20px;
+	margin:20px 300px 20px 20px;
+	padding:10px;
 	border: 1px solid #cccccc;
 	background: #ccffcc;
 	text-align: left;
@@ -65,7 +66,8 @@ body {
 }
 
 .feedback_reply{
-	margin:20px 20px 20px 200px;
+	margin:20px 20px 20px 300px;
+	padding:10px;
 	border: 1px solid #cccccc;
 	background: #ccfffe;
 	text-align: right;

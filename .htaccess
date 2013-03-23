@@ -1,3 +1,3 @@
 RewriteEngine on   
-RewriteCond $1 !^(index\.php|uploads|images|js|robots|css|\.txt)   
+RewriteCond $1 !^(index\.php|uploads|images|img|js|robots|css|\.txt)   
 RewriteRule ^(.*)$ /7ktest/index.php/$1 [L]
