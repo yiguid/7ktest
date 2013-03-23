@@ -55,7 +55,7 @@ body {
 }
 
 .feedback_message{
-	margin:20px 300px 20px 20px;
+	margin:20px 50px 20px 20px;
 	padding:10px;
 	border: 1px solid #cccccc;
 	background: #ccffcc;
@@ -66,11 +66,11 @@ body {
 }
 
 .feedback_reply{
-	margin:20px 20px 20px 300px;
+	margin:20px 20px 20px 50px;
 	padding:10px;
 	border: 1px solid #cccccc;
 	background: #ccfffe;
-	text-align: right;
+	text-align: left;
 	-webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;

@@ -122,7 +122,7 @@ class Feedback extends CI_Controller {
  			else
  			{
  				$this->data['error']="回复失败";
-				$this->load->view('error_view',$this->data);
+				$this->load->view('error',$this->data);
  			}
  		}
  	}
