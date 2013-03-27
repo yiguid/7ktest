@@ -33,7 +33,7 @@ class Printtask extends CI_Controller {
     		'status' => '打印中',
     		'method' => $this->input->post('method'),
     		'createtime' => date("Y-m-d H:i:s"),
-    		'cost' => $this->input->post('cost'),
+    		'cost' => $this->input->post('total_cost'),
     		'address' => $this->input->post('address'),
     		'mobile' => $this->input->post('mobile'),
     		'delivertime' => date("Y-m-d H:i:s", strtotime($this->input->post('delivertime'))),
@@ -42,7 +42,8 @@ class Printtask extends CI_Controller {
     	);
    		$this->printtask_mdl->submit_printtask($id, $task);
    		$this->cart->destroy();
-   		$this->load->view('submitsucceed');
+   		$this->data['user'] = $this->session->userdata('nickname');
+   		$this->load->view('submitsucceed',$this->data);
 	}
 
 }

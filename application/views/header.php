@@ -6,10 +6,13 @@
 <title><?php echo $page_title;?>-7KMall</title>
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/template.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/pagination.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>css/datetimepicker.css" type="text/css" />
 <link href="<?php echo base_url();?>css/bootstrap/bootstrap.css" rel="stylesheet" media="screen">
 <script src="<?php echo base_url();?>js/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url();?>js/common.js" type="text/javascript"></script>
 <script src="<?php echo base_url();?>js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
 <!--[if lte IE 6]>
 <link href="css/ieonly.css" rel="stylesheet" type="text/css" />
 <![endif]-->

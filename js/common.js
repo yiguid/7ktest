@@ -30,7 +30,7 @@ function submit_printtask(){
 	else if(total_cost == 0)
 		alert("你忘记上传文件啦！");
 	else
-		alert("ok");
+		document.getElementById('printtask_form').submit();
 	return false;
 }
 

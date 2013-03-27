@@ -10,11 +10,12 @@ $this->load->view('header');
 			</div>
 			<?php foreach($printerlist as $printer):?>  
   
-			<li><input type="radio" name="printer_address" value=<?php echo $printer->id;?> 
+			<li><label><input class="radio inline" type="radio" name="printer_address" value=<?php echo $printer->id;?> 
 				<?php if($this->session->userdata('printer_id') == $printer->id)
 					echo 'checked';
 				?> 
-				onclick="javascript:setPrinterId('<?php echo base_url();?>')"/><?php echo $printer->id ." | ".$printer->name ." | ".$printer->location;?></li>  
+				onclick="javascript:setPrinterId('<?php echo base_url();?>')"/><?php echo $printer->id ." | ".$printer->name ." | ".$printer->location;?>
+			</label></li>  
   
 			<?php endforeach;?>  
 		</div>
@@ -88,20 +89,38 @@ $this->load->view('header');
 			<?php echo form_open('printtask/submit',array('id' => 'printtask_form')) ?>
 				<input type="hidden" name="printerid" id="printerid" value="-1">
 				<div>
-					<input class="margin30" type="radio" name="method" value="self" checked="checked"/>自行取印（免费）
+					<label><input class="margin30 radio inline" type="radio" name="method" value="self" checked="checked"/>自行取印（免费）</label>
 				</div>
 				<div>
-					<input class="margin30" type="radio" name="method" value="campus"/>校园送印
+					<label><input class="margin30 radio inline" type="radio" name="method" value="campus"/>校园送印</label>
 				</div>
 				<div>
-					<input class="margin30" type="radio" name="method" value="express"/>快递送印
+					<label><input class="margin30 radio inline" type="radio" name="method" value="express"/>快递送印</label>
 				</div>
 				<div class="span9">
 					<div class="span1">接收地址:</div><div class="span7"><input class="span7" type="text" id="address" name="address"/></div>
 				</div>
 				<div class="span9">
 					<div class="span1">接收电话:</div><div class="span3"><input class="span3" type="text" id="mobile" name="mobile"/></div>
-					<div class="span1">送印时间:</div><div class="span3"><input class="span3" type="text" id="delivertime" name="delivertime"/></div>
+					<div class="span1">送印时间:</div>
+					<div class="span3">
+						<div class="input-append date form_datetime">
+						    <input size="16" type="text"  id="delivertime" name="delivertime" value="" readonly>
+						    <span class="add-on"><i class="icon-th"></i></span>
+						</div>
+						<script type="text/javascript">
+						    $(".form_datetime").datetimepicker({
+						        format: "yyyy-mm-dd hh:ii:ss",
+						        weekStart: 1,
+						        todayBtn:  1,
+								autoclose: 1,
+								todayHighlight: 1,
+								startView: 2,
+								forceParse: 0,
+								language: 'zh-CN'
+						    });
+						</script>  
+					</div>
 				</div>
 				<div class="span9">
 					<div class="span1">印单备注:</div><div class="span3"><input class="span3" type="text" name="remark"/></div>

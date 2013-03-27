@@ -14,7 +14,7 @@ body {
 }
 
 #container{
-	height:560px;
+	height:570px;
 	background:#ffff99;
 }
 .margin30{
@@ -40,7 +40,7 @@ body {
 }
 
 #printer_container{
-	height:560px;
+	height:570px;
 	background:#ccffff;
 }
 
@@ -403,7 +403,7 @@ a.readon {
 }
 #printer_list{
 	width:200px;
-	height:558px;
+	height:568px;
 	float:left;
 	border:1px solid #000000;
 }
@@ -432,14 +432,14 @@ a.readon {
 }
 #managebox{
 	width:730px;
-	height:558px;
+	height:568px;
 	float:left;
 	border:1px solid #000000;
 }
 
 #print_setting{
 	width:730px;
-	height:248px;
+	height:258px;
 	float:left;
 	border:1px solid #000000;
 }
