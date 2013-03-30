@@ -3,9 +3,17 @@ $this->load->view('header');
 ?>
 <div id="container">
 	<div id="profile">
-		<div>
-			<?php echo anchor('location/at/beijing','北京'); ?>
-			<?php echo anchor('location/at/shanghai','上海'); ?>
+		<div style="padding:20px;">
+			<a style="color:white;" href="<?php echo base_url();?>location/at/beijing"
+				class="btn btn-warning btn-large"
+				onmouseover= "get_printshop_by_location('<?php echo base_url();?>','beijing')">北京</a>
+			<a style="color:white;" href="<?php echo base_url();?>location/at/shanghai"
+				class="btn btn-warning btn-large"
+				onmouseover= "get_printshop_by_location('<?php echo base_url();?>','shanghai')">上海</a>
+		</div>
+		<div id="printshop">
+			<a style="color:white;" href="#"
+				class="btn btn-info btn-large">请选择您所在的区域...</a>
 		</div>
 	</div>
 </div>

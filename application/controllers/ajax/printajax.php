@@ -7,6 +7,7 @@ class Printajax extends CI_Controller {
 		parent::__construct();
 		$this->load->model('printtask_mdl');
 		$this->load->model('method_mdl');
+		$this->load->model('printer_mdl');
 	}
 
 	public function printDocument()
@@ -16,6 +17,16 @@ class Printajax extends CI_Controller {
 		echo $this->printtask_mdl->update_printtask($printtaskid, $arr);
 	}
 
+	public function get_printshop_by_location()
+	{
+		extract($_REQUEST);
+		$printerlist = $this->printer_mdl->get_printer_by_location($location);
+		foreach($printerlist as $printer){
+			echo "<div><a style=\"color:white;\" class=\"btn btn-info btn-large\"
+			 href=\"".base_url()."printshop/name/"
+			.$printer->username."\">".$printer->name."</a></div>";
+		}
+	}
 	public function compute_money()
 	{
 		extract($_REQUEST);	

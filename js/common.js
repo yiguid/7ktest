@@ -1,3 +1,12 @@
+// 动态获取所在地打印店
+function get_printshop_by_location(url,location) {
+	$.post(url + "ajax/printajax/get_printshop_by_location", {
+		location : location
+	}, function(data) {
+		$("#printshop").html(data);
+	});
+}
+
 function getRadioValue(radioName){
 	var obj;
 	obj = document.getElementsByName(radioName);
