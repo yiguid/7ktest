@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Printer extends CI_Controller {
+class Printshop extends CI_Controller {
 
 	public function __construct()
 	{
@@ -10,7 +10,6 @@ class Printer extends CI_Controller {
 		$this->data['user'] = $this->session->userdata('nickname');
 
 		$this->load->model('printer_mdl');
-		
 		if(!$this->auth->logged_in())
 		{
 			redirect('login','refresh');
