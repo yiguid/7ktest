@@ -52,6 +52,14 @@ class Printer_mdl extends CI_Model {
 		return $query->result();
 	}
 
+	public function get_printer_by_location($location){
+		$this->db->select('*');
+		$this->db->from('printer');
+		$this->db->like('location',$this->config->item($location));
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	//删除打印店
 	public function delete_printer($name)
 	{

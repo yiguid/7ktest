@@ -8,6 +8,7 @@ $this->load->view('header');
 				<img height="20" width="20" src="<?php echo base_url();?>images/step1.gif"></img>
 				选择打印店
 			</div>
+			<div style="text-align:right;"><i class='icon-map-marker'></i><?php echo anchor('place','切换地址'); ?></div>
 			<?php foreach($printerlist as $printer):?>  
   
 			<li><label><input class="radio inline" type="radio" name="printer_address" value=<?php echo $printer->id;?> 

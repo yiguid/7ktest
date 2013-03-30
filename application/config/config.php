@@ -361,3 +361,6 @@ $config['proxy_ips'] = '';
 /* End of file config.php */
 /* Location: ./application/config/config.php */
 $config['pageBase'] = 10;
+
+$config['beijing'] = '北京';
+$config['shanghai'] = '上海';
