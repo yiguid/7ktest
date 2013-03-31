@@ -1,4 +1,11 @@
 /*全局设置*/
+.divider {
+	height: 1px;
+	margin: 8px 1px;
+	overflow: hidden;
+	background-color: #e5e5e5;
+	border-bottom: 1px solid #fffff9;
+}
 
 html {
   height: 100%;
@@ -167,6 +174,43 @@ body.width_fmax #wrapper {
 	width:800px;
 }
 
+#menu_list a{
+	color:#aaa;
+	text-decoration: none;
+}
+
+#menu_list a:hover{
+	color: white;
+}
+
+#dropdown-menu a{
+	color:black;
+}
+
+.menu_title{
+	text-align: left;
+	margin:10px 0 0 30px;
+}
+
+.menu_content{
+	text-align: left;
+	margin:10px 0 0 30px;
+}
+
+.content-header{
+	text-align: left;
+	padding: 20px;
+}
+
+.content-password{
+	text-align: center;
+	width: 400px;
+}
+
+.content-address{
+	text-align: center;
+	width: 500px;
+}
 
 #header_l {
 	position: relative;

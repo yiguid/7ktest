@@ -20,4 +20,14 @@ class Manage extends CI_Controller {
 		//$this->data['printerlist'] = $this->printer_mdl->get_printer(); 
 		$this->load->view('manage',$this->data);
 	}
+
+	public function changepwd(){
+		$this->data['page_title'] = '修改密码';
+		$this->load->view('manage/changepwd',$this->data);
+	}
+
+	public function address(){
+		$this->data['page_title'] = '我的地址';
+		$this->load->view('manage/address',$this->data);
+	}
 }

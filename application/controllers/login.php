@@ -55,27 +55,27 @@ class Login extends CI_Controller {
 		{
 			redirect('login','refresh');
 		}
-		$this->data['user'] = $this->session->userdata('username');
-
-		$this->form_validation->set_rules('new_password','新密码','required|min_length[6]|trim|matches[confirm_password]');
-		$this->form_validation->set_rules('confirm_password','确认密码','required|min_length[6]|trim');
+		$this->data['user'] = $this->session->userdata('nickname');
+		$this->form_validation->set_rules('old_password','原密码','required|min_length[6]|trim');
+		$this->form_validation->set_rules('new_password','新密码','required|min_length[6]|trim|matches[re_new_password]');
+		$this->form_validation->set_rules('re_new_password','确认密码','required|min_length[6]|trim');
 		
 		if($this->form_validation->run() == FALSE)
 		{
-			$this->load->view('password',$this->data);
+			$this->load->view('manage/changepwd',$this->data);
 		}
-		else if($this->user_mdl->password($this->input->post('new_password'),$this->data['user']))
+		else if($this->user_mdl->password($this->input->post('old_password'),$this->input->post('new_password'),$this->session->userdata('username')))
 		{
 			echo "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head><body>";
-	echo "<script language=\"javascript\">alert('修改成功');window.history.back();</script>";
-	echo "</body></html>";
+			echo "<script language=\"javascript\">alert('修改成功');window.history.back();</script>";
+			echo "</body></html>";
 			//redirect('admin/login/password','refresh');
 		}
 		else
 		{
 			echo "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head><body>";
-	echo "<script language=\"javascript\">alert('修改失败，请重试');window.history.back();</script>";
-	echo "</body></html>";
+			echo "<script language=\"javascript\">alert('修改失败，请重试');window.history.back();</script>";
+			echo "</body></html>";
 			//show_error('提交失败,请重试');
 		}
 	}

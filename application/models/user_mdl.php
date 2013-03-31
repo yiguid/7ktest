@@ -152,14 +152,28 @@ class User_mdl extends CI_Model {
 	}
 
 	//修改用户密码
-	public function password($password,$username)
+	public function password($old_password,$password,$username)
 	{
-		$data = array('userpswd' => $password);
+		$this->db->select('*');
 		$this->db->where('username',$username);
-		if($this->db->update('user',$data))
-			return TRUE;
-		else 
+		$this->db->where('password',$old_password);
+		$query = $this->db->get('user');
+		$result = $query->row();
+		$num = $query->num_rows();
+
+		if($num == 0)
+		{
 			return FALSE;
+		}
+		else
+		{
+			$data = array('password' => $password);
+			$this->db->where('username',$username);
+			if($this->db->update('user',$data))
+				return TRUE;
+			else 
+				return FALSE;
+		}
 	}
 }
 ?>

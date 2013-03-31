@@ -26,13 +26,27 @@
 	</div>
 	<div id="menu_list">
 		<span style="float:left;">	
-			<a href="<?php echo base_url();?>welcome">云打印</a>
+			<a style="color:white;" href="<?php echo base_url();?>welcome">云打印</a>
 			<a href="<?php echo base_url();?>printer/login">云打印店</a>
 		</span>
 		<span style="float:right;">
+			<div class="dropdown">
 			<?php 
 			if(isset($user)) 
-			{ ?>欢迎您，<?php echo $user."　".anchor('manage','个人中心'); ?>
+			{ ?>
+			
+			  <!-- Link or button to toggle dropdown -->
+			  	欢迎您，
+				<a style="color:white;" data-toggle="dropdown" href=""><?php echo $user; ?><i class="icon-chevron-down icon-white"></i></a>
+			  	<ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					<li><a tabindex="-1" href="<?php echo base_url();?>manage"><i class="icon-user"></i>个人中心</a></li>
+					<li class="divider"></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printhistory"><i class="icon-inbox"></i>历史印单</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>documenthistory"><i class="icon-file"></i>历史文件</a></li>
+				    <li class="divider"></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>manage/changepwd"><i class="icon-lock"></i>修改密码</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>manage/address"><i class="icon-home"></i>我的地址</a></li>
+				</ul>
 			&nbsp;&nbsp;<?php echo anchor('login/logout','退出'); 
 			}
 			else
@@ -44,7 +58,7 @@
 			echo "&nbsp;&nbsp;";
 			echo anchor('feedback','反馈留言');
 			?>
-			
+			</div>
 		</span>
 	</div>
 </div>
