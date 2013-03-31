@@ -14,10 +14,6 @@ class Printshop extends CI_Controller {
 		{
 			redirect('login','refresh');
 		}
-		//清空session
-		$this->session->set_userdata('upload_docs','');
-		$this->session->set_userdata('printtaskid','0');
-		$this->cart->destroy();
 	}
 	
 	public function index()
@@ -29,6 +25,10 @@ class Printshop extends CI_Controller {
 
 	public function name($printer_username = "beihang")
 	{
+		//店铺信息加入session
+		$this->session->set_userdata('printshop',$printer_username);
+		$this->session->set_userdata('location',"");
+
 		//得到现有打印店
 		$this->data['printerlist'] = $this->printer_mdl->get_printer_by_username($printer_username); 
 		$this->load->view('profile',$this->data);

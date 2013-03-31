@@ -26,7 +26,15 @@ class Upload extends CI_Controller {
 
  function do_upload()
  {
-  $this->data['printerlist'] = $this->printer_mdl->get_printer(); 
+  //获取打印店信息
+  $location = $this->session->userdata('location');
+  $printshop = $this->session->userdata('printshop');
+  if($location != "")
+    $this->data['printerlist'] = $this->printer_mdl->get_printer_by_location($location);
+  else if($printshop != "")
+     $this->data['printerlist'] = $this->printer_mdl->get_printer_by_username($printshop);
+  else
+    $this->data['printerlist'] = $this->printer_mdl->get_printer(); 
   $config['upload_path'] = './uploads';
   $config['allowed_types'] = 'pdf|gif|jpg|png|doc|docx|ppt|pptx|zip|rar';
   $config['max_size'] = '10000';

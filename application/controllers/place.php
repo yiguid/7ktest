@@ -8,8 +8,6 @@ class Place extends CI_Controller {
 		$username = $this->session->userdata('nickname');
 		if($username != "")
 			$this->data['user'] = $username;
-		$this->session->set_userdata('upload_docs','');
-		$this->session->set_userdata('printtaskid','0');
 	}
 	
 	public function index()

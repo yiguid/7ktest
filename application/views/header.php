@@ -47,7 +47,16 @@
 				    <li><a tabindex="-1" href="<?php echo base_url();?>manage/changepwd"><i class="icon-lock"></i>修改密码</a></li>
 				    <li><a tabindex="-1" href="<?php echo base_url();?>manage/address"><i class="icon-home"></i>我的地址</a></li>
 				</ul>
-			&nbsp;&nbsp;<?php echo anchor('login/logout','退出'); 
+			&nbsp;&nbsp;
+			<span class="dropdown">
+				<a style="color:white;" data-toggle="dropdown" href="">打印任务<i class="icon-chevron-down icon-white"></i></a>
+			  	<ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				    <li><a tabindex="-1" href="<?php echo base_url();?>welcome"><i class="icon-shopping-cart"></i>查看印单</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>welcome/cleartask"><i class="icon-trash"></i>清空印单</a></li>
+				</ul>
+			</span>
+			&nbsp;&nbsp;
+			<?php echo anchor('login/logout','退出'); 
 			}
 			else
 			{

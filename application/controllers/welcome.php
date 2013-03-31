@@ -21,11 +21,27 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		//得到现有打印店
-		$this->data['printerlist'] = $this->printer_mdl->get_printer(); 
+		//获取打印店信息
+		$location = $this->session->userdata('location');
+		$printshop = $this->session->userdata('printshop');
+		if($location != "")
+		    $this->data['printerlist'] = $this->printer_mdl->get_printer_by_location($location);
+		else if($printshop != "")
+		    $this->data['printerlist'] = $this->printer_mdl->get_printer_by_username($printshop);
+		else
+		    $this->data['printerlist'] = $this->printer_mdl->get_printer(); 
+		$this->load->view('profile',$this->data);
+	}
+
+	public function cleartask()
+	{
 		//清空session
 		$this->session->set_userdata('upload_docs','');
 		$this->session->set_userdata('printtaskid','0');
+		$this->session->set_userdata('printshop',"");
+		$this->session->set_userdata('location',"");
 		$this->cart->destroy();
+		$this->data['printerlist'] = $this->printer_mdl->get_printer(); 
 		$this->load->view('profile',$this->data);
 	}
 }

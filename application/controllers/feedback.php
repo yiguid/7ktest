@@ -13,8 +13,6 @@ class Feedback extends CI_Controller {
 		$this->load->model('printer_mdl');
 		$this->load->model('feedback_mdl');
 		$this->load->library('form_validation');
-		$this->session->set_userdata('upload_docs','');
-		$this->session->set_userdata('printtaskid','0');
 	}
 	
 	public function index()
