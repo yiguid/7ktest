@@ -88,7 +88,7 @@ $this->load->view('header');
 			</div>
 			<div class="setting_details">
 			<?php echo form_open('printtask/submit',array('id' => 'printtask_form')) ?>
-				<input type="hidden" name="printerid" id="printerid" value="-1">
+				<input type="hidden" name="printerid" id="printerid" value="<?php echo $this->session->userdata('printer_id');?>">
 				<div class="span9">
 					<div class="span1">接收电话:</div><div class="span3"><input class="span3" type="text" id="mobile" name="mobile"/></div>
 					<div class="span1">送印时间:</div>
