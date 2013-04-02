@@ -111,5 +111,74 @@ class Printer_mdl extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+
+	public function get_papersize_option($printer_id){
+		if($printer_id == "")
+			return array(
+		                'A4'  => 'A4',
+		                'B5'  => 'B5'
+		                );
+		else{
+			$this->db->select('papersize');
+			$this->db->from('printer_meta');
+			$this->db->where('printerid',$printer_id);
+			$query = $this->db->get();
+			foreach ($query->result() as $row) {
+				$option = array();
+				$temp = explode("|", $row->papersize);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$option[$key] = $key;
+				}
+			}
+			return $option;
+		}
+	}
+
+	public function get_isdoubleside_option($printer_id){
+		if($printer_id == "")
+			return array(
+						'单面'  => '单面',
+		                '双面'  => '双面'
+		                );
+		else{
+			$this->db->select('isdoubleside');
+			$this->db->from('printer_meta');
+			$this->db->where('printerid',$printer_id);
+			$query = $this->db->get();
+			foreach ($query->result() as $row) {
+				$option = array();
+				$temp = explode("|", $row->isdoubleside);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$option[$key] = $key;
+				}
+			}
+			return $option;
+		}
+	}
+
+	public function get_zhuangding_option($printer_id){
+		if($printer_id == "")
+			return array(
+						'普通'  => '普通',
+		                '精装'  => '精装'
+		                );
+		else{
+			$this->db->select('zhuangding');
+			$this->db->from('printer_meta');
+			$this->db->where('printerid',$printer_id);
+			$query = $this->db->get();
+			foreach ($query->result() as $row) {
+				$option = array();
+				$temp = explode("|", $row->zhuangding);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$option[$key] = $key;
+				}
+			}
+			return $option;
+		}
+	}
 }
 ?>

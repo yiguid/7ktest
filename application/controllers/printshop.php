@@ -20,6 +20,11 @@ class Printshop extends CI_Controller {
 	{
 		//得到现有打印店
 		$this->data['printerlist'] = $this->printer_mdl->get_printer(); 
+		//得到打印店信息
+		$printer_id = $this->session->userdata('printer_id');
+		$this->data['papersize_option'] = $this->printer_mdl->get_papersize_option($printer_id);
+		$this->data['isdoubleside_option'] = $this->printer_mdl->get_isdoubleside_option($printer_id);
+		$this->data['zhuangding_option'] = $this->printer_mdl->get_zhuangding_option($printer_id);	
 		$this->load->view('profile',$this->data);
 	}
 
@@ -31,6 +36,13 @@ class Printshop extends CI_Controller {
 
 		//得到现有打印店
 		$this->data['printerlist'] = $this->printer_mdl->get_printer_by_username($printer_username); 
+		//设置选择的打印店
+		
+		//得到打印店信息
+		$printer_id = $this->session->userdata('printer_id');
+		$this->data['papersize_option'] = $this->printer_mdl->get_papersize_option($printer_id);
+		$this->data['isdoubleside_option'] = $this->printer_mdl->get_isdoubleside_option($printer_id);
+		$this->data['zhuangding_option'] = $this->printer_mdl->get_zhuangding_option($printer_id);	
 		$this->load->view('profile',$this->data);
 	}
 }

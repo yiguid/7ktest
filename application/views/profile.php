@@ -48,20 +48,17 @@ $this->load->view('header');
 							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('uploadfilename').value=this.value"/>
 							<input class="btn btn-info" type="button" onclick=userfile.click() value="点击上传文件"/>
 						</td>
-						<td><select class="w60" name="papersize" id="papersize">
-							<option>A4</option>
-							<option>B5</option>
-							</select></td>
-						<td><select class="w70" name="isdoubleside" id="isdoubleside">
-							<option>单面</option>
-							<option>双面</option>
-							</select></td>
+						<td>
+							<?php echo form_dropdown('papersize', $papersize_option, 'A4', "id=papersize class=w60");?>
+						</td>
+						<td>
+							<?php echo form_dropdown('isdoubleside', $isdoubleside_option, '单面', "id=isdoubleside class=w70");?>
+						</td>
 						<td><input class="w60" type="text" maxlength="7" size="4" id="range" name="range"/></td>
 						<td><input class="w60" type="text" maxlength="3" size="2" id="fenshu" name="fenshu"/></td>
-						<td><select class="w70" name="zhuangding" id="zhuangding">
-							<option>普通</option>
-							<option>精装</option>
-							</select></td>
+						<td>
+							<?php echo form_dropdown('zhuangding', $zhuangding_option, '普通', "id=zhuangding class=w70");?>
+						</td>
 						<td><input class="w40" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>')" onfocus="compute_money('<?php echo base_url();?>')" id="cost" name="cost"/></td>
 						<td><input class="btn btn-info" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>')" value="上传" /></td>
 					</tr>

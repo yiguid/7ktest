@@ -30,16 +30,56 @@ class Printajax extends CI_Controller {
 	public function compute_money()
 	{
 		extract($_REQUEST);	
+		//获取printer的所有费用对应信息
+		if(!isset($printerid) || $printerid == ""){
+			$unit = 0.5;
+			$papersize_arr = array('A4' => 1, 'B5' => 1);
+			$isdoubleside_arr = array('单面' => 1,'双面' => 1);
+			$zhuangding_arr = array('普通' => 1,'精装' => 2);
+		}
+		else
+		{
+			$this->db->select('*');
+			$this->db->from('printer_meta');
+			$this->db->where('printerid',$printerid);
+			$query = $this->db->get();
+			foreach ($query->result() as $row) {
+				$unit = $row->price;
+				//papersize
+				$papersize_arr = array();
+				$temp = explode("|", $row->papersize);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$value = substr($opt, strpos($opt, ',') + 1, strlen($opt));
+					$papersize_arr[$key] = $value;
+				}
+				//isdoubleside
+				$isdoubleside_arr = array();
+				$temp = explode("|", $row->isdoubleside);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$value = substr($opt, strpos($opt, ',') + 1, strlen($opt));
+					$isdoubleside_arr[$key] = $value;
+				}
+				//zhuangding
+				$zhuangding_arr = array();
+				$temp = explode("|", $row->zhuangding);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$value = substr($opt, strpos($opt, ',') + 1, strlen($opt));
+					$zhuangding_arr[$key] = $value;
+				}
+			}
+		}
 		$price = 0;
-		if($papersize == 'A4')
-			$price = 0.5;
-		else $price = 0.4;
+		$price = $unit * $papersize_arr[$papersize];
 		$pageNum = $this->method_mdl->countPageNum($this->input->post('range'));
+
 		if($pageNum != -1){
 			$price *= $pageNum;
 			$price *= $fenshu;
-			if($zhuangding != '普通')
-				$price += 2;
+			$price *= $isdoubleside_arr[$isdoubleside];
+			$price += $zhuangding_arr[$zhuangding];
 		}
 		else
 			$price = "页码有误";

@@ -64,23 +64,7 @@ function submit_upload(){
 		document.getElementById('upload_form').submit();
 }
 
-// 动态获取应交费用
-function compute_money(url) {
-	var papersize = document.getElementById('papersize').value;
-	var isdoubleside = document.getElementById('isdoubleside').value;
-	var range = document.getElementById('range').value;
-	var fenshu = document.getElementById('fenshu').value;
-	var zhuangding = document.getElementById('zhuangding').value;
-	$.post(url + "ajax/printajax/compute_money", {
-		papersize : papersize,
-		isdoubleside : isdoubleside,
-		range : range,
-		fenshu : fenshu,
-		zhuangding : zhuangding
-	}, function(data) {
-		document.getElementById("cost").value = data;
-	});
-}
+
 
 function deliver(url, printtaskid){
 	alert("deliver!");
@@ -107,10 +91,29 @@ function setPrinterId(url){
 	$.post(url + "ajax/printajax/setPrinterId", {
 		printerid : printerid
 	}, function(data) {
-		if (data == "1"){
-		}
+		location.href = url+ "welcome";
 	});
 	document.getElementById('printerid').value = getRadioValue('printer_address');
+}
+
+// 动态获取应交费用
+function compute_money(url) {
+	var papersize = document.getElementById('papersize').value;
+	var isdoubleside = document.getElementById('isdoubleside').value;
+	var range = document.getElementById('range').value;
+	var fenshu = document.getElementById('fenshu').value;
+	var zhuangding = document.getElementById('zhuangding').value;
+	var printerid = getRadioValue('printer_address');
+	$.post(url + "ajax/printajax/compute_money", {
+		papersize : papersize,
+		isdoubleside : isdoubleside,
+		range : range,
+		fenshu : fenshu,
+		zhuangding : zhuangding,
+		printerid : printerid
+	}, function(data) {
+		document.getElementById("cost").value = data;
+	});
 }
 
 function warningChange(){
