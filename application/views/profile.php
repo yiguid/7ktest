@@ -87,7 +87,7 @@ $this->load->view('header');
 			<?php echo form_open('printtask/submit',array('id' => 'printtask_form')) ?>
 				<input type="hidden" name="printerid" id="printerid" value="<?php echo $this->session->userdata('printer_id');?>">
 				<div class="span9">
-					<div class="span1">接收电话:</div><div class="span3"><input class="span3" type="text" id="mobile" name="mobile"/></div>
+					<div class="span1">接收电话:</div><div class="span3"><input class="span3" type="text" id="mobile" name="mobile" value="<?php echo $this->session->userdata('mobile');?>"/></div>
 					<div class="span1">送印时间:</div>
 					<div class="span3">
 						<div class="input-append date form_datetime">
@@ -110,7 +110,7 @@ $this->load->view('header');
 				</div>
 				<div class="span9">
 					<div class="span1">印单备注:</div><div class="span3"><input class="span3" type="text" name="remark"/></div>
-					<div class="span1">需要发票:</div><div class="span3"><input class="span3" type="text" name="receipt"/></div>
+					<div class="span1">需要发票:</div><div class="span3"><input class="span3" type="text" name="receipt" value="<?php echo $this->session->userdata('receipt');?>"/></div>
 				</div>
 				<div class="span9" style="height:40px;">
 					<label class="radio inline"><input class="margin30 radio inline" type="radio" name="method" value="self" checked="checked"/>自行取印（免费）</label>
@@ -118,7 +118,7 @@ $this->load->view('header');
 					<label class="radio inline"><input class="margin30 radio inline" type="radio" name="method" value="express"/>快递送印</label>
 				</div>
 				<div class="span9">
-					<div class="span1">接收地址:</div><div class="span7"><input class="span7" type="text" id="address" name="address"/></div>
+					<div class="span1">接收地址:</div><div class="span7"><input class="span7" type="text" id="address" name="address" value="<?php echo $this->session->userdata('address');?>"/></div>
 				</div>
 				<div class="span9">
 					<div class="span1">费用总计:</div><span class="span3"><input type="text" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/></span>

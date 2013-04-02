@@ -27,6 +27,9 @@ class User_mdl extends CI_Model {
 				'id' => $result->id,
 				'username' => $result->username,
 				'nickname' => $result->nickname,
+				'mobile' => $result->mobile,
+				'address' => $result->province.$result->city.$result->address,
+				'receipt' => $result->address,
 				'level' => $result->level,
 				'user_type' => 'user'
 				);
