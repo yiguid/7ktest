@@ -100,7 +100,7 @@ class User_mdl extends CI_Model {
 		return $query->result();
 	}
 	
-	public function get_user_printhistory($userid)
+	public function get_user_printhistory($userid,$line,$start)
 	{
 		$this->db->select('printtask.id as id, status,printtask.cost as cost,printer.name as printername, count(printtasksetting.id) as documentnum,createtime,finishtime');
 		$this->db->from('printtask');
@@ -108,19 +108,44 @@ class User_mdl extends CI_Model {
 		$this->db->join('printtasksetting','printtask.id=printtasksetting.printtaskid');
 		$this->db->where('printtask.userid',$userid);
 		$this->db->group_by('printtask.id');
+		$this->db->limit($line,$start);
 		$query = $this->db->get();
 		return $query->result();
 	}
+	public function get_user_printhistory_total($userid)
+	{
+		$this->db->select('id');
+		$this->db->from('printtask');
+		$this->db->where('userid',$userid);
+		$query = $this->db->get();
+		return $query->num_rows();
 
-	public function get_user_documenthistory($userid)
+	}
+
+	public function get_user_documenthistory($userid,$line,$start)
 	{
 		$this->db->select('*');
 		$this->db->from('document');
 		$this->db->where('uploaduserid',$userid);
+		$this->db->limit($line,$start);
 		$query = $this->db->get();
 		return $query->result();
 	}
-	
+	public function get_user_documenthistory_total($userid)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('document');
+		$this->db->where('uploaduserid',$userid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
+
+		return 0;
+	}
 	public function get_user_printtask($userid, $id)
 	{
 		$this->db->select('printtask.id as id, status, address, mobile, delivertime, remark, receipt, printtask.cost as cost,printer.name as printername, count(printtasksetting.id) as documentnum,createtime,finishtime');
