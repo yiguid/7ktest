@@ -116,6 +116,30 @@ function compute_money(url) {
 	});
 }
 
+function modal_delete(rowid,id,name,papersize,isdoubleside,zhuangding,price,qty){
+	document.getElementById('modal-rowid').value = rowid;
+    $('#myModal').find('.modal-id').text(id);
+    $('#myModal').find('.modal-name').text(name);
+    $('#myModal').find('.modal-papersize').text(papersize);
+    $('#myModal').find('.modal-isdoubleside').text(isdoubleside);
+    $('#myModal').find('.modal-zhuangding').text(zhuangding);
+    $('#myModal').find('.modal-price').text(price);
+    $('#myModal').find('.modal-qty').text(qty);
+    $('#myModal').modal({show:true});
+}
+
+function modal_delete_by_id(url){
+	var documentid = $('#myModal').find('.modal-id').text();
+	var rowid = document.getElementById('modal-rowid').value;
+	$.post(url + "ajax/printajax/modal_delete_by_id", {
+		documentid : documentid,
+		rowid : rowid
+	}, function(data) {
+		if(data)
+			window.location.href = url + "welcome";
+	});
+}
+
 function warningChange(){
 	alert("请勿修改此项！");
 }

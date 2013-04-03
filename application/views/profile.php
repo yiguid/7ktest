@@ -68,10 +68,32 @@ $this->load->view('header');
 					<div style="text-align:left; width:700px;">待上传的文件：<input class="w300" type="text" readonly id="uploadfilename"/></div>
 					<div style="text-align:left; width:700px;">刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['file_name'];?></div>
 					<div style="text-align:left; width:700px;">
+						<!-- Modal -->
+						<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">删除文件确认</h3>
+						  </div>
+						  <div class="modal-body">
+						  	  <input type="hidden" id="modal-rowid"/>
+							  <div>文件ID：<span class="modal-id"></span></div>
+							  <div>文件名：<span class="modal-name"></span></div>
+							  <div>纸张大小：<span class="modal-papersize"></span></div>
+							  <div>打印方式：<span class="modal-isdoubleside"></span></div>
+							  <div>装订：<span class="modal-zhuangding"></span></div>
+							  <div>单价：<span class="modal-price"></span></div>
+							  <div>数量：<span class="modal-qty"></span></div>
+						  </div>
+						  <div class="modal-footer">
+						    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+						    <button onclick="javascript:modal_delete_by_id('<?php echo base_url();?>')" class="btn btn-danger">删除</button>
+						  </div>
+						</div>
+						<!-- Modal -->
 					已经上传的文件：
 					<?php 
 						foreach ($this->cart->contents() as $items){
-							echo $items['name']." | ";
+							echo $items['name']."<a href=\"javascript:modal_delete('".$items['rowid']."','".$items['id']."','".$items['name']."','".$items['options']['papersize']."','".$items['options']['isdoubleside']."','".$items['options']['zhuangding']."','".$items['price']."','".$items['qty']."')\"><i class=\"icon-remove\"></i></a> | ";
 						}
 					?>
 					</div>
@@ -90,9 +112,9 @@ $this->load->view('header');
 					<div class="span1">接收电话:</div><div class="span3"><input class="span3" type="text" id="mobile" name="mobile" value="<?php echo $this->session->userdata('mobile');?>"/></div>
 					<div class="span1">送印时间:</div>
 					<div class="span3">
-						<div class="input-append date form_datetime">
+						<div class="input-append date form_datetime">			
 						    <input size="16" type="text"  id="delivertime" name="delivertime" value="" readonly>
-						    <span class="add-on"><i class="icon-th"></i></span>
+						    <span class="add-on"><i class="icon-calendar"></i></span>
 						</div>
 						<script type="text/javascript">
 						    $(".form_datetime").datetimepicker({
