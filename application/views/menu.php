@@ -7,8 +7,8 @@
 			</div>
 			<div>
 				<ul>
-					<li><i class='icon-inbox'></i><a href="printhistory">历史印单</a></li>
-					<li><i class='icon-file'></i><a href="documenthistory">历史文件</a></li>
+					<li><i class='icon-inbox'></i><a href=<?php echo base_url()."printhistory"?> >历史印单</a></li>
+					<li><i class='icon-file'></i><a href=<?php echo base_url()."documenthistory"?> >历史文件</a></li>
 				</ul>
 			</div>
 		</div>

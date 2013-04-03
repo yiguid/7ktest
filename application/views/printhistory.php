@@ -18,6 +18,49 @@ $this->load->view('menu');
   
 					<?php endforeach;?>  
 			</table>
+			<div class="pagination btn" id="pagelist">
+				<ul>
+				<?php
+				 $path = base_url().'printhistory/display';
+				 $prevPage = max(1,$curPage-1);
+				 $nextPage = min($curPage+1,$maxPage);
+				 $startPage = max(1,$curPage - 3);
+				 $endPage = min($curPage + 3,$maxPage);
+				 if($curPage > 1)
+				 {
+				 	echo '<li>';
+				 	echo anchor("$path/1", '<<');
+				 	echo '</li>';
+				 	echo '<li>';
+				 	echo anchor("$path/$prevPage", '<');
+				 	echo '</li>';
+				 }
+				 for($i = $startPage;$i<=$endPage;$i++)
+				 {
+				 	if($i==$curPage)
+				 	{
+				 		echo '<li class="disabled">';
+				 	}
+				 	else
+				 	{
+				 		echo '<li class="active">';
+				 	}
+				 	echo anchor("$path/$i", "$i");
+				 	echo '</li>';
+				 }
+				 
+				 if($curPage < $maxPage)
+				 {
+				 	echo '<li>';
+				 	echo anchor("$path/$nextPage", '>');
+				 	echo '</li>';
+				 	echo '<li>';
+				 	echo anchor("$path/$maxPage", '>>');
+				 	echo '</li>';
+				 }
+				?>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
