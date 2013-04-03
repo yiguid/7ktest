@@ -26,7 +26,7 @@ $this->load->view('menu');
 				</tr>
 				<?php foreach($documents as $doc):?>  
 				<tr>
-					<?php $paper = $doc->isdoubleside?'双面':'单面'; echo "<td><a href=\"uploads/".$doc->url."\" >".substr($doc->name, 0,30) ."</a></td><td>".$doc->papersize."</td><td>".$paper."</td><td>".$doc->range."</td><td>".$doc->fenshu."</td><td>".$doc->zhuangding."</td><td>".$doc->cost."</td>";?>
+					<?php echo "<td><a href=\"".base_url()."uploads/".$doc->url."\" >".substr($doc->name, 0,30) ."</a></td><td>".$doc->papersize."</td><td>".$doc->isdoubleside."</td><td>".$doc->range."</td><td>".$doc->fenshu."</td><td>".$doc->zhuangding."</td><td>".$doc->cost."</td>";?>
 				</tr>  
 				<?php endforeach;?>
 			</table>

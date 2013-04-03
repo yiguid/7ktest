@@ -44,6 +44,7 @@ class Upload extends CI_Controller {
   $config['upload_path'] = './uploads';
   $config['allowed_types'] = 'pdf|gif|jpg|png|doc|docx|ppt|pptx|zip|rar';
   $config['max_size'] = '10000';
+  $config['encrypt_name'] = True;
   
   $this->load->library('upload', $config);
  
@@ -59,7 +60,7 @@ class Upload extends CI_Controller {
     $this->data['upload_data'] = $this->upload->data();
      //文件信息插入数据库
    $new_doc = array(
-      'name' => $this->data['upload_data']['file_name'],
+      'name' => $this->data['upload_data']['orig_name'],
       'url' => $this->data['upload_data']['file_name'],
       'uploaduserid' => $this->session->userdata('id')
     );
@@ -76,15 +77,11 @@ class Upload extends CI_Controller {
     $this->session->set_userdata('printtaskid',$task_id);
    }
    //保存设置
-  if ($this->input->post('isdoubleside') == '单面')
-    $doubleside = 0;
-    else
-      $doubleside = 1;
    $doc_setting = array(
       'printtaskid' => $task_id,
       'documentid' => $insert_id,
       'papersize' => $this->input->post('papersize'),
-      'isdoubleside' => $doubleside,
+      'isdoubleside' => $this->input->post('isdoubleside'),
       'range' => $this->input->post('range'),
       'fenshu' => $this->input->post('fenshu'),
       'zhuangding' => $this->input->post('zhuangding'),
@@ -96,8 +93,8 @@ class Upload extends CI_Controller {
       'id' => $insert_id,
       'qty' => $this->input->post('fenshu'),
       'price' => $this->input->post('cost') / $this->input->post('fenshu'),
-      'name' => $this->data['upload_data']['file_name'],
-      'options' => array('papersize' => $this->input->post('papersize'),'isdoubleside' => $doubleside,'zhuangding' => $this->input->post('zhuangding'))
+      'name' => $this->data['upload_data']['orig_name'],
+      'options' => array('papersize' => $this->input->post('papersize'),'isdoubleside' => $this->input->post('isdoubleside'),'zhuangding' => $this->input->post('zhuangding'))
     );
    $this->cart->insert($doc_data);
     //保存历史记录

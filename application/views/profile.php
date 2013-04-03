@@ -66,7 +66,7 @@ $this->load->view('header');
 				</form>
 				<div>
 					<div style="text-align:left; width:700px;">待上传的文件：<input class="w300" type="text" readonly id="uploadfilename"/></div>
-					<div style="text-align:left; width:700px;">刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['file_name'];?></div>
+					<div style="text-align:left; width:700px;">刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['orig_name'];?></div>
 					<div style="text-align:left; width:700px;">
 						<!-- Modal -->
 						<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
