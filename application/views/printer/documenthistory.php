@@ -1,42 +1,43 @@
-﻿<?php
+<?php
 
 if (! defined ( 'BASEPATH' ))
 	exit ( 'No direct script access allowed' );
 $this->load->view ( 'printer/header' );
 $this->load->view ( 'printer/menu' );
+$this->load->helper('url');
 ?>
 <div id="managebox">
-	历史印单
-	<table style="width: 700px;" class="table table-hover">
-		<tr>
-			<td>打印人</td>
-			<td>文件数</td>
-			<td>状态</td>
-			<td>创建时间</td>
-			<td>打印时间</td>
-			<td>费用</td>
-			<td>详细</td>
-		</tr>
-				<?php foreach($printhistorylist as $printhistory):?>  
-  					<tr>
-					<?php
-					
-					echo "<td>" . $printhistory->username . "</td>
-                             <td>" . $printhistory->documentnum . "</td>
-                             <td>" . $printhistory->status . "</td>
-                             <td>" . $printhistory->createtime . "</td>
-                             <td>" . $printhistory->finishtime . "</td>
-                             <td>" . $printhistory->cost . "</td>";
-					?>
-					<td>	<a href="printtask?id=<?php echo $printhistory->id; ?>">查看</a>	</td>
-		</tr>  
-  
-					<?php endforeach;?>  
+	历史文件
+		<table style="width: 1200px;" class="table table-hover">
+			<tr>
+				<td>ID</td>
+				<td>文件名</td>
+				<td>文件类型</td>
+				<td>关键词</td>
+				<td>上传用户</td>
+				<td>文件大小</td>
+				<td>下载地址</td>
+				<td>上传时间</td>
+			</tr>
+			<?php 
+			foreach($documenthistorylist as $doc){?>  
+				<tr>
+			<?php
+			echo "<td>" . $doc->docid . "</td><td>" . $doc->docname . "</td>".
+					"<td>" . $doc->doctype . "</td>".
+                     "<td>" . $doc->keyword . "</td>".
+                     "<td>" . $doc->username . "</td>".
+                     "<td>" . $doc->size . "</td>".
+                     "<td>" ."<a href=\"uploads/".$doc->url."\" >另存为</a> ". "</td>".
+                     "<td>" . $doc->uploadtime . "</td>";
+            }
+			?>
+		</tr> 
 		</table>
 		<div class="pagination btn" id="pagelist">
 			<ul>
 			<?php
-			 $path = base_url().'printer/printhistory/display';
+			 $path = base_url().'printer/documenthistory/display';
 			 $prevPage = max(1,$curPage-1);
 			 $nextPage = min($curPage+1,$maxPage);
 			 $startPage = max(1,$curPage - 3);

@@ -76,16 +76,54 @@ class Printer_mdl extends CI_Model {
 		return TRUE;
 	}
 	
-	public function get_printer_printhistory($userid)
+	public function get_printer_printhistory($printerid,$line,$start)
 	{
 		$this->db->select('printtask.id as id, status,printtask.cost as cost,user.nickname as username, count(printtasksetting.id) as documentnum,createtime,finishtime');
 		$this->db->from('printtask');
 		$this->db->join('user','user.id=printtask.userid');
 		$this->db->join('printtasksetting','printtask.id=printtasksetting.printtaskid');
-		$this->db->where('printtask.printerid',$userid);
+		$this->db->where('printtask.printerid',$printerid);
 		$this->db->group_by('printtask.id');
+		$this->db->limit($line,$start);
 		$query = $this->db->get();
 		return $query->result();
+	}
+	public function get_printer_printhistory_total($printerid)
+	{
+		$this->db->select('id');
+		$this->db->from('printtask');
+		$this->db->where('printerid',$printerid);
+		$query = $this->db->get();
+		return $query->num_rows();
+	}
+	public function get_printer_documenthistory($printerid,$line,$start)
+	{
+		$this->db->select('document.id as docid,document.name as docname,keyword,document.type as doctype,user.nickname as username,size,url,uploadtime');
+		$this->db->from('document');
+		$this->db->join('printtasksetting','document.id = printtasksetting.documentid');
+		$this->db->join('printtask','printtasksetting.printtaskid = printtask.id');
+		$this->db->join('user','user.id=document.uploaduserid');
+		$this->db->where('printtask.printerid',$printerid);
+		$this->db->limit($line,$start);
+		$query = $this->db->get();
+		return $query->result();
+	}
+	public function get_printer_documenthistory_total($printerid)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('document');
+		$this->db->join('printtasksetting','document.id=printtasksetting.documentid');
+		$this->db->join('printtask','printtasksetting.printtaskid = printtask.id');
+		$this->db->where('printtask.printerid',$printerid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
+
+		return 0;
 	}
 	
 	public function get_user_printtask($printerid, $id)

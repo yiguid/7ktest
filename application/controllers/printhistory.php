@@ -34,6 +34,7 @@ class Printhistory extends CI_Controller {
 		$this->data['printhistorylist'] = $this->user_mdl->get_user_printhistory($this->session->userdata('id'),$per_page,$start); 
 		$this->data['curPage'] = $curPage;
 		$this->data['maxPage'] = $maxPage;
+		$this->data['debug'] = $per_page."...".$start."...".$total_rows;
 		$this->load->view('printhistory',$this->data);
 	}
 }

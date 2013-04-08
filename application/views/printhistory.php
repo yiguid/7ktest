@@ -13,7 +13,7 @@ $this->load->view('menu');
   
 					<tr>
 					<?php echo "<td>".$printhistory->printername ."</td><td>".$printhistory->documentnum ."</td><td>".$printhistory->status."</td><td>".$printhistory->createtime."</td><td>".$printhistory->finishtime."</td><td>".$printhistory->cost."</td>";?>
-					<td><a href="printtask?id=<?php echo $printhistory->id; ?>">查看</a></td>
+					<td><a href=<?php echo base_url()."printtask?id=".$printhistory->id; ?>>查看</a></td>
 					</tr>  
   
 					<?php endforeach;?>  
