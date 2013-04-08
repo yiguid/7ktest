@@ -45,8 +45,8 @@
 				    <li><a tabindex="-1" href="<?php echo base_url();?>manage/money"><i class="icon-eye-open"></i>收支明细</a></li>
 				    <li><a tabindex="-1" href="<?php echo base_url();?>manage/address"><i class="icon-home"></i>我的地址</a></li>
 				    <li class="divider"></li>
-				    <li><a tabindex="-1" href="<?php echo base_url();?>printhistory"><i class="icon-inbox"></i>最近一个月</a></li>
-				    <li><a tabindex="-1" href="<?php echo base_url();?>printhistory"><i class="icon-time"></i>一个月之前</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printhistory"><i class="icon-inbox"></i>最近印单</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printhistory"><i class="icon-time"></i>历史印单</a></li>
 					<li class="divider"></li>
 					<li><a tabindex="-1" href="<?php echo base_url();?>documenthistory"><i class="icon-file"></i>我的上传</a></li>
 				    <li><a tabindex="-1" href="<?php echo base_url();?>feed"><i class="icon-bookmark"></i>我的订阅</a></li>

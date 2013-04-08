@@ -41,6 +41,7 @@ class Printtask extends CI_Controller {
     		'receipt' => $this->input->post('receipt')
     	);
    		$this->printtask_mdl->submit_printtask($id, $task);
+   		$this->data['printtaskid'] = $id;
    		//提交完了要清空历史信息
    		$this->session->set_userdata('upload_docs','');
 		$this->session->set_userdata('printtaskid','0');

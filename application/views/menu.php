@@ -11,9 +11,9 @@
 			<div class="menu_content"><i class='icon-eye-open'></i><a href="<?php echo base_url();?>manage/money">收支明细</a></div>
 			<div class="menu_content"><i class='icon-home'></i><a href="<?php echo base_url();?>manage/address">我的地址</a></div>
 			<div class="divider"></div>
-			<div class="menu_title">历史印单</div>
-			<div class="menu_content"><i class='icon-inbox'></i><a href="<?php echo base_url();?>printhistory">最近一个月</a></div>
-			<div class="menu_content"><i class='icon-time'></i><a href="<?php echo base_url();?>printhistory">一个月之前</a></div>
+			<div class="menu_title">印单管理</div>
+			<div class="menu_content"><i class='icon-inbox'></i><a href="<?php echo base_url();?>printhistory">最近印单</a></div>
+			<div class="menu_content"><i class='icon-time'></i><a href="<?php echo base_url();?>printhistory">历史印单</a></div>
 			<div class="divider"></div>
 			<div class="menu_title">文档管理</div>
 			<div class="menu_content"><i class='icon-file'></i><a href="<?php echo base_url();?>documenthistory">我的上传</a></div>
