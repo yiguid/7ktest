@@ -10,14 +10,14 @@ class Printshop extends CI_Controller {
 		$this->data['user'] = $this->session->userdata('nickname');
 
 		$this->load->model('printer_mdl');
-		if(!$this->auth->logged_in())
-		{
-			redirect('login','refresh');
-		}
 	}
 	
 	public function index()
 	{
+		if(!$this->auth->logged_in())
+		{
+			redirect('login','refresh');
+		}
 		//得到现有打印店
 		$this->data['printerlist'] = $this->printer_mdl->get_printer(); 
 		//得到打印店信息
@@ -33,7 +33,10 @@ class Printshop extends CI_Controller {
 		//店铺信息加入session
 		$this->session->set_userdata('printshop',$printer_username);
 		$this->session->set_userdata('location',"");
-
+		if(!$this->auth->logged_in())
+		{
+			redirect('login','refresh');
+		}
 		//得到现有打印店
 		$this->data['printerlist'] = $this->printer_mdl->get_printer_by_username($printer_username); 
 		//设置选择的打印店

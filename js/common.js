@@ -91,7 +91,7 @@ function setPrinterId(url){
 	$.post(url + "ajax/printajax/setPrinterId", {
 		printerid : printerid
 	}, function(data) {
-		location.href = url+ "welcome";
+		//location.href = url+ "welcome";
 	});
 	document.getElementById('printerid').value = getRadioValue('printer_address');
 }

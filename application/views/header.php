@@ -26,7 +26,7 @@
 	</div>
 	<div id="menu_list">
 		<span style="float:left;">	
-			<a style="color:white;" href="<?php echo base_url();?>welcome">云打印</a>
+			<a style="color:white;" href="<?php echo base_url();?>place">云打印</a>
 			<a href="<?php echo base_url();?>printer/login">云打印店</a>
 		</span>
 		<span style="float:right;">
@@ -41,21 +41,30 @@
 			  	<ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 					<li><a tabindex="-1" href="<?php echo base_url();?>manage"><i class="icon-user"></i>个人中心</a></li>
 					<li class="divider"></li>
-				    <li><a tabindex="-1" href="<?php echo base_url();?>printhistory"><i class="icon-inbox"></i>历史印单</a></li>
-				    <li><a tabindex="-1" href="<?php echo base_url();?>documenthistory"><i class="icon-file"></i>历史文件</a></li>
-				    <li class="divider"></li>
-				    <li><a tabindex="-1" href="<?php echo base_url();?>manage/changepwd"><i class="icon-lock"></i>修改密码</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>manage/recharge"><i class="icon-briefcase"></i>账户充值</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>manage/money"><i class="icon-eye-open"></i>收支明细</a></li>
 				    <li><a tabindex="-1" href="<?php echo base_url();?>manage/address"><i class="icon-home"></i>我的地址</a></li>
+				    <li class="divider"></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printhistory"><i class="icon-inbox"></i>最近一个月</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printhistory"><i class="icon-time"></i>一个月之前</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href="<?php echo base_url();?>documenthistory"><i class="icon-file"></i>我的上传</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>feed"><i class="icon-bookmark"></i>我的订阅</a></li>
+					<li><a tabindex="-1" href="<?php echo base_url();?>favorite"><i class="icon-star"></i>我的收藏</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href="<?php echo base_url();?>manage/changepwd"><i class="icon-cog"></i>修改密码</a></li>
+					<li><a tabindex="-1" href="<?php echo base_url();?>manage/safe"><i class="icon-lock"></i>账户保护</a></li>
 				</ul>
-			&nbsp;&nbsp;
-			<span class="dropdown">
-				<a style="color:white;" data-toggle="dropdown" href="">打印任务<i class="icon-chevron-down icon-white"></i></a>
-			  	<ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-				    <li><a tabindex="-1" href="<?php echo base_url();?>welcome"><i class="icon-shopping-cart"></i>查看印单</a></li>
-				    <li><a tabindex="-1" href="<?php echo base_url();?>welcome/cleartask"><i class="icon-trash"></i>清空印单</a></li>
-				</ul>
-			</span>
-			&nbsp;&nbsp;
+				&nbsp;&nbsp;
+				<span class="dropdown">
+					<a style="color:white;" data-toggle="dropdown" href="">打印任务<i class="icon-chevron-down icon-white"></i></a>
+				  	<ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li><a tabindex="-1" href="<?php echo base_url();?>welcome"><i class="icon-shopping-cart"></i>查看印单</a></li>
+					    <li><a tabindex="-1" href="<?php echo base_url();?>filemanage"><i class="icon-file"></i>印单文件</a></li>
+					    <li><a tabindex="-1" href="<?php echo base_url();?>welcome/cleartask"><i class="icon-trash"></i>清空印单</a></li>
+					</ul>
+				</span>
+				&nbsp;&nbsp;
 			<?php echo anchor('login/logout','退出'); 
 			}
 			else

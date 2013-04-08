@@ -15,7 +15,7 @@ $this->load->view('header');
 				<?php if($this->session->userdata('printer_id') == $printer->id)
 					echo 'checked';
 				?> 
-				onclick="javascript:setPrinterId('<?php echo base_url();?>')"/><?php echo $printer->id ." | ".$printer->name ." | ".$printer->location;?>
+				onclick="javascript:setPrinterId('<?php echo base_url();?>')"/><?php echo " ".$printer->name;?>
 			</label></li>  
   
 			<?php endforeach;?>  
@@ -25,10 +25,11 @@ $this->load->view('header');
 				<img height="20" width="20" src="<?php echo base_url();?>images/step2.gif"></img>
 				选择文件并上传
 			</div>
-			<div id="file_setting">
+<!--		<div id="file_setting">
 				<img height="20" width="20" align="absmiddle" src="<?php echo base_url();?>images/add_doc.gif"></img>
 				<a href="javascript:addDocuments()">添加文档</a>
 			</div>
+-->
 			<div>
 				<?php if(isset($error)) echo $error;?>
 				<?php echo form_open_multipart('upload/do_upload',array('id' => 'upload_form'));?>
