@@ -30,4 +30,19 @@ class Manage extends CI_Controller {
 		$this->data['page_title'] = '我的地址';
 		$this->load->view('manage/address',$this->data);
 	}
+
+	public function recharge(){
+		$this->data['page_title'] = '账户充值';
+		$this->load->view('contruction',$this->data);
+	}
+
+	public function money(){
+		$this->data['page_title'] = '收支明细';
+		$this->load->view('contruction',$this->data);
+	}
+
+	public function safe(){
+		$this->data['page_title'] = '账户保护';
+		$this->load->view('contruction',$this->data);
+	}
 }

@@ -11,17 +11,27 @@ $this->load->view('menu');
 					<table>
 						<tr>
 							<td>联系电话：</td>
-							<td><input style="width:380px;" class="input-block-level" type="text" name="mobile" id="mobile"></input></td>
+							<td><input value="<?php echo $this->session->userdata('user_mobile');?>" style="width:380px;" class="input-block-level" type="text" name="mobile" id="mobile"></input></td>
 							<td><?php echo form_error('mobile')?></td>
 						</tr>
 						<tr>
-							<td>送货地址：</td>
-							<td><input style="width:380px;" class="input-block-level" type="text" name="address" id="address"></input></td>
+							<td>所在省份：</td>
+							<td><input value="<?php echo $this->session->userdata('user_province');?>" style="width:380px;" class="input-block-level" type="text" name="province" id="province"></input></td>
+							<td><?php echo form_error('province')?></td>
+						</tr>
+						<tr>
+							<td>所在城市：</td>
+							<td><input value="<?php echo $this->session->userdata('user_city');?>" style="width:380px;" class="input-block-level" type="text" name="city" id="city"></input></td>
+							<td><?php echo form_error('city')?></td>
+						</tr>
+						<tr>
+							<td>详细地址：</td>
+							<td><input value="<?php echo $this->session->userdata('user_address');?>" style="width:380px;" class="input-block-level" type="text" name="address" id="address"></input></td>
 							<td><?php echo form_error('address')?></td>
 						</tr>
 						<tr>
 							<td>发票信息：</td>
-							<td><input style="width:380px;" class="input-block-level" type="text" name="receipt" id="receipt"></input></td>
+							<td><input value="<?php echo $this->session->userdata('user_receipt');?>" style="width:380px;" class="input-block-level" type="text" name="receipt" id="receipt"></input></td>
 							<td><?php echo form_error('receipt')?></td>
 						</tr>
 						<tr>

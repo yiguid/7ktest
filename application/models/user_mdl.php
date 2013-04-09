@@ -27,9 +27,11 @@ class User_mdl extends CI_Model {
 				'id' => $result->id,
 				'username' => $result->username,
 				'nickname' => $result->nickname,
-				'mobile' => $result->mobile,
-				'address' => $result->province.$result->city.$result->address,
-				'receipt' => $result->address,
+				'user_mobile' => $result->mobile,
+				'user_province' => $result->province,
+				'user_city' => $result->city,
+				'user_address' => $result->address,
+				'user_receipt' => $result->address,
 				'level' => $result->level,
 				'user_type' => 'user'
 				);
@@ -202,6 +204,30 @@ class User_mdl extends CI_Model {
 			else 
 				return FALSE;
 		}
+	}
+
+	public function address($userid,$mobile,$province,$city,$address,$receipt)
+	{
+		$data = array('mobile'=>$mobile,
+			'province'=>$province,
+			'city'=>$city,
+			'address'=>$address
+			);
+		$this->db->where('id',$userid);
+		if($this->db->update('user',$data))
+		{
+			$session_data = array(
+				'user_mobile' => $mobile,
+				'user_province' => $province,
+				'user_city' => $city,
+				'user_address' => $address,
+				'user_receipt' => $address
+				);
+			$this->session->set_userdata($session_data);
+			return TRUE;
+		}
+		else 
+			return FALSE;
 	}
 }
 ?>
