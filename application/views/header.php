@@ -16,6 +16,16 @@
 <!--[if lte IE 6]>
 <link href="css/ieonly.css" rel="stylesheet" type="text/css" />
 <![endif]-->
+<style type="text/css">
+#div_search{
+	line-height: 24px;
+	width: 350px;
+	height: 24px;
+	position: absolute;
+	top: 6px;
+	left: 200px;
+}
+</style>
 </head>
 <body>
 <div class="center" align="center">
@@ -25,18 +35,17 @@
 		<img height="30" width="78" src="<?php echo base_url();?>images/logo.png"/>
 	</div>
 	<div id="menu_list">
-		<span style="float:left;">	
+		<div style="float:left;">	
 			<a style="color:white;" href="<?php echo base_url();?>place">云打印</a>
 			<a href="<?php echo base_url();?>printer/login">云打印店</a>
-		</span>
-		<span style="float:right;">
+		</div>
+		<div style="float:right;">
 			<div class="dropdown">
 			<?php 
 			if(isset($user)) 
 			{ ?>
 			
 			  <!-- Link or button to toggle dropdown -->
-			  	欢迎您，
 				<a style="color:white;" data-toggle="dropdown" href=""><?php echo $user; ?><i class="icon-chevron-down icon-white"></i></a>
 			  	<ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 					<li><a tabindex="-1" href="<?php echo base_url();?>manage"><i class="icon-user"></i>个人中心</a></li>
@@ -77,7 +86,13 @@
 			echo anchor('feedback','反馈留言');
 			?>
 			</div>
-		</span>
+		</div>
+		<div id="div_search">
+			<form action="" method="post">
+			<input type="text" name="q" style="height:18px;float:left" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='搜索打印店、特色资料';" onfocus="if(this.value=='搜索打印店、特色资料')value='';" value="搜索打印店、特色资料" size="10"/>
+			<input type="submit" class="btn" value="搜一下" style="height:28px;float:left">
+			</form>
+		</div>
 	</div>
 </div>
 </div>

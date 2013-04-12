@@ -64,6 +64,12 @@ body {
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ccff99), color-stop(1, #aaff77)); /* Saf4+, Chrome */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccff99', endColorstr='#aaff77', GradientType='0'); /* IE*/
 }
+#shop_container{
+	background:#ccff99;
+	background-image: -moz-linear-gradient(top, #ccff99, #aaff77); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ccff99), color-stop(1, #aaff77)); /* Saf4+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccff99', endColorstr='#aaff77', GradientType='0'); /* IE*/
+}
 
 .feedback_view{
 	width: 900px;
@@ -187,6 +193,7 @@ body.width_fmax #wrapper {
 #menu_list{
 	float:left;
 	width:800px;
+	position: relative;
 }
 
 #menu_list a{
@@ -506,4 +513,25 @@ a.readon {
 	border-left:1px solid #666666;
 	border-right:1px solid #666666;
 	border-top:1px solid #666666;
+}
+#shop_main{
+	width: 990px;
+}
+#shop_image{
+	height: 120px;
+	background-color: yellow;
+}
+#shop_word{
+	height: 50px;
+	background-color: red;
+}
+#shop_services{
+	width: 700px;
+	float:left;
+	background-color: white;
+}
+#shop_details{
+	width: 290px;
+	float: right;
+	background-color: orange;
 }
