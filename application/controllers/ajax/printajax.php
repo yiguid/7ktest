@@ -89,6 +89,7 @@ class Printajax extends CI_Controller {
 	public function setPrinterId(){
 		extract($_REQUEST);
 		$this->session->set_userdata('printer_id',$printerid);
+		$this->session->set_userdata('printer_name',$printername);
 	}
 
 	public function modal_delete_by_id(){

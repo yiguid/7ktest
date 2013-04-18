@@ -8,17 +8,49 @@ $this->load->view('header');
 				<img height="20" width="20" src="<?php echo base_url();?>images/step1.gif"></img>
 				选择打印店
 			</div>
-			<div style="text-align:right;"><i class='icon-map-marker'></i><?php echo anchor('place','切换地址'); ?></div>
-			<?php foreach($printerlist as $printer):?>  
-  
-			<li><label><input class="radio inline" type="radio" name="printer_address" value=<?php echo $printer->id;?> 
-				<?php if($this->session->userdata('printer_id') == $printer->id)
-					echo 'checked';
-				?> 
-				onclick="javascript:setPrinterId('<?php echo base_url();?>')"/><?php echo " ".$printer->name;?>
-			</label></li>  
-  
-			<?php endforeach;?>  
+			<div style="text-align:right;">您现在所在打印店：  <i class='icon-map-marker'></i><?php echo anchor('place','切换地址'); ?></div>
+				<div id="current" style="text-align:left;font-weight:bold;"><?php echo $this->session->userdata('printer_name')?></div>
+			<div class="divider"></div>
+			<div>
+				<div style="text-align:left;">打印店排序与筛选</div>
+				<div style="text-align:justify;">
+				<a href="javascript:orderPrinter('<?php echo base_url();?>','distance')"><i class="icon-flag"></i>距离</a>
+				<a href="javascript:orderPrinter('<?php echo base_url();?>','price')"><i class="icon-tag"></i>价格</a>
+				<a href="javascript:orderPrinter('<?php echo base_url();?>','credit')"><i class="icon-heart"></i>信誉</a>
+				<br/>
+				<a href="javascript:orderPrinter('<?php echo base_url();?>','early')"><i class="icon-cog"></i>最早营业</a>
+				<a href="javascript:orderPrinter('<?php echo base_url();?>','late')"><i class="icon-adjust"></i>最晚营业</a>
+				<br/>
+				<a href="javascript:orderPrinter('<?php echo base_url();?>','online')"><i class="icon-signal"></i>当前在线</a>
+				</div>
+			</div>
+			<div class="divider"></div>
+			<div id="other_printer">
+				<div>
+				<?php foreach($printerlist as $printer):?>  
+	  
+				<div class="printer_info">
+					<div>
+						<label>
+						<input class="radio inline" type="radio" name="printer_address" value=<?php echo $printer->id;?> 
+						<?php if($this->session->userdata('printer_id') == $printer->id)
+							echo 'checked';
+						?> 
+						onclick="javascript:setPrinterId('<?php echo base_url();?>','<?php echo " ".$printer->name;?>')"/><?php echo " ".$printer->name;?> | <?php echo $printer->online;?>
+						</label>
+						
+					</div>
+					<div style="color:#888">
+						距您100米以内
+					</div>
+				</div>  
+				<?php endforeach;?>  
+				</div>
+			</div>
+			<div class="divider"></div>
+			<div>
+				更多打印店...
+			</div>
 		</div>
 		<div id="file_manage">
 			<div class="profile_title">

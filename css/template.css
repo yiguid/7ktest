@@ -476,6 +476,13 @@ a.readon {
 	border-left:1px solid #666666;
 }
 
+.printer_info{
+	height:60px;
+	text-align: left;
+	border-bottom: 1px solid white;
+	margin: 6px;
+}
+
 .profile_title{
 	text-align:left;
 	line-height:20px;
