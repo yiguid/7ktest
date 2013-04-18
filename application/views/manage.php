@@ -3,7 +3,10 @@ $this->load->view('header');
 $this->load->view('menu');
 ?>
 		<div id="managebox">
-			个人中心
+			<div class="content-header">
+				<h4>个人中心</h4>
+				<h3>账户余额：<?php echo $total;?></h3>
+			</div>
 		</div>
 	</div>
 </div>

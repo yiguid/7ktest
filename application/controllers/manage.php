@@ -8,7 +8,7 @@ class Manage extends CI_Controller {
 
 		$this->data['page_title'] = '个人中心';
 		$this->data['user'] = $this->session->userdata('nickname');
-		
+		$this->load->model('transaction_mdl');
 		if(!$this->auth->logged_in())
 		{
 			redirect('login','refresh');
@@ -17,7 +17,7 @@ class Manage extends CI_Controller {
 	
 	public function index()
 	{
-		//$this->data['printerlist'] = $this->printer_mdl->get_printer(); 
+		$this->data['total'] = $this->transaction_mdl->get_total_by_userid($this->session->userdata('id'));
 		$this->load->view('manage',$this->data);
 	}
 
@@ -33,12 +33,15 @@ class Manage extends CI_Controller {
 
 	public function recharge(){
 		$this->data['page_title'] = '账户充值';
-		$this->load->view('contruction',$this->data);
+		$this->load->view('manage/recharge',$this->data);
 	}
 
 	public function money(){
 		$this->data['page_title'] = '收支明细';
-		$this->load->view('contruction',$this->data);
+		//获取数据
+		$this->data['translist'] = $this->transaction_mdl->get_transactions_by_userid($this->session->userdata('id'));
+		$this->data['total'] = $this->transaction_mdl->get_total_by_userid($this->session->userdata('id'));
+		$this->load->view('manage/transactionhistory',$this->data);
 	}
 
 	public function safe(){
