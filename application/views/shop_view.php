@@ -42,6 +42,7 @@
 		<div id="shop_details">
 			详细信息
 		</div>
+		<div style="clear:both;"></div>
 	</div>
 </div>
 <?php $this->load->view('footer'); ?>

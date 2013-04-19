@@ -22,9 +22,9 @@ class Printajax extends CI_Controller {
 		extract($_REQUEST);
 		$printerlist = $this->printer_mdl->get_printer_by_location($location);
 		foreach($printerlist as $printer){
-			echo "<div><a style=\"color:white;\" class=\"btn btn-info btn-large\"
+			echo "<a style=\"color:white;\" class=\"btn btn-info btn-large\"
 			 href=\"".base_url()."printshop/name/"
-			.$printer->username."\">".$printer->name."</a></div>";
+			.$printer->username."\">".$printer->name."</a>";
 		}
 	}
 	public function compute_money()
@@ -89,6 +89,7 @@ class Printajax extends CI_Controller {
 	public function setPrinterId(){
 		extract($_REQUEST);
 		$this->session->set_userdata('printer_id',$printerid);
+		$this->session->set_userdata('printer_name',$printername);
 	}
 
 	public function modal_delete_by_id(){

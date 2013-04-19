@@ -3,7 +3,9 @@ $this->load->view('header');
 $this->load->view('menu');
 ?>
 		<div id="managebox">
-			历史文件
+			<div class="content-header">
+				<h4>历史文件</h4>
+			</div>
 			<table style="width:700px;" class="table table-hover">
 				<tr>
 					<td>ID</td><td>文件名</td><td>关键词</td><td>类型</td><td>大小</td><td>上传时间</td><td>下载地址</td>

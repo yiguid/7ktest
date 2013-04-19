@@ -3,7 +3,9 @@ $this->load->view('header');
 $this->load->view('menu');
 ?>
 		<div id="managebox">
-			印单详情
+			<div class="content-header">
+				<h4>印单详情</h4>
+			</div>
 			<table style="width:700px;">
 				<tr>
 					<td>打印店</td><td>文件数</td><td>状态</td><td>创建时间</td><td>打印时间</td><td>费用</td>

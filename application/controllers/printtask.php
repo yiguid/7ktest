@@ -11,6 +11,7 @@ class Printtask extends CI_Controller {
 		
 		$this->load->model('user_mdl');
 		$this->load->model('printtask_mdl');
+		$this->load->model('transaction_mdl');
 		
 		if(!$this->auth->logged_in())
 		{
@@ -41,6 +42,16 @@ class Printtask extends CI_Controller {
     		'receipt' => $this->input->post('receipt')
     	);
    		$this->printtask_mdl->submit_printtask($id, $task);
+   		//添加费用信息
+   		$trans = array(
+   						'userid' => $this->session->userdata('id'),
+   						'time' => date("Y-m-d H:i:s"),
+   						'info' => '打印消费',
+   						'amount' => -$this->input->post('total_cost'),
+   						'status' => '付款成功',
+   						'printtaskid' => $id
+   			);
+   		$this->transaction_mdl->submit_transaction($trans);
    		$this->data['printtaskid'] = $id;
    		//提交完了要清空历史信息
    		$this->session->set_userdata('upload_docs','');

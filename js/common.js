@@ -85,13 +85,14 @@ function addDocuments(){
 	alert("i am here!");
 }
 
-function setPrinterId(url){
+function setPrinterId(url,name){
 	//alert(getRadioValue('printer_address'));
 	var printerid = getRadioValue('printer_address');
 	$.post(url + "ajax/printajax/setPrinterId", {
-		printerid : printerid
+		printerid : printerid,
+		printername : name
 	}, function(data) {
-		//location.href = url+ "welcome";
+		$("#current").html(name);
 	});
 	document.getElementById('printerid').value = getRadioValue('printer_address');
 }
