@@ -1,266 +1,268 @@
-<html>
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Index</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="imagetoolbar" content="no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet">
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet">
-    <link href="Index_files/axurerp_pagespecificstyles.css" type="text/css" rel="stylesheet">
-<!--[if IE 6]>
-    <link href="Index_files/axurerp_pagespecificstyles_ie6.css" type="text/css" rel="stylesheet">
-<![endif]-->
-    <script src="data/sitemap.js"></script>
-    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
-    <script src="resources/scripts/axutils.js"></script>
-    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
-    <script src="resources/scripts/axurerp_beforepagescript.js"></script>
-    <script src="resources/scripts/messagecenter.js"></script>
-<script src='Index_files/data.js'></script>
+    <title>Untitled Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <link type="text/css" href="resources/css/reset.css" rel="Stylesheet" />
+    <link type="text/css" href="resources/css/default.css" rel="Stylesheet" />
+
+    <script type="text/javascript">
+        if (location.href.toString().indexOf('file://localhost/') == 0) {
+            location.href = location.href.toString().replace('file://localhost/', 'file:///');
+        }
+    </script>
+
+    <script type="text/javascript" src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="resources/scripts/splitter.js"></script>
+    <script type="text/javascript" src="resources/scripts/axutils.js"></script>
+    <script type="text/javascript" src="resources/scripts/axprototype.js"></script>
+    <script type="text/javascript" src="resources/scripts/messagecenter.js"></script>
+    <script type="text/javascript" src="data/configuration.js"></script>
+    <script type="text/javascript" src="data/sitemap.js"></script>
+    <style type="text/css">
+
+#outerContainer {
+	width:100%;
+	height:1000px;
+}
+
+.vsplitbar {
+	width: 3px;
+	background: #DDD;
+}
+
+#rightPanel {
+    background-color: White;
+}
+
+#leftPanel 
+{
+    /*min-width: 190px;*/
+}
+
+.splitterMask
+{
+   position:absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   background-image: url(resources/images/transparent.gif);
+   z-index: 20000;
+}
+
+
+    </style>
+    <script type="text/javascript" language="JavaScript"><!--
+        // isolate scope
+        (function () {
+            setUpController();
+
+            var _settings = {};
+            _settings.projectId = configuration.prototypeId;
+            _settings.isAxshare = configuration.isAxshare;
+            _settings.loadFeedbackPlugin = configuration.loadFeedbackPlugin;
+
+            $axure.player.settings = _settings;
+
+            $(window).bind('load', function () {
+                if (CHROME_5_LOCAL && !$('body').attr('pluginDetected')) {
+                    window.location = 'resources/chrome/chrome.html';
+                }
+            });
+
+            $(document).ready(function () {
+
+                $axure.page.bind('load.start', mainFrame_onload);
+                $axure.messageCenter.addMessageListener(messageCenter_message);
+
+                if ($axure.player.settings.loadFeedbackPlugin == true) {
+                    if ($axure.player.settings.isAxshare == true) {
+                        $axure.utils.loadJS('/Scripts/plugins/feedback/feedback.js');
+                    } else {
+                        $axure.utils.loadJS('http://share.axure.com/Scripts/plugins/feedback/feedback.js');
+                    }
+                }
+
+                initialize();
+                $('#outerContainer').splitter({
+                    //outline: true,
+                    sizeLeft: 250
+                });
+                $('#leftPanel').width(250);
+
+                $(window).resize(function () {
+                    resizeContent();
+                });
+
+                //                $('#outerContainer').resize(function() { return false; });
+
+                $('#maximizePanelContainer').hide();
+
+                initializeLogo();
+
+                $(window).resize();
+                //                $('#outerContainer').trigger('resize');
+                resizeContent();
+                if ($.browser.msie && $.browser.version == "6.0") {
+                    // wait for ie to get to a good state and resize
+                    setTimeout(function() { $('#outerContainer').trigger('resize'); }, 30);
+                }
+            });
+
+
+        })();
+
+        lastLeftPanelWidth = 250;
+
+        function messageCenter_message(message, data) {
+            if (message == 'expandFrame') expand();
+        }
+
+        function resizeContent() {
+            var newHeight = $(window).height();
+            var newWidth = $(window).width();
+            
+            var controlContainerHeight = newHeight - 37;
+            if ($('#interfaceControlFrameLogoContainer').is(':visible')) {
+                controlContainerHeight -= $('#interfaceControlFrameLogoContainer').height() + 16;
+            }
+
+            $('#outerContainer').height(newHeight).width(newWidth);
+            $('#leftPanel').height(newHeight);
+            $('#interfaceControlFrame').height(newHeight);
+            $('#interfaceControlFrameContainer').height(controlContainerHeight);
+
+            $('#rightPanel').height(newHeight);
+            $('#mainFrame').height(newHeight);
+
+            $('#rightPanel').width($(window).width() - $('#leftPanel').width() - $('.vsplitbar').width());
+        }
+
+        function collapse() {
+            $('#maximizePanelContainer').show();
+            lastLeftPanelWidth = $('#leftPanel').width();
+            $('#leftPanel').hide();
+            $('.vsplitbar').hide();
+            $('#rightPanel').width($(window).width());
+            $(window).resize();
+            $('#outerContainer').trigger('resize');
+        }
+
+        function expand() {
+            $('#maximizePanelContainer').hide();
+            $('#leftPanel').width(lastLeftPanelWidth);
+            $('#leftPanel').show();
+            $('.vsplitbar').show();
+            $('#rightPanel').width($(window).width() - $('#leftPanel').width() - $('.vsplitbar').width());
+            $(window).resize();
+            $('#outerContainer').trigger('resize');
+        }
+
+        function initialize() {
+            var mainFrame = document.getElementById("mainFrame");
+            var pageName = QueryString("Page");
+            if (pageName.length > 0) {
+                mainFrame.contentWindow.location.href = pageName + ".html";
+            }
+            else {
+                mainFrame.contentWindow.location.href = 
+                    (sitemap.rootNodes.length > 0 ? sitemap.rootNodes[0].url : "about:blank");
+            }
+        }
+
+        function initializeLogo() {
+            if (configuration.logoImagePath) {
+                $('#interfaceControlFrameLogoImageContainer').html('<img id="logoImage" src="" />');
+                $('#logoImage').attr('src', configuration.logoImagePath).load(function () {
+                    resizeContent();
+                });
+            } else {
+                $('#interfaceControlFrameLogoImageContainer').hide();
+            }
+
+            if (configuration.logoImageCaption) {
+                $('#interfaceControlFrameLogoCaptionContainer').html(configuration.logoImageCaption);
+            } else {
+                $('#interfaceControlFrameLogoCaptionContainer').hide();
+            }
+
+            if (!$('#interfaceControlFrameLogoImageContainer').is(':visible') && !$('#interfaceControlFrameLogoCaptionContainer').is(':visible')) {
+                $('#interfaceControlFrameLogoContainer').hide();
+            }
+        }
+
+        function mainFrame_onload() {
+            //var mainFrame = document.getElementById("mainFrame");
+            if ($axure.page.pageName) {
+                //document.title = mainFrame.contentWindow.PageName;
+                document.title = $axure.page.pageName;
+            }
+        }
+
+        function QueryString(query) {
+            var qstring = self.location.href.split("?");
+            if (qstring.length < 2) return ""
+
+            var prms = qstring[1].split("&");
+            var frmelements = new Array();
+            var currprmeter, querystr = "";
+
+            for (i = 0; i < prms.length; i++) {
+                currprmeter = prms[i].split("=");
+                frmelements[i] = new Array();
+                frmelements[i][0] = currprmeter[0];
+                frmelements[i][1] = currprmeter[1];
+            }
+
+            for (j = 0; j < frmelements.length; j++) {
+                if (frmelements[j][0] == query) {
+                    querystr = frmelements[j][1];
+                    break;
+                }
+            }
+            return querystr;
+        }
+
+--></script>
+
+    <link type="text/css" rel="Stylesheet" href="plugins/sitemap/styles/sitemap.css" />
+    <script type="text/javascript" src="plugins/sitemap/sitemap.js"></script>
+    <link type="text/css" rel="Stylesheet" href="plugins/page_notes/styles/page_notes.css" />
+    <script type="text/javascript" src="plugins/page_notes/page_notes.js"></script>
+
 </head>
-<body>
-<div id="main_container">
+<body scroll="no">
+    <div id="outerContainer">
 
-<div id="u0" class="u0_container"   >
-<div id="u0_img" class="u0_normal detectCanvas"></div>
-<div id="u1" class="u1" style="visibility:hidden;"  >
-<div id="u1_rtf"></div>
-</div>
-</div>
-<div id="u2" class="u2"  >
-<div id="u2_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">个</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">人中心页</span></p></div>
-</div>
-<div id="u3" class="u3"  >
-<div id="u3_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">快</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">捷入口</span></p></div>
-</div>
-<div id="u4" class="u4_container"   >
-<div id="u4_img" class="u4_normal detectCanvas"></div>
-<div id="u5" class="u5" style="visibility:hidden;"  >
-<div id="u5_rtf"></div>
-</div>
-</div>
-<div id="u6" class="u6"  >
-<div id="u6_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">个人中心</span></p></div>
-</div>
-<div id="u7" class="u7"  >
-<div id="u7_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">反</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">馈留言</span></p></div>
-</div>
-<div id="u8" class="u8"  >
-<div id="u8_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">登</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">录</span></p></div>
-</div>
-<div id="u9" class="u9"  >
-<div id="u9_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">注</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">册</span></p></div>
-</div>
-<div id="u10" class="u10"  >
-<div id="u10_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">云</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">打印</span></p></div>
-</div>
-<div id="u11" class="u11_container"   >
-<div id="u11_img" class="u11_normal detectCanvas"></div>
-<div id="u12" class="u12" style="visibility:hidden;"  >
-<div id="u12_rtf"></div>
-</div>
-</div>
-<INPUT id="u13" type=text value="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 搜索打印店、特色资料" class="u13"     >
+        <div id="leftPanel">
+            <div id="interfaceControlFrame">
+                <div id="interfaceControlFrameMinimizeContainer">
+                    <a title="Collapse Controls" id="interfaceControlFrameMinimizeButton" onclick="collapse();">&nbsp;</a>
+                </div>
+                <div id="interfaceControlFrameLogoContainer">
+                    <div id="interfaceControlFrameLogoImageContainer"></div>
+                    <div id="interfaceControlFrameLogoCaptionContainer"></div>
+                </div>
+                <div id="interfaceControlFrameHeaderContainer">
+                    <ul id="interfaceControlFrameHeader">
+                    </ul>
+                </div>
+                <div id="interfaceControlFrameContainer">
+                </div>
+            </div>
+        </div>
+        <div id="rightPanel">
+            <iframe id="mainFrame" width="100%" height="100%" src="" frameborder="0"></iframe>
+        </div>
 
-<INPUT id="u14" type="submit" class="u14" value=" 搜本店"   >
+    </div>
 
-<DIV id="u15" style="border-style:dotted; border-color:red; visibility:hidden; position:absolute; left:0px; top:0px; width:950px; height:30px;;" ></div>
-<INPUT id="u16" type=text value="" class="u16"     >
+    <div id="maximizePanelContainer">
+        <iframe id="expandFrame" src="resources/expand.html" width="100%" height="100%" scrolling="no" allowtransparency="true" frameborder="0"></iframe>
+    </div>
 
-<div id="u17" class="u17_container"   >
-<div id="u17_img" class="u17_normal detectCanvas"></div>
-<div id="u18" class="u18" style="visibility:hidden;"  >
-<div id="u18_rtf"></div>
-</div>
-</div>
-<INPUT id="u19" type="submit" class="u19" value="搜索"   >
-
-<div id="u20" class="u20_container"   >
-<div id="u20_img" class="u20_normal detectCanvas"></div>
-<div id="u21" class="u21" style="visibility:hidden;"  >
-<div id="u21_rtf"></div>
-</div>
-</div>
-<div id="u22" class="u22_container"   >
-<div id="u22_img" class="u22_normal detectCanvas"></div>
-<div id="u23" class="u23" style="visibility:hidden;"  >
-<div id="u23_rtf"></div>
-</div>
-</div>
-<div id="u24" class="u24_container"   >
-<div id="u24_img" class="u24_normal detectCanvas"></div>
-<div id="u25" class="u25" style="visibility:hidden;"  >
-<div id="u25_rtf"></div>
-</div>
-</div>
-<div id="u26" class="u26_container"   >
-<div id="u26_img" class="u26_normal detectCanvas"></div>
-<div id="u27" class="u27" style="visibility:hidden;"  >
-<div id="u27_rtf"></div>
-</div>
-</div>
-<div id="u28" class="u28_container"   >
-<div id="u28_img" class="u28_normal detectCanvas"></div>
-<div id="u29" class="u29" style="visibility:hidden;"  >
-<div id="u29_rtf"></div>
-</div>
-</div>
-<div id="u30" class="u30_container"   >
-<div id="u30_img" class="u30_normal detectCanvas"></div>
-<div id="u31" class="u31" style="visibility:hidden;"  >
-<div id="u31_rtf"></div>
-</div>
-</div>
-<div id="u32" class="u32_container"   >
-<div id="u32_img" class="u32_normal detectCanvas"></div>
-<div id="u33" class="u33" style="visibility:hidden;"  >
-<div id="u33_rtf"></div>
-</div>
-</div>
-<div id="u34" class="u34_container"   >
-<div id="u34_img" class="u34_normal detectCanvas"></div>
-<div id="u35" class="u35" style="visibility:hidden;"  >
-<div id="u35_rtf"></div>
-</div>
-</div>
-<div id="u36" class="u36_container"   >
-<div id="u36_img" class="u36_normal detectCanvas"></div>
-<div id="u37" class="u37" style="visibility:hidden;"  >
-<div id="u37_rtf"></div>
-</div>
-</div>
-<div id="u38" class="u38_container"   >
-<div id="u38_img" class="u38_normal detectCanvas"></div>
-<div id="u39" class="u39" style="visibility:hidden;"  >
-<div id="u39_rtf"></div>
-</div>
-</div>
-<div id="u40" class="u40_container"   >
-<div id="u40_img" class="u40_normal detectCanvas"></div>
-<div id="u41" class="u41" style="visibility:hidden;"  >
-<div id="u41_rtf"></div>
-</div>
-</div>
-<div id="u42" class="u42_container"   >
-<div id="u42_img" class="u42_normal detectCanvas"></div>
-<div id="u43" class="u43" style="visibility:hidden;"  >
-<div id="u43_rtf"></div>
-</div>
-</div>
-<div id="u44" class="u44_container"   >
-<div id="u44_img" class="u44_normal detectCanvas"></div>
-<div id="u45" class="u45" style="visibility:hidden;"  >
-<div id="u45_rtf"></div>
-</div>
-</div>
-<div id="u46" class="u46_container"   >
-<div id="u46_img" class="u46_normal detectCanvas"></div>
-<div id="u47" class="u47" style="visibility:hidden;"  >
-<div id="u47_rtf"></div>
-</div>
-</div>
-<div id="u48" class="u48_container"   >
-<div id="u48_img" class="u48_normal detectCanvas"></div>
-<div id="u49" class="u49" style="visibility:hidden;"  >
-<div id="u49_rtf"></div>
-</div>
-</div>
-<div id="u50" class="u50_container"   >
-<div id="u50_img" class="u50_normal detectCanvas"></div>
-<div id="u51" class="u51" style="visibility:hidden;"  >
-<div id="u51_rtf"></div>
-</div>
-</div>
-<div id="u52" class="u52_container"   >
-<div id="u52_img" class="u52_normal detectCanvas"></div>
-<div id="u53" class="u53" style="visibility:hidden;"  >
-<div id="u53_rtf"></div>
-</div>
-</div>
-<div id="u54" class="u54_container"   >
-<div id="u54_img" class="u54_normal detectCanvas"></div>
-<div id="u55" class="u55" style="visibility:hidden;"  >
-<div id="u55_rtf"></div>
-</div>
-</div>
-<div id="u56" class="u56_container"   >
-<div id="u56_img" class="u56_normal detectCanvas"></div>
-<div id="u57" class="u57" style="visibility:hidden;"  >
-<div id="u57_rtf"></div>
-</div>
-</div>
-<div id="u58" class="u58_container"   >
-<div id="u58_img" class="u58_normal detectCanvas"></div>
-<div id="u59" class="u59" style="visibility:hidden;"  >
-<div id="u59_rtf"></div>
-</div>
-</div>
-<div id="u60" class="u60_container"   >
-<div id="u60_img" class="u60_normal detectCanvas"></div>
-<div id="u61" class="u61" style="visibility:hidden;"  >
-<div id="u61_rtf"></div>
-</div>
-</div>
-<div id="u62" class="u62_container"   >
-<div id="u62_img" class="u62_normal detectCanvas"></div>
-<div id="u63" class="u63" style="visibility:hidden;"  >
-<div id="u63_rtf"></div>
-</div>
-</div>
-<div id="u64" class="u64"  >
-<div id="u64_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">使用帮助</span></p></div>
-</div>
-<div id="u65" class="u65"  >
-<div id="u65_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">新</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">手指南</span></p></div>
-</div>
-<div id="u66" class="u66"  >
-<div id="u66_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">常</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">见问题</span></p></div>
-</div>
-<div id="u67" class="u67"  >
-<div id="u67_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">用</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">户协议</span></p></div>
-</div>
-<div id="u68" class="u68"  >
-<div id="u68_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">加</span><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">入我们</span></p></div>
-</div>
-<div id="u69" class="u69"  >
-<div id="u69_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">用</span><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">户反馈</span></p></div>
-</div>
-<div id="u70" class="u70"  >
-<div id="u70_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">我</span><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">要开店</span></p></div>
-</div>
-<div id="u71" class="u71"  >
-<div id="u71_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">开</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">店须知</span></p></div>
-</div>
-<div id="u72" class="u72"  >
-<div id="u72_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">服</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">务条款与协议</span></p></div>
-</div>
-<div id="u73" class="u73"  >
-<div id="u73_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">联</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">系我们</span></p></div>
-</div>
-<div id="u74" class="u74"  >
-<div id="u74_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">商</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">业合作</span></p></div>
-</div>
-<div id="u75" class="u75"  >
-<div id="u75_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">友</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">情链接</span></p></div>
-</div>
-<div id="u76" class="u76"  >
-<div id="u76_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">关</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">于7kmall</span></p></div>
-</div>
-<div id="u77" class="u77"  >
-<div id="u77_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">站</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">点地图</span></p></div>
-</div>
-<div id="u78" class="u78"  >
-<div id="u78_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">Copyright ©2012-2013 7kmall.com, All Rights Reserved.</span></p></div>
-</div>
-<div id="u79" class="u79_container"   >
-<div id="u79_img" class="u79_normal detectCanvas"></div>
-<div id="u80" class="u80" style="visibility:hidden;"  >
-<div id="u80_rtf"></div>
-</div>
-</div>
-<DIV id="u81" style="border-style:dotted; border-color:red; visibility:hidden; position:absolute; left:0px; top:630px; width:950px; height:100px;;" ></div>
-</div>
-<div class="preload"><img src="Index_files/u0_normal.png" width="1" height="1"/><img src="UserHeader_files/u4_normal.png" width="1" height="1"/><img src="UserHeader_files/u11_normal.png" width="1" height="1"/><img src="Index_files/u17_normal.png" width="1" height="1"/><img src="Index_files/u20_normal.png" width="1" height="1"/><img src="UserFooter_files/u62_normal.png" width="1" height="1"/><img src="UserFooter_files/u79_normal.png" width="1" height="1"/></div>
 </body>
-<script src="resources/scripts/axurerp_pagescript.js"></script>
-<script src="Index_files/axurerp_pagespecificscript.js" charset="utf-8"></script>
+</html>

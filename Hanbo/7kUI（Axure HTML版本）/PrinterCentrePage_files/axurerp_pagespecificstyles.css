@@ -600,7 +600,7 @@ div {
 .u41 {
     position:absolute;
     left:16px;
-    top:179px;
+    top:238px;
     width:100px;
     height:16px;
     ;
@@ -614,7 +614,7 @@ div {
 .u42 {
     position:absolute;
     left:16px;
-    top:197px;
+    top:176px;
     width:100px;
     height:16px;
     ;
@@ -628,7 +628,7 @@ div {
 .u43 {
     position:absolute;
     left:16px;
-    top:216px;
+    top:222px;
     width:100px;
     height:16px;
     ;
@@ -642,9 +642,9 @@ div {
 .u44 {
     position:absolute;
     left:16px;
-    top:234px;
+    top:276px;
     width:100px;
-    height:16px;
+    height:19px;
     ;
     ;
     ;
@@ -656,7 +656,7 @@ div {
 .u45 {
     position:absolute;
     left:16px;
-    top:252px;
+    top:298px;
     width:100px;
     height:16px;
     ;
@@ -670,7 +670,7 @@ div {
 .u46 {
     position:absolute;
     left:16px;
-    top:270px;
+    top:314px;
     width:100px;
     height:16px;
     ;
@@ -684,7 +684,7 @@ div {
 .u47 {
     position:absolute;
     left:16px;
-    top:289px;
+    top:330px;
     width:100px;
     height:16px;
     ;
@@ -698,7 +698,7 @@ div {
 .u48 {
     position:absolute;
     left:16px;
-    top:307px;
+    top:346px;
     width:100px;
     height:16px;
     ;
@@ -712,9 +712,9 @@ div {
 .u49 {
     position:absolute;
     left:16px;
-    top:329px;
+    top:362px;
     width:100px;
-    height:19px;
+    height:16px;
     ;
     ;
     ;
@@ -726,7 +726,7 @@ div {
 .u50 {
     position:absolute;
     left:16px;
-    top:351px;
+    top:378px;
     width:100px;
     height:16px;
     ;
@@ -740,7 +740,7 @@ div {
 .u51 {
     position:absolute;
     left:16px;
-    top:367px;
+    top:394px;
     width:100px;
     height:16px;
     ;
@@ -754,7 +754,7 @@ div {
 .u52 {
     position:absolute;
     left:16px;
-    top:383px;
+    top:410px;
     width:100px;
     height:16px;
     ;
@@ -768,8 +768,8 @@ div {
 .u53 {
     position:absolute;
     left:16px;
-    top:399px;
-    width:100px;
+    top:426px;
+    width:150px;
     height:16px;
     ;
     ;
@@ -779,25 +779,32 @@ div {
     word-wrap:break-word;
 }
 
+.u54_line {
+    background-image: url('../PrinterCentrePage_files/u54_line.png');
+}
+
+.u54_line {
+    position:absolute;
+    left:0px;
+    top:3px;
+    width:175px;
+    height:5px;
+}
+
 .u54 {
     position:absolute;
-    left:16px;
-    top:415px;
-    width:100px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
+    left:0px;
+    top:261px;
+    width:175px;
+    height:10px;
+    
 }
 
 .u55 {
     position:absolute;
     left:16px;
-    top:431px;
-    width:100px;
+    top:191px;
+    width:150px;
     height:16px;
     ;
     ;
@@ -810,35 +817,7 @@ div {
 .u56 {
     position:absolute;
     left:16px;
-    top:447px;
-    width:100px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u57 {
-    position:absolute;
-    left:16px;
-    top:463px;
-    width:100px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u58 {
-    position:absolute;
-    left:16px;
-    top:479px;
+    top:207px;
     width:150px;
     height:16px;
     ;
@@ -847,26 +826,5 @@ div {
     font-family:Arial;
     text-align:left;
     word-wrap:break-word;
-}
-
-.u59_line {
-    background-image: url('../PrinterCentrePage_files/u59_line.png');
-}
-
-.u59_line {
-    position:absolute;
-    left:0px;
-    top:3px;
-    width:175px;
-    height:5px;
-}
-
-.u59 {
-    position:absolute;
-    left:0px;
-    top:321px;
-    width:175px;
-    height:10px;
-    
 }
 

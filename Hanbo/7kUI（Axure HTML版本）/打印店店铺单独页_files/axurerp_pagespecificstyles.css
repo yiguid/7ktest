@@ -1,0 +1,6127 @@
+body {
+    margin: 0px;
+    text-align: center;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+    position: relative;
+    left: -0px;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../UserHeader_files/u4_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:950px;
+    height:30px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:956px;
+    height:36px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:946px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:728px;
+    top:7px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3 {
+    position:absolute;
+    left:791px;
+    top:7px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4 {
+    position:absolute;
+    left:853px;
+    top:7px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:891px;
+    top:7px;
+    width:30px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:100px;
+    top:7px;
+    width:45px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_normal {
+    background-image: url('../UserHeader_files/u11_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:10px;
+    top:0px;
+    width:75px;
+    height:30px;
+}
+
+#u7_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:75px;
+    height:30px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9 {
+    position:absolute;
+    left:374px;
+    top:5px;
+    width:171px;
+    height:20px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#666666;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u10 {
+    position:absolute;
+    left:378px;
+    top:7px;
+    width:44px;
+    height:16px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 12px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u12_normal {
+    background-image: url('../UserFooter_files/u62_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:0px;
+    top:815px;
+    width:950px;
+    height:100px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:956px;
+    height:106px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:42px;
+    width:946px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14 {
+    position:absolute;
+    left:200px;
+    top:825px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15 {
+    position:absolute;
+    left:200px;
+    top:850px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16 {
+    position:absolute;
+    left:200px;
+    top:866px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:200px;
+    top:882px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18 {
+    position:absolute;
+    left:800px;
+    top:825px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19 {
+    position:absolute;
+    left:650px;
+    top:825px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20 {
+    position:absolute;
+    left:50px;
+    top:825px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21 {
+    position:absolute;
+    left:50px;
+    top:850px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22 {
+    position:absolute;
+    left:50px;
+    top:866px;
+    width:100px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23 {
+    position:absolute;
+    left:650px;
+    top:850px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:650px;
+    top:866px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:650px;
+    top:882px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26 {
+    position:absolute;
+    left:800px;
+    top:850px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27 {
+    position:absolute;
+    left:800px;
+    top:866px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28 {
+    position:absolute;
+    left:299px;
+    top:860px;
+    width:332px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../UserFooter_files/u79_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:409px;
+    top:820px;
+    width:100px;
+    height:40px;
+}
+
+#u29_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:40px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_normal {
+    background-image: url('../打印店店铺单独页_files/u32_normal.png');
+}
+
+.u32_container {
+    position:absolute;
+    left:0px;
+    top:30px;
+    width:950px;
+    height:785px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:956px;
+    height:791px;
+}
+
+.u33 {
+    position:absolute;
+    left:2px;
+    top:384px;
+    width:946px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34 {
+    position:absolute;
+    left:374px;
+    top:5px;
+    width:171px;
+    height:20px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#666666;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u35 {
+    position:absolute;
+    left:378px;
+    top:7px;
+    width:44px;
+    height:16px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 12px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u36_normal {
+    background-image: url('../打印店店铺单独页_files/u36_normal.png');
+}
+
+.u36_container {
+    position:absolute;
+    left:710px;
+    top:184px;
+    width:240px;
+    height:631px;
+}
+
+#u36_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:246px;
+    height:637px;
+}
+
+.u37 {
+    position:absolute;
+    left:2px;
+    top:308px;
+    width:236px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38_normal {
+    background-image: url('../打印店店铺单独页_files/u38_normal.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:729px;
+    top:194px;
+    width:50px;
+    height:50px;
+}
+
+#u38_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:50px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40 {
+    position:absolute;
+    left:789px;
+    top:194px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41 {
+    position:absolute;
+    left:729px;
+    top:254px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42 {
+    position:absolute;
+    left:729px;
+    top:452px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43 {
+    position:absolute;
+    left:729px;
+    top:478px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44 {
+    position:absolute;
+    left:729px;
+    top:572px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45 {
+    position:absolute;
+    left:729px;
+    top:695px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46 {
+    position:absolute;
+    left:729px;
+    top:279px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47 {
+    position:absolute;
+    left:729px;
+    top:304px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48 {
+    position:absolute;
+    left:729px;
+    top:330px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49 {
+    position:absolute;
+    left:729px;
+    top:355px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50 {
+    position:absolute;
+    left:789px;
+    top:220px;
+    width:72px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u51_normal {
+    background-image: url('../打印店店铺单独页_files/u51_normal.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:0px;
+    top:135px;
+    width:950px;
+    height:40px;
+}
+
+#u51_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:956px;
+    height:46px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:946px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53 {
+    position:absolute;
+    left:10px;
+    top:147px;
+    width:455px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54 {
+    position:absolute;
+    left:729px;
+    top:381px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55 {
+    position:absolute;
+    left:10px;
+    top:40px;
+    width:352px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u56 {
+    position:absolute;
+    left:0px;
+    top:60px;
+    width:950px;
+    height:65px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+    overflow:hidden;
+}
+
+#u57 {
+    position:absolute;
+    left:0px;
+    top:185px;
+    width:701px;
+    height:631px;
+    overflow:hidden;
+}
+
+#pd4u57 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:701px;
+    height:631px;
+    
+}
+
+.u58_normal {
+    background-image: url('../打印店店铺单独页_files/u58_normal.png');
+}
+
+.u58_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:700px;
+    height:630px;
+}
+
+#u58_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:706px;
+    height:636px;
+}
+
+.u59 {
+    position:absolute;
+    left:2px;
+    top:307px;
+    width:696px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u60_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u60_container {
+    position:absolute;
+    left:25px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u60_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u61 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u62_line {
+    background-image: url('../打印店店铺单独页_files/u62_line.png');
+}
+
+.u62_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:700px;
+    height:3px;
+}
+
+.u62 {
+    position:absolute;
+    left:0px;
+    top:28px;
+    width:700px;
+    height:10px;
+    
+}
+
+.u63_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:122px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:219px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u65_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:316px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../打印店店铺单独页_files/u69_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:413px;
+    top:10px;
+    width:87px;
+    height:23px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:29px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71 {
+    position:absolute;
+    left:139px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u72 {
+    position:absolute;
+    left:42px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73 {
+    position:absolute;
+    left:252px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u74 {
+    position:absolute;
+    left:345px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75 {
+    position:absolute;
+    left:444px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#pd3u57 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:701px;
+    height:631px;
+    
+}
+
+.u76_normal {
+    background-image: url('../打印店店铺单独页_files/u58_normal.png');
+}
+
+.u76_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:700px;
+    height:630px;
+}
+
+#u76_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:706px;
+    height:636px;
+}
+
+.u77 {
+    position:absolute;
+    left:2px;
+    top:307px;
+    width:696px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u78_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u78_container {
+    position:absolute;
+    left:25px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u78_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u79 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u80_line {
+    background-image: url('../打印店店铺单独页_files/u80_line.png');
+}
+
+.u80_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:700px;
+    height:3px;
+}
+
+.u80 {
+    position:absolute;
+    left:0px;
+    top:28px;
+    width:700px;
+    height:10px;
+    
+}
+
+.u81_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:122px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u81_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:219px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u83_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_normal {
+    background-image: url('../打印店店铺单独页_files/u69_normal.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:316px;
+    top:10px;
+    width:87px;
+    height:23px;
+}
+
+#u85_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:29px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:413px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u87_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89 {
+    position:absolute;
+    left:139px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u90 {
+    position:absolute;
+    left:42px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91 {
+    position:absolute;
+    left:252px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92 {
+    position:absolute;
+    left:345px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93 {
+    position:absolute;
+    left:444px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94_normal {
+    background-image: url('../打印店店铺单独页_files/u94_normal.png');
+}
+
+.u94_container {
+    position:absolute;
+    left:19px;
+    top:48px;
+    width:650px;
+    height:40px;
+}
+
+#u94_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:656px;
+    height:46px;
+}
+
+.u95 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:646px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96_normal {
+    background-image: url('../打印店店铺单独页_files/u96_normal.png');
+}
+
+.u96_container {
+    position:absolute;
+    left:19px;
+    top:48px;
+    width:6px;
+    height:40px;
+}
+
+#u96_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:12px;
+    height:46px;
+}
+
+.u97 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98 {
+    position:absolute;
+    left:35px;
+    top:52px;
+    width:354px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99 {
+    position:absolute;
+    left:35px;
+    top:71px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100_normal {
+    background-image: url('../打印店店铺单独页_files/u100_normal.png');
+}
+
+.u100_container {
+    position:absolute;
+    left:35px;
+    top:97px;
+    width:634px;
+    height:40px;
+}
+
+#u100_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:640px;
+    height:46px;
+}
+
+.u101 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:630px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102 {
+    position:absolute;
+    left:42px;
+    top:101px;
+    width:251px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103 {
+    position:absolute;
+    left:42px;
+    top:118px;
+    width:198px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104_normal {
+    background-image: url('../打印店店铺单独页_files/u94_normal.png');
+}
+
+.u104_container {
+    position:absolute;
+    left:19px;
+    top:148px;
+    width:650px;
+    height:40px;
+}
+
+#u104_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:656px;
+    height:46px;
+}
+
+.u105 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:646px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106_normal {
+    background-image: url('../打印店店铺单独页_files/u96_normal.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:19px;
+    top:148px;
+    width:6px;
+    height:40px;
+}
+
+#u106_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:12px;
+    height:46px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108 {
+    position:absolute;
+    left:35px;
+    top:152px;
+    width:354px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109 {
+    position:absolute;
+    left:35px;
+    top:171px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110_normal {
+    background-image: url('../打印店店铺单独页_files/u100_normal.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:35px;
+    top:197px;
+    width:634px;
+    height:40px;
+}
+
+#u110_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:640px;
+    height:46px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:630px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112 {
+    position:absolute;
+    left:42px;
+    top:201px;
+    width:251px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113 {
+    position:absolute;
+    left:42px;
+    top:218px;
+    width:198px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114_normal {
+    background-image: url('../打印店店铺单独页_files/u94_normal.png');
+}
+
+.u114_container {
+    position:absolute;
+    left:19px;
+    top:248px;
+    width:650px;
+    height:40px;
+}
+
+#u114_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:656px;
+    height:46px;
+}
+
+.u115 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:646px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116_normal {
+    background-image: url('../打印店店铺单独页_files/u96_normal.png');
+}
+
+.u116_container {
+    position:absolute;
+    left:19px;
+    top:248px;
+    width:6px;
+    height:40px;
+}
+
+#u116_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:12px;
+    height:46px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118 {
+    position:absolute;
+    left:35px;
+    top:252px;
+    width:354px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119 {
+    position:absolute;
+    left:35px;
+    top:271px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120_normal {
+    background-image: url('../打印店店铺单独页_files/u100_normal.png');
+}
+
+.u120_container {
+    position:absolute;
+    left:35px;
+    top:297px;
+    width:634px;
+    height:40px;
+}
+
+#u120_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:640px;
+    height:46px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:630px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122 {
+    position:absolute;
+    left:42px;
+    top:301px;
+    width:251px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u123 {
+    position:absolute;
+    left:42px;
+    top:318px;
+    width:198px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124_normal {
+    background-image: url('../打印店店铺单独页_files/u94_normal.png');
+}
+
+.u124_container {
+    position:absolute;
+    left:19px;
+    top:348px;
+    width:650px;
+    height:40px;
+}
+
+#u124_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:656px;
+    height:46px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:646px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126_normal {
+    background-image: url('../打印店店铺单独页_files/u96_normal.png');
+}
+
+.u126_container {
+    position:absolute;
+    left:19px;
+    top:348px;
+    width:6px;
+    height:40px;
+}
+
+#u126_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:12px;
+    height:46px;
+}
+
+.u127 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u128 {
+    position:absolute;
+    left:35px;
+    top:352px;
+    width:354px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129 {
+    position:absolute;
+    left:35px;
+    top:371px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u130_normal {
+    background-image: url('../打印店店铺单独页_files/u100_normal.png');
+}
+
+.u130_container {
+    position:absolute;
+    left:35px;
+    top:397px;
+    width:634px;
+    height:40px;
+}
+
+#u130_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:640px;
+    height:46px;
+}
+
+.u131 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:630px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u132 {
+    position:absolute;
+    left:42px;
+    top:401px;
+    width:251px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u133 {
+    position:absolute;
+    left:42px;
+    top:418px;
+    width:198px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u134 {
+    position:absolute;
+    left:19px;
+    top:448px;
+    width:172px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u135 {
+    position:absolute;
+    left:72px;
+    top:474px;
+    width:266px;
+    height:84px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u136 {
+    position:absolute;
+    left:19px;
+    top:474px;
+    width:43px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137 {
+    position:absolute;
+    left:72px;
+    top:568px;
+    width:104px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u138_normal {
+    background-image: url('../打印店店铺单独页_files/u138_normal.png');
+}
+
+.u138_container {
+    position:absolute;
+    left:186px;
+    top:568px;
+    width:76px;
+    height:25px;
+}
+
+#u138_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:76px;
+    height:25px;
+}
+
+.u139 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140 {
+    position:absolute;
+    left:19px;
+    top:568px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u141 {
+    position:absolute;
+    left:72px;
+    top:603px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u142 {
+    position:absolute;
+    left:277px;
+    top:572px;
+    width:61px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#pd2u57 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:701px;
+    height:631px;
+    
+}
+
+.u143_normal {
+    background-image: url('../打印店店铺单独页_files/u58_normal.png');
+}
+
+.u143_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:700px;
+    height:630px;
+}
+
+#u143_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:706px;
+    height:636px;
+}
+
+.u144 {
+    position:absolute;
+    left:2px;
+    top:307px;
+    width:696px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u145_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u145_container {
+    position:absolute;
+    left:25px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u145_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u146 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u147_line {
+    background-image: url('../打印店店铺单独页_files/u147_line.png');
+}
+
+.u147_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:700px;
+    height:3px;
+}
+
+.u147 {
+    position:absolute;
+    left:0px;
+    top:28px;
+    width:700px;
+    height:10px;
+    
+}
+
+.u148_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u148_container {
+    position:absolute;
+    left:122px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u148_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u149 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u150_normal {
+    background-image: url('../打印店店铺单独页_files/u69_normal.png');
+}
+
+.u150_container {
+    position:absolute;
+    left:219px;
+    top:10px;
+    width:87px;
+    height:23px;
+}
+
+#u150_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:29px;
+}
+
+.u151 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u152_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u152_container {
+    position:absolute;
+    left:316px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u152_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u153 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u154_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u154_container {
+    position:absolute;
+    left:413px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u154_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u155 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u156 {
+    position:absolute;
+    left:139px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u157 {
+    position:absolute;
+    left:42px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u158 {
+    position:absolute;
+    left:252px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u159 {
+    position:absolute;
+    left:345px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u160 {
+    position:absolute;
+    left:444px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u161 {
+    position:absolute;
+    left:16px;
+    top:43px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u162 {
+    position:absolute;
+    left:74px;
+    top:43px;
+    width:63px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u163_normal {
+    background-image: url('../打印店店铺单独页_files/u163_normal.png');
+}
+
+.u163_container {
+    position:absolute;
+    left:16px;
+    top:66px;
+    width:670px;
+    height:20px;
+}
+
+#u163_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:676px;
+    height:26px;
+}
+
+.u164 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:666px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165 {
+    position:absolute;
+    left:35px;
+    top:69px;
+    width:37px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u166 {
+    position:absolute;
+    left:150px;
+    top:69px;
+    width:38px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167 {
+    position:absolute;
+    left:266px;
+    top:68px;
+    width:40px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u168 {
+    position:absolute;
+    left:430px;
+    top:68px;
+    width:67px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u169 {
+    position:absolute;
+    left:625px;
+    top:68px;
+    width:40px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u170 {
+    position:absolute;
+    left:370px;
+    top:94px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u171 {
+    position:absolute;
+    left:589px;
+    top:92px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u172_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u172_container {
+    position:absolute;
+    left:21px;
+    top:94px;
+    width:65px;
+    height:16px;
+}
+
+#u172_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u173 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u174 {
+    position:absolute;
+    left:255px;
+    top:94px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u175 {
+    position:absolute;
+    left:122px;
+    top:94px;
+    width:97px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u176 {
+    position:absolute;
+    left:648px;
+    top:92px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u177 {
+    position:absolute;
+    left:370px;
+    top:117px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u178 {
+    position:absolute;
+    left:589px;
+    top:115px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u179_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u179_container {
+    position:absolute;
+    left:21px;
+    top:117px;
+    width:65px;
+    height:16px;
+}
+
+#u179_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u180 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u181 {
+    position:absolute;
+    left:255px;
+    top:117px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u182 {
+    position:absolute;
+    left:122px;
+    top:117px;
+    width:97px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u183 {
+    position:absolute;
+    left:648px;
+    top:115px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u184 {
+    position:absolute;
+    left:370px;
+    top:140px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u185 {
+    position:absolute;
+    left:589px;
+    top:138px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u186_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u186_container {
+    position:absolute;
+    left:21px;
+    top:140px;
+    width:65px;
+    height:16px;
+}
+
+#u186_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u187 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u188 {
+    position:absolute;
+    left:255px;
+    top:140px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u189 {
+    position:absolute;
+    left:122px;
+    top:140px;
+    width:97px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u190 {
+    position:absolute;
+    left:648px;
+    top:138px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u191 {
+    position:absolute;
+    left:370px;
+    top:162px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u192 {
+    position:absolute;
+    left:589px;
+    top:160px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u193_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u193_container {
+    position:absolute;
+    left:21px;
+    top:162px;
+    width:65px;
+    height:16px;
+}
+
+#u193_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u194 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u195 {
+    position:absolute;
+    left:255px;
+    top:162px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u196 {
+    position:absolute;
+    left:122px;
+    top:162px;
+    width:97px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u197 {
+    position:absolute;
+    left:648px;
+    top:160px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u198 {
+    position:absolute;
+    left:370px;
+    top:185px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u199 {
+    position:absolute;
+    left:589px;
+    top:183px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u200_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u200_container {
+    position:absolute;
+    left:21px;
+    top:185px;
+    width:65px;
+    height:16px;
+}
+
+#u200_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u201 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u202 {
+    position:absolute;
+    left:255px;
+    top:185px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u203 {
+    position:absolute;
+    left:122px;
+    top:185px;
+    width:97px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u204 {
+    position:absolute;
+    left:648px;
+    top:183px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u205 {
+    position:absolute;
+    left:370px;
+    top:208px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u206 {
+    position:absolute;
+    left:589px;
+    top:206px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u207_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u207_container {
+    position:absolute;
+    left:21px;
+    top:208px;
+    width:65px;
+    height:16px;
+}
+
+#u207_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u208 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u209 {
+    position:absolute;
+    left:255px;
+    top:208px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u210 {
+    position:absolute;
+    left:122px;
+    top:208px;
+    width:97px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u211 {
+    position:absolute;
+    left:648px;
+    top:206px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u212 {
+    position:absolute;
+    left:16px;
+    top:598px;
+    width:172px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#pd1u57 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:701px;
+    height:631px;
+    
+}
+
+.u213_normal {
+    background-image: url('../打印店店铺单独页_files/u58_normal.png');
+}
+
+.u213_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:700px;
+    height:630px;
+}
+
+#u213_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:706px;
+    height:636px;
+}
+
+.u214 {
+    position:absolute;
+    left:2px;
+    top:307px;
+    width:696px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u215_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u215_container {
+    position:absolute;
+    left:25px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u215_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u216 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u217_line {
+    background-image: url('../打印店店铺单独页_files/u217_line.png');
+}
+
+.u217_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:700px;
+    height:3px;
+}
+
+.u217 {
+    position:absolute;
+    left:0px;
+    top:28px;
+    width:700px;
+    height:10px;
+    
+}
+
+.u218_normal {
+    background-image: url('../打印店店铺单独页_files/u69_normal.png');
+}
+
+.u218_container {
+    position:absolute;
+    left:122px;
+    top:10px;
+    width:87px;
+    height:23px;
+}
+
+#u218_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:29px;
+}
+
+.u219 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u220_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u220_container {
+    position:absolute;
+    left:219px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u220_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u221 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u222_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u222_container {
+    position:absolute;
+    left:316px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u222_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u223 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u224_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u224_container {
+    position:absolute;
+    left:413px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u224_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u225 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u226 {
+    position:absolute;
+    left:139px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u227 {
+    position:absolute;
+    left:42px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u228 {
+    position:absolute;
+    left:252px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u229 {
+    position:absolute;
+    left:345px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u230 {
+    position:absolute;
+    left:444px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#pd0u57 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:701px;
+    height:631px;
+    
+}
+
+.u231_normal {
+    background-image: url('../打印店店铺单独页_files/u231_normal.png');
+}
+
+.u231_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:700px;
+    height:630px;
+}
+
+#u231_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:706px;
+    height:636px;
+}
+
+.u232 {
+    position:absolute;
+    left:2px;
+    top:307px;
+    width:696px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u233_normal {
+    background-image: url('../打印店店铺单独页_files/u69_normal.png');
+}
+
+.u233_container {
+    position:absolute;
+    left:25px;
+    top:10px;
+    width:87px;
+    height:23px;
+}
+
+#u233_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:29px;
+}
+
+.u234 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u235_line {
+    background-image: url('../打印店店铺单独页_files/u235_line.png');
+}
+
+.u235_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:700px;
+    height:3px;
+}
+
+.u235 {
+    position:absolute;
+    left:0px;
+    top:28px;
+    width:700px;
+    height:10px;
+    
+}
+
+.u236_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u236_container {
+    position:absolute;
+    left:122px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u236_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u237 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u238_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u238_container {
+    position:absolute;
+    left:219px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u238_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u239 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u240_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u240_container {
+    position:absolute;
+    left:316px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u240_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u241 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u242_normal {
+    background-image: url('../打印店店铺单独页_files/u60_normal.png');
+}
+
+.u242_container {
+    position:absolute;
+    left:413px;
+    top:10px;
+    width:87px;
+    height:18px;
+}
+
+#u242_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:93px;
+    height:24px;
+}
+
+.u243 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u244 {
+    position:absolute;
+    left:139px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u245 {
+    position:absolute;
+    left:42px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u246 {
+    position:absolute;
+    left:252px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u247 {
+    position:absolute;
+    left:345px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u248 {
+    position:absolute;
+    left:444px;
+    top:12px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u249 {
+    position:absolute;
+    left:25px;
+    top:48px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u250 {
+    position:absolute;
+    left:169px;
+    top:48px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u251 {
+    position:absolute;
+    left:329px;
+    top:48px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u252 {
+    position:absolute;
+    left:479px;
+    top:48px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u253 {
+    position:absolute;
+    left:622px;
+    top:48px;
+    width:78px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u254_line {
+    background-image: url('../打印店店铺单独页_files/u254_line.png');
+}
+
+.u254_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:700px;
+    height:3px;
+}
+
+.u254 {
+    position:absolute;
+    left:0px;
+    top:74px;
+    width:700px;
+    height:10px;
+    
+}
+
+.u255 {
+    position:absolute;
+    left:25px;
+    top:88px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u256_line {
+    background-image: url('../打印店店铺单独页_files/u256_line.png');
+}
+
+.u256_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:700px;
+    height:3px;
+}
+
+.u256 {
+    position:absolute;
+    left:0px;
+    top:109px;
+    width:700px;
+    height:10px;
+    
+}
+
+.u257 {
+    position:absolute;
+    left:519px;
+    top:94px;
+    width:40px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u258 {
+    position:absolute;
+    left:569px;
+    top:94px;
+    width:40px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u259 {
+    position:absolute;
+    left:619px;
+    top:94px;
+    width:40px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u260 {
+    position:absolute;
+    left:25px;
+    top:129px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u261 {
+    position:absolute;
+    left:316px;
+    top:129px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u262 {
+    position:absolute;
+    left:358px;
+    top:129px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u263 {
+    position:absolute;
+    left:464px;
+    top:129px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u264_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u264_container {
+    position:absolute;
+    left:544px;
+    top:129px;
+    width:65px;
+    height:16px;
+}
+
+#u264_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u265 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u266 {
+    position:absolute;
+    left:622px;
+    top:129px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u267 {
+    position:absolute;
+    left:25px;
+    top:159px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u268 {
+    position:absolute;
+    left:316px;
+    top:159px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u269 {
+    position:absolute;
+    left:358px;
+    top:159px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u270 {
+    position:absolute;
+    left:464px;
+    top:159px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u271_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u271_container {
+    position:absolute;
+    left:544px;
+    top:159px;
+    width:65px;
+    height:16px;
+}
+
+#u271_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u272 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u273 {
+    position:absolute;
+    left:622px;
+    top:159px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u274 {
+    position:absolute;
+    left:25px;
+    top:189px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u275 {
+    position:absolute;
+    left:316px;
+    top:189px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u276 {
+    position:absolute;
+    left:358px;
+    top:189px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u277 {
+    position:absolute;
+    left:464px;
+    top:189px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u278_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u278_container {
+    position:absolute;
+    left:544px;
+    top:189px;
+    width:65px;
+    height:16px;
+}
+
+#u278_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u279 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u280 {
+    position:absolute;
+    left:622px;
+    top:189px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u281 {
+    position:absolute;
+    left:25px;
+    top:219px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u282 {
+    position:absolute;
+    left:316px;
+    top:219px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u283 {
+    position:absolute;
+    left:358px;
+    top:219px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u284 {
+    position:absolute;
+    left:464px;
+    top:219px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u285_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u285_container {
+    position:absolute;
+    left:544px;
+    top:219px;
+    width:65px;
+    height:16px;
+}
+
+#u285_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u286 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u287 {
+    position:absolute;
+    left:622px;
+    top:219px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u288 {
+    position:absolute;
+    left:25px;
+    top:249px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u289 {
+    position:absolute;
+    left:316px;
+    top:249px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u290 {
+    position:absolute;
+    left:358px;
+    top:249px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u291 {
+    position:absolute;
+    left:464px;
+    top:249px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u292_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u292_container {
+    position:absolute;
+    left:544px;
+    top:249px;
+    width:65px;
+    height:16px;
+}
+
+#u292_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u293 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u294 {
+    position:absolute;
+    left:622px;
+    top:249px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u295 {
+    position:absolute;
+    left:25px;
+    top:279px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u296 {
+    position:absolute;
+    left:316px;
+    top:279px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u297 {
+    position:absolute;
+    left:358px;
+    top:279px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u298 {
+    position:absolute;
+    left:464px;
+    top:279px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u299_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u299_container {
+    position:absolute;
+    left:544px;
+    top:279px;
+    width:65px;
+    height:16px;
+}
+
+#u299_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u300 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u301 {
+    position:absolute;
+    left:622px;
+    top:279px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u302 {
+    position:absolute;
+    left:25px;
+    top:309px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u303 {
+    position:absolute;
+    left:316px;
+    top:309px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u304 {
+    position:absolute;
+    left:358px;
+    top:309px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u305 {
+    position:absolute;
+    left:464px;
+    top:309px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u306_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u306_container {
+    position:absolute;
+    left:544px;
+    top:309px;
+    width:65px;
+    height:16px;
+}
+
+#u306_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u307 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u308 {
+    position:absolute;
+    left:622px;
+    top:309px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u309 {
+    position:absolute;
+    left:469px;
+    top:94px;
+    width:40px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u310_line {
+    background-image: url('../打印店店铺单独页_files/u310_line.png');
+}
+
+.u310_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:700px;
+    height:3px;
+}
+
+.u310 {
+    position:absolute;
+    left:0px;
+    top:334px;
+    width:700px;
+    height:10px;
+    
+}
+
+.u311 {
+    position:absolute;
+    left:25px;
+    top:348px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u312_line {
+    background-image: url('../打印店店铺单独页_files/u312_line.png');
+}
+
+.u312_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:700px;
+    height:3px;
+}
+
+.u312 {
+    position:absolute;
+    left:0px;
+    top:369px;
+    width:700px;
+    height:10px;
+    
+}
+
+.u313 {
+    position:absolute;
+    left:519px;
+    top:354px;
+    width:40px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u314 {
+    position:absolute;
+    left:569px;
+    top:354px;
+    width:40px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u315 {
+    position:absolute;
+    left:619px;
+    top:354px;
+    width:40px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u316 {
+    position:absolute;
+    left:469px;
+    top:354px;
+    width:40px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u317 {
+    position:absolute;
+    left:25px;
+    top:389px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u318 {
+    position:absolute;
+    left:316px;
+    top:389px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u319 {
+    position:absolute;
+    left:358px;
+    top:389px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u320 {
+    position:absolute;
+    left:464px;
+    top:389px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u321_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u321_container {
+    position:absolute;
+    left:544px;
+    top:389px;
+    width:65px;
+    height:16px;
+}
+
+#u321_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u322 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u323 {
+    position:absolute;
+    left:622px;
+    top:389px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u324 {
+    position:absolute;
+    left:25px;
+    top:419px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u325 {
+    position:absolute;
+    left:316px;
+    top:419px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u326 {
+    position:absolute;
+    left:358px;
+    top:419px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u327 {
+    position:absolute;
+    left:464px;
+    top:419px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u328_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u328_container {
+    position:absolute;
+    left:544px;
+    top:419px;
+    width:65px;
+    height:16px;
+}
+
+#u328_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u329 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u330 {
+    position:absolute;
+    left:622px;
+    top:419px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u331 {
+    position:absolute;
+    left:25px;
+    top:449px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u332 {
+    position:absolute;
+    left:316px;
+    top:449px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u333 {
+    position:absolute;
+    left:358px;
+    top:449px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u334 {
+    position:absolute;
+    left:464px;
+    top:449px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u335_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u335_container {
+    position:absolute;
+    left:544px;
+    top:449px;
+    width:65px;
+    height:16px;
+}
+
+#u335_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u336 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u337 {
+    position:absolute;
+    left:622px;
+    top:449px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u338 {
+    position:absolute;
+    left:25px;
+    top:479px;
+    width:291px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u339 {
+    position:absolute;
+    left:316px;
+    top:479px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u340 {
+    position:absolute;
+    left:358px;
+    top:479px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u341 {
+    position:absolute;
+    left:464px;
+    top:479px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u342_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u342_container {
+    position:absolute;
+    left:544px;
+    top:479px;
+    width:65px;
+    height:16px;
+}
+
+#u342_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u343 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u344 {
+    position:absolute;
+    left:622px;
+    top:479px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u345 {
+    position:absolute;
+    left:25px;
+    top:509px;
+    width:301px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u346 {
+    position:absolute;
+    left:316px;
+    top:509px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u347 {
+    position:absolute;
+    left:358px;
+    top:509px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u348 {
+    position:absolute;
+    left:464px;
+    top:509px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u349_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u349_container {
+    position:absolute;
+    left:544px;
+    top:509px;
+    width:65px;
+    height:16px;
+}
+
+#u349_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u350 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u351 {
+    position:absolute;
+    left:622px;
+    top:509px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u352 {
+    position:absolute;
+    left:25px;
+    top:539px;
+    width:301px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u353 {
+    position:absolute;
+    left:316px;
+    top:539px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u354 {
+    position:absolute;
+    left:358px;
+    top:539px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u355 {
+    position:absolute;
+    left:464px;
+    top:539px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u356_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u356_container {
+    position:absolute;
+    left:544px;
+    top:539px;
+    width:65px;
+    height:16px;
+}
+
+#u356_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u357 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u358 {
+    position:absolute;
+    left:622px;
+    top:539px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u359 {
+    position:absolute;
+    left:25px;
+    top:569px;
+    width:269px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u360 {
+    position:absolute;
+    left:316px;
+    top:569px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u361 {
+    position:absolute;
+    left:358px;
+    top:569px;
+    width:50px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u362 {
+    position:absolute;
+    left:464px;
+    top:569px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u363_normal {
+    background-image: url('../打印店店铺单独页_files/u172_normal.png');
+}
+
+.u363_container {
+    position:absolute;
+    left:544px;
+    top:569px;
+    width:65px;
+    height:16px;
+}
+
+#u363_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:16px;
+}
+
+.u364 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u365 {
+    position:absolute;
+    left:622px;
+    top:569px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u366 {
+    position:absolute;
+    left:388px;
+    top:607px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u367 {
+    position:absolute;
+    left:413px;
+    top:129px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u368 {
+    position:absolute;
+    left:413px;
+    top:159px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u369 {
+    position:absolute;
+    left:413px;
+    top:189px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u370 {
+    position:absolute;
+    left:413px;
+    top:219px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u371 {
+    position:absolute;
+    left:413px;
+    top:249px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u372 {
+    position:absolute;
+    left:413px;
+    top:279px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u373 {
+    position:absolute;
+    left:413px;
+    top:309px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u374 {
+    position:absolute;
+    left:413px;
+    top:389px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u375 {
+    position:absolute;
+    left:413px;
+    top:419px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u376 {
+    position:absolute;
+    left:413px;
+    top:449px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u377 {
+    position:absolute;
+    left:413px;
+    top:479px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u378 {
+    position:absolute;
+    left:413px;
+    top:509px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u379 {
+    position:absolute;
+    left:413px;
+    top:539px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u380 {
+    position:absolute;
+    left:413px;
+    top:569px;
+    width:38px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u381 {
+    position:absolute;
+    left:428px;
+    top:84px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u382 {
+    position:absolute;
+    left:871px;
+    top:220px;
+    width:72px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+

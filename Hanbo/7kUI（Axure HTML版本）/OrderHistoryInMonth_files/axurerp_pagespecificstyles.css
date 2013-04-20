@@ -98,7 +98,7 @@ div {
 .u5_container {
     position:absolute;
     left:16px;
-    top:248px;
+    top:50px;
     width:724px;
     height:188px;
 }
@@ -127,8 +127,8 @@ div {
 
 .u7 {
     position:absolute;
-    left:42px;
-    top:262px;
+    left:43px;
+    top:64px;
     width:135px;
     height:16px;
     ;
@@ -142,7 +142,7 @@ div {
 .u8 {
     position:absolute;
     left:304px;
-    top:262px;
+    top:64px;
     width:122px;
     height:16px;
     ;
@@ -155,8 +155,8 @@ div {
 
 .u9 {
     position:absolute;
-    left:530px;
-    top:262px;
+    left:531px;
+    top:64px;
     width:96px;
     height:16px;
     ;
@@ -169,8 +169,8 @@ div {
 
 .u10 {
     position:absolute;
-    left:42px;
-    top:288px;
+    left:43px;
+    top:90px;
     width:211px;
     height:16px;
     ;
@@ -184,7 +184,7 @@ div {
 .u11 {
     position:absolute;
     left:304px;
-    top:288px;
+    top:90px;
     width:122px;
     height:16px;
     ;
@@ -198,8 +198,8 @@ div {
 .u12 {
     position:absolute;
     left:520px;
-    top:288px;
-    width:107px;
+    top:90px;
+    width:157px;
     height:16px;
     ;
     ;
@@ -212,7 +212,7 @@ div {
 .u13 {
     position:absolute;
     left:128px;
-    top:321px;
+    top:123px;
     width:40px;
     height:16px;
     ;
@@ -225,8 +225,8 @@ div {
 
 .u14 {
     position:absolute;
-    left:270px;
-    top:321px;
+    left:271px;
+    top:123px;
     width:57px;
     height:16px;
     ;
@@ -240,7 +240,7 @@ div {
 .u15 {
     position:absolute;
     left:444px;
-    top:321px;
+    top:123px;
     width:52px;
     height:16px;
     ;
@@ -254,7 +254,7 @@ div {
 .u16 {
     position:absolute;
     left:566px;
-    top:321px;
+    top:123px;
     width:28px;
     height:16px;
     ;
@@ -268,7 +268,7 @@ div {
 .u17 {
     position:absolute;
     left:44px;
-    top:347px;
+    top:149px;
     width:150px;
     height:16px;
     ;
@@ -281,8 +281,8 @@ div {
 
 .u18 {
     position:absolute;
-    left:270px;
-    top:347px;
+    left:271px;
+    top:149px;
     width:37px;
     height:16px;
     ;
@@ -295,8 +295,8 @@ div {
 
 .u19 {
     position:absolute;
-    left:432px;
-    top:347px;
+    left:433px;
+    top:149px;
     width:24px;
     height:16px;
     ;
@@ -309,9 +309,9 @@ div {
 
 .u20 {
     position:absolute;
-    left:558px;
-    top:347px;
-    width:23px;
+    left:559px;
+    top:149px;
+    width:70px;
     height:16px;
     ;
     ;
@@ -324,7 +324,7 @@ div {
 .u21 {
     position:absolute;
     left:44px;
-    top:373px;
+    top:175px;
     width:162px;
     height:16px;
     ;
@@ -337,8 +337,8 @@ div {
 
 .u22 {
     position:absolute;
-    left:270px;
-    top:373px;
+    left:271px;
+    top:175px;
     width:37px;
     height:16px;
     ;
@@ -351,8 +351,8 @@ div {
 
 .u23 {
     position:absolute;
-    left:432px;
-    top:373px;
+    left:433px;
+    top:175px;
     width:24px;
     height:16px;
     ;
@@ -365,9 +365,9 @@ div {
 
 .u24 {
     position:absolute;
-    left:558px;
-    top:373px;
-    width:35px;
+    left:559px;
+    top:175px;
+    width:77px;
     height:16px;
     ;
     ;
@@ -379,8 +379,8 @@ div {
 
 .u25 {
     position:absolute;
-    left:362px;
-    top:407px;
+    left:363px;
+    top:209px;
     width:150px;
     height:16px;
     ;
@@ -394,7 +394,7 @@ div {
 .u26 {
     position:absolute;
     left:158px;
-    top:407px;
+    top:209px;
     width:150px;
     height:16px;
     ;
@@ -407,8 +407,8 @@ div {
 
 .u27 {
     position:absolute;
-    left:558px;
-    top:407px;
+    left:559px;
+    top:209px;
     width:150px;
     height:16px;
     ;
@@ -421,8 +421,8 @@ div {
 
 .u28 {
     position:absolute;
-    left:628px;
-    top:347px;
+    left:649px;
+    top:149px;
     width:27px;
     height:16px;
     ;
@@ -435,8 +435,8 @@ div {
 
 .u29 {
     position:absolute;
-    left:628px;
-    top:373px;
+    left:649px;
+    top:175px;
     width:27px;
     height:16px;
     ;
@@ -454,7 +454,7 @@ div {
 .u30_container {
     position:absolute;
     left:16px;
-    top:50px;
+    top:250px;
     width:724px;
     height:188px;
 }
@@ -484,7 +484,7 @@ div {
 .u32 {
     position:absolute;
     left:43px;
-    top:64px;
+    top:264px;
     width:135px;
     height:16px;
     ;
@@ -498,7 +498,7 @@ div {
 .u33 {
     position:absolute;
     left:304px;
-    top:64px;
+    top:264px;
     width:122px;
     height:16px;
     ;
@@ -512,7 +512,7 @@ div {
 .u34 {
     position:absolute;
     left:531px;
-    top:64px;
+    top:264px;
     width:96px;
     height:16px;
     ;
@@ -526,7 +526,7 @@ div {
 .u35 {
     position:absolute;
     left:43px;
-    top:90px;
+    top:290px;
     width:211px;
     height:16px;
     ;
@@ -540,7 +540,7 @@ div {
 .u36 {
     position:absolute;
     left:304px;
-    top:90px;
+    top:290px;
     width:122px;
     height:16px;
     ;
@@ -554,8 +554,8 @@ div {
 .u37 {
     position:absolute;
     left:520px;
-    top:90px;
-    width:107px;
+    top:290px;
+    width:157px;
     height:16px;
     ;
     ;
@@ -568,7 +568,7 @@ div {
 .u38 {
     position:absolute;
     left:128px;
-    top:123px;
+    top:323px;
     width:40px;
     height:16px;
     ;
@@ -582,7 +582,7 @@ div {
 .u39 {
     position:absolute;
     left:271px;
-    top:123px;
+    top:323px;
     width:57px;
     height:16px;
     ;
@@ -596,7 +596,7 @@ div {
 .u40 {
     position:absolute;
     left:444px;
-    top:123px;
+    top:323px;
     width:52px;
     height:16px;
     ;
@@ -610,7 +610,7 @@ div {
 .u41 {
     position:absolute;
     left:566px;
-    top:123px;
+    top:323px;
     width:28px;
     height:16px;
     ;
@@ -624,7 +624,7 @@ div {
 .u42 {
     position:absolute;
     left:44px;
-    top:149px;
+    top:349px;
     width:150px;
     height:16px;
     ;
@@ -638,7 +638,7 @@ div {
 .u43 {
     position:absolute;
     left:271px;
-    top:149px;
+    top:349px;
     width:37px;
     height:16px;
     ;
@@ -652,7 +652,7 @@ div {
 .u44 {
     position:absolute;
     left:433px;
-    top:149px;
+    top:349px;
     width:24px;
     height:16px;
     ;
@@ -666,8 +666,8 @@ div {
 .u45 {
     position:absolute;
     left:559px;
-    top:149px;
-    width:23px;
+    top:349px;
+    width:70px;
     height:16px;
     ;
     ;
@@ -680,7 +680,7 @@ div {
 .u46 {
     position:absolute;
     left:44px;
-    top:175px;
+    top:375px;
     width:162px;
     height:16px;
     ;
@@ -694,7 +694,7 @@ div {
 .u47 {
     position:absolute;
     left:271px;
-    top:175px;
+    top:375px;
     width:37px;
     height:16px;
     ;
@@ -708,7 +708,7 @@ div {
 .u48 {
     position:absolute;
     left:433px;
-    top:175px;
+    top:375px;
     width:24px;
     height:16px;
     ;
@@ -722,8 +722,8 @@ div {
 .u49 {
     position:absolute;
     left:559px;
-    top:175px;
-    width:35px;
+    top:375px;
+    width:77px;
     height:16px;
     ;
     ;
@@ -736,7 +736,7 @@ div {
 .u50 {
     position:absolute;
     left:363px;
-    top:209px;
+    top:409px;
     width:150px;
     height:16px;
     ;
@@ -750,7 +750,7 @@ div {
 .u51 {
     position:absolute;
     left:158px;
-    top:209px;
+    top:409px;
     width:150px;
     height:16px;
     ;
@@ -764,7 +764,7 @@ div {
 .u52 {
     position:absolute;
     left:559px;
-    top:209px;
+    top:409px;
     width:150px;
     height:16px;
     ;
@@ -777,8 +777,8 @@ div {
 
 .u53 {
     position:absolute;
-    left:629px;
-    top:149px;
+    left:649px;
+    top:349px;
     width:27px;
     height:16px;
     ;
@@ -791,8 +791,8 @@ div {
 
 .u54 {
     position:absolute;
-    left:629px;
-    top:175px;
+    left:649px;
+    top:375px;
     width:27px;
     height:16px;
     ;

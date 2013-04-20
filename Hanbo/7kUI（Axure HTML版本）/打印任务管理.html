@@ -1,0 +1,911 @@
+<html>
+<head>
+    <title>打印任务管理</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="imagetoolbar" content="no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet">
+    <link href="打印任务管理_files/axurerp_pagespecificstyles.css" type="text/css" rel="stylesheet">
+<!--[if IE 6]>
+    <link href="打印任务管理_files/axurerp_pagespecificstyles_ie6.css" type="text/css" rel="stylesheet">
+<![endif]-->
+    <script src="data/sitemap.js"></script>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axurerp_beforepagescript.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+<script src='打印任务管理_files/data.js'></script>
+</head>
+<body>
+<div id="main_container">
+
+<div id="u0" class="u0_container"   >
+<div id="u0_img" class="u0_normal detectCanvas"></div>
+<div id="u1" class="u1" style="visibility:hidden;"  >
+<div id="u1_rtf"></div>
+</div>
+</div>
+<div id="u2" class="u2_container"   >
+<div id="u2_img" class="u2_normal detectCanvas"></div>
+<div id="u3" class="u3" style="visibility:hidden;"  >
+<div id="u3_rtf"></div>
+</div>
+</div>
+<div id="u4" class="u4"  >
+<div id="u4_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">批量操作：</span></p></div>
+</div>
+<div id="u5" class="u5"  >
+<div id="u5_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">移</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">至已</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">自行取印</span></p></div>
+</div>
+<div id="u6" class="u6"  >
+<div id="u6_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">删</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">除任务</span></p></div>
+</div>
+<div id="u7" class="u7"  >
+<div id="u7_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">移</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">至</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">校园送印任务</span></p></div>
+</div>
+<div id="u8" class="u8"  >
+<div id="u8_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">移</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">至已快递任务</span></p></div>
+</div>
+<div id="u9" class="u9_container"   >
+<div id="u9_img" class="u9_normal detectCanvas"></div>
+<div id="u10" class="u10" style="visibility:hidden;"  >
+<div id="u10_rtf"></div>
+</div>
+</div>
+<div id="u11" class="u11"  >
+<div id="u11_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">文档信息</span></p></div>
+</div>
+<div id="u12" class="u12"  >
+<div id="u12_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">印单</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">序</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">号</span></p></div>
+</div>
+<div id="u13" class="u13"  >
+<div id="u13_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">文</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">档名</span></p></div>
+</div>
+<div id="u14" class="u14"  >
+<div id="u14_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">文</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">档大小</span></p></div>
+</div>
+<div id="u15" class="u15"  >
+<div id="u15_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">文</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">档页数</span></p></div>
+</div>
+<div id="u16" class="u16"  >
+<div id="u16_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">状</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">态</span></p></div>
+</div>
+<div id="u17" class="u17"  >
+<div id="u17_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">状</span><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">态信息</span></p></div>
+</div>
+<div id="u18" class="u18"  >
+<div id="u18_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">下</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">载速度</span></p></div>
+</div>
+<div id="u19" class="u19"  >
+<div id="u19_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">下载进度</span></p></div>
+</div>
+<div id="u20" class="u20"  >
+<div id="u20_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">用</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">户上传时间</span></p></div>
+</div>
+<div id="u21" class="u21"  >
+<div id="u21_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">下</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">载完成时间</span></p></div>
+</div>
+<div id="u22" class="u22"  >
+<div id="u22_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">打</span><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">印与装订设置</span></p></div>
+</div>
+<div id="u23" class="u23"  >
+<div id="u23_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">双</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">面打印</span></p></div>
+</div>
+<div id="u24" class="u24"  >
+<div id="u24_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">黑</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">白打印</span></p></div>
+</div>
+<div id="u25" class="u25"  >
+<div id="u25_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">彩</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">色打印</span></p></div>
+</div>
+<div id="u26" class="u26"  >
+<div id="u26_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">打</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">印范围</span></p></div>
+</div>
+<div id="u27" class="u27"  >
+<div id="u27_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">多</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">页打印每版页数</span></p></div>
+</div>
+<div id="u28" class="u28"  >
+<div id="u28_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">多</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">页打印布局方向</span></p></div>
+</div>
+<div id="u29" class="u29"  >
+<div id="u29_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">打</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">印份数</span></p></div>
+</div>
+<div id="u30" class="u30"  >
+<div id="u30_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">装</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">订方法</span></p></div>
+</div>
+<div id="u31" class="u31"  >
+<div id="u31_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">用</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">户</span></p><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">备注</span></p></div>
+</div>
+<div id="u32" class="u32"  >
+<div id="u32_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">支</span><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">付与取印</span></p></div>
+</div>
+<div id="u33" class="u33"  >
+<div id="u33_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">取送方式</span></p></div>
+</div>
+<div id="u34" class="u34"  >
+<div id="u34_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">送</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">印地址</span></p></div>
+</div>
+<div id="u35" class="u35"  >
+<div id="u35_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">送</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">印电话</span></p></div>
+</div>
+<div id="u36" class="u36"  >
+<div id="u36_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">金</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">额</span></p></div>
+</div>
+<div id="u37" class="u37"  >
+<div id="u37_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">用</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">户名</span></p></div>
+</div>
+<div id="u38" class="u38"  >
+<div id="u38_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">取</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">印编号</span></p></div>
+</div>
+<div id="u39" class="u39"  >
+<div id="u39_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">用</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">户姓名</span></p></div>
+</div>
+<div id="u40" class="u40"  >
+<div id="u40_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">操</span><span style="font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">作区域</span></p></div>
+</div><div id="u41" class="u41" >
+<DIV id="u41_line" class="u41_line" ></DIV>
+</div><div id="u42" class="u42" >
+<DIV id="u42_line" class="u42_line" ></DIV>
+</div><div id="u43" class="u43" >
+<DIV id="u43_line" class="u43_line" ></DIV>
+</div><div id="u44" class="u44" >
+<DIV id="u44_line" class="u44_line" ></DIV>
+</div><div id="u45" class="u45" >
+<DIV id="u45_line" class="u45_line" ></DIV>
+</div>
+<INPUT id="u46" type="submit" class="u46" value="打印分隔页"   >
+
+<div id="u47" class="u47"  >
+<div id="u47_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">选</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">择纸张</span></p></div>
+</div>
+<div id="u48" class="u48_container"   >
+<div id="u48_img" class="u48_normal detectCanvas"></div>
+<div id="u49" class="u49"  >
+<div id="u49_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#FFFFFF;">等待打印</span></p></div>
+</div>
+</div>
+<div id="u50" class="u50_container"   >
+<div id="u50_img" class="u50_normal detectCanvas"></div>
+<div id="u51" class="u51"  >
+<div id="u51_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">已</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">经打印</span></p></div>
+</div>
+</div>
+<div id="u52" class="u52_container"   >
+<div id="u52_img" class="u52_normal detectCanvas"></div>
+<div id="u53" class="u53"  >
+<div id="u53_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">已</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">经</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">自行取印</span></p></div>
+</div>
+</div>
+<div id="u54" class="u54_container"   >
+<div id="u54_img" class="u54_normal detectCanvas"></div>
+<div id="u55" class="u55"  >
+<div id="u55_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">已经校园送印</span></p></div>
+</div>
+</div>
+<div id="u56" class="u56_container"   >
+<div id="u56_img" class="u56_normal detectCanvas"></div>
+<div id="u57" class="u57"  >
+<div id="u57_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">已</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">经快递送印</span></p></div>
+</div>
+</div>
+<div id="u58" class="u58_container"   >
+<div id="u58_img" class="u58_normal detectCanvas"></div>
+<div id="u59" class="u59"  >
+<div id="u59_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">已经</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">完成交易</span></p></div>
+</div>
+</div>
+<div id="u60" class="u60_container"   >
+<div id="u60_img" class="u60_normal detectCanvas"></div>
+<div id="u61" class="u61"  >
+<div id="u61_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">已</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">经取消删除</span></p></div>
+</div>
+</div>
+<div id="u62" class="u62_container"   >
+<div id="u62_img" class="u62_normal detectCanvas"></div>
+<div id="u63" class="u63"  >
+<div id="u63_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">等</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">待到店再印</span></p></div>
+</div>
+</div>
+<div id="u64" class="u64_container"   >
+<div id="u64_img" class="u64_normal detectCanvas"></div>
+<div id="u65" class="u65" style="visibility:hidden;"  >
+<div id="u65_rtf"></div>
+</div>
+</div>
+<div id="u66" class="u66"  >
+<div id="u66_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">C语言程序设计.pdf&nbsp; 1.68MB&nbsp; 268页</span></p></div>
+</div>
+<div id="u67" class="u67"  >
+<div id="u67_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">等</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">待打印</span></p></div>
+</div>
+<div id="u68" class="u68"  >
+<div id="u68_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">A</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4(70g)</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> 否</span></p></div>
+</div>
+<DIV id="u69container" style="position:absolute; left:464px; top:139px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u69">
+<div id="u70" class="u70" style="visibility:hidden;"  >
+<div id="u70_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u69" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<DIV id="u71container" style="position:absolute; left:464px; top:156px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u71">
+<div id="u72" class="u72" style="visibility:hidden;"  >
+<div id="u72_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u71" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u73" class="u73"  >
+<div id="u73_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p></div>
+</div>
+<div id="u74" class="u74_container"   >
+<div id="u74_img" class="u74_normal detectCanvas"></div>
+<div id="u75" class="u75" style="visibility:hidden;"  >
+<div id="u75_rtf"></div>
+</div>
+</div>
+<div id="u76" class="u76"  >
+<div id="u76_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">5</span></p></div>
+</div>
+<div id="u77" class="u77"  >
+<div id="u77_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">线胶装</span></p></div>
+</div>
+<INPUT id="u78" type="submit" class="u78" value="打印"   >
+
+<INPUT id="u79" type="submit" class="u79" value="移动"   >
+
+<DIV id="u80container" style="position:absolute; left:13px; top:148px; width:41px; height:16px; ; ; ;" >
+<LABEL for="u80">
+<div id="u81" class="u81"  >
+<div id="u81_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">1</span></p></div>
+</div>
+</LABEL>
+<INPUT id="u80" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"  checked >
+</DIV>
+<div id="u82" class="u82"  >
+<div id="u82_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">1.</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">打印任务列表的任务条依靠不同背景填充色区分不同类型的任务</span></p></div>
+</div>
+<div id="u83" class="u83_container"   >
+<div id="u83_img" class="u83_normal detectCanvas"></div>
+<div id="u84" class="u84"  >
+<div id="u84_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">自行取印任务</span></p></div>
+</div>
+</div>
+<div id="u85" class="u85_container"   >
+<div id="u85_img" class="u85_normal detectCanvas"></div>
+<div id="u86" class="u86"  >
+<div id="u86_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">自行取印（到店再印）任务</span></p></div>
+</div>
+</div>
+<div id="u87" class="u87_container"   >
+<div id="u87_img" class="u87_normal detectCanvas"></div>
+<div id="u88" class="u88"  >
+<div id="u88_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">校</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">园送印任务</span></p></div>
+</div>
+</div>
+<div id="u89" class="u89_container"   >
+<div id="u89_img" class="u89_normal detectCanvas"></div>
+<div id="u90" class="u90"  >
+<div id="u90_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">快</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">递送印任务</span></p></div>
+</div>
+</div>
+<div id="u91" class="u91"  >
+<div id="u91_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">全部</span></p></div>
+</div>
+<div id="u92" class="u92"  >
+<div id="u92_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span></p></div>
+</div>
+<div id="u93" class="u93"  >
+<div id="u93_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">（</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">见详细设置信息框</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">）</span></p></div>
+</div>
+<div id="u94" class="u94"  >
+<div id="u94_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">任</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;">务序号</span></p></div>
+</div>
+<div id="u95" class="u95"  >
+<div id="u95_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">1</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">/3</span></p></div>
+</div>
+<div id="u96" class="u96_container"   >
+<div id="u96_img" class="u96_normal detectCanvas"></div>
+<div id="u97" class="u97" style="visibility:hidden;"  >
+<div id="u97_rtf"></div>
+</div>
+</div>
+<div id="u98" class="u98"  >
+<div id="u98_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">D</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">语言程序设计.pdf&nbsp; 1.68MB&nbsp; 268页</span></p></div>
+</div>
+<div id="u99" class="u99"  >
+<div id="u99_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">等</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">待打印</span></p></div>
+</div>
+<div id="u100" class="u100"  >
+<div id="u100_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">A</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4(70g)</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> 否</span></p></div>
+</div>
+<DIV id="u101container" style="position:absolute; left:464px; top:179px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u101">
+<div id="u102" class="u102" style="visibility:hidden;"  >
+<div id="u102_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u101" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<DIV id="u103container" style="position:absolute; left:464px; top:196px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u103">
+<div id="u104" class="u104" style="visibility:hidden;"  >
+<div id="u104_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u103" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u105" class="u105"  >
+<div id="u105_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p></div>
+</div>
+<div id="u106" class="u106_container"   >
+<div id="u106_img" class="u106_normal detectCanvas"></div>
+<div id="u107" class="u107" style="visibility:hidden;"  >
+<div id="u107_rtf"></div>
+</div>
+</div>
+<div id="u108" class="u108"  >
+<div id="u108_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">5</span></p></div>
+</div>
+<div id="u109" class="u109"  >
+<div id="u109_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">线胶装</span></p></div>
+</div>
+<INPUT id="u110" type="submit" class="u110" value="打印"   >
+
+<INPUT id="u111" type="submit" class="u111" value="移动"   >
+
+<DIV id="u112container" style="position:absolute; left:13px; top:188px; width:41px; height:16px; ; ; ;" >
+<LABEL for="u112">
+<div id="u113" class="u113"  >
+<div id="u113_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">1</span></p></div>
+</div>
+</LABEL>
+<INPUT id="u112" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"  checked >
+</DIV>
+<div id="u114" class="u114"  >
+<div id="u114_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">全部</span></p></div>
+</div>
+<div id="u115" class="u115"  >
+<div id="u115_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span></p></div>
+</div>
+<div id="u116" class="u116"  >
+<div id="u116_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">（</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">见详细设置信息框</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">）</span></p></div>
+</div>
+<div id="u117" class="u117"  >
+<div id="u117_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">/3</span></p></div>
+</div>
+<div id="u118" class="u118_container"   >
+<div id="u118_img" class="u118_normal detectCanvas"></div>
+<div id="u119" class="u119" style="visibility:hidden;"  >
+<div id="u119_rtf"></div>
+</div>
+</div>
+<div id="u120" class="u120"  >
+<div id="u120_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">E</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">语言程序设计.pdf&nbsp; 1.68MB&nbsp; 268页</span></p></div>
+</div>
+<div id="u121" class="u121"  >
+<div id="u121_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">等</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">待打印</span></p></div>
+</div>
+<div id="u122" class="u122"  >
+<div id="u122_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">A</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4(70g)</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> 否</span></p></div>
+</div>
+<DIV id="u123container" style="position:absolute; left:464px; top:219px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u123">
+<div id="u124" class="u124" style="visibility:hidden;"  >
+<div id="u124_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u123" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<DIV id="u125container" style="position:absolute; left:464px; top:236px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u125">
+<div id="u126" class="u126" style="visibility:hidden;"  >
+<div id="u126_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u125" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u127" class="u127"  >
+<div id="u127_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p></div>
+</div>
+<div id="u128" class="u128_container"   >
+<div id="u128_img" class="u128_normal detectCanvas"></div>
+<div id="u129" class="u129" style="visibility:hidden;"  >
+<div id="u129_rtf"></div>
+</div>
+</div>
+<div id="u130" class="u130"  >
+<div id="u130_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">5</span></p></div>
+</div>
+<div id="u131" class="u131"  >
+<div id="u131_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">线胶装</span></p></div>
+</div>
+<INPUT id="u132" type="submit" class="u132" value="打印"   >
+
+<INPUT id="u133" type="submit" class="u133" value="移动"   >
+
+<DIV id="u134container" style="position:absolute; left:13px; top:228px; width:41px; height:16px; ; ; ;" >
+<LABEL for="u134">
+<div id="u135" class="u135"  >
+<div id="u135_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">1</span></p></div>
+</div>
+</LABEL>
+<INPUT id="u134" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"  checked >
+</DIV>
+<div id="u136" class="u136"  >
+<div id="u136_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">全部</span></p></div>
+</div>
+<div id="u137" class="u137"  >
+<div id="u137_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span></p></div>
+</div>
+<div id="u138" class="u138"  >
+<div id="u138_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">（</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">见详细设置信息框</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">）</span></p></div>
+</div>
+<div id="u139" class="u139"  >
+<div id="u139_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">3</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">/3</span></p></div>
+</div>
+<div id="u140" class="u140_container"   >
+<div id="u140_img" class="u140_normal detectCanvas"></div>
+<div id="u141" class="u141" style="visibility:hidden;"  >
+<div id="u141_rtf"></div>
+</div>
+</div>
+<div id="u142" class="u142"  >
+<div id="u142_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">F</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">语言程序设计.pdf&nbsp; 1.68MB&nbsp; 268页</span></p></div>
+</div>
+<div id="u143" class="u143"  >
+<div id="u143_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">等</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">待打印</span></p></div>
+</div>
+<div id="u144" class="u144"  >
+<div id="u144_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">A</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4(70g)</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> 否</span></p></div>
+</div>
+<DIV id="u145container" style="position:absolute; left:464px; top:259px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u145">
+<div id="u146" class="u146" style="visibility:hidden;"  >
+<div id="u146_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u145" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<DIV id="u147container" style="position:absolute; left:464px; top:276px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u147">
+<div id="u148" class="u148" style="visibility:hidden;"  >
+<div id="u148_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u147" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u149" class="u149"  >
+<div id="u149_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p></div>
+</div>
+<div id="u150" class="u150_container"   >
+<div id="u150_img" class="u150_normal detectCanvas"></div>
+<div id="u151" class="u151" style="visibility:hidden;"  >
+<div id="u151_rtf"></div>
+</div>
+</div>
+<div id="u152" class="u152"  >
+<div id="u152_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">5</span></p></div>
+</div>
+<div id="u153" class="u153"  >
+<div id="u153_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">线胶装</span></p></div>
+</div>
+<INPUT id="u154" type="submit" class="u154" value="打印"   >
+
+<INPUT id="u155" type="submit" class="u155" value="移动"   >
+
+<DIV id="u156container" style="position:absolute; left:13px; top:268px; width:41px; height:16px; ; ; ;" >
+<LABEL for="u156">
+<div id="u157" class="u157"  >
+<div id="u157_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span></p></div>
+</div>
+</LABEL>
+<INPUT id="u156" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u158" class="u158"  >
+<div id="u158_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">全部</span></p></div>
+</div>
+<div id="u159" class="u159"  >
+<div id="u159_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span></p></div>
+</div>
+<div id="u160" class="u160"  >
+<div id="u160_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">（</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">见详细设置信息框</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">）</span></p></div>
+</div>
+<div id="u161" class="u161"  >
+<div id="u161_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">1</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">/</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">1</span></p></div>
+</div>
+<div id="u162" class="u162_container"   >
+<div id="u162_img" class="u162_normal detectCanvas"></div>
+<div id="u163" class="u163" style="visibility:hidden;"  >
+<div id="u163_rtf"></div>
+</div>
+</div>
+<div id="u164" class="u164"  >
+<div id="u164_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">C语言程序设计.pdf&nbsp; 1.68MB&nbsp; 268页</span></p></div>
+</div>
+<div id="u165" class="u165"  >
+<div id="u165_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">等</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">待打印</span></p></div>
+</div>
+<div id="u166" class="u166"  >
+<div id="u166_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">A</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4(70g)</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> 否</span></p></div>
+</div>
+<DIV id="u167container" style="position:absolute; left:464px; top:299px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u167">
+<div id="u168" class="u168" style="visibility:hidden;"  >
+<div id="u168_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u167" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<DIV id="u169container" style="position:absolute; left:464px; top:316px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u169">
+<div id="u170" class="u170" style="visibility:hidden;"  >
+<div id="u170_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u169" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u171" class="u171"  >
+<div id="u171_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p></div>
+</div>
+<div id="u172" class="u172_container"   >
+<div id="u172_img" class="u172_normal detectCanvas"></div>
+<div id="u173" class="u173" style="visibility:hidden;"  >
+<div id="u173_rtf"></div>
+</div>
+</div>
+<div id="u174" class="u174"  >
+<div id="u174_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">5</span></p></div>
+</div>
+<div id="u175" class="u175"  >
+<div id="u175_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">线胶装</span></p></div>
+</div>
+<INPUT id="u176" type="submit" class="u176" value="打印"   >
+
+<INPUT id="u177" type="submit" class="u177" value="移动"   >
+
+<DIV id="u178container" style="position:absolute; left:13px; top:308px; width:41px; height:16px; ; ; ;" >
+<LABEL for="u178">
+<div id="u179" class="u179"  >
+<div id="u179_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">3</span></p></div>
+</div>
+</LABEL>
+<INPUT id="u178" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u180" class="u180"  >
+<div id="u180_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">全部</span></p></div>
+</div>
+<div id="u181" class="u181"  >
+<div id="u181_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span></p></div>
+</div>
+<div id="u182" class="u182"  >
+<div id="u182_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">（</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">见详细设置信息框</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">）</span></p></div>
+</div>
+<div id="u183" class="u183"  >
+<div id="u183_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">1</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">/</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span></p></div>
+</div>
+<div id="u184" class="u184_container"   >
+<div id="u184_img" class="u184_normal detectCanvas"></div>
+<div id="u185" class="u185" style="visibility:hidden;"  >
+<div id="u185_rtf"></div>
+</div>
+</div>
+<div id="u186" class="u186"  >
+<div id="u186_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">C语言程序设计.pdf&nbsp; 1.68MB&nbsp; 268页</span></p></div>
+</div>
+<div id="u187" class="u187"  >
+<div id="u187_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">等</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">待打印</span></p></div>
+</div>
+<div id="u188" class="u188"  >
+<div id="u188_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">A</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4(70g)</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> 否</span></p></div>
+</div>
+<DIV id="u189container" style="position:absolute; left:464px; top:339px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u189">
+<div id="u190" class="u190" style="visibility:hidden;"  >
+<div id="u190_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u189" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<DIV id="u191container" style="position:absolute; left:464px; top:356px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u191">
+<div id="u192" class="u192" style="visibility:hidden;"  >
+<div id="u192_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u191" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u193" class="u193"  >
+<div id="u193_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p></div>
+</div>
+<div id="u194" class="u194_container"   >
+<div id="u194_img" class="u194_normal detectCanvas"></div>
+<div id="u195" class="u195" style="visibility:hidden;"  >
+<div id="u195_rtf"></div>
+</div>
+</div>
+<div id="u196" class="u196"  >
+<div id="u196_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">5</span></p></div>
+</div>
+<div id="u197" class="u197"  >
+<div id="u197_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">线胶装</span></p></div>
+</div>
+<INPUT id="u198" type="submit" class="u198" value="打印"   >
+
+<INPUT id="u199" type="submit" class="u199" value="移动"   >
+
+<DIV id="u200container" style="position:absolute; left:13px; top:348px; width:41px; height:16px; ; ; ;" >
+<LABEL for="u200">
+<div id="u201" class="u201"  >
+<div id="u201_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">3</span></p></div>
+</div>
+</LABEL>
+<INPUT id="u200" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u202" class="u202"  >
+<div id="u202_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">全部</span></p></div>
+</div>
+<div id="u203" class="u203"  >
+<div id="u203_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span></p></div>
+</div>
+<div id="u204" class="u204"  >
+<div id="u204_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">（</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">见详细设置信息框</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">）</span></p></div>
+</div>
+<div id="u205" class="u205"  >
+<div id="u205_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">/</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span></p></div>
+</div>
+<div id="u206" class="u206_container"   >
+<div id="u206_img" class="u206_normal detectCanvas"></div>
+<div id="u207" class="u207" style="visibility:hidden;"  >
+<div id="u207_rtf"></div>
+</div>
+</div>
+<div id="u208" class="u208"  >
+<div id="u208_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">C语言程序设计.pdf&nbsp; 1.68MB&nbsp; 268页</span></p></div>
+</div>
+<div id="u209" class="u209"  >
+<div id="u209_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">等</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">待打印</span></p></div>
+</div>
+<div id="u210" class="u210"  >
+<div id="u210_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">A</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4(70g)</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> 否</span></p></div>
+</div>
+<DIV id="u211container" style="position:absolute; left:464px; top:379px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u211">
+<div id="u212" class="u212" style="visibility:hidden;"  >
+<div id="u212_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u211" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<DIV id="u213container" style="position:absolute; left:464px; top:396px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u213">
+<div id="u214" class="u214" style="visibility:hidden;"  >
+<div id="u214_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u213" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u215" class="u215"  >
+<div id="u215_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p></div>
+</div>
+<div id="u216" class="u216_container"   >
+<div id="u216_img" class="u216_normal detectCanvas"></div>
+<div id="u217" class="u217" style="visibility:hidden;"  >
+<div id="u217_rtf"></div>
+</div>
+</div>
+<div id="u218" class="u218"  >
+<div id="u218_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">5</span></p></div>
+</div>
+<div id="u219" class="u219"  >
+<div id="u219_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">线胶装</span></p></div>
+</div>
+<INPUT id="u220" type="submit" class="u220" value="打印"   >
+
+<INPUT id="u221" type="submit" class="u221" value="移动"   >
+
+<DIV id="u222container" style="position:absolute; left:13px; top:388px; width:41px; height:16px; ; ; ;" >
+<LABEL for="u222">
+<div id="u223" class="u223"  >
+<div id="u223_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4</span></p></div>
+</div>
+</LABEL>
+<INPUT id="u222" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u224" class="u224"  >
+<div id="u224_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">全部</span></p></div>
+</div>
+<div id="u225" class="u225"  >
+<div id="u225_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span></p></div>
+</div>
+<div id="u226" class="u226"  >
+<div id="u226_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">（</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">见详细设置信息框</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">）</span></p></div>
+</div>
+<div id="u227" class="u227"  >
+<div id="u227_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">1</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">/</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4</span></p></div>
+</div>
+<div id="u228" class="u228_container"   >
+<div id="u228_img" class="u228_normal detectCanvas"></div>
+<div id="u229" class="u229" style="visibility:hidden;"  >
+<div id="u229_rtf"></div>
+</div>
+</div>
+<div id="u230" class="u230"  >
+<div id="u230_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">C语言程序设计.pdf&nbsp; 1.68MB&nbsp; 268页</span></p></div>
+</div>
+<div id="u231" class="u231"  >
+<div id="u231_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">等</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">待打印</span></p></div>
+</div>
+<div id="u232" class="u232"  >
+<div id="u232_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">A</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4(70g)</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;"> 否</span></p></div>
+</div>
+<DIV id="u233container" style="position:absolute; left:464px; top:419px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u233">
+<div id="u234" class="u234" style="visibility:hidden;"  >
+<div id="u234_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u233" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<DIV id="u235container" style="position:absolute; left:464px; top:436px; width:16px; height:16px; ; ; ;" >
+<LABEL for="u235">
+<div id="u236" class="u236" style="visibility:hidden;"  >
+<div id="u236_rtf"></div>
+</div>
+</LABEL>
+<INPUT id="u235" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u237" class="u237"  >
+<div id="u237_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p></div>
+</div>
+<div id="u238" class="u238_container"   >
+<div id="u238_img" class="u238_normal detectCanvas"></div>
+<div id="u239" class="u239" style="visibility:hidden;"  >
+<div id="u239_rtf"></div>
+</div>
+</div>
+<div id="u240" class="u240"  >
+<div id="u240_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">5</span></p></div>
+</div>
+<div id="u241" class="u241"  >
+<div id="u241_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">线胶装</span></p></div>
+</div>
+<INPUT id="u242" type="submit" class="u242" value="打印"   >
+
+<INPUT id="u243" type="submit" class="u243" value="移动"   >
+
+<DIV id="u244container" style="position:absolute; left:13px; top:428px; width:41px; height:16px; ; ; ;" >
+<LABEL for="u244">
+<div id="u245" class="u245"  >
+<div id="u245_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&nbsp;</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">4</span></p></div>
+</div>
+</LABEL>
+<INPUT id="u244" style="position:absolute; left:-3px; top:-2px;" type="checkbox" value="checkbox"   >
+</DIV>
+<div id="u246" class="u246"  >
+<div id="u246_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">全部</span></p></div>
+</div>
+<div id="u247" class="u247"  >
+<div id="u247_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无</span></p></div>
+</div>
+<div id="u248" class="u248"  >
+<div id="u248_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">（</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">见详细设置信息框</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">）</span></p></div>
+</div>
+<div id="u249" class="u249"  >
+<div id="u249_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2/4</span></p></div>
+</div>
+<div id="u250" class="u250"  >
+<div id="u250_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">开发说明：</span></p></div>
+</div>
+<div id="u251" class="u251"  >
+<div id="u251_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">2</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">.</span></p></div>
+</div>
+<DIV id="u252" style="" data-label="Pter打印对照框">
+<DIV id="pd1u252" style="visibility:hidden;" data-label="显示">
+<div id="u253" class="u253_container"   >
+<div id="u253_img" class="u253_normal detectCanvas"></div>
+<div id="u254" class="u254" style="visibility:hidden;"  >
+<div id="u254_rtf"></div>
+</div>
+</div>
+<div id="u255" class="u255"  >
+<div id="u255_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#000000;">文件名：C语言程序设计.pdf</span></p></div>
+</div>
+<div id="u256" class="u256"  >
+<div id="u256_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">选择纸张：A4(70g</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">)</span></p></div>
+</div>
+<div id="u257" class="u257"  >
+<div id="u257_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">双</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">面打印：否</span></p></div>
+</div>
+<div id="u258" class="u258"  >
+<div id="u258_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">黑</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">白打印范围：1-12,14-278</span></p></div>
+</div>
+<div id="u259" class="u259"  >
+<div id="u259_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">彩</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">色打印范围：13</span></p></div>
+</div>
+<div id="u260" class="u260"  >
+<div id="u260_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">多</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">页打印</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">每版页数：1页</span></p></div>
+</div>
+<div id="u261" class="u261"  >
+<div id="u261_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">多</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">页打印布局方向：</span></p></div>
+</div>
+<div id="u262" class="u262"  >
+<div id="u262_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">打</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">印份数：1份</span></p></div>
+</div>
+<div id="u263" class="u263_container"   >
+<div id="u263_img" class="u263_normal detectCanvas"></div>
+<div id="u264" class="u264" style="visibility:hidden;"  >
+<div id="u264_rtf"></div>
+</div>
+</div>
+<div id="u265" class="u265"  >
+<div id="u265_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">装</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">订方法：无线胶装</span></p></div>
+</div>
+<div id="u266" class="u266"  >
+<div id="u266_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">用</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">户备注：！@#￥%……&amp;*（）@#￥%……&amp;*（</span></p></div>
+</div>
+<div id="u267" class="u267"  >
+<div id="u267_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">送</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">取印方式：自行取印（到店再印）</span></p></div>
+</div>
+<div id="u268" class="u268"  >
+<div id="u268_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">送</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">印地址：无</span></p></div>
+</div>
+<div id="u269" class="u269"  >
+<div id="u269_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">送</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">印电话：无</span></p></div>
+</div>
+<div id="u270" class="u270"  >
+<div id="u270_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">本印单</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">金额：12.3个打印币</span></p></div>
+</div>
+<div id="u271" class="u271"  >
+<div id="u271_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">取印编号：23号</span></p></div>
+</div>
+<div id="u272" class="u272"  >
+<div id="u272_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">邮</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">政编码：无</span></p></div>
+</div>
+<div id="u273" class="u273"  >
+<div id="u273_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">其中</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">免费打印</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">页数</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">：</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">30页</span></p></div>
+</div>
+<div id="u274" class="u274"  >
+<div id="u274_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">缩</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">放比例：100%</span></p></div>
+</div>
+<div id="u275" class="u275"  >
+<div id="u275_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">本组</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">印</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">单：2/3</span></p></div>
+</div>
+<INPUT id="u276" type="submit" class="u276" value="打印下一个"   >
+
+<div id="u277" class="u277"  >
+<div id="u277_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">发</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">票：</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">无|个人|单位</span></p></div>
+</div>
+<div id="u278" class="u278"  >
+<div id="u278_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">本</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">文档金额：5.2个打印币</span></p></div>
+</div>
+<div id="u279" class="u279"  >
+<div id="u279_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">发票抬头</span><span style="font-family:Arial;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">：上海大学数学系</span></p></div>
+</div>
+<INPUT id="u280" type="submit" class="u280" value="隐藏此框"   >
+<div id="u281" class="u281" >
+<DIV id="u281_line" class="u281_line" ></DIV>
+</div>
+<div id="u282" class="u282"  >
+<div id="u282_rtf"><p style="text-align:left;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">文</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">档详细设置信息框</span></p></div>
+</div>
+<INPUT id="u283" type="submit" class="u283" value="打印分隔页"   >
+
+</DIV>
+<DIV id="pd0u252" style="" data-label="隐藏">
+</DIV>
+</DIV>
+<div id="u284" class="u284_container"   >
+<div id="u284_img" class="u284_normal detectCanvas"></div>
+<div id="u285" class="u285"  >
+<div id="u285_rtf"><p style="text-align:center;"><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">已</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">经</span><span style="font-family:Arial;font-size:13px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">到店再印</span></p></div>
+</div>
+</div>
+</div>
+<div class="preload"><img src="打印任务管理_files/u0_normal.png" width="1" height="1"/><img src="打印任务管理_files/u2_normal.png" width="1" height="1"/><img src="打印任务管理_files/u9_normal.png" width="1" height="1"/><img src="打印任务管理_files/u41_line.png" width="1" height="1"/><img src="打印任务管理_files/u42_line.png" width="1" height="1"/><img src="打印任务管理_files/u43_line.png" width="1" height="1"/><img src="打印任务管理_files/u44_line.png" width="1" height="1"/><img src="打印任务管理_files/u45_line.png" width="1" height="1"/><img src="打印任务管理_files/u48_normal.png" width="1" height="1"/><img src="打印任务管理_files/u50_normal.png" width="1" height="1"/><img src="打印任务管理_files/u64_normal.png" width="1" height="1"/><img src="打印任务管理_files/u74_normal.png" width="1" height="1"/><img src="打印任务管理_files/u83_normal.png" width="1" height="1"/><img src="打印任务管理_files/u85_normal.png" width="1" height="1"/><img src="打印任务管理_files/u87_normal.png" width="1" height="1"/><img src="打印任务管理_files/u89_normal.png" width="1" height="1"/><img src="打印任务管理_files/u140_normal.png" width="1" height="1"/><img src="打印任务管理_files/u162_normal.png" width="1" height="1"/><img src="打印任务管理_files/u206_normal.png" width="1" height="1"/><img src="打印任务管理_files/u253_normal.png" width="1" height="1"/><img src="打印任务管理_files/u263_normal.png" width="1" height="1"/><img src="打印任务管理_files/u281_line.png" width="1" height="1"/></div>
+</body>
+<script src="resources/scripts/axurerp_pagescript.js"></script>
+<script src="打印任务管理_files/axurerp_pagespecificscript.js" charset="utf-8"></script>

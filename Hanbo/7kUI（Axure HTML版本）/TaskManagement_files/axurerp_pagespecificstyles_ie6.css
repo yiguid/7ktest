@@ -8,9 +8,14 @@
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u2_normal.png");
 }
 
-* html .u10_normal {
+* html .u9_normal {
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u10_normal.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u9_normal.png");
+}
+
+* html .u41_line {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u41_line.png");
 }
 
 * html .u42_line {
@@ -33,8 +38,158 @@
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u45_line.png");
 }
 
-* html .u46_line {
+* html .u48_normal {
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u46_line.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u48_normal.png");
+}
+
+* html .u50_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u50_normal.png");
+}
+
+* html .u52_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u50_normal.png");
+}
+
+* html .u54_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u50_normal.png");
+}
+
+* html .u56_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u50_normal.png");
+}
+
+* html .u58_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u50_normal.png");
+}
+
+* html .u60_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u50_normal.png");
+}
+
+* html .u62_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u50_normal.png");
+}
+
+* html .u64_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u64_normal.png");
+}
+
+* html .u74_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u74_normal.png");
+}
+
+* html .u83_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u83_normal.png");
+}
+
+* html .u85_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u85_normal.png");
+}
+
+* html .u87_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u87_normal.png");
+}
+
+* html .u89_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u89_normal.png");
+}
+
+* html .u96_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u64_normal.png");
+}
+
+* html .u106_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u74_normal.png");
+}
+
+* html .u118_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u64_normal.png");
+}
+
+* html .u128_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u74_normal.png");
+}
+
+* html .u140_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u140_normal.png");
+}
+
+* html .u150_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u74_normal.png");
+}
+
+* html .u162_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u162_normal.png");
+}
+
+* html .u172_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u74_normal.png");
+}
+
+* html .u184_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u162_normal.png");
+}
+
+* html .u194_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u74_normal.png");
+}
+
+* html .u206_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u206_normal.png");
+}
+
+* html .u216_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u74_normal.png");
+}
+
+* html .u228_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u206_normal.png");
+}
+
+* html .u238_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u74_normal.png");
+}
+
+* html .u253_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u253_normal.png");
+}
+
+* html .u263_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u263_normal.png");
+}
+
+* html .u281_line {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="TaskManagement_files/u281_line.png");
 }
 

@@ -1,0 +1,25 @@
+* html .u2_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="用户个人中心页_files/u2_normal.png");
+}
+
+* html .u41_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserHeader_files/u4_normal.png");
+}
+
+* html .u48_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserHeader_files/u11_normal.png");
+}
+
+* html .u53_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserFooter_files/u62_normal.png");
+}
+
+* html .u70_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserFooter_files/u79_normal.png");
+}
+
