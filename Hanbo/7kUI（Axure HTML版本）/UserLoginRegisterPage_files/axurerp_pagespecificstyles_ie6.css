@@ -8,24 +8,19 @@
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserHeader_files/u11_normal.png");
 }
 
-* html .u10_normal {
-    background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserLoginRegisterPage_files/u10_normal.png");
-}
-
 * html .u12_normal {
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserFooter_files/u60_normal.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserLoginRegisterPage_files/u12_normal.png");
 }
 
-* html .u29_normal {
+* html .u14_normal {
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserFooter_files/u77_normal.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserFooter_files/u62_normal.png");
 }
 
-* html .u33_normal {
+* html .u31_normal {
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="LoginRegister_files/u33_normal.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserFooter_files/u79_normal.png");
 }
 
 * html .u35_normal {
@@ -43,9 +38,9 @@
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="LoginRegister_files/u39_normal.png");
 }
 
-* html .u57_normal {
+* html .u41_normal {
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="LoginRegister_files/u33_normal.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="LoginRegister_files/u41_normal.png");
 }
 
 * html .u59_normal {
@@ -60,6 +55,16 @@
 
 * html .u63_normal {
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="LoginRegister_files/u63_normal.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="LoginRegister_files/u39_normal.png");
+}
+
+* html .u65_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="LoginRegister_files/u65_normal.png");
+}
+
+* html .u81_line {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="UserLoginRegisterPage_files/u81_line.png");
 }
 

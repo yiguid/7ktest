@@ -1,4 +1,4 @@
-for(var i = 0; i < 71; i++) { var scriptId = 'u' + i; window[scriptId] = document.getElementById(scriptId); }
+for(var i = 0; i < 73; i++) { var scriptId = 'u' + i; window[scriptId] = document.getElementById(scriptId); }
 
 $axure.eventManager.pageLoad(
 function (e) {
@@ -55,7 +55,7 @@ if (true) {
 
 }
 });
-gv_vAlignTable['u23'] = 'top';gv_vAlignTable['u62'] = 'top';gv_vAlignTable['u53'] = 'top';gv_vAlignTable['u1'] = 'top';u27.tabIndex = 0;
+gv_vAlignTable['u23'] = 'top';gv_vAlignTable['u62'] = 'top';gv_vAlignTable['u1'] = 'top';u27.tabIndex = 0;
 
 u27.style.cursor = 'pointer';
 $axure.eventManager.click('u27', function(e) {
@@ -106,7 +106,7 @@ if (true) {
 
 }
 });
-gv_vAlignTable['u8'] = 'top';gv_vAlignTable['u60'] = 'top';gv_vAlignTable['u34'] = 'center';gv_vAlignTable['u64'] = 'top';gv_vAlignTable['u19'] = 'top';gv_vAlignTable['u49'] = 'center';gv_vAlignTable['u15'] = 'center';gv_vAlignTable['u45'] = 'top';gv_vAlignTable['u36'] = 'center';gv_vAlignTable['u58'] = 'top';u22.tabIndex = 0;
+gv_vAlignTable['u8'] = 'top';gv_vAlignTable['u60'] = 'top';gv_vAlignTable['u34'] = 'center';gv_vAlignTable['u64'] = 'top';gv_vAlignTable['u19'] = 'top';gv_vAlignTable['u49'] = 'center';gv_vAlignTable['u71'] = 'center';gv_vAlignTable['u15'] = 'center';gv_vAlignTable['u45'] = 'top';gv_vAlignTable['u36'] = 'center';gv_vAlignTable['u58'] = 'top';u22.tabIndex = 0;
 
 u22.style.cursor = 'pointer';
 $axure.eventManager.click('u22', function(e) {
@@ -140,7 +140,7 @@ if (true) {
 
 }
 });
-gv_vAlignTable['u13'] = 'top';gv_vAlignTable['u52'] = 'center';gv_vAlignTable['u43'] = 'top';gv_vAlignTable['u3'] = 'center';gv_vAlignTable['u47'] = 'top';gv_vAlignTable['u28'] = 'top';gv_vAlignTable['u24'] = 'top';gv_vAlignTable['u54'] = 'top';gv_vAlignTable['u69'] = 'center';gv_vAlignTable['u6'] = 'top';gv_vAlignTable['u61'] = 'top';u26.tabIndex = 0;
+gv_vAlignTable['u13'] = 'top';gv_vAlignTable['u43'] = 'top';gv_vAlignTable['u3'] = 'center';gv_vAlignTable['u47'] = 'top';gv_vAlignTable['u68'] = 'top';gv_vAlignTable['u28'] = 'top';gv_vAlignTable['u24'] = 'top';gv_vAlignTable['u54'] = 'center';gv_vAlignTable['u69'] = 'top';gv_vAlignTable['u6'] = 'top';gv_vAlignTable['u61'] = 'top';u26.tabIndex = 0;
 
 u26.style.cursor = 'pointer';
 $axure.eventManager.click('u26', function(e) {

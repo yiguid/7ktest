@@ -755,11 +755,47 @@ div {
     word-wrap:break-word;
 }
 
-.u51_normal {
-    background-image: url('../UserFooter_files/u60_normal.png');
+.u50 {
+    position:absolute;
+    left:374px;
+    top:5px;
+    width:171px;
+    height:20px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#666666;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
 }
 
-.u51_container {
+.u51 {
+    position:absolute;
+    left:378px;
+    top:7px;
+    width:44px;
+    height:16px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 12px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u53_normal {
+    background-image: url('../UserFooter_files/u62_normal.png');
+}
+
+.u53_container {
     position:absolute;
     left:0px;
     top:630px;
@@ -767,7 +803,7 @@ div {
     height:100px;
 }
 
-#u51_img {
+#u53_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -775,7 +811,7 @@ div {
     height:106px;
 }
 
-.u52 {
+.u54 {
     position:absolute;
     left:2px;
     top:42px;
@@ -789,7 +825,7 @@ div {
     word-wrap:break-word;
 }
 
-.u53 {
+.u55 {
     position:absolute;
     left:200px;
     top:640px;
@@ -803,7 +839,7 @@ div {
     word-wrap:break-word;
 }
 
-.u54 {
+.u56 {
     position:absolute;
     left:200px;
     top:665px;
@@ -817,7 +853,7 @@ div {
     word-wrap:break-word;
 }
 
-.u55 {
+.u57 {
     position:absolute;
     left:200px;
     top:681px;
@@ -831,7 +867,7 @@ div {
     word-wrap:break-word;
 }
 
-.u56 {
+.u58 {
     position:absolute;
     left:200px;
     top:697px;
@@ -845,37 +881,9 @@ div {
     word-wrap:break-word;
 }
 
-.u57 {
-    position:absolute;
-    left:800px;
-    top:640px;
-    width:150px;
-    height:19px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u58 {
-    position:absolute;
-    left:650px;
-    top:640px;
-    width:150px;
-    height:19px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
 .u59 {
     position:absolute;
-    left:50px;
+    left:800px;
     top:640px;
     width:150px;
     height:19px;
@@ -889,6 +897,34 @@ div {
 
 .u60 {
     position:absolute;
+    left:650px;
+    top:640px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61 {
+    position:absolute;
+    left:50px;
+    top:640px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u62 {
+    position:absolute;
     left:50px;
     top:665px;
     width:60px;
@@ -901,7 +937,7 @@ div {
     word-wrap:break-word;
 }
 
-.u61 {
+.u63 {
     position:absolute;
     left:50px;
     top:681px;
@@ -915,7 +951,7 @@ div {
     word-wrap:break-word;
 }
 
-.u62 {
+.u64 {
     position:absolute;
     left:650px;
     top:665px;
@@ -929,7 +965,7 @@ div {
     word-wrap:break-word;
 }
 
-.u63 {
+.u65 {
     position:absolute;
     left:650px;
     top:681px;
@@ -943,7 +979,7 @@ div {
     word-wrap:break-word;
 }
 
-.u64 {
+.u66 {
     position:absolute;
     left:650px;
     top:697px;
@@ -957,7 +993,7 @@ div {
     word-wrap:break-word;
 }
 
-.u65 {
+.u67 {
     position:absolute;
     left:800px;
     top:665px;
@@ -971,7 +1007,7 @@ div {
     word-wrap:break-word;
 }
 
-.u66 {
+.u68 {
     position:absolute;
     left:800px;
     top:681px;
@@ -985,7 +1021,7 @@ div {
     word-wrap:break-word;
 }
 
-.u67 {
+.u69 {
     position:absolute;
     left:299px;
     top:675px;
@@ -999,11 +1035,11 @@ div {
     word-wrap:break-word;
 }
 
-.u68_normal {
-    background-image: url('../UserFooter_files/u77_normal.png');
+.u70_normal {
+    background-image: url('../UserFooter_files/u79_normal.png');
 }
 
-.u68_container {
+.u70_container {
     position:absolute;
     left:409px;
     top:635px;
@@ -1011,7 +1047,7 @@ div {
     height:40px;
 }
 
-#u68_img {
+#u70_img {
     position:absolute;
     left:0px;
     top:0px;
@@ -1019,7 +1055,7 @@ div {
     height:40px;
 }
 
-.u69 {
+.u71 {
     position:absolute;
     left:2px;
     top:12px;
