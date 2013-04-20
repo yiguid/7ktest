@@ -1,4 +1,4 @@
-for(var i = 0; i < 379; i++) { var scriptId = 'u' + i; window[scriptId] = document.getElementById(scriptId); }
+for(var i = 0; i < 380; i++) { var scriptId = 'u' + i; window[scriptId] = document.getElementById(scriptId); }
 
 $axure.eventManager.pageLoad(
 function (e) {

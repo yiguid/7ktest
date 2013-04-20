@@ -725,9 +725,9 @@ div {
 
 .u48 {
     position:absolute;
-    left:825px;
+    left:789px;
     top:220px;
-    width:100px;
+    width:72px;
     height:25px;
     ;
     ;
@@ -6055,5 +6055,23 @@ div {
     font-family:Arial;
     text-align:left;
     word-wrap:break-word;
+}
+
+.u379 {
+    position:absolute;
+    left:871px;
+    top:220px;
+    width:72px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
 }
 
