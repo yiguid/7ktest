@@ -476,6 +476,10 @@ a.readon {
 	border-left:1px solid #666666;
 }
 
+#other_printer{
+	height:330px;
+}
+
 .printer_info{
 	height:60px;
 	text-align: left;

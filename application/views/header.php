@@ -69,7 +69,6 @@
 					<a style="color:white;" data-toggle="dropdown" href="">打印任务<i class="icon-chevron-down icon-white"></i></a>
 				  	<ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 					    <li><a tabindex="-1" href="<?php echo base_url();?>welcome"><i class="icon-shopping-cart"></i>查看印单</a></li>
-					    <li><a tabindex="-1" href="<?php echo base_url();?>filemanage"><i class="icon-file"></i>印单文件</a></li>
 					    <li><a tabindex="-1" href="<?php echo base_url();?>welcome/cleartask"><i class="icon-trash"></i>清空印单</a></li>
 					</ul>
 				</span>
