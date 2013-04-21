@@ -12,11 +12,11 @@ $axure.eventManager.click('u25', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('MyUploadFile.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('文档管理：我的上传页.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('MyUploadFile.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('文档管理：我的上传页.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('MyUploadFile.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('文档管理：我的上传页.html'));
     }
 
 }
@@ -29,11 +29,11 @@ $axure.eventManager.click('u16', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('PaymentDetails.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('收支明细页.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('PaymentDetails.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('收支明细页.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('PaymentDetails.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('收支明细页.html'));
     }
 
 }
@@ -46,11 +46,11 @@ $axure.eventManager.click('u23', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('OrderHistoryOutMonth.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('历史订单：一个月之前.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('OrderHistoryOutMonth.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('历史订单：一个月之前.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('OrderHistoryOutMonth.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('历史订单：一个月之前.html'));
     }
 
 }
@@ -63,11 +63,11 @@ $axure.eventManager.click('u27', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('MyFavoriteFile.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('文档管理：我的收藏.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('MyFavoriteFile.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('文档管理：我的收藏.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('MyFavoriteFile.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('文档管理：我的收藏.html'));
     }
 
 }
@@ -80,11 +80,11 @@ $axure.eventManager.click('u30', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('UserAccountProtect.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('安全设置：账户保护.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('UserAccountProtect.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('安全设置：账户保护.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('UserAccountProtect.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('安全设置：账户保护.html'));
     }
 
 }
@@ -97,11 +97,11 @@ $axure.eventManager.click('u8', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('AccountDepoisted.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('账户充值页.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('AccountDepoisted.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('账户充值页.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('AccountDepoisted.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('账户充值页.html'));
     }
 
 }
@@ -114,11 +114,11 @@ $axure.eventManager.click('u22', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('OrderHistoryInMonth.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('历史订单：最近一个月.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('OrderHistoryInMonth.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('历史订单：最近一个月.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('OrderHistoryInMonth.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('历史订单：最近一个月.html'));
     }
 
 }
@@ -131,11 +131,11 @@ $axure.eventManager.click('u13', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('AdressConfiguration.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('我的地址页.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('AdressConfiguration.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('我的地址页.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('AdressConfiguration.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('我的地址页.html'));
     }
 
 }
@@ -148,11 +148,11 @@ $axure.eventManager.click('u73', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('ProblemResponsion.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('投诉反馈页.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('ProblemResponsion.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('投诉反馈页.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('ProblemResponsion.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('投诉反馈页.html'));
     }
 
 }
@@ -165,11 +165,11 @@ $axure.eventManager.click('u6', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('UserCentreIndex.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('个人中心主页.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('UserCentreIndex.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('个人中心主页.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('UserCentreIndex.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('个人中心主页.html'));
     }
 
 }
@@ -182,11 +182,11 @@ $axure.eventManager.click('u26', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('MySubscribeTab.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('文档管理：我的订阅页.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('MySubscribeTab.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('文档管理：我的订阅页.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('MySubscribeTab.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('文档管理：我的订阅页.html'));
     }
 
 }
@@ -199,11 +199,11 @@ $axure.eventManager.click('u29', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u0");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('UserPasswordConfiguration.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('安全设置：修改密码.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('UserPasswordConfiguration.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('安全设置：修改密码.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('UserPasswordConfiguration.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('安全设置：修改密码.html'));
     }
 
 }

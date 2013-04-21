@@ -12,11 +12,11 @@ $axure.eventManager.click('u40', function(e) {
 if (true) {
 
     objIframe = document.getElementById("u15");
-    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('打印任务管理.html'));
+    var reload = FrameWindowNeedsReload(objIframe, $axure.globalVariableProvider.getLinkUrl('打印任务管理页.html'));
     if (!reload) {
-	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('打印任务管理.html');
+	    objIframe.src=$axure.globalVariableProvider.getLinkUrl('打印任务管理页.html');
     } else {
-        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('打印任务管理.html'));
+        objIframe.src="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl('打印任务管理页.html'));
     }
 
 }
