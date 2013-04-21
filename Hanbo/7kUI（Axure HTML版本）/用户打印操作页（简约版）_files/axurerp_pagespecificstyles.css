@@ -2625,9 +2625,9 @@ div {
 .u170_container {
     position:absolute;
     left:0px;
-    top:5px;
+    top:0px;
     width:777px;
-    height:347px;
+    height:352px;
 }
 
 #u170_img {
@@ -2635,13 +2635,13 @@ div {
     left:-3px;
     top:-3px;
     width:783px;
-    height:353px;
+    height:358px;
 }
 
 .u171 {
     position:absolute;
     left:2px;
-    top:166px;
+    top:168px;
     width:773px;
     height:16px;
     ;
@@ -2654,7 +2654,7 @@ div {
 
 .u172_container {
     position:absolute;
-    left:23px;
+    left:7px;
     top:6px;
     width:34px;
     height:28px;
@@ -2684,7 +2684,7 @@ div {
 
 .u174 {
     position:absolute;
-    left:64px;
+    left:48px;
     top:6px;
     width:290px;
     height:28px;
@@ -2836,7 +2836,7 @@ div {
 
 #u186 {
     position:absolute;
-    left:10px;
+    left:-6px;
     top:30px;
     width:487px;
     height:201px;
@@ -3856,9 +3856,9 @@ div {
 .u256_container {
     position:absolute;
     left:293px;
-    top:5px;
+    top:0px;
     width:484px;
-    height:347px;
+    height:353px;
 }
 
 #u256_img {
@@ -3866,13 +3866,13 @@ div {
     left:-3px;
     top:-3px;
     width:490px;
-    height:353px;
+    height:359px;
 }
 
 .u257 {
     position:absolute;
     left:2px;
-    top:166px;
+    top:168px;
     width:480px;
     height:16px;
     ;
@@ -3890,24 +3890,24 @@ div {
 .u258_container {
     position:absolute;
     left:0px;
-    top:4px;
-    width:293px;
-    height:349px;
+    top:0px;
+    width:286px;
+    height:353px;
 }
 
 #u258_img {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:299px;
-    height:355px;
+    width:292px;
+    height:359px;
 }
 
 .u259 {
     position:absolute;
     left:2px;
-    top:166px;
-    width:289px;
+    top:168px;
+    width:282px;
     height:16px;
     ;
     ;
@@ -5669,183 +5669,13 @@ div {
 
 .u379_container {
     position:absolute;
-    left:993px;
-    top:225px;
-    width:777px;
-    height:30px;
-}
-
-#u379_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:783px;
-    height:36px;
-}
-
-.u380 {
-    position:absolute;
-    left:2px;
-    top:7px;
-    width:773px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u381_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u379_normal.png');
-}
-
-.u381_container {
-    position:absolute;
-    left:993px;
-    top:257px;
-    width:777px;
-    height:30px;
-}
-
-#u381_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:783px;
-    height:36px;
-}
-
-.u382 {
-    position:absolute;
-    left:2px;
-    top:7px;
-    width:773px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u383_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u379_normal.png');
-}
-
-.u383_container {
-    position:absolute;
-    left:993px;
-    top:289px;
-    width:777px;
-    height:30px;
-}
-
-#u383_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:783px;
-    height:36px;
-}
-
-.u384 {
-    position:absolute;
-    left:2px;
-    top:7px;
-    width:773px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u385_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u379_normal.png');
-}
-
-.u385_container {
-    position:absolute;
-    left:993px;
-    top:321px;
-    width:777px;
-    height:30px;
-}
-
-#u385_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:783px;
-    height:36px;
-}
-
-.u386 {
-    position:absolute;
-    left:2px;
-    top:7px;
-    width:773px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u387_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u379_normal.png');
-}
-
-.u387_container {
-    position:absolute;
-    left:993px;
-    top:353px;
-    width:777px;
-    height:30px;
-}
-
-#u387_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:783px;
-    height:36px;
-}
-
-.u388 {
-    position:absolute;
-    left:2px;
-    top:7px;
-    width:773px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u389_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u389_normal.png');
-}
-
-.u389_container {
-    position:absolute;
     left:0px;
     top:625px;
     width:168px;
     height:50px;
 }
 
-#u389_img {
+#u379_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -5853,7 +5683,7 @@ div {
     height:56px;
 }
 
-.u390 {
+.u380 {
     position:absolute;
     left:2px;
     top:17px;
@@ -5867,7 +5697,7 @@ div {
     word-wrap:break-word;
 }
 
-.u391 {
+.u381 {
     position:absolute;
     left:33px;
     top:36px;
@@ -5881,7 +5711,7 @@ div {
     word-wrap:break-word;
 }
 
-.u392 {
+.u382 {
     position:absolute;
     left:206px;
     top:38px;
@@ -5895,7 +5725,7 @@ div {
     word-wrap:break-word;
 }
 
-.u393 {
+.u383 {
     position:absolute;
     left:7px;
     top:68px;
@@ -5909,7 +5739,7 @@ div {
     word-wrap:break-word;
 }
 
-.u394 {
+.u384 {
     position:absolute;
     left:5px;
     top:94px;
@@ -5923,7 +5753,7 @@ div {
     word-wrap:break-word;
 }
 
-.u395 {
+.u385 {
     position:absolute;
     left:102px;
     top:68px;
@@ -5937,7 +5767,7 @@ div {
     word-wrap:break-word;
 }
 
-.u396 {
+.u386 {
     position:absolute;
     left:5px;
     top:640px;
@@ -5951,9 +5781,159 @@ div {
     word-wrap:break-word;
 }
 
-.u397_container {
+.u387_container {
     position:absolute;
     left:183px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u387_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u388 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u389_container {
+    position:absolute;
+    left:243px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u389_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u390 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u391_container {
+    position:absolute;
+    left:303px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u391_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u392 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u393_container {
+    position:absolute;
+    left:362px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u393_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u394 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u395_container {
+    position:absolute;
+    left:492px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u395_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u396 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u397_container {
+    position:absolute;
+    left:616px;
     top:76px;
     width:20px;
     height:20px;
@@ -5983,7 +5963,7 @@ div {
 
 .u399_container {
     position:absolute;
-    left:243px;
+    left:698px;
     top:76px;
     width:20px;
     height:20px;
@@ -6013,7 +5993,7 @@ div {
 
 .u401_container {
     position:absolute;
-    left:303px;
+    left:775px;
     top:76px;
     width:20px;
     height:20px;
@@ -6041,157 +6021,7 @@ div {
     word-wrap:break-word;
 }
 
-.u403_container {
-    position:absolute;
-    left:362px;
-    top:76px;
-    width:20px;
-    height:20px;
-}
-
-#u403_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:20px;
-    height:20px;
-}
-
-.u404 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:16px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u405_container {
-    position:absolute;
-    left:492px;
-    top:76px;
-    width:20px;
-    height:20px;
-}
-
-#u405_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:20px;
-    height:20px;
-}
-
-.u406 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:16px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u407_container {
-    position:absolute;
-    left:616px;
-    top:76px;
-    width:20px;
-    height:20px;
-}
-
-#u407_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:20px;
-    height:20px;
-}
-
-.u408 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:16px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u409_container {
-    position:absolute;
-    left:698px;
-    top:76px;
-    width:20px;
-    height:20px;
-}
-
-#u409_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:20px;
-    height:20px;
-}
-
-.u410 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:16px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u411_container {
-    position:absolute;
-    left:775px;
-    top:76px;
-    width:20px;
-    height:20px;
-}
-
-#u411_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:20px;
-    height:20px;
-}
-
-.u412 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:16px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u413 {
+.u403 {
     position:absolute;
     left:208px;
     top:77px;
@@ -6205,7 +6035,7 @@ div {
     word-wrap:break-word;
 }
 
-.u414 {
+.u404 {
     position:absolute;
     left:268px;
     top:77px;
@@ -6219,7 +6049,7 @@ div {
     word-wrap:break-word;
 }
 
-.u415 {
+.u405 {
     position:absolute;
     left:328px;
     top:77px;
@@ -6233,7 +6063,7 @@ div {
     word-wrap:break-word;
 }
 
-.u416 {
+.u406 {
     position:absolute;
     left:455px;
     top:77px;
@@ -6247,7 +6077,7 @@ div {
     word-wrap:break-word;
 }
 
-.u417 {
+.u407 {
     position:absolute;
     left:516px;
     top:77px;
@@ -6261,7 +6091,7 @@ div {
     word-wrap:break-word;
 }
 
-.u418 {
+.u408 {
     position:absolute;
     left:639px;
     top:77px;
@@ -6275,7 +6105,7 @@ div {
     word-wrap:break-word;
 }
 
-.u419 {
+.u409 {
     position:absolute;
     left:724px;
     top:77px;
@@ -6289,7 +6119,7 @@ div {
     word-wrap:break-word;
 }
 
-.u420 {
+.u410 {
     position:absolute;
     left:802px;
     top:77px;
@@ -6303,9 +6133,9 @@ div {
     word-wrap:break-word;
 }
 
-.u421 {
+.u411 {
     position:absolute;
-    left:182px;
+    left:192px;
     top:111px;
     width:67px;
     height:16px;
@@ -6317,7 +6147,7 @@ div {
     word-wrap:break-word;
 }
 
-.u422 {
+.u412 {
     position:absolute;
     left:343px;
     top:111px;
@@ -6331,37 +6161,9 @@ div {
     word-wrap:break-word;
 }
 
-.u423 {
+.u413 {
     position:absolute;
-    left:1029px;
-    top:160px;
-    width:26px;
-    height:32px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u424 {
-    position:absolute;
-    left:1066px;
-    top:160px;
-    width:26px;
-    height:32px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u425 {
-    position:absolute;
-    left:228px;
+    left:230px;
     top:111px;
     width:26px;
     height:16px;
@@ -6373,7 +6175,7 @@ div {
     word-wrap:break-word;
 }
 
-.u426 {
+.u414 {
     position:absolute;
     left:468px;
     top:111px;
@@ -6387,105 +6189,7 @@ div {
     word-wrap:break-word;
 }
 
-.u427 {
-    position:absolute;
-    left:1005px;
-    top:115px;
-    width:26px;
-    height:32px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u428 {
-    position:absolute;
-    left:1040px;
-    top:112px;
-    width:52px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u429 {
-    position:absolute;
-    left:1040px;
-    top:134px;
-    width:52px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u430 {
-    position:absolute;
-    left:1010px;
-    top:35px;
-    width:52px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u431 {
-    position:absolute;
-    left:1172px;
-    top:115px;
-    width:52px;
-    height:32px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u432 {
-    position:absolute;
-    left:1229px;
-    top:115px;
-    width:52px;
-    height:32px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u433 {
-    position:absolute;
-    left:1287px;
-    top:115px;
-    width:26px;
-    height:32px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u434 {
+.u415 {
     position:absolute;
     left:595px;
     top:111px;
@@ -6499,7 +6203,7 @@ div {
     word-wrap:break-word;
 }
 
-.u435 {
+.u416 {
     position:absolute;
     left:513px;
     top:111px;
@@ -6513,7 +6217,7 @@ div {
     word-wrap:break-word;
 }
 
-.u436 {
+.u417 {
     position:absolute;
     left:661px;
     top:111px;
@@ -6527,7 +6231,7 @@ div {
     word-wrap:break-word;
 }
 
-.u437_container {
+.u418_container {
     position:absolute;
     left:426px;
     top:76px;
@@ -6535,7 +6239,7 @@ div {
     height:20px;
 }
 
-#u437_img {
+#u418_img {
     position:absolute;
     left:0px;
     top:0px;
@@ -6543,7 +6247,7 @@ div {
     height:20px;
 }
 
-.u438 {
+.u419 {
     position:absolute;
     left:2px;
     top:2px;
@@ -6557,7 +6261,7 @@ div {
     word-wrap:break-word;
 }
 
-.u439 {
+.u420 {
     position:absolute;
     left:389px;
     top:77px;
@@ -6571,21 +6275,7 @@ div {
     word-wrap:break-word;
 }
 
-.u440 {
-    position:absolute;
-    left:998px;
-    top:200px;
-    width:150px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u441 {
+.u421 {
     position:absolute;
     left:285px;
     top:146px;
@@ -6599,7 +6289,7 @@ div {
     word-wrap:break-word;
 }
 
-.u442 {
+.u422 {
     position:absolute;
     left:426px;
     top:143px;
@@ -6617,139 +6307,7 @@ div {
     
 }
 
-.u444 {
-    position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u446 {
-    position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u448 {
-    position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u449 {
-    position:absolute;
-    left:969px;
-    top:68px;
-    width:116px;
-    height:22px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u450 {
-    position:absolute;
-    left:1389px;
-    top:209px;
-    width:90px;
-    height:13px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u451 {
-    position:absolute;
-    left:1483px;
-    top:197px;
-    width:50px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u452 {
-    position:absolute;
-    left:1533px;
-    top:197px;
-    width:50px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u453 {
-    position:absolute;
-    left:1583px;
-    top:197px;
-    width:52px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u454 {
+.u423 {
     position:absolute;
     left:606px;
     top:142px;
@@ -6767,11 +6325,509 @@ div {
     
 }
 
-.u455 {
+.u424 {
     position:absolute;
     left:505px;
     top:142px;
     width:83px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u425 {
+    position:absolute;
+    left:197px;
+    top:146px;
+    width:18px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u426 {
+    position:absolute;
+    left:217px;
+    top:146px;
+    width:63px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u427_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
+}
+
+.u427_container {
+    position:absolute;
+    left:593px;
+    top:148px;
+    width:10px;
+    height:10px;
+}
+
+#u427_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:10px;
+    height:10px;
+}
+
+.u428 {
+    position:absolute;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u429_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
+}
+
+.u429_container {
+    position:absolute;
+    left:628px;
+    top:148px;
+    width:10px;
+    height:10px;
+}
+
+#u429_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:10px;
+    height:10px;
+}
+
+.u430 {
+    position:absolute;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u431 {
+    position:absolute;
+    left:830px;
+    top:111px;
+    width:40px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u432 {
+    position:absolute;
+    left:667px;
+    top:145px;
+    width:45px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u433 {
+    position:absolute;
+    left:779px;
+    top:143px;
+    width:65px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u434_container {
+    position:absolute;
+    left:854px;
+    top:145px;
+    width:20px;
+    height:20px;
+}
+
+#u434_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u435 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u436_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u367_normal.png');
+}
+
+.u436_container {
+    position:absolute;
+    left:173px;
+    top:172px;
+    width:777px;
+    height:30px;
+}
+
+#u436_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
+}
+
+.u437 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u438 {
+    position:absolute;
+    left:285px;
+    top:178px;
+    width:208px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u439 {
+    position:absolute;
+    left:426px;
+    top:175px;
+    width:74px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u440 {
+    position:absolute;
+    left:606px;
+    top:174px;
+    width:18px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u441 {
+    position:absolute;
+    left:505px;
+    top:174px;
+    width:83px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u442 {
+    position:absolute;
+    left:197px;
+    top:178px;
+    width:18px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u443 {
+    position:absolute;
+    left:217px;
+    top:178px;
+    width:63px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u444_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
+}
+
+.u444_container {
+    position:absolute;
+    left:593px;
+    top:180px;
+    width:10px;
+    height:10px;
+}
+
+#u444_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:10px;
+    height:10px;
+}
+
+.u445 {
+    position:absolute;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u446_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
+}
+
+.u446_container {
+    position:absolute;
+    left:628px;
+    top:180px;
+    width:10px;
+    height:10px;
+}
+
+#u446_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:10px;
+    height:10px;
+}
+
+.u447 {
+    position:absolute;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u448 {
+    position:absolute;
+    left:667px;
+    top:177px;
+    width:45px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u449 {
+    position:absolute;
+    left:779px;
+    top:175px;
+    width:65px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u450_container {
+    position:absolute;
+    left:854px;
+    top:177px;
+    width:20px;
+    height:20px;
+}
+
+#u450_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u451 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u452_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u367_normal.png');
+}
+
+.u452_container {
+    position:absolute;
+    left:173px;
+    top:203px;
+    width:777px;
+    height:30px;
+}
+
+#u452_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
+}
+
+.u453 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u454 {
+    position:absolute;
+    left:285px;
+    top:209px;
+    width:208px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u455 {
+    position:absolute;
+    left:426px;
+    top:206px;
+    width:74px;
     height:22px;
     ;
     ;
@@ -6787,55 +6843,45 @@ div {
 
 .u456 {
     position:absolute;
-    left:998px;
-    top:232px;
-    width:150px;
-    height:16px;
+    left:606px;
+    top:205px;
+    width:18px;
+    height:22px;
     ;
     ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
 }
 
 .u457 {
     position:absolute;
-    left:1032px;
-    top:232px;
-    width:217px;
-    height:16px;
+    left:505px;
+    top:205px;
+    width:83px;
+    height:22px;
     ;
     ;
     ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
 }
 
 .u458 {
     position:absolute;
-    left:1256px;
-    top:226px;
-    width:66px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u460 {
-    position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
+    left:197px;
+    top:209px;
+    width:18px;
     height:16px;
     ;
     ;
@@ -6845,11 +6891,11 @@ div {
     word-wrap:break-word;
 }
 
-.u462 {
+.u459 {
     position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
+    left:217px;
+    top:209px;
+    width:63px;
     height:16px;
     ;
     ;
@@ -6857,53 +6903,99 @@ div {
     font-family:Arial;
     text-align:left;
     word-wrap:break-word;
+}
+
+.u460_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
+}
+
+.u460_container {
+    position:absolute;
+    left:593px;
+    top:211px;
+    width:10px;
+    height:10px;
+}
+
+#u460_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:10px;
+    height:10px;
+}
+
+.u461 {
+    position:absolute;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u462_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
+}
+
+.u462_container {
+    position:absolute;
+    left:628px;
+    top:211px;
+    width:10px;
+    height:10px;
+}
+
+#u462_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:10px;
+    height:10px;
 }
 
 .u463 {
     position:absolute;
-    left:1389px;
-    top:226px;
-    width:90px;
-    height:13px;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
     ;
     ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
 }
 
 .u464 {
     position:absolute;
-    left:1483px;
-    top:229px;
-    width:50px;
-    height:22px;
+    left:667px;
+    top:208px;
+    width:45px;
+    height:16px;
     ;
-    background-color:#FFFF99;;
     ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
 }
 
 .u465 {
     position:absolute;
-    left:1533px;
-    top:229px;
-    width:50px;
-    height:22px;
+    left:779px;
+    top:206px;
+    width:65px;
+    height:25px;
     ;
-    background-color:#FFFF99;;
     ;
+    text-align: center;;
     font-family:'Arial';
     font-size: 13px;
     color:#000000;
@@ -6913,65 +7005,61 @@ div {
     
 }
 
-.u466 {
+.u466_container {
     position:absolute;
-    left:1583px;
-    top:229px;
-    width:52px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
+    left:854px;
+    top:208px;
+    width:20px;
+    height:20px;
+}
+
+#u466_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
 }
 
 .u467 {
     position:absolute;
-    left:1638px;
-    top:227px;
-    width:18px;
-    height:25px;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
     ;
     ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
 }
 
-.u468 {
+.u468_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u367_normal.png');
+}
+
+.u468_container {
     position:absolute;
-    left:1664px;
-    top:229px;
-    width:83px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
+    left:173px;
+    top:233px;
+    width:777px;
+    height:30px;
+}
+
+#u468_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
 }
 
 .u469 {
     position:absolute;
-    left:998px;
-    top:266px;
-    width:150px;
+    left:2px;
+    top:7px;
+    width:773px;
     height:16px;
     ;
     ;
@@ -6983,9 +7071,9 @@ div {
 
 .u470 {
     position:absolute;
-    left:1032px;
-    top:266px;
-    width:217px;
+    left:285px;
+    top:239px;
+    width:208px;
     height:16px;
     ;
     ;
@@ -6997,13 +7085,31 @@ div {
 
 .u471 {
     position:absolute;
-    left:1256px;
-    top:260px;
-    width:66px;
+    left:426px;
+    top:236px;
+    width:74px;
     height:22px;
     ;
-    background-color:#FFFF99;;
     ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u472 {
+    position:absolute;
+    left:606px;
+    top:235px;
+    width:18px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
     font-family:'Arial';
     font-size: 13px;
     color:#000000;
@@ -7015,9 +7121,27 @@ div {
 
 .u473 {
     position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
+    left:505px;
+    top:235px;
+    width:83px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u474 {
+    position:absolute;
+    left:197px;
+    top:239px;
+    width:18px;
     height:16px;
     ;
     ;
@@ -7029,9 +7153,9 @@ div {
 
 .u475 {
     position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
+    left:217px;
+    top:239px;
+    width:63px;
     height:16px;
     ;
     ;
@@ -7041,105 +7165,97 @@ div {
     word-wrap:break-word;
 }
 
-.u476 {
+.u476_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
+}
+
+.u476_container {
     position:absolute;
-    left:1389px;
-    top:260px;
-    width:90px;
-    height:13px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
+    left:593px;
+    top:241px;
+    width:10px;
+    height:10px;
+}
+
+#u476_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:10px;
+    height:10px;
 }
 
 .u477 {
     position:absolute;
-    left:1483px;
-    top:263px;
-    width:50px;
-    height:22px;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
     ;
-    background-color:#FFFF99;;
     ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
 }
 
-.u478 {
+.u478_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
+}
+
+.u478_container {
     position:absolute;
-    left:1533px;
-    top:263px;
-    width:50px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
+    left:628px;
+    top:241px;
+    width:10px;
+    height:10px;
+}
+
+#u478_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:10px;
+    height:10px;
 }
 
 .u479 {
     position:absolute;
-    left:1583px;
-    top:263px;
-    width:52px;
-    height:22px;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
     ;
-    background-color:#FFFF99;;
     ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
 }
 
 .u480 {
     position:absolute;
-    left:1638px;
-    top:261px;
-    width:18px;
-    height:25px;
+    left:667px;
+    top:238px;
+    width:45px;
+    height:16px;
     ;
     ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
 }
 
 .u481 {
     position:absolute;
-    left:1664px;
-    top:263px;
-    width:83px;
-    height:22px;
+    left:779px;
+    top:236px;
+    width:65px;
+    height:25px;
     ;
-    background-color:#FFFF99;;
     ;
+    text-align: center;;
     font-family:'Arial';
     font-size: 13px;
     color:#000000;
@@ -7149,560 +7265,24 @@ div {
     
 }
 
-.u482 {
+.u482_container {
     position:absolute;
-    left:998px;
-    top:296px;
-    width:150px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
+    left:854px;
+    top:238px;
+    width:20px;
+    height:20px;
+}
+
+#u482_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
 }
 
 .u483 {
     position:absolute;
-    left:1032px;
-    top:296px;
-    width:217px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u484 {
-    position:absolute;
-    left:1256px;
-    top:290px;
-    width:66px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u486 {
-    position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u488 {
-    position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u489 {
-    position:absolute;
-    left:1389px;
-    top:290px;
-    width:90px;
-    height:13px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u490 {
-    position:absolute;
-    left:1483px;
-    top:293px;
-    width:50px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u491 {
-    position:absolute;
-    left:1533px;
-    top:293px;
-    width:50px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u492 {
-    position:absolute;
-    left:1583px;
-    top:293px;
-    width:52px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u493 {
-    position:absolute;
-    left:1638px;
-    top:291px;
-    width:18px;
-    height:25px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u494 {
-    position:absolute;
-    left:1664px;
-    top:293px;
-    width:83px;
-    height:22px;
-    ;
-    background-color:#FFFF99;;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u496 {
-    position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u497 {
-    position:absolute;
-    left:1389px;
-    top:241px;
-    width:90px;
-    height:13px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u499 {
-    position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u500 {
-    position:absolute;
-    left:1389px;
-    top:275px;
-    width:90px;
-    height:13px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u502 {
-    position:absolute;
-    left:16px;
-    top:0px;
-    width:1px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u503 {
-    position:absolute;
-    left:1389px;
-    top:305px;
-    width:90px;
-    height:13px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u504 {
-    position:absolute;
-    left:998px;
-    top:329px;
-    width:11px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u505 {
-    position:absolute;
-    left:1032px;
-    top:329px;
-    width:439px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u506 {
-    position:absolute;
-    left:1757px;
-    top:200px;
-    width:64px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u507 {
-    position:absolute;
-    left:1757px;
-    top:232px;
-    width:64px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u508 {
-    position:absolute;
-    left:1757px;
-    top:266px;
-    width:64px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u509 {
-    position:absolute;
-    left:1757px;
-    top:296px;
-    width:64px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u510 {
-    position:absolute;
-    left:1757px;
-    top:328px;
-    width:64px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u511 {
-    position:absolute;
-    left:1638px;
-    top:321px;
-    width:18px;
-    height:25px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u512 {
-    position:absolute;
-    left:187px;
-    top:146px;
-    width:18px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u513 {
-    position:absolute;
-    left:215px;
-    top:146px;
-    width:63px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u514_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
-}
-
-.u514_container {
-    position:absolute;
-    left:593px;
-    top:148px;
-    width:10px;
-    height:10px;
-}
-
-#u514_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:10px;
-    height:10px;
-}
-
-.u515 {
-    position:absolute;
-    left:2px;
-    top:-3px;
-    width:6px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u516_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
-}
-
-.u516_container {
-    position:absolute;
-    left:628px;
-    top:148px;
-    width:10px;
-    height:10px;
-}
-
-#u516_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:10px;
-    height:10px;
-}
-
-.u517 {
-    position:absolute;
-    left:2px;
-    top:-3px;
-    width:6px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u518 {
-    position:absolute;
-    left:830px;
-    top:111px;
-    width:40px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u519 {
-    position:absolute;
-    left:667px;
-    top:145px;
-    width:45px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u520 {
-    position:absolute;
-    left:779px;
-    top:143px;
-    width:65px;
-    height:25px;
-    ;
-    ;
-    text-align: center;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u521_container {
-    position:absolute;
-    left:854px;
-    top:145px;
-    width:20px;
-    height:20px;
-}
-
-#u521_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:20px;
-    height:20px;
-}
-
-.u522 {
-    position:absolute;
     left:2px;
     top:2px;
     width:16px;
@@ -7715,791 +7295,11 @@ div {
     word-wrap:break-word;
 }
 
-.u523_normal {
+.u484_normal {
     background-image: url('../用户打印操作页（简约版）_files/u367_normal.png');
 }
 
-.u523_container {
-    position:absolute;
-    left:173px;
-    top:172px;
-    width:777px;
-    height:30px;
-}
-
-#u523_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:783px;
-    height:36px;
-}
-
-.u524 {
-    position:absolute;
-    left:2px;
-    top:7px;
-    width:773px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u525 {
-    position:absolute;
-    left:285px;
-    top:178px;
-    width:208px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u526 {
-    position:absolute;
-    left:426px;
-    top:175px;
-    width:74px;
-    height:22px;
-    ;
-    ;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u527 {
-    position:absolute;
-    left:606px;
-    top:174px;
-    width:18px;
-    height:22px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u528 {
-    position:absolute;
-    left:505px;
-    top:174px;
-    width:83px;
-    height:22px;
-    ;
-    ;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u529 {
-    position:absolute;
-    left:187px;
-    top:178px;
-    width:18px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u530 {
-    position:absolute;
-    left:215px;
-    top:178px;
-    width:63px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u531_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
-}
-
-.u531_container {
-    position:absolute;
-    left:593px;
-    top:180px;
-    width:10px;
-    height:10px;
-}
-
-#u531_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:10px;
-    height:10px;
-}
-
-.u532 {
-    position:absolute;
-    left:2px;
-    top:-3px;
-    width:6px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u533_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
-}
-
-.u533_container {
-    position:absolute;
-    left:628px;
-    top:180px;
-    width:10px;
-    height:10px;
-}
-
-#u533_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:10px;
-    height:10px;
-}
-
-.u534 {
-    position:absolute;
-    left:2px;
-    top:-3px;
-    width:6px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u535 {
-    position:absolute;
-    left:667px;
-    top:177px;
-    width:45px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u536 {
-    position:absolute;
-    left:779px;
-    top:175px;
-    width:65px;
-    height:25px;
-    ;
-    ;
-    text-align: center;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u537_container {
-    position:absolute;
-    left:854px;
-    top:177px;
-    width:20px;
-    height:20px;
-}
-
-#u537_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:20px;
-    height:20px;
-}
-
-.u538 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:16px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u539_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u367_normal.png');
-}
-
-.u539_container {
-    position:absolute;
-    left:173px;
-    top:203px;
-    width:777px;
-    height:30px;
-}
-
-#u539_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:783px;
-    height:36px;
-}
-
-.u540 {
-    position:absolute;
-    left:2px;
-    top:7px;
-    width:773px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u541 {
-    position:absolute;
-    left:285px;
-    top:209px;
-    width:208px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u542 {
-    position:absolute;
-    left:426px;
-    top:206px;
-    width:74px;
-    height:22px;
-    ;
-    ;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u543 {
-    position:absolute;
-    left:606px;
-    top:205px;
-    width:18px;
-    height:22px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u544 {
-    position:absolute;
-    left:505px;
-    top:205px;
-    width:83px;
-    height:22px;
-    ;
-    ;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u545 {
-    position:absolute;
-    left:187px;
-    top:209px;
-    width:18px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u546 {
-    position:absolute;
-    left:215px;
-    top:209px;
-    width:63px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u547_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
-}
-
-.u547_container {
-    position:absolute;
-    left:593px;
-    top:211px;
-    width:10px;
-    height:10px;
-}
-
-#u547_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:10px;
-    height:10px;
-}
-
-.u548 {
-    position:absolute;
-    left:2px;
-    top:-3px;
-    width:6px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u549_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
-}
-
-.u549_container {
-    position:absolute;
-    left:628px;
-    top:211px;
-    width:10px;
-    height:10px;
-}
-
-#u549_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:10px;
-    height:10px;
-}
-
-.u550 {
-    position:absolute;
-    left:2px;
-    top:-3px;
-    width:6px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u551 {
-    position:absolute;
-    left:667px;
-    top:208px;
-    width:45px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u552 {
-    position:absolute;
-    left:779px;
-    top:206px;
-    width:65px;
-    height:25px;
-    ;
-    ;
-    text-align: center;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u553_container {
-    position:absolute;
-    left:854px;
-    top:208px;
-    width:20px;
-    height:20px;
-}
-
-#u553_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:20px;
-    height:20px;
-}
-
-.u554 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:16px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u555_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u367_normal.png');
-}
-
-.u555_container {
-    position:absolute;
-    left:173px;
-    top:233px;
-    width:777px;
-    height:30px;
-}
-
-#u555_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:783px;
-    height:36px;
-}
-
-.u556 {
-    position:absolute;
-    left:2px;
-    top:7px;
-    width:773px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u557 {
-    position:absolute;
-    left:285px;
-    top:239px;
-    width:208px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u558 {
-    position:absolute;
-    left:426px;
-    top:236px;
-    width:74px;
-    height:22px;
-    ;
-    ;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u559 {
-    position:absolute;
-    left:606px;
-    top:235px;
-    width:18px;
-    height:22px;
-    ;
-    ;
-    text-align: left;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u560 {
-    position:absolute;
-    left:505px;
-    top:235px;
-    width:83px;
-    height:22px;
-    ;
-    ;
-    ;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u561 {
-    position:absolute;
-    left:187px;
-    top:239px;
-    width:18px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u562 {
-    position:absolute;
-    left:215px;
-    top:239px;
-    width:63px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u563_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
-}
-
-.u563_container {
-    position:absolute;
-    left:593px;
-    top:241px;
-    width:10px;
-    height:10px;
-}
-
-#u563_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:10px;
-    height:10px;
-}
-
-.u564 {
-    position:absolute;
-    left:2px;
-    top:-3px;
-    width:6px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u565_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
-}
-
-.u565_container {
-    position:absolute;
-    left:628px;
-    top:241px;
-    width:10px;
-    height:10px;
-}
-
-#u565_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:10px;
-    height:10px;
-}
-
-.u566 {
-    position:absolute;
-    left:2px;
-    top:-3px;
-    width:6px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u567 {
-    position:absolute;
-    left:667px;
-    top:238px;
-    width:45px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u568 {
-    position:absolute;
-    left:779px;
-    top:236px;
-    width:65px;
-    height:25px;
-    ;
-    ;
-    text-align: center;;
-    font-family:'Arial';
-    font-size: 13px;
-    color:#000000;
-    font-style:normal;
-    font-weight:normal;
-    text-decoration:none;
-    
-}
-
-.u569_container {
-    position:absolute;
-    left:854px;
-    top:238px;
-    width:20px;
-    height:20px;
-}
-
-#u569_img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:20px;
-    height:20px;
-}
-
-.u570 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:16px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u571_normal {
-    background-image: url('../用户打印操作页（简约版）_files/u367_normal.png');
-}
-
-.u571_container {
+.u484_container {
     position:absolute;
     left:173px;
     top:263px;
@@ -8507,7 +7307,7 @@ div {
     height:30px;
 }
 
-#u571_img {
+#u484_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -8515,7 +7315,7 @@ div {
     height:36px;
 }
 
-.u572 {
+.u485 {
     position:absolute;
     left:2px;
     top:7px;
@@ -8529,7 +7329,7 @@ div {
     word-wrap:break-word;
 }
 
-.u573 {
+.u486 {
     position:absolute;
     left:285px;
     top:269px;
@@ -8543,7 +7343,7 @@ div {
     word-wrap:break-word;
 }
 
-.u574 {
+.u487 {
     position:absolute;
     left:606px;
     top:265px;
@@ -8561,9 +7361,9 @@ div {
     
 }
 
-.u575 {
+.u488 {
     position:absolute;
-    left:187px;
+    left:197px;
     top:269px;
     width:18px;
     height:16px;
@@ -8575,9 +7375,9 @@ div {
     word-wrap:break-word;
 }
 
-.u576 {
+.u489 {
     position:absolute;
-    left:215px;
+    left:217px;
     top:269px;
     width:63px;
     height:16px;
@@ -8589,11 +7389,11 @@ div {
     word-wrap:break-word;
 }
 
-.u577_normal {
+.u490_normal {
     background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
 }
 
-.u577_container {
+.u490_container {
     position:absolute;
     left:593px;
     top:271px;
@@ -8601,7 +7401,7 @@ div {
     height:10px;
 }
 
-#u577_img {
+#u490_img {
     position:absolute;
     left:0px;
     top:0px;
@@ -8609,7 +7409,7 @@ div {
     height:10px;
 }
 
-.u578 {
+.u491 {
     position:absolute;
     left:2px;
     top:-3px;
@@ -8623,11 +7423,11 @@ div {
     word-wrap:break-word;
 }
 
-.u579_normal {
+.u492_normal {
     background-image: url('../用户打印操作页（简约版）_files/u148_normal.png');
 }
 
-.u579_container {
+.u492_container {
     position:absolute;
     left:628px;
     top:271px;
@@ -8635,7 +7435,7 @@ div {
     height:10px;
 }
 
-#u579_img {
+#u492_img {
     position:absolute;
     left:0px;
     top:0px;
@@ -8643,7 +7443,7 @@ div {
     height:10px;
 }
 
-.u580 {
+.u493 {
     position:absolute;
     left:2px;
     top:-3px;
@@ -8657,7 +7457,7 @@ div {
     word-wrap:break-word;
 }
 
-.u581 {
+.u494 {
     position:absolute;
     left:667px;
     top:268px;
@@ -8671,7 +7471,7 @@ div {
     word-wrap:break-word;
 }
 
-.u582_container {
+.u495_container {
     position:absolute;
     left:854px;
     top:268px;
@@ -8679,7 +7479,7 @@ div {
     height:20px;
 }
 
-#u582_img {
+#u495_img {
     position:absolute;
     left:0px;
     top:0px;
@@ -8687,7 +7487,7 @@ div {
     height:20px;
 }
 
-.u583 {
+.u496 {
     position:absolute;
     left:2px;
     top:2px;
@@ -8701,11 +7501,11 @@ div {
     word-wrap:break-word;
 }
 
-.u584_normal {
+.u497_normal {
     background-image: url('../用户打印操作页（简约版）_files/u367_normal.png');
 }
 
-.u584_container {
+.u497_container {
     position:absolute;
     left:173px;
     top:293px;
@@ -8713,7 +7513,7 @@ div {
     height:30px;
 }
 
-#u584_img {
+#u497_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -8721,11 +7521,81 @@ div {
     height:36px;
 }
 
-.u585 {
+.u498 {
     position:absolute;
     left:2px;
     top:7px;
     width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u500 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u502 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u504 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u506 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u508 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
     height:16px;
     ;
     ;
