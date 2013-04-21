@@ -1,0 +1,5919 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../UserHeader_files/u4_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:950px;
+    height:30px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:956px;
+    height:36px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:946px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:728px;
+    top:7px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3 {
+    position:absolute;
+    left:791px;
+    top:7px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4 {
+    position:absolute;
+    left:853px;
+    top:7px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:891px;
+    top:7px;
+    width:30px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:100px;
+    top:7px;
+    width:45px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_normal {
+    background-image: url('../UserHeader_files/u11_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:10px;
+    top:0px;
+    width:75px;
+    height:30px;
+}
+
+#u7_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:75px;
+    height:30px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9 {
+    position:absolute;
+    left:374px;
+    top:5px;
+    width:171px;
+    height:20px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#666666;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u10 {
+    position:absolute;
+    left:378px;
+    top:7px;
+    width:44px;
+    height:16px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 12px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u12_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:0px;
+    top:35px;
+    width:168px;
+    height:85px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:91px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:34px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../UserFooter_files/u62_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:0px;
+    top:680px;
+    width:950px;
+    height:100px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:956px;
+    height:106px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:42px;
+    width:946px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16 {
+    position:absolute;
+    left:200px;
+    top:690px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:200px;
+    top:715px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18 {
+    position:absolute;
+    left:200px;
+    top:731px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19 {
+    position:absolute;
+    left:200px;
+    top:747px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20 {
+    position:absolute;
+    left:800px;
+    top:690px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21 {
+    position:absolute;
+    left:650px;
+    top:690px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22 {
+    position:absolute;
+    left:50px;
+    top:690px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23 {
+    position:absolute;
+    left:50px;
+    top:715px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:50px;
+    top:731px;
+    width:100px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:650px;
+    top:715px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26 {
+    position:absolute;
+    left:650px;
+    top:731px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27 {
+    position:absolute;
+    left:650px;
+    top:747px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28 {
+    position:absolute;
+    left:800px;
+    top:715px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29 {
+    position:absolute;
+    left:800px;
+    top:731px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30 {
+    position:absolute;
+    left:299px;
+    top:725px;
+    width:332px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../UserFooter_files/u79_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:409px;
+    top:685px;
+    width:100px;
+    height:40px;
+}
+
+#u31_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:40px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u34_normal.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:173px;
+    top:35px;
+    width:777px;
+    height:30px;
+}
+
+#u34_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36_container {
+    position:absolute;
+    left:175px;
+    top:37px;
+    width:28px;
+    height:28px;
+}
+
+#u36_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:28px;
+    height:28px;
+}
+
+.u37 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:24px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38_container {
+    position:absolute;
+    left:2px;
+    top:37px;
+    width:28px;
+    height:28px;
+}
+
+#u38_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:28px;
+    height:28px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:24px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u40_normal.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:173px;
+    top:70px;
+    width:777px;
+    height:30px;
+}
+
+#u40_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u42_normal.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:173px;
+    top:105px;
+    width:777px;
+    height:60px;
+}
+
+#u42_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:66px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u44_normal.png');
+}
+
+.u44_container {
+    position:absolute;
+    left:173px;
+    top:170px;
+    width:777px;
+    height:30px;
+}
+
+#u44_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
+}
+
+.u45 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u44_normal.png');
+}
+
+.u46_container {
+    position:absolute;
+    left:173px;
+    top:202px;
+    width:777px;
+    height:30px;
+}
+
+#u46_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
+}
+
+.u47 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u44_normal.png');
+}
+
+.u48_container {
+    position:absolute;
+    left:173px;
+    top:234px;
+    width:777px;
+    height:30px;
+}
+
+#u48_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
+}
+
+.u49 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u44_normal.png');
+}
+
+.u50_container {
+    position:absolute;
+    left:173px;
+    top:266px;
+    width:777px;
+    height:30px;
+}
+
+#u50_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
+}
+
+.u51 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u44_normal.png');
+}
+
+.u52_container {
+    position:absolute;
+    left:173px;
+    top:298px;
+    width:777px;
+    height:30px;
+}
+
+#u52_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
+}
+
+.u53 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u44_normal.png');
+}
+
+.u54_container {
+    position:absolute;
+    left:173px;
+    top:330px;
+    width:777px;
+    height:30px;
+}
+
+#u54_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:783px;
+    height:36px;
+}
+
+.u55 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:773px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u56_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u56_normal.png');
+}
+
+.u56_container {
+    position:absolute;
+    left:344px;
+    top:365px;
+    width:606px;
+    height:30px;
+}
+
+#u56_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:612px;
+    height:36px;
+}
+
+.u57 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:602px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u58_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u58_normal.png');
+}
+
+.u58_container {
+    position:absolute;
+    left:173px;
+    top:365px;
+    width:166px;
+    height:310px;
+}
+
+#u58_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:172px;
+    height:316px;
+}
+
+.u59 {
+    position:absolute;
+    left:2px;
+    top:147px;
+    width:162px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u60_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u60_normal.png');
+}
+
+.u60_container {
+    position:absolute;
+    left:344px;
+    top:400px;
+    width:606px;
+    height:275px;
+}
+
+#u60_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:612px;
+    height:281px;
+}
+
+.u61 {
+    position:absolute;
+    left:2px;
+    top:130px;
+    width:602px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u62_container {
+    position:absolute;
+    left:346px;
+    top:367px;
+    width:34px;
+    height:28px;
+}
+
+#u62_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:34px;
+    height:28px;
+}
+
+.u63 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:30px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u64_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u64_normal.png');
+}
+
+.u64_container {
+    position:absolute;
+    left:0px;
+    top:625px;
+    width:168px;
+    height:50px;
+}
+
+#u64_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:56px;
+}
+
+.u65 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u66 {
+    position:absolute;
+    left:33px;
+    top:35px;
+    width:128px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67 {
+    position:absolute;
+    left:206px;
+    top:37px;
+    width:184px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u68 {
+    position:absolute;
+    left:387px;
+    top:367px;
+    width:290px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69 {
+    position:absolute;
+    left:7px;
+    top:68px;
+    width:79px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u70 {
+    position:absolute;
+    left:5px;
+    top:94px;
+    width:126px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71 {
+    position:absolute;
+    left:102px;
+    top:68px;
+    width:64px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u72 {
+    position:absolute;
+    left:5px;
+    top:640px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73_container {
+    position:absolute;
+    left:183px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u73_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_container {
+    position:absolute;
+    left:243px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u75_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_container {
+    position:absolute;
+    left:303px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u77_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79_container {
+    position:absolute;
+    left:362px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u79_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81_container {
+    position:absolute;
+    left:492px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u81_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_container {
+    position:absolute;
+    left:616px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u83_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_container {
+    position:absolute;
+    left:698px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u85_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_container {
+    position:absolute;
+    left:775px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u87_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89 {
+    position:absolute;
+    left:208px;
+    top:77px;
+    width:30px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u90 {
+    position:absolute;
+    left:268px;
+    top:77px;
+    width:30px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91 {
+    position:absolute;
+    left:328px;
+    top:77px;
+    width:30px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92 {
+    position:absolute;
+    left:455px;
+    top:77px;
+    width:30px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93 {
+    position:absolute;
+    left:516px;
+    top:77px;
+    width:95px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94 {
+    position:absolute;
+    left:639px;
+    top:77px;
+    width:55px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95 {
+    position:absolute;
+    left:724px;
+    top:77px;
+    width:45px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96 {
+    position:absolute;
+    left:802px;
+    top:77px;
+    width:55px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97 {
+    position:absolute;
+    left:176px;
+    top:118px;
+    width:13px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98 {
+    position:absolute;
+    left:219px;
+    top:126px;
+    width:42px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99 {
+    position:absolute;
+    left:293px;
+    top:118px;
+    width:26px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100 {
+    position:absolute;
+    left:330px;
+    top:118px;
+    width:26px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101 {
+    position:absolute;
+    left:371px;
+    top:126px;
+    width:26px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102 {
+    position:absolute;
+    left:407px;
+    top:115px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103 {
+    position:absolute;
+    left:407px;
+    top:136px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104 {
+    position:absolute;
+    left:468px;
+    top:118px;
+    width:26px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105 {
+    position:absolute;
+    left:499px;
+    top:118px;
+    width:26px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106 {
+    position:absolute;
+    left:534px;
+    top:115px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107 {
+    position:absolute;
+    left:534px;
+    top:137px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108 {
+    position:absolute;
+    left:599px;
+    top:126px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109 {
+    position:absolute;
+    left:666px;
+    top:118px;
+    width:52px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110 {
+    position:absolute;
+    left:723px;
+    top:118px;
+    width:52px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u111 {
+    position:absolute;
+    left:781px;
+    top:118px;
+    width:26px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112 {
+    position:absolute;
+    left:818px;
+    top:118px;
+    width:26px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113 {
+    position:absolute;
+    left:848px;
+    top:126px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114 {
+    position:absolute;
+    left:908px;
+    top:119px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u115 {
+    position:absolute;
+    left:829px;
+    top:474px;
+    width:116px;
+    height:35px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u117 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118 {
+    position:absolute;
+    left:829px;
+    top:546px;
+    width:116px;
+    height:35px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u119 {
+    position:absolute;
+    left:361px;
+    top:589px;
+    width:86px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120 {
+    position:absolute;
+    left:651px;
+    top:601px;
+    width:165px;
+    height:67px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 24px;
+    color:#000000;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+    
+}
+
+.u121 {
+    position:absolute;
+    left:497px;
+    top:591px;
+    width:139px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122 {
+    position:absolute;
+    left:470px;
+    top:658px;
+    width:194px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u123 {
+    position:absolute;
+    left:183px;
+    top:370px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u125 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126_container {
+    position:absolute;
+    left:426px;
+    top:76px;
+    width:20px;
+    height:20px;
+}
+
+#u126_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+.u127 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u128 {
+    position:absolute;
+    left:389px;
+    top:77px;
+    width:30px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129 {
+    position:absolute;
+    left:616px;
+    top:373px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u130_line {
+    background-image: url('../用户打印操作页（简约版）_files/u130_line.png');
+}
+
+.u130_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:62px;
+}
+
+.u130 {
+    position:absolute;
+    left:198px;
+    top:103px;
+    width:10px;
+    height:62px;
+    
+}
+
+.u131_line {
+    background-image: url('../用户打印操作页（简约版）_files/u131_line.png');
+}
+
+.u131_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:62px;
+}
+
+.u131 {
+    position:absolute;
+    left:361px;
+    top:104px;
+    width:10px;
+    height:62px;
+    
+}
+
+.u132_line {
+    background-image: url('../用户打印操作页（简约版）_files/u132_line.png');
+}
+
+.u132_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:62px;
+}
+
+.u132 {
+    position:absolute;
+    left:459px;
+    top:104px;
+    width:10px;
+    height:62px;
+    
+}
+
+.u133_line {
+    background-image: url('../用户打印操作页（简约版）_files/u133_line.png');
+}
+
+.u133_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:62px;
+}
+
+.u133 {
+    position:absolute;
+    left:809px;
+    top:104px;
+    width:10px;
+    height:62px;
+    
+}
+
+#u134 {
+    position:absolute;
+    left:333px;
+    top:391px;
+    width:487px;
+    height:201px;
+    overflow:hidden;
+}
+
+#pd2u134 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:487px;
+    height:201px;
+    
+}
+
+.u135_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u135_normal.png');
+}
+
+.u135_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:470px;
+    height:180px;
+}
+
+#u135_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:186px;
+}
+
+.u136 {
+    position:absolute;
+    left:2px;
+    top:82px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u137_normal.png');
+}
+
+.u137_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:128px;
+    height:59px;
+}
+
+#u137_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:134px;
+    height:65px;
+}
+
+.u138 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u139_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u139_normal.png');
+}
+
+.u139_container {
+    position:absolute;
+    left:10px;
+    top:129px;
+    width:128px;
+    height:60px;
+}
+
+#u139_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:134px;
+    height:66px;
+}
+
+.u140 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u141_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u137_normal.png');
+}
+
+.u141_container {
+    position:absolute;
+    left:10px;
+    top:69px;
+    width:128px;
+    height:59px;
+}
+
+#u141_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:134px;
+    height:65px;
+}
+
+.u142 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u143 {
+    position:absolute;
+    left:151px;
+    top:83px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u144 {
+    position:absolute;
+    left:221px;
+    top:81px;
+    width:252px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u145 {
+    position:absolute;
+    left:151px;
+    top:109px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u146 {
+    position:absolute;
+    left:221px;
+    top:109px;
+    width:252px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u147 {
+    position:absolute;
+    left:151px;
+    top:162px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u149 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:286px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u151 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:296px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u153 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:72px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u154 {
+    position:absolute;
+    left:221px;
+    top:162px;
+    width:81px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u155 {
+    position:absolute;
+    left:312px;
+    top:162px;
+    width:161px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u156 {
+    position:absolute;
+    left:148px;
+    top:14px;
+    width:174px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u157 {
+    position:absolute;
+    left:151px;
+    top:136px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u158 {
+    position:absolute;
+    left:221px;
+    top:136px;
+    width:252px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+#pd1u134 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:487px;
+    height:201px;
+    
+}
+
+.u159_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u135_normal.png');
+}
+
+.u159_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:470px;
+    height:180px;
+}
+
+#u159_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:186px;
+}
+
+.u160 {
+    position:absolute;
+    left:2px;
+    top:82px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u161_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u137_normal.png');
+}
+
+.u161_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:128px;
+    height:59px;
+}
+
+#u161_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:134px;
+    height:65px;
+}
+
+.u162 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u163_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u139_normal.png');
+}
+
+.u163_container {
+    position:absolute;
+    left:10px;
+    top:70px;
+    width:128px;
+    height:60px;
+}
+
+#u163_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:134px;
+    height:66px;
+}
+
+.u164 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u137_normal.png');
+}
+
+.u165_container {
+    position:absolute;
+    left:10px;
+    top:131px;
+    width:128px;
+    height:59px;
+}
+
+#u165_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:134px;
+    height:65px;
+}
+
+.u166 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167 {
+    position:absolute;
+    left:151px;
+    top:96px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u168 {
+    position:absolute;
+    left:221px;
+    top:94px;
+    width:252px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u169 {
+    position:absolute;
+    left:151px;
+    top:122px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u170 {
+    position:absolute;
+    left:221px;
+    top:122px;
+    width:252px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u171 {
+    position:absolute;
+    left:151px;
+    top:148px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u173 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:286px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u175 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:296px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u177 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:72px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u178 {
+    position:absolute;
+    left:221px;
+    top:148px;
+    width:81px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u179 {
+    position:absolute;
+    left:312px;
+    top:148px;
+    width:161px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 11px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u180 {
+    position:absolute;
+    left:148px;
+    top:19px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#pd0u134 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:487px;
+    height:201px;
+    
+}
+
+.u181_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u135_normal.png');
+}
+
+.u181_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:470px;
+    height:180px;
+}
+
+#u181_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:186px;
+}
+
+.u182 {
+    position:absolute;
+    left:2px;
+    top:82px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u183_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u137_normal.png');
+}
+
+.u183_container {
+    position:absolute;
+    left:10px;
+    top:72px;
+    width:128px;
+    height:59px;
+}
+
+#u183_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:134px;
+    height:65px;
+}
+
+.u184 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u185_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u139_normal.png');
+}
+
+.u185_container {
+    position:absolute;
+    left:10px;
+    top:11px;
+    width:128px;
+    height:60px;
+}
+
+#u185_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:134px;
+    height:66px;
+}
+
+.u186 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u187_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u137_normal.png');
+}
+
+.u187_container {
+    position:absolute;
+    left:10px;
+    top:131px;
+    width:128px;
+    height:59px;
+}
+
+#u187_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:134px;
+    height:65px;
+}
+
+.u188 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u189 {
+    position:absolute;
+    left:170px;
+    top:122px;
+    width:296px;
+    height:48px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u191 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u192 {
+    position:absolute;
+    left:170px;
+    top:78px;
+    width:53px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u193 {
+    position:absolute;
+    left:244px;
+    top:78px;
+    width:222px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u194 {
+    position:absolute;
+    left:244px;
+    top:22px;
+    width:213px;
+    height:48px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u195 {
+    position:absolute;
+    left:746px;
+    top:373px;
+    width:198px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u197 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:95px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u198 {
+    position:absolute;
+    left:829px;
+    top:423px;
+    width:90px;
+    height:15px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u199 {
+    position:absolute;
+    left:923px;
+    top:423px;
+    width:21px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u200 {
+    position:absolute;
+    left:178px;
+    top:177px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u201 {
+    position:absolute;
+    left:212px;
+    top:177px;
+    width:217px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u202 {
+    position:absolute;
+    left:436px;
+    top:171px;
+    width:66px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u204 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u206 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u208 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u209 {
+    position:absolute;
+    left:569px;
+    top:171px;
+    width:90px;
+    height:13px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u210 {
+    position:absolute;
+    left:569px;
+    top:186px;
+    width:90px;
+    height:13px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u211 {
+    position:absolute;
+    left:663px;
+    top:174px;
+    width:50px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u212 {
+    position:absolute;
+    left:713px;
+    top:174px;
+    width:50px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u213 {
+    position:absolute;
+    left:763px;
+    top:174px;
+    width:52px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u214 {
+    position:absolute;
+    left:818px;
+    top:172px;
+    width:18px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u215 {
+    position:absolute;
+    left:844px;
+    top:174px;
+    width:83px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u216 {
+    position:absolute;
+    left:178px;
+    top:209px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u217 {
+    position:absolute;
+    left:212px;
+    top:209px;
+    width:217px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u218 {
+    position:absolute;
+    left:436px;
+    top:203px;
+    width:66px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u220 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u222 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u223 {
+    position:absolute;
+    left:569px;
+    top:203px;
+    width:90px;
+    height:13px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u224 {
+    position:absolute;
+    left:663px;
+    top:206px;
+    width:50px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u225 {
+    position:absolute;
+    left:713px;
+    top:206px;
+    width:50px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u226 {
+    position:absolute;
+    left:763px;
+    top:206px;
+    width:52px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u227 {
+    position:absolute;
+    left:818px;
+    top:204px;
+    width:18px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u228 {
+    position:absolute;
+    left:844px;
+    top:206px;
+    width:83px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u229 {
+    position:absolute;
+    left:178px;
+    top:243px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u230 {
+    position:absolute;
+    left:212px;
+    top:243px;
+    width:217px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u231 {
+    position:absolute;
+    left:436px;
+    top:237px;
+    width:66px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u233 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u235 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u236 {
+    position:absolute;
+    left:569px;
+    top:237px;
+    width:90px;
+    height:13px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u237 {
+    position:absolute;
+    left:663px;
+    top:240px;
+    width:50px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u238 {
+    position:absolute;
+    left:713px;
+    top:240px;
+    width:50px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u239 {
+    position:absolute;
+    left:763px;
+    top:240px;
+    width:52px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u240 {
+    position:absolute;
+    left:818px;
+    top:238px;
+    width:18px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u241 {
+    position:absolute;
+    left:844px;
+    top:240px;
+    width:83px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u242 {
+    position:absolute;
+    left:178px;
+    top:273px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u243 {
+    position:absolute;
+    left:212px;
+    top:273px;
+    width:217px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u244 {
+    position:absolute;
+    left:436px;
+    top:267px;
+    width:66px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u246 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u248 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u249 {
+    position:absolute;
+    left:569px;
+    top:267px;
+    width:90px;
+    height:13px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u250 {
+    position:absolute;
+    left:663px;
+    top:270px;
+    width:50px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u251 {
+    position:absolute;
+    left:713px;
+    top:270px;
+    width:50px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u252 {
+    position:absolute;
+    left:763px;
+    top:270px;
+    width:52px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u253 {
+    position:absolute;
+    left:818px;
+    top:268px;
+    width:18px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u254 {
+    position:absolute;
+    left:844px;
+    top:270px;
+    width:83px;
+    height:22px;
+    ;
+    background-color:#FFFF99;;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u256 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u257 {
+    position:absolute;
+    left:569px;
+    top:218px;
+    width:90px;
+    height:13px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u259 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u260 {
+    position:absolute;
+    left:569px;
+    top:252px;
+    width:90px;
+    height:13px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u262 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u263 {
+    position:absolute;
+    left:569px;
+    top:282px;
+    width:90px;
+    height:13px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u264 {
+    position:absolute;
+    left:178px;
+    top:306px;
+    width:11px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u265 {
+    position:absolute;
+    left:212px;
+    top:306px;
+    width:439px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u266 {
+    position:absolute;
+    left:937px;
+    top:177px;
+    width:64px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u267 {
+    position:absolute;
+    left:890px;
+    top:137px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u268 {
+    position:absolute;
+    left:937px;
+    top:209px;
+    width:64px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u269 {
+    position:absolute;
+    left:937px;
+    top:243px;
+    width:64px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u270 {
+    position:absolute;
+    left:937px;
+    top:273px;
+    width:64px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u271 {
+    position:absolute;
+    left:937px;
+    top:305px;
+    width:64px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u272 {
+    position:absolute;
+    left:818px;
+    top:298px;
+    width:18px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+#u273 {
+    position:absolute;
+    left:0px;
+    top:120px;
+    width:169px;
+    height:501px;
+    overflow:hidden;
+}
+
+#pd1u273 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:169px;
+    height:501px;
+    
+}
+
+.u274_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u274_normal.png');
+}
+
+.u274_container {
+    position:absolute;
+    left:0px;
+    top:2px;
+    width:168px;
+    height:180px;
+}
+
+#u274_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:186px;
+}
+
+.u275 {
+    position:absolute;
+    left:2px;
+    top:82px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u276 {
+    position:absolute;
+    left:5px;
+    top:8px;
+    width:112px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u277 {
+    position:absolute;
+    left:6px;
+    top:28px;
+    width:157px;
+    height:30px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u278_container {
+    position:absolute;
+    left:6px;
+    top:62px;
+    width:50px;
+    height:17px;
+}
+
+#u278_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u279 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u280_container {
+    position:absolute;
+    left:6px;
+    top:82px;
+    width:50px;
+    height:17px;
+}
+
+#u280_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u281 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u282_container {
+    position:absolute;
+    left:6px;
+    top:101px;
+    width:50px;
+    height:17px;
+}
+
+#u282_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u283 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u284_container {
+    position:absolute;
+    left:6px;
+    top:121px;
+    width:50px;
+    height:17px;
+}
+
+#u284_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u285 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u286_container {
+    position:absolute;
+    left:6px;
+    top:140px;
+    width:50px;
+    height:17px;
+}
+
+#u286_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u287 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u288_container {
+    position:absolute;
+    left:6px;
+    top:160px;
+    width:50px;
+    height:17px;
+}
+
+#u288_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u289 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u290_container {
+    position:absolute;
+    left:60px;
+    top:62px;
+    width:50px;
+    height:17px;
+}
+
+#u290_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u291 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u292_container {
+    position:absolute;
+    left:60px;
+    top:82px;
+    width:50px;
+    height:17px;
+}
+
+#u292_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u293 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u294_container {
+    position:absolute;
+    left:60px;
+    top:101px;
+    width:50px;
+    height:17px;
+}
+
+#u294_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u295 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u296_container {
+    position:absolute;
+    left:60px;
+    top:121px;
+    width:50px;
+    height:17px;
+}
+
+#u296_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u297 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u298_container {
+    position:absolute;
+    left:60px;
+    top:140px;
+    width:50px;
+    height:17px;
+}
+
+#u298_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u299 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u300_container {
+    position:absolute;
+    left:60px;
+    top:160px;
+    width:50px;
+    height:17px;
+}
+
+#u300_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u301 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u302_container {
+    position:absolute;
+    left:113px;
+    top:62px;
+    width:50px;
+    height:17px;
+}
+
+#u302_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u303 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u304_container {
+    position:absolute;
+    left:113px;
+    top:82px;
+    width:50px;
+    height:17px;
+}
+
+#u304_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u305 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u306_container {
+    position:absolute;
+    left:113px;
+    top:101px;
+    width:50px;
+    height:17px;
+}
+
+#u306_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u307 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u308_container {
+    position:absolute;
+    left:113px;
+    top:121px;
+    width:50px;
+    height:17px;
+}
+
+#u308_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u309 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u310_container {
+    position:absolute;
+    left:113px;
+    top:140px;
+    width:50px;
+    height:17px;
+}
+
+#u310_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u311 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u312_container {
+    position:absolute;
+    left:113px;
+    top:160px;
+    width:50px;
+    height:17px;
+}
+
+#u312_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:17px;
+}
+
+.u313 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u314 {
+    position:absolute;
+    left:117px;
+    top:5px;
+    width:44px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+    
+}
+
+.u315_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u315_normal.png');
+}
+
+.u315_container {
+    position:absolute;
+    left:0px;
+    top:188px;
+    width:168px;
+    height:60px;
+}
+
+#u315_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u316 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u317_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u317_container {
+    position:absolute;
+    left:0px;
+    top:250px;
+    width:168px;
+    height:60px;
+}
+
+#u317_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u318 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u319_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u319_container {
+    position:absolute;
+    left:0px;
+    top:312px;
+    width:168px;
+    height:60px;
+}
+
+#u319_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u320 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u321_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u321_container {
+    position:absolute;
+    left:0px;
+    top:374px;
+    width:168px;
+    height:60px;
+}
+
+#u321_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u322 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u323_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u323_container {
+    position:absolute;
+    left:0px;
+    top:436px;
+    width:168px;
+    height:60px;
+}
+
+#u323_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u324 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u325 {
+    position:absolute;
+    left:7px;
+    top:193px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u326 {
+    position:absolute;
+    left:9px;
+    top:212px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u327 {
+    position:absolute;
+    left:7px;
+    top:261px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u328 {
+    position:absolute;
+    left:10px;
+    top:277px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u329 {
+    position:absolute;
+    left:7px;
+    top:323px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u330 {
+    position:absolute;
+    left:10px;
+    top:339px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u331 {
+    position:absolute;
+    left:7px;
+    top:384px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u332 {
+    position:absolute;
+    left:10px;
+    top:400px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u333 {
+    position:absolute;
+    left:7px;
+    top:446px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u334 {
+    position:absolute;
+    left:10px;
+    top:462px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u335_container {
+    position:absolute;
+    left:149px;
+    top:193px;
+    width:14px;
+    height:14px;
+}
+
+#u335_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u336 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u337_container {
+    position:absolute;
+    left:149px;
+    top:255px;
+    width:14px;
+    height:14px;
+}
+
+#u337_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u338 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u339_container {
+    position:absolute;
+    left:149px;
+    top:316px;
+    width:14px;
+    height:14px;
+}
+
+#u339_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u340 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u341_container {
+    position:absolute;
+    left:149px;
+    top:384px;
+    width:14px;
+    height:14px;
+}
+
+#u341_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u342 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u343_container {
+    position:absolute;
+    left:149px;
+    top:444px;
+    width:14px;
+    height:14px;
+}
+
+#u343_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u344 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#pd0u273 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:169px;
+    height:501px;
+    
+}
+
+.u345_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u345_normal.png');
+}
+
+.u345_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:168px;
+    height:27px;
+}
+
+#u345_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:33px;
+}
+
+.u346 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u347_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u315_normal.png');
+}
+
+.u347_container {
+    position:absolute;
+    left:0px;
+    top:31px;
+    width:168px;
+    height:60px;
+}
+
+#u347_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u348 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u349_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u349_container {
+    position:absolute;
+    left:0px;
+    top:93px;
+    width:168px;
+    height:60px;
+}
+
+#u349_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u350 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u351_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u351_container {
+    position:absolute;
+    left:0px;
+    top:155px;
+    width:168px;
+    height:60px;
+}
+
+#u351_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u352 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u353_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u353_container {
+    position:absolute;
+    left:0px;
+    top:217px;
+    width:168px;
+    height:60px;
+}
+
+#u353_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u354 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u355_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u355_container {
+    position:absolute;
+    left:0px;
+    top:279px;
+    width:168px;
+    height:60px;
+}
+
+#u355_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u356 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u357 {
+    position:absolute;
+    left:7px;
+    top:36px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u358 {
+    position:absolute;
+    left:9px;
+    top:55px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u359 {
+    position:absolute;
+    left:7px;
+    top:104px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u360 {
+    position:absolute;
+    left:10px;
+    top:120px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u361 {
+    position:absolute;
+    left:7px;
+    top:166px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u362 {
+    position:absolute;
+    left:10px;
+    top:182px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u363 {
+    position:absolute;
+    left:7px;
+    top:227px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u364 {
+    position:absolute;
+    left:10px;
+    top:243px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u365 {
+    position:absolute;
+    left:7px;
+    top:289px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u366 {
+    position:absolute;
+    left:10px;
+    top:305px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u367_container {
+    position:absolute;
+    left:149px;
+    top:36px;
+    width:14px;
+    height:14px;
+}
+
+#u367_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u368 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u369_container {
+    position:absolute;
+    left:149px;
+    top:98px;
+    width:14px;
+    height:14px;
+}
+
+#u369_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u370 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u371_container {
+    position:absolute;
+    left:149px;
+    top:159px;
+    width:14px;
+    height:14px;
+}
+
+#u371_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u372 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u373_container {
+    position:absolute;
+    left:149px;
+    top:227px;
+    width:14px;
+    height:14px;
+}
+
+#u373_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u374 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u375_container {
+    position:absolute;
+    left:149px;
+    top:287px;
+    width:14px;
+    height:14px;
+}
+
+#u375_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u376 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u377_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u377_container {
+    position:absolute;
+    left:0px;
+    top:342px;
+    width:168px;
+    height:60px;
+}
+
+#u377_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u378 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u379 {
+    position:absolute;
+    left:7px;
+    top:352px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u380 {
+    position:absolute;
+    left:10px;
+    top:368px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u381_container {
+    position:absolute;
+    left:149px;
+    top:350px;
+    width:14px;
+    height:14px;
+}
+
+#u381_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u382 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u383_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u383_container {
+    position:absolute;
+    left:0px;
+    top:405px;
+    width:168px;
+    height:60px;
+}
+
+#u383_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u384 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u385 {
+    position:absolute;
+    left:7px;
+    top:415px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u386 {
+    position:absolute;
+    left:10px;
+    top:431px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u387_container {
+    position:absolute;
+    left:149px;
+    top:413px;
+    width:14px;
+    height:14px;
+}
+
+#u387_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u388 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u389 {
+    position:absolute;
+    left:5px;
+    top:8px;
+    width:112px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u390 {
+    position:absolute;
+    left:117px;
+    top:5px;
+    width:44px;
+    height:20px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+    
+}
+
+.u391_normal {
+    background-image: url('../用户打印操作页（简约版）_files/u317_normal.png');
+}
+
+.u391_container {
+    position:absolute;
+    left:0px;
+    top:470px;
+    width:168px;
+    height:60px;
+}
+
+#u391_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:66px;
+}
+
+.u392 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u393 {
+    position:absolute;
+    left:7px;
+    top:480px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u394 {
+    position:absolute;
+    left:10px;
+    top:496px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u395_container {
+    position:absolute;
+    left:149px;
+    top:478px;
+    width:14px;
+    height:14px;
+}
+
+#u395_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:14px;
+    height:14px;
+}
+
+.u396 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:10px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u397 {
+    position:absolute;
+    left:173px;
+    top:365px;
+    width:778px;
+    height:316px;
+    overflow:hidden;
+}
+
+#pd1u397 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:778px;
+    height:316px;
+    
+}
+
+#pd0u397 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:778px;
+    height:316px;
+    
+}
+
+#u398 {
+    position:absolute;
+    left:93px;
+    top:150px;
+    width:765px;
+    height:453px;
+    overflow:hidden;
+}
+
+#pd1u398 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:765px;
+    height:453px;
+    
+}
+
+#pd0u398 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:765px;
+    height:453px;
+    
+}
+
