@@ -500,11 +500,16 @@ a.readon {
 }
 
 #file_manage{
-	width:730px;
+	width:780px;
 	height:310px;
 	float:left;
 	border-left:1px solid #666666;
 	border-right:1px solid #666666;
+}
+
+.left750{
+	width:750px;
+	text-align: left;
 }
 
 #file_setting{
@@ -518,7 +523,7 @@ a.readon {
 }
 
 #print_setting{
-	width:730px;
+	width:780px;
 	height:258px;
 	float:left;
 	border-left:1px solid #666666;

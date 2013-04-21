@@ -26,8 +26,13 @@ class Welcome extends CI_Controller {
 		$printshop = $this->session->userdata('printshop');
 		if($location != "")
 		    $this->data['printerlist'] = $this->printer_mdl->get_printer_by_location($location);
-		else if($printshop != "")
+		else if($printshop != ""){
+			$printer = $this->printer_mdl->get_printer_by_username($printshop);
+			$printer_id = $printer[0]->id;
+			$this->session->set_userdata('printer_name',$printer[0]->name);
+			$this->session->set_userdata('printer_id',$printer_id);
 		    $this->data['printerlist'] = $this->printer_mdl->get_printer_by_username($printshop);
+		}
 		else
 		    $this->data['printerlist'] = $this->printer_mdl->get_printer(); 
 		//得到打印店信息

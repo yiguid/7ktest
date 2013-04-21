@@ -42,7 +42,11 @@ class Printshop extends CI_Controller {
 		//设置选择的打印店
 		
 		//得到打印店信息
-		$printer_id = $this->session->userdata('printer_id');
+		$printer = $this->printer_mdl->get_printer_by_username($printer_username);
+		$printer_id = $printer[0]->id;
+
+		$this->session->set_userdata('printer_name',$printer[0]->name);
+		$this->session->set_userdata('printer_id',$printer_id);
 		$this->data['papersize_option'] = $this->printer_mdl->get_papersize_option($printer_id);
 		$this->data['isdoubleside_option'] = $this->printer_mdl->get_isdoubleside_option($printer_id);
 		$this->data['zhuangding_option'] = $this->printer_mdl->get_zhuangding_option($printer_id);	

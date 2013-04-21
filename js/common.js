@@ -45,7 +45,7 @@ function submit_printtask(){
 
 function submit_upload(){
 	var cost = document.getElementById('cost').value;
-	var file = document.getElementById('uploadfilename').value;
+	var file = document.getElementById('ufb').value;
 	var fs = document.getElementById('fenshu').value;
 	
 	if(isNaN(cost) || isNaN(fs)){
@@ -93,17 +93,18 @@ function setPrinterId(url,name){
 		printername : name
 	}, function(data) {
 		$("#current").html(name);
+		//还要加入重新load选项功能
 	});
 	document.getElementById('printerid').value = getRadioValue('printer_address');
 }
 
 // 动态获取应交费用
-function compute_money(url) {
-	var papersize = document.getElementById('papersize').value;
-	var isdoubleside = document.getElementById('isdoubleside').value;
-	var range = document.getElementById('range').value;
-	var fenshu = document.getElementById('fenshu').value;
-	var zhuangding = document.getElementById('zhuangding').value;
+function compute_money(url,num) {
+	var papersize = document.getElementById('papersize'+num).value;
+	var isdoubleside = document.getElementById('isdoubleside'+num).value;
+	var range = document.getElementById('range'+num).value;
+	var fenshu = document.getElementById('fenshu'+num).value;
+	var zhuangding = document.getElementById('zhuangding'+num).value;
 	var printerid = getRadioValue('printer_address');
 	$.post(url + "ajax/printajax/compute_money", {
 		papersize : papersize,
@@ -113,7 +114,7 @@ function compute_money(url) {
 		zhuangding : zhuangding,
 		printerid : printerid
 	}, function(data) {
-		document.getElementById("cost").value = data;
+		document.getElementById("cost"+num).value = data;
 	});
 }
 
@@ -129,17 +130,67 @@ function modal_delete(rowid,id,name,papersize,isdoubleside,zhuangding,price,qty)
     $('#myModal').modal({show:true});
 }
 
-function modal_delete_by_id(url){
-	var documentid = $('#myModal').find('.modal-id').text();
-	var rowid = document.getElementById('modal-rowid').value;
-	$.post(url + "ajax/printajax/modal_delete_by_id", {
-		documentid : documentid,
-		rowid : rowid
-	}, function(data) {
-		if(data)
-			window.location.href = url + "welcome";
-	});
+function delete_by_id(url,num){
+	if(confirm("确认删除该文档吗?")==1)
+	{
+		var documentid = document.getElementById('documentid'+num).value;
+		var rowid = document.getElementById('rowid'+num).value;
+		$.post(url + "ajax/printajax/delete_by_id", {
+			documentid : documentid,
+			rowid : rowid
+		}, function(data) {
+			if(data)
+				window.location.href = url + "welcome";
+		});
+	}
+	else {
+		return false;
+	}
 }
+
+function edit_by_id(url,num){
+	var fenshu = document.getElementById('fenshu'+num).value;
+	var cost = document.getElementById('cost'+num).value;
+	if(isNaN(cost) || isNaN(fenshu)){
+		alert('页码设置有误，请重新输入！');
+		return false;
+	}
+	else if(fenshu == ""){
+		alert('份数设置有误，请重新输入！');
+		return false;
+	}
+	else
+	if(confirm("确认修改该文档设置吗?")==1)
+	{
+		var documentid = document.getElementById('documentid'+num).value;
+		var rowid = document.getElementById('rowid'+num).value;
+		var papersize = document.getElementById('papersize'+num).value;
+		var isdoubleside = document.getElementById('isdoubleside'+num).value;
+		var range = document.getElementById('range'+num).value;
+		var zhuangding = document.getElementById('zhuangding'+num).value;
+		var printerid = getRadioValue('printer_address');
+		var name = $('#name'+num).text();
+		$.post(url + "ajax/printajax/edit_by_id", {
+			documentid : documentid,
+			name : name,
+			rowid : rowid,
+			papersize : papersize,
+			isdoubleside : isdoubleside,
+			range : range,
+			fenshu : fenshu,
+			zhuangding : zhuangding,
+			printerid : printerid,
+			cost : cost
+		}, function(data) {
+			if(data)
+				window.location.href = url + "welcome";
+		});
+	}
+	else {
+		return window.location.href = url + "welcome";
+	}
+}
+
 
 function warningChange(){
 	alert("请勿修改此项！");

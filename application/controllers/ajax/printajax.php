@@ -92,12 +92,38 @@ class Printajax extends CI_Controller {
 		$this->session->set_userdata('printer_name',$printername);
 	}
 
-	public function modal_delete_by_id(){
+	public function delete_by_id(){
 		extract($_REQUEST);
 		$this->db->delete('document', array('id' => $documentid)); 
 		$this->db->delete('printtasksetting', array('documentid' => $documentid)); 
 		$this->cart->update(array('rowid' => $rowid, 'qty' => 0)); 
 		echo TRUE;
+	}
+
+	public function edit_by_id(){
+		extract($_REQUEST);
+		//保存设置
+	   $doc_setting = array(
+	      'papersize' => $papersize,
+	      'isdoubleside' => $isdoubleside,
+	      'range' => $range,
+	      'fenshu' => $fenshu,
+	      'zhuangding' => $zhuangding,
+	      'cost' => $cost
+	    );
+	   $this->printtask_mdl->update_printtasksetting($this->session->userdata('printtaskid'), $documentid, $doc_setting);
+
+	   $this->cart->update(array('rowid' => $rowid, 'qty' => 0)); 
+
+	   $doc_data = array(
+	      'id' => $documentid,
+	      'qty' => $fenshu,
+	      'price' => $cost / $fenshu,
+	      'name' => $name,
+	      'options' => array('papersize' => $papersize,'isdoubleside' => $isdoubleside,'range' => $range,'zhuangding' => $zhuangding)
+	    );
+	   $this->cart->insert($doc_data);
+	   echo TRUE;
 	}
 }
 ?>

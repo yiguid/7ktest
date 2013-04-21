@@ -37,6 +37,13 @@ class Printtask_mdl extends CI_Model {
 		return ($this->db->affected_rows() > 0) ? mysql_insert_id() : 0;
 	}
 
+	public function update_printtasksetting($printtaskid, $documentid, $data){
+		$this->db->where('printtaskid',$printtaskid);
+		$this->db->where('documentid',$documentid);
+		$this->db->update('printtasksetting',$data);
+		return ($this->db->affected_rows() > 0) ? 1 : 0;
+	}
+
 	//删除打印任务
 	public function delete_printtask($id)
 	{

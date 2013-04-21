@@ -94,7 +94,7 @@ class Upload extends CI_Controller {
       'qty' => $this->input->post('fenshu'),
       'price' => $this->input->post('cost') / $this->input->post('fenshu'),
       'name' => $this->data['upload_data']['orig_name'],
-      'options' => array('papersize' => $this->input->post('papersize'),'isdoubleside' => $this->input->post('isdoubleside'),'zhuangding' => $this->input->post('zhuangding'))
+      'options' => array('papersize' => $this->input->post('papersize'),'isdoubleside' => $this->input->post('isdoubleside'),'range' => $this->input->post('range'),'zhuangding' => $this->input->post('zhuangding'))
     );
    $this->cart->insert($doc_data);
     //保存历史记录

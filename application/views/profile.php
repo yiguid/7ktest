@@ -9,11 +9,11 @@ $this->load->view('header');
 				选择打印店
 			</div>
 			<div style="text-align:right;">您现在所在打印店：  <i class='icon-map-marker'></i><?php echo anchor('place','切换地址'); ?></div>
-				<div id="current" style="text-align:left;font-weight:bold;"><?php echo $this->session->userdata('printer_name')?></div>
+				<div id="current" style="padding-left:4px;text-align:left;font-weight:bold;"><?php echo $this->session->userdata('printer_name')?></div>
 			<div class="divider"></div>
 			<div>
-				<div style="text-align:left;">打印店排序与筛选</div>
-				<div style="text-align:justify;">
+				<div style="text-align:left;padding-left:4px;">打印店排序与筛选</div>
+				<div style="text-align:justify;padding-left:4px;">
 				<a href="javascript:orderPrinter('<?php echo base_url();?>','distance')"><i class="icon-flag"></i>距离</a>
 				<a href="javascript:orderPrinter('<?php echo base_url();?>','price')"><i class="icon-tag"></i>价格</a>
 				<a href="javascript:orderPrinter('<?php echo base_url();?>','credit')"><i class="icon-heart"></i>信誉</a>
@@ -57,16 +57,12 @@ $this->load->view('header');
 				<img height="20" width="20" src="<?php echo base_url();?>images/step2.gif"></img>
 				选择文件并上传
 			</div>
-<!--		<div id="file_setting">
-				<img height="20" width="20" align="absmiddle" src="<?php echo base_url();?>images/add_doc.gif"></img>
-				<a href="javascript:addDocuments()">添加文档</a>
-			</div>
--->
 			<div>
 				<?php if(isset($error)) echo $error;?>
 				<?php echo form_open_multipart('upload/do_upload',array('id' => 'upload_form'));?>
-				<table class="table" style="width:700px;">
+				<table class="table table-condensed left750" style="margin-bottom:0px;">
 					<tr>
+						<td>序号</td>
 						<td>文档名</td>
 						<td>纸张</td>
 						<td>单/双面</td>
@@ -77,9 +73,10 @@ $this->load->view('header');
 						<td></td>
 					</tr>
 					<tr>
+						<td></td>
 						<td>
-							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('uploadfilename').value=this.value"/>
-							<input class="btn btn-info" type="button" onclick=userfile.click() value="点击上传文件"/>
+							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('ufb').value=this.value"/>
+							<input class="btn btn-info" id="ufb" type="button" onclick=userfile.click() value="点击上传文件"/>
 						</td>
 						<td>
 							<?php echo form_dropdown('papersize', $papersize_option, 'A4', "id=papersize class=w60");?>
@@ -92,16 +89,14 @@ $this->load->view('header');
 						<td>
 							<?php echo form_dropdown('zhuangding', $zhuangding_option, '普通', "id=zhuangding class=w70");?>
 						</td>
-						<td><input class="w40" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>')" onfocus="compute_money('<?php echo base_url();?>')" id="cost" name="cost"/></td>
-						<td><input class="btn btn-info" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>')" value="上传" /></td>
+						<td><input class="w40" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','')" onfocus="compute_money('<?php echo base_url();?>','')" id="cost" name="cost"/></td>
+						<td><input class="btn btn-info" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="上传" /></td>
 					</tr>
 				</table>
 				</form>
 				<div>
-					<div style="text-align:left; width:700px;">待上传的文件：<input class="w300" type="text" readonly id="uploadfilename"/></div>
-					<div style="text-align:left; width:700px;">刚才上传成功的文件：<?php if(isset($upload_data)) echo $upload_data['orig_name'];?></div>
-					<div style="text-align:left; width:700px;">
-						<!-- Modal -->
+					<div class="left750">
+						<!-- Modal 
 						<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						  <div class="modal-header">
 						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -122,13 +117,38 @@ $this->load->view('header');
 						    <button onclick="javascript:modal_delete_by_id('<?php echo base_url();?>')" class="btn btn-danger">删除</button>
 						  </div>
 						</div>
-						<!-- Modal -->
-					已经上传的文件：
+						Modal -->
+					<table class="table table-condensed left750" style="margin-bottom:0px;">
 					<?php 
+						$num = 0;
 						foreach ($this->cart->contents() as $items){
-							echo $items['name']."<a href=\"javascript:modal_delete('".$items['rowid']."','".$items['id']."','".$items['name']."','".$items['options']['papersize']."','".$items['options']['isdoubleside']."','".$items['options']['zhuangding']."','".$items['price']."','".$items['qty']."')\"><i class=\"icon-remove\"></i></a> | ";
+							$num++;
+							?>
+					<tr>
+						<td><div style="padding-top:6px;"><?php echo $num;?></div></td>
+						<td>
+							<input type="hidden" id="rowid<?php echo $num;?>" value="<?php echo $items['rowid']?>" />
+							<input type="hidden" id="documentid<?php echo $num;?>" value="<?php echo $items['id']?>" />
+							<div id="name<?php echo $num;?>" style="padding-top:6px;"><?php echo $items['name'];?></div>
+						</td>
+						<td>
+							<?php echo form_dropdown('papersize'.$num, $papersize_option, $items['options']['papersize'], "id=papersize".$num." class=w60");?>
+						</td>
+						<td>
+							<?php echo form_dropdown('isdoubleside'.$num, $isdoubleside_option, $items['options']['isdoubleside'], "id=isdoubleside".$num." class=w70");?>
+						</td>
+						<td><input class="w60" type="text" value="<?php echo $items['options']['range'];?>" maxlength="7" size="4" id="range<?php echo $num;?>" name="range<?php echo $num;?>"/></td>
+						<td><input class="w60" type="text" value="<?php echo $items['qty'];?>" maxlength="3" size="2" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/></td>
+						<td>
+							<?php echo form_dropdown('zhuangding'.$num, $zhuangding_option, $items['options']['zhuangding'], "id=zhuangding".$num." class=w70");?>
+						</td>
+						<td><input class="w40" type="text" value="<?php echo $items['price']*$items['qty'];?>" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" onfocus="compute_money('<?php echo base_url();?>','<?php echo $num;?>')" id="cost<?php echo $num;?>" name="cost<?php echo $num;?>"/></td>
+						<td><div style="padding-top:6px;"><a onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" href="javascript:edit_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-edit"></i></a> <a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
+					</tr>
+					<?php
 						}
 					?>
+					</table>
 					</div>
 				</div>
 			</div>
