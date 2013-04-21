@@ -698,7 +698,7 @@ div {
 .u48 {
     position:absolute;
     left:16px;
-    top:367px;
+    top:384px;
     width:100px;
     height:16px;
     ;
@@ -712,7 +712,7 @@ div {
 .u49 {
     position:absolute;
     left:16px;
-    top:402px;
+    top:419px;
     width:100px;
     height:16px;
     ;
@@ -726,7 +726,7 @@ div {
 .u50 {
     position:absolute;
     left:16px;
-    top:419px;
+    top:436px;
     width:100px;
     height:16px;
     ;
@@ -804,7 +804,7 @@ div {
     position:absolute;
     left:16px;
     top:191px;
-    width:150px;
+    width:100px;
     height:16px;
     ;
     ;
@@ -818,7 +818,7 @@ div {
     position:absolute;
     left:16px;
     top:207px;
-    width:150px;
+    width:100px;
     height:16px;
     ;
     ;
@@ -849,8 +849,8 @@ div {
 .u58 {
     position:absolute;
     left:16px;
-    top:350px;
-    width:150px;
+    top:367px;
+    width:100px;
     height:16px;
     ;
     ;
@@ -863,8 +863,8 @@ div {
 .u59 {
     position:absolute;
     left:16px;
-    top:384px;
-    width:150px;
+    top:402px;
+    width:100px;
     height:16px;
     ;
     ;
@@ -877,8 +877,8 @@ div {
 .u60 {
     position:absolute;
     left:16px;
-    top:436px;
-    width:150px;
+    top:350px;
+    width:100px;
     height:16px;
     ;
     ;
@@ -904,5 +904,19 @@ div {
     font-weight:normal;
     text-decoration:none;
     
+}
+
+.u62 {
+    position:absolute;
+    left:110px;
+    top:279px;
+    width:65px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
 }
 

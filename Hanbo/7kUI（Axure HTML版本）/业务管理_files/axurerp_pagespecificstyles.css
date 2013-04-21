@@ -944,7 +944,7 @@ div {
 .u74 {
     position:absolute;
     left:187px;
-    top:336px;
+    top:356px;
     width:100px;
     height:16px;
     ;
@@ -958,7 +958,7 @@ div {
 .u75 {
     position:absolute;
     left:297px;
-    top:336px;
+    top:356px;
     width:80px;
     height:16px;
     ;
@@ -972,7 +972,7 @@ div {
 .u76 {
     position:absolute;
     left:297px;
-    top:362px;
+    top:382px;
     width:80px;
     height:16px;
     ;
@@ -986,7 +986,7 @@ div {
 .u77 {
     position:absolute;
     left:377px;
-    top:332px;
+    top:352px;
     width:70px;
     height:22px;
     ;
@@ -1004,7 +1004,7 @@ div {
 .u78 {
     position:absolute;
     left:480px;
-    top:332px;
+    top:352px;
     width:70px;
     height:22px;
     ;
@@ -1022,7 +1022,7 @@ div {
 .u79 {
     position:absolute;
     left:377px;
-    top:360px;
+    top:380px;
     width:70px;
     height:22px;
     ;
@@ -1040,7 +1040,7 @@ div {
 .u80 {
     position:absolute;
     left:480px;
-    top:360px;
+    top:380px;
     width:70px;
     height:22px;
     ;
@@ -1058,7 +1058,7 @@ div {
 .u81 {
     position:absolute;
     left:457px;
-    top:337px;
+    top:357px;
     width:15px;
     height:16px;
     ;
@@ -1072,7 +1072,7 @@ div {
 .u82 {
     position:absolute;
     left:457px;
-    top:361px;
+    top:381px;
     width:15px;
     height:16px;
     ;
@@ -4491,7 +4491,7 @@ div {
     position:absolute;
     left:576px;
     top:414px;
-    width:445px;
+    width:435px;
     height:65px
 }
 
@@ -4598,14 +4598,14 @@ div {
 }
 
 .u301_normal {
-    background-image: url('../业务管理_files/u295_normal.png');
+    background-image: url('../业务管理_files/u274_normal.png');
 }
 
 .u301_container {
     position:absolute;
     left:330px;
     top:0px;
-    width:110px;
+    width:100px;
     height:20px;
 }
 
@@ -4613,7 +4613,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:116px;
+    width:106px;
     height:26px;
 }
 
@@ -4621,7 +4621,7 @@ div {
     position:absolute;
     left:2px;
     top:2px;
-    width:106px;
+    width:96px;
     height:16px;
     ;
     ;
@@ -4734,14 +4734,14 @@ div {
 }
 
 .u309_normal {
-    background-image: url('../业务管理_files/u295_normal.png');
+    background-image: url('../业务管理_files/u274_normal.png');
 }
 
 .u309_container {
     position:absolute;
     left:330px;
     top:20px;
-    width:110px;
+    width:100px;
     height:20px;
 }
 
@@ -4749,7 +4749,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:116px;
+    width:106px;
     height:26px;
 }
 
@@ -4757,7 +4757,7 @@ div {
     position:absolute;
     left:2px;
     top:2px;
-    width:106px;
+    width:96px;
     height:16px;
     ;
     ;
@@ -4870,14 +4870,14 @@ div {
 }
 
 .u317_normal {
-    background-image: url('../业务管理_files/u295_normal.png');
+    background-image: url('../业务管理_files/u274_normal.png');
 }
 
 .u317_container {
     position:absolute;
     left:330px;
     top:40px;
-    width:110px;
+    width:100px;
     height:20px;
 }
 
@@ -4885,7 +4885,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:116px;
+    width:106px;
     height:26px;
 }
 
@@ -4893,7 +4893,7 @@ div {
     position:absolute;
     left:2px;
     top:2px;
-    width:106px;
+    width:96px;
     height:16px;
     ;
     ;
@@ -4906,7 +4906,7 @@ div {
 .u319 {
     position:absolute;
     left:197px;
-    top:402px;
+    top:422px;
     width:318px;
     height:16px;
     ;
@@ -5058,7 +5058,7 @@ div {
 .u331 {
     position:absolute;
     left:33px;
-    top:428px;
+    top:448px;
     width:150px;
     height:16px;
     ;
@@ -5070,6 +5070,20 @@ div {
 }
 
 .u333 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u335 {
     position:absolute;
     left:16px;
     top:0px;

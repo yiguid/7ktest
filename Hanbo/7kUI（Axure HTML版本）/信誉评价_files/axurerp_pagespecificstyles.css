@@ -91,33 +91,19 @@ div {
     word-wrap:break-word;
 }
 
-.u4 {
-    position:absolute;
-    left:50px;
-    top:190px;
-    width:90px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-#u5 {
+#u4 {
     position:absolute;
     left:95px;
     top:70px;
-    width:478px;
+    width:596px;
     height:105px
 }
 
-.u6_normal {
-    background-image: url('../信誉评价_files/u6_normal.png');
+.u5_normal {
+    background-image: url('../信誉评价_files/u5_normal.png');
 }
 
-.u6_container {
+.u5_container {
     position:absolute;
     left:0px;
     top:0px;
@@ -125,7 +111,7 @@ div {
     height:20px;
 }
 
-#u6_img {
+#u5_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -133,7 +119,7 @@ div {
     height:26px;
 }
 
-.u7 {
+.u6 {
     position:absolute;
     left:2px;
     top:2px;
@@ -147,11 +133,11 @@ div {
     word-wrap:break-word;
 }
 
-.u8_normal {
-    background-image: url('../信誉评价_files/u8_normal.png');
+.u7_normal {
+    background-image: url('../信誉评价_files/u7_normal.png');
 }
 
-.u8_container {
+.u7_container {
     position:absolute;
     left:110px;
     top:0px;
@@ -159,7 +145,7 @@ div {
     height:20px;
 }
 
-#u8_img {
+#u7_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -167,7 +153,7 @@ div {
     height:26px;
 }
 
-.u9 {
+.u8 {
     position:absolute;
     left:2px;
     top:2px;
@@ -181,11 +167,11 @@ div {
     word-wrap:break-word;
 }
 
-.u10_normal {
-    background-image: url('../信誉评价_files/u10_normal.png');
+.u9_normal {
+    background-image: url('../信誉评价_files/u9_normal.png');
 }
 
-.u10_container {
+.u9_container {
     position:absolute;
     left:293px;
     top:0px;
@@ -193,7 +179,7 @@ div {
     height:20px;
 }
 
-#u10_img {
+#u9_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -201,7 +187,7 @@ div {
     height:26px;
 }
 
-.u11 {
+.u10 {
     position:absolute;
     left:2px;
     top:2px;
@@ -215,11 +201,11 @@ div {
     word-wrap:break-word;
 }
 
-.u12_normal {
-    background-image: url('../信誉评价_files/u12_normal.png');
+.u11_normal {
+    background-image: url('../信誉评价_files/u11_normal.png');
 }
 
-.u12_container {
+.u11_container {
     position:absolute;
     left:393px;
     top:0px;
@@ -227,7 +213,7 @@ div {
     height:20px;
 }
 
-#u12_img {
+#u11_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -235,7 +221,7 @@ div {
     height:26px;
 }
 
-.u13 {
+.u12 {
     position:absolute;
     left:2px;
     top:2px;
@@ -249,11 +235,45 @@ div {
     word-wrap:break-word;
 }
 
-.u14_normal {
-    background-image: url('../信誉评价_files/u6_normal.png');
+.u13_normal {
+    background-image: url('../信誉评价_files/u13_normal.png');
 }
 
-.u14_container {
+.u13_container {
+    position:absolute;
+    left:473px;
+    top:0px;
+    width:118px;
+    height:20px;
+}
+
+#u13_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:26px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../信誉评价_files/u5_normal.png');
+}
+
+.u15_container {
     position:absolute;
     left:0px;
     top:20px;
@@ -261,7 +281,7 @@ div {
     height:20px;
 }
 
-#u14_img {
+#u15_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -269,7 +289,7 @@ div {
     height:26px;
 }
 
-.u15 {
+.u16 {
     position:absolute;
     left:2px;
     top:2px;
@@ -283,11 +303,11 @@ div {
     word-wrap:break-word;
 }
 
-.u16_normal {
-    background-image: url('../信誉评价_files/u8_normal.png');
+.u17_normal {
+    background-image: url('../信誉评价_files/u7_normal.png');
 }
 
-.u16_container {
+.u17_container {
     position:absolute;
     left:110px;
     top:20px;
@@ -295,7 +315,7 @@ div {
     height:20px;
 }
 
-#u16_img {
+#u17_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -303,7 +323,7 @@ div {
     height:26px;
 }
 
-.u17 {
+.u18 {
     position:absolute;
     left:2px;
     top:2px;
@@ -317,11 +337,11 @@ div {
     word-wrap:break-word;
 }
 
-.u18_normal {
-    background-image: url('../信誉评价_files/u10_normal.png');
+.u19_normal {
+    background-image: url('../信誉评价_files/u9_normal.png');
 }
 
-.u18_container {
+.u19_container {
     position:absolute;
     left:293px;
     top:20px;
@@ -329,7 +349,7 @@ div {
     height:20px;
 }
 
-#u18_img {
+#u19_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -337,7 +357,7 @@ div {
     height:26px;
 }
 
-.u19 {
+.u20 {
     position:absolute;
     left:2px;
     top:2px;
@@ -351,11 +371,11 @@ div {
     word-wrap:break-word;
 }
 
-.u20_normal {
-    background-image: url('../信誉评价_files/u12_normal.png');
+.u21_normal {
+    background-image: url('../信誉评价_files/u11_normal.png');
 }
 
-.u20_container {
+.u21_container {
     position:absolute;
     left:393px;
     top:20px;
@@ -363,7 +383,7 @@ div {
     height:20px;
 }
 
-#u20_img {
+#u21_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -371,7 +391,7 @@ div {
     height:26px;
 }
 
-.u21 {
+.u22 {
     position:absolute;
     left:2px;
     top:2px;
@@ -385,11 +405,45 @@ div {
     word-wrap:break-word;
 }
 
-.u22_normal {
-    background-image: url('../信誉评价_files/u6_normal.png');
+.u23_normal {
+    background-image: url('../信誉评价_files/u13_normal.png');
 }
 
-.u22_container {
+.u23_container {
+    position:absolute;
+    left:473px;
+    top:20px;
+    width:118px;
+    height:20px;
+}
+
+#u23_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:26px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../信誉评价_files/u5_normal.png');
+}
+
+.u25_container {
     position:absolute;
     left:0px;
     top:40px;
@@ -397,7 +451,7 @@ div {
     height:20px;
 }
 
-#u22_img {
+#u25_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -405,7 +459,7 @@ div {
     height:26px;
 }
 
-.u23 {
+.u26 {
     position:absolute;
     left:2px;
     top:2px;
@@ -419,11 +473,11 @@ div {
     word-wrap:break-word;
 }
 
-.u24_normal {
-    background-image: url('../信誉评价_files/u8_normal.png');
+.u27_normal {
+    background-image: url('../信誉评价_files/u7_normal.png');
 }
 
-.u24_container {
+.u27_container {
     position:absolute;
     left:110px;
     top:40px;
@@ -431,7 +485,7 @@ div {
     height:20px;
 }
 
-#u24_img {
+#u27_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -439,7 +493,7 @@ div {
     height:26px;
 }
 
-.u25 {
+.u28 {
     position:absolute;
     left:2px;
     top:2px;
@@ -453,11 +507,11 @@ div {
     word-wrap:break-word;
 }
 
-.u26_normal {
-    background-image: url('../信誉评价_files/u10_normal.png');
+.u29_normal {
+    background-image: url('../信誉评价_files/u9_normal.png');
 }
 
-.u26_container {
+.u29_container {
     position:absolute;
     left:293px;
     top:40px;
@@ -465,7 +519,7 @@ div {
     height:20px;
 }
 
-#u26_img {
+#u29_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -473,7 +527,7 @@ div {
     height:26px;
 }
 
-.u27 {
+.u30 {
     position:absolute;
     left:2px;
     top:2px;
@@ -487,11 +541,11 @@ div {
     word-wrap:break-word;
 }
 
-.u28_normal {
-    background-image: url('../信誉评价_files/u12_normal.png');
+.u31_normal {
+    background-image: url('../信誉评价_files/u11_normal.png');
 }
 
-.u28_container {
+.u31_container {
     position:absolute;
     left:393px;
     top:40px;
@@ -499,7 +553,7 @@ div {
     height:20px;
 }
 
-#u28_img {
+#u31_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -507,7 +561,7 @@ div {
     height:26px;
 }
 
-.u29 {
+.u32 {
     position:absolute;
     left:2px;
     top:2px;
@@ -521,11 +575,45 @@ div {
     word-wrap:break-word;
 }
 
-.u30_normal {
-    background-image: url('../信誉评价_files/u6_normal.png');
+.u33_normal {
+    background-image: url('../信誉评价_files/u13_normal.png');
 }
 
-.u30_container {
+.u33_container {
+    position:absolute;
+    left:473px;
+    top:40px;
+    width:118px;
+    height:20px;
+}
+
+#u33_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:26px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../信誉评价_files/u5_normal.png');
+}
+
+.u35_container {
     position:absolute;
     left:0px;
     top:60px;
@@ -533,7 +621,7 @@ div {
     height:20px;
 }
 
-#u30_img {
+#u35_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -541,7 +629,7 @@ div {
     height:26px;
 }
 
-.u31 {
+.u36 {
     position:absolute;
     left:2px;
     top:2px;
@@ -555,11 +643,11 @@ div {
     word-wrap:break-word;
 }
 
-.u32_normal {
-    background-image: url('../信誉评价_files/u8_normal.png');
+.u37_normal {
+    background-image: url('../信誉评价_files/u7_normal.png');
 }
 
-.u32_container {
+.u37_container {
     position:absolute;
     left:110px;
     top:60px;
@@ -567,7 +655,7 @@ div {
     height:20px;
 }
 
-#u32_img {
+#u37_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -575,7 +663,7 @@ div {
     height:26px;
 }
 
-.u33 {
+.u38 {
     position:absolute;
     left:2px;
     top:2px;
@@ -589,11 +677,11 @@ div {
     word-wrap:break-word;
 }
 
-.u34_normal {
-    background-image: url('../信誉评价_files/u10_normal.png');
+.u39_normal {
+    background-image: url('../信誉评价_files/u9_normal.png');
 }
 
-.u34_container {
+.u39_container {
     position:absolute;
     left:293px;
     top:60px;
@@ -601,7 +689,7 @@ div {
     height:20px;
 }
 
-#u34_img {
+#u39_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -609,7 +697,7 @@ div {
     height:26px;
 }
 
-.u35 {
+.u40 {
     position:absolute;
     left:2px;
     top:2px;
@@ -623,11 +711,11 @@ div {
     word-wrap:break-word;
 }
 
-.u36_normal {
-    background-image: url('../信誉评价_files/u12_normal.png');
+.u41_normal {
+    background-image: url('../信誉评价_files/u11_normal.png');
 }
 
-.u36_container {
+.u41_container {
     position:absolute;
     left:393px;
     top:60px;
@@ -635,7 +723,7 @@ div {
     height:20px;
 }
 
-#u36_img {
+#u41_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -643,7 +731,7 @@ div {
     height:26px;
 }
 
-.u37 {
+.u42 {
     position:absolute;
     left:2px;
     top:2px;
@@ -657,11 +745,45 @@ div {
     word-wrap:break-word;
 }
 
-.u38_normal {
-    background-image: url('../信誉评价_files/u6_normal.png');
+.u43_normal {
+    background-image: url('../信誉评价_files/u13_normal.png');
 }
 
-.u38_container {
+.u43_container {
+    position:absolute;
+    left:473px;
+    top:60px;
+    width:118px;
+    height:20px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:26px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../信誉评价_files/u5_normal.png');
+}
+
+.u45_container {
     position:absolute;
     left:0px;
     top:80px;
@@ -669,135 +791,19 @@ div {
     height:20px;
 }
 
-#u38_img {
+#u45_img {
     position:absolute;
     left:-3px;
     top:-3px;
     width:116px;
     height:26px;
-}
-
-.u39 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:106px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u40_normal {
-    background-image: url('../信誉评价_files/u8_normal.png');
-}
-
-.u40_container {
-    position:absolute;
-    left:110px;
-    top:80px;
-    width:183px;
-    height:20px;
-}
-
-#u40_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:189px;
-    height:26px;
-}
-
-.u41 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:179px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u42_normal {
-    background-image: url('../信誉评价_files/u10_normal.png');
-}
-
-.u42_container {
-    position:absolute;
-    left:293px;
-    top:80px;
-    width:100px;
-    height:20px;
-}
-
-#u42_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:106px;
-    height:26px;
-}
-
-.u43 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:96px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u44_normal {
-    background-image: url('../信誉评价_files/u12_normal.png');
-}
-
-.u44_container {
-    position:absolute;
-    left:393px;
-    top:80px;
-    width:80px;
-    height:20px;
-}
-
-#u44_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:86px;
-    height:26px;
-}
-
-.u45 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:76px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
 }
 
 .u46 {
     position:absolute;
-    left:50px;
-    top:44px;
-    width:90px;
+    left:2px;
+    top:2px;
+    width:106px;
     height:16px;
     ;
     ;
@@ -807,25 +813,31 @@ div {
     word-wrap:break-word;
 }
 
-.u47 {
+.u47_normal {
+    background-image: url('../信誉评价_files/u7_normal.png');
+}
+
+.u47_container {
     position:absolute;
-    left:86px;
-    top:217px;
-    width:150px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
+    left:110px;
+    top:80px;
+    width:183px;
+    height:20px;
+}
+
+#u47_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:189px;
+    height:26px;
 }
 
 .u48 {
     position:absolute;
-    left:86px;
-    top:243px;
-    width:150px;
+    left:2px;
+    top:2px;
+    width:179px;
     height:16px;
     ;
     ;
@@ -835,25 +847,31 @@ div {
     word-wrap:break-word;
 }
 
-.u49 {
+.u49_normal {
+    background-image: url('../信誉评价_files/u9_normal.png');
+}
+
+.u49_container {
     position:absolute;
-    left:327px;
-    top:217px;
-    width:120px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
+    left:293px;
+    top:80px;
+    width:100px;
+    height:20px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
 }
 
 .u50 {
     position:absolute;
-    left:327px;
-    top:243px;
-    width:120px;
+    left:2px;
+    top:2px;
+    width:96px;
     height:16px;
     ;
     ;
@@ -863,25 +881,31 @@ div {
     word-wrap:break-word;
 }
 
-.u51 {
+.u51_normal {
+    background-image: url('../信誉评价_files/u11_normal.png');
+}
+
+.u51_container {
     position:absolute;
-    left:499px;
-    top:217px;
-    width:70px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
+    left:393px;
+    top:80px;
+    width:80px;
+    height:20px;
+}
+
+#u51_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
 }
 
 .u52 {
     position:absolute;
-    left:499px;
-    top:243px;
-    width:70px;
+    left:2px;
+    top:2px;
+    width:76px;
     height:16px;
     ;
     ;
@@ -891,25 +915,31 @@ div {
     word-wrap:break-word;
 }
 
-.u53 {
+.u53_normal {
+    background-image: url('../信誉评价_files/u13_normal.png');
+}
+
+.u53_container {
     position:absolute;
-    left:589px;
-    top:217px;
-    width:30px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
+    left:473px;
+    top:80px;
+    width:118px;
+    height:20px;
+}
+
+#u53_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:26px;
 }
 
 .u54 {
     position:absolute;
-    left:589px;
-    top:243px;
-    width:30px;
+    left:2px;
+    top:2px;
+    width:114px;
     height:16px;
     ;
     ;
@@ -921,23 +951,9 @@ div {
 
 .u55 {
     position:absolute;
-    left:621px;
-    top:217px;
-    width:30px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u56 {
-    position:absolute;
-    left:621px;
-    top:243px;
-    width:30px;
+    left:50px;
+    top:44px;
+    width:90px;
     height:16px;
     ;
     ;
