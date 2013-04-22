@@ -535,19 +535,29 @@ a.readon {
 }
 #shop_image{
 	height: 120px;
-	background-color: yellow;
+	background-color: #FFFFCC;
+	border:1px solid gray;
 }
 #shop_word{
 	height: 50px;
-	background-color: red;
+	line-height: 50px;
+	background-color: #FFCC00;
+	border-bottom:1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
 }
 #shop_services{
-	width: 700px;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 690px;
 	float:left;
 	background-color: white;
+	border:1px solid gray;
 }
 #shop_details{
+	margin-top: 5px;
 	width: 290px;
 	float: right;
-	background-color: orange;
+	background-color: #FFCC99;
+	border:1px solid gray;
 }
