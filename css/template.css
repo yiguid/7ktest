@@ -530,6 +530,26 @@ a.readon {
 	border-right:1px solid #666666;
 	border-top:1px solid #666666;
 }
+
+.tabs{
+	border:1px solid #eee;
+	background-image: -moz-linear-gradient(top, #d8d8d8, #a6a6a6); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d8d8d8), color-stop(1, #a6a6a6)); /* Saf4+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#a6a6a6', GradientType='0'); /* IE*/
+	color:white;
+	height:38px;
+	text-align: center;
+	line-height: 38px;
+}
+
+.current{
+	background:#ccffff;
+	background-image: -moz-linear-gradient(top, #4461b7, #2a3c72); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4461b7), color-stop(1, #2a3c72)); /* Saf4+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4461b7', endColorstr='#2a3c72', GradientType='0'); /* IE*/
+
+}
+
 #shop_main{
 	width: 990px;
 }
