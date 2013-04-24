@@ -2043,7 +2043,7 @@ div {
     position:absolute;
     left:16px;
     top:0px;
-    width:82px;
+    width:176px;
     height:16px;
     ;
     ;
@@ -2338,7 +2338,7 @@ div {
 .u152 {
     position:absolute;
     left:204px;
-    top:81px;
+    top:85px;
     width:150px;
     height:16px;
     ;
@@ -2370,7 +2370,7 @@ div {
 .u154 {
     position:absolute;
     left:321px;
-    top:107px;
+    top:108px;
     width:65px;
     height:22px;
     ;
@@ -2406,7 +2406,7 @@ div {
 .u156 {
     position:absolute;
     left:321px;
-    top:80px;
+    top:81px;
     width:65px;
     height:22px;
     ;
@@ -2473,9 +2473,9 @@ div {
 
 .u161 {
     position:absolute;
-    left:547px;
-    top:3px;
-    width:73px;
+    left:321px;
+    top:34px;
+    width:43px;
     height:23px;
     ;
     ;
@@ -2491,8 +2491,8 @@ div {
 
 .u162 {
     position:absolute;
-    left:630px;
-    top:8px;
+    left:374px;
+    top:38px;
     width:29px;
     height:16px;
     ;
@@ -2505,7 +2505,7 @@ div {
 
 .u163 {
     position:absolute;
-    left:232px;
+    left:522px;
     top:8px;
     width:182px;
     height:16px;
@@ -5014,7 +5014,7 @@ div {
 }
 
 .u335_normal {
-    background-image: url('../UserHeader_files/u4_normal.png');
+    background-image: url('../用户打印操作页（简约版）_files/u335_normal.png');
 }
 
 .u335_container {
@@ -5118,7 +5118,7 @@ div {
 }
 
 .u342_normal {
-    background-image: url('../UserHeader_files/u11_normal.png');
+    background-image: url('../用户打印操作页（简约版）_files/u342_normal.png');
 }
 
 .u342_container {
@@ -5222,7 +5222,7 @@ div {
 }
 
 .u349_normal {
-    background-image: url('../UserFooter_files/u62_normal.png');
+    background-image: url('../用户打印操作页（简约版）_files/u349_normal.png');
 }
 
 .u349_container {
@@ -5466,7 +5466,7 @@ div {
 }
 
 .u366_normal {
-    background-image: url('../UserFooter_files/u79_normal.png');
+    background-image: url('../用户打印操作页（简约版）_files/u366_normal.png');
 }
 
 .u366_container {
