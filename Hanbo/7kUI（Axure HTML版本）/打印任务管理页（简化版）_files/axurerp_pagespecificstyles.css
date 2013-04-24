@@ -547,11 +547,25 @@ div {
     word-wrap:break-word;
 }
 
-.u35_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u35_normal.png');
+.u35 {
+    position:absolute;
+    left:647px;
+    top:84px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
 }
 
-.u35_container {
+.u36_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u36_normal.png');
+}
+
+.u36_container {
     position:absolute;
     left:0px;
     top:30px;
@@ -559,7 +573,7 @@ div {
     height:470px;
 }
 
-#u35_img {
+#u36_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -567,7 +581,7 @@ div {
     height:476px;
 }
 
-.u36 {
+.u37 {
     position:absolute;
     left:2px;
     top:227px;
@@ -581,11 +595,11 @@ div {
     word-wrap:break-word;
 }
 
-.u37_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u37_normal.png');
+.u38_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u38_normal.png');
 }
 
-.u37_container {
+.u38_container {
     position:absolute;
     left:0px;
     top:30px;
@@ -593,7 +607,7 @@ div {
     height:40px;
 }
 
-#u37_img {
+#u38_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -601,7 +615,7 @@ div {
     height:46px;
 }
 
-.u38 {
+.u39 {
     position:absolute;
     left:2px;
     top:12px;
@@ -615,7 +629,7 @@ div {
     word-wrap:break-word;
 }
 
-.u39 {
+.u40 {
     position:absolute;
     left:19px;
     top:42px;
@@ -629,7 +643,7 @@ div {
     word-wrap:break-word;
 }
 
-.u40 {
+.u41 {
     position:absolute;
     left:98px;
     top:42px;
@@ -643,7 +657,7 @@ div {
     word-wrap:break-word;
 }
 
-.u41 {
+.u42 {
     position:absolute;
     left:455px;
     top:42px;
@@ -657,7 +671,7 @@ div {
     word-wrap:break-word;
 }
 
-.u42 {
+.u43 {
     position:absolute;
     left:218px;
     top:42px;
@@ -671,7 +685,7 @@ div {
     word-wrap:break-word;
 }
 
-.u43 {
+.u44 {
     position:absolute;
     left:345px;
     top:42px;
@@ -685,11 +699,11 @@ div {
     word-wrap:break-word;
 }
 
-.u44_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u44_normal.png');
+.u45_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u45_normal.png');
 }
 
-.u44_container {
+.u45_container {
     position:absolute;
     left:-2px;
     top:76px;
@@ -697,7 +711,7 @@ div {
     height:35px;
 }
 
-#u44_img {
+#u45_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -705,7 +719,7 @@ div {
     height:41px;
 }
 
-.u45 {
+.u46 {
     position:absolute;
     left:2px;
     top:10px;
@@ -719,7 +733,7 @@ div {
     word-wrap:break-word;
 }
 
-.u46 {
+.u47 {
     position:absolute;
     left:8px;
     top:87px;
@@ -733,7 +747,7 @@ div {
     word-wrap:break-word;
 }
 
-.u47 {
+.u48 {
     position:absolute;
     left:144px;
     top:85px;
@@ -747,7 +761,7 @@ div {
     word-wrap:break-word;
 }
 
-.u48 {
+.u49 {
     position:absolute;
     left:253px;
     top:85px;
@@ -761,7 +775,7 @@ div {
     word-wrap:break-word;
 }
 
-.u49 {
+.u50 {
     position:absolute;
     left:1533px;
     top:77px;
@@ -775,7 +789,7 @@ div {
     word-wrap:break-word;
 }
 
-.u50 {
+.u51 {
     position:absolute;
     left:1318px;
     top:102px;
@@ -789,7 +803,7 @@ div {
     word-wrap:break-word;
 }
 
-.u51 {
+.u52 {
     position:absolute;
     left:1448px;
     top:102px;
@@ -803,7 +817,7 @@ div {
     word-wrap:break-word;
 }
 
-.u52 {
+.u53 {
     position:absolute;
     left:1448px;
     top:118px;
@@ -817,7 +831,7 @@ div {
     word-wrap:break-word;
 }
 
-.u53 {
+.u54 {
     position:absolute;
     left:1506px;
     top:110px;
@@ -831,7 +845,7 @@ div {
     word-wrap:break-word;
 }
 
-.u54 {
+.u55 {
     position:absolute;
     left:1569px;
     top:100px;
@@ -845,7 +859,7 @@ div {
     word-wrap:break-word;
 }
 
-.u55 {
+.u56 {
     position:absolute;
     left:1631px;
     top:100px;
@@ -859,7 +873,7 @@ div {
     word-wrap:break-word;
 }
 
-.u56 {
+.u57 {
     position:absolute;
     left:1690px;
     top:100px;
@@ -873,7 +887,7 @@ div {
     word-wrap:break-word;
 }
 
-.u57 {
+.u58 {
     position:absolute;
     left:309px;
     top:85px;
@@ -887,7 +901,7 @@ div {
     word-wrap:break-word;
 }
 
-.u58 {
+.u59 {
     position:absolute;
     left:778px;
     top:85px;
@@ -901,7 +915,7 @@ div {
     word-wrap:break-word;
 }
 
-.u59 {
+.u60 {
     position:absolute;
     left:636px;
     top:85px;
@@ -915,7 +929,7 @@ div {
     word-wrap:break-word;
 }
 
-.u60 {
+.u61 {
     position:absolute;
     left:554px;
     top:85px;
@@ -929,7 +943,7 @@ div {
     word-wrap:break-word;
 }
 
-.u61 {
+.u62 {
     position:absolute;
     left:887px;
     top:85px;
@@ -943,7 +957,7 @@ div {
     word-wrap:break-word;
 }
 
-.u62 {
+.u63 {
     position:absolute;
     left:372px;
     top:85px;
@@ -957,7 +971,7 @@ div {
     word-wrap:break-word;
 }
 
-.u63 {
+.u64 {
     position:absolute;
     left:1017px;
     top:85px;
@@ -971,7 +985,7 @@ div {
     word-wrap:break-word;
 }
 
-.u64 {
+.u65 {
     position:absolute;
     left:972px;
     top:38px;
@@ -989,7 +1003,7 @@ div {
     
 }
 
-.u65 {
+.u66 {
     position:absolute;
     left:1287px;
     top:102px;
@@ -1003,11 +1017,11 @@ div {
     word-wrap:break-word;
 }
 
-.u66_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u66_normal.png');
+.u67_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u67_normal.png');
 }
 
-.u66_container {
+.u67_container {
     position:absolute;
     left:14px;
     top:4px;
@@ -1015,7 +1029,7 @@ div {
     height:22px;
 }
 
-#u66_img {
+#u67_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1023,7 +1037,7 @@ div {
     height:28px;
 }
 
-.u67 {
+.u68 {
     position:absolute;
     left:2px;
     top:3px;
@@ -1037,11 +1051,11 @@ div {
     word-wrap:break-word;
 }
 
-.u68_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u68_normal.png');
+.u69_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u69_normal.png');
 }
 
-.u68_container {
+.u69_container {
     position:absolute;
     left:234px;
     top:4px;
@@ -1049,7 +1063,7 @@ div {
     height:22px;
 }
 
-#u68_img {
+#u69_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1057,7 +1071,7 @@ div {
     height:28px;
 }
 
-.u69 {
+.u70 {
     position:absolute;
     left:2px;
     top:3px;
@@ -1071,11 +1085,11 @@ div {
     word-wrap:break-word;
 }
 
-.u70_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u68_normal.png');
+.u71_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u69_normal.png');
 }
 
-.u70_container {
+.u71_container {
     position:absolute;
     left:344px;
     top:4px;
@@ -1083,7 +1097,7 @@ div {
     height:22px;
 }
 
-#u70_img {
+#u71_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1091,7 +1105,7 @@ div {
     height:28px;
 }
 
-.u71 {
+.u72 {
     position:absolute;
     left:2px;
     top:3px;
@@ -1105,11 +1119,11 @@ div {
     word-wrap:break-word;
 }
 
-.u72_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u68_normal.png');
+.u73_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u69_normal.png');
 }
 
-.u72_container {
+.u73_container {
     position:absolute;
     left:564px;
     top:4px;
@@ -1117,7 +1131,7 @@ div {
     height:22px;
 }
 
-#u72_img {
+#u73_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1125,7 +1139,7 @@ div {
     height:28px;
 }
 
-.u73 {
+.u74 {
     position:absolute;
     left:2px;
     top:3px;
@@ -1139,11 +1153,11 @@ div {
     word-wrap:break-word;
 }
 
-.u74_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u68_normal.png');
+.u75_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u69_normal.png');
 }
 
-.u74_container {
+.u75_container {
     position:absolute;
     left:674px;
     top:4px;
@@ -1151,7 +1165,7 @@ div {
     height:22px;
 }
 
-#u74_img {
+#u75_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1159,7 +1173,7 @@ div {
     height:28px;
 }
 
-.u75 {
+.u76 {
     position:absolute;
     left:2px;
     top:3px;
@@ -1173,11 +1187,11 @@ div {
     word-wrap:break-word;
 }
 
-.u76_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u68_normal.png');
+.u77_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u69_normal.png');
 }
 
-.u76_container {
+.u77_container {
     position:absolute;
     left:784px;
     top:4px;
@@ -1185,7 +1199,7 @@ div {
     height:22px;
 }
 
-#u76_img {
+#u77_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1193,7 +1207,7 @@ div {
     height:28px;
 }
 
-.u77 {
+.u78 {
     position:absolute;
     left:2px;
     top:3px;
@@ -1207,11 +1221,11 @@ div {
     word-wrap:break-word;
 }
 
-.u78_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u68_normal.png');
+.u79_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u69_normal.png');
 }
 
-.u78_container {
+.u79_container {
     position:absolute;
     left:894px;
     top:4px;
@@ -1219,7 +1233,7 @@ div {
     height:22px;
 }
 
-#u78_img {
+#u79_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1227,7 +1241,7 @@ div {
     height:28px;
 }
 
-.u79 {
+.u80 {
     position:absolute;
     left:2px;
     top:3px;
@@ -1241,11 +1255,11 @@ div {
     word-wrap:break-word;
 }
 
-.u80_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u68_normal.png');
+.u81_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u69_normal.png');
 }
 
-.u80_container {
+.u81_container {
     position:absolute;
     left:124px;
     top:4px;
@@ -1253,7 +1267,7 @@ div {
     height:22px;
 }
 
-#u80_img {
+#u81_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1261,7 +1275,7 @@ div {
     height:28px;
 }
 
-.u81 {
+.u82 {
     position:absolute;
     left:2px;
     top:3px;
@@ -1275,11 +1289,11 @@ div {
     word-wrap:break-word;
 }
 
-.u82_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u82_normal.png');
+.u83_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u83_normal.png');
 }
 
-.u82_container {
+.u83_container {
     position:absolute;
     left:0px;
     top:117px;
@@ -1287,7 +1301,7 @@ div {
     height:35px;
 }
 
-#u82_img {
+#u83_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1295,7 +1309,7 @@ div {
     height:41px;
 }
 
-.u83 {
+.u84 {
     position:absolute;
     left:2px;
     top:10px;
@@ -1309,7 +1323,7 @@ div {
     word-wrap:break-word;
 }
 
-.u84 {
+.u85 {
     position:absolute;
     left:112px;
     top:126px;
@@ -1323,7 +1337,7 @@ div {
     word-wrap:break-word;
 }
 
-.u85 {
+.u86 {
     position:absolute;
     left:240px;
     top:126px;
@@ -1337,7 +1351,7 @@ div {
     word-wrap:break-word;
 }
 
-.u86 {
+.u87 {
     position:absolute;
     left:310px;
     top:125px;
@@ -1351,7 +1365,7 @@ div {
     word-wrap:break-word;
 }
 
-.u87 {
+.u88 {
     position:absolute;
     left:1003px;
     top:123px;
@@ -1369,7 +1383,7 @@ div {
     
 }
 
-.u88 {
+.u89 {
     position:absolute;
     left:1047px;
     top:123px;
@@ -1387,7 +1401,7 @@ div {
     
 }
 
-.u90 {
+.u91 {
     position:absolute;
     left:16px;
     top:0px;
@@ -1401,7 +1415,7 @@ div {
     word-wrap:break-word;
 }
 
-.u91 {
+.u92 {
     position:absolute;
     left:17px;
     top:563px;
@@ -1415,11 +1429,11 @@ div {
     word-wrap:break-word;
 }
 
-.u92_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u92_normal.png');
+.u93_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u93_normal.png');
 }
 
-.u92_container {
+.u93_container {
     position:absolute;
     left:306px;
     top:562px;
@@ -1427,7 +1441,7 @@ div {
     height:33px;
 }
 
-#u92_img {
+#u93_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1435,7 +1449,7 @@ div {
     height:39px;
 }
 
-.u93 {
+.u94 {
     position:absolute;
     left:2px;
     top:8px;
@@ -1449,11 +1463,11 @@ div {
     word-wrap:break-word;
 }
 
-.u94_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u94_normal.png');
+.u95_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u95_normal.png');
 }
 
-.u94_container {
+.u95_container {
     position:absolute;
     left:506px;
     top:562px;
@@ -1461,7 +1475,7 @@ div {
     height:33px;
 }
 
-#u94_img {
+#u95_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1469,7 +1483,7 @@ div {
     height:39px;
 }
 
-.u95 {
+.u96 {
     position:absolute;
     left:2px;
     top:8px;
@@ -1483,11 +1497,11 @@ div {
     word-wrap:break-word;
 }
 
-.u96_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u96_normal.png');
+.u97_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u97_normal.png');
 }
 
-.u96_container {
+.u97_container {
     position:absolute;
     left:706px;
     top:562px;
@@ -1495,7 +1509,7 @@ div {
     height:33px;
 }
 
-#u96_img {
+#u97_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1503,7 +1517,7 @@ div {
     height:39px;
 }
 
-.u97 {
+.u98 {
     position:absolute;
     left:2px;
     top:8px;
@@ -1517,11 +1531,11 @@ div {
     word-wrap:break-word;
 }
 
-.u98_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u98_normal.png');
+.u99_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u99_normal.png');
 }
 
-.u98_container {
+.u99_container {
     position:absolute;
     left:906px;
     top:562px;
@@ -1529,7 +1543,7 @@ div {
     height:33px;
 }
 
-#u98_img {
+#u99_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1537,7 +1551,7 @@ div {
     height:39px;
 }
 
-.u99 {
+.u100 {
     position:absolute;
     left:2px;
     top:8px;
@@ -1551,7 +1565,7 @@ div {
     word-wrap:break-word;
 }
 
-.u100 {
+.u101 {
     position:absolute;
     left:73px;
     top:79px;
@@ -1565,7 +1579,7 @@ div {
     word-wrap:break-word;
 }
 
-.u101 {
+.u102 {
     position:absolute;
     left:74px;
     top:126px;
@@ -1579,11 +1593,11 @@ div {
     word-wrap:break-word;
 }
 
-.u102_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u82_normal.png');
+.u103_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u83_normal.png');
 }
 
-.u102_container {
+.u103_container {
     position:absolute;
     left:0px;
     top:157px;
@@ -1591,7 +1605,7 @@ div {
     height:35px;
 }
 
-#u102_img {
+#u103_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1599,7 +1613,7 @@ div {
     height:41px;
 }
 
-.u103 {
+.u104 {
     position:absolute;
     left:2px;
     top:10px;
@@ -1613,7 +1627,7 @@ div {
     word-wrap:break-word;
 }
 
-.u104 {
+.u105 {
     position:absolute;
     left:112px;
     top:166px;
@@ -1627,7 +1641,7 @@ div {
     word-wrap:break-word;
 }
 
-.u105 {
+.u106 {
     position:absolute;
     left:240px;
     top:166px;
@@ -1641,7 +1655,7 @@ div {
     word-wrap:break-word;
 }
 
-.u106 {
+.u107 {
     position:absolute;
     left:310px;
     top:167px;
@@ -1655,7 +1669,7 @@ div {
     word-wrap:break-word;
 }
 
-.u107 {
+.u108 {
     position:absolute;
     left:1003px;
     top:163px;
@@ -1673,7 +1687,7 @@ div {
     
 }
 
-.u108 {
+.u109 {
     position:absolute;
     left:1047px;
     top:163px;
@@ -1691,7 +1705,7 @@ div {
     
 }
 
-.u110 {
+.u111 {
     position:absolute;
     left:16px;
     top:0px;
@@ -1705,7 +1719,7 @@ div {
     word-wrap:break-word;
 }
 
-.u111 {
+.u112 {
     position:absolute;
     left:74px;
     top:166px;
@@ -1719,11 +1733,11 @@ div {
     word-wrap:break-word;
 }
 
-.u112_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u82_normal.png');
+.u113_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u83_normal.png');
 }
 
-.u112_container {
+.u113_container {
     position:absolute;
     left:0px;
     top:197px;
@@ -1731,7 +1745,7 @@ div {
     height:35px;
 }
 
-#u112_img {
+#u113_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1739,7 +1753,7 @@ div {
     height:41px;
 }
 
-.u113 {
+.u114 {
     position:absolute;
     left:2px;
     top:10px;
@@ -1753,7 +1767,7 @@ div {
     word-wrap:break-word;
 }
 
-.u114 {
+.u115 {
     position:absolute;
     left:112px;
     top:206px;
@@ -1767,7 +1781,7 @@ div {
     word-wrap:break-word;
 }
 
-.u115 {
+.u116 {
     position:absolute;
     left:240px;
     top:206px;
@@ -1781,7 +1795,7 @@ div {
     word-wrap:break-word;
 }
 
-.u116 {
+.u117 {
     position:absolute;
     left:332px;
     top:205px;
@@ -1795,7 +1809,7 @@ div {
     word-wrap:break-word;
 }
 
-.u117 {
+.u118 {
     position:absolute;
     left:1003px;
     top:203px;
@@ -1813,7 +1827,7 @@ div {
     
 }
 
-.u118 {
+.u119 {
     position:absolute;
     left:1047px;
     top:203px;
@@ -1831,7 +1845,7 @@ div {
     
 }
 
-.u120 {
+.u121 {
     position:absolute;
     left:16px;
     top:0px;
@@ -1845,7 +1859,7 @@ div {
     word-wrap:break-word;
 }
 
-.u121 {
+.u122 {
     position:absolute;
     left:74px;
     top:206px;
@@ -1859,11 +1873,11 @@ div {
     word-wrap:break-word;
 }
 
-.u122_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u122_normal.png');
+.u123_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u123_normal.png');
 }
 
-.u122_container {
+.u123_container {
     position:absolute;
     left:0px;
     top:237px;
@@ -1871,7 +1885,7 @@ div {
     height:35px;
 }
 
-#u122_img {
+#u123_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -1879,7 +1893,7 @@ div {
     height:41px;
 }
 
-.u123 {
+.u124 {
     position:absolute;
     left:2px;
     top:10px;
@@ -1893,7 +1907,7 @@ div {
     word-wrap:break-word;
 }
 
-.u124 {
+.u125 {
     position:absolute;
     left:112px;
     top:246px;
@@ -1907,7 +1921,7 @@ div {
     word-wrap:break-word;
 }
 
-.u125 {
+.u126 {
     position:absolute;
     left:240px;
     top:246px;
@@ -1921,7 +1935,7 @@ div {
     word-wrap:break-word;
 }
 
-.u126 {
+.u127 {
     position:absolute;
     left:310px;
     top:245px;
@@ -1935,7 +1949,7 @@ div {
     word-wrap:break-word;
 }
 
-.u127 {
+.u128 {
     position:absolute;
     left:1003px;
     top:243px;
@@ -1953,7 +1967,7 @@ div {
     
 }
 
-.u128 {
+.u129 {
     position:absolute;
     left:1047px;
     top:243px;
@@ -1971,7 +1985,7 @@ div {
     
 }
 
-.u130 {
+.u131 {
     position:absolute;
     left:16px;
     top:0px;
@@ -1985,7 +1999,7 @@ div {
     word-wrap:break-word;
 }
 
-.u131 {
+.u132 {
     position:absolute;
     left:74px;
     top:246px;
@@ -1999,11 +2013,11 @@ div {
     word-wrap:break-word;
 }
 
-.u132_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u132_normal.png');
+.u133_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u133_normal.png');
 }
 
-.u132_container {
+.u133_container {
     position:absolute;
     left:0px;
     top:277px;
@@ -2011,7 +2025,7 @@ div {
     height:35px;
 }
 
-#u132_img {
+#u133_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -2019,7 +2033,7 @@ div {
     height:41px;
 }
 
-.u133 {
+.u134 {
     position:absolute;
     left:2px;
     top:10px;
@@ -2033,7 +2047,7 @@ div {
     word-wrap:break-word;
 }
 
-.u134 {
+.u135 {
     position:absolute;
     left:112px;
     top:286px;
@@ -2047,7 +2061,7 @@ div {
     word-wrap:break-word;
 }
 
-.u135 {
+.u136 {
     position:absolute;
     left:240px;
     top:286px;
@@ -2061,7 +2075,7 @@ div {
     word-wrap:break-word;
 }
 
-.u136 {
+.u137 {
     position:absolute;
     left:310px;
     top:285px;
@@ -2075,7 +2089,7 @@ div {
     word-wrap:break-word;
 }
 
-.u137 {
+.u138 {
     position:absolute;
     left:1003px;
     top:283px;
@@ -2093,7 +2107,7 @@ div {
     
 }
 
-.u138 {
+.u139 {
     position:absolute;
     left:1047px;
     top:283px;
@@ -2111,7 +2125,7 @@ div {
     
 }
 
-.u140 {
+.u141 {
     position:absolute;
     left:16px;
     top:0px;
@@ -2125,7 +2139,7 @@ div {
     word-wrap:break-word;
 }
 
-.u141 {
+.u142 {
     position:absolute;
     left:74px;
     top:286px;
@@ -2139,11 +2153,11 @@ div {
     word-wrap:break-word;
 }
 
-.u142_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u132_normal.png');
+.u143_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u133_normal.png');
 }
 
-.u142_container {
+.u143_container {
     position:absolute;
     left:0px;
     top:317px;
@@ -2151,7 +2165,7 @@ div {
     height:35px;
 }
 
-#u142_img {
+#u143_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -2159,7 +2173,7 @@ div {
     height:41px;
 }
 
-.u143 {
+.u144 {
     position:absolute;
     left:2px;
     top:10px;
@@ -2173,7 +2187,7 @@ div {
     word-wrap:break-word;
 }
 
-.u144 {
+.u145 {
     position:absolute;
     left:112px;
     top:326px;
@@ -2187,7 +2201,7 @@ div {
     word-wrap:break-word;
 }
 
-.u145 {
+.u146 {
     position:absolute;
     left:240px;
     top:326px;
@@ -2201,7 +2215,7 @@ div {
     word-wrap:break-word;
 }
 
-.u146 {
+.u147 {
     position:absolute;
     left:310px;
     top:325px;
@@ -2215,7 +2229,7 @@ div {
     word-wrap:break-word;
 }
 
-.u147 {
+.u148 {
     position:absolute;
     left:1003px;
     top:323px;
@@ -2233,7 +2247,7 @@ div {
     
 }
 
-.u148 {
+.u149 {
     position:absolute;
     left:1047px;
     top:323px;
@@ -2251,7 +2265,7 @@ div {
     
 }
 
-.u150 {
+.u151 {
     position:absolute;
     left:16px;
     top:0px;
@@ -2265,7 +2279,7 @@ div {
     word-wrap:break-word;
 }
 
-.u151 {
+.u152 {
     position:absolute;
     left:74px;
     top:326px;
@@ -2279,11 +2293,11 @@ div {
     word-wrap:break-word;
 }
 
-.u152_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u152_normal.png');
+.u153_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u153_normal.png');
 }
 
-.u152_container {
+.u153_container {
     position:absolute;
     left:0px;
     top:357px;
@@ -2291,7 +2305,7 @@ div {
     height:35px;
 }
 
-#u152_img {
+#u153_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -2299,7 +2313,7 @@ div {
     height:41px;
 }
 
-.u153 {
+.u154 {
     position:absolute;
     left:2px;
     top:10px;
@@ -2313,7 +2327,7 @@ div {
     word-wrap:break-word;
 }
 
-.u154 {
+.u155 {
     position:absolute;
     left:112px;
     top:366px;
@@ -2327,7 +2341,7 @@ div {
     word-wrap:break-word;
 }
 
-.u155 {
+.u156 {
     position:absolute;
     left:240px;
     top:366px;
@@ -2341,7 +2355,7 @@ div {
     word-wrap:break-word;
 }
 
-.u156 {
+.u157 {
     position:absolute;
     left:310px;
     top:365px;
@@ -2355,7 +2369,7 @@ div {
     word-wrap:break-word;
 }
 
-.u157 {
+.u158 {
     position:absolute;
     left:1003px;
     top:363px;
@@ -2373,7 +2387,7 @@ div {
     
 }
 
-.u158 {
+.u159 {
     position:absolute;
     left:1047px;
     top:363px;
@@ -2391,7 +2405,7 @@ div {
     
 }
 
-.u160 {
+.u161 {
     position:absolute;
     left:16px;
     top:0px;
@@ -2405,7 +2419,7 @@ div {
     word-wrap:break-word;
 }
 
-.u161 {
+.u162 {
     position:absolute;
     left:74px;
     top:366px;
@@ -2419,11 +2433,11 @@ div {
     word-wrap:break-word;
 }
 
-.u162_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u152_normal.png');
+.u163_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u153_normal.png');
 }
 
-.u162_container {
+.u163_container {
     position:absolute;
     left:0px;
     top:397px;
@@ -2431,7 +2445,7 @@ div {
     height:35px;
 }
 
-#u162_img {
+#u163_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -2439,7 +2453,7 @@ div {
     height:41px;
 }
 
-.u163 {
+.u164 {
     position:absolute;
     left:2px;
     top:10px;
@@ -2453,7 +2467,7 @@ div {
     word-wrap:break-word;
 }
 
-.u164 {
+.u165 {
     position:absolute;
     left:112px;
     top:406px;
@@ -2467,7 +2481,7 @@ div {
     word-wrap:break-word;
 }
 
-.u165 {
+.u166 {
     position:absolute;
     left:240px;
     top:406px;
@@ -2481,7 +2495,7 @@ div {
     word-wrap:break-word;
 }
 
-.u166 {
+.u167 {
     position:absolute;
     left:310px;
     top:405px;
@@ -2495,7 +2509,7 @@ div {
     word-wrap:break-word;
 }
 
-.u167 {
+.u168 {
     position:absolute;
     left:1003px;
     top:403px;
@@ -2513,7 +2527,7 @@ div {
     
 }
 
-.u168 {
+.u169 {
     position:absolute;
     left:1047px;
     top:403px;
@@ -2531,7 +2545,7 @@ div {
     
 }
 
-.u170 {
+.u171 {
     position:absolute;
     left:16px;
     top:0px;
@@ -2545,7 +2559,7 @@ div {
     word-wrap:break-word;
 }
 
-.u171 {
+.u172 {
     position:absolute;
     left:74px;
     top:406px;
@@ -2559,7 +2573,7 @@ div {
     word-wrap:break-word;
 }
 
-.u172 {
+.u173 {
     position:absolute;
     left:17px;
     top:529px;
@@ -2573,7 +2587,7 @@ div {
     word-wrap:break-word;
 }
 
-.u173 {
+.u174 {
     position:absolute;
     left:17px;
     top:619px;
@@ -2587,11 +2601,11 @@ div {
     word-wrap:break-word;
 }
 
-.u174_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u68_normal.png');
+.u175_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u69_normal.png');
 }
 
-.u174_container {
+.u175_container {
     position:absolute;
     left:454px;
     top:4px;
@@ -2599,7 +2613,7 @@ div {
     height:22px;
 }
 
-#u174_img {
+#u175_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -2607,7 +2621,7 @@ div {
     height:28px;
 }
 
-.u175 {
+.u176 {
     position:absolute;
     left:2px;
     top:3px;
@@ -2621,7 +2635,7 @@ div {
     word-wrap:break-word;
 }
 
-.u176 {
+.u177 {
     position:absolute;
     left:436px;
     top:85px;
@@ -2635,7 +2649,7 @@ div {
     word-wrap:break-word;
 }
 
-.u177 {
+.u178 {
     position:absolute;
     left:386px;
     top:126px;
@@ -2649,7 +2663,7 @@ div {
     word-wrap:break-word;
 }
 
-.u178 {
+.u179 {
     position:absolute;
     left:386px;
     top:166px;
@@ -2663,7 +2677,7 @@ div {
     word-wrap:break-word;
 }
 
-.u179 {
+.u180 {
     position:absolute;
     left:386px;
     top:206px;
@@ -2677,24 +2691,10 @@ div {
     word-wrap:break-word;
 }
 
-.u180 {
+.u181 {
     position:absolute;
     left:386px;
     top:246px;
-    width:23px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u181 {
-    position:absolute;
-    left:390px;
-    top:286px;
     width:23px;
     height:16px;
     ;
@@ -2708,7 +2708,7 @@ div {
 .u182 {
     position:absolute;
     left:390px;
-    top:326px;
+    top:286px;
     width:23px;
     height:16px;
     ;
@@ -2722,7 +2722,7 @@ div {
 .u183 {
     position:absolute;
     left:390px;
-    top:366px;
+    top:326px;
     width:23px;
     height:16px;
     ;
@@ -2736,7 +2736,7 @@ div {
 .u184 {
     position:absolute;
     left:390px;
-    top:406px;
+    top:366px;
     width:23px;
     height:16px;
     ;
@@ -2749,9 +2749,9 @@ div {
 
 .u185 {
     position:absolute;
-    left:454px;
-    top:126px;
-    width:45px;
+    left:390px;
+    top:406px;
+    width:23px;
     height:16px;
     ;
     ;
@@ -2764,7 +2764,7 @@ div {
 .u186 {
     position:absolute;
     left:454px;
-    top:166px;
+    top:126px;
     width:45px;
     height:16px;
     ;
@@ -2778,7 +2778,7 @@ div {
 .u187 {
     position:absolute;
     left:454px;
-    top:206px;
+    top:166px;
     width:45px;
     height:16px;
     ;
@@ -2792,7 +2792,7 @@ div {
 .u188 {
     position:absolute;
     left:454px;
-    top:246px;
+    top:206px;
     width:45px;
     height:16px;
     ;
@@ -2805,8 +2805,8 @@ div {
 
 .u189 {
     position:absolute;
-    left:574px;
-    top:126px;
+    left:454px;
+    top:246px;
     width:45px;
     height:16px;
     ;
@@ -2820,7 +2820,7 @@ div {
 .u190 {
     position:absolute;
     left:574px;
-    top:166px;
+    top:126px;
     width:45px;
     height:16px;
     ;
@@ -2834,7 +2834,7 @@ div {
 .u191 {
     position:absolute;
     left:574px;
-    top:206px;
+    top:166px;
     width:45px;
     height:16px;
     ;
@@ -2848,7 +2848,7 @@ div {
 .u192 {
     position:absolute;
     left:574px;
-    top:246px;
+    top:206px;
     width:45px;
     height:16px;
     ;
@@ -2861,8 +2861,8 @@ div {
 
 .u193 {
     position:absolute;
-    left:664px;
-    top:126px;
+    left:574px;
+    top:246px;
     width:45px;
     height:16px;
     ;
@@ -2876,7 +2876,7 @@ div {
 .u194 {
     position:absolute;
     left:664px;
-    top:166px;
+    top:126px;
     width:45px;
     height:16px;
     ;
@@ -2890,7 +2890,7 @@ div {
 .u195 {
     position:absolute;
     left:664px;
-    top:206px;
+    top:166px;
     width:45px;
     height:16px;
     ;
@@ -2904,7 +2904,7 @@ div {
 .u196 {
     position:absolute;
     left:664px;
-    top:246px;
+    top:206px;
     width:45px;
     height:16px;
     ;
@@ -2917,9 +2917,9 @@ div {
 
 .u197 {
     position:absolute;
-    left:436px;
-    top:286px;
-    width:150px;
+    left:664px;
+    top:246px;
+    width:45px;
     height:16px;
     ;
     ;
@@ -2932,7 +2932,7 @@ div {
 .u198 {
     position:absolute;
     left:436px;
-    top:326px;
+    top:286px;
     width:150px;
     height:16px;
     ;
@@ -2946,7 +2946,7 @@ div {
 .u199 {
     position:absolute;
     left:436px;
-    top:366px;
+    top:326px;
     width:150px;
     height:16px;
     ;
@@ -2960,7 +2960,7 @@ div {
 .u200 {
     position:absolute;
     left:436px;
-    top:406px;
+    top:366px;
     width:150px;
     height:16px;
     ;
@@ -2973,9 +2973,9 @@ div {
 
 .u201 {
     position:absolute;
-    left:559px;
-    top:286px;
-    width:90px;
+    left:436px;
+    top:406px;
+    width:150px;
     height:16px;
     ;
     ;
@@ -2988,7 +2988,7 @@ div {
 .u202 {
     position:absolute;
     left:559px;
-    top:326px;
+    top:286px;
     width:90px;
     height:16px;
     ;
@@ -3002,7 +3002,7 @@ div {
 .u203 {
     position:absolute;
     left:559px;
-    top:366px;
+    top:326px;
     width:90px;
     height:16px;
     ;
@@ -3016,7 +3016,7 @@ div {
 .u204 {
     position:absolute;
     left:559px;
-    top:406px;
+    top:366px;
     width:90px;
     height:16px;
     ;
@@ -3028,6 +3028,20 @@ div {
 }
 
 .u205 {
+    position:absolute;
+    left:559px;
+    top:406px;
+    width:90px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u206 {
     position:absolute;
     left:653px;
     top:288px;
@@ -3041,24 +3055,10 @@ div {
     word-wrap:break-word;
 }
 
-.u206 {
-    position:absolute;
-    left:653px;
-    top:326px;
-    width:56px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
 .u207 {
     position:absolute;
     left:653px;
-    top:406px;
+    top:326px;
     width:56px;
     height:16px;
     ;
@@ -3072,7 +3072,7 @@ div {
 .u208 {
     position:absolute;
     left:653px;
-    top:367px;
+    top:406px;
     width:56px;
     height:16px;
     ;
@@ -3084,6 +3084,20 @@ div {
 }
 
 .u209 {
+    position:absolute;
+    left:653px;
+    top:367px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u210 {
     position:absolute;
     left:729px;
     top:286px;
@@ -3097,7 +3111,7 @@ div {
     word-wrap:break-word;
 }
 
-.u210 {
+.u211 {
     position:absolute;
     left:789px;
     top:328px;
@@ -3111,7 +3125,7 @@ div {
     word-wrap:break-word;
 }
 
-.u211 {
+.u212 {
     position:absolute;
     left:729px;
     top:366px;
@@ -3125,7 +3139,7 @@ div {
     word-wrap:break-word;
 }
 
-.u212 {
+.u213 {
     position:absolute;
     left:789px;
     top:408px;
@@ -3139,11 +3153,11 @@ div {
     word-wrap:break-word;
 }
 
-.u213_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u152_normal.png');
+.u214_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u153_normal.png');
 }
 
-.u213_container {
+.u214_container {
     position:absolute;
     left:0px;
     top:437px;
@@ -3151,7 +3165,7 @@ div {
     height:35px;
 }
 
-#u213_img {
+#u214_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -3159,7 +3173,7 @@ div {
     height:41px;
 }
 
-.u214 {
+.u215 {
     position:absolute;
     left:2px;
     top:10px;
@@ -3173,7 +3187,7 @@ div {
     word-wrap:break-word;
 }
 
-.u215 {
+.u216 {
     position:absolute;
     left:112px;
     top:446px;
@@ -3187,7 +3201,7 @@ div {
     word-wrap:break-word;
 }
 
-.u216 {
+.u217 {
     position:absolute;
     left:240px;
     top:446px;
@@ -3201,7 +3215,7 @@ div {
     word-wrap:break-word;
 }
 
-.u217 {
+.u218 {
     position:absolute;
     left:310px;
     top:445px;
@@ -3215,7 +3229,7 @@ div {
     word-wrap:break-word;
 }
 
-.u218 {
+.u219 {
     position:absolute;
     left:1003px;
     top:443px;
@@ -3233,7 +3247,7 @@ div {
     
 }
 
-.u219 {
+.u220 {
     position:absolute;
     left:1047px;
     top:443px;
@@ -3251,7 +3265,7 @@ div {
     
 }
 
-.u221 {
+.u222 {
     position:absolute;
     left:16px;
     top:0px;
@@ -3265,7 +3279,7 @@ div {
     word-wrap:break-word;
 }
 
-.u222 {
+.u223 {
     position:absolute;
     left:74px;
     top:446px;
@@ -3279,7 +3293,7 @@ div {
     word-wrap:break-word;
 }
 
-.u223 {
+.u224 {
     position:absolute;
     left:390px;
     top:446px;
@@ -3293,7 +3307,7 @@ div {
     word-wrap:break-word;
 }
 
-.u224 {
+.u225 {
     position:absolute;
     left:436px;
     top:446px;
@@ -3307,7 +3321,7 @@ div {
     word-wrap:break-word;
 }
 
-.u225 {
+.u226 {
     position:absolute;
     left:559px;
     top:446px;
@@ -3321,7 +3335,7 @@ div {
     word-wrap:break-word;
 }
 
-.u226 {
+.u227 {
     position:absolute;
     left:653px;
     top:446px;
@@ -3335,7 +3349,7 @@ div {
     word-wrap:break-word;
 }
 
-.u227 {
+.u228 {
     position:absolute;
     left:789px;
     top:448px;
@@ -3349,11 +3363,11 @@ div {
     word-wrap:break-word;
 }
 
-.u228_normal {
-    background-image: url('../打印任务管理页（简化版）_files/u152_normal.png');
+.u229_normal {
+    background-image: url('../打印任务管理页（简化版）_files/u153_normal.png');
 }
 
-.u228_container {
+.u229_container {
     position:absolute;
     left:0px;
     top:477px;
@@ -3361,7 +3375,7 @@ div {
     height:35px;
 }
 
-#u228_img {
+#u229_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -3369,7 +3383,7 @@ div {
     height:41px;
 }
 
-.u229 {
+.u230 {
     position:absolute;
     left:2px;
     top:10px;
@@ -3383,7 +3397,7 @@ div {
     word-wrap:break-word;
 }
 
-.u230 {
+.u231 {
     position:absolute;
     left:112px;
     top:486px;
@@ -3397,7 +3411,7 @@ div {
     word-wrap:break-word;
 }
 
-.u231 {
+.u232 {
     position:absolute;
     left:240px;
     top:486px;
@@ -3411,7 +3425,7 @@ div {
     word-wrap:break-word;
 }
 
-.u232 {
+.u233 {
     position:absolute;
     left:310px;
     top:485px;
@@ -3425,7 +3439,7 @@ div {
     word-wrap:break-word;
 }
 
-.u233 {
+.u234 {
     position:absolute;
     left:1003px;
     top:483px;
@@ -3443,7 +3457,7 @@ div {
     
 }
 
-.u234 {
+.u235 {
     position:absolute;
     left:1047px;
     top:483px;
@@ -3461,7 +3475,7 @@ div {
     
 }
 
-.u236 {
+.u237 {
     position:absolute;
     left:16px;
     top:0px;
@@ -3475,7 +3489,7 @@ div {
     word-wrap:break-word;
 }
 
-.u237 {
+.u238 {
     position:absolute;
     left:74px;
     top:486px;
@@ -3489,7 +3503,7 @@ div {
     word-wrap:break-word;
 }
 
-.u238 {
+.u239 {
     position:absolute;
     left:390px;
     top:486px;
@@ -3503,7 +3517,7 @@ div {
     word-wrap:break-word;
 }
 
-.u239 {
+.u240 {
     position:absolute;
     left:436px;
     top:486px;
@@ -3517,7 +3531,7 @@ div {
     word-wrap:break-word;
 }
 
-.u240 {
+.u241 {
     position:absolute;
     left:559px;
     top:486px;
@@ -3531,7 +3545,7 @@ div {
     word-wrap:break-word;
 }
 
-.u241 {
+.u242 {
     position:absolute;
     left:653px;
     top:486px;
@@ -3545,7 +3559,7 @@ div {
     word-wrap:break-word;
 }
 
-.u242 {
+.u243 {
     position:absolute;
     left:789px;
     top:488px;
@@ -3559,24 +3573,10 @@ div {
     word-wrap:break-word;
 }
 
-.u243 {
+.u244 {
     position:absolute;
     left:887px;
     top:126px;
-    width:91px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u244 {
-    position:absolute;
-    left:898px;
-    top:168px;
     width:91px;
     height:16px;
     ;
@@ -3590,7 +3590,7 @@ div {
 .u245 {
     position:absolute;
     left:898px;
-    top:208px;
+    top:168px;
     width:91px;
     height:16px;
     ;
@@ -3602,6 +3602,20 @@ div {
 }
 
 .u246 {
+    position:absolute;
+    left:898px;
+    top:208px;
+    width:91px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u247 {
     position:absolute;
     left:887px;
     top:248px;
@@ -3615,7 +3629,7 @@ div {
     word-wrap:break-word;
 }
 
-.u247 {
+.u248 {
     position:absolute;
     left:888px;
     top:286px;
@@ -3629,7 +3643,7 @@ div {
     word-wrap:break-word;
 }
 
-.u248 {
+.u249 {
     position:absolute;
     left:898px;
     top:326px;
@@ -3643,7 +3657,7 @@ div {
     word-wrap:break-word;
 }
 
-.u249 {
+.u250 {
     position:absolute;
     left:887px;
     top:366px;
@@ -3657,7 +3671,7 @@ div {
     word-wrap:break-word;
 }
 
-.u250 {
+.u251 {
     position:absolute;
     left:898px;
     top:406px;
@@ -3671,7 +3685,7 @@ div {
     word-wrap:break-word;
 }
 
-.u251 {
+.u252 {
     position:absolute;
     left:898px;
     top:446px;
@@ -3685,7 +3699,7 @@ div {
     word-wrap:break-word;
 }
 
-.u252 {
+.u253 {
     position:absolute;
     left:898px;
     top:486px;
@@ -3699,7 +3713,7 @@ div {
     word-wrap:break-word;
 }
 
-.u253 {
+.u254 {
     position:absolute;
     left:794px;
     top:126px;
@@ -3713,7 +3727,7 @@ div {
     word-wrap:break-word;
 }
 
-.u254 {
+.u255 {
     position:absolute;
     left:794px;
     top:166px;
@@ -3727,7 +3741,7 @@ div {
     word-wrap:break-word;
 }
 
-.u255 {
+.u256 {
     position:absolute;
     left:794px;
     top:206px;
@@ -3741,7 +3755,7 @@ div {
     word-wrap:break-word;
 }
 
-.u256 {
+.u257 {
     position:absolute;
     left:794px;
     top:246px;
