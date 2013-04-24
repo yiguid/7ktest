@@ -3519,7 +3519,7 @@ div {
     overflow:hidden;
 }
 
-#pd1u252 {
+#pd0u252 {
     position:absolute;
     left:0px;
     top:0px;
@@ -3564,7 +3564,7 @@ div {
 
 .u255 {
     position:absolute;
-    left:358px;
+    left:28px;
     top:6px;
     width:228px;
     height:16px;
@@ -3754,7 +3754,7 @@ div {
     position:absolute;
     left:458px;
     top:110px;
-    width:150px;
+    width:329px;
     height:16px;
     ;
     ;
@@ -3808,8 +3808,8 @@ div {
 
 .u272 {
     position:absolute;
-    left:797px;
-    top:32px;
+    left:645px;
+    top:136px;
     width:150px;
     height:16px;
     ;
@@ -3850,7 +3850,7 @@ div {
 
 .u275 {
     position:absolute;
-    left:707px;
+    left:677px;
     top:6px;
     width:150px;
     height:16px;
@@ -3963,20 +3963,6 @@ div {
 
 .u282 {
     position:absolute;
-    left:29px;
-    top:6px;
-    width:150px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u283 {
-    position:absolute;
     left:909px;
     top:4px;
     width:80px;
@@ -3993,20 +3979,67 @@ div {
     
 }
 
-#pd0u252 {
+.u283 {
     position:absolute;
-    left:0px;
-    top:0px;
-    width:1091px;
-    height:162px;
-    
+    left:460px;
+    top:6px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
 }
 
-.u284_normal {
+.u284 {
+    position:absolute;
+    left:797px;
+    top:34px;
+    width:180px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u285 {
+    position:absolute;
+    left:310px;
+    top:6px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u286 {
+    position:absolute;
+    left:266px;
+    top:6px;
+    width:194px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u287_normal {
     background-image: url('../打印任务管理页_files/u50_normal.png');
 }
 
-.u284_container {
+.u287_container {
     position:absolute;
     left:454px;
     top:4px;
@@ -4014,7 +4047,7 @@ div {
     height:22px;
 }
 
-#u284_img {
+#u287_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -4022,7 +4055,7 @@ div {
     height:28px;
 }
 
-.u285 {
+.u288 {
     position:absolute;
     left:2px;
     top:3px;
