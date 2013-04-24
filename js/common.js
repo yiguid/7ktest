@@ -191,6 +191,16 @@ function edit_by_id(url,num){
 	}
 }
 
+function show_sort(){
+	if($("#sort_para").is(":hidden")){
+		$("#sort_para").slideDown('slow');
+		$("#a_sort").html("收起");
+	}
+	else{
+		$("#sort_para").slideUp('slow');
+		$("#a_sort").html("展开");
+	}
+}
 
 function warningChange(){
 	alert("请勿修改此项！");

@@ -12,8 +12,10 @@ $this->load->view('header');
 				<div id="current" style="padding-left:4px;text-align:left;font-weight:bold;"><?php echo $this->session->userdata('printer_name')?></div>
 			<div class="divider"></div>
 			<div>
-				<div style="text-align:left;padding-left:4px;">打印店排序与筛选</div>
-				<div style="text-align:justify;padding-left:4px;">
+				<div style="text-align:left;padding-left:4px;">打印店排序与筛选
+					<span style="padding-left:40px;"><a id="a_sort" href="javascript:show_sort()">展开</a></span>
+				</div>
+				<div id="sort_para" style="display:none; text-align:justify;padding-left:4px;">
 				<a href="javascript:orderPrinter('<?php echo base_url();?>','distance')"><i class="icon-flag"></i>距离</a>
 				<a href="javascript:orderPrinter('<?php echo base_url();?>','price')"><i class="icon-tag"></i>价格</a>
 				<a href="javascript:orderPrinter('<?php echo base_url();?>','credit')"><i class="icon-heart"></i>信誉</a>
