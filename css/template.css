@@ -566,18 +566,77 @@ a.readon {
 	border-left: 1px solid gray;
 	border-right: 1px solid gray;
 }
+#shop_body{
+	background-color: #FFFF99;
+	border-bottom:1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+}
 #shop_services{
-	margin-top: 5px;
-	margin-right: 5px;
-	width: 690px;
+	width: 695px;
 	float:left;
 	background-color: white;
-	border:1px solid gray;
+	border-right:1px solid gray;
 }
 #shop_details{
-	margin-top: 5px;
 	width: 290px;
 	float: right;
-	background-color: #FFCC99;
-	border:1px solid gray;
+	background-color: transparent;
+}
+
+#doc-class
+{
+	margin-top: 10px;
+	margin-left:10px;
+	border-bottom: 2px dashed gray;
+	line-height: 30px;
+}
+.doc-display .doc-title{
+	border-bottom: 1px solid gray;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px
+}
+
+.navlist {
+        margin: 5px 0 0 0;
+        height: 26px;
+        border-bottom: 1px solid #778;
+        font: bold 14px Verdana, sans-serif;
+}
+
+.navlist li {
+		float: left;
+        list-style: none;
+        margin: 0;
+        display: inline;
+        border-top: 1px solid #778;
+        border-right: 1px solid #778;
+
+        border-bottom: none;
+}
+
+.navlist li a {
+		display:inline-block;
+		width: 80px;
+		height: 25px;
+		line-height: 25px;
+        background: #DDE;
+        text-decoration: none;
+}
+
+.navlist li a:link { color: #448; }
+.navlist li a:visited { color: #667; }
+
+.navlist li a:hover {
+        color: #000;
+        background: #AAE;
+        border-color: #227;
+}
+
+.navlist li a.current {
+        background: white;
+        border-bottom: 1px solid white;
 }

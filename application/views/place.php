@@ -21,7 +21,7 @@ $this->load->view('header');
 <div id="container">
 	<div id="profile">
 		<div style="padding:20px;">
-			<a style="color:white;" href="<?php echo base_url();?>shop"
+			<a style="color:white;" href="<?php echo base_url();?>shop/index"
 				class="btn btn-warning btn-large"
 				onmouseover= "get_printshop_by_location('<?php echo base_url();?>','beijing')">北京</a>
 			<a style="color:white;" href="<?php echo base_url();?>location/at/shanghai"
