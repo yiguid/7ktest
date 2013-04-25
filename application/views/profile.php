@@ -12,8 +12,10 @@ $this->load->view('header');
 				<div id="current" style="padding-left:4px;text-align:left;font-weight:bold;"><?php echo $this->session->userdata('printer_name')?></div>
 			<div class="divider"></div>
 			<div>
-				<div style="text-align:left;padding-left:4px;">打印店排序与筛选</div>
-				<div style="text-align:justify;padding-left:4px;">
+				<div style="text-align:left;padding-left:4px;">打印店排序与筛选
+					<span style="padding-left:40px;"><a id="a_sort" href="javascript:show_sort()">展开</a></span>
+				</div>
+				<div id="sort_para" style="display:none; text-align:justify;padding-left:4px;">
 				<a href="javascript:orderPrinter('<?php echo base_url();?>','distance')"><i class="icon-flag"></i>距离</a>
 				<a href="javascript:orderPrinter('<?php echo base_url();?>','price')"><i class="icon-tag"></i>价格</a>
 				<a href="javascript:orderPrinter('<?php echo base_url();?>','credit')"><i class="icon-heart"></i>信誉</a>
@@ -158,42 +160,72 @@ $this->load->view('header');
 				<img height="20" width="20" src="<?php echo base_url();?>images/step3.gif"></img>
 				取印设置与订单确认
 			</div>
+			<script type="text/javascript">
+		        $(document).ready(function() {
+		            $(".tabs:first").addClass("current"); //为第一个SPAN添加当前效果样式
+		            $(".tab ul:not(:first)").hide(); //隐藏其它的UL
+		            $(".tabs").click(function() {
+		            	$(".tabs").removeClass("current"); //去掉所有SPAN的样式
+			            $(this).addClass("current");
+		            	if($(this).attr("id") == 'express'){
+		            		$(".tab ul").hide();
+		            		$(".campus").fadeIn('slow');
+		            	}
+		                else{
+			                $(".tab ul").hide();
+			                $("." + $(this).attr("id")).fadeIn('slow');
+		            	}	
+		            });
+		        });
+		    </script>
 			<div class="setting_details">
 			<?php echo form_open('printtask/submit',array('id' => 'printtask_form')) ?>
 				<input type="hidden" name="printerid" id="printerid" value="<?php echo $this->session->userdata('printer_id');?>">
-				<div class="span9">
-					<div class="span1">接收电话:</div><div class="span3"><input class="span3" type="text" id="mobile" name="mobile" value="<?php echo $this->session->userdata('user_mobile');?>"/></div>
-					<div class="span1">送印时间:</div>
-					<div class="span3">
-						<div class="input-append date form_datetime">			
-						    <input size="16" type="text"  id="delivertime" name="delivertime" value="" readonly>
-						    <span class="add-on"><i class="icon-calendar"></i></span>
+				<input type="hidden" name="method" id="method" value="<?php echo $this->session->userdata('method');?>">
+				<div class="tab" style="border:1px solid #666;margin:10px;width:740px;height:120px;">
+					<span style="float:left;width:100px;height:120px;">
+			            <div class="tabs" id="self">自行取印(免费)</div>
+			            <div class="tabs" id="campus">校园送印</div>
+			            <div class="tabs" id="express">快递送印</div>
+			        </span>
+			        <span style="float:left;width:640px;height:130px;">
+			        <ul class="self">
+			            <div class="span6">
+			            	到店再印：
+			            		让打印店店员等待您到达打印店后再打印您的文档，不选的话则店员会在您去之前打印好。<br>
+							所选打印店地址：
+								上海大学宝山校区图书馆一楼奕龙打印店<br>
+							取印编号说明：
+							选择自行取印，确认订单后会获得一个取印编号，用来您在打印店店铺内快速找到您打印的文档资料<br>
+			            </div>
+			        </ul>
+			        <ul class="campus">
+						<div class="span6">接收电话: <input class="span2" type="text" id="mobile" name="mobile" value="<?php echo $this->session->userdata('user_mobile');?>"/></div>
+						<div class="span6">送印时间:
+								<div class="input-append date form_datetime">			
+								    <input size="10" type="text"  id="delivertime" name="delivertime" value="" readonly>
+								    <span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+								<script type="text/javascript">
+								    $(".form_datetime").datetimepicker({
+								        format: "yyyy-mm-dd hh:ii:ss",
+								        weekStart: 1,
+								        todayBtn:  1,
+										autoclose: 1,
+										todayHighlight: 1,
+										startView: 2,
+										forceParse: 0,
+										language: 'zh-CN'
+								    });
+								</script>  
 						</div>
-						<script type="text/javascript">
-						    $(".form_datetime").datetimepicker({
-						        format: "yyyy-mm-dd hh:ii:ss",
-						        weekStart: 1,
-						        todayBtn:  1,
-								autoclose: 1,
-								todayHighlight: 1,
-								startView: 2,
-								forceParse: 0,
-								language: 'zh-CN'
-						    });
-						</script>  
-					</div>
-				</div>
+						<div class="span6">接收地址: <input class="span3" type="text" id="address" name="address" value="<?php echo $this->session->userdata('user_province').$this->session->userdata('user_city').$this->session->userdata('user_address');?>"/></div>
+					</ul>
+			    	</span>
+			    </div>
 				<div class="span9">
 					<div class="span1">印单备注:</div><div class="span3"><input class="span3" type="text" name="remark"/></div>
 					<div class="span1">需要发票:</div><div class="span3"><input class="span3" type="text" name="receipt" value="<?php echo $this->session->userdata('user_receipt');?>"/></div>
-				</div>
-				<div class="span9" style="height:40px;">
-					<label class="radio inline"><input class="margin30 radio inline" type="radio" name="method" value="self" checked="checked"/>自行取印（免费）</label>
-					<label class="radio inline"><input class="margin30 radio inline" type="radio" name="method" value="campus"/>校园送印</label>
-					<label class="radio inline"><input class="margin30 radio inline" type="radio" name="method" value="express"/>快递送印</label>
-				</div>
-				<div class="span9">
-					<div class="span1">接收地址:</div><div class="span7"><input class="span7" type="text" id="address" name="address" value="<?php echo $this->session->userdata('user_province').$this->session->userdata('user_city').$this->session->userdata('user_address');?>"/></div>
 				</div>
 				<div class="span9">
 					<div class="span1">费用总计:</div><span class="span3"><input type="text" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/></span>
