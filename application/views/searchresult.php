@@ -2,25 +2,28 @@
 $this->load->view('header');
 $this->load->view('menu');
 ?>
+//测试github同步
 		<div id="managebox">
 			<div class="content-header">
 				<h4>搜索结果</h4>
 			</div>
 			<table style="width:700px;" class="table table-hover">
 				<tr>
-					<td>ID</td><td>文件名</td><td>关键词</td><td>类型</td><td>大小</td><td>上传时间</td><td>下载地址</td>
+					<td>打印店</td><td>文件数</td><td>状态</td><td>创建时间</td><td>打印时间</td><td>费用</td><td>详细</td>
 				</tr>
-				<?php foreach($documenthistorylist as $doc):?>  
+				<?php foreach($printhistorylist as $printhistory):?>  
+  
 					<tr>
-					<?php echo "<td>".$doc->id ."</td><td>".substr($doc->name, 0,30)."</td><td>".$doc->keyword."</td><td>".$doc->type."</td><td>".$doc->size."</td><td>".$doc->uploadtime."</td><td><a href=\"uploads/".$doc->url."\" >另存为</a></td>";?>
+					<?php echo "<td>".$printhistory->printername ."</td><td>".$printhistory->documentnum ."</td><td>".$printhistory->status."</td><td>".$printhistory->createtime."</td><td>".$printhistory->finishtime."</td><td>".$printhistory->cost."</td>";?>
+					<td><a href=<?php echo base_url()."printtask?id=".$printhistory->id; ?>>查看</a></td>
 					</tr>  
   
-					<?php endforeach;?>
+					<?php endforeach;?>  
 			</table>
 			<div class="pagination btn" id="pagelist">
 				<ul>
 				<?php
-				 $path = base_url().'documenthistory/display';
+				 $path = base_url().'printhistory/display';
 				 $prevPage = max(1,$curPage-1);
 				 $nextPage = min($curPage+1,$maxPage);
 				 $startPage = max(1,$curPage - 3);
