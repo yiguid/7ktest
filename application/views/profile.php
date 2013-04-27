@@ -169,11 +169,18 @@ $this->load->view('header');
 			            $(this).addClass("current");
 		            	if($(this).attr("id") == 'express'){
 		            		$(".tab ul").hide();
-		            		$(".campus").fadeIn('slow');
+		            		$(".campus").fadeIn('fast');
+		            		$("#receiver").fadeIn('fast');
+		            		$("#zipcode").fadeIn('fast');
+		            		document.getElementById("method").value = 'express';
 		            	}
 		                else{
 			                $(".tab ul").hide();
-			                $("." + $(this).attr("id")).fadeIn('slow');
+			                $("#receiver").hide();
+		            		$("#zipcode").hide();
+		            		$(".campus").hide();
+			                $("." + $(this).attr("id")).fadeIn('fast');
+			                document.getElementById("method").value = $(this).attr("id");
 		            	}	
 		            });
 		        });
@@ -181,7 +188,7 @@ $this->load->view('header');
 			<div class="setting_details">
 			<?php echo form_open('printtask/submit',array('id' => 'printtask_form')) ?>
 				<input type="hidden" name="printerid" id="printerid" value="<?php echo $this->session->userdata('printer_id');?>">
-				<input type="hidden" name="method" id="method" value="<?php echo $this->session->userdata('method');?>">
+				<input type="hidden" name="method" id="method" value="self">
 				<div class="tab" style="border:1px solid #666;margin:10px;width:740px;height:120px;">
 					<span style="float:left;width:100px;height:120px;">
 			            <div class="tabs" id="self">自行取印(免费)</div>
@@ -191,18 +198,20 @@ $this->load->view('header');
 			        <span style="float:left;width:640px;height:130px;">
 			        <ul class="self">
 			            <div class="span6">
-			            	到店再印：
+			            	<input type="checkbox" name="daodianyin" id="daodianyin"/>到店再印：
 			            		让打印店店员等待您到达打印店后再打印您的文档，不选的话则店员会在您去之前打印好。<br>
 							所选打印店地址：
-								上海大学宝山校区图书馆一楼奕龙打印店<br>
+								<?php echo $this->session->userdata('printer_name')?><br>
 							取印编号说明：
 							选择自行取印，确认订单后会获得一个取印编号，用来您在打印店店铺内快速找到您打印的文档资料<br>
 			            </div>
 			        </ul>
 			        <ul class="campus">
-						<div class="span6">接收电话: <input class="span2" type="text" id="mobile" name="mobile" value="<?php echo $this->session->userdata('user_mobile');?>"/></div>
-						<div class="span6">送印时间:
-								<div class="input-append date form_datetime">			
+						<div class="span8"><span id="receiver">收货人名：<input class="span2" type="text" id="receiver" name="reciever" 
+																			value="<?php echo $this->session->userdata('user_receiver');?>"/></span> 接收电话：<input class="span2" type="text" id="mobile" name="mobile" value="<?php echo $this->session->userdata('user_mobile');?>"/></div>
+						<div class="span8"><span id="zipcode">邮政编码：<input class="span2" type="text" id="zipcode" name="zipcode" 
+																				value="<?php echo $this->session->userdata('user_zipcode');?>" /></span>
+											送印时间：<div class="input-append date form_datetime">			
 								    <input size="10" type="text"  id="delivertime" name="delivertime" value="" readonly>
 								    <span class="add-on"><i class="icon-calendar"></i></span>
 								</div>
@@ -219,17 +228,17 @@ $this->load->view('header');
 								    });
 								</script>  
 						</div>
-						<div class="span6">接收地址: <input class="span3" type="text" id="address" name="address" value="<?php echo $this->session->userdata('user_province').$this->session->userdata('user_city').$this->session->userdata('user_address');?>"/></div>
+						<div class="span8">接收地址：<input class="span6" type="text" id="address" name="address" value="<?php echo $this->session->userdata('user_province').$this->session->userdata('user_city').$this->session->userdata('user_address');?>"/></div>
 					</ul>
 			    	</span>
 			    </div>
 				<div class="span9">
-					<div class="span1">印单备注:</div><div class="span3"><input class="span3" type="text" name="remark"/></div>
-					<div class="span1">需要发票:</div><div class="span3"><input class="span3" type="text" name="receipt" value="<?php echo $this->session->userdata('user_receipt');?>"/></div>
+					印单备注：<input class="span3" type="text" name="remark"/><span style="margin-left:60px;"></span>
+					需要发票：<input class="span3" type="text" name="receipt" value="<?php echo $this->session->userdata('user_receipt');?>"/>
 				</div>
 				<div class="span9">
-					<div class="span1">费用总计:</div><span class="span3"><input type="text" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/></span>
-					<span><input class="btn btn-primary offset1" type="button" onclick="submit_printtask()" value="确认印单" name="submitbtn"/></span>
+					费用总计：<input type="text" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/></span>
+					<span style="margin-left:60px;"></span><input class="btn btn-primary offset1" type="button" onclick="submit_printtask()" value="确认印单" name="submitbtn"/>
 				</div>
 			</form>
 			</div>

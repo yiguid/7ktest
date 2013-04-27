@@ -6,7 +6,9 @@ $this->load->view ( 'printer/header' );
 $this->load->view ( 'printer/menu' );
 ?>
 <div id="managebox">
-	历史印单
+	<div class="content-header">
+		<h4>历史印单</h4>
+	</div>
 	<table style="width: 700px;" class="table table-hover">
 		<tr>
 			<td>打印人</td>

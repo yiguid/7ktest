@@ -31,7 +31,9 @@ class User_mdl extends CI_Model {
 				'user_province' => $result->province,
 				'user_city' => $result->city,
 				'user_address' => $result->address,
-				'user_receipt' => $result->address,
+				'user_receipt' => $result->receipt,
+				'user_zipcode' => $result->zipcode,
+				'user_receiver' => $result->receiver,
 				'level' => $result->level,
 				'user_type' => 'user'
 				);
@@ -206,9 +208,11 @@ class User_mdl extends CI_Model {
 		}
 	}
 
-	public function address($userid,$mobile,$province,$city,$address,$receipt)
+	public function address($userid,$receiver,$mobile,$zipcode,$province,$city,$address,$receipt)
 	{
 		$data = array('mobile'=>$mobile,
+			'receiver'=>$receiver,
+			'zipcode'=>$zipcode,
 			'province'=>$province,
 			'city'=>$city,
 			'address'=>$address
@@ -217,11 +221,13 @@ class User_mdl extends CI_Model {
 		if($this->db->update('user',$data))
 		{
 			$session_data = array(
+				'user_receiver' => $receiver,
+				'user_zipcode' => $zipcode,
 				'user_mobile' => $mobile,
 				'user_province' => $province,
 				'user_city' => $city,
 				'user_address' => $address,
-				'user_receipt' => $address
+				'user_receipt' => $receipt
 				);
 			$this->session->set_userdata($session_data);
 			return TRUE;

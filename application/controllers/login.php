@@ -88,6 +88,8 @@ class Login extends CI_Controller {
 			redirect('login','refresh');
 		}
 		$this->data['user'] = $this->session->userdata('nickname');
+		$this->form_validation->set_rules('receiver','收货人名','required|min_length[2]|trim');
+		$this->form_validation->set_rules('zipcode','邮政编码','required|min_length[6]|trim');
 		$this->form_validation->set_rules('mobile','联系电话','required|min_length[6]|trim');
 		$this->form_validation->set_rules('province','所在省份','required|min_length[2]|trim');
 		$this->form_validation->set_rules('city','所在城市','required|min_length[3]|trim');
@@ -100,7 +102,9 @@ class Login extends CI_Controller {
 		}
 		else if($this->user_mdl->address(
 			$this->session->userdata('id'),
+			$this->input->post('receiver'),
 			$this->input->post('mobile'),
+			$this->input->post('zipcode'),
 			$this->input->post('province'),
 			$this->input->post('city'),
 			$this->input->post('address'),

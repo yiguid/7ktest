@@ -10,9 +10,19 @@ $this->load->view('menu');
 				<form action="<?php echo base_url();?>login/address" method="post">
 					<table>
 						<tr>
+							<td>收货人名：</td>
+							<td><input value="<?php echo $this->session->userdata('user_receiver');?>" style="width:380px;" class="input-block-level" type="text" name="receiver" id="receiver"></input></td>
+							<td><?php echo form_error('receiver')?></td>
+						</tr>
+						<tr>
 							<td>联系电话：</td>
 							<td><input value="<?php echo $this->session->userdata('user_mobile');?>" style="width:380px;" class="input-block-level" type="text" name="mobile" id="mobile"></input></td>
 							<td><?php echo form_error('mobile')?></td>
+						</tr>
+						<tr>
+							<td>邮政编码：</td>
+							<td><input value="<?php echo $this->session->userdata('user_zipcode');?>" style="width:380px;" class="input-block-level" type="text" name="zipcode" id="zipcode"></input></td>
+							<td><?php echo form_error('zipcode')?></td>
 						</tr>
 						<tr>
 							<td>所在省份：</td>

@@ -39,7 +39,10 @@ class Printtask extends CI_Controller {
     		'mobile' => $this->input->post('mobile'),
     		'delivertime' => date("Y-m-d H:i:s", strtotime($this->input->post('delivertime'))),
     		'remark' => $this->input->post('remark'),
-    		'receipt' => $this->input->post('receipt')
+    		'receipt' => $this->input->post('receipt'),
+        'receiver' => $this->input->post('receiver'),
+        'zipcode' => $this->input->post('zipcode'),
+        'daodianyin' => $this->input->post('daodianyin')
     	);
    		$this->printtask_mdl->submit_printtask($id, $task);
    		//添加费用信息

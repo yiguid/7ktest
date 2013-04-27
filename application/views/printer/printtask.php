@@ -3,12 +3,18 @@ $this->load->view('printer/header');
 $this->load->view('printer/menu');
 ?>
 		<div id="managebox">
-			印单详情
+			<div class="content-header">
+				<h4>印单详情</h4>
+			</div>
+			<?php foreach($printtaskinfo as $printtask):?>
+			<div>
+				印单号：<span style="color:red;font-size:20px;"><?php echo $printtask->id;?></span>
+			</div>  
 			<table style="width:700px;">
 				<tr>
 					<td>打印人</td><td>文件数</td><td>状态</td><td>创建时间</td><td>打印时间</td><td>费用</td>
 				</tr>
-				<?php foreach($printtaskinfo as $printtask):?>  
+				
 				<tr>
 					<?php echo "<td>".$printtask->username ."</td><td>".$printtask->documentnum ."</td><td>".$printtask->status."</td><td>".$printtask->createtime."</td><td>".$printtask->finishtime."</td><td>".$printtask->cost."</td>";?>
 				</tr>  

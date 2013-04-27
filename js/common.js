@@ -30,11 +30,11 @@ function submit_printtask(){
 	var total_cost = document.getElementById('total_cost').value;
 	if(printerid == "-1" || printerid == "undefined")
 		alert("请先选择打印店。");
-	else if(mobile == "")
+	else if(method == "self" && mobile == "")
 		alert("请输入手机号。");
-	else if(delivertime == "")
+	else if(method == "self" && delivertime == "")
 		alert("请输入送印时间。");
-	else if(method != "self" && address == "")
+	else if(method == "self" && address == "")
 		alert("请输入送印地址。");
 	else if(total_cost == 0)
 		alert("你忘记上传文件啦！");

@@ -7,7 +7,9 @@ $this->load->view ( 'printer/menu' );
 $this->load->helper('url');
 ?>
 <div id="managebox">
-	历史文件
+	<div class="content-header">
+		<h4>历史文件</h4>
+	</div>
 		<table style="width: 1200px;" class="table table-hover">
 			<tr>
 				<td>ID</td>
