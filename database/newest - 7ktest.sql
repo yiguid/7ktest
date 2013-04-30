@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 04 月 27 日 16:38
+-- 生成日期: 2013 年 04 月 30 日 17:12
 -- 服务器版本: 5.5.29-log
 -- PHP 版本: 5.4.10
 
@@ -35,7 +35,7 @@ CREATE TABLE `ci_sessions` (
 --
 
 INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('af0b358796875a32a1c3fe56258a2add', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31', 1367073133, 'a:19:{s:9:"user_data";s:0:"";s:9:"printshop";s:7:"beihang";s:8:"location";s:0:"";s:2:"id";s:1:"1";s:8:"username";s:7:"beihang";s:8:"nickname";s:15:"北航打印店";s:11:"user_mobile";s:11:"18611728343";s:13:"user_province";s:9:"北京市";s:9:"user_city";s:9:"海淀区";s:12:"user_address";s:38:"学院路37号北京航空航天大学";s:12:"user_receipt";N;s:12:"user_zipcode";s:6:"100191";s:13:"user_receiver";s:6:"顾毅";s:5:"level";s:1:"1";s:9:"user_type";s:7:"printer";s:12:"printer_name";s:15:"北航打印店";s:10:"printer_id";s:1:"1";s:11:"printtaskid";s:1:"0";s:11:"upload_docs";s:0:"";}');
+('eeedca92d84631a86cdccce4a11acf5b', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31', 1367334548, 'a:19:{s:9:"user_data";s:0:"";s:9:"printshop";s:5:"beida";s:8:"location";s:0:"";s:2:"id";s:1:"2";s:8:"username";s:4:"test";s:8:"nickname";s:12:"测试用户";s:11:"user_mobile";s:11:"18611728343";s:13:"user_province";s:9:"北京市";s:9:"user_city";s:9:"海淀区";s:12:"user_address";s:38:"学院路37号北京航空航天大学";s:12:"user_receipt";N;s:12:"user_zipcode";s:6:"100191";s:13:"user_receiver";s:6:"顾毅";s:5:"level";s:1:"1";s:9:"user_type";s:4:"user";s:12:"printer_name";s:15:"北大打印店";s:10:"printer_id";s:1:"3";s:11:"printtaskid";s:1:"0";s:11:"upload_docs";s:0:"";}');
 
 -- --------------------------------------------------------
 
@@ -79,7 +79,7 @@ CREATE TABLE `document` (
   `uploadtime` datetime DEFAULT NULL,
   `page` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=88 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=89 ;
 
 --
 -- 转存表中的数据 `document`
@@ -118,7 +118,8 @@ INSERT INTO `document` (`id`, `name`, `keyword`, `type`, `size`, `url`, `uploadu
 (60, 'MATRIX2.pdf', NULL, NULL, NULL, 'MATRIX2.pdf', '2', NULL, NULL),
 (85, 'paper.pdf', NULL, NULL, NULL, '495a7487dfa2fed17620904f12b496d8.pdf', '2', NULL, NULL),
 (86, 'paper.pdf', NULL, NULL, NULL, '2910ad379b83f8d7db3c1e803f5c805f.pdf', '2', NULL, NULL),
-(87, 'paper.pdf', NULL, NULL, NULL, '2977eb80aad9337b789ba2b452fabb89.pdf', '2', NULL, NULL);
+(87, 'paper.pdf', NULL, NULL, NULL, '2977eb80aad9337b789ba2b452fabb89.pdf', '2', NULL, NULL),
+(88, 'MATRIX.pdf', NULL, NULL, NULL, 'e2baa6097e36854e826387fd815ee070.pdf', '2', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -207,11 +208,11 @@ CREATE TABLE `printer_meta` (
 --
 
 INSERT INTO `printer_meta` (`id`, `printerid`, `papersize`, `isdoubleside`, `zhuangding`, `price`) VALUES
-(1, 1, 'A3,2|A4,1|B5,0.8', '单面,1|双面,1|小册子,0.5', '书夹,1|普通,2|精装,5', 0.5),
-(2, 2, 'A4,1|B5,0.8', '单面,1|双面,1|幻灯片,0.5', '普通,2|精装,5', 1),
-(3, 3, 'A4,1|B5,0.8', '单面,1|双面,1', '普通,2|精装,5', 0.5),
-(4, 4, 'A1,4|A2,3|A3,2|A4,1|B5,0.8', '单面,1|双面,1', '普通,2|精装,5', 0.5),
-(5, 5, 'A4,1|B5,0.8', '单面,1|双面,1', '普通,2|精装,5', 0.5);
+(1, 1, 'A3,2|A4,1|B5,0.8', '单面,1|双面,1|小册子,0.5', '书夹,1|普通,2|精装,5', 10),
+(2, 2, 'A4,1|B5,0.8', '单面,1|双面,1|幻灯片,0.5', '普通,2|精装,5', 20),
+(3, 3, 'A4,1|B5,0.8', '单面,1|双面,1', '普通,2|精装,5', 10),
+(4, 4, 'A1,4|A2,3|A3,2|A4,1|B5,0.8', '单面,1|双面,1', '普通,2|精装,5', 10),
+(5, 5, 'A4,1|B5,0.8', '单面,1|双面,1', '普通,2|精装,5', 10);
 
 -- --------------------------------------------------------
 
@@ -237,7 +238,7 @@ CREATE TABLE `printtask` (
   `zipcode` varchar(45) DEFAULT NULL,
   `daodianyin` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=54 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
 
 --
 -- 转存表中的数据 `printtask`
@@ -246,10 +247,10 @@ CREATE TABLE `printtask` (
 INSERT INTO `printtask` (`id`, `userid`, `printerid`, `status`, `method`, `createtime`, `finishtime`, `cost`, `address`, `mobile`, `delivertime`, `remark`, `receipt`, `receiver`, `zipcode`, `daodianyin`) VALUES
 (1, '2', '1', '打印完成', '普通', '2013-01-24 19:00:00', '2013-01-24 19:10:00', 90, '北航办公楼', '18611728342', '2013-01-24 19:10:00', '尽快啊', '北京航空航天大学', NULL, NULL, NULL),
 (51, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(49, '2', '1', '打印中', 'self', '2013-04-08 17:14:18', NULL, 2.5, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-04 09:45:15', '', '北京航空航天大学', NULL, NULL, NULL),
+(49, '2', '1', '打印中', 'self', '2013-04-08 17:14:18', NULL, 2, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-04 09:45:15', '', '北京航空航天大学', NULL, NULL, NULL),
 (50, '2', '1', '打印中', 'self', '2013-04-16 16:00:34', NULL, 7, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-17 21:55:51', '无', '北京航空航天大学', NULL, NULL, NULL),
-(48, '2', '1', '打印中', 'self', '2013-04-08 17:12:31', NULL, 2.5, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-08 08:40:26', '', '北京航空航天大学', NULL, NULL, NULL),
-(47, '2', '1', '打印中', 'self', '2013-04-08 17:11:33', NULL, 2.5, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-08 23:11:31', '无', '北京航空航天大学', NULL, NULL, NULL),
+(48, '2', '1', '打印中', 'self', '2013-04-08 17:12:31', NULL, 2, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-08 08:40:26', '', '北京航空航天大学', NULL, NULL, NULL),
+(47, '2', '1', '打印中', 'self', '2013-04-08 17:11:33', NULL, 2, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-08 23:11:31', '无', '北京航空航天大学', NULL, NULL, NULL),
 (46, '2', '1', '打印完成', 'self', '2013-04-03 14:26:54', '2013-04-03 14:28:26', 41, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-03 20:25:43', '', '北京航空航天大学', NULL, NULL, NULL),
 (45, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (44, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -263,8 +264,10 @@ INSERT INTO `printtask` (`id`, `userid`, `printerid`, `status`, `method`, `creat
 (37, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (34, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (35, '2', '5', '打印中', 'self', '2013-03-31 16:10:21', NULL, 25, '无', '7110', '2013-03-30 22:50:08', '无', '北京航空航天大学', NULL, NULL, NULL),
-(52, '2', '1', '打印完成', 'self', '2013-04-27 15:59:27', '2013-04-27 16:30:02', 7.5, '北京市海淀区学院路37号北京航空航天大学', '18611728343', '1970-01-01 01:00:00', '快点啦', '不需要', '0', '100191', 'on'),
-(53, '2', '1', '打印中', 'express', '2013-04-27 16:13:21', NULL, 4, '北京市海淀区学院路37号北京航空航天大学', '18611728343', '2013-04-28 22:30:05', '快点啦', '北京航空航天大学', '0', '100191', '0');
+(52, '2', '1', '打印完成', 'self', '2013-04-27 15:59:27', '2013-04-27 16:30:02', 7, '北京市海淀区学院路37号北京航空航天大学', '18611728343', '1970-01-01 01:00:00', '快点啦', '不需要', '0', '100191', 'on'),
+(53, '2', '1', '打印中', 'express', '2013-04-27 16:13:21', NULL, 4, '北京市海淀区学院路37号北京航空航天大学', '18611728343', '2013-04-28 22:30:05', '快点啦', '北京航空航天大学', '0', '100191', '0'),
+(54, '2', '1', '打印中', 'self', '2013-04-30 11:25:15', NULL, 12, '北京市海淀区学院路37号北京航空航天大学', '18611728343', '1970-01-01 01:00:00', '不需要', '北京航空航天大学', '0', '100191', 'on'),
+(55, '2', '3', '打印中', 'campus', '2013-04-30 17:10:32', NULL, 214, '北京市海淀区学院路37号北京航空航天大学', '18611728343', '2013-04-30 23:30:11', '快快快，考试了', '北京航空航天大学', '0', '100191', '0');
 
 -- --------------------------------------------------------
 
@@ -283,7 +286,7 @@ CREATE TABLE `printtasksetting` (
   `zhuangding` varchar(45) DEFAULT NULL,
   `cost` float DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=84 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=88 ;
 
 --
 -- 转存表中的数据 `printtasksetting`
@@ -317,7 +320,11 @@ INSERT INTO `printtasksetting` (`id`, `printtaskid`, `documentid`, `papersize`, 
 (80, 50, 84, 'A4', '单面', '1-10', 1, '普通', 7),
 (81, 51, 85, 'A4', '单面', '1-10', 1, '普通', 6),
 (82, 52, 86, 'A4', '单面', '1', 5, '精装', 7.5),
-(83, 53, 87, 'B5', '小册子', '1-10', 1, '普通', 4);
+(83, 53, 87, 'B5', '小册子', '1-10', 1, '普通', 4),
+(84, 54, 81, 'A4', '单面', '1-5', 2, '普通', 7),
+(85, 54, 82, 'B5', '小册子', '1', 1, '精装', 5.2),
+(86, 55, 81, 'A4', '单面', '1-5', 1, '普通', 52),
+(87, 55, 88, 'B5', '双面', '1-10', 2, '普通', 162);
 
 -- --------------------------------------------------------
 
@@ -357,11 +364,11 @@ CREATE TABLE `transaction` (
   `userid` varchar(45) DEFAULT NULL,
   `time` datetime DEFAULT NULL,
   `info` text,
-  `amount` float DEFAULT NULL,
+  `amount` int(11) DEFAULT NULL,
   `status` varchar(45) DEFAULT NULL,
   `printtaskid` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- 转存表中的数据 `transaction`
@@ -373,9 +380,12 @@ INSERT INTO `transaction` (`id`, `userid`, `time`, `info`, `amount`, `status`, `
 (3, '2', '2013-04-16 15:16:52', '打印消费', -25, '付款成功', 35),
 (4, '2', '2013-04-16 16:00:34', '打印消费', -7, '付款成功', 50),
 (5, '2', '2013-04-19 18:29:07', '充值卡充值', 100, '充值成功', NULL),
-(6, '2', '2013-04-27 15:59:27', '打印消费', -7.5, '付款成功', 52),
+(6, '2', '2013-04-27 15:59:27', '打印消费', -7, '付款成功', 52),
 (7, '2', '2013-04-27 16:13:21', '打印消费', -4, '付款成功', 53),
-(8, '2', '2013-04-27 16:14:57', '打印消费', -4, '付款成功', 0);
+(8, '2', '2013-04-27 16:14:57', '打印消费', -4, '付款成功', 0),
+(9, '2', '2013-04-30 11:25:15', '打印消费', -12, '付款成功', 54),
+(10, '2', '2013-04-30 17:09:33', '充值卡充值', 50, '充值成功', NULL),
+(11, '2', '2013-04-30 17:10:32', '打印消费', -214, '付款成功', 55);
 
 -- --------------------------------------------------------
 

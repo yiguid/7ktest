@@ -1,20 +1,25 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 $this->load->view('header');
-$this->load->view('menu');
 ?>
+<div id="container" style="padding-left:100px;">
+	<div id="profile">
 		<div id="managebox">
 			<div class="content-header">
 				<h4>搜索结果</h4>
 			</div>
-			<table style="width:700px;" class="table table-hover">
+			<table class="table table-hover manage_table">
 				<tr>
-					<td>打印店</td><td>状态</td><td>服务时间(起)</td><td>服务时间(止)</td><td>等级</td><td>详细</td>
+					<td>打印店名</td><td>位置</td><td>状态</td><td>服务时间(起)</td><td>服务时间(止)</td><td>等级</td><td>详细</td>
 				</tr>
 				<?php foreach($searchresultlist as $searchresult):?>  
   
 					<tr>
-					<?php echo "<td>".$searchresult->name ."</td><td>".$searchresult->online ."</td><td>".$searchresult->servicestart."</td><td>".$searchresult->serviceend."</td><td>".$searchresult->level."</td>";?>
-					<td><a href=<?php echo base_url()."printshop/name/".$searchresult->username; ?>>查看</a></td>
+					<?php echo "<td>".$searchresult->name ."</td><td>".$searchresult->location 
+							."</td><td>".$searchresult->online 
+							."</td><td>".$searchresult->servicestart."</td><td>".$searchresult->serviceend
+							."</td><td>".$searchresult->level."</td>";?>
+					<td><a href=<?php echo base_url()."printshop/name/"
+							.$searchresult->username; ?>>查看</a></td>
 					</tr>  
   
 					<?php endforeach;?>  
