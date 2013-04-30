@@ -24,34 +24,39 @@ class Search extends CI_Controller {
 	{
 		parent::__construct();
 
+		$this->data['user'] = $this->session->userdata('nickname');
+		
 		$this->load->model('user_mdl');
-		$this->data['page_title'] = '注册';
+		
+		if(!$this->auth->logged_in())
+		{
+			redirect('login','refresh');
+		}
+
+		$this->load->model('printer_mdl');
+		$this->data['page_title'] = '搜索';
 	}
 
 	public function index()
 	{
-		$this->form_validation->set_rules('reg_username','用户名','required|trim|min_length[5]|max_length[12]');
-		$this->form_validation->set_rules('reg_nickname','昵称','required|trim');
-		$this->form_validation->set_rules('reg_password','密码','required|trim|matches[re_reg_password]');
-		$this->form_validation->set_rules('re_reg_password','重复密码','required|trim');
-		$this->form_validation->set_rules('reg_email','邮箱','required|trim|valid_email');
-		if($this->form_validation->run() == FALSE){
-			$this->data['regist'] = TRUE;
-			$this->load->view('login',$this->data);
-		}else if($this->user_mdl->regist(
-			array(
-				'username' => $this->input->post('reg_username'),
-				'nickname' => $this->input->post('reg_nickname'),
-				'password' => $this->input->post('reg_password'),
-				'email' => $this->input->post('reg_email')
-			)
-		)){
-			$this->data['regist_info'] = '注册成功，请登陆。';
-			$this->load->view('searchresult',$this->data);
-		}else{
-			$this->data['regist'] = TRUE;
-			$this->load->view('searchresult',$this->data);
+		$this->display(1);
+	}
+	public function display($curPage)
+	{
+		$keywords=$_POST['keywords']; 
+		$per_page = 10;
+		$start = ($curPage - 1)*$per_page; 
+		$total_rows = $this->printer_mdl->get_printer_by_keyword_total($keywords);
+		$maxPage =  ceil ( $total_rows  / $per_page);
+		if($curPage < 1 || $curPage > $maxPage)
+		{
+			redirect(base_url().'search/display/1');
 		}
+		$this->data['searchresultlist'] = $this->printer_mdl->get_printer_by_keyword($keywords,$per_page,$start); 
+		$this->data['curPage'] = $curPage;
+		$this->data['maxPage'] = $maxPage;
+		$this->data['debug'] = $per_page."...".$start."...".$total_rows;
+		$this->load->view('searchresult',$this->data);
 	}
 }
 

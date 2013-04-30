@@ -88,7 +88,7 @@
 		</div>
 		<div id="div_search">
 			<form action="<?php echo base_url();?>search" method="post">
-			<input type="text" name="q" style="height:18px;float:left" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='搜索打印店、特色资料';" onfocus="if(this.value=='搜索打印店、特色资料')value='';" value="搜索打印店、特色资料" size="10"/>
+			<input type="text" name="keywords" style="height:18px;float:left" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='搜索打印店、特色资料';" onfocus="if(this.value=='搜索打印店、特色资料')value='';" value="搜索打印店、特色资料" size="10"/>
 			<input type="submit" class="btn" value="搜一下" style="height:28px;float:left">
 			</form>
 		</div>

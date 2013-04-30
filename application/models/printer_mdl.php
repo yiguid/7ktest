@@ -218,5 +218,34 @@ class Printer_mdl extends CI_Model {
 			return $option;
 		}
 	}
+
+	//由关键词获取打印店列表
+	public function get_printer_by_keyword($keywords,$line,$start)
+	{
+		$this->db->select('*');
+		$this->db->from('printer');
+		$this->db->like('name',$keywords);
+		$this->db->limit($line,$start);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	//由关键词获取打印店列表总数
+	public function get_printer_by_keyword_total($keywords)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('printer');
+		$this->db->like('name',$keywords);
+		
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
+
+		return 0;
+	}
 }
 ?>
