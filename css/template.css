@@ -516,10 +516,14 @@ a.readon {
 	float:left;
 }
 #managebox{
-	width:730px;
+	width:780px;
 	height:568px;
 	float:left;
 	border-left:1px solid #666666;
+}
+
+.manage_table{
+	width:780px;
 }
 
 #print_setting{

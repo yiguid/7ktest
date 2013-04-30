@@ -105,14 +105,12 @@ function compute_money(url,num) {
 	var range = document.getElementById('range'+num).value;
 	var fenshu = document.getElementById('fenshu'+num).value;
 	var zhuangding = document.getElementById('zhuangding'+num).value;
-	var printerid = getRadioValue('printer_address');
 	$.post(url + "ajax/printajax/compute_money", {
 		papersize : papersize,
 		isdoubleside : isdoubleside,
 		range : range,
 		fenshu : fenshu,
-		zhuangding : zhuangding,
-		printerid : printerid
+		zhuangding : zhuangding
 	}, function(data) {
 		document.getElementById("cost"+num).value = data;
 	});
@@ -201,6 +199,40 @@ function show_sort(){
 		$("#a_sort").html("展开");
 	}
 }
+
+function addToPrinttask(baseurl,id,name,url){
+	if($("#add_printtask_panel").is(":hidden")){
+		document.getElementById("ufb").value = name;
+		document.getElementById("documentid").value = id;
+		document.getElementById("documentname").value = name;
+		$("#add_printtask_panel").slideDown('slow');
+	}
+	else
+		$("#add_printtask_panel").slideUp('slow');
+	//alert(baseurl+"|"+id+"|"+name+"|"+url);
+}
+
+function add_printtask(){
+	var cost = document.getElementById('cost').value;
+	var file = document.getElementById('ufb').value;
+	var fs = document.getElementById('fenshu').value;
+	
+	if(isNaN(cost) || isNaN(fs)){
+		alert('页码设置有误，请重新输入！');
+		return false;
+	}
+	else if(fs == ""){
+		alert('份数设置有误，请重新输入！');
+		return false;
+	}
+	else if(file == ""){
+		alert('你忘记上传文件啦！');
+		return false;
+	}
+	else
+		document.getElementById('add_printtask_form').submit();
+}
+
 
 function warningChange(){
 	alert("请勿修改此项！");

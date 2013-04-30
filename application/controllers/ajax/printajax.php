@@ -31,6 +31,7 @@ class Printajax extends CI_Controller {
 	{
 		extract($_REQUEST);	
 		//获取printer的所有费用对应信息
+		$printerid = $this->session->userdata('printer_id');
 		if(!isset($printerid) || $printerid == ""){
 			$unit = 0.5;
 			$papersize_arr = array('A4' => 1, 'B5' => 1);

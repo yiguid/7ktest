@@ -10,7 +10,7 @@ $this->load->view('menu');
 			<div>
 				印单号：<span style="color:red;font-size:20px;"><?php echo $printtask->id;?></span>
 			</div>
-			<table style="width:700px;">
+			<table class="manage_table">
 				<tr>
 					<td>打印店</td><td>文件数</td><td>状态</td><td>创建时间</td><td>打印时间</td><td>费用</td>
 				</tr>
@@ -26,7 +26,7 @@ $this->load->view('menu');
 				</tr> 
 					<?php endforeach;?>
 			</table>
-			<table style="width:700px;">
+			<table class="manage_table">
 				<tr>
 					<td>文件名</td><td>纸张</td><td>单/双面打印</td><td>页码范围</td><td>份数</td><td>装订</td><td>费用</td>
 				</tr>
