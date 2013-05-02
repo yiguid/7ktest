@@ -10,7 +10,7 @@ $this->load->helper('url');
 	<div class="content-header">
 		<h4>历史文件</h4>
 	</div>
-		<table style="width: 1200px;" class="table table-hover">
+		<table style="width: 780px;" class="table table-hover">
 			<tr>
 				<td>ID</td>
 				<td>文件名</td>
@@ -25,7 +25,8 @@ $this->load->helper('url');
 			foreach($documenthistorylist as $doc){?>  
 				<tr>
 			<?php
-			echo "<td>" . $doc->docid . "</td><td>" . $doc->docname . "</td>".
+			echo "<td>" . $doc->docid . "</td>".
+					"<td>" . substr($doc->docname, 0,30) . "</td>".
 					"<td>" . $doc->doctype . "</td>".
                      "<td>" . $doc->keyword . "</td>".
                      "<td>" . $doc->username . "</td>".

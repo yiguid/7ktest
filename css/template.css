@@ -7,6 +7,14 @@
 	border-bottom: 1px solid #666666;
 }
 
+.printer_divider {
+	height: 1px;
+	margin: 8px 1px;
+	overflow: hidden;
+	background-color: #99ffff;
+	border-bottom: 1px solid #666666;
+}
+
 html {
   height: 100%;
   margin-bottom: 1px;

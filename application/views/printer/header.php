@@ -29,7 +29,7 @@
 		<span style="float:right;">
 			<?php 
 			if(isset($user)) 
-			{ ?>欢迎您，<?php echo $user."　".anchor('printer/manage','打印店中心'); ?>
+			{ ?>欢迎您，<?php echo $user; ?>
 			&nbsp;&nbsp;<?php echo anchor('printer/login/logout','退出'); 
 			}
 			else
