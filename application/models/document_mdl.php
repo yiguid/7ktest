@@ -22,5 +22,34 @@ class Document_mdl extends CI_Model {
 		$this->db->delete('document');
 		return TRUE;
 	}
+
+	//由关键词获取文档列表
+	public function get_documents_by_keyword($keywords,$line,$start)
+	{
+		$this->db->select('*');
+		$this->db->from('document');
+		$this->db->like('name',$keywords);
+		$this->db->limit($line,$start);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	//由关键词获取文档列表总数
+	public function get_documents_by_keyword_total($keywords)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('document');
+		$this->db->like('name',$keywords);
+		
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
+
+		return 0;
+	}
 }
 ?>
