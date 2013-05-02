@@ -5,7 +5,7 @@ $this->load->view('header');
 	<div id="profile">
 		<div id="managebox">
 			<div class="content-header">
-				<h4>搜索结果</h4>  
+				<h4>搜索  <span style="color:red"><?php echo $this->session->userdata('keywords')?></span>  的结果</h4>  
 				<a href =<?php echo base_url()."search/index?keywords=".$keywords ?>>搜打印店</a>    搜文档
 			</div>
 			<table class="table table-hover manage_table">
