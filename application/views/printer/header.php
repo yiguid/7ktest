@@ -23,8 +23,8 @@
 	</div>
 	<div id="menu_list">
 		<span style="float:left;">	
-			<a href="manage">云打印店</a>
-			<a href="../place">云打印</a>
+			<a href="<?php echo base_url();?>printer/manage">云打印店</a>
+			<a href="<?php echo base_url();?>place">云打印</a>
 		</span>
 		<span style="float:right;">
 			<?php 
