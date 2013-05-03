@@ -8,7 +8,7 @@ $this->load->helper('url');
 ?>
 <div id="managebox">
 	<div class="content-header">
-		<h4>历史文件</h4>
+		<h4>印单文件</h4>
 	</div>
 		<table style="width: 780px;" class="table table-hover">
 			<tr>

@@ -6,7 +6,7 @@ class Printhistory extends CI_Controller {
 	{
 		parent::__construct();
 
-		$this->data['page_title'] = '历史印单';
+		$this->data['page_title'] = '全部任务';
 		$this->data['user'] = $this->session->userdata('nickname');
 		
 		$this->load->model('printer_mdl');
