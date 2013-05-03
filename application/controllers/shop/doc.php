@@ -13,7 +13,7 @@ class Doc extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('shop/doc_view',$this->data);
+		$this->display("0-1");
 	}
 	public function display($str)
 	{

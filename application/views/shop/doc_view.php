@@ -38,13 +38,56 @@
 	        	<div id="doc-class">
 					<ul class="nav nav-pills" style="float:right">
 						<?php foreach ($docClass as $key => $value) {	?>
-						<li <?php if($key == $docClassid) echo "class=active";?>><a href="<?php echo $curPath."doc/display/$key-$curPage"?>"><?php echo "$value"?></a></li>
+						<li <?php if($key == $docClassid) echo "class=active";?>><a href="<?php echo $curPath."doc/display/$key-1"?>"><?php echo "$value"?></a></li>
 						<?php } ?>
 					</ul>
 					<div style="clear:both;"></div>
 				</div>
-				<div>
-					<?php if(isset($str)) echo "$str";?>
+				<div id="doc-list">
+					<?php echo "$docClassid-$curPage";?>
+				</div>
+				<div class="pagination btn" id="pagelist" style="float:left">
+					<ul>
+					<?php
+					 $path = $curPath.'doc/display';
+					 $prevPage = max(1,$curPage-1);
+					 $nextPage = min($curPage+1,$maxPage);
+					 $startPage = max(1,$curPage - 3);
+					 $endPage = min($curPage + 3,$maxPage);
+					 if($curPage > 1)
+					 {
+					 	echo '<li>';
+					 	echo anchor("$path/$docClassid-1", '<<');
+					 	echo '</li>';
+					 	echo '<li>';
+					 	echo anchor("$path/$docClassid-$prevPage", '<');
+					 	echo '</li>';
+					 }
+					 for($i = $startPage;$i<=$endPage;$i++)
+					 {
+					 	if($i==$curPage)
+					 	{
+					 		echo '<li class="disabled">';
+					 	}
+					 	else
+					 	{
+					 		echo '<li class="active">';
+					 	}
+					 	echo anchor("$path/$docClassid-$i", "$i");
+					 	echo '</li>';
+					 }
+					 
+					 if($curPage < $maxPage)
+					 {
+					 	echo '<li>';
+					 	echo anchor("$path/$docClassid-$nextPage", '>');
+					 	echo '</li>';
+					 	echo '<li>';
+					 	echo anchor("$path/$docClassid-$maxPage", '>>');
+					 	echo '</li>';
+					 }
+					?>
+					</ul>
 				</div>
 			</div>
 			<div id="shop_details">

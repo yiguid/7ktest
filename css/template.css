@@ -652,3 +652,11 @@ a.readon {
         background: white;
         border-bottom: 1px solid white;
 }
+#doc-list{
+	border-bottom: 1px dashed gray;
+	margin-left: 10px;
+}
+
+#shop_msg_view{
+	background: white;
+}
