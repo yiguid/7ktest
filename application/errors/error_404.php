@@ -5,7 +5,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>7KMall</title>
 </head>
-<body style="color:white;background: #f7f7f7 url(images/404-background.jpg) 0 0 repeat-x;">
+<body style="color:white;background: #f7f7f7 url(http://localhost/7ktest/images/404-background.jpg) 0 0 repeat-x;">
 	<div id="container">
 		<div style="margin-top:200px; text-align:center;">
 		<h1><?php echo $heading; ?></h1>

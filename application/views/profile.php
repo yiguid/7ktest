@@ -127,11 +127,11 @@ $this->load->view('header');
 							$num++;
 							?>
 					<tr>
-						<td><div style="padding-top:6px;"><?php echo $num;?></div></td>
+						<td><div style="padding-top:2px;"><?php echo $num;?></div></td>
 						<td>
 							<input type="hidden" id="rowid<?php echo $num;?>" value="<?php echo $items['rowid']?>" />
 							<input type="hidden" id="documentid<?php echo $num;?>" value="<?php echo $items['id']?>" />
-							<div id="name<?php echo $num;?>" style="padding-top:6px;"><?php echo $items['name'];?></div>
+							<div id="name<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['name'];?></div>
 						</td>
 						<td>
 							<?php echo form_dropdown('papersize'.$num, $papersize_option, $items['options']['papersize'], "id=papersize".$num." class=w60");?>
