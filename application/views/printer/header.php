@@ -6,6 +6,7 @@
 <title><?php echo $page_title;?>-7KMall</title>
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/template.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/pagination.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>css/printer.css" type="text/css" />
 <link href="<?php echo base_url();?>css/bootstrap/bootstrap.css" rel="stylesheet" media="screen">
 <script src="<?php echo base_url();?>js/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url();?>js/common.js" type="text/javascript"></script>
@@ -23,8 +24,8 @@
 	</div>
 	<div id="menu_list">
 		<span style="float:left;">	
-			<a href="manage">云打印店</a>
-			<a href="../place">云打印</a>
+			<a href="<?php echo base_url();?>printer/manage">云打印店</a>
+			<a href="<?php echo base_url();?>place">云打印</a>
 		</span>
 		<span style="float:right;">
 			<?php 

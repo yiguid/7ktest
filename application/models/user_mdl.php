@@ -215,7 +215,8 @@ class User_mdl extends CI_Model {
 			'zipcode'=>$zipcode,
 			'province'=>$province,
 			'city'=>$city,
-			'address'=>$address
+			'address'=>$address,
+			'receipt'=>$receipt
 			);
 		$this->db->where('id',$userid);
 		if($this->db->update('user',$data))
