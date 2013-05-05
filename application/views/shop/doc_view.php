@@ -29,16 +29,16 @@
 		<div id="shop_body">
 			<div id="shop_services">
 				<ul id="listTab" class="navlist">
-					<li><a class="current" href="$curPath" >特色资料</a></li>
+					<li><a class="current" href="<?php echo $curPath."doc/$pterid-$docClassid-$curPage" ?> ">特色资料</a></li>
 					<li><a href="<?php echo $curPath."service"?>" >特色业务</a></li>
-					<li><a href="<?php echo $curPath."evaluation"?>" >评    价</a></li>
-					<li><a href="<?php echo $curPath."message"?>">留    言</a></li>
+					<li><a href="<?php echo $curPath."rate"?>" >评    价</a></li>
+					<li><a href="<?php echo $curPath."msg/$pterid-1"?>">留    言</a></li>
 					<li><a href="<?php echo $curPath."promotion"?>">促    销</a></li>
 	        	</ul>
 	        	<div id="doc-class">
 					<ul class="nav nav-pills" style="float:right">
 						<?php foreach ($docClass as $key => $value) {	?>
-						<li <?php if($key == $docClassid) echo "class=active";?>><a href="<?php echo $curPath."doc/display/$key-1"?>"><?php echo "$value"?></a></li>
+						<li <?php if($key == $docClassid) echo "class=active";?>><a href="<?php echo $curPath."doc/$pterid-$key-1"?>"><?php echo "$value"?></a></li>
 						<?php } ?>
 					</ul>
 					<div style="clear:both;"></div>
@@ -46,10 +46,10 @@
 				<div id="doc-list">
 					<?php echo "$docClassid-$curPage";?>
 				</div>
-				<div class="pagination btn" id="pagelist" style="float:left">
+				<div class="pagination btn" id="pagelist" style="float:right">
 					<ul>
 					<?php
-					 $path = $curPath.'doc/display';
+					 $path = $curPath.'doc';
 					 $prevPage = max(1,$curPage-1);
 					 $nextPage = min($curPage+1,$maxPage);
 					 $startPage = max(1,$curPage - 3);
@@ -57,10 +57,10 @@
 					 if($curPage > 1)
 					 {
 					 	echo '<li>';
-					 	echo anchor("$path/$docClassid-1", '<<');
+					 	echo anchor("$path/$pterid-$docClassid-1", '<<');
 					 	echo '</li>';
 					 	echo '<li>';
-					 	echo anchor("$path/$docClassid-$prevPage", '<');
+					 	echo anchor("$path/$pterid-$docClassid-$prevPage", '<');
 					 	echo '</li>';
 					 }
 					 for($i = $startPage;$i<=$endPage;$i++)
@@ -73,17 +73,17 @@
 					 	{
 					 		echo '<li class="active">';
 					 	}
-					 	echo anchor("$path/$docClassid-$i", "$i");
+					 	echo anchor("$path/$pterid-$docClassid-$i", "$i");
 					 	echo '</li>';
 					 }
 					 
 					 if($curPage < $maxPage)
 					 {
 					 	echo '<li>';
-					 	echo anchor("$path/$docClassid-$nextPage", '>');
+					 	echo anchor("$path/$pterid-$docClassid-$nextPage", '>');
 					 	echo '</li>';
 					 	echo '<li>';
-					 	echo anchor("$path/$docClassid-$maxPage", '>>');
+					 	echo anchor("$path/$pterid-$docClassid-$maxPage", '>>');
 					 	echo '</li>';
 					 }
 					?>

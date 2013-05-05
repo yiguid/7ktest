@@ -26,13 +26,14 @@ class Feedback_mdl extends CI_Model {
 	{
 		return $this->rpyTableName;
 	}
-	public function add_msg($type,$content,$date,$time,$uid)
+	public function add_msg($type,$content,$date,$time,$uid,$pterid)
 	{
 		$data = array(	'type' => $type,
 						'content' => $content,
 						'date'=>$date,
 						'time'=>$time,
-						'uid'=>$uid
+						'uid'=>$uid,
+						'pterid'=>$pterid
 				);
 		$this->db->insert($this->msgTableName,$data);
 		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
@@ -48,6 +49,17 @@ class Feedback_mdl extends CI_Model {
 		$this->db->select('message.id as id, type ,content, date, time, nickname');
 		$this->db->from('message');
 		$this->db->join('user','message.uid = user.id');
+		$this->db->limit($line,$start);
+		$this->db->order_by("message.id",'desc');
+		$query = $this->db->get();
+		return $query->result();
+	}
+	public function get_shop_msg($line,$start,$pterid)
+	{
+		$this->db->select('message.id as id, type ,content, date, time, nickname');
+		$this->db->from('message');
+		$this->db->join('user','message.uid = user.id');
+		$this->db->where('pterid',$pterid);
 		$this->db->limit($line,$start);
 		$this->db->order_by("message.id",'desc');
 		$query = $this->db->get();
@@ -76,6 +88,20 @@ class Feedback_mdl extends CI_Model {
 	public function get_msg_total()
 	{
 		return $this->db->count_all($this->msgTableName);
+	}
+	public function get_shop_msg_total($pterid)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('message');
+		$this->db->where('pterid',$pterid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
+		return 0;
 	}
 	public function add_rpy($content,$date,$time,$msgid,$floor,$uid)
 	{

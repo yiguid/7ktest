@@ -6,9 +6,6 @@
 	$shopName='北大图书馆一楼打印店';
 	$docClass= array('所有类别','上大数学系历届试卷','上大数学系考研历届试卷','上大公共课历届试卷','上大数学系课程笔记');
 	$curPath= base_url()."shop/";
-	$curClassID = 0;
-	$curPage = 1;
-	$maxPage =10;
 ?>
 
 <div id='shop_container'>
@@ -22,16 +19,15 @@
 		<div id="shop_body">
 			<div id="shop_services">
 				<ul id="listTab" class="navlist">
-					<li><a href="<?php echo $curPath."doc"?>" >特色资料</a></li>
+					<li><a href="<?php echo $curPath."doc/$pterid-0-1"?>" >特色资料</a></li>
 					<li><a href="<?php echo $curPath."service"?>" >特色业务</a></li>
 					<li><a href="<?php echo $curPath."evaluation"?>" >评    价</a></li>
-					<li><a class="current" href="#">留    言</a></li>
+					<li><a class="current" href="<?php echo $curPath."msg/$pterid-$curPage"?>">留    言</a></li>
 					<li><a href="<?php echo $curPath."promotion"?>">促    销</a></li>
 	        	</ul>
 	        	<div id="shop_msg">
 					<div id="shop_msg_view">
 						<?php
-							$this->load->model('feedback_mdl');
 							$typearr=array('催单','网站错误','功能建议','投诉');
 							foreach($msglist as $row)
 							{
@@ -101,7 +97,7 @@
 					</div>
 					<?php if($this->auth->logged_in()){	?>
 						<div class="create">
-							<form class="form-horizontal" action="<?php echo base_url();?>feedback/create" method="post">
+							<form class="form-horizontal" action="<?php echo base_url()."shop/create/$pterid"?>" method="post">
 							 <div class="control-group">
 							    <span style="padding-top:6px;" class="help-inline">* 留言类型：</span>
 							    <label class="radio inline">

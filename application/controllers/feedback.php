@@ -59,7 +59,7 @@ class Feedback extends CI_Controller {
 			$date = date("Y-m-d");
 			$time = date("H:i:s");
 			$uid = $this->session->userdata('id');
-			if($this->feedback_mdl->add_msg($type,$content,$date,$time,$uid))
+			if($this->feedback_mdl->add_msg($type,$content,$date,$time,$uid,0))
 			{
 				redirect(base_url().'feedback','index');
 			}
