@@ -22,10 +22,20 @@ class Shop extends CI_Controller {
 			$docClassid = $match[2];
 			$curPage = $match[3];
 			//判断数据逻辑合法性
-			$this->data['pterid'] = $pterid;
-			$this->data['docClassid']=$docClassid;
-			$this->data['curPage']=$curPage;
-			$this->load->view('shop/doc_view',$this->data);
+
+			//判断这三个数据是否是合法数据
+			if(($location= $this->shop_mdl->get_shop_location($pterid)) == null)
+			{
+				//非法ID
+			}
+			else{
+				$this->data['location'] = explode('|', $location);
+				$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
+				$this->data['pterid'] = $pterid;
+				$this->data['docClassid']=$docClassid;
+				$this->data['curPage']=$curPage;
+				$this->load->view('shop/doc_view',$this->data);
+			}
 		}
 		else
 		{
@@ -37,6 +47,9 @@ class Shop extends CI_Controller {
 		$pattern = '/^(\d+)-(\d+)$/';
 		if(preg_match($pattern,$info,$match))
 		{
+			//数据合法性验证
+
+			//
 			$pterid= $match[1];
 			$curPage = $match[2];
 			$pageBase = $this->config->item('pageBase');
@@ -50,6 +63,12 @@ class Shop extends CI_Controller {
 			{
 				$curPage = 1;
 			}
+			if(($location= $this->shop_mdl->get_shop_location($pterid)) == null)
+			{
+				//非法ID
+			}
+			$this->data['location'] = explode('|', $location);
+			$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
 			$this->data['pterid']  =$pterid;
 			$this->data['curPage']  = $curPage;
 	 		$this->data['maxPage']  = $maxPage;
@@ -59,16 +78,37 @@ class Shop extends CI_Controller {
 			$this->load->view('shop/message_view',$this->data);
 			}
 	}
-	public function rate($info)
+	public function rate($pterid)
 	{
+		if(($location= $this->shop_mdl->get_shop_location($pterid)) == null)
+		{
+			//非法ID
+		}
+		$this->data['location'] = explode('|', $location);
+		$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
+		$this->data['pterid']  =$pterid;
 		$this->load->view('shop/rate_view',$this->data);
 	}
-	public function promotion($info)
+	public function promotion($pterid)
 	{
+		if(($location= $this->shop_mdl->get_shop_location($pterid)) == null)
+		{
+			//非法ID
+		}
+		$this->data['location'] = explode('|', $location);
+		$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
+		$this->data['pterid']  =$pterid;
 		$this->load->view('shop/promotion_view',$this->data);
 	}
-	public function service($info)
+	public function service($pterid)
 	{
+		if(($location= $this->shop_mdl->get_shop_location($pterid)) == null)
+		{
+			//非法ID
+		}
+		$this->data['location'] = explode('|', $location);
+		$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
+		$this->data['pterid']  =$pterid;
 		$this->load->view('shop/service_view',$this->data);
 	}
 	public function create($pterid)

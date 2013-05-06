@@ -35,5 +35,33 @@ class Shop_mdl extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+	public function get_shop_location($pterid)
+	{
+		$this->db->select('location');
+		$this->db->from('printer');
+		$this->db->where('id',$pterid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->location;
+			}
+		}
+		return null;
+	}
+	public function get_shop_name($pterid)
+	{
+		$this->db->select('name');
+		$this->db->from('printer');
+		$this->db->where('id',$pterid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->name;
+			}
+		}
+		return null;
+	}
 
 }

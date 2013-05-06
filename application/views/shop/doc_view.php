@@ -3,7 +3,6 @@
 	$this->load->view('header');
 ?>
 <?php
-	$shopPath=array('上海大学（宝山校区）','北大图书馆一楼打印店');
 	$docClass= array('所有类别','上大数学系历届试卷','上大数学系考研历届试卷','上大公共课历届试卷','上大数学系课程笔记');
 	$curPath= base_url()."shop/";
 	if(!isset($curPage))
@@ -18,10 +17,11 @@
 	<div id="shop_main">
 		<div id="shop_image">
 			<ul class="breadcrumb" style="float:left;background:transparent;">
-			 	<li><a href="#"><?php echo $shopPath[0]?></a> <span>/</span></li>
-			 	<li class="active"><?php echo $shopPath[1]?></li>
+				<?php foreach ($location as $key => $value) { ?>
+					<li><a href="#"><?php echo $value ?></a> <span>/</span></li>
+				<?php } ?>
+				<li class="active"><?php echo $name ?></li>
 			</ul>
-			（平台公告图片栏）
 		</div>
 		<div id="shop_word">
 			<marquee height="60" width="990">宣传语</marquee>
@@ -30,10 +30,10 @@
 			<div id="shop_services">
 				<ul id="listTab" class="navlist">
 					<li><a class="current" href="<?php echo $curPath."doc/$pterid-$docClassid-$curPage" ?> ">特色资料</a></li>
-					<li><a href="<?php echo $curPath."service"?>" >特色业务</a></li>
-					<li><a href="<?php echo $curPath."rate"?>" >评    价</a></li>
+					<li><a href="<?php echo $curPath."service/$pterid"?>" >特色业务</a></li>
+					<li><a href="<?php echo $curPath."rate/$pterid"?>" >评    价</a></li>
 					<li><a href="<?php echo $curPath."msg/$pterid-1"?>">留    言</a></li>
-					<li><a href="<?php echo $curPath."promotion"?>">促    销</a></li>
+					<li><a href="<?php echo $curPath."promotion/$pterid"?>">促    销</a></li>
 	        	</ul>
 	        	<div id="doc-class">
 					<ul class="nav nav-pills" style="float:right">

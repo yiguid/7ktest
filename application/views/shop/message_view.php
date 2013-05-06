@@ -11,7 +11,12 @@
 <div id='shop_container'>
 	<div id="shop_main">
 		<div id="shop_image">
-			（平台公告图片栏）
+			<ul class="breadcrumb" style="float:left;background:transparent;">
+				<?php foreach ($location as $key => $value) { ?>
+					<li><a href="#"><?php echo $value ?></a> <span>/</span></li>
+				<?php } ?>
+				<li class="active"><?php echo $name ?></li>
+			</ul>
 		</div>
 		<div id="shop_word">
 			<marquee height="60" width="990">宣传语</marquee>
@@ -20,10 +25,10 @@
 			<div id="shop_services">
 				<ul id="listTab" class="navlist">
 					<li><a href="<?php echo $curPath."doc/$pterid-0-1"?>" >特色资料</a></li>
-					<li><a href="<?php echo $curPath."service"?>" >特色业务</a></li>
-					<li><a href="<?php echo $curPath."evaluation"?>" >评    价</a></li>
+					<li><a href="<?php echo $curPath."service/$pterid"?>" >特色业务</a></li>
+					<li><a href="<?php echo $curPath."rate/$pterid"?>" >评    价</a></li>
 					<li><a class="current" href="<?php echo $curPath."msg/$pterid-$curPage"?>">留    言</a></li>
-					<li><a href="<?php echo $curPath."promotion"?>">促    销</a></li>
+					<li><a href="<?php echo $curPath."promotion/$pterid"?>">促    销</a></li>
 	        	</ul>
 	        	<div id="shop_msg">
 					<div id="shop_msg_view">
