@@ -15,6 +15,16 @@ $this->load->view('printer/menu');
 							<td><?php echo form_error('receiver')?></td>
 						</tr>
 						<tr>
+							<td>打印店地址：</td>
+							<td><input value="<?php echo $this->session->userdata('user_address');?>" style="width:380px;" class="input-block-level" type="text" name="address" id="address"></input></td>
+							<td><?php echo form_error('address')?></td>
+						</tr>
+						<tr>
+							<td>联系方式：</td>
+							<td><input value="<?php echo $this->session->userdata('user_address');?>" style="width:380px;" class="input-block-level" type="text" name="address" id="address"></input></td>
+							<td><?php echo form_error('address')?></td>
+						</tr>
+						<tr>
 							<td>营业开始时间：</td>
 							<td><input value="<?php echo $this->session->userdata('user_mobile');?>" style="width:380px;" class="input-block-level" type="text" name="mobile" id="mobile"></input></td>
 							<td><?php echo form_error('mobile')?></td>
