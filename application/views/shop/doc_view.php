@@ -24,7 +24,7 @@
 			</ul>
 		</div>
 		<div id="shop_word">
-			<marquee height="60" width="990">宣传语</marquee>
+			<marquee height="60" width="990"><?php echo $shopInfo->notice ?></marquee>
 		</div>
 		<div id="shop_body">
 			<div id="shop_services">
@@ -91,7 +91,26 @@
 				</div>
 			</div>
 			<div id="shop_details">
-				详细信息
+				<div id="shop_details_head">
+					<h3><?php echo $shopInfo->name?></h3>
+					<input class="btn" type="button" value="添加收藏">
+					<input class="btn" type="button" value="投诉店铺">
+				</div>
+				<ul class="star-rating">
+						<li class="current-rating"></li>
+						<li><a href="#" title="1 star out of 5" class="one-star">1</a></li>
+						<li><a href="#" title="2 stars out of 5" class="two-stars">2</a></li>
+						<li><a href="#" title="3 stars out of 5" class="three-stars">3</a></li>
+						<li><a href="#" title="4 stars out of 5" class="four-stars">4</a></li>
+						<li><a href="#" title="5 stars out of 5" class="five-stars">5</a></li>
+				</ul>
+				<ul>
+					<li>信誉评级：
+					</li>
+					<li>地址：<?php echo $shopInfo->address?></li>
+					<li>联系方式：<?php echo $shopInfo->contact?></li>
+					<li>店铺介绍：<?php echo $shopInfo->intro?></li>
+				</ul>
 			</div>
 			<div style="clear:both;"></div>
 		</div>

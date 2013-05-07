@@ -29,6 +29,7 @@ class Shop extends CI_Controller {
 				//非法ID
 			}
 			else{
+				$this->data['shopInfo'] = $this->shop_mdl->get_shop_info($pterid);
 				$this->data['location'] = explode('|', $location);
 				$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
 				$this->data['pterid'] = $pterid;
@@ -67,6 +68,7 @@ class Shop extends CI_Controller {
 			{
 				//非法ID
 			}
+			$this->data['shopInfo'] = $this->shop_mdl->get_shop_info($pterid);
 			$this->data['location'] = explode('|', $location);
 			$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
 			$this->data['pterid']  =$pterid;
@@ -84,6 +86,7 @@ class Shop extends CI_Controller {
 		{
 			//非法ID
 		}
+		$this->data['shopInfo'] = $this->shop_mdl->get_shop_info($pterid);
 		$this->data['location'] = explode('|', $location);
 		$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
 		$this->data['pterid']  =$pterid;
@@ -95,6 +98,7 @@ class Shop extends CI_Controller {
 		{
 			//非法ID
 		}
+		$this->data['shopInfo'] = $this->shop_mdl->get_shop_info($pterid);
 		$this->data['location'] = explode('|', $location);
 		$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
 		$this->data['pterid']  =$pterid;
@@ -106,6 +110,7 @@ class Shop extends CI_Controller {
 		{
 			//非法ID
 		}
+		$this->data['shopInfo'] = $this->shop_mdl->get_shop_info($pterid);
 		$this->data['location'] = explode('|', $location);
 		$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
 		$this->data['pterid']  =$pterid;

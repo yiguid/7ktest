@@ -63,5 +63,51 @@ class Shop_mdl extends CI_Model {
 		}
 		return null;
 	}
+	public function get_shop_info($pterid)
+	{
+		$this->db->select('*');
+		$this->db->from('printer');
+		$this->db->where('id',$pterid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row;
+			}
+		}
+		return null;
+	}
+	public function get_shop_rating($pterid)
+	{
+		//0表示文档评价，1表示店铺评价
+		$this->db->select('avg(rating) as score');
+		$this->db->from('rating');
+		$this->db->where('destid',$pterid);
+		$this->db->where('type',1);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->score;
+			}
+		}
+		return 0;
+	}
+	public function get_doc_rating($docid)
+	{
+		//0表示文档评价，1表示店铺评价
+		$this->db->select('avg(rating) as score');
+		$this->db->from('rating');
+		$this->db->where('destid',$docid);
+		$this->db->where('type',0);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->score;
+			}
+		}
+		return 0;	
+	}
 
 }
