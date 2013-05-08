@@ -42,6 +42,12 @@ class Printer_mdl extends CI_Model {
 		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
 	}
 
+	public function update_printer($id, $data)
+	{
+		$this->db->where('id',$id);
+		$this->db->update('printer',$data);
+		return ($this->db->affected_rows() > 0) ? 1 : 0;
+	}
 
 	//获取打印店表
 	public function get_printer()

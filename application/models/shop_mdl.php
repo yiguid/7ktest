@@ -10,6 +10,11 @@ class Shop_mdl extends CI_Model {
 	{
 		
 	}
+
+	public function add_specialdoc($data){
+
+	}
+
 	public function get_shop_msg_total($pterid)
 	{
 		$this->db->select('count(*) as total');
@@ -77,6 +82,9 @@ class Shop_mdl extends CI_Model {
 		}
 		return null;
 	}
+
+	//add and update please reffer printer_mdl
+
 	public function get_shop_rating($pterid)
 	{
 		//0表示文档评价，1表示店铺评价
@@ -93,6 +101,7 @@ class Shop_mdl extends CI_Model {
 		}
 		return 0;
 	}
+
 	public function get_doc_rating($docid)
 	{
 		//0表示文档评价，1表示店铺评价

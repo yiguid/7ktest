@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 04 月 30 日 17:12
+-- 生成日期: 2013 年 05 月 08 日 17:51
 -- 服务器版本: 5.5.29-log
 -- PHP 版本: 5.4.10
 
@@ -35,7 +35,7 @@ CREATE TABLE `ci_sessions` (
 --
 
 INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('eeedca92d84631a86cdccce4a11acf5b', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31', 1367334548, 'a:19:{s:9:"user_data";s:0:"";s:9:"printshop";s:5:"beida";s:8:"location";s:0:"";s:2:"id";s:1:"2";s:8:"username";s:4:"test";s:8:"nickname";s:12:"测试用户";s:11:"user_mobile";s:11:"18611728343";s:13:"user_province";s:9:"北京市";s:9:"user_city";s:9:"海淀区";s:12:"user_address";s:38:"学院路37号北京航空航天大学";s:12:"user_receipt";N;s:12:"user_zipcode";s:6:"100191";s:13:"user_receiver";s:6:"顾毅";s:5:"level";s:1:"1";s:9:"user_type";s:4:"user";s:12:"printer_name";s:15:"北大打印店";s:10:"printer_id";s:1:"3";s:11:"printtaskid";s:1:"0";s:11:"upload_docs";s:0:"";}');
+('4484e82344f14ec2426fcb0d50910a5a', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31', 1368026295, 'a:13:{s:9:"user_data";s:0:"";s:2:"id";s:8:"test0508";s:8:"username";s:8:"test0508";s:8:"nickname";s:12:"测试用户";s:11:"user_mobile";N;s:13:"user_province";N;s:9:"user_city";N;s:12:"user_address";N;s:12:"user_receipt";N;s:12:"user_zipcode";N;s:13:"user_receiver";N;s:5:"level";N;s:9:"user_type";s:4:"user";}');
 
 -- --------------------------------------------------------
 
@@ -60,7 +60,7 @@ CREATE TABLE `delivertask` (
 --
 
 INSERT INTO `delivertask` (`id`, `printerid`, `userid`, `printtaskid`, `starttime`, `endtime`, `status`, `comment`) VALUES
-(1, '1', '1', '1', '2013-01-24 19:30:00', '2013-01-24 19:35:00', '已送达', '很快很好');
+(1, '1', '2', '1', '2013-01-24 19:30:00', '2013-01-24 19:35:00', '已送达', '很快很好');
 
 -- --------------------------------------------------------
 
@@ -124,6 +124,20 @@ INSERT INTO `document` (`id`, `name`, `keyword`, `type`, `size`, `url`, `uploadu
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `favorite`
+--
+
+CREATE TABLE `favorite` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int(11) NOT NULL,
+  `type` int(11) NOT NULL,
+  `favoriteid` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `message`
 --
 
@@ -134,25 +148,28 @@ CREATE TABLE `message` (
   `date` date NOT NULL,
   `time` time NOT NULL,
   `uid` int(11) NOT NULL,
+  `pterid` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
 
 --
 -- 转存表中的数据 `message`
 --
 
-INSERT INTO `message` (`id`, `type`, `content`, `date`, `time`, `uid`) VALUES
-(3, 1, '测试留言1', '2013-03-22', '15:01:32', 2),
-(4, 2, '测试留言2', '2013-03-22', '15:01:37', 2),
-(5, 3, '测试留言3', '2013-03-22', '15:01:42', 2),
-(6, 4, '测试留言4', '2013-03-22', '15:01:47', 2),
-(7, 1, 'test1', '2013-03-22', '16:21:13', 2),
-(8, 1, 'test2', '2013-03-22', '16:21:16', 2),
-(9, 1, 'test3', '2013-03-22', '16:21:20', 2),
-(10, 1, 'test4', '2013-03-22', '16:21:24', 2),
-(11, 1, 'test5', '2013-03-22', '16:21:29', 2),
-(12, 1, 'test6', '2013-03-22', '16:21:34', 2),
-(13, 1, 'test7', '2013-03-22', '16:21:41', 2);
+INSERT INTO `message` (`id`, `type`, `content`, `date`, `time`, `uid`, `pterid`) VALUES
+(3, 1, '测试留言1', '2013-03-22', '15:01:32', 2, 0),
+(4, 2, '测试留言2', '2013-03-22', '15:01:37', 2, 1),
+(5, 3, '测试留言3', '2013-03-22', '15:01:42', 2, 1),
+(6, 4, '测试留言4', '2013-03-22', '15:01:47', 2, 1),
+(7, 1, 'test1', '2013-03-22', '16:21:13', 2, 2),
+(8, 1, 'test2', '2013-03-22', '16:21:16', 2, 2),
+(9, 1, 'test3', '2013-03-22', '16:21:20', 2, 2),
+(10, 1, 'test4', '2013-03-22', '16:21:24', 2, 3),
+(11, 1, 'test5', '2013-03-22', '16:21:29', 2, 3),
+(12, 1, 'test6', '2013-03-22', '16:21:34', 2, 3),
+(13, 1, 'test7', '2013-03-22', '16:21:41', 2, 3),
+(14, 1, '你好啊', '2013-05-05', '15:22:25', 2, 1),
+(15, 1, '你是谁啊', '2013-05-05', '15:24:38', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -173,6 +190,8 @@ CREATE TABLE `printer` (
   `notice` varchar(200) DEFAULT NULL,
   `intro` varchar(200) DEFAULT NULL,
   `yewu` text,
+  `address` varchar(200) DEFAULT NULL,
+  `contact` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
@@ -180,12 +199,12 @@ CREATE TABLE `printer` (
 -- 转存表中的数据 `printer`
 --
 
-INSERT INTO `printer` (`id`, `username`, `password`, `name`, `location`, `level`, `online`, `servicestart`, `serviceend`, `notice`, `intro`, `yewu`) VALUES
-(1, 'beihang', '123456', '北航打印店', '北航|北京', 1, 'online', '07:00:00', '24:00:00', NULL, NULL, NULL),
-(2, 'beiyou', '123456', '北邮打印店', '北邮|北京', 2, 'offline', '08:00:00', '23:00:00', NULL, NULL, NULL),
-(3, 'beida', '123456', '北大打印店', '北大|北京', 1, 'online', '07:00:00', '23:00:00', NULL, NULL, NULL),
-(4, 'shangda', '123456', '上大打印店', '上大|上海', 1, 'online', '07:00:00', '23:00:00', NULL, NULL, NULL),
-(5, 'fudan', '123456', '复旦打印店', '复旦|上海', 5, 'online', '07:00:00', '23:00:00', NULL, NULL, NULL);
+INSERT INTO `printer` (`id`, `username`, `password`, `name`, `location`, `level`, `online`, `servicestart`, `serviceend`, `notice`, `intro`, `yewu`, `address`, `contact`) VALUES
+(1, 'beihang', '123456', '北航打印店', '北航|北京', 1, 'online', '07:00:00', '24:00:00', NULL, NULL, NULL, NULL, NULL),
+(2, 'beiyou', '123456', '北邮打印店', '北邮|北京', 2, 'offline', '08:00:00', '23:00:00', NULL, NULL, NULL, NULL, NULL),
+(3, 'beida', '123456', '北大打印店', '北大|北京', 1, 'online', '07:00:00', '23:00:00', NULL, NULL, NULL, NULL, NULL),
+(4, 'shangda', '123456', '上大打印店', '上大|上海', 1, 'online', '07:00:00', '23:00:00', NULL, NULL, NULL, NULL, NULL),
+(5, 'fudan', '123456', '复旦打印店', '复旦|上海', 5, 'online', '07:00:00', '23:00:00', NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -329,6 +348,22 @@ INSERT INTO `printtasksetting` (`id`, `printtaskid`, `documentid`, `papersize`, 
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `rating`
+--
+
+CREATE TABLE `rating` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int(11) NOT NULL,
+  `type` int(11) NOT NULL,
+  `destid` int(11) NOT NULL,
+  `rating` int(11) NOT NULL,
+  `msg` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `reply`
 --
 
@@ -356,12 +391,32 @@ INSERT INTO `reply` (`id`, `uid`, `content`, `date`, `time`, `msgid`, `floor`) V
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `specialdoc`
+--
+
+CREATE TABLE `specialdoc` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `keyword` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  `type` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  `size` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  `url` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `uploadpterid` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  `uploadtime` datetime DEFAULT NULL,
+  `page` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `transaction`
 --
 
 CREATE TABLE `transaction` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `userid` varchar(45) DEFAULT NULL,
+  `userid` int(11) DEFAULT NULL,
+  `pterid` int(11) DEFAULT NULL,
   `time` datetime DEFAULT NULL,
   `info` text,
   `amount` int(11) DEFAULT NULL,
@@ -374,18 +429,18 @@ CREATE TABLE `transaction` (
 -- 转存表中的数据 `transaction`
 --
 
-INSERT INTO `transaction` (`id`, `userid`, `time`, `info`, `amount`, `status`, `printtaskid`) VALUES
-(1, '2', '2013-04-16 15:16:03', '充值卡充值', 100, '充值成功', NULL),
-(2, '2', '2013-04-16 15:16:52', '充值卡充值', 50, '充值成功', NULL),
-(3, '2', '2013-04-16 15:16:52', '打印消费', -25, '付款成功', 35),
-(4, '2', '2013-04-16 16:00:34', '打印消费', -7, '付款成功', 50),
-(5, '2', '2013-04-19 18:29:07', '充值卡充值', 100, '充值成功', NULL),
-(6, '2', '2013-04-27 15:59:27', '打印消费', -7, '付款成功', 52),
-(7, '2', '2013-04-27 16:13:21', '打印消费', -4, '付款成功', 53),
-(8, '2', '2013-04-27 16:14:57', '打印消费', -4, '付款成功', 0),
-(9, '2', '2013-04-30 11:25:15', '打印消费', -12, '付款成功', 54),
-(10, '2', '2013-04-30 17:09:33', '充值卡充值', 50, '充值成功', NULL),
-(11, '2', '2013-04-30 17:10:32', '打印消费', -214, '付款成功', 55);
+INSERT INTO `transaction` (`id`, `userid`, `pterid`, `time`, `info`, `amount`, `status`, `printtaskid`) VALUES
+(1, 2, 1, '2013-04-16 15:16:03', '充值卡充值', 100, '充值成功', NULL),
+(2, 2, 0, '2013-04-16 15:16:52', '充值卡充值', 50, '充值成功', NULL),
+(3, 2, 1, '2013-04-16 15:16:52', '打印消费', -25, '付款成功', 35),
+(4, 2, 1, '2013-04-16 16:00:34', '打印消费', -7, '付款成功', 50),
+(5, 2, 0, '2013-04-19 18:29:07', '充值卡充值', 100, '充值成功', NULL),
+(6, 2, 1, '2013-04-27 15:59:27', '打印消费', -7, '付款成功', 52),
+(7, 2, 1, '2013-04-27 16:13:21', '打印消费', -4, '付款成功', 53),
+(8, 2, 1, '2013-04-27 16:14:57', '打印消费', -4, '付款成功', 0),
+(9, 2, 1, '2013-04-30 11:25:15', '打印消费', -12, '付款成功', 54),
+(10, 2, 0, '2013-04-30 17:09:33', '充值卡充值', 50, '充值成功', NULL),
+(11, 2, 1, '2013-04-30 17:10:32', '打印消费', -214, '付款成功', 55);
 
 -- --------------------------------------------------------
 
@@ -408,7 +463,7 @@ CREATE TABLE `user` (
   `receipt` varchar(45) DEFAULT NULL,
   `level` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- 转存表中的数据 `user`
@@ -417,4 +472,5 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `username`, `nickname`, `password`, `email`, `mobile`, `province`, `city`, `address`, `zipcode`, `receiver`, `receipt`, `level`) VALUES
 (1, 'guyi', '顾毅', '123456', 'test@7test.com', '18611728343', '北京市', '海淀区', '北京航空航天大学', NULL, NULL, NULL, 99),
 (2, 'test', '测试用户', '123456', 'test@7test.com', '18611728343', '北京市', '海淀区', '学院路37号北京航空航天大学', '100191', '顾毅', NULL, 1),
-(9, 'test1', '测试用户1', '123456', 'test1@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(3, 'test1', '测试用户1', '123456', 'test1@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'test0508', '测试用户', '123456', 'new1@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);

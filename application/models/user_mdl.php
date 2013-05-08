@@ -89,6 +89,7 @@ class User_mdl extends CI_Model {
 	//添加用户
 	public function add_user($data)
 	{
+		$data['id'] = $data['username'];
 		$this->db->insert('user',$data);
 		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
 	}

@@ -33,12 +33,21 @@ class Transaction_mdl extends CI_Model {
 		return $query->result();
 	}
 
+	public function get_transactions_by_pterid($pterid)
+	{
+		$this->db->select('*');
+		$this->db->from('transaction');
+		$this->db->where('pterid',$pterid);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	//获取
-	public function get_total_by_userid($userid)
+	public function get_total_by_pterid($pterid)
 	{
 		$this->db->select('sum(amount) as total');
 		$this->db->from('transaction');
-		$this->db->where('userid',$userid);
+		$this->db->where('pterid',$pterid);
 		$query = $this->db->get();
 		if ($query->num_rows() > 0)
 		{
