@@ -153,7 +153,7 @@ class User_mdl extends CI_Model {
 	}
 	public function get_user_printtask($userid, $id)
 	{
-		$this->db->select('printtask.id as id, status, address, mobile, delivertime, remark, receipt, printtask.cost as cost,printer.name as printername, count(printtasksetting.id) as documentnum,createtime,finishtime');
+		$this->db->select('printtask.id as id, status, printtask.address as address, mobile, delivertime, remark, receipt, printtask.cost as cost,printer.name as printername, count(printtasksetting.id) as documentnum,createtime,finishtime');
 		$this->db->from('printtask');
 		$this->db->join('printer','printer.id=printtask.printerid');
 		$this->db->join('printtasksetting','printtask.id=printtasksetting.printtaskid');
