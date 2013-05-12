@@ -94,6 +94,7 @@ function setPrinterId(url,name){
 	}, function(data) {
 		$("#current").html(name);
 		//还要加入重新load选项功能
+		location.reload();
 	});
 	document.getElementById('printerid').value = getRadioValue('printer_address');
 }

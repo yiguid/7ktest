@@ -42,6 +42,21 @@ class Transaction_mdl extends CI_Model {
 		return $query->result();
 	}
 
+
+	public function get_total_by_userid($userid)
+	{
+		$this->db->select('sum(amount) as total');
+		$this->db->from('transaction');
+		$this->db->where('userid',$userid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
+	}
+
 	//获取
 	public function get_total_by_pterid($pterid)
 	{

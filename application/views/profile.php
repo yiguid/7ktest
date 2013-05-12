@@ -10,9 +10,10 @@ $this->load->view('header');
 			</div>
 			<div style="text-align:right;">您现在所在打印店：  <i class='icon-map-marker'></i><?php echo anchor('place','切换地址'); ?></div>
 				<div id="current" style="padding-left:4px;text-align:left;font-weight:bold;"><?php echo $this->session->userdata('printer_name')?></div>
+			<div class="bk10"></div>
 			<div class="divider"></div>
 			<div>
-				<div style="text-align:left;padding-left:4px;">打印店排序与筛选
+				<div class="title_background">打印店排序与筛选
 					<span style="padding-left:40px;"><a id="a_sort" href="javascript:show_sort()">展开</a></span>
 				</div>
 				<div id="sort_para" style="display:none; text-align:justify;padding-left:4px;">
@@ -189,14 +190,14 @@ $this->load->view('header');
 			<?php echo form_open('printtask/submit',array('id' => 'printtask_form')) ?>
 				<input type="hidden" name="printerid" id="printerid" value="<?php echo $this->session->userdata('printer_id');?>">
 				<input type="hidden" name="method" id="method" value="self">
-				<div class="tab" style="border:1px solid #666;margin:10px;width:740px;height:120px;">
+				<div class="tab" style="border:1px solid #ccc;margin:10px;width:740px;height:120px;">
 					<span style="float:left;width:100px;height:120px;">
 			            <div class="tabs" id="self">自行取印(免费)</div>
 			            <div class="tabs" id="campus">校园送印</div>
 			            <div class="tabs" id="express">快递送印</div>
 			        </span>
 			        <span style="float:left;width:640px;height:130px;">
-			        <ul class="self">
+			        <ul class="self pading6">
 			            <div class="span6">
 			            	<input type="checkbox" name="daodianyin" id="daodianyin"/>到店再印：
 			            		让打印店店员等待您到达打印店后再打印您的文档，不选的话则店员会在您去之前打印好。<br>
@@ -206,7 +207,7 @@ $this->load->view('header');
 							选择自行取印，确认订单后会获得一个取印编号，用来您在打印店店铺内快速找到您打印的文档资料<br>
 			            </div>
 			        </ul>
-			        <ul class="campus">
+			        <ul class="campus pading6">
 						<div class="span8"><span id="receiver">收货人名：<input class="span2" type="text" id="receiver" name="reciever" 
 																			value="<?php echo $this->session->userdata('user_receiver');?>"/></span> 接收电话：<input class="span2" type="text" id="mobile" name="mobile" value="<?php echo $this->session->userdata('user_mobile');?>"/></div>
 						<div class="span8"><span id="zipcode">邮政编码：<input class="span2" type="text" id="zipcode" name="zipcode" 
