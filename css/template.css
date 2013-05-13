@@ -123,13 +123,83 @@ body {
 
 #login_left{
 	float:left;
-	width:500px;
-	padding:30px 0 0 0;
+	width:565px;
+	height: 530px;
+	padding:35px 25px 0 0;
+}
+
+#login_left_left{
+	float:left;
+	background-color: #ddd;
+	width:250px;
+	height:530px;
+	margin:0px 25px 0 0;
+}
+
+#login_left_title{
+	background-color: white;
+	height:100px;
+}
+
+#login_title{
+	color: #dc442e;
+	text-align: left;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+#login_title_content{
+	color: #666;
+	text-align: left;
+	font-size: 18px;
+}
+
+#login_left_mid_img{
+	height:300px;
+}
+
+#login_left_right{
+	float:left;
+	background-color: #ddd;
+	width:290px;
+	height:530px;
+}
+
+#login_left_right_img{
+	height:400px;
+}
+
+.login_left_foot{
+	background-color: white;
+	height:130px;
+}
+
+.foot_title{
+	padding:10px 0;
+	text-align: left;
+	color: #666;
+	font-size: 16px;
+}
+
+.foot_content{
+	text-align: left;
+	color: #aaa;
+	font-size: 14px;
 }
 
 #login_right{
 	float:left;
-	padding:100px 0 0 50px;
+	background-color: #efefef;
+	padding:30px;
+	margin:35px 0 0 0px;
+	border:1px solid #ddd;
+}
+
+.btn-metro{
+	border: 0px;
+	color: white;
+	padding:6px 10px;
+	background-color: #4d8fff;
 }
 
 #page_bg {
@@ -478,13 +548,17 @@ a.readon {
 }
 
 #profile{
-	width:990px;
+	width:1000px;
 }
 #printer_list{
 	width:200px;
 	height:568px;
 	float:left;
 	background-color: #eeeeee;
+	border-left:6px solid #de4b39;
+	border-top: 1px solid #de4b39;
+	border-right: 1px solid #de4b39;
+	border-bottom: 1px solid #de4b39;
 	margin-right: 10px;
 }
 
@@ -499,25 +573,26 @@ a.readon {
 	margin: 2px 8px;
 }
 
+.printer_more{
+	min-height: 60px;
+	line-height: 60px;
+	color: white;
+	background-color: #de4b39;
+}
 .title_background{
-	background-color: #dddddd;
+	background-color: #fadbd8;
 	padding:4px 0 4px 4px;
-	background-image: -moz-linear-gradient(top, #ddd, #ccc); /* Firefox */
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ddd), color-stop(1, #ccc)); /* Saf4+, Chrome */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddd', endColorstr='#ccc', GradientType='0'); /* IE*/
 }
 
 .profile_title{
 	text-align:left;
 	line-height:20px;
 	font-size:20px;
+	color: #de4b39;
 	font-weight:bold;
 	vertical-align: middle;
 	padding:4px 0 4px 4px;
-	background-color: #dddddd;
-	background-image: -moz-linear-gradient(top, #ddd, #ccc); /* Firefox */
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ddd), color-stop(1, #ccc)); /* Saf4+, Chrome */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddd', endColorstr='#ccc', GradientType='0'); /* IE*/
+	background-color: #fadbd8;
 }
 
 .setting_details{
@@ -528,8 +603,10 @@ a.readon {
 	width:770px;
 	height:310px;
 	float:left;
-	border-left:1px solid #ccc;
-	border-right:1px solid #ccc;
+	border-left:6px solid #de4b39;
+	border-top: 1px solid #de4b39;
+	border-right: 1px solid #de4b39;
+	border-bottom: 1px solid #de4b39;
 }
 
 .left750{
@@ -540,11 +617,18 @@ a.readon {
 #file_setting{
 	float:left;
 }
+
 #managebox{
 	width:770px;
 	height:568px;
 	float:left;
 	border-left:1px solid #ccc;
+}
+
+.rating_panel{
+	margin-top:20px;
+	text-align: left;
+	margin-left: 100px;
 }
 
 .manage_table{
@@ -555,9 +639,9 @@ a.readon {
 	width:770px;
 	height:258px;
 	float:left;
-	border-left:1px solid #ccc;
-	border-right:1px solid #ccc;
-	border-top:1px solid #ccc;
+	border-left:6px solid #de4b39;
+	border-right: 1px solid #de4b39;
+	border-bottom: 1px solid #de4b39;
 }
 
 .pading6{
@@ -573,7 +657,7 @@ a.readon {
 }
 
 .current{
-	background:#4461b7;
+	background:#de4b39;
 }
 
 #shop_main{

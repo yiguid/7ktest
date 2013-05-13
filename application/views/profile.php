@@ -5,7 +5,7 @@ $this->load->view('header');
 	<div id="profile">
 		<div id="printer_list">
 			<div class="profile_title">
-				<img height="20" width="20" src="<?php echo base_url();?>images/step1.gif"></img>
+				第一步：
 				选择打印店
 			</div>
 			<div style="text-align:right;">您现在所在打印店：  <i class='icon-map-marker'></i><?php echo anchor('place','切换地址'); ?></div>
@@ -51,13 +51,13 @@ $this->load->view('header');
 				</div>
 			</div>
 			<div class="divider"></div>
-			<div>
+			<div class="printer_more">
 				更多打印店...
 			</div>
 		</div>
 		<div id="file_manage">
 			<div class="profile_title">
-				<img height="20" width="20" src="<?php echo base_url();?>images/step2.gif"></img>
+				第二步：
 				选择文件并上传
 			</div>
 			<div>
@@ -158,7 +158,7 @@ $this->load->view('header');
 		</div>
 		<div id="print_setting">
 			<div class="profile_title">
-				<img height="20" width="20" src="<?php echo base_url();?>images/step3.gif"></img>
+				第三步：
 				取印设置与订单确认
 			</div>
 			<script type="text/javascript">

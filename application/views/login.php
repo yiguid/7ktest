@@ -6,23 +6,31 @@ $this->load->view('header');
 	<div id="profile">
 		<div id="login_main">
 			<div id="login_left">
-				<h1>Welcome to 7KMall!</h1>
-				<h2>User Login!</h2>
-				<div id="myCarousel" class="carousel slide">
-				  <ol class="carousel-indicators">
-				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#myCarousel" data-slide-to="1"></li>
-				    <li data-target="#myCarousel" data-slide-to="2"></li>
-				  </ol>
-				  <!-- Carousel items -->
-				  <div class="carousel-inner">
-				    <div class="active item"><img src="<?php echo base_url();?>images/bootstrap-mdo-sfmoma-01.jpeg"/></div>
-				    <div class="item"><img src="<?php echo base_url();?>images/bootstrap-mdo-sfmoma-02.jpeg"/></div>
-				    <div class="item"><img src="<?php echo base_url();?>images/bootstrap-mdo-sfmoma-03.jpeg"/></div>
-				  </div>
-				  <!-- Carousel nav -->
-				  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-				  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				<div id="login_left_left">
+					<div id="login_left_title">
+						<div id="login_title">奇客云打印</div>
+						<div id="login_title_content">奇客云打印，寻找资料、远程
+						打印更容易。</div>
+					</div>
+					<div id="login_left_mid_img">
+						image
+					</div>
+					<div class="login_left_foot">
+						<div class="foot_title">奇客云打印 - 来自7kmall的云服务</div>
+						<div class="foot_content">不用出门，没有打印机仍可以轻松打印，
+						还可迅速找到并购买以往不易获得的资料和文档。
+						轻松提高工作、学习效率、加快您学业、事业前进的脚步。</div>
+					</div>
+				</div>
+				<div id="login_left_right">
+					<div id="login_left_right_img">image
+					</div>
+					<div class="login_left_foot">
+						<div class="foot_title">一个7kmall账户可以实现诸多功能</div>
+						<div class="foot_content">只需一个用户名和一个密码，您即可每日畅享
+						7kmall服务所提供的各项功能。更多服务和功能，
+						敬请期待！</div>
+					</div>
 				</div>
 			</div>
 			<div id="login_right">
@@ -32,27 +40,20 @@ $this->load->view('header');
 			    <li class="<?php if(isset($regist)) echo "active"; ?>"><a href="#regist" data-toggle="tab">注册</a></li>
 			</ul>
 			 
-			<div style="width:300px;" class="tab-content">
+			<div style="width:270px;" class="tab-content">
 			    <div class="tab-pane <?php if(!isset($regist)) echo "active"; ?>" id="login">
 			    	<form action="<?php echo base_url();?>login" method="post">
-						<table>
-							<tr>
-								<td>用户名：</td>
-								<td><input style="width:180px;" class="input-block-level" type="text" name="username" id="username" value="<?php echo set_value('username'); ?>"><?php echo form_error('username')?></input></td>
-							</tr>
-							<tr>
-								<td>密码：</td>
-								<td><input style="width:180px;" class="input-block-level" type="password" name="password" id="password"><?php echo form_error('password')?></input></td>
-							</tr>
-							<tr>
-								<td><input class="btn btn-primary" type="submit" name="submit" value="登陆"/></td>
-								<td><input class="btn btn-primary" type="reset" name="reset" value="重置"/></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><?php if(isset($regist_info)) echo $regist_info;?></td>
-							</tr>
-						</table>
+						<div style="text-align:left;">
+							<div>用户名</div>
+							<div style="margin-top:6px;"><input style="width:270px;" class="input-block-level" type="text" name="username" id="username" value="<?php echo set_value('username'); ?>"><?php echo form_error('username')?></input>
+							</div>
+							<div>密码</div>
+							<div style="margin-top:6px;"><input style="width:270px;" class="input-block-level" type="password" name="password" id="password"><?php echo form_error('password')?></input>
+							</div>
+							<div style="margin-top:10px;"><input class="btn-metro" type="submit" name="submit" value="登 录"/></div>
+							<div><?php if(isset($regist_info)) echo $regist_info;?></div>
+							<div style="color:#4d8fff;margin-top:10px;">无法访问您的账户？</div>
+						</div>
 					</form> 
 			    </div>
 			    <div class="tab-pane <?php if(isset($regist)) echo "active"; ?>" id="regist">

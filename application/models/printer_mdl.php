@@ -74,6 +74,31 @@ class Printer_mdl extends CI_Model {
 		return $query->result();
 	}
 
+	//修改打印店密码
+	public function password($old_password,$password,$username)
+	{
+		$this->db->select('*');
+		$this->db->where('username',$username);
+		$this->db->where('password',$old_password);
+		$query = $this->db->get('printer');
+		$result = $query->row();
+		$num = $query->num_rows();
+
+		if($num == 0)
+		{
+			return FALSE;
+		}
+		else
+		{
+			$data = array('password' => $password);
+			$this->db->where('username',$username);
+			if($this->db->update('printer',$data))
+				return TRUE;
+			else 
+				return FALSE;
+		}
+	}
+
 	//删除打印店
 	public function delete_printer($name)
 	{
