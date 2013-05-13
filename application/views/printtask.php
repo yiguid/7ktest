@@ -36,6 +36,21 @@ $this->load->view('menu');
 				</tr>  
 				<?php endforeach;?>
 			</table>
+			<?php if($printtaskinfo[0]->status == '打印完成') {?>
+			<div class="rating_panel">
+				<div>评分：<ul class="star-rating">
+						<li class="current-rating"></li>
+						<li><a href="#" title="1 star out of 5" class="one-star">1</a></li>
+						<li><a href="#" title="2 stars out of 5" class="two-stars">2</a></li>
+						<li><a href="#" title="3 stars out of 5" class="three-stars">3</a></li>
+						<li><a href="#" title="4 stars out of 5" class="four-stars">4</a></li>
+						<li><a href="#" title="5 stars out of 5" class="five-stars">5</a></li>
+				</ul></div>
+				<div>留言：</div>
+				<div><textarea rows="3" style="width:600px;"></textarea></div>
+				<div><input class="btn-metro" type="submit" name="submit" value="提 交"/></div>
+			</div>
+			<?php }?>
 		</div>
 	</div>
 </div>

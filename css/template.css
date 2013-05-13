@@ -617,11 +617,18 @@ a.readon {
 #file_setting{
 	float:left;
 }
+
 #managebox{
 	width:770px;
 	height:568px;
 	float:left;
 	border-left:1px solid #ccc;
+}
+
+.rating_panel{
+	margin-top:20px;
+	text-align: left;
+	margin-left: 100px;
 }
 
 .manage_table{
