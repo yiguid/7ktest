@@ -96,17 +96,25 @@
 					<input class="btn" type="button" value="添加收藏">
 					<input class="btn" type="button" value="投诉店铺">
 				</div>
-				<ul class="star-rating">
-						<li class="current-rating"></li>
-						<li><a href="#" title="1 star out of 5" class="one-star">1</a></li>
-						<li><a href="#" title="2 stars out of 5" class="two-stars">2</a></li>
-						<li><a href="#" title="3 stars out of 5" class="three-stars">3</a></li>
-						<li><a href="#" title="4 stars out of 5" class="four-stars">4</a></li>
-						<li><a href="#" title="5 stars out of 5" class="five-stars">5</a></li>
-				</ul>
-				<ul>
-					<li>信誉评级：
-					</li>
+				<div style="heihgt:30px;line-height:30px;margin-left:15px;">
+					<span style="float:left">店铺信誉：</span>
+					<ul class="star-rating">
+						<li class="current-rating" style="width:<?php  echo $this->shop_mdl->get_shop_rating($pterid);?>"></li>
+						<?php 
+							if(!$this->shop_mdl->is_rating_shop($this->session->userdata('id'),$pterid))
+							{
+						?>
+						<li><a href="#" title="1分" class="one-star">1</a></li>
+						<li><a href="#" title="2分" class="two-stars">2</a></li>
+						<li><a href="#" title="3分" class="three-stars">3</a></li>
+						<li><a href="#" title="4分" class="four-stars">4</a></li>
+						<li><a href="#" title="5分" class="five-stars">5</a></li>
+						<?php
+							}
+						?>
+					</ul>
+				</div>
+				<ul id="shop_details_info">
 					<li>地址：<?php echo $shopInfo->address?></li>
 					<li>联系方式：<?php echo $shopInfo->contact?></li>
 					<li>店铺介绍：<?php echo $shopInfo->intro?></li>

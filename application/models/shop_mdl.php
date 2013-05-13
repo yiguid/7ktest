@@ -118,5 +118,29 @@ class Shop_mdl extends CI_Model {
 		}
 		return 0;	
 	}
-
+	public function write_rating($userid,$pterid,$type,$rating)
+	{
+		$data = array(	'type' => $type,
+						'content' => $content,
+						'date'=>$date,
+						'time'=>$time,
+						'uid'=>$uid,
+						'pterid'=>$pterid
+				);
+	}
+	public function is_rating_shop($userid,$pterid)
+	{
+		//0表示文档评价，1表示店铺评价
+		$this->db->select('*');
+		$this->db->from('rating');
+		$this->db->where('userid',$userid);
+		$this->db->where('destid',$pterid);
+		$this->db->where('type',1);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			return true;
+		}
+		return false;
+	}
 }

@@ -17,7 +17,7 @@
 			<div class="menu_content"><i class='icon-star'></i><a href="<?php echo base_url();?>printer/documenthistory">特色资料</a></div>
 			<div class="printer_divider"></div>
 			<div class="menu_title">打印店管理
-				<a href="<?php echo base_url().'shop/name/'.$this->session->userdata('username');?>">[查看店铺]</a></div>
+				<a href="<?php echo base_url().'shop/doc/'.$this->session->userdata('id').'-1-1';?>">[查看店铺]</a></div>
 			<div class="menu_content"><i class='icon-eye-open'></i><a href="<?php echo base_url();?>printer/manage/info">基本信息</a></div>
 			<div class="menu_content"><i class='icon-globe'></i><a href="<?php echo base_url();?>printer/manage/yewu">业务管理</a></div>
 			<div class="menu_content"><i class='icon-heart'></i><a href="<?php echo base_url();?>printer/manage/rating">信誉评价</a></div>

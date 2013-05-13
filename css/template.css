@@ -759,10 +759,15 @@ a.readon {
 #shop_msg_view{
 	background: white;
 }
-#shop_details ul{
-	margin: 0px;
+#shop_details_info{
+	margin-left: 15px;
+	list-style: none;
+	text-align: left;
+	line-height: 30px;
 }
-
+#shop_details_info li{
+	height: 30px;
+}
 
 .star-rating{
 	list-style:none;
@@ -827,7 +832,6 @@ a.readon {
 	background: url(../images/rating.gif) left bottom;
 	position: absolute;
 	height: 30px;
-	width: 105px;
 	display: block;
 	text-indent: -9000px;
 	z-index: 1;
