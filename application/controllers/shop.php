@@ -155,5 +155,4 @@ class Shop extends CI_Controller {
 
 		}
 	}
-
 }
