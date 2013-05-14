@@ -14,7 +14,7 @@
 			<div class="printer_divider"></div>
 			<div class="menu_title">文件管理</div>
 			<div class="menu_content"><i class='icon-file'></i><a href="<?php echo base_url();?>printer/documenthistory">印单文件</a></div>
-			<div class="menu_content"><i class='icon-star'></i><a href="<?php echo base_url();?>printer/documenthistory">特色资料</a></div>
+			<div class="menu_content"><i class='icon-star'></i><a href="<?php echo base_url();?>printer/specialdoc">特色资料</a></div>
 			<div class="printer_divider"></div>
 			<div class="menu_title">打印店管理
 				<a href="<?php echo base_url().'shop/doc/'.$this->session->userdata('id').'-1-1';?>">[查看店铺]</a></div>

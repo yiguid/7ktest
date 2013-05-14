@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 05 月 08 日 17:51
+-- 生成日期: 2013 年 05 月 14 日 15:53
 -- 服务器版本: 5.5.29-log
 -- PHP 版本: 5.4.10
 
@@ -35,7 +35,7 @@ CREATE TABLE `ci_sessions` (
 --
 
 INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('4484e82344f14ec2426fcb0d50910a5a', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31', 1368026295, 'a:13:{s:9:"user_data";s:0:"";s:2:"id";s:8:"test0508";s:8:"username";s:8:"test0508";s:8:"nickname";s:12:"测试用户";s:11:"user_mobile";N;s:13:"user_province";N;s:9:"user_city";N;s:12:"user_address";N;s:12:"user_receipt";N;s:12:"user_zipcode";N;s:13:"user_receiver";N;s:5:"level";N;s:9:"user_type";s:4:"user";}');
+('3c91e64009b1709f916bc79d47cec72a', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31', 1368539590, 'a:15:{s:9:"user_data";s:0:"";s:2:"id";s:1:"1";s:8:"username";s:7:"beihang";s:8:"nickname";s:15:"北航打印店";s:5:"level";s:1:"1";s:9:"user_type";s:7:"printer";s:8:"location";s:8:"shanghai";s:9:"printshop";s:0:"";s:11:"user_mobile";s:11:"18611728343";s:13:"user_province";s:9:"北京市";s:9:"user_city";s:9:"海淀区";s:12:"user_address";s:38:"学院路37号北京航空航天大学";s:12:"user_receipt";N;s:12:"user_zipcode";s:6:"100191";s:13:"user_receiver";s:6:"顾毅";}');
 
 -- --------------------------------------------------------
 
@@ -53,7 +53,7 @@ CREATE TABLE `delivertask` (
   `status` varchar(45) DEFAULT NULL,
   `comment` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- 转存表中的数据 `delivertask`
@@ -79,7 +79,7 @@ CREATE TABLE `document` (
   `uploadtime` datetime DEFAULT NULL,
   `page` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=89 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=89 ;
 
 --
 -- 转存表中的数据 `document`
@@ -88,34 +88,34 @@ CREATE TABLE `document` (
 INSERT INTO `document` (`id`, `name`, `keyword`, `type`, `size`, `url`, `uploaduserid`, `uploadtime`, `page`) VALUES
 (1, '数学分析', '数学', '书', '100k', '', '2', '2013-01-24 18:00:00', 100),
 (2, '物理学', '物理', '书', '100k', '', '2', '2013-01-24 18:00:00', 80),
-(84, 'paper.pdf', NULL, NULL, NULL, 'cc8dac01cf11d5dda48b4bc6fa6afd7e.pdf', '2', NULL, NULL),
-(83, 'Performance_of_Recommender_Algorithms_on_Top-N_Recommendation_Tasks.pdf', NULL, NULL, NULL, 'deb45f354b91300c1bc6984d1a0e6dc2.pdf', '2', NULL, NULL),
-(81, 'paper.pdf', NULL, NULL, NULL, '3d1da039d095193d5da08f30d6865251.pdf', '2', NULL, NULL),
-(82, 'paper.pdf', NULL, NULL, NULL, '768426577cf7c0d6745f73a7cb93adf0.pdf', '2', NULL, NULL),
-(80, '中文测试副本中文测试副本中文测试副本中文测试副本中文测试副本.pdf', NULL, NULL, NULL, 'b9e68283ee52d4ff4c26fda925180e25.pdf', '2', NULL, NULL),
-(79, '中文测试副本中文测试副本中文测试副本中文测试副本中文测试副本.pdf', NULL, NULL, NULL, '03becdcae1489f5ca9942b05d2ef3124.pdf', '2', NULL, NULL),
-(78, 'paper.pdf', NULL, NULL, NULL, '25902359c63259e9dc4a1feb0827777a.pdf', '2', NULL, NULL),
-(76, 'paper.pdf', NULL, NULL, NULL, 'f1d2a3cb33b317f65e44f83b59278784.pdf', '2', NULL, NULL),
-(77, 'paper.pdf', NULL, NULL, NULL, '2fea02f4ef37d361684d4018740e3389.pdf', '2', NULL, NULL),
-(75, '中文测试副本中文测试副本中文测试副本中文测试副本中文测试副本.pdf', NULL, NULL, NULL, 'b6e3fe77a4dbfdede560339901cbdd87.pdf', '2', NULL, NULL),
-(72, '0a554cc1e639f7e52eb8dbada2400fc9.pdf', NULL, NULL, NULL, '0a554cc1e639f7e52eb8dbada2400fc9.pdf', '2', NULL, NULL),
-(73, 'c09c30bd9ef5dc3057fa24d704284498.pdf', NULL, NULL, NULL, 'c09c30bd9ef5dc3057fa24d704284498.pdf', '2', NULL, NULL),
-(74, '97ff68529a58141760069225a3c2850a.pdf', NULL, NULL, NULL, '97ff68529a58141760069225a3c2850a.pdf', '2', NULL, NULL),
-(70, '中文测试副本中文测试副本中文测试副本中文测试副本中文测试副本.pdf', NULL, NULL, NULL, '中文测试副本中文测试副本中文测试副本中文测试副本中文测试副本.pdf', '2', NULL, NULL),
-(65, 'paper6.pdf', NULL, NULL, NULL, 'paper6.pdf', '2', NULL, NULL),
-(66, 'paper7.pdf', NULL, NULL, NULL, 'paper7.pdf', '2', NULL, NULL),
-(67, 'MATRIX4.pdf', NULL, NULL, NULL, 'MATRIX4.pdf', '2', NULL, NULL),
-(68, 'paper8.pdf', NULL, NULL, NULL, 'paper8.pdf', '2', NULL, NULL),
-(63, 'MATRIX3.pdf', NULL, NULL, NULL, 'MATRIX3.pdf', '2', NULL, NULL),
-(64, 'paper5.pdf', NULL, NULL, NULL, 'paper5.pdf', '2', NULL, NULL),
-(61, 'paper3.pdf', NULL, NULL, NULL, 'paper3.pdf', '2', NULL, NULL),
-(62, 'paper4.pdf', NULL, NULL, NULL, 'paper4.pdf', '2', NULL, NULL),
 (55, 'MATRIX1.pdf', NULL, NULL, NULL, 'MATRIX1.pdf', '2', NULL, NULL),
 (56, 'Advances_in_Collaborative_Filtering1.pdf', NULL, NULL, NULL, 'Advances_in_Collaborative_Filtering1.pdf', '2', NULL, NULL),
 (57, 'Collaborative_Filtering_with_Temporal_Dynamics6.pdf', NULL, NULL, NULL, 'Collaborative_Filtering_with_Temporal_Dynamics6.pdf', '2', NULL, NULL),
 (58, 'paper1.pdf', NULL, NULL, NULL, 'paper1.pdf', '2', NULL, NULL),
 (59, 'paper2.pdf', NULL, NULL, NULL, 'paper2.pdf', '2', NULL, NULL),
 (60, 'MATRIX2.pdf', NULL, NULL, NULL, 'MATRIX2.pdf', '2', NULL, NULL),
+(61, 'paper3.pdf', NULL, NULL, NULL, 'paper3.pdf', '2', NULL, NULL),
+(62, 'paper4.pdf', NULL, NULL, NULL, 'paper4.pdf', '2', NULL, NULL),
+(63, 'MATRIX3.pdf', NULL, NULL, NULL, 'MATRIX3.pdf', '2', NULL, NULL),
+(64, 'paper5.pdf', NULL, NULL, NULL, 'paper5.pdf', '2', NULL, NULL),
+(65, 'paper6.pdf', NULL, NULL, NULL, 'paper6.pdf', '2', NULL, NULL),
+(66, 'paper7.pdf', NULL, NULL, NULL, 'paper7.pdf', '2', NULL, NULL),
+(67, 'MATRIX4.pdf', NULL, NULL, NULL, 'MATRIX4.pdf', '2', NULL, NULL),
+(68, 'paper8.pdf', NULL, NULL, NULL, 'paper8.pdf', '2', NULL, NULL),
+(70, '中文测试副本中文测试副本中文测试副本中文测试副本中文测试副本.pdf', NULL, NULL, NULL, '中文测试副本中文测试副本中文测试副本中文测试副本中文测试副本.pdf', '2', NULL, NULL),
+(72, '0a554cc1e639f7e52eb8dbada2400fc9.pdf', NULL, NULL, NULL, '0a554cc1e639f7e52eb8dbada2400fc9.pdf', '2', NULL, NULL),
+(73, 'c09c30bd9ef5dc3057fa24d704284498.pdf', NULL, NULL, NULL, 'c09c30bd9ef5dc3057fa24d704284498.pdf', '2', NULL, NULL),
+(74, '97ff68529a58141760069225a3c2850a.pdf', NULL, NULL, NULL, '97ff68529a58141760069225a3c2850a.pdf', '2', NULL, NULL),
+(75, '中文测试副本中文测试副本中文测试副本中文测试副本中文测试副本.pdf', NULL, NULL, NULL, 'b6e3fe77a4dbfdede560339901cbdd87.pdf', '2', NULL, NULL),
+(76, 'paper.pdf', NULL, NULL, NULL, 'f1d2a3cb33b317f65e44f83b59278784.pdf', '2', NULL, NULL),
+(77, 'paper.pdf', NULL, NULL, NULL, '2fea02f4ef37d361684d4018740e3389.pdf', '2', NULL, NULL),
+(78, 'paper.pdf', NULL, NULL, NULL, '25902359c63259e9dc4a1feb0827777a.pdf', '2', NULL, NULL),
+(79, '中文测试副本中文测试副本中文测试副本中文测试副本中文测试副本.pdf', NULL, NULL, NULL, '03becdcae1489f5ca9942b05d2ef3124.pdf', '2', NULL, NULL),
+(80, '中文测试副本中文测试副本中文测试副本中文测试副本中文测试副本.pdf', NULL, NULL, NULL, 'b9e68283ee52d4ff4c26fda925180e25.pdf', '2', NULL, NULL),
+(81, 'paper.pdf', NULL, NULL, NULL, '3d1da039d095193d5da08f30d6865251.pdf', '2', NULL, NULL),
+(82, 'paper.pdf', NULL, NULL, NULL, '768426577cf7c0d6745f73a7cb93adf0.pdf', '2', NULL, NULL),
+(83, 'Performance_of_Recommender_Algorithms_on_Top-N_Recommendation_Tasks.pdf', NULL, NULL, NULL, 'deb45f354b91300c1bc6984d1a0e6dc2.pdf', '2', NULL, NULL),
+(84, 'paper.pdf', NULL, NULL, NULL, 'cc8dac01cf11d5dda48b4bc6fa6afd7e.pdf', '2', NULL, NULL),
 (85, 'paper.pdf', NULL, NULL, NULL, '495a7487dfa2fed17620904f12b496d8.pdf', '2', NULL, NULL),
 (86, 'paper.pdf', NULL, NULL, NULL, '2910ad379b83f8d7db3c1e803f5c805f.pdf', '2', NULL, NULL),
 (87, 'paper.pdf', NULL, NULL, NULL, '2977eb80aad9337b789ba2b452fabb89.pdf', '2', NULL, NULL),
@@ -133,7 +133,7 @@ CREATE TABLE `favorite` (
   `type` int(11) NOT NULL,
   `favoriteid` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -144,13 +144,13 @@ CREATE TABLE `favorite` (
 CREATE TABLE `message` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `type` int(11) NOT NULL DEFAULT '1',
-  `content` text CHARACTER SET utf8 NOT NULL,
+  `content` text NOT NULL,
   `date` date NOT NULL,
   `time` time NOT NULL,
   `uid` int(11) NOT NULL,
   `pterid` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- 转存表中的数据 `message`
@@ -193,7 +193,7 @@ CREATE TABLE `printer` (
   `address` varchar(200) DEFAULT NULL,
   `contact` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- 转存表中的数据 `printer`
@@ -257,7 +257,7 @@ CREATE TABLE `printtask` (
   `zipcode` varchar(45) DEFAULT NULL,
   `daodianyin` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
 
 --
 -- 转存表中的数据 `printtask`
@@ -265,24 +265,24 @@ CREATE TABLE `printtask` (
 
 INSERT INTO `printtask` (`id`, `userid`, `printerid`, `status`, `method`, `createtime`, `finishtime`, `cost`, `address`, `mobile`, `delivertime`, `remark`, `receipt`, `receiver`, `zipcode`, `daodianyin`) VALUES
 (1, '2', '1', '打印完成', '普通', '2013-01-24 19:00:00', '2013-01-24 19:10:00', 90, '北航办公楼', '18611728342', '2013-01-24 19:10:00', '尽快啊', '北京航空航天大学', NULL, NULL, NULL),
-(51, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(49, '2', '1', '打印中', 'self', '2013-04-08 17:14:18', NULL, 2, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-04 09:45:15', '', '北京航空航天大学', NULL, NULL, NULL),
-(50, '2', '1', '打印中', 'self', '2013-04-16 16:00:34', NULL, 7, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-17 21:55:51', '无', '北京航空航天大学', NULL, NULL, NULL),
-(48, '2', '1', '打印中', 'self', '2013-04-08 17:12:31', NULL, 2, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-08 08:40:26', '', '北京航空航天大学', NULL, NULL, NULL),
-(47, '2', '1', '打印中', 'self', '2013-04-08 17:11:33', NULL, 2, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-08 23:11:31', '无', '北京航空航天大学', NULL, NULL, NULL),
-(46, '2', '1', '打印完成', 'self', '2013-04-03 14:26:54', '2013-04-03 14:28:26', 41, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-03 20:25:43', '', '北京航空航天大学', NULL, NULL, NULL),
-(45, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(44, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(42, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(43, '2', '2', '打印中', 'self', '2013-04-02 15:07:46', NULL, 25, '无', '7110', '2013-04-02 04:20:35', '无', '北京航空航天大学', NULL, NULL, NULL),
-(40, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(41, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(38, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(39, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(36, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(37, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (34, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (35, '2', '5', '打印中', 'self', '2013-03-31 16:10:21', NULL, 25, '无', '7110', '2013-03-30 22:50:08', '无', '北京航空航天大学', NULL, NULL, NULL),
+(36, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(37, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(38, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(39, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(40, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(41, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(42, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(43, '2', '2', '打印中', 'self', '2013-04-02 15:07:46', NULL, 25, '无', '7110', '2013-04-02 04:20:35', '无', '北京航空航天大学', NULL, NULL, NULL),
+(44, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(45, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(46, '2', '1', '打印完成', 'self', '2013-04-03 14:26:54', '2013-04-03 14:28:26', 41, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-03 20:25:43', '', '北京航空航天大学', NULL, NULL, NULL),
+(47, '2', '1', '打印中', 'self', '2013-04-08 17:11:33', NULL, 2, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-08 23:11:31', '无', '北京航空航天大学', NULL, NULL, NULL),
+(48, '2', '1', '打印中', 'self', '2013-04-08 17:12:31', NULL, 2, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-08 08:40:26', '', '北京航空航天大学', NULL, NULL, NULL),
+(49, '2', '1', '打印中', 'self', '2013-04-08 17:14:18', NULL, 2, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-04 09:45:15', '', '北京航空航天大学', NULL, NULL, NULL),
+(50, '2', '1', '打印中', 'self', '2013-04-16 16:00:34', NULL, 7, '北京市海淀区北京航空航天大学', '18611728343', '2013-04-17 21:55:51', '无', '北京航空航天大学', NULL, NULL, NULL),
+(51, '2', NULL, '打印创建', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (52, '2', '1', '打印完成', 'self', '2013-04-27 15:59:27', '2013-04-27 16:30:02', 7, '北京市海淀区学院路37号北京航空航天大学', '18611728343', '1970-01-01 01:00:00', '快点啦', '不需要', '0', '100191', 'on'),
 (53, '2', '1', '打印中', 'express', '2013-04-27 16:13:21', NULL, 4, '北京市海淀区学院路37号北京航空航天大学', '18611728343', '2013-04-28 22:30:05', '快点啦', '北京航空航天大学', '0', '100191', '0'),
 (54, '2', '1', '打印中', 'self', '2013-04-30 11:25:15', NULL, 12, '北京市海淀区学院路37号北京航空航天大学', '18611728343', '1970-01-01 01:00:00', '不需要', '北京航空航天大学', '0', '100191', 'on'),
@@ -357,9 +357,9 @@ CREATE TABLE `rating` (
   `type` int(11) NOT NULL,
   `destid` int(11) NOT NULL,
   `rating` int(11) NOT NULL,
-  `msg` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `msg` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -370,13 +370,13 @@ CREATE TABLE `rating` (
 CREATE TABLE `reply` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `uid` int(11) NOT NULL,
-  `content` text CHARACTER SET utf8,
+  `content` text,
   `date` date NOT NULL,
   `time` time NOT NULL,
   `msgid` int(11) NOT NULL,
   `floor` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- 转存表中的数据 `reply`
@@ -396,16 +396,28 @@ INSERT INTO `reply` (`id`, `uid`, `content`, `date`, `time`, `msgid`, `floor`) V
 
 CREATE TABLE `specialdoc` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
-  `keyword` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
-  `type` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
-  `size` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
-  `url` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
-  `uploadpterid` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  `name` varchar(200) DEFAULT NULL,
+  `keyword` varchar(45) DEFAULT NULL,
+  `type` varchar(45) DEFAULT NULL,
+  `size` varchar(45) DEFAULT NULL,
+  `url` varchar(200) DEFAULT NULL,
+  `uploadpterid` varchar(45) DEFAULT NULL,
   `uploadtime` datetime DEFAULT NULL,
   `page` int(11) DEFAULT NULL,
+  `description` varchar(200) DEFAULT NULL,
+  `price` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+--
+-- 转存表中的数据 `specialdoc`
+--
+
+INSERT INTO `specialdoc` (`id`, `name`, `keyword`, `type`, `size`, `url`, `uploadpterid`, `uploadtime`, `page`, `description`, `price`) VALUES
+(3, '北航先进工业技术研究', '研究', '参考文档', '178.5', '217ed8cde4af47ebf68c77ae4ac9ce6e.doc', '1', '2013-05-14 15:42:40', 150, '1231312', 120),
+(4, '北航先进工业技术研究', '研究', '参考文档', '122', '2a033b6d27db7e457ecd4af1071cf2cd.doc', '1', '2013-05-14 15:43:38', 150, 'sdasd', 100),
+(5, '北航先进工业技术研究', '研究', '参考文档飞', '122', '52a3fc3637e5ffbbe5ac39ef5212eb3b.doc', '1', '2013-05-14 15:48:08', 200, '大神', 100),
+(6, '北航先进工业技术研究', '研究', '参考文档', '178.5', '1a6f681f34ee816488b06dcecd1aeb4a.doc', '1', '2013-05-14 15:50:44', 150, '???????', 120);
 
 -- --------------------------------------------------------
 
@@ -463,7 +475,7 @@ CREATE TABLE `user` (
   `receipt` varchar(45) DEFAULT NULL,
   `level` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- 转存表中的数据 `user`
