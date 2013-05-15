@@ -49,6 +49,39 @@ class Printer_mdl extends CI_Model {
 		return ($this->db->affected_rows() > 0) ? 1 : 0;
 	}
 
+	//更新部分打印机信息
+	public function update_printer_info($printerid,$online,$address,$contact,$servicestart,$serviceend,$intro,$notice,$yewu)
+	{
+		$data = array('online'=>$online,
+			'address'=>$address,
+			'contact'=>$contact,
+			'servicestart'=>$servicestart,
+			'serviceend'=>$serviceend,
+			'intro'=>$intro,
+			'notice'=>$notice,
+			'yewu'=>$yewu
+			);
+		$this->db->where('id',$printerid);
+		if($this->db->update('printer',$data))
+		{
+			//暂不写入session
+			// $session_data = array(
+			// 	'online'=>$online,
+			// 	'address'=>$address,
+			// 	'contact'=>$contact,
+			// 	'servicestart'=>$servicestart,
+			// 	'serviceend'=>$serviceend,
+			// 	'intro'=>$intro,
+			// 	'notice'=>$notice,
+			// 	'yewu'=>$yewu
+			// 	);
+			// $this->session->set_userdata($session_data);
+			return TRUE;
+		}
+		else 
+			return FALSE;
+	}
+
 	//获取打印店表
 	public function get_printer()
 	{

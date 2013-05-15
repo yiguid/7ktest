@@ -6,7 +6,7 @@ class Manage extends CI_Controller {
 	{
 		parent::__construct();
 		$this->data['user'] = $this->session->userdata('nickname');
-		
+		$this->load->model('printer_mdl');
 		if(!$this->auth->printer_logged_in())
 		{
 			redirect('printer/login','refresh');
@@ -23,6 +23,7 @@ class Manage extends CI_Controller {
 	public function info()
 	{
 		$this->data['page_title'] = '基本信息';
+		$this->data['printer_info']=$this->printer_mdl->get_printer_by_username($this->session->userdata('username'));
 		$this->load->view('printer/info',$this->data);
 	}
 
