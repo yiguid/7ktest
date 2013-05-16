@@ -23,5 +23,10 @@
 			<div class="menu_title">安全设置</div>
 			<div class="menu_content"><i class='icon-cog'></i><a href="<?php echo base_url();?>manage/changepwd">修改密码</a></div>
 			<div class="menu_content"><i class='icon-lock'></i><a href="<?php echo base_url();?>manage/safe">账户保护</a></div>
+			<div class="divider"></div>
+			<div class="menu_title"></div>
+			<div class="printer_more">
+				<a href="<?php echo base_url();?>welcome">返回打印页面</a>
+			</div>
 
 		</div>
