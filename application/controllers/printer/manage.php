@@ -7,6 +7,7 @@ class Manage extends CI_Controller {
 		parent::__construct();
 		$this->data['user'] = $this->session->userdata('nickname');
 		$this->load->model('printer_mdl');
+		$this->load->model('transaction_mdl');
 		if(!$this->auth->printer_logged_in())
 		{
 			redirect('printer/login','refresh');
@@ -30,6 +31,8 @@ class Manage extends CI_Controller {
 	public function yewu()
 	{
 		$this->data['page_title'] = '业务管理';
+		$this->data['translist']=$this->transaction_mdl->get_transactions_by_pterid($this->session->userdata('id'));
+		$this->data['total'] = -1 *$this->transaction_mdl->get_total_by_pterid($this->session->userdata('id'));
 		$this->load->view('printer/yewu',$this->data);
 	}
 
