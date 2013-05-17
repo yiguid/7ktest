@@ -79,7 +79,7 @@ $this->load->view('header');
 						<td></td>
 						<td>
 							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('ufb').value=this.value"/>
-							<input class="btn btn-info" id="ufb" type="button" onclick=userfile.click() value="点击上传文件"/>
+							<input class="btn-metro" id="ufb" type="button" onclick=userfile.click() value="点击上传文件"/>
 						</td>
 						<td>
 							<?php echo form_dropdown('papersize', $papersize_option, 'A4', "id=papersize class=w60");?>
@@ -93,7 +93,7 @@ $this->load->view('header');
 							<?php echo form_dropdown('zhuangding', $zhuangding_option, '普通', "id=zhuangding class=w70");?>
 						</td>
 						<td><input class="w40" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','')" onfocus="compute_money('<?php echo base_url();?>','')" id="cost" name="cost"/></td>
-						<td><input class="btn btn-info" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="上传" /></td>
+						<td><input class="btn-metro" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="上传" /></td>
 					</tr>
 				</table>
 				</form>
@@ -239,7 +239,7 @@ $this->load->view('header');
 				</div>
 				<div class="span9">
 					费用总计：<input type="text" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/></span>
-					<span style="margin-left:60px;"></span><input class="btn btn-primary offset1" type="button" onclick="submit_printtask()" value="确认印单" name="submitbtn"/>
+					<span style="margin-left:60px;"></span><input class="btn-metro offset1" type="button" onclick="submit_printtask()" value="确认印单" name="submitbtn"/>
 				</div>
 			</form>
 			</div>

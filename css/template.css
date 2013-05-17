@@ -199,7 +199,7 @@ body {
 	border: 0px;
 	color: white;
 	padding:6px 10px;
-	background-color: #4d8fff;
+	background-color: #4889F0;
 }
 
 #page_bg {
@@ -554,11 +554,11 @@ a.readon {
 	width:200px;
 	height:568px;
 	float:left;
-	background-color: #eeeeee;
-	border-left:6px solid #de4b39;
-	border-top: 1px solid #de4b39;
-	border-right: 1px solid #de4b39;
-	border-bottom: 1px solid #de4b39;
+	background-color: #F0F0F0;
+	border-left:6px solid #4889F0;
+	border-top: 1px solid #4889F0;
+	border-right: 1px solid #4889F0;
+	border-bottom: 1px solid #4889F0;
 	margin-right: 10px;
 }
 
@@ -577,10 +577,10 @@ a.readon {
 	min-height: 60px;
 	line-height: 60px;
 	color: white;
-	background-color: #de4b39;
+	background-color: #4889F0;
 }
 .title_background{
-	background-color: #fadbd8;
+	background-color: #D6E4FB;
 	padding:4px 0 4px 4px;
 }
 
@@ -588,11 +588,11 @@ a.readon {
 	text-align:left;
 	line-height:20px;
 	font-size:20px;
-	color: #de4b39;
+	color: #4889F0;
 	font-weight:bold;
 	vertical-align: middle;
 	padding:4px 0 4px 4px;
-	background-color: #fadbd8;
+	background-color: #D6E4FB;
 }
 
 .setting_details{
@@ -603,10 +603,10 @@ a.readon {
 	width:770px;
 	height:310px;
 	float:left;
-	border-left:6px solid #de4b39;
-	border-top: 1px solid #de4b39;
-	border-right: 1px solid #de4b39;
-	border-bottom: 1px solid #de4b39;
+	border-left:6px solid #4889F0;
+	border-top: 1px solid #4889F0;
+	border-right: 1px solid #4889F0;
+	border-bottom: 1px solid #4889F0;
 }
 
 .left750{
@@ -622,7 +622,7 @@ a.readon {
 	width:770px;
 	height:568px;
 	float:left;
-	border-left:1px solid #ccc;
+	border:1px solid #4889F0;
 }
 
 .rating_panel{
@@ -639,9 +639,9 @@ a.readon {
 	width:770px;
 	height:258px;
 	float:left;
-	border-left:6px solid #de4b39;
-	border-right: 1px solid #de4b39;
-	border-bottom: 1px solid #de4b39;
+	border-left:6px solid #4889F0;
+	border-right: 1px solid #4889F0;
+	border-bottom: 1px solid #4889F0;
 }
 
 .pading6{
@@ -657,7 +657,7 @@ a.readon {
 }
 
 .current{
-	background:#de4b39;
+	background:#4889F0;
 }
 
 #shop_main{

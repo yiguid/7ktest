@@ -25,8 +25,10 @@
 			<div class="menu_content"><i class='icon-lock'></i><a href="<?php echo base_url();?>manage/safe">账户保护</a></div>
 			<div class="divider"></div>
 			<div class="menu_title"></div>
+			<a style="color:white;" href="<?php echo base_url();?>welcome">
 			<div class="printer_more">
-				<a href="<?php echo base_url();?>welcome">返回打印页面</a>
+				返回打印页面
 			</div>
+			</a>
 
 		</div>
