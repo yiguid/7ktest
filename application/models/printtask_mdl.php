@@ -51,5 +51,11 @@ class Printtask_mdl extends CI_Model {
 		$this->db->delete('printtask');
 		return TRUE;
 	}
+
+	public function add_rating($rating)
+	{
+		$this->db->insert('rating',$rating);
+		return ($this->db->affected_rows() > 0) ? mysql_insert_id() : 0;
+	}
 }
 ?>

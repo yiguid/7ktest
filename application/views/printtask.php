@@ -38,17 +38,57 @@ $this->load->view('menu');
 			</table>
 			<?php if($printtaskinfo[0]->status == '打印完成') {?>
 			<div class="rating_panel">
+				<script type="text/javascript">
+				$(function(){ 
+					var cur;
+					$(".rating span").each(function(){ 
+							//绑定事件
+					        $(this).mouseover(function(){ 
+						        	$(".rating").mouseout(function(){ 
+							    $("#score").text(""); 
+							    $(".rating span").each(function(){
+						            $(this).css({'color':'black'});
+						        });
+							});
+				        	cur = $(this).attr("rate");
+				            $("#score").text(cur);
+				            $("#my_rating").val(cur);
+				            //设置前几个的星星为亮色
+				            $(".rating span").each(function(){
+				            	if($(this).attr("rate") <= cur)
+				            		//alert($(this).attr("rate")+"<="+cur);
+				            		$(this).css({'color':'#4889F0'});
+				            });
+				        }).click(function(){ 
+				            //...ajax异步提交给后台处理
+				            $(".rating span").each(function(){
+				           		if($(this).attr("rate") <= cur)
+				            		$(this).css({'color':'#4889F0'});
+				            });
+				            //alert("评分为"+cur);
+				            $(".rating").unbind('mouseout');
+				        }) 
+					});
+					  
+				});
+				</script>
+				<?php echo form_open('printtask/addRating',array('id' => 'rating_form')) ?>
+				<input type="hidden" value=<?php echo $printtaskinfo[0]->id;?> name="printtaskid" id="printtaskid"/>
 				<div>评分：<span class="rating">
-         					 <span class="icon-star"></span>
-         					 <span class="icon-star"></span>
-         					 <span class="icon-star"></span>
-         					 <span class="icon-star"></span>
-         					 <span class="icon-star"></span>
+         					 <span rate="1" class="icon-star"></span>
+         					 <span rate="2" class="icon-star"></span>
+         					 <span rate="3" class="icon-star"></span>
+         					 <span rate="4" class="icon-star"></span>
+         					 <span rate="5" class="icon-star"></span>
         				</span>
+        				<p>你的评分：<span id="score" name="score" class="score"></span></p>
+        				<input type="hidden" name="my_rating" id="my_rating" value=""/>
     			</div>
 				<div>留言：</div>
-				<div><textarea rows="3" style="width:600px;"></textarea></div>
+				<div><textarea rows="3" style="width:600px;" id="msg" name="msg"></textarea></div>
+				<input type="hidden" value="printtask" name="type" id="type"/>
 				<div><input class="btn-metro" type="submit" name="submit" value="提 交"/></div>
+				</form>
 			</div>
 			<?php }?>
 		</div>

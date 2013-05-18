@@ -14,8 +14,7 @@
 	height: 1px;
 	margin: 8px 1px;
 	overflow: hidden;
-	background-color: #99ffff;
-	border-bottom: 1px solid #666666;
+	border-bottom: 1px solid #cccccc;
 }
 
 html {
@@ -619,7 +618,7 @@ a.readon {
 }
 
 #managebox{
-	width:770px;
+	width:780px;
 	height:568px;
 	float:left;
 	border:1px solid #4889F0;

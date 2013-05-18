@@ -64,4 +64,25 @@ class Printtask extends CI_Controller {
    		$this->load->view('submitsucceed',$this->data);
 	}
 
+  public function addRating(){
+    $rating = array(
+      'userid' => $this->session->userdata('id'),
+      'type' => $this->input->post('type'),
+      'destid' => $this->input->post('printtaskid'),
+      'rating' => $this->input->post('my_rating'),
+      'msg' => $this->input->post('msg'),
+      );
+    if($this->printtask_mdl->add_rating($rating)){
+      echo "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head><body>";
+      echo "<script language=\"javascript\">alert('评分成功');window.history.back();</script>";
+      echo "</body></html>";
+    }
+    else{
+      echo "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head><body>";
+      echo "<script language=\"javascript\">alert('评分失败');window.history.back();</script>";
+      echo "</body></html>";
+    }
+
+  }
+
 }
