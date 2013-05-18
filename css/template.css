@@ -606,6 +606,7 @@ a.readon {
 	border-top: 1px solid #4889F0;
 	border-right: 1px solid #4889F0;
 	border-bottom: 1px solid #4889F0;
+	overflow:scroll
 }
 
 .left750{
