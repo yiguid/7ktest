@@ -19,7 +19,7 @@ $this->load->view('header');
 							."</td><td>".$searchresult->servicestart."</td><td>".$searchresult->serviceend
 							."</td><td>".$searchresult->level."</td>";?>
 					<td><a href=<?php echo base_url()."printshop/name/"
-							.$searchresult->username; ?>>查看</a></td>
+							.$searchresult->username; ?>>选择该打印店</a></td>
 					</tr>  
   
 					<?php endforeach;?>  

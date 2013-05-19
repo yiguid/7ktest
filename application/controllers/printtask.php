@@ -7,6 +7,7 @@ class Printtask extends CI_Controller {
 		parent::__construct();
 
 		$this->data['page_title'] = '印单详情';
+    $this->data['cur_title'] = '4';
 		$this->data['user'] = $this->session->userdata('nickname');
 		
 		$this->load->model('user_mdl');

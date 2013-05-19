@@ -7,6 +7,7 @@ class Favorite extends CI_Controller {
 		parent::__construct();
 
 		$this->data['page_title'] = '我的收藏';
+		$this->data['cur_title'] = '8';
 		$this->data['user'] = $this->session->userdata('nickname');
 		
 		if(!$this->auth->logged_in())

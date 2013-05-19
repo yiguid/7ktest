@@ -23,21 +23,25 @@ class Manage extends CI_Controller {
 
 	public function changepwd(){
 		$this->data['page_title'] = '修改密码';
+		$this->data['cur_title'] = '9';
 		$this->load->view('manage/changepwd',$this->data);
 	}
 
 	public function address(){
 		$this->data['page_title'] = '我的地址';
+		$this->data['cur_title'] = '3';
 		$this->load->view('manage/address',$this->data);
 	}
 
 	public function recharge(){
 		$this->data['page_title'] = '账户充值';
+		$this->data['cur_title'] = '1';
 		$this->load->view('manage/recharge',$this->data);
 	}
 
 	public function money(){
 		$this->data['page_title'] = '收支明细';
+		$this->data['cur_title'] = '2';
 		//获取数据
 		$this->data['translist'] = $this->transaction_mdl->get_transactions_by_userid($this->session->userdata('id'));
 		$this->data['total'] = $this->transaction_mdl->get_total_by_userid($this->session->userdata('id'));
@@ -46,6 +50,7 @@ class Manage extends CI_Controller {
 
 	public function safe(){
 		$this->data['page_title'] = '账户保护';
+		$this->data['cur_title'] = '10';
 		$this->load->view('contruction',$this->data);
 	}
 }

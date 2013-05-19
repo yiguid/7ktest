@@ -7,7 +7,7 @@ $this->load->view('menu');
 				<h4>历史文件</h4>
 			</div>
 			<table class="table table-hover manage_table">
-				<tr>
+				<tr class="table_header">
 					<td>ID</td><td>文件名</td><td>关键词</td><td>类型</td><td>大小</td><td>上传时间</td><td>操作</td>
 				</tr>
 				<?php foreach($documenthistorylist as $doc):?>  

@@ -91,6 +91,12 @@ class Printajax extends CI_Controller {
 		extract($_REQUEST);
 		$this->session->set_userdata('printer_id',$printerid);
 		$this->session->set_userdata('printer_name',$printername);
+		if($total > 0){
+			//清空session
+			$this->session->set_userdata('upload_docs','');
+			$this->session->set_userdata('printtaskid','0');
+			$this->cart->destroy();
+		}
 	}
 
 	public function delete_by_id(){

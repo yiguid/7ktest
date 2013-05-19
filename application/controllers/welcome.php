@@ -48,11 +48,22 @@ class Welcome extends CI_Controller {
 		//清空session
 		$this->session->set_userdata('upload_docs','');
 		$this->session->set_userdata('printtaskid','0');
-		$this->session->set_userdata('printshop',"");
-		$this->session->set_userdata('location',"");
-		$this->session->set_userdata('printer_id','');
 		$this->cart->destroy();
-		$this->data['printerlist'] = $this->printer_mdl->get_printer(); 
+		//得到现有打印店
+		//获取打印店信息
+		$location = $this->session->userdata('location');
+		$printshop = $this->session->userdata('printshop');
+		if($location != "")
+		    $this->data['printerlist'] = $this->printer_mdl->get_printer_by_location($location);
+		else if($printshop != ""){
+			$printer = $this->printer_mdl->get_printer_by_username($printshop);
+			$printer_id = $printer[0]->id;
+			$this->session->set_userdata('printer_name',$printer[0]->name);
+			$this->session->set_userdata('printer_id',$printer_id);
+		    $this->data['printerlist'] = $this->printer_mdl->get_printer_by_username($printshop);
+		}
+		else
+		    $this->data['printerlist'] = $this->printer_mdl->get_printer(); 
 		//得到打印店信息
 		$printer_id = $this->session->userdata('printer_id');
 		$this->data['papersize_option'] = $this->printer_mdl->get_papersize_option($printer_id);

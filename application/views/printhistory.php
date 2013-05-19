@@ -8,7 +8,7 @@ $this->load->view('menu');
 				<h4>历史印单</h4>
 			</div>
 			<table class="table table-hover manage_table">
-				<tr>
+				<tr class="table_header">
 					<td>序号</td><td>打印店</td><td>文件数</td><td>状态</td><td>创建时间</td><td>打印时间</td><td>费用</td><td>详细</td>
 				</tr>
 				<?php foreach($printhistorylist as $printhistory):?>  

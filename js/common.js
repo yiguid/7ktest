@@ -85,18 +85,34 @@ function addDocuments(){
 	alert("i am here!");
 }
 
-function setPrinterId(url,name){
+function setPrinterId(url,name,total){
 	//alert(getRadioValue('printer_address'));
 	var printerid = getRadioValue('printer_address');
-	$.post(url + "ajax/printajax/setPrinterId", {
-		printerid : printerid,
-		printername : name
-	}, function(data) {
-		$("#current").html(name);
-		//还要加入重新load选项功能
-		location.reload();
-	});
-	document.getElementById('printerid').value = getRadioValue('printer_address');
+	if(total > 0){
+		if(confirm("重新选择打印店，将清空现有印单及设置，是否继续?")==1){
+			$.post(url + "ajax/printajax/setPrinterId", {
+				printerid : printerid,
+				printername : name,
+				total : total
+			}, function(data) {
+				$("#current").html(name);
+				//还要加入重新load选项功能
+				location.reload();
+			});
+			document.getElementById('printerid').value = getRadioValue('printer_address');
+		}
+	}else{
+		$.post(url + "ajax/printajax/setPrinterId", {
+				printerid : printerid,
+				printername : name,
+				total : total
+			}, function(data) {
+				$("#current").html(name);
+				//还要加入重新load选项功能
+				location.reload();
+			});
+			document.getElementById('printerid').value = getRadioValue('printer_address');
+	}
 }
 
 // 动态获取应交费用

@@ -46,7 +46,7 @@ $this->load->view('menu');
 						</tr>
 						<tr>
 							<td></td>
-							<td><input class="btn btn-primary" type="submit" name="submit" value="提交更改"/>
+							<td><input class="btn-metro" type="submit" name="submit" value="提交更改"/>
 							</td>
 							<td></td>
 						</tr>

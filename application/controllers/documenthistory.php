@@ -9,6 +9,7 @@ class Documenthistory extends CI_Controller {
 		parent::__construct();
 
 		$this->data['page_title'] = '历史文件';
+		$this->data['cur_title'] = '6';
 		$this->data['user'] = $this->session->userdata('nickname');
 		
 		$this->load->model('user_mdl');

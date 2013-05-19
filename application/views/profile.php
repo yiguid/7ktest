@@ -39,7 +39,7 @@ $this->load->view('header');
 						<?php if($this->session->userdata('printer_id') == $printer->id)
 							echo 'checked';
 						?> 
-						onclick="javascript:setPrinterId('<?php echo base_url();?>','<?php echo " ".$printer->name;?>')"/><?php echo " ".$printer->name;?> | <?php echo $printer->online;?>
+						onclick="javascript:setPrinterId('<?php echo base_url();?>','<?php echo " ".$printer->name;?>','<?php echo $this->cart->total_items();?>')"/><?php echo " ".$printer->name;?> | <?php echo $printer->online;?>
 						</label>
 						
 					</div>
@@ -79,7 +79,7 @@ $this->load->view('header');
 						<td></td>
 						<td>
 							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('ufb').value=this.value"/>
-							<input class="btn-metro" id="ufb" type="button" onclick=userfile.click() value="点击上传文件"/>
+							<input class="btn-metro-small" id="ufb" type="button" onclick=userfile.click() value="选择文件"/>
 						</td>
 						<td>
 							<?php echo form_dropdown('papersize', $papersize_option, 'A4', "id=papersize class=w60");?>
@@ -93,11 +93,11 @@ $this->load->view('header');
 							<?php echo form_dropdown('zhuangding', $zhuangding_option, '普通', "id=zhuangding class=w70");?>
 						</td>
 						<td><input class="w40" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','')" onfocus="compute_money('<?php echo base_url();?>','')" id="cost" name="cost"/></td>
-						<td><input class="btn-metro" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="上传" /></td>
+						<td><input class="btn-metro-small" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="上传" /></td>
 					</tr>
 				</table>
 				</form>
-				<div>
+				<div id="file_manage_content">
 					<div class="left750">
 						<!-- Modal 
 						<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
