@@ -44,6 +44,7 @@ $this->load->view('header');
 						
 					</div>
 					<div style="color:#888">
+						<a href="<?php echo base_url().'shop/doc/'.$printer->id.'-1-1';?>">[查看店铺]</a>
 						距您100米以内
 					</div>
 				</div>  

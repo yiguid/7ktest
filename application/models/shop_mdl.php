@@ -15,6 +15,16 @@ class Shop_mdl extends CI_Model {
 
 	}
 
+	public function get_shop_specialdoc($pterid,$docClassid,$curPage,$numPerPage)
+	{
+		$this->db->select('*');
+		$this->db->from('specialdoc');
+		$this->db->where('uploadpterid',$pterid);
+		$this->db->limit($numPerPage,($curPage-1)*$numPerPage);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	public function get_shop_msg_total($pterid)
 	{
 		$this->db->select('count(*) as total');

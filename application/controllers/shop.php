@@ -21,6 +21,7 @@ class Shop extends CI_Controller {
 			$pterid= $match[1];
 			$docClassid = $match[2];
 			$curPage = $match[3];
+			$numPerPage = 5; //每页显示个数
 			//判断数据逻辑合法性
 
 			//判断这三个数据是否是合法数据
@@ -35,6 +36,7 @@ class Shop extends CI_Controller {
 				$this->data['pterid'] = $pterid;
 				$this->data['docClassid']=$docClassid;
 				$this->data['curPage']=$curPage;
+				$this->data['docList']=$this->shop_mdl->get_shop_specialdoc($pterid,$docClassid, $curPage,$numPerPage);
 				$this->load->view('shop/doc_view',$this->data);
 			}
 		}

@@ -29,9 +29,30 @@
 			<a href="<?php echo base_url();?>place">云打印</a>
 		</span>
 		<span style="float:right;">
+			<div class="dropdown">
 			<?php 
 			if(isset($user)) 
-			{ ?>欢迎您，<?php echo $user; ?>
+			{ ?>
+				<a style="color:white;" data-toggle="dropdown" href=""><?php echo $user; ?><i class="icon-chevron-down icon-white"></i></a>
+			  	<ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					<li><a tabindex="-1" href="<?php echo base_url();?>printer/manage"><i class="icon-user"></i>打印店中心</a></li>
+					<li class="divider"></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printer/printhistory"><i class="icon-bullhorn"></i>全部任务</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printer/printhistory"><i class="icon-bell"></i>自行取印任务</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printer/printhistory"><i class="icon-briefcase"></i>校园送印任务</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printer/printhistory"><i class="icon-gift"></i>快递送印任务</a></li>
+				    <li class="divider"></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printer/documenthistory"><i class="icon-file"></i>印单文件</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printer/specialdoc"><i class="icon-star"></i>特色资料</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href="<?php echo base_url();?>printer/manage/info"><i class="icon-eye-open"></i>基本信息</a></li>
+				    <li><a tabindex="-1" href="<?php echo base_url();?>printer/manage/yewu"><i class="icon-globe"></i>业务管理</a></li>
+					<li><a tabindex="-1" href="<?php echo base_url();?>printer/manage/rating"><i class="icon-heart"></i>信誉评价</a></li>
+					<li><a tabindex="-1" href="<?php echo base_url();?>printer/manage/money"><i class="icon-calendar"></i>财务管理</a></li>
+					<li><a tabindex="-1" href="<?php echo base_url();?>printer/manage/password"><i class="icon-cog"></i>修改密码</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href='<?php echo base_url()."shop/doc/".$this->session->userdata('id')."-0-1";?>'><i class="icon-cog"></i>查看店铺</a></li>
+				</ul>
 			&nbsp;&nbsp;<?php echo anchor('printer/login/logout','退出'); 
 			}
 			else
@@ -43,6 +64,7 @@
 			echo "&nbsp;&nbsp;";
 			echo anchor('feedback','反馈留言');
 			?>
+			</div>
 		</span>
 	</div>
 </div>

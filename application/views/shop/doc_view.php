@@ -1,9 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
 <?php
-	$this->load->view('header');
+	if($this->session->userdata('user_type') == 'user')
+		$this->load->view('header');
+	else
+		$this->load->view('printer/header');
 ?>
 <?php
-	$docClass= array('所有类别','上大数学系历届试卷','上大数学系考研历届试卷','上大公共课历届试卷','上大数学系课程笔记');
+	$docClass= array('所有类别','考试资料','课程学习','其他资料');
 	$curPath= base_url()."shop/";
 	if(!isset($curPage))
 	{
@@ -15,17 +18,7 @@
 
 <div id='shop_container'>
 	<div id="shop_main">
-		<div id="shop_image">
-			<ul class="breadcrumb" style="float:left;background:transparent;">
-				<?php foreach ($location as $key => $value) { ?>
-					<li><a href="#"><?php echo $value ?></a> <span>/</span></li>
-				<?php } ?>
-				<li class="active"><?php echo $name ?></li>
-			</ul>
-		</div>
-		<div id="shop_word">
-			<marquee height="60" width="990"><?php echo $shopInfo->notice ?></marquee>
-		</div>
+		<?php $this->load->view('shop/shop_banner_view');?>
 		<div id="shop_body">
 			<div id="shop_services">
 				<ul id="listTab" class="navlist">
@@ -44,7 +37,19 @@
 					<div style="clear:both;"></div>
 				</div>
 				<div id="doc-list">
-					<?php echo "$docClassid-$curPage";?>
+					<table class="table table-hover manage_table">
+						<tr class="table_header">
+							<td>ID</td><td>文件名</td><td>大小</td><td>描述</td><td>页数</td><td>价格</td><td>操作</td>
+						</tr>
+						<?php foreach($docList as $doc):?>  
+							<tr>
+							<?php echo "<td>".$doc->id ."</td><td>".substr($doc->name, 0,30)."</td><td>"
+							.$doc->size."</td><td>".$doc->description."</td><td>".$doc->page."</td><td>"
+							.$doc->price."</td><td><a href=\"javascript:addSpecDocToPrinttask('".base_url()."','".$doc->id."','".$doc->name."','".$doc->url."')\" >添加到印单</a> | <a href=\"uploads/"
+							.$doc->url."\" >另存为</a></td>";?>
+							</tr>
+							<?php endforeach;?>
+					</table>
 				</div>
 				<div class="pagination btn" id="pagelist" style="float:right">
 					<ul>
@@ -90,36 +95,7 @@
 					</ul>
 				</div>
 			</div>
-			<div id="shop_details">
-				<div id="shop_details_head">
-					<h3><?php echo $shopInfo->name?></h3>
-					<input class="btn" type="button" value="添加收藏">
-					<input class="btn" type="button" value="投诉店铺">
-				</div>
-				<div style="heihgt:30px;line-height:30px;margin-left:15px;">
-					<span style="float:left">店铺信誉：</span>
-					<ul class="star-rating">
-						<li class="current-rating" style="width:<?php  echo $this->shop_mdl->get_shop_rating($pterid);?>"></li>
-						<?php 
-							if(!$this->shop_mdl->is_rating_shop($this->session->userdata('id'),$pterid))
-							{
-						?>
-						<li><a href="#" title="1分" class="one-star">1</a></li>
-						<li><a href="#" title="2分" class="two-stars">2</a></li>
-						<li><a href="#" title="3分" class="three-stars">3</a></li>
-						<li><a href="#" title="4分" class="four-stars">4</a></li>
-						<li><a href="#" title="5分" class="five-stars">5</a></li>
-						<?php
-							}
-						?>
-					</ul>
-				</div>
-				<ul id="shop_details_info">
-					<li>地址：<?php echo $shopInfo->address?></li>
-					<li>联系方式：<?php echo $shopInfo->contact?></li>
-					<li>店铺介绍：<?php echo $shopInfo->intro?></li>
-				</ul>
-			</div>
+			<?php $this->load->view('shop/details_view'); ?>
 			<div style="clear:both;"></div>
 		</div>
 	</div>
