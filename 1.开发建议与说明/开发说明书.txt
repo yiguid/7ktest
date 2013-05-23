@@ -128,3 +128,34 @@ reply				留言板回复信息表
 specialdoc			特色资料的信息表
 transaction			充值，消费信息表
 user				用户基本信息表
+
+====
+
+session保留字段
+
+'id' => $result->id,
+'username' => $result->username,
+'nickname' => $result->nickname,
+'user_mobile' => $result->mobile,
+'user_province' => $result->province,
+'user_city' => $result->city,
+'user_address' => $result->address,
+'user_receipt' => $result->receipt,
+'user_zipcode' => $result->zipcode,
+'user_receiver' => $result->receiver,
+'level' => $result->level,
+'user_type' => 'user'
+
+'id' => $result->id,
+'username' => $result->username,
+'nickname' => $result->name,
+'level' => $result->level,
+'user_type' => 'printer'
+
+$printtaskid = $this->session->userdata('printtaskid');
+
+$location = $this->session->userdata('location');
+$printshop = $this->session->userdata('printshop');
+
+$printer_id = $this->session->userdata('printer_id');
+$printer_name = $this->session->userdata('printer_name');

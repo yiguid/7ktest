@@ -36,7 +36,7 @@ class Specialdoc extends CI_Controller {
 	  {
 	   $this->data['error'] = $this->upload->display_errors();
 	   
-	   $this->load->view('printer/specialdoc', $this->data);
+	   redirect('printer/specialdoc','refresh');
 	  } 
 	  else
 	  {
