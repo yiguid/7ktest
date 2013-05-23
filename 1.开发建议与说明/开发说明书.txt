@@ -1,0 +1,130 @@
+开发说明：
+
+序言
+
+本项目使用PHP的CI框架，教程可参见：http://codeigniter.org.cn/user_guide/index.html
+数据库使用MySQL，数据库名7ktest，具体字段设计可参考根目录下database文件夹中newest - 7ktest.sql
+数据库字段设计将在后续章节中给出
+本项目还使用了bootstrap技术，相关css和js文件在根目录下的css和js文件夹中
+另外还使用了awesome font字体，用于展示各种小图标，可参考：http://bootcss.com
+项目管理使用github，工程地址：https://github.com/yiguid/7ktest/
+
+====
+
+文件目录说明
+
+application：项目主文件夹，里面包括ci框架的mvc结构
+css：项目样式结构信息
+database：数据库同步时，使用的sql文件放置位置。在对数据库有更改时，导出数据库结构和数据为sql文件，存放在newest - 7ktest.sql中，便于其他组员同步更新
+font：awesome font字体文件位置，后续如果需要加字体也可以一并放在里面
+images：项目图片放置文件夹，因采用metro风格和bootstrap技术，图片不是特别多
+js：脚本文件目录，其中common.js包含了主要的脚本，后续考虑按功能分开在不同文件中
+system：ci框架文件目录，如果需要修改ci框架本身时修改
+uploads：上传文件的放置目录，后续考虑按类型和日期分文件夹存放
+.htaccess：重定向配置文件，在以后根目录新添加文件夹且需要使用时，需要修改该文件。如加入awesome font时，新建了font目录，要修改该文件才能找到正确的路径位置。
+
+====
+
+model说明
+
+该部分对应的是根目录，application/models中的相关文件说明，为系统的主体属性部分，是基础
+现有model共10个
+document_mdl：普通文件模型，对应数据表document，用于存储和操作用户上传的文件
+favorite_mdl：收藏夹模型，对应数据表favorite，用于用户收藏店铺和店铺的特色资料
+feedback_mdl：留言和反馈模型，对应数据表message和reply，分别是用户留言和回应
+method_mdl：常用方法模型，现有的一个算法主要是通过用户输入的页码范围计算该范围包括多少页面
+printer_mdl：打印店模型，对应数据表printer，printer_meta，主要是打印店的基本信息和业务设置
+printtask_mdl：印单任务模型，对应数据表printtask和printtasksetting。其中printtasksetting存储一个印单任务的每个文档的详细设置，printtask记录一条用户的印单任务基本信息
+rating_mdl：评分模型，对应数据表rating，用于用户给店铺和特色资料评分，现只做了对店铺的某一次印单任务的评分
+shop_mdl：打印店页面模型，对应单独的打印店店铺页面，对应数据表有specialdoc，printer等多个，用于对店铺页面的设置和展示
+transaction_mdl：收支模型，用于用户的充值，消费，打印店的收费记录，对应数据表transaction
+user_mdl：用户模型，对应数据表user，包括用户登录，跟用户相关的document信息获取，用户的printtask获取等等
+
+====
+
+view说明
+
+该部分对应的是根目录，application/views中的相关文件说明，为系统的主体视图，前台展示的页面都来自于此
+现有view主要分几类，admin文件夹下的高级管理员view（还没做完），manage文件夹下是用户的个人中心页面（应该把其他相关的也移进来）
+printer文件夹下主要是打印店的页面，shop文件夹下是店铺主页的相关页面，不在文件夹中的基本都是普通用户的页面
+
+普通用户的页面包括前台印单设置部分的header，footer，login，最主要的是profile页面
+profile页面是用户在打印时的主界面，包括3个步骤，即打印店选取，文件上传和印单设置
+
+====
+
+controller说明
+
+该部分对应的是根目录，application/controllers中的相关文件说明，为系统的主体控制部分，特别重要
+
+其中admin文件夹下的都是高级管理员的待添加功能，还没做完
+
+ajax文件夹下是前台页面使用ajax技术时主要的控制器，现有包括打印时使用的printajax和店铺页面使用的shopajax
+
+printer文件夹下是打印店中心操作时的主要控制器，包括登陆，打印店中心控制，印单任务查询，特色资料上传等
+
+不在文件夹中的控制器主要有：
+documenthistory 用户文件历史
+favorite 用户收藏展示
+feed 用户订阅
+feedback 反馈信息
+location 店铺位置展示
+login 登陆功能
+manage 用户个人中心
+place 店铺城市展示
+printhistory 印单历史
+printshop 按打印店名获取
+printtask 印单任务控制逻辑
+regist 注册
+search 搜索功能
+shop 店铺页面
+upload 用户上传文件控制逻辑
+welcome 系统欢迎页控制逻辑，现在是展示profile页面
+
+====
+
+主要业务流程相关的代码文件说明
+
+			model 				view 			controller
+用户登录：	user_mdl 			login			login
+用户注册：	user_mdl 			login			regist
+用户打印：	printtask_mdl等 	profile 		welcome,upload,printtask等
+用户中心：	多个				manage			manage
+地址选择：	printer_mdl 		place			place,printshop
+
+打印店登录：printer_mdl
+任务后台：	printer_mdl等		printer/*		printer/manage
+店铺首页：	shop_mdl 			shop文件夹		shop
+
+====
+
+新功能添加说明
+
+1.看是否已有相关model，添加或修改功能方法；如没有model，创建新的model
+2.在相应位置添加或修改view，用于页面展示
+3.添加或修改controller，控制流程
+
+如果需要使用ajax时，在view界面添加javascript动作，在js文件夹中common.js下添加具体方法，并通过jquery启动ajax
+在controllers/ajax下添加或修改控制器，添加后台操作控制流程，结合相关model
+
+====
+
+数据库说明
+
+ci_sessions			ci框架中cart内置方法使用的暂存session信息表
+
+delivertask			印单送印任务信息表
+字段信息：id，printerid，userid，printtaskid，starttime，endtime，status，comment
+
+document			用户上传的文件信息表
+favorite			用户收藏的店铺，文档信息表
+message				留言板留言信息表
+printer 			打印店基本信息表
+printer_meta		打印店业务，费用详细设置信息表
+printtask			印单任务信息表
+printtasksetting	印单任务中文件设置信息表
+rating				用户对打印店，特色资料的评价信息表
+reply				留言板回复信息表
+specialdoc			特色资料的信息表
+transaction			充值，消费信息表
+user				用户基本信息表
