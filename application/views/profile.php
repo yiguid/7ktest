@@ -127,6 +127,7 @@ $this->load->view('header');
 						$num = 0;
 						foreach ($this->cart->contents() as $items){
 							$num++;
+							if(!isset($items['options']['isspecialdoc'])){
 							?>
 					<tr>
 						<td><div style="padding-top:2px;"><?php echo $num;?></div></td>
@@ -150,6 +151,31 @@ $this->load->view('header');
 						<td><div style="padding-top:6px;"><a onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" href="javascript:edit_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-edit"></i></a> <a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
 					</tr>
 					<?php
+							}else{
+					?>
+					<tr>
+						<td><div style="padding-top:2px;"><?php echo $num;?></div></td>
+						<td>
+							<input type="hidden" id="rowid<?php echo $num;?>" value="<?php echo $items['rowid']?>" />
+							<input type="hidden" id="documentid<?php echo $num;?>" value="<?php echo $items['id']?>" />
+							<div id="name<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['name'];?></div>
+						</td>
+						<td>
+							<div style="padding-top:2px;">特色资料介绍：</div>
+						</td>
+						<td>
+							<div id="description<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['options']['description'];?></div>
+						</td>
+						<td><div id="page<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['options']['page'];?></div></td>
+						<td><input class="w40" type="text" value="<?php echo $items['qty'];?>" maxlength="2" size="1" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/></td>
+						<td>
+							
+						</td>
+						<td><div id="cost<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['price'];?></div></td>
+						<td><div style="padding-top:6px;"><a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
+					</tr>
+					<?php
+							}
 						}
 					?>
 					</table>
@@ -209,7 +235,7 @@ $this->load->view('header');
 			            </div>
 			        </ul>
 			        <ul class="campus pading6">
-						<div class="span8"><span id="receiver">收货人名：<input class="span2" type="text" id="receiver" name="reciever" 
+						<div class="span8"><span id="receiver">收货人名：<input class="span2" type="text" id="receiver" name="receiver" 
 																			value="<?php echo $this->session->userdata('user_receiver');?>"/></span> 接收电话：<input class="span2" type="text" id="mobile" name="mobile" value="<?php echo $this->session->userdata('user_mobile');?>"/></div>
 						<div class="span8"><span id="zipcode">邮政编码：<input class="span2" type="text" id="zipcode" name="zipcode" 
 																				value="<?php echo $this->session->userdata('user_zipcode');?>" /></span>

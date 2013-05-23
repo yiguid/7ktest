@@ -83,7 +83,7 @@ class Documenthistory extends CI_Controller {
 	      'name' => $this->input->post('documentname'),
 	      'options' => array('papersize' => $this->input->post('papersize'),'isdoubleside' => $this->input->post('isdoubleside'),'range' => $this->input->post('range'),'zhuangding' => $this->input->post('zhuangding'))
 	    );
-	   $this->cart->insert($doc_data);
+	   	$this->cart->insert($doc_data);
 		redirect(base_url().'welcome');
 	}
 }

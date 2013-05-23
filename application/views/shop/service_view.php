@@ -1,7 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
-<?php
-	$this->load->view('header');
-?>
+<?php $this->load->view('shop/shop_header_view');?>
 <?php
 	$shopName='北大图书馆一楼打印店';
 	$docClass= array('所有类别','上大数学系历届试卷','上大数学系考研历届试卷','上大公共课历届试卷','上大数学系课程笔记');

@@ -21,6 +21,7 @@ class Printtask extends CI_Controller {
 	{
 		$this->data['printtaskinfo'] = $this->printer_mdl->get_user_printtask($this->session->userdata('id'), $this->input->get('id'));
 		$this->data['documents'] = $this->printer_mdl->get_user_printtask_documents($this->session->userdata('id'), $this->input->get('id'));
+		$this->data['specialdocs'] = $this->printer_mdl->get_user_printtask_specialdocs($this->session->userdata('id'), $this->input->get('id'));
 		$this->load->view('printer/printtask',$this->data);
 	}
 }

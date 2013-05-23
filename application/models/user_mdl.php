@@ -175,6 +175,18 @@ class User_mdl extends CI_Model {
 		return $query->result();
 	}
 
+	public function get_user_printtask_specialdocs($userid, $id)
+	{
+		$this->db->select('*, printtasksetting.cost as cost, specialdoc.page as page');
+		$this->db->from('printtasksetting');
+		$this->db->join('printtask','printtask.id=printtasksetting.printtaskid');
+		$this->db->join('specialdoc','specialdoc.id=printtasksetting.documentid');
+		$this->db->where('printtask.id',$id);
+		$this->db->where('printtask.userid',$userid);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	
 	//删除用户
 	public function delete_user($username)

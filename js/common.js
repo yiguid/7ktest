@@ -250,6 +250,15 @@ function add_printtask(){
 		document.getElementById('add_printtask_form').submit();
 }
 
+function addSpecDocToPrinttask(url,documentid,printerid,printername){
+	$.post(url + "ajax/shopajax/add_spec_doc_to_printtask", {
+		documentid : documentid,
+		printerid : printerid,
+		printername : printername
+	}, function(data) {
+		alert(data);
+	});
+}
 
 function warningChange(){
 	alert("请勿修改此项！");

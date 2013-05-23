@@ -39,6 +39,16 @@ $this->load->view('menu');
 				</tr>  
 				<?php endforeach;?>
 			</table>
+			<table class="manage_table">
+				<tr class="table_header">
+					<td>文件名</td><td>描述</td><td>页数</td><td>份数</td><td>费用</td>
+				</tr>
+				<?php foreach($specialdocs as $specdoc):?>  
+				<tr>
+					<?php echo "<td>".substr($specdoc->name, 0,30) ."</td><td>".$specdoc->zhuangding."</td><td>".$specdoc->page."</td><td>".$specdoc->fenshu."</td><td>".$specdoc->cost."</td>";?>
+				</tr>  
+				<?php endforeach;?>
+			</table>
 			<div style="text-align:left;margin:20px;">
 				<div>发票信息：<?php echo $printtaskinfo[0]->receipt ;?></div>
 				<div>备注信息：<?php echo $printtaskinfo[0]->remark ;?></div>

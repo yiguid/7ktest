@@ -1,10 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
-<?php
-	if($this->session->userdata('user_type') == 'user')
-		$this->load->view('header');
-	else
-		$this->load->view('printer/header');
-?>
+<?php $this->load->view('shop/shop_header_view');?>
 <?php
 	$docClass= array('所有类别','考试资料','课程学习','其他资料');
 	$curPath= base_url()."shop/";
@@ -45,8 +39,15 @@
 							<tr>
 							<?php echo "<td>".$doc->id ."</td><td>".substr($doc->name, 0,30)."</td><td>"
 							.$doc->size."</td><td>".$doc->description."</td><td>".$doc->page."</td><td>"
-							.$doc->price."</td><td><a href=\"javascript:addSpecDocToPrinttask('".base_url()."','".$doc->id."','".$doc->name."','".$doc->url."')\" >添加到印单</a> | <a href=\"uploads/"
-							.$doc->url."\" >另存为</a></td>";?>
+							.$doc->price."</td><td>";
+							if($this->session->userdata('user_type') == 'user'){
+								echo "<a href=\"javascript:addSpecDocToPrinttask('".base_url()
+								."','".$doc->id."','".$pterid."','".$name."')\" >印一份</a>";
+							}else{
+								echo "查看";
+							}
+							
+							echo "</td>";?>
 							</tr>
 							<?php endforeach;?>
 					</table>

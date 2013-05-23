@@ -15,6 +15,19 @@ class Shop_mdl extends CI_Model {
 
 	}
 
+	public function get_specialdoc_info($documentid){
+		$this->db->select('*');
+		$this->db->from('specialdoc');
+		$this->db->where('id',$documentid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			$row = $query->row_array();
+			return $row;
+		}
+		return "error";
+	}
+
 	public function get_shop_specialdoc($pterid,$docClassid,$curPage,$numPerPage)
 	{
 		$this->db->select('*');

@@ -30,7 +30,7 @@ $this->load->view ( 'printer/menu' );
                              <td>" . $printhistory->finishtime . "</td>
                              <td>" . $printhistory->cost . "</td>";
 					?>
-					<td>	<a href="printtask?id=<?php echo $printhistory->id; ?>">查看</a>	</td>
+					<td><a href="<?php echo base_url()."printer/printtask?id=".$printhistory->id; ?>">查看</a>	</td>
 		</tr>  
   
 					<?php endforeach;?>  

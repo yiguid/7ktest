@@ -208,7 +208,7 @@ class Printer_mdl extends CI_Model {
 	
 	public function get_user_printtask($printerid, $id)
 	{
-		$this->db->select('printtask.id as id, status, printtask.address as address, printtask.mobile as mobile, delivertime, remark, printtask.receipt as receipt, printtask.cost as cost,user.nickname as username, count(printtasksetting.id) as documentnum,createtime,finishtime');
+		$this->db->select('printtask.id as id, status, printtask.address as address, printtask.mobile as mobile, delivertime, remark, method, printtask.receiver as receiver, printtask.receipt as receipt, printtask.cost as cost,user.nickname as username, count(printtasksetting.id) as documentnum,createtime,finishtime');
 		$this->db->from('printtask');
 		$this->db->join('user','user.id=printtask.userid');
 		$this->db->join('printtasksetting','printtask.id=printtasksetting.printtaskid');
@@ -224,6 +224,18 @@ class Printer_mdl extends CI_Model {
 		$this->db->from('printtasksetting');
 		$this->db->join('printtask','printtask.id=printtasksetting.printtaskid');
 		$this->db->join('document','document.id=printtasksetting.documentid');
+		$this->db->where('printtask.id',$id);
+		$this->db->where('printtask.printerid',$printerid);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	public function get_user_printtask_specialdocs($printerid, $id)
+	{
+		$this->db->select('*, printtasksetting.cost as cost');
+		$this->db->from('printtasksetting');
+		$this->db->join('printtask','printtask.id=printtasksetting.printtaskid');
+		$this->db->join('specialdoc','specialdoc.id=printtasksetting.documentid');
 		$this->db->where('printtask.id',$id);
 		$this->db->where('printtask.printerid',$printerid);
 		$query = $this->db->get();
