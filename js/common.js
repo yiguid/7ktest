@@ -263,3 +263,20 @@ function addSpecDocToPrinttask(url,documentid,printerid,printername){
 function warningChange(){
 	alert("请勿修改此项！");
 }
+function collect(url,userid,pterid,type)
+{
+	$.post(url + "ajax/shopajax/collect", {
+		userid : userid,
+		pterid : pterid,
+		type : type
+	}, function(data) {
+		if(data == 1)
+		{
+			document.getElementById('collectbtn').value="已收藏";
+		}
+		else{
+			alert("收藏失败");
+		}
+	});
+
+}

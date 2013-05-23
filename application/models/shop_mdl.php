@@ -141,15 +141,15 @@ class Shop_mdl extends CI_Model {
 		}
 		return 0;	
 	}
-	public function write_rating($userid,$pterid,$type,$rating)
+	public function rate($userid,$pterid,$type,$rating)
 	{
-		$data = array(	'type' => $type,
-						'content' => $content,
-						'date'=>$date,
-						'time'=>$time,
-						'uid'=>$uid,
-						'pterid'=>$pterid
+		$data = array(	'userid' => $userid,
+						'destid' => $pterid,
+						'type'=>$type,
+						'rating'=>$rating
 				);
+		$this->db->insert('rating',$data);
+		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
 	}
 	public function is_rating_shop($userid,$pterid)
 	{
@@ -165,5 +165,30 @@ class Shop_mdl extends CI_Model {
 			return true;
 		}
 		return false;
+	}
+	public function is_add_favorite($userid,$pterid,$type)
+	{
+		//0表示文档，1表示店铺
+		$this->db->select('*');
+		$this->db->from('favorite');
+		$this->db->where('userid',$userid);
+		$this->db->where('favoriteid',$pterid);
+		$this->db->where('type',$type);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			return true;
+		}
+		return false;
+	}
+	public function add_favorite($userid,$pterid,$type)
+	{
+		//0表示文档，1表示店铺
+		$data = array(	'type' => $type,
+						'userid' => $userid,
+						'favoriteid'=>$pterid
+				);
+		$this->db->insert('favorite',$data);
+		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
 	}
 }

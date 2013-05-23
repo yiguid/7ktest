@@ -49,5 +49,33 @@ class Shopajax extends CI_Controller {
 		$this->cart->insert($doc_data);
 		echo "添加成功！";
 	}
+	public function collect()
+	{
+		extract($_REQUEST);
+		if($this->auth->logged_in())
+		{
+			 $this->shop_mdl->add_favorite($userid,$pterid,$type);
+			 echo "1";
+
+		}
+		else
+		{
+			echo "0";
+		}
+	}
+	public function rate()
+	{
+		extract($_REQUEST);
+		if($this->auth->logged_in())
+		{
+			 $this->shop_mdl->rate($userid,$pterid,$type,$rating);
+			 echo "1";
+
+		}
+		else
+		{
+			echo "0";
+		}
+	}
 }
 ?>
