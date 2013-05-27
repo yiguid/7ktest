@@ -23,6 +23,7 @@
 					<?php  } ?>
 				</div>
 				<div style="heihgt:30px;line-height:30px;margin-left:15px;">
+					<div>
 					<span style="float:left">店铺信誉：</span>
 					<span>
 						<script type="text/javascript">
@@ -80,6 +81,7 @@
          					 <span rate="5" class="icon-star"></span>
 		        		</span>
 					</span>
+					</div>
 				</div>
 				<div class="shop_details_info">地址：<?php echo $shopInfo->address?></div>
 				<div class="shop_details_info">联系方式：<?php echo $shopInfo->contact?></div>

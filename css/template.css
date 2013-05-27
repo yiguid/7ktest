@@ -23,7 +23,7 @@ html {
 }
 
 body {
-	font-family: Helvetica,Arial,sans-serif;
+/*	font-family: Helvetica,Arial,sans-serif;*/
 	line-height: 1.3em;
 	margin: 0px 0px 0px 0px;
 	font-size: 12px;
@@ -454,6 +454,7 @@ a.readon {
 #printer_list{
 	width:200px;
 	height:568px;
+	position: relative;
 	float:left;
 	background-color: #F0F0F0;
 	border-left:6px solid #4889F0;
@@ -461,6 +462,7 @@ a.readon {
 	border-right: 1px solid #4889F0;
 	border-bottom: 1px solid #4889F0;
 	margin-right: 10px;
+
 }
 
 #other_printer{
@@ -477,7 +479,7 @@ a.readon {
 .printer_more{
 	min-height: 60px;
 	line-height: 60px;
-	font-size: 20px;
+	font-size: 14px;
 	color: white;
 	margin:4px;
 	background-color: #4889F0;
@@ -490,7 +492,7 @@ a.readon {
 .profile_title{
 	text-align:left;
 	line-height:20px;
-	font-size:20px;
+	font-size:14px;
 	color: #4889F0;
 	font-weight:bold;
 	vertical-align: middle;
@@ -506,7 +508,7 @@ a.readon {
 	width:770px;
 	height:310px;
 	float:left;
-	border-left:6px solid #4889F0;
+	border-left:4px solid #4889F0;
 	border-top: 1px solid #4889F0;
 	border-right: 1px solid #4889F0;
 	border-bottom: 1px solid #4889F0;
@@ -537,7 +539,7 @@ a.readon {
 
 .menu_title{
 	text-align: left;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
 	margin:10px 0 0 20px;
 }
@@ -589,7 +591,7 @@ a.readon {
 	width:770px;
 	height:258px;
 	float:left;
-	border-left:6px solid #4889F0;
+	border-left:4px solid #4889F0;
 	border-right: 1px solid #4889F0;
 	border-bottom: 1px solid #4889F0;
 }
@@ -637,7 +639,7 @@ a.readon {
 #shop_services{
 	width: 684px;
 	float:left;
-	border-right: 6px solid #4889F0;
+	border-right: 4px solid #4889F0;
 	min-height: 500px;
 }
 #shop_details{
@@ -721,4 +723,37 @@ a.readon {
 	padding: 14px 30px;
 	background-color: #4889F0;
 	color: white;
+}
+
+#profile_right{
+	width:770px;
+	float:left;
+	position: relative;
+}
+
+#mask_left {
+	background-color: #eee;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	margin-top: 70px;
+	width: 200px;
+	height:500px;
+	filter:alpha(Opacity=90);
+	-moz-opacity:0.9;
+	opacity: 0.9;
+	z-index:100; 
+}
+
+#mask_right {
+	background-color: #eee;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 774px;
+	height:570px;
+	filter:alpha(Opacity=90);
+	-moz-opacity:0.9;
+	opacity: 0.9;
+	z-index:100; 
 }

@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/template.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/pagination.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/datetimepicker.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>css/yahei.css" type="text/css" />
 <link href="<?php echo base_url();?>css/bootstrap/bootstrap.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/font-awesome.css" type="text/css" />
 <script src="<?php echo base_url();?>js/jquery.min.js" type="text/javascript"></script>

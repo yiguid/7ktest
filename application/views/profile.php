@@ -4,11 +4,16 @@ $this->load->view('header');
 <div id="container">
 	<div id="profile">
 		<div id="printer_list">
+			<div id="mask_left" <?php if($this->session->userdata('printer_name') == "" ) echo "style=\"visibility: hidden;\"";?> >
+				<div style="margin-top:150px; padding: 10px 0px; background-color:white; font-size:16px;">
+					<a href="javascript:rechoosePrinter()">重新选择打印店</a>
+				</div>
+			</div>
 			<div class="profile_title">
 				第一步：
 				选择打印店
 			</div>
-			<div style="text-align:right;">您现在所在打印店：  <i class='icon-map-marker'></i><?php echo anchor('place','切换地址'); ?></div>
+			<div style="text-align:left;margin-left:4px;">您现在所在打印店：  <i class='icon-map-marker'></i><?php echo anchor('place','切换地址'); ?></div>
 				<div id="current" style="padding-left:4px;text-align:left;font-weight:bold;"><?php echo $this->session->userdata('printer_name')?></div>
 			<div class="bk10"></div>
 			<div class="divider"></div>
@@ -56,6 +61,12 @@ $this->load->view('header');
 				更多打印店...
 			</div>
 		</div>
+		<div id="profile_right">
+			<div id="mask_right" <?php if($this->session->userdata('printer_name') != "" ) echo "style=\"visibility: hidden;\"";?> >
+				<div style="margin-top:250px; padding: 10px 0px; background-color:white; font-size:16px;">
+					<a href="#">亲，请先选择打印店噢~ 别着急~ </a>
+				</div>
+			</div>
 		<div id="file_manage">
 			<div class="profile_title">
 				第二步：
@@ -270,6 +281,7 @@ $this->load->view('header');
 				</div>
 			</form>
 			</div>
+		</div>
 		</div>
 	</div>
 </div>

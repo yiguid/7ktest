@@ -280,3 +280,8 @@ function collect(url,userid,pterid,type)
 	});
 
 }
+
+function rechoosePrinter(){
+	document.getElementById('mask_left').style.visibility = "hidden";
+	document.getElementById('mask_right').style.visibility = "visible";
+}
