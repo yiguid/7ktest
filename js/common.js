@@ -281,7 +281,14 @@ function collect(url,userid,pterid,type)
 
 }
 
-function rechoosePrinter(){
-	document.getElementById('mask_left').style.visibility = "hidden";
-	document.getElementById('mask_right').style.visibility = "visible";
+function rechoosePrinter(total){
+	if(total > 0){
+		if(confirm("重新选择打印店，将清空现有印单及设置，是否继续?")==1){
+			document.getElementById('mask_left').style.visibility = "hidden";
+			document.getElementById('mask_right').style.visibility = "visible";
+		}
+	}else{
+		document.getElementById('mask_left').style.visibility = "hidden";
+		document.getElementById('mask_right').style.visibility = "visible";
+	}
 }

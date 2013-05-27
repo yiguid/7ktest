@@ -6,7 +6,7 @@ $this->load->view('header');
 		<div id="printer_list">
 			<div id="mask_left" <?php if($this->session->userdata('printer_name') == "" ) echo "style=\"visibility: hidden;\"";?> >
 				<div style="margin-top:150px; padding: 10px 0px; background-color:white; font-size:16px;">
-					<a href="javascript:rechoosePrinter()">重新选择打印店</a>
+					<a href="javascript:rechoosePrinter('<?php echo $this->cart->total_items();?>')">重新选择打印店</a>
 				</div>
 			</div>
 			<div class="profile_title">
