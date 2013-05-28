@@ -272,6 +272,7 @@ function collect(url,userid,pterid,type)
 	}, function(data) {
 		if(data == 1)
 		{
+			document.getElementById('collectbtn').disabled="disabled";
 			document.getElementById('collectbtn').value="已收藏";
 		}
 		else{
@@ -279,4 +280,45 @@ function collect(url,userid,pterid,type)
 		}
 	});
 
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+function rate(url,userid,destid,type,rating)
+{
+		$.post(url + "ajax/shopajax/rate", {
+		userid : userid,
+		destid : destid,
+		type : type,
+		rating: rating
+	}, function(data) {
+		if(data == -1)
+		{
+			alert("请您先登录");
+		}
+		else{
+			document.getElementById('shopStarUl').title="平均"+data+"分";
+			document.getElementById('shopAvg').style.width=data+"px";
+			$.each($('.starli'),function(i,obj){
+				obj.style.display ="none";
+			});
+		}
+	});
+=======
+=======
+>>>>>>> f6e94af7737ee877e8256e8e4f97c34c8bc381aa
+
+function rechoosePrinter(total){
+	if(total > 0){
+		if(confirm("重新选择打印店，将清空现有印单及设置，是否继续?")==1){
+			document.getElementById('mask_left').style.visibility = "hidden";
+			document.getElementById('mask_right').style.visibility = "visible";
+		}
+	}else{
+		document.getElementById('mask_left').style.visibility = "hidden";
+		document.getElementById('mask_right').style.visibility = "visible";
+	}
+<<<<<<< HEAD
+>>>>>>> f6e94af7737ee877e8256e8e4f97c34c8bc381aa
+=======
+>>>>>>> f6e94af7737ee877e8256e8e4f97c34c8bc381aa
 }

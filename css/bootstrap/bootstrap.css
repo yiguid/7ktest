@@ -223,8 +223,8 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+/*  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-size: 12px;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
@@ -760,23 +760,23 @@ h6 small {
 h1,
 h2,
 h3 {
-  line-height: 40px;
+  line-height: 22px;
 }
 
 h1 {
-  font-size: 38.5px;
+  font-size: 20px;
 }
 
 h2 {
-  font-size: 31.5px;
+  font-size: 18px;
 }
 
 h3 {
-  font-size: 24.5px;
+  font-size: 16px;
 }
 
 h4 {
-  font-size: 17.5px;
+  font-size: 14px;
 }
 
 h5 {

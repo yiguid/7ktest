@@ -125,6 +125,29 @@ class Shop_mdl extends CI_Model {
 		return 0;
 	}
 
+	public function get_avg_rating($destid,$type)
+	{
+		//0表示文档评价，1表示店铺评价
+		$this->db->select('avg(rating) as score');
+		$this->db->from('rating');
+		$this->db->where('destid',$destid);
+		$this->db->where('type',$type);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				if($row->score == NULL){
+					return 0;
+				}
+				else
+				{
+					return $row->score;
+				}
+			}
+		}
+		return 0;
+	}
+
 	public function get_doc_rating($docid)
 	{
 		//0表示文档评价，1表示店铺评价
