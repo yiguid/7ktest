@@ -68,13 +68,12 @@ class Shopajax extends CI_Controller {
 		extract($_REQUEST);
 		if($this->auth->logged_in())
 		{
-			 $this->shop_mdl->rate($userid,$pterid,$type,$rating);
-			 echo "1";
-
+			 $this->shop_mdl->rate($userid,$destid,$type,$rating);
+			 echo round($this->shop_mdl->get_avg_rating($destid,$type)*16);
 		}
 		else
 		{
-			echo "0";
+			echo "-1";
 		}
 	}
 }

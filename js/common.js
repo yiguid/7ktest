@@ -272,6 +272,7 @@ function collect(url,userid,pterid,type)
 	}, function(data) {
 		if(data == 1)
 		{
+			document.getElementById('collectbtn').disabled="disabled";
 			document.getElementById('collectbtn').value="已收藏";
 		}
 		else{
@@ -280,7 +281,27 @@ function collect(url,userid,pterid,type)
 	});
 
 }
-
+function rate(url,userid,destid,type,rating)
+{
+	$.post(url + "ajax/shopajax/rate", {
+		userid : userid,
+		destid : destid,
+		type : type,
+		rating: rating
+	}, function(data) {
+		if(data == -1)
+		{
+			alert("请您先登录");
+		}
+		else{
+			document.getElementById('shopStarUl').title="平均"+data+"分";
+			document.getElementById('shopAvg').style.width=data+"px";
+			$.each($('.starli'),function(i,obj){
+				obj.style.display ="none";
+			});
+		}
+	});
+}
 function rechoosePrinter(total){
 	if(total > 0){
 		if(confirm("重新选择打印店，将清空现有印单及设置，是否继续?")==1){
