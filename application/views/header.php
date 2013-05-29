@@ -39,7 +39,7 @@
 	<div id="menu_list">
 		<div style="float:left;">	
 			<a style="color:white;" href="<?php echo base_url();?>place">云打印</a>
-			<a href="<?php echo base_url();?>printer/login">云打印店</a>
+			<a style="color:#D6E4FB;" href="<?php echo base_url();?>printer/login">云打印店</a>
 		</div>
 		<div style="float:right;">
 			<div class="dropdown">
@@ -75,16 +75,16 @@
 					</ul>
 				</span>
 				&nbsp;&nbsp;
-			<?php echo anchor('login/logout','退出'); 
+			<?php echo anchor('login/logout','退出','style="color:#D6E4FB;"'); 
 			}
 			else
 			{
-				echo anchor('regist','注册');
+				echo anchor('regist','注册','style="color:#D6E4FB;"');
 				echo "&nbsp;&nbsp;";
-				echo anchor('login','登录'); 
+				echo anchor('login','登录','style="color:#D6E4FB;"'); 
 			}
 			echo "&nbsp;&nbsp;";
-			echo anchor('feedback','反馈留言');
+			echo anchor('feedback','反馈留言','style="color:#D6E4FB;"');
 			?>
 			</div>
 		</div>
