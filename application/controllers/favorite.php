@@ -14,10 +14,16 @@ class Favorite extends CI_Controller {
 		{
 			redirect('login','refresh');
 		}
+		$this->load->model('user_mdl');
 	}
 	
 	public function index()
 	{ 
-		$this->load->view('contruction',$this->data);
+		$userid = $this->session->userdata('id');
+		$this->data['userid']= $userid;
+		$this->data['shop_entries']=$this->user_mdl->get_user_favorite_num($userid,1);
+		$this->data['doc_entries']=$this->user_mdl->get_user_favorite_num($userid,0);
+		$this->data['pageNum'] = 1;
+		$this->load->view('favorite',$this->data);
 	}
 }

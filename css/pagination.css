@@ -1,24 +1,24 @@
-@charset "utf-8";      
-#pagination a {
+@charset "utf-8";    
+.jpagination a {
     text-decoration: none;
 	border: 1px solid #AAE;
 	color: #15B;
 }
 
-#pagination a, .pagination span {
+.jpagination a, .jpagination span {
     display: inline-block;
     padding: 0.1em 0.4em;
     margin-right: 5px;
 	margin-bottom: 5px;
 }
 
-#pagination .current {
+.jpagination .jcurrent {
     background: #26B;
     color: #fff;
 	border: 1px solid #AAE;
 }
 
-#pagination .current.prev, .pagination .current.next{
+.jpagination .jcurrent.jprev, .jpagination .jcurrent.jnext{
 	color:#999;
 	border-color:#999;
 	background:#fff;

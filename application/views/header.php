@@ -10,11 +10,13 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/yahei.css" type="text/css" />
 <link href="<?php echo base_url();?>css/bootstrap/bootstrap.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/font-awesome.css" type="text/css" />
+
 <script src="<?php echo base_url();?>js/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url();?>js/common.js" type="text/javascript"></script>
 <script src="<?php echo base_url();?>js/bootstrap/bootstrap.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery.pagination.js"></script>
 <!--[if lte IE 6]>
 <link href="css/ieonly.css" rel="stylesheet" type="text/css" />
 <![endif]-->

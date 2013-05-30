@@ -249,5 +249,38 @@ class User_mdl extends CI_Model {
 		else 
 			return FALSE;
 	}
+	public function get_user_favoriteshop($start,$line,$userid)
+	{
+		$sql = "select name,location,online,servicestart,serviceend,address,contact ".
+		"from printer where id in (select favoriteid from favorite where type =1 and userid = ?) ".
+		"limit ?, ?";
+		$query=$this->db->query($sql, array($userid, $start, $line));
+		return $query->result();
+	}
+	public function get_user_favoritedoc($start,$line,$userid)
+	{
+		$sql = "select specialdoc.id as docid, specialdoc.name as docname,size,price,page,description,printer.id as pterid,printer.name as ptername ".
+				"from specialdoc,printer ".
+				"where specialdoc.uploadpterid=printer.id ".
+				"and specialdoc.id in (select favoriteid from favorite where type =0 and userid = ?) ".
+				"limit ?, ?";
+		$query=$this->db->query($sql, array($userid, $start, $line));
+		return $query->result();
+	}
+	public function get_user_favorite_num($userid,$type)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('favorite');
+		$this->db->where('userid',$userid);
+		$this->db->where('type',$type);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
+		return 0;
+	}
 }
 ?>
