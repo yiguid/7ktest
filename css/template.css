@@ -101,7 +101,7 @@ body {
 }
 
 .feedback_reply{
-	margin:20px 20px 20px 50px;
+	margin:0px 20px 0px 50px;
 	padding:10px;
 	border: 1px solid #cccccc;
 	background: #ccfffe;
@@ -129,28 +129,26 @@ body {
 
 #login_left_left{
 	float:left;
-	background-color: #ddd;
 	width:250px;
 	height:530px;
 	margin:0px 25px 0 0;
 }
 
 #login_left_title{
-	background-color: white;
 	height:100px;
 }
 
 #login_title{
 	color: #dc442e;
 	text-align: left;
-	font-size: 24px;
+	font-size: 22px;
 	margin-bottom: 20px;
 }
 
 #login_title_content{
 	color: #666;
 	text-align: left;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 #login_left_mid_img{
@@ -159,7 +157,6 @@ body {
 
 #login_left_right{
 	float:left;
-	background-color: #ddd;
 	width:290px;
 	height:530px;
 }
@@ -169,7 +166,6 @@ body {
 }
 
 .login_left_foot{
-	background-color: white;
 	height:130px;
 }
 
@@ -177,13 +173,13 @@ body {
 	padding:10px 0;
 	text-align: left;
 	color: #666;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .foot_content{
 	text-align: left;
 	color: #aaa;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 #login_right{
@@ -192,6 +188,24 @@ body {
 	padding:30px;
 	margin:35px 0 0 0px;
 	border:1px solid #ddd;
+}
+
+.btn-metro-orange{
+	border: 0px;
+	border-radius:4px;
+	color: white;
+	padding:2px 14px;
+	font-size: 14px;
+	background-color: #f89406;
+}
+
+.btn-metro-blue{
+	border: 0px;
+	border-radius:4px;
+	color: white;
+	padding:6px 10px;
+	margin:6px 2px;
+	background-color: #4889F0;
 }
 
 .btn-metro{

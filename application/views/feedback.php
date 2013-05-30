@@ -18,7 +18,7 @@
 			$typearr=array('催单','网站错误','功能建议','投诉');
 			foreach($msglist as $row)
 			{
-				echo "<div class='btn-info feedback_message'>";
+				echo "<div class='btn-metro-blue feedback_message'>";
 				echo "<b>[".$typearr[$row->type - 1]."]</b>"."&nbsp;";
 				echo "<i class='icon-comment icon-white'></i>".$row->content;
 				echo '<br/>';
@@ -26,13 +26,13 @@
 				echo $row->date." ";
 				echo $row->time." ";
 				if($this->auth->logged_in()){
-					echo anchor("feedback/reply/$row->id", "[<i class='icon-retweet icon-white'></i>回复]");
+					echo anchor("feedback/reply/$row->id", "[<i class='icon-retweet icon-white'></i>回复]",'style="color:#D6E4FB;"');
 				}
 				echo "</div>";
 				$rpylist = $this->feedback_mdl->get_msg_all_rpy($row->id);
 				foreach($rpylist as $rpy)
 				{
-					echo "<div class='btn-warning feedback_reply'>";
+					echo "<div class='btn-metro-orange feedback_reply'>";
 					echo "<i class='icon-comment icon-white'></i>".$rpy->content."<br/>";
 					echo "<i class='icon-user'></i>".$rpy->nickname."&nbsp;&nbsp;&nbsp;";
 					echo $rpy->date." ";
@@ -113,8 +113,8 @@
 			     <textarea name="msgcontent" id="msgcontent"></textarea>
 			</div>
 			<div style="padding:10px;">
-			    <button class="btn btn-primary" type="submit" name="submit">发表留言</button>
-			    <button class="btn btn-inverse" type="reset" name="reset">重写</button>
+			    <button class="btn-metro" type="submit" name="submit">发表留言</button>
+			    <button class="btn-metro" type="reset" name="reset">重写</button>
 			</div>
 			</form>
 		</div>

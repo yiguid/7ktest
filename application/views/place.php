@@ -22,17 +22,17 @@ $this->load->view('header');
 	<div id="profile">
 		<div style="padding:20px;">
 			<a style="color:white;" href="<?php echo base_url();?>location/at/beijing"
-				class="btn btn-warning btn-large"
+				class="btn-metro-orange"
 				onmouseover= "get_printshop_by_location('<?php echo base_url();?>','beijing')">北京</a>
 			<a style="color:white;" href="<?php echo base_url();?>location/at/shanghai"
-				class="btn btn-warning btn-large"
+				class="btn-metro-orange"
 				onmouseover= "get_printshop_by_location('<?php echo base_url();?>','shanghai')">上海</a>
 		</div>
 		<div id="printshop">
 			<a style="color:white;" href="#"
-				class="btn btn-info btn-large">请选择您所在的区域...</a>
+				class="btn-metro-blue">请选择您所在的区域...</a>
 		</div>
-		<div style="float:left;width:980px;height:400px;" id="map"></div>
+		<div style="float:left;width:980px;height:400px;margin-top:20px;" id="map"></div>
 		<div style="clear:both;"></div>
 
 	</div>

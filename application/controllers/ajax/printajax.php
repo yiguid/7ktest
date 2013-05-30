@@ -22,7 +22,7 @@ class Printajax extends CI_Controller {
 		extract($_REQUEST);
 		$printerlist = $this->printer_mdl->get_printer_by_location($location);
 		foreach($printerlist as $printer){
-			echo "<a style=\"color:white;\" class=\"btn btn-info btn-large\"
+			echo "<a style=\"color:white;\" class=\"btn-metro-blue\"
 			 href=\"".base_url()."printshop/name/"
 			.$printer->username."\">".$printer->name."</a>";
 		}

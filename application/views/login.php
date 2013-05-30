@@ -13,7 +13,7 @@ $this->load->view('header');
 						打印更容易。</div>
 					</div>
 					<div id="login_left_mid_img">
-						image
+						<img src="<?php echo base_url();?>images/login_left.png"/>
 					</div>
 					<div class="login_left_foot">
 						<div class="foot_title">奇客云打印 - 来自7kmall的云服务</div>
@@ -23,7 +23,8 @@ $this->load->view('header');
 					</div>
 				</div>
 				<div id="login_left_right">
-					<div id="login_left_right_img">image
+					<div id="login_left_right_img">
+						<img src="<?php echo base_url();?>images/login_right.png"/>
 					</div>
 					<div class="login_left_foot">
 						<div class="foot_title">一个7kmall账户可以实现诸多功能</div>
