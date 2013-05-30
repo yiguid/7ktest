@@ -43,8 +43,10 @@ class Manage extends CI_Controller {
 		$this->data['page_title'] = '收支明细';
 		$this->data['cur_title'] = '2';
 		//获取数据
-		$this->data['translist'] = $this->transaction_mdl->get_transactions_by_userid($this->session->userdata('id'));
-		$this->data['total'] = $this->transaction_mdl->get_total_by_userid($this->session->userdata('id'));
+		$userid = $this->session->userdata('id');
+		$this->data['total']   = $this->transaction_mdl->get_total_by_userid($userid);
+		$this->data['userid'] = $userid;
+		$this->data['perpage'] = 10;
 		$this->load->view('manage/transactionhistory',$this->data);
 	}
 

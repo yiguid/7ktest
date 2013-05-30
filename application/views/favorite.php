@@ -46,7 +46,7 @@ $this->load->view('menu');
             function initPagination() {
                 // count entries inside the hidden content
                 // Create content inside pagination element
-                $("#jshoppagination").pagination(Math.ceil(shop_entries / pageNum), {
+                $("#jshoppagination").pagination(shop_entries, {
                     callback: shoppageselectCallback,
                     items_per_page:1, // Show only one item per page
                     prev_text:'上一页',
@@ -54,7 +54,7 @@ $this->load->view('menu');
                     num_display_entries:5,
                     num_edge_entries:1
                 });
-                $("#jdocpagination").pagination(Math.ceil(doc_entries / pageNum), {
+                $("#jdocpagination").pagination(doc_entries , {
                     callback: docpageselectCallback,
                     items_per_page:1, // Show only one item per page
                     prev_text:'上一页',

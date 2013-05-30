@@ -43,8 +43,9 @@ class Manage extends CI_Controller {
 	public function money()
 	{
 		$this->data['page_title'] = '财务管理';
-		$this->data['translist']=$this->transaction_mdl->get_transactions_by_pterid($this->session->userdata('id'));
-		$this->data['total'] = -1 *$this->transaction_mdl->get_total_by_pterid($this->session->userdata('id'));
+		$this->data['perpage']=10;
+		$this->data['pterid'] = $this->session->userdata('id');
+		$this->data['total'] = $this->transaction_mdl->get_total_by_pterid($this->session->userdata('id'));
 		$this->load->view('printer/money',$this->data);
 	}
 
