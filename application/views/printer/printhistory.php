@@ -5,79 +5,59 @@ if (! defined ( 'BASEPATH' ))
 $this->load->view ( 'printer/header' );
 $this->load->view ( 'printer/menu' );
 ?>
+<script type="text/javascript">
+            var perpage = <?php echo $perpage?>;
+            var total = <?php echo $total;?>;
+            var pterid = <?php echo $pterid;?>;
+            function pageselectCallback(page_index, jq){
+            	
+            	var url = '<?php echo base_url()."ajax/shopajax/get_shop_task";?>';
+                var start = perpage * page_index;
+                var line = perpage;
+                    $.post(url , {
+                        pterid : pterid,
+                        start  : start,
+                        line   : line
+                    }, function(data) {
+                        $("#taskdiv").empty().append(data);
+                    });
+              
+                return false;
+            }
+           
+            /** 
+             * Initialisation function for pagination
+             */
+            function initPagination() {
+                // count entries inside the hidden content
+                // Create content inside pagination element
+				$("#taskpagination").pagination(total, {
+                    callback: pageselectCallback,
+                    items_per_page:<?php echo $perpage;?>, // Show only one item per page
+                    prev_text:'上一页',
+                    next_text:'下一页',
+                    num_display_entries:5,
+                    num_edge_entries:1
+                });
+             }
+            
+            // When document is ready, initialize pagination
+            $(document).ready(function(){      
+                initPagination();
+            });
+</script>
 <div id="managebox">
 	<div class="content-header">
 		<h4>全部任务</h4>
+
 	</div>
-	<table style="width: 700px;" class="table table-hover">
-		<tr>
-			<td>打印人</td>
-			<td>文件数</td>
-			<td>状态</td>
-			<td>创建时间</td>
-			<td>打印时间</td>
-			<td>费用</td>
-			<td>详细</td>
-		</tr>
-				<?php foreach($printhistorylist as $printhistory):?>  
-  					<tr>
-					<?php
-					
-					echo "<td>" . $printhistory->username . "</td>
-                             <td>" . $printhistory->documentnum . "</td>
-                             <td>" . $printhistory->status . "</td>
-                             <td>" . $printhistory->createtime . "</td>
-                             <td>" . $printhistory->finishtime . "</td>
-                             <td>" . $printhistory->cost . "</td>";
-					?>
-					<td><a href="<?php echo base_url()."printer/printtask?id=".$printhistory->id; ?>">查看</a>	</td>
-		</tr>  
-  
-					<?php endforeach;?>  
-		</table>
-		<div class="pagination btn" id="pagelist">
-			<ul>
-			<?php
-			 $path = base_url().'printer/printhistory/display';
-			 $prevPage = max(1,$curPage-1);
-			 $nextPage = min($curPage+1,$maxPage);
-			 $startPage = max(1,$curPage - 3);
-			 $endPage = min($curPage + 3,$maxPage);
-			 if($curPage > 1)
-			 {
-			 	echo '<li>';
-			 	echo anchor("$path/1", '<<');
-			 	echo '</li>';
-			 	echo '<li>';
-			 	echo anchor("$path/$prevPage", '<');
-			 	echo '</li>';
-			 }
-			 for($i = $startPage;$i<=$endPage;$i++)
-			 {
-			 	if($i==$curPage)
-			 	{
-			 		echo '<li class="disabled">';
-			 	}
-			 	else
-			 	{
-			 		echo '<li class="active">';
-			 	}
-			 	echo anchor("$path/$i", "$i");
-			 	echo '</li>';
-			 }
-			 
-			 if($curPage < $maxPage)
-			 {
-			 	echo '<li>';
-			 	echo anchor("$path/$nextPage", '>');
-			 	echo '</li>';
-			 	echo '<li>';
-			 	echo anchor("$path/$maxPage", '>>');
-			 	echo '</li>';
-			 }
-			?>
-			</ul>
-		</div>
+	<div id="taskdiv">
+		<?php 
+			$data['printhistorylist'] = $this->printer_mdl->get_printer_printhistory($pterid,$perpage,0);
+			$this->load->view('printer/printhistory_list',$data); 
+		?>
+	</div>
+	<div id="taskpagination"></div>
 </div>
 </div>
 </div>

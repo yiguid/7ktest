@@ -19,9 +19,13 @@ class Printhistory extends CI_Controller {
 	
 	public function index()
 	{
-		$this->display(1);
+		//$this->display(1);
 		//$this->data['printhistorylist'] = $this->printer_mdl->get_printer_printhistory($this->session->userdata('id')); 
 		//$this->load->view('printer/printhistory',$this->data);
+		$this->data['pterid']=$this->session->userdata('id');
+		$this->data['total'] = $this->printer_mdl->get_printer_printhistory_total($this->session->userdata('id'));
+		$this->data['perpage'] = 5; 
+		$this->load->view('printer/printhistory',$this->data);
 	}
 	public function display($curPage)
 	{
