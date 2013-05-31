@@ -94,5 +94,14 @@ class Shopajax extends CI_Controller {
 		$data['printhistorylist'] = $this->printer_mdl->get_printer_printhistory($pterid,$l,$s);
 		echo $this->load->view("printer/printhistory_list",$data);
 	}
+
+	public function get_shop_task_by_method()
+	{
+		extract($_REQUEST);
+		$s = intval($start);
+		$l = intval($line);
+		$data['printhistorylist'] = $this->printer_mdl->get_printer_printhistory_by_method($pterid,$l,$s,$method);
+		echo $this->load->view("printer/printhistory_list",$data);
+	}
 }
 ?>

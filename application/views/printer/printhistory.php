@@ -39,7 +39,7 @@ $this->load->view ( 'printer/menu' );
                     num_display_entries:5,
                     num_edge_entries:1
                 });
-             }
+            }
             
             // When document is ready, initialize pagination
             $(document).ready(function(){      

@@ -160,6 +160,30 @@ class Printer_mdl extends CI_Model {
 		$query = $this->db->get();
 		return $query->num_rows();
 	}
+
+	public function get_printer_printhistory_by_method($printerid,$line,$start,$method)
+	{
+		$this->db->select('printtask.id as id, status,printtask.cost as cost,user.nickname as username, count(printtasksetting.id) as documentnum,createtime,finishtime');
+		$this->db->from('printtask');
+		$this->db->join('user','user.id=printtask.userid');
+		$this->db->join('printtasksetting','printtask.id=printtasksetting.printtaskid');
+		$this->db->where('printtask.printerid',$printerid);
+		$this->db->where('printtask.method',$method);
+		$this->db->group_by('printtask.id');
+		$this->db->limit($line,$start);
+		$query = $this->db->get();
+		return $query->result();
+	}
+	public function get_printer_printhistory_total_by_method($printerid,$method)
+	{
+		$this->db->select('id');
+		$this->db->from('printtask');
+		$this->db->where('printerid',$printerid);
+		$this->db->where('method',$method);
+		$query = $this->db->get();
+		return $query->num_rows();
+	}
+
 	public function get_printer_documenthistory($printerid,$line,$start)
 	{
 		$this->db->select('document.id as docid,document.name as docname,keyword,document.type as doctype,user.nickname as username,size,url,uploadtime');

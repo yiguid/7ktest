@@ -27,6 +27,22 @@ class Printhistory extends CI_Controller {
 		$this->data['perpage'] = 5; 
 		$this->load->view('printer/printhistory',$this->data);
 	}
+
+	public function method($method)
+	{
+		$this->data['pterid']=$this->session->userdata('id');
+		$this->data['total'] = $this->printer_mdl->get_printer_printhistory_total_by_method($this->session->userdata('id'),$method);
+		$this->data['perpage'] = 5;
+		$this->data['method'] = $method;
+		if($method == 'self')
+			$this->data['page_title'] = '自行取印任务';
+		else if($method == 'campus')
+			$this->data['page_title'] = '校园送印任务';
+		else if($method == 'express')
+			$this->data['page_title'] = '快递送印任务';
+		$this->load->view('printer/printhistory_method',$this->data);
+	}
+
 	public function display($curPage)
 	{
 		$per_page = 10;
