@@ -159,3 +159,8 @@ $printshop = $this->session->userdata('printshop');
 
 $printer_id = $this->session->userdata('printer_id');
 $printer_name = $this->session->userdata('printer_name');
+
+====
+
+metro风格主要颜色来源
+http://flatuicolors.com/

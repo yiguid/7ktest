@@ -298,9 +298,9 @@ body.width_fmax #wrapper {
 /*header设置*/
 
 #header {
-	background-image: -moz-linear-gradient(top, #3f7df1, #3f7ded); /* Firefox */
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3f7df1), color-stop(1, #3f7ded)); /* Saf4+, Chrome */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f7df1', endColorstr='#3f7ded', GradientType='0'); /* IE*/
+	background-image: -moz-linear-gradient(top, #3498db, #3f7ded); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3498db), color-stop(1, #3f7ded)); /* Saf4+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3498db', endColorstr='#3f7ded', GradientType='0'); /* IE*/
 	color:white;
 	line-height:40px;
 	height:40px;
@@ -376,9 +376,9 @@ body.width_fmax #wrapper {
 #footer {
 	margin-top: 4px;
 	height:100px;
-	background-image: -moz-linear-gradient(top, #3f7df1, #3f7ded); /* Firefox */
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3f7df1), color-stop(1, #3f7ded)); /* Saf4+, Chrome */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f7df1', endColorstr='#3f7ded', GradientType='0'); /* IE*/
+	background-image: -moz-linear-gradient(top, #3498db, #3f7ded); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3498db), color-stop(1, #3f7ded)); /* Saf4+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3498db', endColorstr='#3f7ded', GradientType='0'); /* IE*/
 	color: #ffffff;
 }
 
