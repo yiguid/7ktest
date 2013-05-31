@@ -33,6 +33,19 @@ class Transaction_mdl extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+	public function get_total_tran_by_userid($userid)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('transaction');
+		$this->db->where('userid',$userid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
+	}
 
 	public function get_transactions_by_pterid($start,$line,$pterid)
 	{
@@ -42,6 +55,19 @@ class Transaction_mdl extends CI_Model {
 		$this->db->limit($line,$start);
 		$query = $this->db->get();
 		return $query->result();
+	}
+	public function get_total_tran_by_pterid($pterid)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('transaction');
+		$this->db->where('pterid',$pterid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
 	}
 
 

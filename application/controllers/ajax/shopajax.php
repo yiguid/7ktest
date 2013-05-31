@@ -7,6 +7,7 @@ class Shopajax extends CI_Controller {
 		parent::__construct();
 		$this->load->model('printtask_mdl');
 		$this->load->model('shop_mdl');
+		$this->load->model('transaction_mdl');
 	}
 	public function add_spec_doc_to_printtask(){
 		extract($_REQUEST);
@@ -75,6 +76,14 @@ class Shopajax extends CI_Controller {
 		{
 			echo "-1";
 		}
+	}
+	public function get_shop_transaction()
+	{
+		extract($_REQUEST);
+		$s = intval($start);
+		$l = intval($line);
+		$data['translist']=$this->transaction_mdl->get_transactions_by_pterid($s,$l,$pterid);
+		echo $this->load->view("printer/money_list",$data);
 	}
 }
 ?>

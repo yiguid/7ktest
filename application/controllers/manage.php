@@ -45,6 +45,7 @@ class Manage extends CI_Controller {
 		//获取数据
 		$userid = $this->session->userdata('id');
 		$this->data['total']   = $this->transaction_mdl->get_total_by_userid($userid);
+		$this->data['tranTotal'] =  $this->transaction_mdl->get_total_tran_by_userid($userid);
 		$this->data['userid'] = $userid;
 		$this->data['perpage'] = 10;
 		$this->load->view('manage/transactionhistory',$this->data);

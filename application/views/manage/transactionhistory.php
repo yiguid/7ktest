@@ -4,13 +4,13 @@ $this->load->view('menu');
 ?>
 <script type="text/javascript">
             var perpage = <?php echo $perpage?>;
-            var total = <?php echo $total;?>;
+            var total = <?php echo $tranTotal;?>;
             var userid = <?php echo $userid;?>;
             function pageselectCallback(page_index, jq){
             	var url = '<?php echo base_url()."ajax/userajax/get_user_transaction";?>';
                 var userid =<?php echo $userid;?>;
-                var start = pageNum * page_index;
-                var line = pageNum;
+                var start = perpage * page_index;
+                var line = perpage;
                     $.post(url , {
                         userid : userid,
                         start  : start,
