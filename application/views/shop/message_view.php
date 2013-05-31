@@ -23,7 +23,7 @@
 							$typearr=array('催单','网站错误','功能建议','投诉');
 							foreach($msglist as $row)
 							{
-								echo "<div class='btn-info feedback_message'>";
+								echo "<div class='feedback_message'>";
 								echo "<b>[".$typearr[$row->type - 1]."]</b>"."&nbsp;";
 								echo "<i class='icon-comment icon-white'></i>".$row->content;
 								echo '<br/>';
@@ -34,7 +34,7 @@
 								$rpylist = $this->feedback_mdl->get_msg_all_rpy($row->id);
 								foreach($rpylist as $rpy)
 								{
-									echo "<div class='btn-warning feedback_reply'>";
+									echo "<div class='feedback_reply'>";
 									echo "<i class='icon-comment icon-white'></i>".$rpy->content."<br/>";
 									echo "<i class='icon-user'></i>".$rpy->nickname."&nbsp;&nbsp;&nbsp;";
 									echo $rpy->date." ";

@@ -45,8 +45,8 @@ $this->load->helper('url');
 			<div>资料定价：<input type="text" name="price"/></div>
 			<div>资料描述：<textarea name="description" rows="3" style="width:470px;"></textarea></div>
 			<div><input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('ufb').value=this.value"/>
-				 <input class="btn btn-info" id="ufb" type="button" onclick=userfile.click() value="点击选择文件"/>
-				 <input class="btn btn-info" type="submit" value="上传" /></div>
+				 <input class="btn-metro" id="ufb" type="button" onclick=userfile.click() value="点击选择文件"/>
+				 <input class="btn-metro" type="submit" value="上传" /></div>
 		</form>
 		</div>
 </div>

@@ -90,25 +90,31 @@ body {
 	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeff', endColorstr='#cccccc', GradientType='0'); /* IE*/
 }
 .feedback_message{
-	margin:20px 50px 20px 20px;
+	margin:10px 50px 10px 20px;
 	padding:10px;
-	border: 1px solid #cccccc;
-	background: #ccffcc;
+	border-left: 8px solid #3498db;
+	border-top: 1px solid #3498db;
+	border-right: 1px solid #3498db;
+	border-bottom: 1px solid #3498db;
+	background-color: #D6E4FB;
 	text-align: left;
-	-webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .feedback_reply{
-	margin:0px 20px 0px 50px;
+	margin:4px 20px 0px 50px;
 	padding:10px;
-	border: 1px solid #cccccc;
-	background: #ccfffe;
+	border-left: 8px solid #e67e22;
+	border-top: 1px solid #e67e22;
+	border-right: 1px solid #e67e22;
+	border-bottom: 1px solid #e67e22;
+	background-color: #f2d2b1;
 	text-align: left;
-	-webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 #msgcontent{

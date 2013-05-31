@@ -37,8 +37,8 @@ $this->load->view('printer/header');
 						<td><input class="input-block-level" type="password" name="password" id="password"></input></td>
 					</tr>
 					<tr>
-						<td><input class="btn btn-primary" type="submit" name="submit" value="提交"/></td>
-						<td><input class="btn btn-primary" type="reset" name="reset" value="重置"/></td>
+						<td><input class="btn-metro" type="submit" name="submit" value="提交"/></td>
+						<td><input class="btn-metro" type="reset" name="reset" value="重置"/></td>
 					</tr>
 				</table>
 			</form> 
