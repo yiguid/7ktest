@@ -3,43 +3,13 @@ $this->load->view('header');
 $this->load->view('menu');
 ?>
 <script type="text/javascript">
-            var pageNum = <?php echo $pageNum?>;
+            var perpage = <?php echo $pageNum?>;
             var shop_entries = <?php echo $shop_entries;?>;
             var doc_entries  = <?php echo $doc_entries;?>;
-            function shoppageselectCallback(page_index, jq){
-                //var new_content = jQuery('#hiddenresult div.result:eq('+page_index+')').clone();
-                //$('#Searchresult').empty().append(new_content);
-                var url = '<?php echo base_url()."ajax/userajax/get_shop_favorite";?>';
-                var userid =<?php echo $userid;?>;
-                var start = pageNum * page_index;
-                var line = pageNum;
-                    $.post(url , {
-                        userid : userid,
-                        start  : start,
-                        line   : line
-                    }, function(data) {
-                        $('#favoshop').empty().append(data);
-                    });
-                return false;
-            }
-            function docpageselectCallback(page_index, jq){
-                //var new_content = jQuery('#hiddenresult div.result:eq('+page_index+')').clone();
-                //$('#Searchresult').empty().append(new_content);
-                var url = '<?php echo base_url()."ajax/userajax/get_doc_favorite";?>';
-                var userid =<?php echo $userid;?>;
-                var start = pageNum * page_index;
-                var line = pageNum;
-                    $.post(url , {
-                        userid : userid,
-                        start  : start,
-                        line   : line
-                    }, function(data) {
-                        $('#favodoc').empty().append(data);
-                    });
-                return false;
-            }
-           
-           
+            var userid =<?php echo $userid;?>;
+            var docurl = '<?php echo base_url()."ajax/userajax/get_doc_favorite";?>';
+            var shopurl = '<?php echo base_url()."ajax/userajax/get_shop_favorite";?>';
+            var postdata = { userid : userid };
             /** 
              * Initialisation function for pagination
              */
@@ -47,21 +17,19 @@ $this->load->view('menu');
                 // count entries inside the hidden content
                 // Create content inside pagination element
                 $("#jshoppagination").pagination(shop_entries, {
-                    callback: shoppageselectCallback,
                     items_per_page:1, // Show only one item per page
                     prev_text:'上一页',
                     next_text:'下一页',
                     num_display_entries:5,
                     num_edge_entries:1
-                });
+                },shopurl,postdata,'#favoshop');
                 $("#jdocpagination").pagination(doc_entries , {
-                    callback: docpageselectCallback,
                     items_per_page:1, // Show only one item per page
                     prev_text:'上一页',
                     next_text:'下一页',
                     num_display_entries:5,
                     num_edge_entries:1
-                });
+                },docurl,postdata,'#favodoc');
              }
             
             // When document is ready, initialize pagination

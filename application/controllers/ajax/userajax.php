@@ -31,5 +31,13 @@ class Userajax extends CI_Controller {
 		$data['translist']=$this->transaction_mdl->get_transactions_by_userid($s,$l,$userid);
 		echo $this->load->view("manage/transactionhistory_list",$data);
 	}
+	public function get_user_printhistory()
+	{
+		extract($_REQUEST);
+		$s = intval($start);
+		$l = intval($line);
+		$data['printhistorylist'] = $this->user_mdl->get_user_printhistory($userid,$l,$s); ;
+		echo $this->load->view("printhistory_list_view",$data);
+	}
 }
 ?>

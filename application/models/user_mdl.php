@@ -122,6 +122,7 @@ class User_mdl extends CI_Model {
 		$this->db->select('id');
 		$this->db->from('printtask');
 		$this->db->where('userid',$userid);
+		$this->db->where('printerid is not null');
 		$query = $this->db->get();
 		return $query->num_rows();
 

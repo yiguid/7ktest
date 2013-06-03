@@ -230,5 +230,123 @@
 			opts.callback(current_page, containers);
 		}
 	} // End of $.fn.pagination block
+
+$.fn.divpagination = function(maxentries, opts,url,postdata,targetdividsel){
+		
+		// Initialize options with default values
+		opts = $.extend({
+			items_per_page:10,
+			num_display_entries:11,
+			current_page:0,
+			num_edge_entries:0,
+			link_to:"#",
+			prev_text:"Prev",
+			next_text:"Next",
+			ellipse_text:"...",
+			prev_show_always:true,
+			next_show_always:true,
+			renderer:"defaultRenderer",
+			show_if_single_page:false,
+			load_first_page:false,
+			callback:function(page_index, jq){
+				var perpage = 10;
+				if(opts.hasOwnProperty('items_per_page'))
+				{
+					perpage = opts.items_per_page;
+				}
+				var start = perpage * page_index;
+                var line = perpage;
+                $.extend(postdata,{start : start, line : line});
+
+				$.post(url, postdata, function(data) {
+                        $(targetdividsel).empty().append(data);
+                    });
+				return false;
+			}
+		},opts||{});
+		
+		var containers = this,
+			renderer, links, current_page;
+		
+		/**
+		 * This is the event handling function for the pagination links. 
+		 * @param {int} page_id The new page number
+		 */
+		function paginationClickHandler(evt){
+			var links, 
+				new_current_page = $(evt.target).data('page_id'),
+				continuePropagation = selectPage(new_current_page);
+			if (!continuePropagation) {
+				evt.stopPropagation();
+			}
+			return continuePropagation;
+		}
+		
+		/**
+		 * This is a utility function for the internal event handlers. 
+		 * It sets the new current page on the pagination container objects, 
+		 * generates a new HTMl fragment for the pagination links and calls
+		 * the callback function.
+		 */
+		function selectPage(new_current_page) {
+			// update the link display of a all containers
+			containers.data('current_page', new_current_page);
+			links = renderer.getLinks(new_current_page, paginationClickHandler);
+			containers.empty();
+			links.appendTo(containers);
+			// call the callback and propagate the event if it does not return false
+			var continuePropagation = opts.callback(new_current_page, containers);
+			return continuePropagation;
+		}
+		
+		// -----------------------------------
+		// Initialize containers
+		// -----------------------------------
+                current_page = parseInt(opts.current_page);
+		containers.data('current_page', current_page);
+		// Create a sane value for maxentries and items_per_page
+		maxentries = (!maxentries || maxentries < 0)?1:maxentries;
+		opts.items_per_page = (!opts.items_per_page || opts.items_per_page < 0)?1:opts.items_per_page;
+		
+		if(!$.PaginationRenderers[opts.renderer])
+		{
+			throw new ReferenceError("Pagination renderer '" + opts.renderer + "' was not found in jQuery.PaginationRenderers object.");
+		}
+		renderer = new $.PaginationRenderers[opts.renderer](maxentries, opts);
+		
+		// Attach control events to the DOM elements
+		var pc = new $.PaginationCalculator(maxentries, opts);
+		var np = pc.numPages();
+		containers.bind('setPage', {numPages:np}, function(evt, page_id) { 
+				if(page_id >= 0 && page_id < evt.data.numPages) {
+					selectPage(page_id); return false;
+				}
+		});
+		containers.bind('prevPage', function(evt){
+				var current_page = $(this).data('current_page');
+				if (current_page > 0) {
+					selectPage(current_page - 1);
+				}
+				return false;
+		});
+		containers.bind('nextPage', {numPages:np}, function(evt){
+				var current_page = $(this).data('current_page');
+				if(current_page < evt.data.numPages - 1) {
+					selectPage(current_page + 1);
+				}
+				return false;
+		});
+		
+		// When all initialisation is done, draw the links
+		links = renderer.getLinks(current_page, paginationClickHandler);
+		containers.empty();
+		if(np > 1 || opts.show_if_single_page) {
+			links.appendTo(containers);
+		}
+		// call callback function
+		if(opts.load_first_page) {
+			opts.callback(current_page, containers);
+		}
+	} // End of $.fn.pagination block
 	
 })(jQuery);

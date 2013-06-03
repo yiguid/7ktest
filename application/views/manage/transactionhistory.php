@@ -6,41 +6,20 @@ $this->load->view('menu');
             var perpage = <?php echo $perpage?>;
             var total = <?php echo $tranTotal;?>;
             var userid = <?php echo $userid;?>;
-            function pageselectCallback(page_index, jq){
-            	var url = '<?php echo base_url()."ajax/userajax/get_user_transaction";?>';
-                var userid =<?php echo $userid;?>;
-                var start = perpage * page_index;
-                var line = perpage;
-                    $.post(url , {
-                        userid : userid,
-                        start  : start,
-                        line   : line
-                    }, function(data) {
-                        $('#mingxi').empty().append(data);
-                    });
-                return false;
-            }
-           
-            /** 
-             * Initialisation function for pagination
-             */
-            function initPagination() {
-                // count entries inside the hidden content
-                // Create content inside pagination element
-				$("#jtpagination").pagination(total, {
-                    callback: pageselectCallback,
-                    items_per_page:<?php echo $perpage;?>, // Show only one item per page
+            var url = '<?php echo base_url()."ajax/userajax/get_user_transaction";?>';
+            var postdata = { userid : userid };
+         
+            // When document is ready, initialize pagination
+            $(document).ready(function(){
+                $("#jtpagination").divpagination(total, {
+                    items_per_page: perpage, // Show only one item per page
                     prev_text:'上一页',
                     next_text:'下一页',
                     num_display_entries:5,
                     num_edge_entries:1
-                });
-             }
-            
-            // When document is ready, initialize pagination
-            $(document).ready(function(){      
-                initPagination();
+                },url,postdata,'#mingxi');
             });
+
 </script>
 		<div id="managebox">
 			<div class="content-header">

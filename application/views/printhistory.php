@@ -2,66 +2,36 @@
 $this->load->view('header');
 $this->load->view('menu');
 ?>
+<script type="text/javascript">
+            var perpage = <?php echo $perpage?>;
+            var total = <?php echo $total_rows;?>;
+            var userid = <?php echo $userid;?>;
+            var url = '<?php echo base_url()."ajax/userajax/get_user_printhistory";?>';
+            var postdata = { userid : userid };
+         
+            // When document is ready, initialize pagination
+            $(document).ready(function(){
+                $("#jtpagination").divpagination(total, {
+                    items_per_page: perpage, // Show only one item per page
+                    prev_text:'上一页',
+                    next_text:'下一页',
+                    num_display_entries:5,
+                    num_edge_entries:1
+                },url,postdata,'#printhistorylist');
+            });
 
+</script>
 		<div id="managebox">
 			<div class="content-header">
 				<h4>历史印单</h4>
 			</div>
-			<table class="table table-hover manage_table">
-				<tr class="table_header">
-					<td>序号</td><td>打印店</td><td>文件数</td><td>状态</td><td>创建时间</td><td>打印时间</td><td>费用</td><td>详细</td>
-				</tr>
-				<?php foreach($printhistorylist as $printhistory):?>  
-  
-					<tr>
-					<?php echo "<td>".$printhistory->id ."</td><td>".$printhistory->printername ."</td><td>".$printhistory->documentnum ."</td><td>".$printhistory->status."</td><td>".$printhistory->createtime."</td><td>".$printhistory->finishtime."</td><td>".$printhistory->cost."</td>";?>
-					<td><a href=<?php echo base_url()."printtask?id=".$printhistory->id; ?>>查看</a></td>
-					</tr>  
-  
-					<?php endforeach;?>  
-			</table>
-			<div class="pagination btn" id="pagelist">
-				<ul>
+			<div id='printhistorylist'>
 				<?php
-				 $path = base_url().'printhistory/display';
-				 $prevPage = max(1,$curPage-1);
-				 $nextPage = min($curPage+1,$maxPage);
-				 $startPage = max(1,$curPage - 3);
-				 $endPage = min($curPage + 3,$maxPage);
-				 if($curPage > 1)
-				 {
-				 	echo '<li>';
-				 	echo anchor("$path/1", '<<');
-				 	echo '</li>';
-				 	echo '<li>';
-				 	echo anchor("$path/$prevPage", '<');
-				 	echo '</li>';
-				 }
-				 for($i = $startPage;$i<=$endPage;$i++)
-				 {
-				 	if($i==$curPage)
-				 	{
-				 		echo '<li class="disabled">';
-				 	}
-				 	else
-				 	{
-				 		echo '<li class="active">';
-				 	}
-				 	echo anchor("$path/$i", "$i");
-				 	echo '</li>';
-				 }
-				 
-				 if($curPage < $maxPage)
-				 {
-				 	echo '<li>';
-				 	echo anchor("$path/$nextPage", '>');
-				 	echo '</li>';
-				 	echo '<li>';
-				 	echo anchor("$path/$maxPage", '>>');
-				 	echo '</li>';
-				 }
+					$data['printhistorylist'] = $this->user_mdl->get_user_printhistory($userid,$perpage,0); ;
+					$this->load->view('printhistory_list_view',$data);
 				?>
-				</ul>
+			</div>
+			<div id="jtpagination">
 			</div>
 		</div>
 	</div>
