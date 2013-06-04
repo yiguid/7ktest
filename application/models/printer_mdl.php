@@ -294,7 +294,26 @@ class Printer_mdl extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
-	
+
+	public function add_printer_option_value($data){
+		$this->db->insert('property_value',$data);
+		return ($this->db->affected_rows() > 0) ? 1 : 0;
+	}
+
+	//获取某打印店某项打印选项的所有值
+	public function get_printer_option_values($propertyid){
+		$this->db->select('*');
+		$this->db->from('property_value');
+		$this->db->where('propertyid',$propertyid);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+
+
+
+
+
 
 	public function get_papersize_option($printer_id){
 		if($printer_id == "")

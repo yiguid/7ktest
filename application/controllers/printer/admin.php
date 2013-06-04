@@ -116,4 +116,49 @@ class Admin extends CI_Controller {
 
 
 	}
+
+	public function addproperty()
+	{
+		$this->data['page_title'] = '添加打印业务';
+		if(!$this->auth->printer_logged_in())
+		{
+			redirect('login','refresh');
+		}
+		$this->form_validation->set_rules('propertyname','业务名称','required|min_length[2]|trim');
+
+		if($this->form_validation->run() == FALSE)
+		{
+			$this->load->view('printer/yewu',$this->data);
+		}
+		$data = array('name' => $this->input->post('propertyname'));
+
+		$this->printer_mdl->add_printer_option( $this->session->userdata('id'),$data);
+		
+	}
+
+
+	public function addpropertyvalue()
+	{
+		$this->data['page_title'] = '添加打印业务内容';
+		if(!$this->auth->printer_logged_in())
+		{
+			redirect('login','refresh');
+		}
+		$this->form_validation->set_rules('propertyid','业务id','required|min_length[1]|trim');
+		$this->form_validation->set_rules('value','新增业务值','required|min_length[2]|trim');
+		$this->form_validation->set_rules('price','新增业务价格','required|min_length[1]|trim');
+
+		if($this->form_validation->run() == FALSE)
+		{
+			$this->load->view('printer/yewu',$this->data);
+		}
+		$data = array(
+			'propertyid' => $this->input->post('propertyid'),
+			'value' => $this->input->post('value'),
+			'price' => $this->input->post('price')
+			);
+
+		$this->printer_mdl->add_printer_option_value($data);
+		
+	}
 }
