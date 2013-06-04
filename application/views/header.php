@@ -17,6 +17,7 @@
 <script type="text/javascript" src="<?php echo base_url();?>js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.pagination.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery.rating.js"></script>
 <!--[if lte IE 6]>
 <link href="css/ieonly.css" rel="stylesheet" type="text/css" />
 <![endif]-->
