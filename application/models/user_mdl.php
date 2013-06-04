@@ -6,6 +6,7 @@ class User_mdl extends CI_Model {
 	public function __construct()
 	{
 		parent:: __construct();
+		$this->load->model('transaction_mdl');
 	}
 
 	public function login($username,$password)
@@ -34,6 +35,7 @@ class User_mdl extends CI_Model {
 				'user_receipt' => $result->receipt,
 				'user_zipcode' => $result->zipcode,
 				'user_receiver' => $result->receiver,
+				'user_money' => $this->transaction_mdl->get_total_by_userid($result->id),
 				'level' => $result->level,
 				'user_type' => 'user'
 				);

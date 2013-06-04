@@ -29,6 +29,13 @@ class Printtask extends CI_Controller {
 	}
 
 	public function submit(){
+    $user_money = $this->session->userdata('user_money');
+    if($this->input->post('total_cost') > $user_money){
+      echo "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head><body>";
+      echo "<script language=\"javascript\">alert('余额不足，请充值');window.history.back();</script>";
+      echo "</body></html>";
+      return ;
+    }
 		$id = $this->session->userdata('printtaskid');
 		$task = array(
      	 	'userid' => $this->session->userdata('id'),

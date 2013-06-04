@@ -30,7 +30,8 @@ class Login extends CI_Controller {
 				else
 					redirect('welcome','refresh');
 			}else{
-				redirect('login','refresh');
+				$this->data['login_error'] = "用户名密码有误，请重新输入。";
+				$this->load->view('login',$this->data);
 			}
 		}
 	}

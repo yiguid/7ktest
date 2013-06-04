@@ -51,6 +51,7 @@ $this->load->view('header');
 							<div>密码</div>
 							<div style="margin-top:6px;"><input style="width:270px;" class="input-block-level" type="password" name="password" id="password"><?php echo form_error('password')?></input>
 							</div>
+							<div><?php if(isset($login_error)) echo $login_error;?></div>
 							<div style="margin-top:10px;"><input class="btn-metro" type="submit" name="submit" value="登 录"/></div>
 							<div><?php if(isset($regist_info)) echo $regist_info;?></div>
 							<div style="color:#4d8fff;margin-top:10px;">无法访问您的账户？</div>

@@ -76,6 +76,8 @@ class Upload extends CI_Controller {
     $task_id = $this->printtask_mdl->add_printtask($task);
     $this->session->set_userdata('printtaskid',$task_id);
    }
+   //验证费用
+   
    //保存设置
    $doc_setting = array(
       'printtaskid' => $task_id,

@@ -90,7 +90,7 @@ $this->load->view('header');
 					<tr>
 						<td></td>
 						<td>
-							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('ufb').value=this.value"/>
+							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('ufb').value=this.value.substring(12,22)+'...'"/>
 							<input class="btn-metro-small" id="ufb" type="button" onclick=userfile.click() value="选择文件"/>
 						</td>
 						<td>
@@ -276,8 +276,10 @@ $this->load->view('header');
 					需要发票：<input class="span3" type="text" name="receipt" value="<?php echo $this->session->userdata('user_receipt');?>"/>
 				</div>
 				<div class="span9">
-					费用总计：<input type="text" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/></span>
-					<span style="margin-left:60px;"></span><input class="btn-metro offset1" type="button" onclick="submit_printtask()" value="确认印单" name="submitbtn"/>
+					费用总计：<input type="text" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/>
+					<span style="margin-left:60px;"></span>
+					账户余额：<?php echo $this->session->userdata('user_money')?>
+					<span style="margin-left:10px;"></span><input class="btn-metro offset1" type="button" onclick="submit_printtask()" value="确认印单" name="submitbtn"/>
 				</div>
 			</form>
 			</div>
