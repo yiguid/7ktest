@@ -266,6 +266,36 @@ class Printer_mdl extends CI_Model {
 		return $query->result();
 	}
 
+
+	//添加打印任务选项
+	public function add_printer_option($printerid,$data)
+	{
+		$this->db->insert('property',$data);
+		if($this->db->affected_rows() > 0) {
+			$propertyid=$this->db->insert_id();
+			$insert_data = array(
+				'printerid'=>$printerid,
+				'propertyid'=>$propertyid
+			);
+			$this->db->insert('printer_prop',$insert_data);
+			return ($this->db->affected_rows() > 0) ? 1 : 0;
+		}else{
+			return 0;
+		}
+
+	}
+
+	//获取所有打印任务选项
+	public function get_printer_options($printer_id){
+		$this->db->select('*');
+		$this->db->from('property');
+		$this->db->join('printer_prop','printer_prop.propertyid=property.id');
+		$this->db->where('printer_prop.printerid',$printer_id);
+		$query = $this->db->get();
+		return $query->result();
+	}
+	
+
 	public function get_papersize_option($printer_id){
 		if($printer_id == "")
 			return array(
