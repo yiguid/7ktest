@@ -15,6 +15,7 @@
 <script src="<?php echo base_url();?>js/common.js" type="text/javascript"></script>
 <script src="<?php echo base_url();?>js/bootstrap/bootstrap.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.pagination.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery.rating.js"></script>
 <!--[if lte IE 6]>
 <link href="css/ieonly.css" rel="stylesheet" type="text/css" />
 <![endif]-->

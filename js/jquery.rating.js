@@ -1,11 +1,7 @@
 (function($){
-	$.RatePlugin = function(opts){
-		this.opts = opts;
-	};
 	$.RateRenderers = {};
 	$.RateRenderers.defaultRenderer = function(opts){
 		this.opts = opts;
-		this.rp = new $.RatePlugin(opts);
 	};
 	$.extend($.RateRenderers.defaultRenderer.prototype,{
 		createCur : function(score){
@@ -42,7 +38,7 @@
 			fragment.css("width",this.opts.star_width*this.opts.star_num + "px");
 			fragment.attr("title","平均评分为"+this.opts.score + "分");
 			this.createCur(this.opts.score).appendTo(fragment);
-			if(this.opts.is_rated == false)
+			if(this.opts.rate_enable)
 			{
 				for(var i=0;i<this.opts.star_num;i++)
 				{
@@ -53,18 +49,41 @@
 			return fragment;
 		}
 	});
-	$.fn.rating = function(opts){
+	$.fn.rating = function(opts,url,postdata){
 		opts = $.extend({
 			score:0,
 			star_width:16,
 			star_num:5,
-			is_rated:false,
+			rate_enable:true,
 			renderer:"defaultRenderer",
 			callback:function(){return false;}
 		},opts||{});
 		var container = this;
 		var renderer = new $.RateRenderers[opts.renderer](opts);
-		var list = renderer.getList(opts.callback);
+		var list = renderer.getList(rateClickHandler);
 		list.appendTo(container);
+		function rateClickHandler(evt){
+			if(!postdata.hasOwnProperty('userid'))
+			{
+				alert("请先登录");
+				return false;
+			}
+			var rate = $(evt.target).data("rate");
+			$.extend(postdata,{rate : rate});
+			$.post(url, postdata, function(data) {
+				//data数据进行
+            	if(data < 0){
+            		alert("评分失败");
+            	}else{
+            		//评分成功，获取结果，并显示
+            		container.empty();
+            		//renderer.createCur(data).appendTo(container);
+            		renderer.opts.rate_enable = false;
+            		renderer.opts.score = data;
+            		renderer.getList(rateClickHandler).appendTo(container);
+            		opts.callback();
+            	}
+            });
+		}
 	};
 })(jQuery);

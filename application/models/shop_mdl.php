@@ -177,7 +177,7 @@ class Shop_mdl extends CI_Model {
 	public function is_rating_shop($userid,$pterid)
 	{
 		//0表示文档评价，1表示店铺评价
-		$this->db->select('*');
+		$this->db->select('count(*) as total');
 		$this->db->from('rating');
 		$this->db->where('userid',$userid);
 		$this->db->where('destid',$pterid);
@@ -185,7 +185,9 @@ class Shop_mdl extends CI_Model {
 		$query = $this->db->get();
 		if ($query->num_rows() > 0)
 		{
-			return true;
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
 		}
 		return false;
 	}

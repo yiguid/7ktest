@@ -1,6 +1,20 @@
 			<script type="text/javascript">
+			var url= '<?php echo base_url()."ajax/shopajax/rate";?>';
+
+			var score = <?php echo $this->shop_mdl->get_avg_rating($pterid,1);?>;
+			var rate_enable = false;
+
+			var pterid = <?php echo $pterid;?>;
+			var type = 1;
+			
+			var postdata = {destid : pterid, type : type};
+			<?php if($this->auth->logged_in()) {?>
+				var userid = <?php echo $this->session->userdata('id');?>;
+				rate_enable = !<?php echo $this->shop_mdl->is_rating_shop($this->session->userdata('id'),$pterid);?>;
+				$.extend(postdata,{userid : userid});
+			<?php }?>
 			 $(document).ready(function(){
-                $("#test").rating({score : 4.5});
+                $("#test").rating({score : score, rate_enable : rate_enable},url,postdata);
             });
 			</script>
 			<div id="shop_details">
@@ -31,24 +45,13 @@
 				<div style="heihgt:30px;line-height:30px;margin-left:15px;">
 					<div>
 					<span style="float:left">店铺信誉：</span>
-					<ul class="star-rating"  id="shopStarUl" title="平均<?php echo number_format($avg_rating,1);?>分">
-							<li class="current-rating" id="shopAvg" style="width:<?php echo ceil($avg_rating*16);?>px"></li>
-							<?php if($this->auth->logged_in() && !$this->shop_mdl->is_rating_shop($this->session->userdata('id'),$pterid)) {
-								$userid = $this->session->userdata('id');
-							?>
-							<li class="starli"><a title="1分" class="one-star"    onclick="javascript:rate(<?php echo '\''.base_url().'\',\''.$userid.'\',\''.$pterid.'\',\'1\',\'1\''; ?>)" ></a></li>
-							<li class="starli"><a title="2分" class="two-stars"   onclick="javascript:rate(<?php echo '\''.base_url().'\',\''.$userid.'\',\''.$pterid.'\',\'1\',\'2\''; ?>)" ></a></li>
-							<li class="starli"><a title="3分" class="three-stars" onclick="javascript:rate(<?php echo '\''.base_url().'\',\''.$userid.'\',\''.$pterid.'\',\'1\',\'3\''; ?>)" ></a></li>
-							<li class="starli"><a title="4分" class="four-stars"  onclick="javascript:rate(<?php echo '\''.base_url().'\',\''.$userid.'\',\''.$pterid.'\',\'1\',\'4\''; ?>)" ></a></li>
-							<li class="starli"><a title="5分" class="five-stars"  onclick="javascript:rate(<?php echo '\''.base_url().'\',\''.$userid.'\',\''.$pterid.'\',\'1\',\'5\''; ?>)" ></a></li>
-							<?php }?>
-					</ul>
+					<div id="test"></div>
 					</div>
 				</div>
 				<div class="shop_details_info">地址：<?php echo $shopInfo->address?></div>
 				<div class="shop_details_info">联系方式：<?php echo $shopInfo->contact?></div>
 				<div class="shop_details_info">店铺介绍：<?php echo $shopInfo->intro?></div>
-				<div id="test"></div>
+				
 				<?php if($this->session->userdata('user_type') == 'user') {?>
 				<a style="color:white;" href="<?php echo base_url();?>welcome"><div style="margin-top:100px;" class="printer_more">返回打印页面</div></a>
 				<?php } else{?>
