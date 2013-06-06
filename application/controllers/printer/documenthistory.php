@@ -19,7 +19,15 @@ class Documenthistory extends CI_Controller {
 	
 	public function index()
 	{
-		$this->display(1);
+		//$this->display(1);
+		$pterid = $this->session->userdata('id');
+		$total_rows = $this->printer_mdl->get_printer_documenthistory_total($pterid);
+		$perpage = 10;
+		$this->data['pterid'] = $pterid;
+		$this->data['total_rows'] = $total_rows;
+		$this->data['perpage'] = $perpage;
+		$this->load->view('printer/documenthistory',$this->data);
+
 	}
 	public function display($curPage)
 	{

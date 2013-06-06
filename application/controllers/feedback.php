@@ -18,10 +18,14 @@ class Feedback extends CI_Controller {
 	public function index()
 	{
 		//清空session
-		$pageBase = $this->config->item('pageBase');
-		$msgTotal = $this->feedback_mdl->get_msg_total();
-		$maxPage = ceil ( $msgTotal / $pageBase);
-		$this->display(1,$maxPage);
+		//$pageBase = $this->config->item('pageBase');
+		//$msgTotal = $this->feedback_mdl->get_msg_total();
+		//$maxPage = ceil ( $msgTotal / $pageBase);
+		//$this->display(1,$maxPage);
+		$this->data['perpage'] = $this->config->item('pageBase');
+		$this->data['total'] =  $this->feedback_mdl->get_msg_total();
+		$this->data['msglist']= $this->feedback_mdl->get_msg($this->config->item('pageBase'),0);
+		$this->load->view('feedback',$this->data);
 	}
 	public function display($curPage,$maxPage)
  	{

@@ -25,7 +25,19 @@ class Documenthistory extends CI_Controller {
 	
 	public function index()
 	{
-		$this->display(1);
+		//$this->display(1);
+		$userid = $this->session->userdata('id');
+		$perpage = $this->per_page;
+		$total_rows= $this->user_mdl->get_user_documenthistory_total($userid);
+		$this->data['userid'] = $userid;
+		$this->data['perpage'] = $perpage;
+		$this->data['total_rows'] = $total_rows;
+
+		$printer_id = $this->session->userdata('printer_id');
+		$this->data['papersize_option'] = $this->printer_mdl->get_papersize_option($printer_id);
+		$this->data['isdoubleside_option'] = $this->printer_mdl->get_isdoubleside_option($printer_id);
+		$this->data['zhuangding_option'] = $this->printer_mdl->get_zhuangding_option($printer_id);
+		$this->load->view('documenthistory',$this->data);
 
 	}
 	public function display($pagenum)

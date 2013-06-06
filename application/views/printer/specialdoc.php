@@ -6,37 +6,37 @@ $this->load->view ( 'printer/header' );
 $this->load->view ( 'printer/menu' );
 $this->load->helper('url');
 ?>
+<script type="text/javascript">
+            var perpage = <?php echo $perpage?>;
+            var total = <?php echo $total_rows;?>;
+            var pterid = <?php echo $pterid;?>;
+            var url = '<?php echo base_url()."ajax/shopajax/get_printer_documenthistory";?>';
+            var postdata = { pterid : pterid };
+         
+            // When document is ready, initialize pagination
+            $(document).ready(function(){
+                $("#jtpagination").divpagination(total, {
+                    items_per_page: perpage, // Show only one item per page
+                    prev_text:'上一页',
+                    next_text:'下一页',
+                    num_display_entries:5,
+                    num_edge_entries:1
+                },url,postdata,'#specialdoclist');
+            });
+
+</script>
 <div id="managebox">
 	<div class="content-header">
 		<h4>特色资料</h4>
 	</div>
-		<table style="width: 780px;" class="table table-hover">
-			<tr>
-				<td>ID</td>
-				<td>文件名</td>
-				<td>文件类型</td>
-				<td>关键词</td>
-				<td>页数</td>
-				<td>价格</td>
-				<td>下载地址</td>
-				<td>上传时间</td>
-			</tr>
-			<?php 
-			foreach($specialdoclist as $doc){?>  
-			<tr>
+		<div id="specialdoclist">
 			<?php
-			echo "<td>" . $doc->id . "</td>".
-					"<td>" . substr($doc->name, 0,30) . "</td>".
-					"<td>" . $doc->type . "</td>".
-                     "<td>" . $doc->keyword . "</td>".
-                     "<td>" . $doc->page . "</td>".
-                     "<td>" . $doc->price . "</td>".
-                     "<td>" ."<a href=\"".base_url()."uploads/".$doc->url."\" >另存为</a> ". "</td>".
-                     "<td>" . $doc->uploadtime . "</td>";
-            }
+				$data['specialdoclist'] =  $this->printer_mdl->get_printer_specialdoc($pterid,$perpage,0);
+				$this->load->view('printer/specialdoc_list',$data);
 			?>
-		</tr> 
-		</table>
+		</div>
+		<div id="jtpagination"></div>
+
 		<div style="text-align:left;">
 			<h5>上传特色资料</h5>
 		<?php echo form_open_multipart('printer/specialdoc/do_upload',array('id' => 'upload_form'));?>

@@ -203,13 +203,29 @@ class Printer_mdl extends CI_Model {
 		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
 	}
 
-	public function get_printer_specialdoc($printerid)
+	public function get_printer_specialdoc($printerid,$line,$start)
 	{
 		$this->db->select('*');
 		$this->db->from('specialdoc');
 		$this->db->where('uploadpterid',$printerid);
+		$this->db->limit($line,$start);
 		$query = $this->db->get();
 		return $query->result();
+	}
+
+	public function get_printer_specialdoc_total($printerid)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('specialdoc');
+		$this->db->where('uploadpterid',$printerid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
+		return 0;
 	}
 
 	public function get_printer_documenthistory_total($printerid)

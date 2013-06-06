@@ -39,5 +39,13 @@ class Userajax extends CI_Controller {
 		$data['printhistorylist'] = $this->user_mdl->get_user_printhistory($userid,$l,$s); ;
 		echo $this->load->view("printhistory_list_view",$data);
 	}
+	public function get_user_documenthistory()
+	{
+		extract($_REQUEST);
+		$s = intval($start);
+		$l = intval($line);
+		$data['documenthistorylist'] = $this->user_mdl->get_user_documenthistory($userid,$l,$s); ;
+		echo $this->load->view("documenthistory_list",$data);
+	}
 }
 ?>

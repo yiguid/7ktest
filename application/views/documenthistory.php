@@ -2,24 +2,36 @@
 $this->load->view('header');
 $this->load->view('menu');
 ?>
+<script type="text/javascript">
+            var perpage = <?php echo $perpage?>;
+            var total = <?php echo $total_rows;?>;
+            var userid = <?php echo $userid?>;
+            var url = '<?php echo base_url()."ajax/userajax/get_user_documenthistory";?>';
+            var postdata = { userid : userid};
+         
+            // When document is ready, initialize pagination
+            $(document).ready(function(){
+                $("#jtpagination").divpagination(total, {
+                    items_per_page: perpage, // Show only one item per page
+                    prev_text:'上一页',
+                    next_text:'下一页',
+                    num_display_entries:5,
+                    num_edge_entries:1
+                },url,postdata,'#doclist');
+            });
+
+</script>
 		<div id="managebox">
 			<div class="content-header">
 				<h4>历史文件</h4>
 			</div>
-			<table class="table table-hover manage_table">
-				<tr class="table_header">
-					<td>ID</td><td>文件名</td><td>关键词</td><td>类型</td><td>大小</td><td>上传时间</td><td>操作</td>
-				</tr>
-				<?php foreach($documenthistorylist as $doc):?>  
-					<tr>
-					<?php echo "<td>".$doc->id ."</td><td>".substr($doc->name, 0,30)."</td><td>"
-					.$doc->keyword."</td><td>".$doc->type."</td><td>".$doc->size."</td><td>"
-					.$doc->uploadtime."</td><td><a href=\"javascript:addToPrinttask('".base_url()."','".$doc->id."','".$doc->name."','".$doc->url."')\" >添加到印单</a> | <a href=\"uploads/"
-					.$doc->url."\" >另存为</a></td>";?>
-					</tr>  
-  
-					<?php endforeach;?>
-			</table>
+			<div id="doclist">
+				<?php
+					$data['documenthistorylist'] = $this->user_mdl->get_user_documenthistory($userid,$perpage,0);
+					$this->load->view('documenthistory_list',$data);
+
+				?>
+			</div>
 			<div style="display:none;" id="add_printtask_panel">
 				<?php echo form_open_multipart('documenthistory/addtoprinttask',array('id' => 'add_printtask_form'));?>
 				<table class="table table-condensed left750" style="margin-bottom:0px;">
@@ -56,49 +68,7 @@ $this->load->view('menu');
 				</table>
 				</form>
 			</div>
-			<div class="pagination btn" id="pagelist">
-				<ul>
-				<?php
-				 $path = base_url().'documenthistory/display';
-				 $prevPage = max(1,$curPage-1);
-				 $nextPage = min($curPage+1,$maxPage);
-				 $startPage = max(1,$curPage - 3);
-				 $endPage = min($curPage + 3,$maxPage);
-				 if($curPage > 1)
-				 {
-				 	echo '<li>';
-				 	echo anchor("$path/1", '<<');
-				 	echo '</li>';
-				 	echo '<li>';
-				 	echo anchor("$path/$prevPage", '<');
-				 	echo '</li>';
-				 }
-				 for($i = $startPage;$i<=$endPage;$i++)
-				 {
-				 	if($i==$curPage)
-				 	{
-				 		echo '<li class="disabled">';
-				 	}
-				 	else
-				 	{
-				 		echo '<li class="active">';
-				 	}
-				 	echo anchor("$path/$i", "$i");
-				 	echo '</li>';
-				 }
-				 
-				 if($curPage < $maxPage)
-				 {
-				 	echo '<li>';
-				 	echo anchor("$path/$nextPage", '>');
-				 	echo '</li>';
-				 	echo '<li>';
-				 	echo anchor("$path/$maxPage", '>>');
-				 	echo '</li>';
-				 }
-				?>
-				</ul>
-			</div>
+			<div id="jtpagination"></div>
 		</div>
 	</div>
 </div>
