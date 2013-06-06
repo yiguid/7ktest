@@ -49,7 +49,7 @@ $this->load->view('menu');
 						<td>
 							<input type="hidden" id="documentid" name="documentid" value=""/>
 							<input type="hidden" id="documentname" name="documentname" value=""/>
-							<input class="btn btn-info" id="ufb" type="button" value=""/>
+							<input class="btn-metro-small" id="ufb" type="button" value=""/>
 						</td>
 						<td>
 							<?php echo form_dropdown('papersize', $papersize_option, 'A4', "id=papersize class=w60");?>
@@ -63,7 +63,7 @@ $this->load->view('menu');
 							<?php echo form_dropdown('zhuangding', $zhuangding_option, '普通', "id=zhuangding class=w70");?>
 						</td>
 						<td><input class="w40" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','')" onfocus="compute_money('<?php echo base_url();?>','')" id="cost" name="cost"/></td>
-						<td><input class="btn btn-info" type="button" onclick="add_printtask()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="添加" /></td>
+						<td><input class="btn-metro-small" type="button" onclick="add_printtask()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="添加" /></td>
 					</tr>
 				</table>
 				</form>

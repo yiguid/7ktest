@@ -8,9 +8,9 @@ $this->load->view('header');
 			印单号：<span style="color:red;font-size:20px;"><?php echo $printtaskid;?></span><br/>
 			您可以：
 			<div><a style="color:white;" href="<?php echo base_url();?>printtask?id=<?php echo $printtaskid;?>"
-				class="btn btn-warning btn-large">查看印单</a>
+				class="btn-metro">查看印单</a>
 			<a style="color:white;" href="<?php echo base_url();?>welcome"
-				class="btn btn-info btn-large">返回首页</a></div>
+				class="btn-metro">返回首页</a></div>
 		</div>
 	</div>
 </div>

@@ -219,7 +219,7 @@ function show_sort(){
 
 function addToPrinttask(baseurl,id,name,url){
 	if($("#add_printtask_panel").is(":hidden")){
-		document.getElementById("ufb").value = name;
+		document.getElementById("ufb").value = name.substring(0,12);
 		document.getElementById("documentid").value = id;
 		document.getElementById("documentname").value = name;
 		$("#add_printtask_panel").slideDown('slow');

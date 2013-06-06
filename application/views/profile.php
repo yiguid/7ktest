@@ -145,7 +145,7 @@ $this->load->view('header');
 						<td>
 							<input type="hidden" id="rowid<?php echo $num;?>" value="<?php echo $items['rowid']?>" />
 							<input type="hidden" id="documentid<?php echo $num;?>" value="<?php echo $items['id']?>" />
-							<div id="name<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['name'];?></div>
+							<div id="name<?php echo $num;?>" style="padding-top:2px;"><?php echo substr($items['name'],0,12)."...";?></div>
 						</td>
 						<td>
 							<?php echo form_dropdown('papersize'.$num, $papersize_option, $items['options']['papersize'], "id=papersize".$num." class=w60");?>
@@ -169,7 +169,7 @@ $this->load->view('header');
 						<td>
 							<input type="hidden" id="rowid<?php echo $num;?>" value="<?php echo $items['rowid']?>" />
 							<input type="hidden" id="documentid<?php echo $num;?>" value="<?php echo $items['id']?>" />
-							<div id="name<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['name'];?></div>
+							<div id="name<?php echo $num;?>" style="padding-top:2px;"><?php echo substr($items['name'],0,12)."...";?></div>
 						</td>
 						<td>
 							<div style="padding-top:2px;">特色资料介绍：</div>
