@@ -5,3 +5,7 @@ application/config/config.php
 uploads/*
 
 .DS_Store
+
+.htaccess
+
+application/config/config.php
