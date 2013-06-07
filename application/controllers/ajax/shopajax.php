@@ -119,5 +119,34 @@ class Shopajax extends CI_Controller {
 		$data['specialdoclist'] = $this->printer_mdl->get_printer_specialdoc($pterid,$l,$s); ;
 		echo $this->load->view("printer/specialdoc_list",$data);
 	}
+	public function get_shop_specialdoc_total()
+	{
+		extract($_REQUEST);
+		if(isset($type))
+		{
+			echo  $this->shop_mdl->get_shop_specialdoc_total_by_type($pterid,$type);
+		}
+		else
+		{
+			echo  $this->shop_mdl->get_shop_specialdoc_total($pterid);
+		}
+	}
+	public function get_shop_specialdoc()
+	{
+		extract($_REQUEST);
+		$s = intval($start);
+		$l = intval($line);
+		$data['pterid'] = $pterid;
+		$data['name'] = $this->shop_mdl->get_shop_name($pterid);
+		if(isset($type))
+		{
+			$data['docList']=$this->shop_mdl->get_shop_specialdoc_by_type($pterid,$type,$l,$s);
+		}
+		else
+		{
+			$data['docList']=$this->shop_mdl->get_shop_specialdoc($pterid,$l,$s);
+		}
+		echo $this->load->view('shop/doc_list_view',$data);
+	}
 }
 ?>

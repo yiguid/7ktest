@@ -235,12 +235,12 @@ $.fn.divpagination = function(maxentries, opts,url,postdata,targetdividsel){
 		// Initialize options with default values
 		opts = $.extend({
 			items_per_page:10,
-			num_display_entries:11,
+			num_display_entries:5,
 			current_page:0,
-			num_edge_entries:0,
+			num_edge_entries:1,
 			link_to:"#",
-			prev_text:"Prev",
-			next_text:"Next",
+			prev_text:"上一页",
+			next_text:"下一页",
 			ellipse_text:"...",
 			prev_show_always:true,
 			next_show_always:true,

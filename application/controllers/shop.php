@@ -11,38 +11,32 @@ class Shop extends CI_Controller {
 		$this->load->model('shop_mdl');
 		$this->load->model('feedback_mdl');
 	}
-	public function doc($info)
+	public function doc($pterid)
 	{
 		//check数据合法性
-		//$str结构：printerid-docClassid-page
-		$pattern = '/^(\d+)-(\d+)-(\d+)$/';
-		if(preg_match($pattern,$info,$match))
+		//$str结构：printerid
+		$pattern = '/^\d+$/';
+		if(preg_match($pattern,$pterid))
 		{
-			$pterid= $match[1];
-			$docClassid = $match[2];
-			$curPage = $match[3];
-			$numPerPage = 5; //每页显示个数
-			//判断数据逻辑合法性
-
-			//判断这三个数据是否是合法数据
 			if(($location= $this->shop_mdl->get_shop_location($pterid)) == null)
 			{
 				//非法ID
+				redirect(base_url());
 			}
 			else{
 				$this->data['shopInfo'] = $this->shop_mdl->get_shop_info($pterid);
 				$this->data['location'] = explode('|', $location);
 				$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
 				$this->data['pterid'] = $pterid;
-				$this->data['docClassid']=$docClassid;
-				$this->data['curPage']=$curPage;
-				$this->data['docList']=$this->shop_mdl->get_shop_specialdoc($pterid,$docClassid, $curPage,$numPerPage);
+				$this->data['docTypeList']=$this->shop_mdl->get_shop_specialdoc_type($pterid);
+				$this->data['perpage'] = 1;
+				$this->data['total'] = $this->shop_mdl->get_shop_specialdoc_total($pterid);
 				$this->load->view('shop/doc_view',$this->data);
 			}
 		}
 		else
 		{
-				redirect(base_url());
+			redirect(base_url());
 		}
 	}
 	public function msg($info)

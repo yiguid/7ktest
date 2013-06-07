@@ -28,14 +28,60 @@ class Shop_mdl extends CI_Model {
 		return "error";
 	}
 
-	public function get_shop_specialdoc($pterid,$docClassid,$curPage,$numPerPage)
+	public function get_shop_specialdoc($pterid,$line,$start)
 	{
 		$this->db->select('*');
 		$this->db->from('specialdoc');
 		$this->db->where('uploadpterid',$pterid);
-		$this->db->limit($numPerPage,($curPage-1)*$numPerPage);
+		$this->db->limit($line,$start);
 		$query = $this->db->get();
 		return $query->result();
+	}
+	public function get_shop_specialdoc_by_type($pterid,$docType,$line,$start)
+	{
+		$this->db->select('*');
+		$this->db->from('specialdoc');
+		$this->db->where('uploadpterid',$pterid);
+		$this->db->where('type',$docType);
+		$this->db->limit($line,$start);
+		$query = $this->db->get();
+		return $query->result();
+	}
+	public function get_shop_specialdoc_type($pterid)
+	{
+		$this->db->select('type');
+		$this->db->distinct();
+		$this->db->from('specialdoc');
+		$this->db->where('uploadpterid',$pterid);
+		$query = $this->db->get();
+		return $query->result();
+	}
+	public function get_shop_specialdoc_total($pterid)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('specialdoc');
+		$this->db->where('uploadpterid',$pterid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
+	}
+	public function get_shop_specialdoc_total_by_type($pterid,$type)
+	{
+		$this->db->select('count(*) as total');
+		$this->db->from('specialdoc');
+		$this->db->where('uploadpterid',$pterid);
+		$this->db->where('type',$type);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row->total;
+			}
+		}
 	}
 
 	public function get_shop_msg_total($pterid)
