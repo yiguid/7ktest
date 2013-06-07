@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/7ktest';
+$config['base_url']	= 'http://121.199.46.111';
 
 /*
 |--------------------------------------------------------------------------
