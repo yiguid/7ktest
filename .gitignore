@@ -3,9 +3,4 @@ application/config/database.php
 application/config/config.php
 .htaccess
 uploads/*
-
 .DS_Store
-
-.htaccess
-
-application/config/config.php
