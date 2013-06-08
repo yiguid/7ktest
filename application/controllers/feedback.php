@@ -77,33 +77,23 @@ class Feedback extends CI_Controller {
  	}
  	public function reply($msgid)
  	{
-		if(!$this->auth->logged_in())
+		if($this->auth->logged_in() || $this->auth->printer_logged_in())
 		{
-			if(!$this->auth->printer_logged_in())
-			{
-				redirect('login','refresh');
-			}
-			else
-			{
-				redirect(base_url().'feedback');
-			}
+			$this->data['msg']     = $this->feedback_mdl->get_msg_by_id($msgid);
+	 		$this->data['rpylist'] = $this->feedback_mdl->get_msg_all_rpy($msgid);
+	 		$this->load->view('reply_view',$this->data);
 		}
- 		$this->data['msg']     = $this->feedback_mdl->get_msg_by_id($msgid);
- 		$this->data['rpylist'] = $this->feedback_mdl->get_msg_all_rpy($msgid);
- 		$this->load->view('reply_view',$this->data);
+		else{
+			redirect(base_url().'feedback');
+		}		
  	}
  	public function doReply($msgid)
  	{
-		if(!$this->auth->logged_in())
+		if(!$this->auth->logged_in() && !$this->auth->printer_logged_in())
 		{
-			if(!$this->auth->printer_logged_in())
-			{
-				redirect('login','refresh');
-			}
-			else
-			{
-				redirect(base_url().'feedback');
-			}
+
+			redirect('login','refresh');
+			return;
 		}
  		$this->form_validation->set_rules('msgcontent', '留言', 'required');
  		if ($this->form_validation->run() == FALSE)
@@ -116,8 +106,13 @@ class Feedback extends CI_Controller {
 			$date = date("Y-m-d");
 			$time = date("H:i:s");
 			$uid = $this->session->userdata('id');
+			$utype = 0;
+			if($this->session->userdata('user_type') == 'printer')
+			{
+				$utype = 1;
+			}
 			$floor = count($this->feedback_mdl->get_msg_all_rpy($msgid)) + 1;
- 			if($this->feedback_mdl->add_rpy($content,$date,$time,$msgid,$floor,$uid))
+ 			if($this->feedback_mdl->add_rpy($content,$date,$time,$msgid,$floor,$uid,$utype))
  			{
  				redirect(base_url()."feedback/reply/$msgid");
  			}

@@ -103,14 +103,15 @@ class Feedback_mdl extends CI_Model {
 		}
 		return 0;
 	}
-	public function add_rpy($content,$date,$time,$msgid,$floor,$uid)
+	public function add_rpy($content,$date,$time,$msgid,$floor,$uid,$utype)
 	{
 		$data = array(	'content' => $content,
 						'date'=>$date,
 						'time'=>$time,
 						'msgid'=>$msgid,
 						'floor'=>$floor,
-						'uid'=>$uid
+						'uid'=>$uid,
+						'utype'=>$utype
 		);
 		$this->db->insert($this->rpyTableName,$data);
 		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;

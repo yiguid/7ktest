@@ -11,7 +11,7 @@
 				echo "<i class='icon-user'></i>".$row->nickname."&nbsp;&nbsp;";
 				echo $row->date." ";
 				echo $row->time." ";
-				if($this->auth->logged_in()){
+				if($this->auth->logged_in() || $this->auth->printer_logged_in()){
 					echo anchor("feedback/reply/$row->id", "[<i class='icon-retweet icon-white'></i>回复]",'style="color:#3498db;"');
 				}
 				echo "</div>";

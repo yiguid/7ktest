@@ -14,10 +14,10 @@
 		<div id="shop_body">
 			<div id="shop_services">
 				<ul id="listTab" class="navlist">
-					<li><a href="<?php echo $curPath."doc/$pterid-0-1"?>" >特色资料</a></li>
+					<li><a href="<?php echo $curPath."doc/$pterid"?>" >特色资料</a></li>
 					<li><a class="current" href="<?php echo $curPath."service/$pterid"?>" >特色业务</a></li>
 					<li><a href="<?php echo $curPath."rate/$pterid"?>" >评    价</a></li>
-					<li><a href="<?php echo $curPath."msg/$pterid-1"?>">留    言</a></li>
+					<li><a href="<?php echo $curPath."msg/$pterid"?>">留    言</a></li>
 					<li><a href="<?php echo $curPath."promotion/$pterid"?>">促    销</a></li>
 	        	</ul>
 	        	<div id="doc-class">

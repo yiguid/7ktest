@@ -1,20 +1,24 @@
 			<script type="text/javascript">
-			var url= '<?php echo base_url()."ajax/shopajax/rate";?>';
+			function rateInit()
+			{
+				var rateurl= '<?php echo base_url()."ajax/shopajax/rate";?>';
 
-			var score = <?php echo $this->shop_mdl->get_avg_rating($pterid,1);?>;
-			var rate_enable = false;
+				var score = <?php echo $this->shop_mdl->get_avg_rating($pterid,1);?>;
+				var rate_enable = false;
 
-			var pterid = <?php echo $pterid;?>;
-			var type = 1;
-			
-			var postdata = {destid : pterid, type : type};
-			<?php if($this->auth->logged_in()) {?>
-				var userid = <?php echo $this->session->userdata('id');?>;
-				rate_enable = !<?php echo $this->shop_mdl->is_rating_shop($this->session->userdata('id'),$pterid);?>;
-				$.extend(postdata,{userid : userid});
-			<?php }?>
+				var pterid = <?php echo $pterid;?>;
+				var type = 1;
+				
+				var postdata = {destid : pterid, type : type};
+				<?php if($this->auth->logged_in()) {?>
+					var userid = <?php echo $this->session->userdata('id');?>;
+					rate_enable = !<?php echo $this->shop_mdl->is_rating_shop($this->session->userdata('id'),$pterid);?>;
+					$.extend(postdata,{userid : userid});
+				<?php }?>
+				$("#test").rating({score : score, rate_enable : rate_enable},rateurl,postdata);
+			}
 			 $(document).ready(function(){
-                $("#test").rating({score : score, rate_enable : rate_enable},url,postdata);
+             	rateInit();
             });
 			</script>
 			<div id="shop_details">

@@ -55,7 +55,7 @@
 					<li><a tabindex="-1" href="<?php echo base_url();?>printer/manage/money"><i class="icon-calendar"></i>财务管理</a></li>
 					<li><a tabindex="-1" href="<?php echo base_url();?>printer/manage/password"><i class="icon-cog"></i>修改密码</a></li>
 					<li class="divider"></li>
-					<li><a tabindex="-1" href='<?php echo base_url()."shop/doc/".$this->session->userdata('id')."-0-1";?>'><i class="icon-cog"></i>查看店铺</a></li>
+					<li><a tabindex="-1" href='<?php echo base_url()."shop/doc/".$this->session->userdata('id');?>'><i class="icon-cog"></i>查看店铺</a></li>
 				</ul>
 			&nbsp;&nbsp;<?php echo anchor('printer/login/logout','退出'); 
 			}

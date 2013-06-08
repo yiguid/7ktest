@@ -8,6 +8,8 @@
 		$this->load->view('header');
 	}
 ?>
+<script type="text/javascript">
+</script>
 <div id="feedback_container">
 	<div id="profile">
 		<div class="feedback_view">

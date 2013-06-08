@@ -39,42 +39,28 @@ class Shop extends CI_Controller {
 			redirect(base_url());
 		}
 	}
-	public function msg($info)
+	public function msg($pterid)
 	{
-		$pattern = '/^(\d+)-(\d+)$/';
-		if(preg_match($pattern,$info,$match))
+		$pattern = '/^\d+$/';
+		if(preg_match($pattern,$pterid))
 		{
 			//数据合法性验证
-
-			//
-			$pterid= $match[1];
-			$curPage = $match[2];
-			$pageBase = $this->config->item('pageBase');
-			$msgTotal = $this->shop_mdl->get_shop_msg_total($pterid);
-			$maxPage = ceil ( $msgTotal / $pageBase);
-			if($curPage > $maxPage)
-			{
-				$curPage = $maxPage;
-			}
-			if($curPage < 1)
-			{
-				$curPage = 1;
-			}
 			if(($location= $this->shop_mdl->get_shop_location($pterid)) == null)
 			{
 				//非法ID
+				redirect(base_url());
 			}
-			$this->data['shopInfo'] = $this->shop_mdl->get_shop_info($pterid);
-			$this->data['location'] = explode('|', $location);
-			$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
-			$this->data['pterid']  =$pterid;
-			$this->data['curPage']  = $curPage;
-	 		$this->data['maxPage']  = $maxPage;
-	 		$pageBase = $this->config->item('pageBase');
-	 		$start = ($curPage -1) * $pageBase;
-			$this->data['msglist']= $this->shop_mdl->get_shop_msg($pageBase,$start,$pterid);
-			$this->load->view('shop/message_view',$this->data);
+			else
+			{
+				$this->data['shopInfo'] = $this->shop_mdl->get_shop_info($pterid);
+				$this->data['location'] = explode('|', $location);
+				$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
+				$this->data['pterid']  =$pterid;
+		 		$this->data['total'] =  $this->shop_mdl->get_shop_msg_total($pterid);
+		 		$this->data['perpage'] = 5;
+				$this->load->view('shop/message_view',$this->data);
 			}
+		}
 	}
 	public function rate($pterid)
 	{

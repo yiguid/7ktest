@@ -9,6 +9,7 @@ class Shopajax extends CI_Controller {
 		$this->load->model('shop_mdl');
 		$this->load->model('transaction_mdl');
 		$this->load->model('printer_mdl');
+		$this->load->model('feedback_mdl');
 	}
 	public function add_spec_doc_to_printtask(){
 		extract($_REQUEST);
@@ -147,6 +148,14 @@ class Shopajax extends CI_Controller {
 			$data['docList']=$this->shop_mdl->get_shop_specialdoc($pterid,$l,$s);
 		}
 		echo $this->load->view('shop/doc_list_view',$data);
+	}
+	public function get_shop_msg()
+	{
+		extract($_REQUEST);
+		$s = intval($start);
+		$l = intval($line);
+		$data['msglist'] = $this->shop_mdl->get_shop_msg($l,$s,$pterid);
+		$this->load->view('shop/message_list_view.php',$data);
 	}
 }
 ?>
