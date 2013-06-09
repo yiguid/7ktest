@@ -57,6 +57,7 @@ class Printtask extends CI_Controller {
    		//添加费用信息
    		$trans = array(
    						'userid' => $this->session->userdata('id'),
+              'pterid' => $this->input->post('printerid'),
    						'time' => date("Y-m-d H:i:s"),
    						'info' => '打印消费',
    						'amount' => -$this->input->post('total_cost'),

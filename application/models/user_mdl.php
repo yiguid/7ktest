@@ -13,7 +13,7 @@ class User_mdl extends CI_Model {
 	{
 		$this->db->select('*');
 		$this->db->where('username',$username);
-		$this->db->where('password',$password);
+		$this->db->where('password',md5($password.$this->config->item('encryption_key')));
 		$query = $this->db->get('user');
 		$result = $query->row();
 		$num = $query->num_rows();
@@ -91,7 +91,9 @@ class User_mdl extends CI_Model {
 	//添加用户
 	public function add_user($data)
 	{
+		$encryption_key = $this->config->item('encryption_key');
 		$data['id'] = $data['username'];
+		$data['password'] = md5($data['password'].$encryption_key);
 		$this->db->insert('user',$data);
 		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
 	}
@@ -204,7 +206,7 @@ class User_mdl extends CI_Model {
 	{
 		$this->db->select('*');
 		$this->db->where('username',$username);
-		$this->db->where('password',$old_password);
+		$this->db->where('password',md5($old_password.$this->config->item('encryption_key')));
 		$query = $this->db->get('user');
 		$result = $query->row();
 		$num = $query->num_rows();
@@ -215,7 +217,7 @@ class User_mdl extends CI_Model {
 		}
 		else
 		{
-			$data = array('password' => $password);
+			$data = array('password' => md5($password.$this->config->item('encryption_key')));
 			$this->db->where('username',$username);
 			if($this->db->update('user',$data))
 				return TRUE;

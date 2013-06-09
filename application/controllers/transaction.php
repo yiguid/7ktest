@@ -35,10 +35,16 @@ class Transaction extends CI_Controller {
 							'status' => '充值成功'
 				);
 			$pwd = $this->input->post('password');
-			$this->transaction_mdl->add_transaction($trans,$pwd);
-			$this->data['trans_status'] = '充值成功';
-			$this->session->set_userdata('user_money', $this->session->userdata('user_money') + $this->input->post('amount'));
-			$this->load->view('manage/recharge',$this->data);
+			if($this->transaction_mdl->add_transaction($trans,$pwd))
+			{
+				$this->data['trans_status'] = '充值成功';
+				$this->session->set_userdata('user_money', $this->session->userdata('user_money') + $this->input->post('amount'));
+				$this->load->view('manage/recharge',$this->data);
+			}else
+			{
+				$this->data['trans_status'] = '充值失败，请重试';
+				$this->load->view('manage/recharge',$this->data);
+			}	
 		}
 	}
 }

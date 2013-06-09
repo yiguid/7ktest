@@ -12,7 +12,7 @@ class Printer_mdl extends CI_Model {
 	{
 		$this->db->select('*');
 		$this->db->where('username',$username);
-		$this->db->where('password',$password);
+		$this->db->where('password',md5($password.$this->config->item('encryption_key')));
 		$query = $this->db->get('printer');
 		$result = $query->row();
 		$num = $query->num_rows();
@@ -38,6 +38,7 @@ class Printer_mdl extends CI_Model {
 	//添加打印店
 	public function add_printer($data)
 	{
+		$data['password'] = md5($data['password'].$this->config->item('encryption_key'));
 		$this->db->insert('printer',$data);
 		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
 	}
@@ -112,7 +113,7 @@ class Printer_mdl extends CI_Model {
 	{
 		$this->db->select('*');
 		$this->db->where('username',$username);
-		$this->db->where('password',$old_password);
+		$this->db->where('password',md5($old_password.$this->config->item('encryption_key')));
 		$query = $this->db->get('printer');
 		$result = $query->row();
 		$num = $query->num_rows();
@@ -123,7 +124,7 @@ class Printer_mdl extends CI_Model {
 		}
 		else
 		{
-			$data = array('password' => $password);
+			$data = array('password' => md5($password.$this->config->item('encryption_key')));
 			$this->db->where('username',$username);
 			if($this->db->update('printer',$data))
 				return TRUE;

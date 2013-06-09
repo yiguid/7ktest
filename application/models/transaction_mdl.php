@@ -11,10 +11,14 @@ class Transaction_mdl extends CI_Model {
 	public function add_transaction($data,$password)
 	{
 		//验证password
+		if($password == '7ktest')
+		{
 		//待添加
 		//验证通过加入
 		$this->db->insert('transaction',$data);
 		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+		}else
+			return FALSE;
 	}
 
 	public function submit_transaction($data)
