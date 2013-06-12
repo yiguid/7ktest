@@ -13,7 +13,7 @@ $this->load->view('header');
 				第一步：
 				选择打印店
 			</div>
-			<div style="text-align:left;margin-left:4px;">您现在所在打印店：  <i class='icon-map-marker'></i><?php echo anchor('place','切换地址'); ?></div>
+			<div style="text-align:left;margin-left:4px;">您现在所在打印店：  <?php echo anchor('place','切换地址','class="btn-metro-small"'); ?></div>
 				<div id="current" style="padding-left:4px;text-align:left;font-weight:bold;"><?php echo $this->session->userdata('printer_name')?></div>
 			<div class="bk10"></div>
 			<div class="divider"></div>
@@ -104,7 +104,7 @@ $this->load->view('header');
 						<td>
 							<?php echo form_dropdown('zhuangding', $zhuangding_option, '普通', "id=zhuangding class=w70");?>
 						</td>
-						<td><input class="w40" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','')" onfocus="compute_money('<?php echo base_url();?>','')" id="cost" name="cost"/></td>
+						<td><input class="w40" style="border:0px;" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','')" onfocus="compute_money('<?php echo base_url();?>','')" id="cost" name="cost"/></td>
 						<td><input class="btn-metro-small" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="上传" /></td>
 					</tr>
 				</table>
@@ -158,7 +158,7 @@ $this->load->view('header');
 						<td>
 							<?php echo form_dropdown('zhuangding'.$num, $zhuangding_option, $items['options']['zhuangding'], "id=zhuangding".$num." class=w70");?>
 						</td>
-						<td><input class="w40" type="text" value="<?php echo $items['price']*$items['qty'];?>" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" onfocus="compute_money('<?php echo base_url();?>','<?php echo $num;?>')" id="cost<?php echo $num;?>" name="cost<?php echo $num;?>"/></td>
+						<td><input class="w40" style="border:0px;" type="text" value="<?php echo $items['price']*$items['qty'];?>" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" onfocus="compute_money('<?php echo base_url();?>','<?php echo $num;?>')" id="cost<?php echo $num;?>" name="cost<?php echo $num;?>"/></td>
 						<td><div style="padding-top:6px;"><a onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" href="javascript:edit_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-edit"></i></a> <a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
 					</tr>
 					<?php

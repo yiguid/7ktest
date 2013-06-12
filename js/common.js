@@ -48,7 +48,7 @@ function submit_upload(){
 	var file = document.getElementById('ufb').value;
 	var fs = document.getElementById('fenshu').value;
 	
-	if(isNaN(cost) || isNaN(fs)){
+	if(isNaN(cost) || isNaN(fs) || cost <= 0 ){
 		alert('页码设置有误，请重新输入！');
 		return false;
 	}

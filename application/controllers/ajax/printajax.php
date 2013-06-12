@@ -83,7 +83,7 @@ class Printajax extends CI_Controller {
 			$price += $zhuangding_arr[$zhuangding];
 		}
 		else
-			$price = "页码有误";
+			$price = "0";
 		echo $price;
 	}
 
