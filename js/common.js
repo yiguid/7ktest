@@ -67,7 +67,7 @@ function submit_upload(){
 
 
 function deliver(url, printtaskid){
-	alert("deliver!");
+	alert("发货功能开发中~");
 }
 
 function printDocument(url, printtaskid){

@@ -37,7 +37,7 @@ $this->load->helper('url');
 		</div>
 		<div id="jtpagination"></div>
 
-		<div style="text-align:left;">
+		<div style="text-align:left;margin-left:20px;">
 			<h5>上传特色资料</h5>
 		<?php echo form_open_multipart('printer/specialdoc/do_upload',array('id' => 'upload_form'));?>
 			<div>资料名称：<input type="text" name="name"/>标签：<input type="text" name="keyword"/></div>

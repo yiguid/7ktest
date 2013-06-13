@@ -6,18 +6,20 @@ $this->load->view('header');
 		<div id="managebox">
 			<div class="content-header">
 				<h4>搜索  <span style="color:red"><?php echo $this->session->userdata('keywords')?></span>  的结果</h4>  
-				<a href =<?php echo base_url()."search/index?keywords=".$keywords ?>>搜打印店</a>    搜文档
+				<a href =<?php echo base_url()."search/index?keywords=".$keywords ?>>搜打印店</a><span class="btn-metro" >搜文档</span>
 			</div>
 			<table class="table table-hover manage_table">
 				<tr>
-					<td>文件名</td><td>关键词</td><td>类型</td><td>文件大小</td><td>下载</td>
+					<td>文件名</td><td>关键词</td><td>类型</td><td>文件大小</td><td>操作</td>
 				</tr>
 				<?php foreach($searchresultlist as $searchresult):?>  
   
 					<tr>
 					<?php echo "<td>".$searchresult->name ."</td><td>".$searchresult->keyword 
 							."</td><td>".$searchresult->type 
-							."</td><td>".$searchresult->size."</td><td>".$searchresult->url
+							."</td><td>".$searchresult->size."</td><td>".
+							"<a href=\"javascript:addSpecDocToPrinttask('".base_url()
+								."','".$searchresult->id."','".$searchresult->uploadpterid."','".""."')\" >印一份</a>"
 							."</td>";?>
 					</tr>  
   

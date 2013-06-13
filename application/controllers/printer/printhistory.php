@@ -24,7 +24,7 @@ class Printhistory extends CI_Controller {
 		//$this->load->view('printer/printhistory',$this->data);
 		$this->data['pterid']=$this->session->userdata('id');
 		$this->data['total'] = $this->printer_mdl->get_printer_printhistory_total($this->session->userdata('id'));
-		$this->data['perpage'] = 5; 
+		$this->data['perpage'] = 10; 
 		$this->load->view('printer/printhistory',$this->data);
 	}
 
@@ -32,7 +32,7 @@ class Printhistory extends CI_Controller {
 	{
 		$this->data['pterid']=$this->session->userdata('id');
 		$this->data['total'] = $this->printer_mdl->get_printer_printhistory_total_by_method($this->session->userdata('id'),$method);
-		$this->data['perpage'] = 5;
+		$this->data['perpage'] = 10;
 		$this->data['method'] = $method;
 		if($method == 'self')
 			$this->data['page_title'] = '自行取印任务';

@@ -54,7 +54,7 @@ class Search extends CI_Controller {
 			}
 		}
 		*/
-		$this->display(1);
+		$this->display_doc(1);
 	}
 	public function display($curPage)
 	{

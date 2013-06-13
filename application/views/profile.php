@@ -13,8 +13,8 @@ $this->load->view('header');
 				第一步：
 				选择打印店
 			</div>
-			<div style="text-align:left;margin-left:4px;">您现在所在打印店：  <?php echo anchor('place','切换地址','class="btn-metro-small"'); ?></div>
-				<div id="current" style="padding-left:4px;text-align:left;font-weight:bold;"><?php echo $this->session->userdata('printer_name')?></div>
+			<div style="text-align:left;margin-left:4px;">您现在所在打印店：  </div>
+				<div id="current" style="padding-left:4px;text-align:left;font-weight:bold;"><?php echo $this->session->userdata('printer_name')?>&nbsp;&nbsp;<?php echo anchor('place','切换地址','class="btn-metro-small"'); ?></div>
 			<div class="bk10"></div>
 			<div class="divider"></div>
 			<div>
@@ -81,7 +81,7 @@ $this->load->view('header');
 						<td>文档名</td>
 						<td>纸张</td>
 						<td>单/双面</td>
-						<td>页码</td>
+						<td>打印范围</td>
 						<td>份数</td>
 						<td>装订</td>
 						<td>金额</td>
@@ -99,8 +99,8 @@ $this->load->view('header');
 						<td>
 							<?php echo form_dropdown('isdoubleside', $isdoubleside_option, '单面', "id=isdoubleside class=w70");?>
 						</td>
-						<td><input class="w60" type="text" maxlength="7" size="4" id="range" name="range"/></td>
-						<td><input class="w60" type="text" maxlength="3" size="2" id="fenshu" name="fenshu"/></td>
+						<td><input class="w60" placeholder="如:1-10" type="text" maxlength="7" size="4" id="range" name="range"/></td>
+						<td><input class="w30" type="text" value="1" maxlength="3" size="2" id="fenshu" name="fenshu"/></td>
 						<td>
 							<?php echo form_dropdown('zhuangding', $zhuangding_option, '普通', "id=zhuangding class=w70");?>
 						</td>
@@ -154,7 +154,7 @@ $this->load->view('header');
 							<?php echo form_dropdown('isdoubleside'.$num, $isdoubleside_option, $items['options']['isdoubleside'], "id=isdoubleside".$num." class=w70");?>
 						</td>
 						<td><input class="w60" type="text" value="<?php echo $items['options']['range'];?>" maxlength="7" size="4" id="range<?php echo $num;?>" name="range<?php echo $num;?>"/></td>
-						<td><input class="w60" type="text" value="<?php echo $items['qty'];?>" maxlength="3" size="2" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/></td>
+						<td><input class="w30" type="text" value="<?php echo $items['qty'];?>" maxlength="3" size="2" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/></td>
 						<td>
 							<?php echo form_dropdown('zhuangding'.$num, $zhuangding_option, $items['options']['zhuangding'], "id=zhuangding".$num." class=w70");?>
 						</td>
@@ -178,7 +178,7 @@ $this->load->view('header');
 							<div id="description<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['options']['description'];?></div>
 						</td>
 						<td><div id="page<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['options']['page'];?></div></td>
-						<td><input class="w40" type="text" value="<?php echo $items['qty'];?>" maxlength="2" size="1" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/></td>
+						<td><input class="w30" type="text" value="<?php echo $items['qty'];?>" maxlength="2" size="1" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/></td>
 						<td>
 							
 						</td>

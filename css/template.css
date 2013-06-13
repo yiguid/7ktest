@@ -40,6 +40,10 @@ body {
 .margin30{
 	margin-left:30px;
 }
+.w30{
+	width:30px;
+}
+
 .w40{
 	width:40px;
 }
@@ -516,7 +520,7 @@ a.readon {
 }
 
 #other_printer{
-	height:330px;
+	height:386px;
 }
 
 .printer_info{

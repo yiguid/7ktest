@@ -6,8 +6,8 @@ $this->load->view('printer/header');
 	<div id="profile">
 		<div id="login_main">
 			<div id="login_left">
-				<h1>Welcome to 7KMall!</h1>
-				<h2>Printer Login!</h2>
+				<h1>奇客云打印，寻找资料、远程 打印更容易。</h1>
+				<h2>打印店登录页面</h2>
 				<div id="myCarousel" class="carousel slide">
 				  <ol class="carousel-indicators">
 				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>

@@ -27,7 +27,7 @@ class Document_mdl extends CI_Model {
 	public function get_documents_by_keyword($keywords,$line,$start)
 	{
 		$this->db->select('*');
-		$this->db->from('document');
+		$this->db->from('specialdoc');
 		$this->db->like('name',$keywords);
 		$this->db->limit($line,$start);
 		$query = $this->db->get();
@@ -38,7 +38,7 @@ class Document_mdl extends CI_Model {
 	public function get_documents_by_keyword_total($keywords)
 	{
 		$this->db->select('count(*) as total');
-		$this->db->from('document');
+		$this->db->from('specialdoc');
 		$this->db->like('name',$keywords);
 		
 		$query = $this->db->get();

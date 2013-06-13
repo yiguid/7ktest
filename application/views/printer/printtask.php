@@ -22,8 +22,9 @@ $this->load->view('printer/menu');
 					<td>送货方式</td><td>送货地址</td><td>联系人</td><td>联系电话</td><td>送货时间</td>
 				</tr>
 				<tr>
+					<?php if($printtask->daodianyin == 'on') $daodian = "-到店印"; else $daodian="";?>
 					<?php if($printtask->method == 'self') $method = '自行取印'; elseif($printtask->method == 'express') $method = '快递送印'; elseif($printtask->method == 'campus') $method = '校园送印';?>
-					<?php echo "<td>".$method ."</td><td>".$printtask->address ."</td><td>".$printtask->receiver ."</td><td>".$printtask->mobile ."</td><td>".$printtask->delivertime."</td>";?>
+					<?php echo "<td>".$method.$daodian ."</td><td>".$printtask->address ."</td><td>".$printtask->receiver ."</td><td>".$printtask->mobile ."</td><td>".$printtask->delivertime."</td>";?>
 				</tr> 
 					<?php endforeach;?>
 			</table>
@@ -47,11 +48,13 @@ $this->load->view('printer/menu');
 				</tr>  
 				<?php endforeach;?>
 			</table>
+			<div style="margin-top:10px;" >
 			<?php if($printtask->status == '打印中') {?>
-				<a href="javascript:printDocument('<?php echo base_url();?>','<?php echo $printtask->id;?>')">打印</a>
+				<a class="btn-metro" href="javascript:printDocument('<?php echo base_url();?>','<?php echo $printtask->id;?>')">打印</a>
 			<?php }else if($printtask->status == '打印完成') {?>
-				<a href="javascript:deliver('<?php echo base_url();?>','<?php echo $printtask->id;?>')">发货</a>
+				<a class="btn-metro" href="javascript:deliver('<?php echo base_url();?>','<?php echo $printtask->id;?>')">发货</a>
 			<?php }?>
+			</div>
 		</div>
 	</div>
 </div>

@@ -12,7 +12,7 @@
 			<div class="menu_content"><i class='icon-briefcase'></i><a href="<?php echo base_url();?>printer/printhistory/method/campus">校园送印任务</a></div>
 			<div class="menu_content"><i class='icon-gift'></i><a href="<?php echo base_url();?>printer/printhistory/method/express">快递送印任务</a></div>
 			<div class="menu_title">文件管理</div>
-			<div class="menu_content"><i class='icon-file'></i><a href="<?php echo base_url();?>printer/documenthistory">印单文件</a></div>
+			<div class="menu_content"><i class='icon-file'></i><a href="<?php echo base_url();?>printer/specialdoc">印单文件</a></div>
 			<div class="menu_content"><i class='icon-star'></i><a href="<?php echo base_url();?>printer/specialdoc">特色资料</a></div>
 			<div class="menu_title">打印店管理
 				<a href="<?php echo base_url().'shop/doc/'.$this->session->userdata('id');?>">[查看店铺]</a></div>

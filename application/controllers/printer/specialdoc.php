@@ -21,7 +21,7 @@ class Specialdoc extends CI_Controller {
 	{
 		//$this->data['specialdoclist'] = $this->printer_mdl->get_printer_specialdoc($this->session->userdata('id'));
 		$pterid = $this->session->userdata('id');
-		$perpage = 5;
+		$perpage = 4;
 		$total_rows = $this->printer_mdl->get_printer_specialdoc_total($pterid);
 		$this->data['pterid'] = $pterid;
 		$this->data['total_rows'] = $total_rows;

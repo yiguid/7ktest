@@ -1,5 +1,6 @@
 	<table style="width: 700px;" class="table table-hover">
 		<tr>
+			<td>印单号</td>
 			<td>打印人</td>
 			<td>文件数</td>
 			<td>状态</td>
@@ -12,7 +13,8 @@
   					<tr>
 					<?php
 					
-					echo "<td>" . $printhistory->username . "</td>
+					echo "<td>" . $printhistory->id . "</td>
+							 <td>" . $printhistory->username . "</td>
                              <td>" . $printhistory->documentnum . "</td>
                              <td>" . $printhistory->status . "</td>
                              <td>" . $printhistory->createtime . "</td>

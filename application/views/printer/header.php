@@ -28,8 +28,8 @@
 	</div>
 	<div id="menu_list">
 		<span style="float:left;">	
-			<a href="<?php echo base_url();?>printer/manage">云打印店</a>
-			<a href="<?php echo base_url();?>welcome">云打印</a>
+			<a style="color:white;" href="<?php echo base_url();?>printer/manage">云打印店</a>
+			<a style="color:#D6E4FB;" href="<?php echo base_url();?>welcome">云打印</a>
 		</span>
 		<span style="float:right;">
 			<div class="dropdown">
@@ -56,16 +56,16 @@
 					<li class="divider"></li>
 					<li><a tabindex="-1" href='<?php echo base_url()."shop/doc/".$this->session->userdata('id');?>'><i class="icon-cog"></i>查看店铺</a></li>
 				</ul>
-			&nbsp;&nbsp;<?php echo anchor('printer/login/logout','退出'); 
+			&nbsp;&nbsp;<?php echo anchor('printer/login/logout','退出','style="color:#D6E4FB;"'); 
 			}
 			else
 			{
-				echo anchor('printer/regist','注册');
+				echo anchor('printer/regist','注册','style="color:#D6E4FB;"');
 				echo "&nbsp;&nbsp;";
-				echo anchor('printer/login','登录'); 
+				echo anchor('printer/login','登录','style="color:#D6E4FB;"'); 
 			}
 			echo "&nbsp;&nbsp;";
-			echo anchor('feedback','反馈留言');
+			echo anchor('feedback','反馈留言','style="color:#D6E4FB;"');
 			?>
 			</div>
 		</span>

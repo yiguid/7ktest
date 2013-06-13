@@ -149,6 +149,7 @@ class Printer_mdl extends CI_Model {
 		$this->db->join('printtasksetting','printtask.id=printtasksetting.printtaskid');
 		$this->db->where('printtask.printerid',$printerid);
 		$this->db->group_by('printtask.id');
+		$this->db->order_by("createtime", "desc");
 		$this->db->limit($line,$start);
 		$query = $this->db->get();
 		return $query->result();
@@ -171,6 +172,7 @@ class Printer_mdl extends CI_Model {
 		$this->db->where('printtask.printerid',$printerid);
 		$this->db->where('printtask.method',$method);
 		$this->db->group_by('printtask.id');
+		$this->db->order_by("createtime", "desc");
 		$this->db->limit($line,$start);
 		$query = $this->db->get();
 		return $query->result();
@@ -249,7 +251,7 @@ class Printer_mdl extends CI_Model {
 	
 	public function get_user_printtask($printerid, $id)
 	{
-		$this->db->select('printtask.id as id, status, printtask.address as address, printtask.mobile as mobile, delivertime, remark, method, printtask.receiver as receiver, printtask.receipt as receipt, printtask.cost as cost,user.nickname as username, count(printtasksetting.id) as documentnum,createtime,finishtime');
+		$this->db->select('printtask.id as id, status, printtask.address as address, printtask.mobile as mobile, delivertime, remark, method, printtask.receiver as receiver, printtask.receipt as receipt, printtask.cost as cost,user.nickname as username, count(printtasksetting.id) as documentnum,createtime,finishtime,daodianyin');
 		$this->db->from('printtask');
 		$this->db->join('user','user.id=printtask.userid');
 		$this->db->join('printtasksetting','printtask.id=printtasksetting.printtaskid');
