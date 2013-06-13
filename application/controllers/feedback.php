@@ -60,6 +60,9 @@ class Feedback extends CI_Controller {
 			//添加数据
 			$type=$this->input->post('msgtype');
 			$content = $this->input->post('msgcontent');
+			$content = str_replace("&", "&amp;", $content);
+			$content = str_replace("<", "&lt;", $content);
+			$content = str_replace(">", "&gt;", $content);
 			$date = date("Y-m-d");
 			$time = date("H:i:s");
 			$uid = $this->session->userdata('id');
@@ -103,6 +106,9 @@ class Feedback extends CI_Controller {
  		else
  		{
  			$content = $this->input->post('msgcontent');
+ 			$content = str_replace("&", "&amp;", $content);
+			$content = str_replace("<", "&lt;", $content);
+			$content = str_replace(">", "&gt;", $content);
 			$date = date("Y-m-d");
 			$time = date("H:i:s");
 			$uid = $this->session->userdata('id');

@@ -54,54 +54,14 @@ class Search extends CI_Controller {
 			}
 		}
 		*/
-		$this->display_doc(1);
-	}
-	public function display($curPage)
-	{
-		$keywords= $this->session->userdata("keywords"); 
-		$per_page = 10;
-		$start = ($curPage - 1)*$per_page; 
-		$total_rows = $this->printer_mdl->get_printer_by_keyword_total($keywords);
-		$maxPage =  ceil ( $total_rows  / $per_page);
-		if($total_rows!=0){
-			if($curPage < 1 || $curPage > $maxPage)
-			{
-				redirect(base_url().'search/display/1');
-			}
-		}
-		$this->data['searchresultlist'] = $this->printer_mdl->get_printer_by_keyword($keywords,$per_page,$start); 
-		$this->data['curPage'] = $curPage;
-		$this->data['maxPage'] = $maxPage;
-		$this->data['debug'] = $per_page."...".$start."...".$total_rows;
-		$this->load->view('searchprinterresult',$this->data);
-
-	}
-
-	public function index_doc()
-	{
-		$this->display_doc(1);
-	}
-	public function display_doc($curPage)
-	{
-		//$keywords=$_POST['keywords']; 
 		$keywords = $this->session->userdata("keywords");
-		$per_page = 10;
-		$start = ($curPage - 1)*$per_page; 
-		$doc_total_rows = $this->document_mdl->get_documents_by_keyword_total($keywords);
-		$doc_maxPage =  ceil ( $doc_total_rows  / $per_page);
-		if($doc_total_rows!=0){
-			if($curPage < 1 || $curPage > $doc_maxPage)
-			{
-				redirect(base_url().'search/display_doc/1');
-			}
-		}
-		$this->data['searchresultlist'] = $this->document_mdl->get_documents_by_keyword($keywords,$per_page,$start); 
-		$this->data['curPage'] = $curPage;
-		$this->data['maxPage'] = $doc_maxPage;
+		$perpage = 10;
+		$total_rows = $this->document_mdl->get_documents_by_keyword_total($keywords);
+		//$this->data['searchresultlist'] = $this->document_mdl->get_documents_by_keyword($keywords,$per_page,$start); 
+		$this->data['perpage'] = $perpage;
+		$this->data['total_rows'] = $total_rows;
 		$this->data['keywords'] = $keywords;
-		$this->data['debug'] = $per_page."...".$start."...".$doc_total_rows;
-		$this->load->view('searchdocresult',$this->data);
-		
+		$this->load->view('search/search_view',$this->data);
 	}
 }
 
