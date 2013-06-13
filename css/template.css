@@ -536,6 +536,8 @@ a.readon {
 	font-size: 14px;
 	color: white;
 	margin:4px;
+	width: 192px;
+	position: absolute;
 	background-color: #4889F0;
 }
 .title_background{
@@ -882,4 +884,8 @@ a.readon {
 	-moz-opacity:0.9;
 	opacity: 0.9;
 	z-index:100; 
+}
+
+.cleanstyle{
+	border:0;background:none;box-shadow:none;
 }

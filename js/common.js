@@ -49,11 +49,11 @@ function submit_upload(){
 	var fs = document.getElementById('fenshu').value;
 	
 	if(isNaN(cost) || isNaN(fs) || cost <= 0 ){
-		alert('页码设置有误，请重新输入！');
+		alert('打印范围有误，参考如：1-26,55,67-88');
 		return false;
 	}
 	else if(fs == ""){
-		alert('份数设置有误，请重新输入！');
+		alert('份数设置有误，只能输入数字噢，亲~');
 		return false;
 	}
 	else if(file == ""){
@@ -311,5 +311,17 @@ function rechoosePrinter(total){
 	}else{
 		document.getElementById('mask_left').style.visibility = "hidden";
 		document.getElementById('mask_right').style.visibility = "visible";
+	}
+}
+
+function setAmount(type,itemid){
+	var old = $("#"+itemid).val();
+	if(type == 'plus')
+		$("#"+itemid).val(Number(old)+1);
+	else{
+		if($("#"+itemid).val() >= 1)
+			$("#"+itemid).val(Number(old)-1);
+		else
+			$("#"+itemid).val(0);
 	}
 }

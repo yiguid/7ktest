@@ -30,8 +30,8 @@ class Regist extends CI_Controller {
 
 	public function index()
 	{
-		$this->form_validation->set_rules('reg_username','用户名','required|trim|min_length[5]|max_length[12]');
-		$this->form_validation->set_rules('reg_nickname','昵称','required|trim');
+		$this->form_validation->set_rules('reg_username','用户名','required|trim|min_length[5]|max_length[12]|alpha_dash');
+		$this->form_validation->set_rules('reg_nickname','昵称','required|trim|min_length[5]|max_length[12]|alpha_dash');
 		$this->form_validation->set_rules('reg_password','密码','required|trim|matches[re_reg_password]');
 		$this->form_validation->set_rules('re_reg_password','重复密码','required|trim');
 		$this->form_validation->set_rules('reg_email','邮箱','required|trim|valid_email');

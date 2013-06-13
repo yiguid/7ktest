@@ -100,11 +100,15 @@ $this->load->view('header');
 							<?php echo form_dropdown('isdoubleside', $isdoubleside_option, '单面', "id=isdoubleside class=w70");?>
 						</td>
 						<td><input class="w60" placeholder="如:1-10" type="text" maxlength="7" size="4" id="range" name="range"/></td>
-						<td><input class="w30" type="text" value="1" maxlength="3" size="2" id="fenshu" name="fenshu"/></td>
+						<td>
+							<a href="javascript:setAmount('minus','fenshu')"><i style="padding:1px;border:1px solid #ccc;" class="icon-minus"></i></a>
+							<input class="w30" type="text" value="1" maxlength="3" size="2" id="fenshu" name="fenshu"/>
+							<a href="javascript:setAmount('plus','fenshu')"><i style="padding:1px;border:1px solid #ccc;" class="icon-plus"></i></a>
+						</td>
 						<td>
 							<?php echo form_dropdown('zhuangding', $zhuangding_option, '普通', "id=zhuangding class=w70");?>
 						</td>
-						<td><input class="w40" style="border:0px;" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','')" onfocus="compute_money('<?php echo base_url();?>','')" id="cost" name="cost"/></td>
+						<td><input class="w40" style="border:0;background:none;box-shadow:none;" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','')" onfocus="compute_money('<?php echo base_url();?>','')" id="cost" name="cost"/></td>
 						<td><input class="btn-metro-small" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="上传" /></td>
 					</tr>
 				</table>
@@ -154,11 +158,15 @@ $this->load->view('header');
 							<?php echo form_dropdown('isdoubleside'.$num, $isdoubleside_option, $items['options']['isdoubleside'], "id=isdoubleside".$num." class=w70");?>
 						</td>
 						<td><input class="w60" type="text" value="<?php echo $items['options']['range'];?>" maxlength="7" size="4" id="range<?php echo $num;?>" name="range<?php echo $num;?>"/></td>
-						<td><input class="w30" type="text" value="<?php echo $items['qty'];?>" maxlength="3" size="2" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/></td>
+						<td>
+							<a href="javascript:setAmount('minus','fenshu<?php echo $num;?>')"><i style="padding:1px;border:1px solid #ccc;" class="icon-minus"></i></a>
+							<input class="w30" type="text" value="<?php echo $items['qty'];?>" maxlength="3" size="2" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/>
+							<a href="javascript:setAmount('plus','fenshu<?php echo $num;?>')"><i style="padding:1px;border:1px solid #ccc;" class="icon-plus"></i></a>
+						</td>
 						<td>
 							<?php echo form_dropdown('zhuangding'.$num, $zhuangding_option, $items['options']['zhuangding'], "id=zhuangding".$num." class=w70");?>
 						</td>
-						<td><input class="w40" style="border:0px;" type="text" value="<?php echo $items['price']*$items['qty'];?>" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" onfocus="compute_money('<?php echo base_url();?>','<?php echo $num;?>')" id="cost<?php echo $num;?>" name="cost<?php echo $num;?>"/></td>
+						<td><input class="w40" style="border:0;background:none;box-shadow:none;" type="text" value="<?php echo $items['price']*$items['qty'];?>" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" onfocus="compute_money('<?php echo base_url();?>','<?php echo $num;?>')" id="cost<?php echo $num;?>" name="cost<?php echo $num;?>"/></td>
 						<td><div style="padding-top:6px;"><a onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" href="javascript:edit_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-edit"></i></a> <a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
 					</tr>
 					<?php
@@ -276,7 +284,7 @@ $this->load->view('header');
 					需要发票：<input class="span3" type="text" name="receipt" value="<?php echo $this->session->userdata('user_receipt');?>"/>
 				</div>
 				<div class="span9">
-					费用总计：<input type="text" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/>
+					费用总计：<input type="text" style="border:0;background:none;box-shadow:none;" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/>
 					<span style="margin-left:60px;"></span>
 					账户余额：<?php echo $this->session->userdata('user_money')?>
 					<span style="margin-left:10px;"></span><input class="btn-metro offset1" type="button" onclick="submit_printtask()" value="确认印单" name="submitbtn"/>

@@ -19,7 +19,7 @@ class Login extends CI_Controller {
 		{
 			redirect('welcome','refresh');
 		}else{			
-			$this->form_validation->set_rules('username','用户名','required|trim');
+			$this->form_validation->set_rules('username','用户名','required|trim|min_length[4]|max_length[12]|alpha_dash');
 			$this->form_validation->set_rules('password','密码','required|trim');
 
 			if($this->form_validation->run() == FALSE){

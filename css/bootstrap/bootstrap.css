@@ -1712,7 +1712,7 @@ select:focus:invalid:focus {
 .input-prepend .add-on {
   display: inline-block;
   width: auto;
-  height: 20px;
+  height: 16px;
   min-width: 16px;
   padding: 4px 5px;
   font-size: 14px;

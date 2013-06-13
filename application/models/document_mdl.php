@@ -26,9 +26,10 @@ class Document_mdl extends CI_Model {
 	//由关键词获取文档列表
 	public function get_documents_by_keyword($keywords,$line,$start)
 	{
-		$this->db->select('*');
+		$this->db->select('specialdoc.id as id,specialdoc.name as name, printer.name as uploadptername,keyword,type,size,uploadpterid');
 		$this->db->from('specialdoc');
-		$this->db->like('name',$keywords);
+		$this->db->like('specialdoc.name',$keywords);
+		$this->db->join('printer','printer.id=specialdoc.uploadpterid');
 		$this->db->limit($line,$start);
 		$query = $this->db->get();
 		return $query->result();
