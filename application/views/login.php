@@ -85,7 +85,8 @@ $this->load->view('header');
 							</tr>
 							<tr>
 								<td></td>
-								<td><?php if(isset($regist_info)) echo $regist_info;?></td>
+								<td><span style="color:red;"><?php if(isset($regist_info)) echo $regist_info;?>
+									<?php if(isset($regist_error)) echo $regist_error;?></span></td>
 								<?php if(isset($regist_info)) {?>
 									<script type="text/javascript">
 										alert("注册成功，请登陆！");

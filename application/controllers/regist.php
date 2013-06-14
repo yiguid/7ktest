@@ -49,6 +49,7 @@ class Regist extends CI_Controller {
 			$this->load->view('login',$this->data);
 		}else{
 			$this->data['regist'] = TRUE;
+			$this->data['regist_error'] = '已存在该用户名，请重新选择。';
 			$this->load->view('login',$this->data);
 		}
 	}
