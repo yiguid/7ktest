@@ -36,7 +36,7 @@
 <div id="header">
 <div id="menu">
 	<div id="menu_logo">
-		<img height="30" width="78" src="<?php echo base_url();?>images/logo.png"/>
+		<a href="<?php echo base_url();?>"><img height="30" width="78" src="<?php echo base_url();?>images/logo.png"/></a>
 	</div>
 	<div id="menu_list">
 		<div style="float:left;">	

@@ -11,7 +11,7 @@ class Transaction_mdl extends CI_Model {
 	public function add_transaction($data,$password)
 	{
 		//验证password
-		if($password == '7ktest')
+		if($password == '7kmall' && $data['amount'] == 1000)
 		{
 		//待添加
 		//验证通过加入

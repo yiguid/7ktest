@@ -49,7 +49,7 @@ $this->load->view('header');
 						
 					</div>
 					<div style="color:#888">
-						<a href="<?php echo base_url().'shop/doc/'.$printer->id;?>">[查看店铺]</a>
+						<a href="<?php echo base_url().'shop/doc/'.$printer->id;?>">[店铺主页]</a>
 						距您100米以内
 					</div>
 				</div>  
@@ -84,7 +84,7 @@ $this->load->view('header');
 						<td class="w100">打印范围</td>
 						<td class="w100">份数</td>
 						<td class="w100">装订</td>
-						<td class="w70">金额</td>
+						<td class="w70">打印币</td>
 						<td class="w60"></td>
 					</tr>
 					<tr>
@@ -243,7 +243,7 @@ $this->load->view('header');
 				<div class="tab" style="border:1px solid #ccc;margin:10px;width:740px;height:120px;">
 					<span style="float:left;width:100px;height:120px;">
 			            <div class="tabs" id="self">自行取印(免费)</div>
-			            <div class="tabs" id="campus">校园送印</div>
+			            <div class="tabs" id="campus">校内送印</div>
 			            <div class="tabs" id="express">快递送印</div>
 			        </span>
 			        <span style="float:left;width:640px;height:130px;">
@@ -290,7 +290,7 @@ $this->load->view('header');
 				<div class="span9">
 					费用总计：<input type="text" style="border:0;background:none;box-shadow:none;" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/>
 					<span style="margin-left:60px;"></span>
-					账户余额：<?php echo $this->session->userdata('user_money')?>
+					账户打印币数：<?php echo $this->session->userdata('user_money')?>
 					<span style="margin-left:10px;"></span><input class="btn-metro offset1" type="button" onclick="submit_printtask()" value="确认印单" name="submitbtn"/>
 				</div>
 			</form>

@@ -17,7 +17,7 @@
 				</ul>
 			</div>
 			<div id="footer_logo">
-				<img src="<?php echo base_url();?>images/logo.png"/>
+				<a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>images/logo.png"/></a>
 				<p>Copyright ©2012-2013 7kmall.com, All Rights Reserved.</p>
 			</div>
 			<div id="footer_list">

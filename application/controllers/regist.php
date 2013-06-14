@@ -30,11 +30,10 @@ class Regist extends CI_Controller {
 
 	public function index()
 	{
-		$this->form_validation->set_rules('reg_username','用户名','required|trim|min_length[5]|max_length[12]|alpha_dash');
+		$this->form_validation->set_rules('reg_username','用户名','required|trim|valid_email|min_length[10]|max_length[20]');
 		$this->form_validation->set_rules('reg_nickname','昵称','required|trim|min_length[5]|max_length[12]|alpha_dash');
 		$this->form_validation->set_rules('reg_password','密码','required|trim|matches[re_reg_password]');
 		$this->form_validation->set_rules('re_reg_password','重复密码','required|trim');
-		$this->form_validation->set_rules('reg_email','邮箱','required|trim|valid_email');
 		if($this->form_validation->run() == FALSE){
 			$this->data['regist'] = TRUE;
 			$this->load->view('login',$this->data);
@@ -43,7 +42,7 @@ class Regist extends CI_Controller {
 				'username' => $this->input->post('reg_username'),
 				'nickname' => $this->input->post('reg_nickname'),
 				'password' => $this->input->post('reg_password'),
-				'email' => $this->input->post('reg_email')
+				'email' => $this->input->post('reg_username')
 			)
 		)){
 			$this->data['regist_info'] = '注册成功，请登陆。';

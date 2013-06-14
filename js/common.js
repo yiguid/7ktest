@@ -38,8 +38,17 @@ function submit_printtask(){
 		alert("请输入送印地址。");
 	else if(total_cost == 0)
 		alert("你忘记上传文件啦！");
-	else
-		document.getElementById('printtask_form').submit();
+	else{
+		var r=confirm("确认提交订单吗？此次消费"+total_cost+"，确认后将扣除打印币。");
+		if(r==true)
+		{
+			document.getElementById('printtask_form').submit();
+		}
+		else
+		{
+			return false;
+		}
+	}
 	return false;
 }
 
