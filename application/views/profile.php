@@ -77,39 +77,39 @@ $this->load->view('header');
 				<?php echo form_open_multipart('upload/do_upload',array('id' => 'upload_form'));?>
 				<table class="table table-condensed left750" style="margin-bottom:0px;">
 					<tr>
-						<td>序号</td>
-						<td>文档名</td>
-						<td>纸张</td>
-						<td>单/双面</td>
-						<td>打印范围</td>
-						<td>份数</td>
-						<td>装订</td>
-						<td>金额</td>
-						<td></td>
+						<td class="w40">序号</td>
+						<td class="w100">文档名</td>
+						<td class="w80">纸张</td>
+						<td class="w100">单/双面</td>
+						<td class="w100">打印范围</td>
+						<td class="w100">份数</td>
+						<td class="w100">装订</td>
+						<td class="w70">金额</td>
+						<td class="w60"></td>
 					</tr>
 					<tr>
-						<td></td>
-						<td>
+						<td class="w40"><div>#</div></td>
+						<td class="w100">
 							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('ufb').value=this.value.substring(12,22)+'...'"/>
 							<input class="btn-metro-small" id="ufb" type="button" onclick=userfile.click() value="选择文件"/>
 						</td>
-						<td>
+						<td class="w80">
 							<?php echo form_dropdown('papersize', $papersize_option, 'A4', "id=papersize class=w60");?>
 						</td>
-						<td>
+						<td class="w100">
 							<?php echo form_dropdown('isdoubleside', $isdoubleside_option, '单面', "id=isdoubleside class=w70");?>
 						</td>
-						<td><input class="w60" placeholder="如:1-10" type="text" maxlength="7" size="4" id="range" name="range"/></td>
-						<td>
+						<td class="w100"><input class="w60" placeholder="如:1-10" type="text" maxlength="7" size="4" id="range" name="range"/></td>
+						<td class="w100">
 							<a href="javascript:setAmount('minus','fenshu')"><i style="padding:1px;border:1px solid #ccc;" class="icon-minus"></i></a>
 							<input class="w30" type="text" value="1" maxlength="3" size="2" id="fenshu" name="fenshu"/>
 							<a href="javascript:setAmount('plus','fenshu')"><i style="padding:1px;border:1px solid #ccc;" class="icon-plus"></i></a>
 						</td>
-						<td>
+						<td class="w100">
 							<?php echo form_dropdown('zhuangding', $zhuangding_option, '普通', "id=zhuangding class=w70");?>
 						</td>
-						<td><input class="w40" style="border:0;background:none;box-shadow:none;" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','')" onfocus="compute_money('<?php echo base_url();?>','')" id="cost" name="cost"/></td>
-						<td><input class="btn-metro-small" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="上传" /></td>
+						<td class="w70"><input class="w40" style="border:0;background:none;box-shadow:none;" type="text" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','')" onfocus="compute_money('<?php echo base_url();?>','')" id="cost" name="cost"/></td>
+						<td class="w60"><input class="btn-metro-small" type="button" onclick="submit_upload()" onmouseover= "compute_money('<?php echo base_url();?>','')" value="上传" /></td>
 					</tr>
 				</table>
 				</form>
@@ -145,53 +145,57 @@ $this->load->view('header');
 							if(!isset($items['options']['isspecialdoc'])){
 							?>
 					<tr>
-						<td><div style="padding-top:2px;"><?php echo $num;?></div></td>
-						<td>
+						<td class="w40"><div style="padding-top:2px;"><?php echo $num;?></div></td>
+						<td class="w100">
 							<input type="hidden" id="rowid<?php echo $num;?>" value="<?php echo $items['rowid']?>" />
 							<input type="hidden" id="documentid<?php echo $num;?>" value="<?php echo $items['id']?>" />
 							<div id="name<?php echo $num;?>" style="padding-top:2px;"><?php echo substr($items['name'],0,12)."...";?></div>
 						</td>
-						<td>
+						<td class="w80">
 							<?php echo form_dropdown('papersize'.$num, $papersize_option, $items['options']['papersize'], "id=papersize".$num." class=w60");?>
 						</td>
-						<td>
+						<td class="w100">
 							<?php echo form_dropdown('isdoubleside'.$num, $isdoubleside_option, $items['options']['isdoubleside'], "id=isdoubleside".$num." class=w70");?>
 						</td>
-						<td><input class="w60" type="text" value="<?php echo $items['options']['range'];?>" maxlength="7" size="4" id="range<?php echo $num;?>" name="range<?php echo $num;?>"/></td>
-						<td>
+						<td class="w100"><input class="w60" type="text" value="<?php echo $items['options']['range'];?>" maxlength="7" size="4" id="range<?php echo $num;?>" name="range<?php echo $num;?>"/></td>
+						<td class="w100">
 							<a href="javascript:setAmount('minus','fenshu<?php echo $num;?>')"><i style="padding:1px;border:1px solid #ccc;" class="icon-minus"></i></a>
 							<input class="w30" type="text" value="<?php echo $items['qty'];?>" maxlength="3" size="2" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/>
 							<a href="javascript:setAmount('plus','fenshu<?php echo $num;?>')"><i style="padding:1px;border:1px solid #ccc;" class="icon-plus"></i></a>
 						</td>
-						<td>
+						<td class="w100">
 							<?php echo form_dropdown('zhuangding'.$num, $zhuangding_option, $items['options']['zhuangding'], "id=zhuangding".$num." class=w70");?>
 						</td>
-						<td><input class="w40" style="border:0;background:none;box-shadow:none;" type="text" value="<?php echo $items['price']*$items['qty'];?>" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" onfocus="compute_money('<?php echo base_url();?>','<?php echo $num;?>')" id="cost<?php echo $num;?>" name="cost<?php echo $num;?>"/></td>
-						<td><div style="padding-top:6px;"><a onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" href="javascript:edit_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-edit"></i></a> <a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
+						<td class="w70"><input class="w40" style="border:0;background:none;box-shadow:none;" type="text" value="<?php echo $items['price']*$items['qty'];?>" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" onfocus="compute_money('<?php echo base_url();?>','<?php echo $num;?>')" id="cost<?php echo $num;?>" name="cost<?php echo $num;?>"/></td>
+						<td class="w60"><div style="padding-top:6px;"><a onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" href="javascript:edit_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-edit"></i></a> <a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
 					</tr>
 					<?php
 							}else{
 					?>
 					<tr>
-						<td><div style="padding-top:2px;"><?php echo $num;?></div></td>
-						<td>
+						<td class="w40"><div style="padding-top:2px;"><?php echo $num;?></div></td>
+						<td class="w100">
 							<input type="hidden" id="rowid<?php echo $num;?>" value="<?php echo $items['rowid']?>" />
 							<input type="hidden" id="documentid<?php echo $num;?>" value="<?php echo $items['id']?>" />
 							<div id="name<?php echo $num;?>" style="padding-top:2px;"><?php echo substr($items['name'],0,12)."...";?></div>
 						</td>
-						<td>
-							<div style="padding-top:2px;">特色资料介绍：</div>
+						<td class="w80">
+							<div style="padding-top:2px;">资料介绍：</div>
 						</td>
-						<td>
+						<td class="w100">
 							<div id="description<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['options']['description'];?></div>
 						</td>
-						<td><div id="page<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['options']['page'];?></div></td>
-						<td><input class="w30" type="text" value="<?php echo $items['qty'];?>" maxlength="2" size="1" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/></td>
-						<td>
-							
+						<td class="w100"><div id="page<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['options']['page'];?></div></td>
+						<td class="w100">
+							<a href="javascript:setAmount('minus','fenshu<?php echo $num;?>')"><i style="padding:1px;border:1px solid #ccc;" class="icon-minus"></i></a>
+							<input class="w30" type="text" value="<?php echo $items['qty'];?>" maxlength="2" size="1" id="fenshu<?php echo $num;?>" name="fenshu<?php echo $num;?>"/>
+							<a href="javascript:setAmount('plus','fenshu<?php echo $num;?>')"><i style="padding:1px;border:1px solid #ccc;" class="icon-plus"></i></a>
 						</td>
-						<td><div id="cost<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['price'];?></div></td>
-						<td><div style="padding-top:6px;"><a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
+						<td class="w100">
+							<div>特色资料装订</div>
+						</td>
+						<td class="w70"><div id="cost<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['price'];?></div></td>
+						<td class="w60"><div style="padding-top:6px;"><a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
 					</tr>
 					<?php
 							}
@@ -245,7 +249,7 @@ $this->load->view('header');
 			        <span style="float:left;width:640px;height:130px;">
 			        <ul class="self pading6">
 			            <div class="span6">
-			            	<input type="checkbox" name="daodianyin" id="daodianyin"/>到店再印：
+			            	<input type="checkbox" name="daodianyin" id="daodianyin"/><span class="">到店再印：</span>
 			            		让打印店店员等待您到达打印店后再打印您的文档，不选的话则店员会在您去之前打印好。<br>
 							所选打印店地址：
 								<?php echo $this->session->userdata('printer_name')?><br>
@@ -259,7 +263,7 @@ $this->load->view('header');
 						<div class="span8"><span id="zipcode">邮政编码：<input class="span2" type="text" id="zipcode" name="zipcode" 
 																				value="<?php echo $this->session->userdata('user_zipcode');?>" /></span>
 											送印时间：<div class="input-append date form_datetime">			
-								    <input size="10" type="text"  id="delivertime" name="delivertime" value="" readonly>
+								    <input placeholder="点击选择适合您的送印时间" size="10" type="text"  id="delivertime" name="delivertime" value="" readonly>
 								    <span class="add-on"><i class="icon-calendar"></i></span>
 								</div>
 								<script type="text/javascript">
@@ -280,8 +284,8 @@ $this->load->view('header');
 			    	</span>
 			    </div>
 				<div class="span9">
-					印单备注：<input class="span3" type="text" name="remark"/><span style="margin-left:60px;"></span>
-					需要发票：<input class="span3" type="text" name="receipt" value="<?php echo $this->session->userdata('user_receipt');?>"/>
+					印单备注：<input placeholder="填写您希望对该打印店的嘱咐" class="span3" type="text" name="remark"/><span style="margin-left:60px;"></span>
+					需要发票：<input placeholder="填写您所需的发票抬头" class="span3" type="text" name="receipt" value="<?php echo $this->session->userdata('user_receipt');?>"/>
 				</div>
 				<div class="span9">
 					费用总计：<input type="text" style="border:0;background:none;box-shadow:none;" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/>

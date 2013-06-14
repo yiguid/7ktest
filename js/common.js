@@ -319,9 +319,9 @@ function setAmount(type,itemid){
 	if(type == 'plus')
 		$("#"+itemid).val(Number(old)+1);
 	else{
-		if($("#"+itemid).val() >= 1)
+		if($("#"+itemid).val() >= 2)
 			$("#"+itemid).val(Number(old)-1);
 		else
-			$("#"+itemid).val(0);
+			$("#"+itemid).val(1);
 	}
 }

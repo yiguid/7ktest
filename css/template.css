@@ -48,12 +48,20 @@ body {
 	width:40px;
 }
 
+.w50{
+	width:50px;
+}
+
 .w60{
 	width:60px;
 }
 
 .w70{
 	width:70px;
+}
+
+.w80{
+	width: 80px;
 }
 
 .w100{
