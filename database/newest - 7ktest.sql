@@ -381,8 +381,21 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `nickname`, `password`, `email`, `mobile`, `province`, `city`, `address`, `zipcode`, `receiver`, `receipt`, `level`) VALUES
-(1, 'guyi', '顾毅', 'ea8ad40bdd2dd85cd6733c6ac14b1013', 'test@7test.com', '18611728343', '北京市', '海淀区', '北京航空航天大学', NULL, NULL, NULL, 99),
-(2, 'test', '测试用户', 'ea8ad40bdd2dd85cd6733c6ac14b1013', 'test@7test.com', '18611728343', '北京市', '海淀区', '学院路37号北京航空航天大学', '100191', '顾毅', '北京航空航天大学', 1),
-(3, 'test1', '测试用户1', 'ea8ad40bdd2dd85cd6733c6ac14b1013', 'test1@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(4, 'test0508', '测试用户', 'ea8ad40bdd2dd85cd6733c6ac14b1013', 'new1@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(5, 'nobitagu', 'nobitagu', 'ea8ad40bdd2dd85cd6733c6ac14b1013', 'nobitagu@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(1, 'guyi@7ktest.com', '顾毅', 'ea8ad40bdd2dd85cd6733c6ac14b1013', 'test@7test.com', '18611728343', '北京市', '海淀区', '北京航空航天大学', NULL, NULL, NULL, 99),
+(2, 'test@7ktest.com', '测试用户', 'ea8ad40bdd2dd85cd6733c6ac14b1013', 'test@7test.com', '18611728343', '北京市', '海淀区', '学院路37号北京航空航天大学', '100191', '顾毅', '北京航空航天大学', 1),
+(3, 'test1@7ktest.com', '测试用户1', 'ea8ad40bdd2dd85cd6733c6ac14b1013', 'test1@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'test0508@7ktest.com', '测试用户', 'ea8ad40bdd2dd85cd6733c6ac14b1013', 'new1@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 'nobitagu@7ktest.com', 'nobitagu', 'ea8ad40bdd2dd85cd6733c6ac14b1013', 'nobitagu@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+--
+-- 表的结构 `rechargecard`
+--
+
+CREATE TABLE `rechargecard` (
+  `id` int(11) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `amount` varchar(45) NOT NULL,
+  `rechargeuserid` varchar(45) NOT NULL,
+  `rechargetime` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

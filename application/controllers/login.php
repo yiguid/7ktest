@@ -89,13 +89,13 @@ class Login extends CI_Controller {
 			redirect('login','refresh');
 		}
 		$this->data['user'] = $this->session->userdata('nickname');
-		$this->form_validation->set_rules('receiver','收货人名','required|min_length[2]|trim');
-		$this->form_validation->set_rules('zipcode','邮政编码','required|min_length[6]|trim');
-		$this->form_validation->set_rules('mobile','联系电话','required|min_length[6]|trim');
-		$this->form_validation->set_rules('province','所在省份','required|min_length[2]|trim');
-		$this->form_validation->set_rules('city','所在城市','required|min_length[3]|trim');
-		$this->form_validation->set_rules('address','详细地址','required|min_length[2]|trim');
-		$this->form_validation->set_rules('receipt','发票信息','required|min_length[2]|trim');
+		$this->form_validation->set_rules('receiver','收货人名','min_length[2]|trim');
+		$this->form_validation->set_rules('zipcode','邮政编码','numeric|min_length[6]|trim');
+		$this->form_validation->set_rules('mobile','联系电话','numeric|min_length[6]|trim');
+		$this->form_validation->set_rules('province','所在省份','min_length[2]|trim');
+		$this->form_validation->set_rules('city','所在城市','min_length[2]|trim');
+		$this->form_validation->set_rules('address','详细地址','min_length[2]|trim');
+		$this->form_validation->set_rules('receipt','发票信息','min_length[2]|trim');
 		
 		if($this->form_validation->run() == FALSE)
 		{
