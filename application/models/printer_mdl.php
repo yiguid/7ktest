@@ -304,7 +304,7 @@ class Printer_mdl extends CI_Model {
 
 	}
 
-	//获取所有打印任务选项
+	//获取某打印店的所有打印任务可选任务
 	public function get_printer_options($printer_id){
 		$this->db->select('*');
 		$this->db->from('property');
@@ -314,6 +314,7 @@ class Printer_mdl extends CI_Model {
 		return $query->result();
 	}
 
+	//添加可选打印业务选项
 	public function add_printer_option_value($data){
 		$this->db->insert('property_value',$data);
 		return ($this->db->affected_rows() > 0) ? 1 : 0;
@@ -327,6 +328,7 @@ class Printer_mdl extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+
 
 
 
@@ -357,6 +359,31 @@ class Printer_mdl extends CI_Model {
 		}
 	}
 
+	public function get_papersize_price_option($printer_id){
+		if($printer_id == "")
+			return array(
+		                'A4'  => 'A4',
+		                'B5'  => 'B5'
+		                );
+		else{
+			$this->db->select('papersize');
+			$this->db->from('printer_meta');
+			$this->db->where('printerid',$printer_id);
+			$query = $this->db->get();
+			foreach ($query->result() as $row) {
+				$option = array();
+				$temp = explode("|", $row->papersize);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
+					$option[$key]['name'] = $key;
+					$option[$key]['price'] = $key2;
+				}
+			}
+			return $option;
+		}
+	}
+
 	public function get_isdoubleside_option($printer_id){
 		if($printer_id == "")
 			return array(
@@ -374,6 +401,31 @@ class Printer_mdl extends CI_Model {
 				foreach ($temp as $opt) {
 					$key = substr($opt, 0, strpos($opt, ','));
 					$option[$key] = $key;
+				}
+			}
+			return $option;
+		}
+	}
+
+	public function get_isdoubleside_price_option($printer_id){
+		if($printer_id == "")
+			return array(
+						'单面'  => '单面',
+		                '双面'  => '双面'
+		                );
+		else{
+			$this->db->select('isdoubleside');
+			$this->db->from('printer_meta');
+			$this->db->where('printerid',$printer_id);
+			$query = $this->db->get();
+			foreach ($query->result() as $row) {
+				$option = array();
+				$temp = explode("|", $row->isdoubleside);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
+					$option[$key]['name'] = $key;
+					$option[$key]['price'] = $key2;
 				}
 			}
 			return $option;
@@ -402,6 +454,31 @@ class Printer_mdl extends CI_Model {
 			return $option;
 		}
 	}
+	public function get_zhuangding_price_option($printer_id){
+		if($printer_id == "")
+			return array(
+						'普通'  => '普通',
+		                '精装'  => '精装'
+		                );
+		else{
+			$this->db->select('zhuangding');
+			$this->db->from('printer_meta');
+			$this->db->where('printerid',$printer_id);
+			$query = $this->db->get();
+			foreach ($query->result() as $row) {
+				$option = array();
+				$temp = explode("|", $row->zhuangding);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
+					$option[$key]['name'] = $key;
+					$option[$key]['price'] = $key2;
+				}
+			}
+			return $option;
+		}
+	}
+
 
 	//由关键词获取打印店列表
 	public function get_printer_by_keyword($keywords,$line,$start)
