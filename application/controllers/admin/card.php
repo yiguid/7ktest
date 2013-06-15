@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class User extends CI_Controller {
+class Card extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -24,26 +24,29 @@ class User extends CI_Controller {
 		parent::__construct();
 
 		$data['title'] = "首页";  
-		$data['headline'] = "用户信息";  
-		$this->load->model('user_mdl');
+		$data['headline'] = "充值卡";  
+		$this->load->model('transaction_mdl');
 	} 
 	
 	public function index()
 	{
-		$data['userlist'] = $this->user_mdl->get_user();  
-		$this->load->view('admin/userlist',$data);
+		$data['cardlist'] = $this->transaction_mdl->get_card();  
+		$this->load->view('admin/card_view',$data);
 	}
 	
 	public function add()
 	{
-		$data['addresult']=$this->user_mdl->add_user(
+		$data['addresult']=$this->transaction_mdl->add_card(
 				array(
-					'username'=> $this->input->post('username'),
-					'password'=> $this->input->post('password')
+					'id'=> $this->input->post('id'),
+					'password'=> $this->input->post('password'),
+					'amount'=> $this->input->post('amount'),
+					'rechargeuserid'=> 0,
+					'rechargetime'=> 0
 				)
 		);
-		$data['userlist'] = $this->user_mdl->get_user();
-		$this->load->view('admin/userlist',$data);
+		$data['cardlist'] = $this->transaction_mdl->get_card();
+		$this->load->view('admin/card_view',$data);
 	}
 }
 

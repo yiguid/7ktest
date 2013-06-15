@@ -49,7 +49,7 @@ $this->load->view('menu');
                     <div class="tab-pane active" id="shop">
                     <div id="favoshop">
                         <?php
-                            $this->data['shopList']=$this->user_mdl->get_user_favoriteshop(0,min($pageNum,$shop_entries),$userid);
+                            $this->data['shopList']=$this->user_mdl->get_user_favoriteshop(0,(int)min($pageNum,$shop_entries),(int)$userid);
                             $this->load->view('favorite_shop',$this->data);
                         ?>
                     </div>    
@@ -58,7 +58,7 @@ $this->load->view('menu');
                     <div class="tab-pane" id="doc">
                         <div id="favodoc">
                         <?php
-                            $this->data['docList']=$this->user_mdl->get_user_favoritedoc(0,min($pageNum,$shop_entries),$userid);
+                            $this->data['docList']=$this->user_mdl->get_user_favoritedoc(0,(int)min($pageNum,$shop_entries),(int)$userid);
                             $this->load->view('favorite_doc',$this->data);
                         ?>
                         </div>
