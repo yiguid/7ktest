@@ -163,6 +163,16 @@ class Printer_mdl extends CI_Model {
 		return $query->num_rows();
 	}
 
+	public function checkTask($printerid)
+	{
+		$this->db->select('id');
+		$this->db->from('printtask');
+		$this->db->where('printerid',$printerid);
+		$this->db->where('status','打印中');
+		$query = $this->db->get();
+		return $query->num_rows();
+	}
+
 	public function get_printer_printhistory_by_method($printerid,$line,$start,$method)
 	{
 		$this->db->select('printtask.id as id, status,printtask.cost as cost,user.nickname as username, count(printtasksetting.id) as documentnum,createtime,finishtime');

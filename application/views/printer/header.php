@@ -69,6 +69,23 @@
 			?>
 			</div>
 		</span>
+		<script type="text/javascript">
+			$(function(){
+				$('<audio id="notifyAudio"><source src="<?php echo base_url(); ?>images/notify.ogg" type="audio/ogg"><source src="<?php echo base_url(); ?>images/notify.mp3" type="audio/mpeg"><source src="<?php echo base_url(); ?>images/notify.wav" type="audio/wav"></audio>').appendTo('body');//载入声音文件
+				var interval = setInterval(checkTask,1000*60);
+
+				function checkTask(){
+					$.post('<?php echo base_url();?>' + "ajax/printajax/checkTask", {
+					}, function(data) {
+						if (data > 0){
+							$('#notifyAudio')[0].play();//播放声音
+							$('#notifyPanel').html('<a style="color:red;" href="<?php echo base_url();?>printer/printhistory">你有' + data + '个印单任务待处理~&nbsp;&nbsp;</a>'); 
+						}
+					});
+				}
+			});
+		</script>
+		<span id="notifyPanel" style="float:right;"></span>
 	</div>
 </div>
 </div>

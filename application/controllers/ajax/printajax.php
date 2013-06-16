@@ -132,5 +132,9 @@ class Printajax extends CI_Controller {
 	   $this->cart->insert($doc_data);
 	   echo TRUE;
 	}
+
+	public function checkTask(){
+		echo $this->printer_mdl->checkTask($this->session->userdata('id'));
+	}
 }
 ?>

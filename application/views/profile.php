@@ -44,13 +44,12 @@ $this->load->view('header');
 						<?php if($this->session->userdata('printer_id') == $printer->id)
 							echo 'checked';
 						?> 
-						onclick="javascript:setPrinterId('<?php echo base_url();?>','<?php echo " ".$printer->name;?>','<?php echo $this->cart->total_items();?>')"/><?php echo " ".$printer->name;?> | <?php echo $printer->online;?>
+						onclick="javascript:setPrinterId('<?php echo base_url();?>','<?php echo " ".$printer->name;?>','<?php echo $this->cart->total_items();?>')"/><?php echo " ".$printer->name;?> | <?php echo $printer->online;?> | <a alt="查看店铺详细信息" href="<?php echo base_url().'shop/doc/'.$printer->id;?>"><i class="icon-home"></i></a>
 						</label>
 						
 					</div>
 					<div style="color:#888">
-						<a href="<?php echo base_url().'shop/doc/'.$printer->id;?>">[店铺主页]</a>
-						距您100米以内
+						<?php echo $printer->address;?>
 					</div>
 				</div>  
 				<?php endforeach;?>  
@@ -90,7 +89,7 @@ $this->load->view('header');
 					<tr>
 						<td class="w40"><div>#</div></td>
 						<td class="w100">
-							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('ufb').value=this.value.substring(12,22)+'...'"/>
+							<input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('ufb').value=this.value.substring(12,18)+'...'"/>
 							<input class="btn-metro-small" id="ufb" type="button" onclick=userfile.click() value="选择文件"/>
 						</td>
 						<td class="w80">
