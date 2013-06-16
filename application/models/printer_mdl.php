@@ -369,6 +369,39 @@ class Printer_mdl extends CI_Model {
 		}
 	}
 
+	public function delete_papersize_option($printer_id,$id){
+
+		$this->db->select('papersize');
+			$this->db->from('printer_meta');
+			$this->db->where('printerid',$printer_id);
+			$query = $this->db->get();
+			foreach ($query->result() as $row) {
+				$option = array();
+				$temp = explode("|", $row->papersize);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
+					$option[$key]['name'] = $key;
+					$option[$key]['price'] = $key2;
+				}
+			}
+			array_splice($option,$id,1);
+
+
+			$tmp='';
+			foreach ($option as $value){
+			$tmp = $tmp.$value['name'].','.$value['price'];
+			$tmp .='|';
+			}
+		$tmp = substr($tmp, 0, strlen($tmp)-1);
+
+		$this->db->where('printerid',$printer_id);
+		$result['papersize']=$tmp;
+		$this->db->update('printer_meta',$result);
+		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+
+	}
+
 	public function get_papersize_price_option($printer_id){
 		if($printer_id == "")
 			return array(
@@ -394,6 +427,23 @@ class Printer_mdl extends CI_Model {
 		}
 	}
 
+		//设置纸型
+	public function set_papersize_option($printerid,$data){
+
+		 $result=array();
+		 $temp='';
+		 echo $printerid;
+		$this->db->where('printerid',$printerid);
+		foreach ($data as $value){
+			$temp = $temp.$value['option'].','.$value['price'];
+			$temp .='|';
+		}
+		$temp = substr($temp, 0, strlen($temp)-1);
+		$result['papersize']=$temp;
+		$this->db->update('printer_meta',$result);
+		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+	}
+
 	public function get_isdoubleside_option($printer_id){
 		if($printer_id == "")
 			return array(
@@ -416,6 +466,55 @@ class Printer_mdl extends CI_Model {
 			return $option;
 		}
 	}
+	public function set_isdoubleside_option($printerid,$data){
+
+		 $result=array();
+		 $temp='';
+		 echo $printerid;
+		$this->db->where('printerid',$printerid);
+		foreach ($data as $value){
+			$temp = $temp.$value['option'].','.$value['price'];
+			$temp .='|';
+		}
+		$temp = substr($temp, 0, strlen($temp)-1);
+		$result['isdoubleside']=$temp;
+		$this->db->update('printer_meta',$result);
+		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+	}
+
+	public function delete_isdoubleside_option($printer_id,$id){
+
+		$this->db->select('isdoubleside');
+			$this->db->from('printer_meta');
+			$this->db->where('printerid',$printer_id);
+			$query = $this->db->get();
+			foreach ($query->result() as $row) {
+				$option = array();
+				$temp = explode("|", $row->isdoubleside);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
+					$option[$key]['name'] = $key;
+					$option[$key]['price'] = $key2;
+				}
+			}
+			array_splice($option,$id,1);
+
+
+			$tmp='';
+			foreach ($option as $value){
+			$tmp = $tmp.$value['name'].','.$value['price'];
+			$tmp .='|';
+			}
+		$tmp = substr($tmp, 0, strlen($tmp)-1);
+
+		$this->db->where('printerid',$printer_id);
+		$result['isdoubleside']=$tmp;
+		$this->db->update('printer_meta',$result);
+		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+
+	}
+
 
 	public function get_isdoubleside_price_option($printer_id){
 		if($printer_id == "")
@@ -464,6 +563,57 @@ class Printer_mdl extends CI_Model {
 			return $option;
 		}
 	}
+
+	public function set_zhuangding_option($printerid,$data){
+
+		 $result=array();
+		 $temp='';
+		 echo $printerid;
+		$this->db->where('printerid',$printerid);
+		foreach ($data as $value){
+			$temp = $temp.$value['option'].','.$value['price'];
+			$temp .='|';
+		}
+		$temp = substr($temp, 0, strlen($temp)-1);
+		$result['zhuangding']=$temp;
+		$this->db->update('printer_meta',$result);
+		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+	}
+
+	public function delete_zhuangding_option($printer_id,$id){
+
+		$this->db->select('zhuangding');
+			$this->db->from('printer_meta');
+			$this->db->where('printerid',$printer_id);
+			$query = $this->db->get();
+			foreach ($query->result() as $row) {
+				$option = array();
+				$temp = explode("|", $row->zhuangding);
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
+					$option[$key]['name'] = $key;
+					$option[$key]['price'] = $key2;
+				}
+			}
+
+			array_splice($option,$id,1);
+
+
+			$tmp='';
+			foreach ($option as $value){
+			$tmp = $tmp.$value['name'].','.$value['price'];
+			$tmp .='|';
+			}
+		$tmp = substr($tmp, 0, strlen($tmp)-1);
+
+		$this->db->where('printerid',$printer_id);
+		$result['zhuangding']=$tmp;
+		$this->db->update('printer_meta',$result);
+		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+
+	}
+
 	public function get_zhuangding_price_option($printer_id){
 		if($printer_id == "")
 			return array(

@@ -136,6 +136,66 @@ class Admin extends CI_Controller {
 		
 	}
 
+	public function setproperty()
+	{
+		$this->data['page_title'] = '添加打印业务';
+		$printerid=$this->session->userdata('id');
+		$data = array();
+
+		$data[0]= array('option'=>'A6','price'=>'9');
+		$data[1]= array('option'=>'A7','price'=>'8');
+		$data[2]= array('option'=>'A8','price'=>'7');
+		$data[3]= array('option'=>'A9','price'=>'6');
+
+
+		$this->printer_mdl->set_papersize_option( $this->session->userdata('id'),$data);
+		
+	}
+
+	public function removepapersize()
+	{
+		$this->data['page_title'] = '添加打印业务';
+		$printerid=$this->session->userdata('id');
+		$id = $this->input->get('id');
+
+		$this->printer_mdl->delete_papersize_option( $this->session->userdata('id'),$id);
+		$this->data['papersize_option'] = $this->printer_mdl->get_papersize_price_option($this->session->userdata('id'));
+		$this->data['isdoubleside_option'] = $this->printer_mdl->get_isdoubleside_price_option($this->session->userdata('id'));
+		$this->data['zhuangding_option'] = $this->printer_mdl->get_zhuangding_price_option($this->session->userdata('id'));
+		$this->load->view('printer/yewu',$this->data);
+		
+	}
+
+	public function removeisdoubleside()
+	{
+		$this->data['page_title'] = '添加打印业务';
+		$printerid=$this->session->userdata('id');
+		$id = $this->input->get('id');
+
+		$this->printer_mdl->delete_isdoubleside_option( $this->session->userdata('id'),$id);
+		$this->data['papersize_option'] = $this->printer_mdl->get_papersize_price_option($this->session->userdata('id'));
+		$this->data['isdoubleside_option'] = $this->printer_mdl->get_isdoubleside_price_option($this->session->userdata('id'));
+		$this->data['zhuangding_option'] = $this->printer_mdl->get_zhuangding_price_option($this->session->userdata('id'));
+		$this->load->view('printer/yewu',$this->data);
+		
+	}
+
+	public function removezhuangding()
+	{
+		$this->data['page_title'] = '添加打印业务';
+		$printerid=$this->session->userdata('id');
+		$id = $this->input->get('id');
+
+		$this->printer_mdl->delete_zhuangding_option( $this->session->userdata('id'),$id);
+		$this->data['papersize_option'] = $this->printer_mdl->get_papersize_price_option($this->session->userdata('id'));
+		$this->data['isdoubleside_option'] = $this->printer_mdl->get_isdoubleside_price_option($this->session->userdata('id'));
+		$this->data['zhuangding_option'] = $this->printer_mdl->get_zhuangding_price_option($this->session->userdata('id'));
+		$this->load->view('printer/yewu',$this->data);
+		
+	}
+
+
+
 
 	public function addpropertyvalue()
 	{
@@ -161,4 +221,5 @@ class Admin extends CI_Controller {
 		$this->printer_mdl->add_printer_option_value($data);
 		
 	}
+
 }
