@@ -314,6 +314,65 @@ class Printer_mdl extends CI_Model {
 
 	}
 
+	//添加打印必选任务选项
+	public function add_fixed_printer_option($printer_id,$propertyname,$data)
+	{
+		$columnname ='';
+		switch($propertyname){
+			case "纸型":
+    			$columnname ='papersize';
+    			break;
+			case "单/双面":
+    			$columnname ='isdoubleside';
+    			break;
+			case "装订":
+    			$columnname ='zhuangding';
+    			break;
+		}
+		
+		$this->db->select($columnname);
+		$this->db->from('printer_meta');
+		$this->db->where('printerid',$printer_id);
+		$query = $this->db->get();
+		foreach ($query->result() as $row) {
+			$option = array();
+			$temp = explode("|", $row->$columnname);
+			if(count($temp)>1){
+				
+				foreach ($temp as $opt) {
+					$key = substr($opt, 0, strpos($opt, ','));
+					$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
+					$option[$key]['name'] = $key;
+					$option[$key]['price'] = $key2;
+				}
+			}
+			else {
+				foreach ($temp as $opt) {
+					if(strpos($opt, ',')>0){
+						$key = substr($opt, 0, strpos($opt, ','));
+						$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
+						$option[$key]['name'] = $key;
+						$option[$key]['price'] = $key2;
+					}
+				}
+			}
+			$option[$data['name']]['name']=$data['name'];
+			$option[$data['name']]['price']=$data['price'];
+
+			$tmp='';
+			foreach ($option as $value){
+				$tmp = $tmp.$value['name'].','.$value['price'];
+				$tmp .='|';
+			}
+			$tmp = substr($tmp, 0, strlen($tmp)-1);
+		}
+			$this->db->where('printerid',$printer_id);
+			$result[$columnname]=$tmp;
+			$this->db->update('printer_meta',$result);
+			return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+		
+	}
+
 	//获取某打印店的所有打印任务可选任务
 	public function get_printer_options($printer_id){
 		$this->db->select('*');
@@ -417,6 +476,9 @@ class Printer_mdl extends CI_Model {
 				$option = array();
 				$temp = explode("|", $row->papersize);
 				foreach ($temp as $opt) {
+					if(!strpos($opt, ',')){
+						return null;
+					}
 					$key = substr($opt, 0, strpos($opt, ','));
 					$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
 					$option[$key]['name'] = $key;
@@ -531,6 +593,9 @@ class Printer_mdl extends CI_Model {
 				$option = array();
 				$temp = explode("|", $row->isdoubleside);
 				foreach ($temp as $opt) {
+					if(!strpos($opt, ',')){
+						return null;
+					}
 					$key = substr($opt, 0, strpos($opt, ','));
 					$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
 					$option[$key]['name'] = $key;
@@ -629,6 +694,9 @@ class Printer_mdl extends CI_Model {
 				$option = array();
 				$temp = explode("|", $row->zhuangding);
 				foreach ($temp as $opt) {
+					if(!strpos($opt, ',')){
+						return null;
+					}
 					$key = substr($opt, 0, strpos($opt, ','));
 					$key2 = substr($opt, strpos($opt, ',')+1,strlen($opt));
 					$option[$key]['name'] = $key;

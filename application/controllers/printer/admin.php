@@ -136,6 +136,46 @@ class Admin extends CI_Controller {
 		
 	}
 
+
+
+		public function addfixedproperty()
+	{
+		$this->data['page_title'] = '添加打印业务';
+		if(!$this->auth->printer_logged_in())
+		{
+			redirect('login','refresh');
+		}
+
+		$option=$this->input->post('option');
+		$value=$this->input->post('value');
+		$price=$this->input->post('price');
+		$this->form_validation->set_rules('value','选项名','required|min_length[1]|trim');
+		$this->form_validation->set_rules('price','价格','required|min_length[1]|trim');
+
+		if($this->form_validation->run() == FALSE)
+		{
+			$this->load->view('printer/yewu',$this->data);
+		}
+		$option=$this->input->post('option');
+		$value=$this->input->post('value');
+		$price=$this->input->post('price');
+
+		$data['name']=$value;
+		$data['price']=$price;
+
+		$this->printer_mdl->add_fixed_printer_option( $this->session->userdata('id'),$option,$data);
+
+		$this->data['papersize_option'] = $this->printer_mdl->get_papersize_price_option($this->session->userdata('id'));
+		$this->data['isdoubleside_option'] = $this->printer_mdl->get_isdoubleside_price_option($this->session->userdata('id'));
+		$this->data['zhuangding_option'] = $this->printer_mdl->get_zhuangding_price_option($this->session->userdata('id'));
+		$this->load->view('printer/yewu',$this->data);
+		
+	}
+
+
+
+
+
 	public function setproperty()
 	{
 		$this->data['page_title'] = '添加打印业务';

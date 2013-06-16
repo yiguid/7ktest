@@ -22,6 +22,7 @@ $this->load->view('printer/menu');
 					</tr>
 					<?php 
 					$i=0;
+					if($papersize_option!=null)
 					foreach($papersize_option as $size){?>  
 					<tr>
 					<?php
@@ -38,6 +39,7 @@ $this->load->view('printer/menu');
 
 			<?php 
 					$i=0;
+					if($isdoubleside_option!=null)
 					foreach($isdoubleside_option as $option){?>  
 					<tr>
 					<?php
@@ -54,6 +56,7 @@ $this->load->view('printer/menu');
 
 			<?php 
 					$i=0;
+					if($zhuangding_option!=null)
 					foreach($zhuangding_option as $option){?>  
 					<tr>
 					<?php
@@ -73,24 +76,35 @@ $this->load->view('printer/menu');
 							</td>
 							<td></td>
 							<td></td>
+							<td></td>
 						</tr>
 
 				</table>
 			</form>
-<!--
-				<h5>可选业务设置</h5>
-				<h6>已有可选业务</h6>
-				<div class="manage_content">
-				<form action="<?php echo base_url();?>printer/admin/addproperty" method="post">
-					<table>
+
+				<h5>必选业务项添加设置</h5>
+				<form action="<?php echo base_url();?>printer/admin/addfixedproperty" method="post">
+					<table id="propertytable" class="table table-condensed left750" style="margin-bottom:0px;">
 						<tr>
-							<td>新增业务名：</td>
-							<td><input value="" style="width:380px;" class="input-block-level" type="text" name="propertyname" id="propertyname"></input></td>
-							<td><?php echo form_error('propertyname')?></td>
+							<td class="w100">业务名称</td>
+							<td class="w100">新增选项名</td>
+							<td class="w100">价格</td>
 						</tr>
 						<tr>
-							<td></td>
-							<td><input class="btn-metro" type="submit" name="submit" value="提交更改"/>
+							<?php
+								$options = array(
+                  					'纸型'  => '纸型',
+                  					'单/双面'    => '单/双面',
+                  					'装订'   => '装订',
+                				);
+							  ;?>
+							<td><?php echo form_dropdown('option', $options, '纸型', "id=option class=w100");?></td>
+							<td><input value="" style="width:150px;" class="input-block-level" type="text" name="value" id="value"></input></td>
+							<td><input value="" style="width:150px;" class="input-block-level" type="text" name="price" id="price"></td>
+						</tr>
+						<tr>
+							<td><input class="btn-metro" type="submit" name="submit" value="提交更改"/></td>
+							<td>
 							</td>
 							<td></td>
 						</tr>
@@ -98,7 +112,7 @@ $this->load->view('printer/menu');
 				</form> 
 
 
-
+<!--
 				<form action="<?php echo base_url();?>printer/admin/addpropertyvalue" method="post">
 					<table>
 						<tr>
@@ -124,9 +138,8 @@ $this->load->view('printer/menu');
 						</tr>
 					</table>
 				</form> 
+-->
 
-			</div>
-			-->
 		</div>
 
 			
