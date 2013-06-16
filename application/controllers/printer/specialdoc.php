@@ -33,7 +33,7 @@ class Specialdoc extends CI_Controller {
 	 {
 	  $config['upload_path'] = './uploads';
 	  $config['allowed_types'] = 'pdf|gif|jpg|png|doc|docx|ppt|pptx|zip|rar';
-	  $config['max_size'] = '10000';
+	  $config['max_size'] = '20000';
 	  $config['encrypt_name'] = True;
 	  
 	  $this->load->library('upload', $config);
