@@ -48,18 +48,5 @@ class Userajax extends CI_Controller {
 		$data['documenthistorylist'] = $this->user_mdl->get_user_documenthistory($userid,$l,$s); ;
 		echo $this->load->view("documenthistory_list",$data);
 	}
-
-	public function taskrate()
-	{
-		extract($_REQUEST);
-		if( $this->shop_mdl->rate($userid,$destid,$type,$rate);)
-		{
-			 echo $rate;
-		}
-		else
-		{
-			echo "-1";
-		}
-	}
 }
 ?>
