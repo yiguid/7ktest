@@ -38,8 +38,10 @@ class Printer extends CI_Controller {
 	{
 		$data['addresult']=$this->printer_mdl->add_printer(
 				array(
+					'username' => $this->input->post('username'),
 					'name'=> $this->input->post('name'),
-					'location'=> $this->input->post('location'),
+					'password' => $this->input->post('password'),
+					'location' => $this->input->post('location')
 				)
 		);
 		$data['printerlist'] = $this->printer_mdl->get_printer();
