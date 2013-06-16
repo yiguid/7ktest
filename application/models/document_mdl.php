@@ -29,8 +29,11 @@ class Document_mdl extends CI_Model {
 		$this->db->select('specialdoc.id as id,specialdoc.name as name, printer.name as uploadptername,keyword,type,size,uploadpterid');
 		$this->db->from('specialdoc');
 		$this->db->like('specialdoc.name',$keywords);
+		$this->db->or_like('specialdoc.keyword',$keywords);
+		$this->db->or_like('specialdoc.description',$keywords);
 		$this->db->join('printer','printer.id=specialdoc.uploadpterid');
 		$this->db->limit($line,$start);
+		$this->db->order_by('uploadtime','desc');
 		$query = $this->db->get();
 		return $query->result();
 	}

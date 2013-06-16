@@ -31,6 +31,12 @@ class Manage extends CI_Controller {
 	public function yewu()
 	{
 		$this->data['page_title'] = '业务管理';
+		//$this->data['papersize_option'] = $this->printer_mdl->get_papersize_option($this->session->userdata('id'));
+		//$this->data['isdoubleside_option'] = $this->printer_mdl->get_isdoubleside_option($this->session->userdata('id'));
+		//$this->data['zhuangding_option'] = $this->printer_mdl->get_zhuangding_option($this->session->userdata('id'));
+		$this->data['papersize_option'] = $this->printer_mdl->get_papersize_price_option($this->session->userdata('id'));
+		$this->data['isdoubleside_option'] = $this->printer_mdl->get_isdoubleside_price_option($this->session->userdata('id'));
+		$this->data['zhuangding_option'] = $this->printer_mdl->get_zhuangding_price_option($this->session->userdata('id'));
 		$this->load->view('printer/yewu',$this->data);
 	}
 

@@ -17,8 +17,8 @@
 				</ul>
 			</div>
 			<div id="footer_logo">
-				<img src="<?php echo base_url();?>images/logo.png"/>
-				<p>Copyright ©2012-2013 7kmall.com, All Rights Reserved.</p>
+				<a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>images/logo.png"/></a>
+				<p>Copyright ©2012-2013 7kmall.com, All Rights Reserved. <br>沪ICP备13012233号 </p>
 			</div>
 			<div id="footer_list">
 				<ul>

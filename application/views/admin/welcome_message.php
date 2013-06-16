@@ -75,6 +75,7 @@
 		<p><a href="user">User List</a></p>
 		<p><a href="printer">Printer List</a></p>
 		<p><a href="task">Task List</a></p>
+		<p><a href="card">Card List</a></p>
 		
 	</div>
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>

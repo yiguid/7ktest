@@ -63,7 +63,9 @@ $this->load->view('header');
 						<table>
 							<tr>
 								<td>用户名：</td>
-								<td><input style="width:180px;" class="input-block-level" type="text" name="reg_username" id="reg_username" value="<?php echo set_value('reg_username'); ?>"><?php echo form_error('reg_username')?></input></td>
+								<td>
+									<input style="width:180px;" class="input-block-level" type="text" name="reg_username" id="reg_username" value="<?php echo set_value('reg_username'); ?>"><?php echo form_error('reg_username')?></input>
+								</td>
 							</tr>
 							<tr>
 								<td>昵称：</td>
@@ -78,16 +80,20 @@ $this->load->view('header');
 								<td><input style="width:180px;" class="input-block-level" type="password" name="re_reg_password" id="re_reg_password"><?php echo form_error('re_reg_password')?></input></td>
 							</tr>
 							<tr>
-								<td>邮箱：</td>
-								<td><input style="width:180px;" class="input-block-level" type="text" name="reg_email" id="reg_email" value="<?php echo set_value('reg_email'); ?>"><?php echo form_error('reg_email')?></input></td>
-							</tr>
-							<tr>
 								<td><input class="btn btn-success" type="submit" name="submit" value="注册"/></td>
 								<td><input class="btn btn-success" type="reset" name="reset" value="重置"/></td>
 							</tr>
 							<tr>
 								<td></td>
-								<td><?php if(isset($regist_info)) echo $regist_info;?></td>
+								<td><span style="color:red;"><?php if(isset($regist_info)) echo $regist_info;?>
+									<?php if(isset($regist_error)) echo $regist_error;?></span></td>
+								<?php if(isset($regist_info)) {?>
+									<script type="text/javascript">
+										alert("注册成功，请登陆！");
+									</script>
+								<?php
+								}
+								?>
 							</tr>
 						</table>
 					</form> 

@@ -88,14 +88,32 @@ class User_mdl extends CI_Model {
 		return $this->add_user($data);
 	}
 
+	//判断用户是否存在
+	public function if_exist($username)
+	{
+		$this->db->select('*');
+		$this->db->where('username',$username);
+		$query = $this->db->get('user');
+		$result = $query->row();
+		$num = $query->num_rows();
+		if($num == 0)
+			return FALSE;
+		else
+			return TRUE;
+	}
+
 	//添加用户
 	public function add_user($data)
 	{
 		$encryption_key = $this->config->item('encryption_key');
 		$data['id'] = $data['username'];
 		$data['password'] = md5($data['password'].$encryption_key);
-		$this->db->insert('user',$data);
-		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+		if(!$this->if_exist($data['username']))
+		{
+			$this->db->insert('user',$data);
+			return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+		}else
+			return FALSE;
 	}
 
 	//获取用户表(包括权限)
