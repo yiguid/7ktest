@@ -29,7 +29,7 @@ class Shop extends CI_Controller {
 				$this->data['name'] = $this->shop_mdl->get_shop_name($pterid);
 				$this->data['pterid'] = $pterid;
 				$this->data['docTypeList']=$this->shop_mdl->get_shop_specialdoc_type($pterid);
-				$this->data['perpage'] = 1;
+				$this->data['perpage'] = 30;
 				$this->data['total'] = $this->shop_mdl->get_shop_specialdoc_total($pterid);
 				$this->load->view('shop/doc_view',$this->data);
 			}
