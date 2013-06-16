@@ -2,6 +2,29 @@
 $this->load->view('header');
 $this->load->view('menu');
 ?>
+<script type="text/javascript">
+	function rateInit()
+	{
+		var rate_enable = true;
+		var opts = {rate_enable : rate_enable,callback : rateAction};
+		$("#task_rating").pageRating(opts);
+	}
+	function rateAction($rate)
+	{
+		alert
+		$("#my_rating").val($rate);
+		$("#score").text($rate+'分');
+
+	}
+	 $(document).ready(function(){
+	 	var rating_flag = <?php echo $rating_flag;?>;
+	 	if(rating_flag == 0)
+	 	{
+	 		rateInit();
+	 	}
+	 	
+	});
+</script>
 		<div id="managebox">
 			<div class="content-header">
 				<h4>印单详情</h4>
@@ -54,59 +77,36 @@ $this->load->view('menu');
 				<div>备注信息：<?php echo $printtaskinfo[0]->remark ;?></div>
 			</div>
 			<?php if($printtaskinfo[0]->status == '打印完成') {?>
-			<div class="rating_panel">
-				<script type="text/javascript">
-				$(function(){ 
-					var cur;
-					$(".rating span").each(function(){ 
-							//绑定事件
-					        $(this).mouseover(function(){ 
-						        	$(".rating").mouseout(function(){ 
-							    $("#score").text(""); 
-							    $(".rating span").each(function(){
-						            $(this).css({'color':'black'});
-						        });
-							});
-				        	cur = $(this).attr("rate");
-				            $("#score").text(cur);
-				            $("#my_rating").val(cur);
-				            //设置前几个的星星为亮色
-				            $(".rating span").each(function(){
-				            	if($(this).attr("rate") <= cur)
-				            		//alert($(this).attr("rate")+"<="+cur);
-				            		$(this).css({'color':'#4889F0'});
-				            });
-				        }).click(function(){ 
-				            //...ajax异步提交给后台处理
-				            $(".rating span").each(function(){
-				           		if($(this).attr("rate") <= cur)
-				            		$(this).css({'color':'#4889F0'});
-				            });
-				            //alert("评分为"+cur);
-				            $(".rating").unbind('mouseout');
-				        }) 
-					});
-					  
-				});
-				</script>
-				<?php echo form_open('printtask/addRating',array('id' => 'rating_form')) ?>
-				<input type="hidden" value=<?php echo $printtaskinfo[0]->id;?> name="printtaskid" id="printtaskid"/>
-				<div>评分：<span class="rating">
-         					 <span rate="1" class="icon-star"></span>
-         					 <span rate="2" class="icon-star"></span>
-         					 <span rate="3" class="icon-star"></span>
-         					 <span rate="4" class="icon-star"></span>
-         					 <span rate="5" class="icon-star"></span>
-        				</span>
-        				<p>你的评分：<span id="score" name="score" class="score"></span></p>
-        				<input type="hidden" name="my_rating" id="my_rating" value=""/>
-    			</div>
-				<div>留言：</div>
-				<div><textarea rows="3" style="width:600px;" id="msg" name="msg"></textarea></div>
-				<input type="hidden" value="printtask" name="type" id="type"/>
-				<div><input class="btn-metro" type="submit" name="submit" value="提 交"/></div>
-				</form>
-			</div>
+				
+				<div class="rating_panel">
+					<?php if($rating_flag == 0) {?>
+						<?php echo form_open('printtask/addRating',array('id' => 'rating_form')) ?>
+						<input type="hidden" value=<?php echo $printtaskinfo[0]->id;?> name="printtaskid" id="printtaskid"/>
+		        		<div>你的评分：
+		        			<div id="task_rating"></div>
+		        			<div id="score" name="score" class="score"></div>
+		        		</div>
+		        		<input type="hidden" name="my_rating" id="my_rating" value=""/>
+						<div>留言：</div>
+						<div><textarea rows="3" style="width:600px;" id="msg" name="msg"></textarea></div>
+						<input type="hidden" value="printtask" name="type" id="type"/>
+						<div><input class="btn-metro" type="submit" name="submit" value="提 交"/></div>
+					</form>
+					<?php }else{
+						$rating= $this->printtask_mdl->get_rating($this->session->userdata('id'),$printtaskinfo[0]->id);	
+					?>		
+						<script type="text/javascript">
+						 $(document).ready(function(){
+						 	var score = <?php echo $rating->rating;?>;
+							var opts = {rate_enable : false,score : score};
+							$("#task_rating").pageRating(opts);
+						 });
+						</script>
+		        		<div>你的评分：<div id="task_rating" ><span id="score" name="score" class="score"><?php echo $rating->rating;?>分</span></div>
+		    			</div>
+		    			<div>留言：<?php echo $rating->msg;?></div>
+					<?php }?>
+				</div>
 			<?php }?>
 		</div>
 	</div>

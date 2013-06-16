@@ -85,5 +85,29 @@
             	}
             });
 		}
+
 	};
+
+	$.fn.pageRating = function(opts){
+	opts = $.extend({
+		score:0,
+		star_width:16,
+		star_num:5,
+		rate_enable:true,
+		renderer:"defaultRenderer",
+		callback:function(){return false;}
+	},opts||{});
+	var container = this;
+	var renderer = new $.RateRenderers[opts.renderer](opts);
+	var list = renderer.getList(rateClickHandler);
+	list.appendTo(container);
+	function rateClickHandler(evt){
+		var rate = $(evt.target).data("rate");
+		container.empty();
+		renderer.opts.score = rate;
+		renderer.getList(rateClickHandler).appendTo(container);
+		opts.callback(rate);
+	}
+
+};
 })(jQuery);

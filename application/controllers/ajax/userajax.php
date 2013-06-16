@@ -6,6 +6,7 @@ class Userajax extends CI_Controller {
 		parent::__construct();
 		$this->load->model('user_mdl');
 		$this->load->model('transaction_mdl');
+		$this->load->model('printtask_mdl');
 	}
 	public function get_shop_favorite()
 	{
@@ -46,6 +47,19 @@ class Userajax extends CI_Controller {
 		$l = intval($line);
 		$data['documenthistorylist'] = $this->user_mdl->get_user_documenthistory($userid,$l,$s); ;
 		echo $this->load->view("documenthistory_list",$data);
+	}
+
+	public function taskrate()
+	{
+		extract($_REQUEST);
+		if( $this->shop_mdl->rate($userid,$destid,$type,$rate);)
+		{
+			 echo $rate;
+		}
+		else
+		{
+			echo "-1";
+		}
 	}
 }
 ?>

@@ -25,6 +25,7 @@ class Printtask extends CI_Controller {
 		$this->data['printtaskinfo'] = $this->user_mdl->get_user_printtask($this->session->userdata('id'), $this->input->get('id'));
 		$this->data['documents'] = $this->user_mdl->get_user_printtask_documents($this->session->userdata('id'), $this->input->get('id'));
     $this->data['specialdocs'] = $this->user_mdl->get_user_printtask_specialdocs($this->session->userdata('id'), $this->input->get('id'));
+    $this->data['rating_flag'] = $this->printtask_mdl->is_rating($this->session->userdata('id'), $this->input->get('id'));
 		$this->load->view('printtask',$this->data);
 	}
 
@@ -77,19 +78,17 @@ class Printtask extends CI_Controller {
   public function addRating(){
     $rating = array(
       'userid' => $this->session->userdata('id'),
-      'type' => $this->input->post('type'),
+      'type' => 2,
       'destid' => $this->input->post('printtaskid'),
       'rating' => $this->input->post('my_rating'),
       'msg' => $this->input->post('msg'),
       );
     if($this->printtask_mdl->add_rating($rating)){
-      echo "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head><body>";
-      echo "<script language=\"javascript\">alert('评分成功');window.history.back();</script>";
-      echo "</body></html>";
+      redirect(base_url()."printtask?id=".$this->input->post('printtaskid'));
     }
     else{
       echo "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head><body>";
-      echo "<script language=\"javascript\">alert('评分失败');window.history.back();</script>";
+      echo "<script language=\"javascript\">alert('评价失败');window.history.back();</script>";
       echo "</body></html>";
     }
 

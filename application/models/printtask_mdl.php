@@ -51,11 +51,36 @@ class Printtask_mdl extends CI_Model {
 		$this->db->delete('printtask');
 		return TRUE;
 	}
-
-	public function add_rating($rating)
+	public function add_rating($data)
 	{
-		$this->db->insert('rating',$rating);
-		return ($this->db->affected_rows() > 0) ? mysql_insert_id() : 0;
+		$this->db->insert('rating',$data);
+		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+	}
+	public function get_rating($userid,$taskid)
+	{
+		$this->db->select('rating,msg');
+		$this->db->from('rating');
+		$this->db->where('userid',$userid);
+		$this->db->where('type',2);
+		$this->db->where('destid',$taskid);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row) {
+				return $row;
+			}
+		}
+		return null;
+	}
+	public function is_rating($userid,$taskid)
+	{
+		$this->db->select('*');
+		$this->db->from('rating');
+		$this->db->where('userid',$userid);
+		$this->db->where('type',2);
+		$this->db->where('destid',$taskid);
+		$query = $this->db->get();
+		return $query->num_rows();
 	}
 }
 ?>
