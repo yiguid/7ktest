@@ -44,7 +44,7 @@ $this->load->view('header');
 						<?php if($this->session->userdata('printer_id') == $printer->id)
 							echo 'checked';
 						?> 
-						onclick="javascript:setPrinterId('<?php echo base_url();?>','<?php echo " ".$printer->name;?>','<?php echo $this->cart->total_items();?>')"/><?php echo " ".$printer->name;?> | <?php echo $printer->online;?> | <a alt="查看店铺详细信息" href="<?php echo base_url().'shop/doc/'.$printer->id;?>"><i class="icon-home"></i></a>
+						onclick="javascript:setPrinterId('<?php echo base_url();?>','<?php echo " ".$printer->name;?>','<?php echo $this->cart->total_items();?>')"/><?php echo " ".$printer->name;?><a alt="查看店铺详细信息" href="<?php echo base_url().'shop/doc/'.$printer->id;?>"><i class="icon-home"></i><?php echo $printer->online;?></a>
 						</label>
 						
 					</div>

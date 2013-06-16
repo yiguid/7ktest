@@ -82,10 +82,9 @@ $this->load->view('menu');
 					<?php if($rating_flag == 0) {?>
 						<?php echo form_open('printtask/addRating',array('id' => 'rating_form')) ?>
 						<input type="hidden" value=<?php echo $printtaskinfo[0]->id;?> name="printtaskid" id="printtaskid"/>
-		        		<div>你的评分：
+		        		<div>你的评分：</div>
 		        			<div id="task_rating"></div>
 		        			<div id="score" name="score" class="score"></div>
-		        		</div>
 		        		<input type="hidden" name="my_rating" id="my_rating" value=""/>
 						<div>留言：</div>
 						<div><textarea rows="3" style="width:600px;" id="msg" name="msg"></textarea></div>
@@ -102,8 +101,7 @@ $this->load->view('menu');
 							$("#task_rating").pageRating(opts);
 						 });
 						</script>
-		        		<div>你的评分：<div id="task_rating" ><span id="score" name="score" class="score"><?php echo $rating->rating;?>分</span></div>
-		    			</div>
+		        		<div>你的评分：</div><div id="task_rating" ><span id="score" name="score" class="score"><?php echo $rating->rating;?>分</span></div>
 		    			<div>留言：<?php echo $rating->msg;?></div>
 					<?php }?>
 				</div>
