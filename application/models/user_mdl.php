@@ -111,7 +111,12 @@ class User_mdl extends CI_Model {
 		if(!$this->if_exist($data['username']))
 		{
 			$this->db->insert('user',$data);
-			return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+			if ($this->db->affected_rows() > 0){
+				//赠送一定金额
+				
+				return TRUE;
+			}else
+				return FALSE;
 		}else
 			return FALSE;
 	}

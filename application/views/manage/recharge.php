@@ -10,6 +10,12 @@ $this->load->view('menu');
 				<form action="<?php echo base_url();?>transaction/recharge" method="post">
 					<table>
 						<tr>
+							<td>奇客网公测期临时充值平台<br>点击购买充值卡：
+							</td>
+							<td><a href="hamburgers.taobao.com">hamburgers.taobao.com</a></td>
+							<td></td>
+						</tr>
+						<tr>
 							<td>充值金额：</td>
 							<td><input style="width:180px;" class="input-block-level" type="text" name="amount" id="amount"></input></td>
 							<td><?php echo form_error('amount')?></td>

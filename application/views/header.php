@@ -33,6 +33,12 @@
 </head>
 <body>
 <div class="center" align="center">
+	<script type="text/javascript">
+		$(function(){
+			if(document.all)
+				alert('您正在使用IE浏览器，无法得到网站的最佳体验，建议升级为Chrome，Firefox或其他符合W3C标准的浏览器');
+		});
+	</script>
 <div id="header">
 <div id="menu">
 	<div id="menu_logo">
