@@ -62,7 +62,7 @@ $this->load->view('header');
 			    	<form action="<?php echo base_url();?>regist" method="post">
 						<table>
 							<tr>
-								<td>用户名：</td>
+								<td>邮箱：</td>
 								<td>
 									<input style="width:180px;" class="input-block-level" type="text" name="reg_username" id="reg_username" value="<?php echo set_value('reg_username'); ?>"><?php echo form_error('reg_username')?></input>
 								</td>

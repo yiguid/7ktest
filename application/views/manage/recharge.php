@@ -12,7 +12,7 @@ $this->load->view('menu');
 						<tr>
 							<td>奇客网公测期临时充值平台<br>点击购买充值卡：
 							</td>
-							<td><a href="hamburgers.taobao.com">hamburgers.taobao.com</a></td>
+							<td><a href="http://hamburgers.taobao.com">hamburgers.taobao.com</a></td>
 							<td></td>
 						</tr>
 						<tr>
