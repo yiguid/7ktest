@@ -334,6 +334,7 @@ class Printer_mdl extends CI_Model {
 		$this->db->from('printer_meta');
 		$this->db->where('printerid',$printer_id);
 		$query = $this->db->get();
+		$tmp='';
 		foreach ($query->result() as $row) {
 			$option = array();
 			$temp = explode("|", $row->$columnname);
@@ -359,7 +360,7 @@ class Printer_mdl extends CI_Model {
 			$option[$data['name']]['name']=$data['name'];
 			$option[$data['name']]['price']=$data['price'];
 
-			$tmp='';
+			
 			foreach ($option as $value){
 				$tmp = $tmp.$value['name'].','.$value['price'];
 				$tmp .='|';
@@ -472,8 +473,9 @@ class Printer_mdl extends CI_Model {
 			$this->db->from('printer_meta');
 			$this->db->where('printerid',$printer_id);
 			$query = $this->db->get();
+			$option = array();
 			foreach ($query->result() as $row) {
-				$option = array();
+				
 				$temp = explode("|", $row->papersize);
 				foreach ($temp as $opt) {
 					if(!strpos($opt, ',')){
@@ -589,8 +591,9 @@ class Printer_mdl extends CI_Model {
 			$this->db->from('printer_meta');
 			$this->db->where('printerid',$printer_id);
 			$query = $this->db->get();
+			$option = array();
 			foreach ($query->result() as $row) {
-				$option = array();
+				
 				$temp = explode("|", $row->isdoubleside);
 				foreach ($temp as $opt) {
 					if(!strpos($opt, ',')){
@@ -690,8 +693,9 @@ class Printer_mdl extends CI_Model {
 			$this->db->from('printer_meta');
 			$this->db->where('printerid',$printer_id);
 			$query = $this->db->get();
+			$option = array();
 			foreach ($query->result() as $row) {
-				$option = array();
+				
 				$temp = explode("|", $row->zhuangding);
 				foreach ($temp as $opt) {
 					if(!strpos($opt, ',')){
