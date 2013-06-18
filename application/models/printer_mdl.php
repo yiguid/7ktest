@@ -40,7 +40,12 @@ class Printer_mdl extends CI_Model {
 	{
 		$data['password'] = md5($data['password'].$this->config->item('encryption_key'));
 		$this->db->insert('printer',$data);
-		return ($this->db->affected_rows() > 0) ? TRUE : FALSE;
+		if ($this->db->affected_rows() > 0){
+			$pterid = $this->db->insert_id();
+			$this->db->insert('printer_meta',array('printerid' => $pterid));	
+			return TRUE;
+		} else
+			FALSE;
 	}
 
 	public function update_printer($id, $data)
