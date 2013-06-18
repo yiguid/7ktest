@@ -29,7 +29,6 @@
 	<div id="menu_list">
 		<span style="float:left;">	
 			<a style="color:white;" href="<?php echo base_url();?>printer/manage">云打印店</a>
-			<a style="color:#D6E4FB;" href="<?php echo base_url();?>welcome">云打印</a>
 		</span>
 		<span style="float:right;">
 			<div class="dropdown">

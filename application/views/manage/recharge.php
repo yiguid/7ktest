@@ -16,7 +16,7 @@ $this->load->view('menu');
 							<td></td>
 						</tr>
 						<tr>
-							<td>充值金额：</td>
+							<td>充值打印币数量：</td>
 							<td><input style="width:180px;" class="input-block-level" type="text" name="amount" id="amount"></input></td>
 							<td><?php echo form_error('amount')?></td>
 						</tr>
