@@ -17,7 +17,7 @@ $this->load->view('printer/menu');
 						<td class="w40">序号</td>
 						<td class="w100">业务名称</td>
 						<td class="w100">可选项</td>
-						<td class="w100">价格</td>
+						<td class="w100">打印币</td>
 						<td class="w100">操作</td>
 					</tr>
 					<?php 
@@ -72,9 +72,9 @@ $this->load->view('printer/menu');
 			?>
 						<tr>
 							<td></td>
-							<td><input class="btn-metro" type="submit" name="submit" value="保存更改"/>
+							<td><!--<input class="btn-metro" type="submit" name="submit" value="保存更改"/>-->
 							</td>
-							<td></td>
+							<td>如需修改业务，请删除后重新添加。</td>
 							<td></td>
 							<td></td>
 						</tr>
@@ -88,7 +88,7 @@ $this->load->view('printer/menu');
 						<tr>
 							<td class="w100">业务名称</td>
 							<td class="w100">新增选项名</td>
-							<td class="w100">价格</td>
+							<td class="w100">打印币</td>
 						</tr>
 						<tr>
 							<?php

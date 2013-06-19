@@ -79,7 +79,7 @@ $this->load->view('header');
 	});
 
 	mapObj.addOverlays(printerpoi('beihang','116.347','39.982','printshop/name/beihang','北航打印店')); //将点添加到地图
-	mapObj.addOverlays(printerpoi('beiyou','116.349','39.984','printshop/name/beiyou','北邮打印店'));
+	mapObj.addOverlays(printerpoi('18611728343','116.349','39.984','printshop/name/18611728343','测试打印店'));
 
 </script>
 

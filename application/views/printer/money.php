@@ -40,7 +40,7 @@ $this->load->view('printer/menu');
 <div id="managebox">
 			<div class="content-header">
 				<h4>财务管理</h4>
-				<h5>账户余额：<?php echo $total*-1;?></h5>
+				<h5>账户剩余打印币：<?php echo $total*-1;?></h5>
 			</div>
             <div>
                 <div id="yu-e">

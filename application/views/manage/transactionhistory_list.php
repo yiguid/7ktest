@@ -1,6 +1,6 @@
 			<table style="width:700px;" class="table table-hover">
 				<tr>
-					<td>时间</td><td>信息</td><td>金额</td><td>状态</td>
+					<td>时间</td><td>信息</td><td>打印币</td><td>状态</td>
 				</tr>
 				<?php foreach($translist as $transaction):
 					$printtask = "";

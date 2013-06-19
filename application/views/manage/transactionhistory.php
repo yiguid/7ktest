@@ -24,7 +24,7 @@ $this->load->view('menu');
 		<div id="managebox">
 			<div class="content-header">
 				<h4>收支明细</h4>
-				<h3>账户余额：<?php echo $total;?></h3>
+				<h3>账户剩余打印币：<?php echo $total;?></h3>
 				<div id="mingxi">
 					<?php
 						$data['translist'] = $this->transaction_mdl->get_transactions_by_userid(0,$perpage,$userid);

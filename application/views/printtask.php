@@ -37,7 +37,7 @@ $this->load->view('menu');
 			</div>
 			<table class="manage_table printtask_table">
 				<tr class="table_header">
-					<td>打印店</td><td>文件数</td><td>创建时间</td><td>打印时间</td><td>总费用</td>
+					<td>打印店</td><td>文件数</td><td>创建时间</td><td>打印时间</td><td>总使用打印币</td>
 				</tr>
 				  
 				<tr>
@@ -54,7 +54,7 @@ $this->load->view('menu');
 			</table>
 			<table class="manage_table">
 				<tr class="table_header">
-					<td>文件名</td><td>纸张</td><td>单/双面打印</td><td>页码范围</td><td>份数</td><td>装订</td><td>费用</td>
+					<td>文件名</td><td>纸张</td><td>单/双面打印</td><td>页码范围</td><td>份数</td><td>装订</td><td>打印币</td>
 				</tr>
 				<?php foreach($documents as $doc):?>  
 				<tr>
@@ -64,7 +64,7 @@ $this->load->view('menu');
 			</table>
 			<table class="manage_table">
 				<tr class="table_header">
-					<td>文件名</td><td>描述</td><td>页数</td><td>份数</td><td>费用</td>
+					<td>文件名</td><td>描述</td><td>页数</td><td>份数</td><td>打印币</td>
 				</tr>
 				<?php foreach($specialdocs as $specdoc):?>  
 				<tr>

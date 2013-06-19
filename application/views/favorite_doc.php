@@ -1,7 +1,7 @@
 				<div id="doc-list">
 					<table class="table table-hover manage_table">
 						<tr class="table_header">
-							<td>ID</td><td>文件名</td><td>大小</td><td>描述</td><td>页数</td><td>价格</td><td>操作</td>
+							<td>ID</td><td>文件名</td><td>大小</td><td>描述</td><td>页数</td><td>打印币</td><td>操作</td>
 						</tr>
 						<?php foreach($docList as $doc):?>  
 							<tr>

@@ -289,7 +289,7 @@ $this->load->view('header');
 				<div class="span9">
 					费用总计：<input type="text" style="border:0;background:none;box-shadow:none;" maxlength="7" size="4" id="total_cost" name="total_cost" value="<?php echo $this->cart->total();?>" readonly/>
 					<span style="margin-left:60px;"></span>
-					账户打印币数：<?php echo $this->session->userdata('user_money')?>
+					账户打印币数：<?php echo $this->session->userdata('user_money')?>枚打印币
 					<span style="margin-left:10px;"></span><input class="btn-metro offset1" type="button" onclick="submit_printtask()" value="确认印单" name="submitbtn"/>
 				</div>
 			</form>

@@ -54,7 +54,7 @@ $this->load->view('header');
 							<div><?php if(isset($login_error)) echo $login_error;?></div>
 							<div style="margin-top:10px;"><input class="btn-metro" type="submit" name="submit" value="登 录"/></div>
 							<div><?php if(isset($regist_info)) echo $regist_info;?></div>
-							<div style="color:#4d8fff;margin-top:10px;">无法访问您的账户？</div>
+							<div style="color:#4d8fff;margin-top:10px;"><a href="<?php echo base_url();?>feedback">无法访问您的账户？</a><span style="margin-left:80px;"><a href="<?php echo base_url();?>printer/login">打印店登录>></a></span></div>
 						</div>
 					</form> 
 			    </div>
@@ -99,8 +99,6 @@ $this->load->view('header');
 					</form> 
 			    </div>
 			</div>
-
-			
 			</div>
 		</div>
 	</div>

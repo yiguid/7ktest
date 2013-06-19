@@ -6,7 +6,7 @@
 			<td>状态</td>
 			<td>创建时间</td>
 			<td>打印时间</td>
-			<td>费用</td>
+			<td>打印币</td>
 			<td>详细</td>
 		</tr>
 		<?php foreach($printhistorylist as $printhistory):?>  

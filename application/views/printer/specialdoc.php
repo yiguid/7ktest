@@ -38,7 +38,7 @@ $this->load->helper('url');
 		<div id="jtpagination"></div>
 
 		<div style="text-align:left;margin-left:20px;">
-			<h5>上传特色资料</h5>
+			<h5>上传特色资料</h5> 
 		<?php echo form_open_multipart('printer/specialdoc/do_upload',array('id' => 'upload_form'));?>
 			<div>资料名称：<input type="text" name="name"/>标签：<input type="text" name="keyword"/></div>
 			<div>资料类型：<input type="text" name="type"/>页数：<input type="text" name="page"/></div>
@@ -46,7 +46,7 @@ $this->load->helper('url');
 			<div>资料描述：<textarea name="description" rows="3" style="width:470px;"></textarea></div>
 			<div><input style="display:none;" type="file" name="userfile" size="20" onchange="document.getElementById('ufb').value=this.value"/>
 				 <input class="btn-metro" id="ufb" type="button" onclick=userfile.click() value="点击选择文件"/>
-				 <input class="btn-metro" type="submit" value="上传" /></div>
+				 <input class="btn-metro" type="submit" value="上传" />&nbsp;如果不希望上传资料原件，请任意上传一个文档文件代替。</div>
 		</form>
 		</div>
 </div>
