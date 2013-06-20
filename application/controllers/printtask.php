@@ -66,7 +66,7 @@ class Printtask extends CI_Controller {
    						'printtaskid' => $id
    			);
    		$this->transaction_mdl->submit_transaction($trans);
-      $this->session->set_userdata($user_money - $this->input->post('total_cost'));
+      $this->session->set_userdata('user_money',$user_money - $this->input->post('total_cost'));
    		$this->data['printtaskid'] = $id;
    		//提交完了要清空历史信息
    		$this->session->set_userdata('upload_docs','');
