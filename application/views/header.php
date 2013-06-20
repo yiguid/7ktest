@@ -18,9 +18,17 @@
 <script type="text/javascript" src="<?php echo base_url();?>js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.pagination.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.rating.js"></script>
-<!--[if lte IE 6]>
-<link href="css/ieonly.css" rel="stylesheet" type="text/css" />
-<![endif]-->
+
+<!--[if lte IE 6]-->
+<!--bsie css 补丁文件 -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/bootstrap-ie6.css">
+<!-- bsie 额外的 css 补丁文件 -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/ie.css">
+<!--[endif]-->
+<!--[if lte IE 6]-->
+<!-- bsie js 补丁只在IE6中才执行 -->
+<script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-ie.js">$.bootstrapIE6(el)</script>
+<!--[endif]-->
 <style type="text/css">
 #div_search{
 	line-height: 24px;
@@ -66,16 +74,10 @@
 						<li class="divider"></li>
 						<li><a tabindex="-1" href="<?php echo base_url();?>manage/changepwd"><i class="icon-cog"></i>修改密码</a></li>
 						<li><a tabindex="-1" href="<?php echo base_url();?>manage/safe"><i class="icon-lock"></i>账户保护</a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="<?php echo base_url();?>welcome"><i class="icon-shopping-cart"></i>查看印单</a></li>
+						<li><a tabindex="-1" href="<?php echo base_url();?>welcome/cleartask"><i class="icon-trash"></i>清空印单</a></li>
 					</ul>
-					&nbsp;&nbsp;
-					<span class="dropdown">
-						<a style="color:white;" data-toggle="dropdown" href="">打印任务<i class="icon-chevron-down icon-white"></i></a>
-					  	<ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-						    <li><a tabindex="-1" href="<?php echo base_url();?>welcome"><i class="icon-shopping-cart"></i>查看印单</a></li>
-						    <li><a tabindex="-1" href="<?php echo base_url();?>welcome/cleartask"><i class="icon-trash"></i>清空印单</a></li>
-						</ul>
-					</span>
-					&nbsp;&nbsp;
 				<?php echo anchor('login/logout','退出','style="color:#D6E4FB;"'); 
 				}
 				else

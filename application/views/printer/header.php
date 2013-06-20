@@ -17,9 +17,16 @@
 <script src="<?php echo base_url();?>js/bootstrap/bootstrap.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.pagination.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.rating.js"></script>
-<!--[if lte IE 6]>
-<link href="css/ieonly.css" rel="stylesheet" type="text/css" />
-<![endif]-->
+<!--[if lte IE 6]-->
+<!--bsie css 补丁文件 -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/bootstrap-ie6.css">
+<!-- bsie 额外的 css 补丁文件 -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/ie.css">
+<!--[endif]-->
+<!--[if lte IE 6]-->
+<!-- bsie js 补丁只在IE6中才执行 -->
+<script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-ie.js">$.bootstrapIE6(el)</script>
+<!--[endif]-->
 </head>
 <body>
 <div id="header" align="center">
