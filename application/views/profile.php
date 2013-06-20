@@ -73,7 +73,7 @@ $this->load->view('header');
 			</div>
 			<div>
 				<?php if(isset($error)) echo $error;?>
-				<form action="<?php echo base_url();?>upload/do_upload" method="post" accept-charset="utf-8" id="upload_form" enctype="multipart/form-data">
+				<?php echo form_open_multipart('upload/do_upload',array('id' => 'upload_form'));?>
 				<table class="table table-condensed left750" style="margin-bottom:0px;">
 					<tr>
 						<td class="w40">序号</td>
