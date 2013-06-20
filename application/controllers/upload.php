@@ -11,6 +11,7 @@ class Upload extends CI_Controller {
     $this->load->model('printer_mdl');
     $this->load->model('document_mdl');
     $this->load->model('printtask_mdl');
+    $this->load->model('method_mdl');
     
     if(!$this->auth->logged_in())
     {
@@ -78,26 +79,32 @@ class Upload extends CI_Controller {
     $this->session->set_userdata('printtaskid',$task_id);
    }
    //验证费用
+   $papersize = $this->input->post('papersize');
+   $isdoubleside = $this->input->post('isdoubleside');
+   $range = $this->input->post('range');
+   $fenshu = $this->input->post('fenshu');
+   $zhuangding = $this->input->post('zhuangding');
+   $cost = $this->method_mdl->computeMoney($printer_id,$papersize,$isdoubleside,$range,$fenshu,$zhuangding);
    
    //保存设置
    $doc_setting = array(
       'printtaskid' => $task_id,
       'documentid' => $insert_id,
-      'papersize' => $this->input->post('papersize'),
-      'isdoubleside' => $this->input->post('isdoubleside'),
-      'range' => $this->input->post('range'),
-      'fenshu' => $this->input->post('fenshu'),
-      'zhuangding' => $this->input->post('zhuangding'),
-      'cost' => $this->input->post('cost')
+      'papersize' => $papersize,
+      'isdoubleside' => $isdoubleside,
+      'range' => $range,
+      'fenshu' => $fenshu,
+      'zhuangding' => $zhuangding,
+      'cost' => $cost
     );
    $this->printtask_mdl->add_printtasksetting($doc_setting);
 
    $doc_data = array(
       'id' => $insert_id,
       'qty' => $this->input->post('fenshu'),
-      'price' => $this->input->post('cost') / $this->input->post('fenshu'),
+      'price' => $cost / $fenshu,
       'name' => $this->data['upload_data']['orig_name'],
-      'options' => array('papersize' => $this->input->post('papersize'),'isdoubleside' => $this->input->post('isdoubleside'),'range' => $this->input->post('range'),'zhuangding' => $this->input->post('zhuangding'))
+      'options' => array('papersize' => $papersize,'isdoubleside' => $isdoubleside,'range' => $range,'zhuangding' => $zhuangding)
     );
    $this->cart->insert($doc_data);
     //保存历史记录

@@ -84,5 +84,53 @@ class Method_mdl extends CI_Model {
 		return $sum;
 		
 	}
+
+	public function computeMoney($printerid,$papersize,$isdoubleside,$range,$fenshu,$zhuangding)
+	{
+		$this->db->select('*');
+		$this->db->from('printer_meta');
+		$this->db->where('printerid',$printerid);
+		$query = $this->db->get();
+		foreach ($query->result() as $row) {
+			$unit = $row->price;
+			//papersize
+			$papersize_arr = array();
+			$temp = explode("|", $row->papersize);
+			foreach ($temp as $opt) {
+				$key = substr($opt, 0, strpos($opt, ','));
+				$value = substr($opt, strpos($opt, ',') + 1, strlen($opt));
+				$papersize_arr[$key] = $value;
+			}
+			//isdoubleside
+			$isdoubleside_arr = array();
+			$temp = explode("|", $row->isdoubleside);
+			foreach ($temp as $opt) {
+				$key = substr($opt, 0, strpos($opt, ','));
+				$value = substr($opt, strpos($opt, ',') + 1, strlen($opt));
+				$isdoubleside_arr[$key] = $value;
+			}
+			//zhuangding
+			$zhuangding_arr = array();
+			$temp = explode("|", $row->zhuangding);
+			foreach ($temp as $opt) {
+				$key = substr($opt, 0, strpos($opt, ','));
+				$value = substr($opt, strpos($opt, ',') + 1, strlen($opt));
+				$zhuangding_arr[$key] = $value;
+			}
+		}
+		$price = 0;
+		$price = $unit * $papersize_arr[$papersize];
+		$pageNum = $this->countPageNum($range);
+
+		if($pageNum != -1){
+			$price *= $pageNum;
+			$price *= $fenshu;
+			$price *= $isdoubleside_arr[$isdoubleside];
+			$price += $zhuangding_arr[$zhuangding];
+		}
+		else
+			$price = "0";
+		return $price;
+	}
 }
 ?>

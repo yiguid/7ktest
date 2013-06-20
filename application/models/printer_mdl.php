@@ -42,7 +42,7 @@ class Printer_mdl extends CI_Model {
 		$this->db->insert('printer',$data);
 		if ($this->db->affected_rows() > 0){
 			$pterid = $this->db->insert_id();
-			$this->db->insert('printer_meta',array('printerid' => $pterid));	
+			$this->db->insert('printer_meta',array('printerid' => $pterid,'price' => 1));	
 			return TRUE;
 		} else
 			FALSE;
