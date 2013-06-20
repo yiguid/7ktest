@@ -279,7 +279,7 @@ class User_mdl extends CI_Model {
 	}
 	public function get_user_favoriteshop($start,$line,$userid)
 	{
-		$sql = "select name,location,online,servicestart,serviceend,address,contact ".
+		$sql = "select id, name,location,online,servicestart,serviceend,address,contact ".
 		"from printer where id in (select favoriteid from favorite where type =1 and userid = ?) ".
 		"limit ?, ?";
 		$query=$this->db->query($sql, array($userid, $start, $line));

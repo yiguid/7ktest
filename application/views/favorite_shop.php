@@ -5,7 +5,7 @@
 						</tr>
 						<?php foreach($shopList as $shop):?>  
 							<tr>
-							<?php echo "<td>".$shop->name ."</td><td>".$shop->address."</td><td>".$shop->contact."</td>";?>
+							<?php echo "<td>"."<a href=".base_url().'shop/doc/'.$shop->id.">".$shop->name."</a>"."</td><td>".$shop->address."</td><td>".$shop->contact."</td>";?>
 							</tr>
 							<?php endforeach;?>
 					</table>
