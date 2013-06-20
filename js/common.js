@@ -42,7 +42,7 @@ function submit_printtask(){
 		var r=confirm("确认提交订单吗？此次消费"+total_cost+"，确认后将扣除打印币。");
 		if(r==true)
 		{
-			document.getElementById('printtask_form').submit();
+			$('#printtask_form').submit();
 		}
 		else
 		{
@@ -256,7 +256,7 @@ function add_printtask(){
 		return false;
 	}
 	else
-		document.getElementById('add_printtask_form').submit();
+		$('#add_printtask_form').submit();
 }
 
 function addSpecDocToPrinttask(url,documentid,printerid,printername){
