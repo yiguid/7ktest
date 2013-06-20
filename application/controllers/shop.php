@@ -108,14 +108,14 @@ class Shop extends CI_Controller {
 			}
 			else
 			{
-				redirect(base_url().'shop/msg/$pterid-1');
+				redirect(base_url().'shop/msg/$pterid');
 			}
 		}
 		$this->form_validation->set_rules('msgcontent', '留言', 'required');
  		if ($this->form_validation->run() == FALSE)
 		{
 			//$this->data['create_error'] = "内容不能为空";
-			redirect(base_url()."shop/msg/$pterid-1");
+			redirect(base_url()."shop/msg/$pterid");
 		}
 		else
 		{
@@ -127,7 +127,7 @@ class Shop extends CI_Controller {
 			$uid = $this->session->userdata('id');
 			if($this->feedback_mdl->add_msg($type,$content,$date,$time,$uid,$pterid))
 			{
-				redirect(base_url()."shop/msg/$pterid-1");
+				redirect(base_url()."shop/msg/$pterid");
 			}
 			else
 			{
