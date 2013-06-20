@@ -17,7 +17,8 @@
 				<?php }?>
 				$("#test").rating({score : score, rate_enable : rate_enable},rateurl,postdata);
 			}
-			 $(document).ready(function(){
+
+			$(document).ready(function(){
              	rateInit();
             });
 			</script>
@@ -55,7 +56,7 @@
 				<div class="shop_details_info">地址：<?php echo $shopInfo->address?></div>
 				<div class="shop_details_info">联系方式：<?php echo $shopInfo->contact?></div>
 				<div class="shop_details_info">店铺介绍：<?php echo $shopInfo->intro?></div>
-				<div class="floatnav">
+				<div class="floatnav" id="backnav">
 					<?php if($this->session->userdata('user_type') == 'user') {?>
 					<a style="color:white;" href="<?php echo base_url();?>welcome"><div style="margin-top:120px;" class="printer_more">返回打印页面</div></a>
 					<?php } else{?>

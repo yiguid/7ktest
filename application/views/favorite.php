@@ -3,28 +3,29 @@ $this->load->view('header');
 $this->load->view('menu');
 ?>
 <script type="text/javascript">
-            var perpage = <?php echo $pageNum?>;
-            var shop_entries = <?php echo $shop_entries;?>;
-            var doc_entries  = <?php echo $doc_entries;?>;
-            var userid =<?php echo $userid;?>;
-            var docurl = '<?php echo base_url()."ajax/userajax/get_doc_favorite";?>';
-            var shopurl = '<?php echo base_url()."ajax/userajax/get_shop_favorite";?>';
-            var postdata = { userid : userid };
+
             /** 
              * Initialisation function for pagination
              */
             function initPagination() {
+                var perpage = <?php echo $pageNum?>;
+                var shop_entries = <?php echo $shop_entries;?>;
+                var doc_entries  = <?php echo $doc_entries;?>;
+                var userid =<?php echo $userid;?>;
+                var docurl = '<?php echo base_url()."ajax/userajax/get_doc_favorite";?>';
+                var shopurl = '<?php echo base_url()."ajax/userajax/get_shop_favorite";?>';
+                var postdata = { userid : userid };
                 // count entries inside the hidden content
                 // Create content inside pagination element
-                $("#jshoppagination").pagination(shop_entries, {
-                    items_per_page:1, // Show only one item per page
+                $("#jshoppagination").divpagination(shop_entries, {
+                    items_per_page: perpage, // Show only one item per page
                     prev_text:'上一页',
                     next_text:'下一页',
                     num_display_entries:5,
                     num_edge_entries:1
                 },shopurl,postdata,'#favoshop');
-                $("#jdocpagination").pagination(doc_entries , {
-                    items_per_page:1, // Show only one item per page
+                $("#jdocpagination").divpagination(doc_entries , {
+                    items_per_page: perpage, // Show only one item per page
                     prev_text:'上一页',
                     next_text:'下一页',
                     num_display_entries:5,

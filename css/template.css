@@ -554,7 +554,6 @@ a.readon {
 	color: white;
 	margin:4px;
 	width: 192px;
-	position: absolute;
 	background-color: #4889F0;
 }
 .title_background{
@@ -918,4 +917,5 @@ a.readon {
 .floatnav{
 	position:absolute; 
 	z-index:2008; 
+	bottom:110px;
 }
