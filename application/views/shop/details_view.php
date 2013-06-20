@@ -55,10 +55,11 @@
 				<div class="shop_details_info">地址：<?php echo $shopInfo->address?></div>
 				<div class="shop_details_info">联系方式：<?php echo $shopInfo->contact?></div>
 				<div class="shop_details_info">店铺介绍：<?php echo $shopInfo->intro?></div>
-				
-				<?php if($this->session->userdata('user_type') == 'user') {?>
-				<a style="color:white;" href="<?php echo base_url();?>welcome"><div style="margin-top:100px;" class="printer_more">返回打印页面</div></a>
-				<?php } else{?>
-				<a style="color:white;" href="<?php echo base_url();?>printer/manage"><div style="margin-top:100px;" class="printer_more">返回打印店中心</div></a>
-				<?php }?>
+				<div class="floatnav">
+					<?php if($this->session->userdata('user_type') == 'user') {?>
+					<a style="color:white;" href="<?php echo base_url();?>welcome"><div style="margin-top:120px;" class="printer_more">返回打印页面</div></a>
+					<?php } else{?>
+					<a style="color:white;" href="<?php echo base_url();?>printer/manage"><div style="margin-top:120px;" class="printer_more">返回打印店中心</div></a>
+					<?php }?>
+				</div>
 			</div>
