@@ -70,7 +70,7 @@ function submit_upload(){
 		return false;
 	}
 	else
-		document.getElementById('upload_form').submit();
+		$('#upload_form').submit();
 }
 
 
