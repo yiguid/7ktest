@@ -27,7 +27,7 @@
 <![endif]-->
 <!--[if lte IE 6]>
 <!-- bsie js 补丁只在IE6中才执行 -->
-<script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-ie.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-ie.js">$.bootstrapIE6(el)</script>
 <![endif]-->
 <style type="text/css">
 #div_search{
@@ -106,9 +106,3 @@
 </div>
 <div class="virtual_body" align="center">
 	<div class="virtual_header"></div>
-	<script type="text/javascript">
-		$(function(){
-			if(document.all)
-				alert('您正在使用IE浏览器，无法得到网站的最佳体验，建议升级为Chrome，Firefox或其他符合W3C标准的浏览器');
-		});
-	</script>

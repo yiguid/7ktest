@@ -25,7 +25,7 @@
 <![endif]-->
 <!--[if lte IE 6]>
 <!-- bsie js 补丁只在IE6中才执行 -->
-<script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-ie.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-ie.js">$.bootstrapIE6(el)</script>
 <![endif]-->
 </head>
 <body>
