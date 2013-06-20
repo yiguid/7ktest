@@ -63,6 +63,10 @@ class Printajax extends CI_Controller {
 
 	public function edit_by_id(){
 		extract($_REQUEST);
+		//得到打印店信息
+	   $printer_id = $this->session->userdata('printer_id');
+		//验证费用信息
+		$real_cost = $this->method_mdl->computeMoney($printer_id,$papersize,$isdoubleside,$range,$fenshu,$zhuangding);
 		//保存设置
 	   $doc_setting = array(
 	      'papersize' => $papersize,
@@ -70,7 +74,7 @@ class Printajax extends CI_Controller {
 	      'range' => $range,
 	      'fenshu' => $fenshu,
 	      'zhuangding' => $zhuangding,
-	      'cost' => $cost
+	      'cost' => $real_cost
 	    );
 	   $this->printtask_mdl->update_printtasksetting($this->session->userdata('printtaskid'), $documentid, $doc_setting);
 
@@ -79,7 +83,7 @@ class Printajax extends CI_Controller {
 	   $doc_data = array(
 	      'id' => $documentid,
 	      'qty' => $fenshu,
-	      'price' => $cost / $fenshu,
+	      'price' => $real_cost / $fenshu,
 	      'name' => $name,
 	      'options' => array('papersize' => $papersize,'isdoubleside' => $isdoubleside,'range' => $range,'zhuangding' => $zhuangding)
 	    );

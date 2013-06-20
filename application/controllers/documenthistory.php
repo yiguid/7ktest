@@ -15,6 +15,7 @@ class Documenthistory extends CI_Controller {
 		$this->load->model('user_mdl');
 		$this->load->model('printer_mdl');
 		$this->load->model('printtask_mdl');
+		$this->load->model('method_mdl');
 		
 		if(!$this->auth->logged_in())
 		{
@@ -75,25 +76,34 @@ class Documenthistory extends CI_Controller {
 	    $task_id = $this->printtask_mdl->add_printtask($task);
 	    $this->session->set_userdata('printtaskid',$task_id);
 	   }
+	   //验证费用信息
+	   //得到打印店信息
+	   $printer_id = $this->session->userdata('printer_id');
+	   $papersize = $this->input->post('papersize');
+	   $isdoubleside = $this->input->post('isdoubleside');
+	   $range = $this->input->post('range');
+	   $fenshu = $this->input->post('fenshu');
+	   $zhuangding = $this->input->post('zhuangding');
+	   $cost = $this->method_mdl->computeMoney($printer_id,$papersize,$isdoubleside,$range,$fenshu,$zhuangding);
 	   //保存设置
 	   $doc_setting = array(
 	      'printtaskid' => $task_id,
 	      'documentid' => $this->input->post('documentid'),
-	      'papersize' => $this->input->post('papersize'),
-	      'isdoubleside' => $this->input->post('isdoubleside'),
-	      'range' => $this->input->post('range'),
-	      'fenshu' => $this->input->post('fenshu'),
-	      'zhuangding' => $this->input->post('zhuangding'),
-	      'cost' => $this->input->post('cost')
+	      'papersize' => $papersize,
+	      'isdoubleside' => $isdoubleside,
+	      'range' => $range,
+	      'fenshu' => $fenshu,
+	      'zhuangding' => $zhuangding,
+	      'cost' => $cost
 	    );
 	   $this->printtask_mdl->add_printtasksetting($doc_setting);
 
 	   $doc_data = array(
 	      'id' => $this->input->post('documentid'),
-	      'qty' => $this->input->post('fenshu'),
-	      'price' => $this->input->post('cost') / $this->input->post('fenshu'),
+	      'qty' => $fenshu,
+	      'price' => $cost / $fenshu,
 	      'name' => $this->input->post('documentname'),
-	      'options' => array('papersize' => $this->input->post('papersize'),'isdoubleside' => $this->input->post('isdoubleside'),'range' => $this->input->post('range'),'zhuangding' => $this->input->post('zhuangding'))
+	      'options' => array('papersize' => $papersize,'isdoubleside' => $isdoubleside,'range' => $range,'zhuangding' => $zhuangding)
 	    );
 	   	$this->cart->insert($doc_data);
 		redirect(base_url().'welcome');
