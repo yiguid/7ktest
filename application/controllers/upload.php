@@ -62,7 +62,8 @@ class Upload extends CI_Controller {
    $new_doc = array(
       'name' => $this->data['upload_data']['orig_name'],
       'url' => $this->data['upload_data']['file_name'],
-      'uploaduserid' => $this->session->userdata('id')
+      'uploaduserid' => $this->session->userdata('id'),
+      'uploadtime' => date("Y-m-d H:i:s")
     );
    $insert_id = $this->document_mdl->add_document($new_doc);
    //文件打印设置信息插入数据库
