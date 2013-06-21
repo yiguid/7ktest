@@ -10,6 +10,7 @@ class Auth
         // 获取CI句柄
 		$this->ci =& get_instance();
 		$this->ci->load->model('user_mdl');
+		$this->ci->load->model('printer_mdl');
 		
     }
 	

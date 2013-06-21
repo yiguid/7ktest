@@ -7,7 +7,7 @@ $this->load->view('printer/menu');
 				<h4>修改密码</h4>
 			</div>
 			<div class="manage_content">
-				<form action="<?php echo base_url();?>printer/admin/password" method="post">
+				<form action="<?php echo base_url();?>printer/printeradmin/password" method="post">
 					<table>
 						<tr>
 							<td>原密码：</td>

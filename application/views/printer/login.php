@@ -26,7 +26,7 @@ $this->load->view('printer/header');
 				</div>
 			</div>
 			<div id="login_right">
-			<form action="login" method="post">
+			<form action="<?php echo base_url();?>printer/login" method="post">
 				<table>
 					<tr>
 						<td>用户名：</td>

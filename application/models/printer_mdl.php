@@ -28,7 +28,7 @@ class Printer_mdl extends CI_Model {
 				'username' => $result->username,
 				'nickname' => $result->name,
 				'level' => $result->level,
-				'user_type' => 'printer'
+				'user_type' => "printer"
 				);
 			 $this->session->set_userdata($session_data);
 		}

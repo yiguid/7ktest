@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Admin extends CI_Controller {
+class PrinterAdmin extends CI_Controller {
 
 	public function __construct()
 	{
@@ -25,16 +25,7 @@ class Admin extends CI_Controller {
 	{
 		
 		$this->data['page_title'] = '修改密码';
-		//验证用户登录、页面权限
-		//if(!$this->auth->check_ip($this->input->ip_address()))
-		//{
-		//	show_error('禁止访问:您当前的IP地址不合法');
-		//	redirect('admin/login','refresh');
-		//}
-		if(!$this->auth->printer_logged_in())
-		{
-			redirect('login','refresh');
-		}
+
 		$this->data['user'] = $this->session->userdata('nickname');
 		$this->form_validation->set_rules('old_password','原密码','required|min_length[6]|trim');
 		$this->form_validation->set_rules('new_password','新密码','required|min_length[6]|trim|matches[re_new_password]');
@@ -70,10 +61,6 @@ class Admin extends CI_Controller {
 
 
 		$this->data['page_title'] = '修改打印店信息';
-		if(!$this->auth->printer_logged_in())
-		{
-			redirect('login','refresh');
-		}
 		$this->data['user'] = $this->session->userdata('nickname');
 		$this->form_validation->set_rules('online','在线状态','required|min_length[2]|trim');
 		$this->form_validation->set_rules('address','打印店地址','required|min_length[6]|trim');
@@ -120,10 +107,7 @@ class Admin extends CI_Controller {
 	public function addproperty()
 	{
 		$this->data['page_title'] = '添加打印业务';
-		if(!$this->auth->printer_logged_in())
-		{
-			redirect('login','refresh');
-		}
+
 		$this->form_validation->set_rules('propertyname','业务名称','required|min_length[2]|trim');
 
 		if($this->form_validation->run() == FALSE)
@@ -141,10 +125,6 @@ class Admin extends CI_Controller {
 		public function addfixedproperty()
 	{
 		$this->data['page_title'] = '添加打印业务';
-		if(!$this->auth->printer_logged_in())
-		{
-			redirect('login','refresh');
-		}
 
 		$option=$this->input->post('option');
 		$value=$this->input->post('value');
@@ -240,10 +220,7 @@ class Admin extends CI_Controller {
 	public function addpropertyvalue()
 	{
 		$this->data['page_title'] = '添加打印业务内容';
-		if(!$this->auth->printer_logged_in())
-		{
-			redirect('login','refresh');
-		}
+
 		$this->form_validation->set_rules('propertyid','业务id','required|min_length[1]|trim');
 		$this->form_validation->set_rules('value','新增业务值','required|min_length[2]|trim');
 		$this->form_validation->set_rules('price','新增业务价格','required|min_length[1]|trim');

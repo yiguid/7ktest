@@ -7,7 +7,7 @@ $this->load->view('printer/menu');
 				<h4>基本信息</h4>
 			</div>
 			<div class="manage_content">
-				<form action="<?php echo base_url();?>printer/admin/updateinfo" method="post">
+				<form action="<?php echo base_url();?>printer/printeradmin/updateinfo" method="post">
 					<table>
 						<tr>
 							<td>在线状态：</td>

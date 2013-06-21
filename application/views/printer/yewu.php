@@ -11,7 +11,7 @@ $this->load->view('printer/menu');
 
 			<div style="text-align:left;margin-left:20px;">
 			<h5>必选业务设置</h5>
-			<form action="<?php echo base_url();?>printer/admin/setproperty" method="post">
+			<form action="<?php echo base_url();?>printer/printeradmin/setproperty" method="post">
 			<table id="propertytable" class="table table-condensed left750" style="margin-bottom:0px;">
 					<tr>
 						<td class="w40">序号</td>
@@ -32,7 +32,7 @@ $this->load->view('printer/menu');
 					"<td><input value=".$size['price']." name=\"online\" id=\"online\"></input></td>".
 				//	"<td>" . $size['name'] . "</td>".
 				//	"<td>" . $size['price'] . "</td>".
-                     "<td>" ."<a href=\"".base_url()."printer/admin/removepapersize?id=".$i."\" >删除</a> ". "</td>";
+                     "<td>" ."<a href=\"".base_url()."printer/printeradmin/removepapersize?id=".$i."\" >删除</a> ". "</td>";
             	$i++;
             }
 			?>
@@ -49,7 +49,7 @@ $this->load->view('printer/menu');
 					"<td><input value=".$option['price']." name=\"online\" id=\"online\"></input></td>".
 					//"<td>" . $option['name'] . "</td>".
 					//"<td>" . $option['price'] . "</td>".
-                     "<td>" ."<a href=\"".base_url()."printer/admin/removeisdoubleside?id=".$i."\" >删除</a> ". "</td>";
+                     "<td>" ."<a href=\"".base_url()."printer/printeradmin/removeisdoubleside?id=".$i."\" >删除</a> ". "</td>";
             		$i++;
             }
 			?>
@@ -66,7 +66,7 @@ $this->load->view('printer/menu');
 					"<td><input value=".$option['price']." name=\"online\" id=\"online\"></input></td>".
 					//"<td>" . $option['name'] . "</td>".
 					//"<td>" . $option['price'] . "</td>".
-                    "<td>" ."<a href=\"".base_url()."printer/admin/removezhuangding?id=".$i."\" >删除</a> ". "</td>";
+                    "<td>" ."<a href=\"".base_url()."printer/printeradmin/removezhuangding?id=".$i."\" >删除</a> ". "</td>";
             	$i++;
             }
 			?>
@@ -83,7 +83,7 @@ $this->load->view('printer/menu');
 			</form>
 
 				<h5>必选业务项添加设置</h5>
-				<form action="<?php echo base_url();?>printer/admin/addfixedproperty" method="post">
+				<form action="<?php echo base_url();?>printer/printeradmin/addfixedproperty" method="post">
 					<table id="propertytable" class="table table-condensed left750" style="margin-bottom:0px;">
 						<tr>
 							<td class="w100">业务名称</td>
