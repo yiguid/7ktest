@@ -166,7 +166,7 @@ $this->load->view('header');
 							<?php echo form_dropdown('zhuangding'.$num, $zhuangding_option, $items['options']['zhuangding'], "id=zhuangding".$num." class=w70");?>
 						</td>
 						<td class="w70"><input class="w40" style="border:0;background:none;box-shadow:none;" type="text" value="<?php echo $items['price']*$items['qty'];?>" maxlength="7" size="4" readonly onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" onfocus="compute_money('<?php echo base_url();?>','<?php echo $num;?>')" id="cost<?php echo $num;?>" name="cost<?php echo $num;?>"/></td>
-						<td class="w60"><div style="padding-top:6px;"><a onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" href="javascript:edit_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-edit"></i></a> <a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
+						<td class="w60"><div style="padding-top:6px;"><a onmouseover= "compute_money('<?php echo base_url();?>','<?php echo $num;?>')" href="javascript:edit_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-edit">更新</i></a> <a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove">删除</i></a></div></td>
 					</tr>
 					<?php
 							}else{
@@ -194,7 +194,7 @@ $this->load->view('header');
 							<div>特色资料装订</div>
 						</td>
 						<td class="w70"><div id="cost<?php echo $num;?>" style="padding-top:2px;"><?php echo $items['price'];?></div></td>
-						<td class="w60"><div style="padding-top:6px;"><a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove"></i></a></div></td>
+						<td class="w60"><div style="padding-top:6px;"><a href="javascript:delete_by_id('<?php echo base_url();?>','<?php echo $num;?>')"><i class="icon-remove">删除</i></a></div></td>
 					</tr>
 					<?php
 							}
