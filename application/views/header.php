@@ -19,14 +19,14 @@
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.pagination.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.rating.js"></script>
 
-<!--[if lte IE 6]>
+<!--[if lte IE 10]>
 <!--bsie css 补丁文件 -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/bootstrap-ie6.css">
 <!-- bsie 额外的 css 补丁文件 -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/ie.css">
 <![endif]-->
-<!--[if lte IE 6]>
-<!-- bsie js 补丁只在IE6中才执行 -->
+<!--[if lte IE 10]>
+<!-- bsie js 补丁只在IE10中才执行 -->
 <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-ie.js"></script>
 <![endif]-->
 <style type="text/css">
@@ -57,7 +57,8 @@
 				{ ?>
 				
 				  <!-- Link or button to toggle dropdown -->
-					<a style="color:white;" data-toggle="dropdown" href=""><?php echo $user; ?><i class="icon-chevron-down icon-white"></i></a>
+				  	<div class="btn-group">
+					<a style="color:white;" data-toggle="dropdown" href="#"><?php echo $user; ?><i class="icon-chevron-down icon-white"></i></a>
 				  	<ul id="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 						<li><a tabindex="-1" href="<?php echo base_url();?>manage"><i class="icon-user"></i>个人中心</a></li>
 						<li class="divider"></li>
@@ -78,7 +79,8 @@
 						<li><a tabindex="-1" href="<?php echo base_url();?>welcome"><i class="icon-shopping-cart"></i>查看印单</a></li>
 						<li><a tabindex="-1" href="<?php echo base_url();?>welcome/cleartask"><i class="icon-trash"></i>清空印单</a></li>
 					</ul>
-				<?php echo anchor('login/logout','退出','style="color:#D6E4FB;"'); 
+					</div>
+				<?php echo anchor('login/logout','　退出','style="color:#D6E4FB;"'); 
 				}
 				else
 				{

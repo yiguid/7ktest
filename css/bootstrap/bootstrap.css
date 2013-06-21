@@ -1092,7 +1092,7 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: 20px;
-  padding: 2px 6px;
+  padding: 0px 6px;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 20px;
@@ -1252,7 +1252,7 @@ textarea::-webkit-input-placeholder {
 .radio,
 .checkbox {
   min-height: 20px;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 .radio input[type="radio"],
@@ -3611,7 +3611,7 @@ input[type="submit"].btn.btn-mini {
   display: inline-block;
   *display: inline;
   *margin-left: .3em;
-  font-size: 0;
+  font-size: 12px;
   white-space: nowrap;
   vertical-align: middle;
   *zoom: 1;
