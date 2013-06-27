@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" >
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title><?php echo $page_title;?>-7KMall</title>
+<title><?php echo $page_title;?>-7KMall云打印-在线打印上7kMall</title>
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/template.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/pagination.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/datetimepicker.css" type="text/css" />
@@ -19,6 +19,10 @@
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.pagination.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.rating.js"></script>
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="7kMall云打印是中国最专业的网上打印平台，
+        提供各种类型的云打印服务，任何人都可以开设在线打印店，在线打印，享受线上印单，线下送印带来的便捷" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 <!--[if lte IE 10]>
 <!--bsie css 补丁文件 -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/bootstrap-ie6.css">

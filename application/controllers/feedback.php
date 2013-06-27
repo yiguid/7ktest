@@ -5,7 +5,7 @@ class Feedback extends CI_Controller {
 	{
 		parent::__construct();
 
-		$this->data['page_title'] = '反馈留言';
+		$this->data['page_title'] = '云打印-反馈留言';
 		$username = $this->session->userdata('nickname');
 		if($username != "")
 			$this->data['user'] = $username;

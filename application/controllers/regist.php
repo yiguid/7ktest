@@ -25,7 +25,7 @@ class Regist extends CI_Controller {
 		parent::__construct();
 
 		$this->load->model('user_mdl');
-		$this->data['page_title'] = '注册';
+		$this->data['page_title'] = '云打印注册';
 	}
 
 	public function index()

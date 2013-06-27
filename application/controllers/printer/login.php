@@ -10,7 +10,7 @@ class Login extends CI_Controller {
 		parent::__construct();
 
 		$this->load->model('printer_mdl');
-		$this->data['page_title'] = '登录';
+		$this->data['page_title'] = '云打印店登录';
 	}
 
 	public function index()
