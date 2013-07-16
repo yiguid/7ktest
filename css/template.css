@@ -538,6 +538,7 @@ a.readon {
 
 #other_printer{
 	height:386px;
+	overflow:scroll;
 }
 
 .printer_info{

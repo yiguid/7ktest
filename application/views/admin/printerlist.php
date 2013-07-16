@@ -10,7 +10,7 @@
 	<h1>Welcome to 7KMall!</h1>
 
 	<div id="body">
-		<form action="printer/add" method="post">
+		<form action="<?php echo base_url();?>admin/printer/add" method="post">
 			<table>
 				<tr>
 					<td>打印店用户名：</td>

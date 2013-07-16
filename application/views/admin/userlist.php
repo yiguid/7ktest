@@ -10,7 +10,7 @@
 	<h1>Welcome to 7KMall!</h1>
 
 	<div id="body">
-		<form action="user/add" method="post">
+		<form action="<?php echo base_url();?>admin/user/add" method="post">
 			<table>
 				<tr>
 					<td>用户名：</td>
